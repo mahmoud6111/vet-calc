@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#059669">
+  <meta name="description" content="Veterinary Dosage Calculator - Premium Offline App for Pet Hospitals">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>VetCalc Pro - Veterinary Dosage Calculator</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 50%, #a7f3d0 100%);
+      min-height: 100vh;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse-glow {
+
+      0%,
+      100% {
+        box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+      }
+
+      50% {
+        box-shadow: 0 0 40px rgba(16, 185, 129, 0.5);
+      }
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: -200% 0;
+      }
+
+      100% {
+        background-position: 200% 0;
+      }
+    }
+
+    .animate-fade-in {
+      animation: fadeInUp 0.5s ease-out;
+    }
+
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .animate-pulse-glow {
+      animation: pulse-glow 2s ease-in-out infinite;
+    }
+
+    /* Glass-morphism */
+    .glass {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .glass-dark {
+      background: rgba(6, 78, 59, 0.9);
+      backdrop-filter: blur(20px);
+    }
+
+    /* Gradients */
+    .gradient-primary {
+      background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
+    }
+
+    .gradient-header {
+      background: linear-gradient(135deg, #064e3b 0%, #047857 50%, #059669 100%);
+    }
+
+    .gradient-result {
+      background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+    }
+
+    /* Category badges */
+    .badge-antibiotic {
+      background: linear-gradient(135deg, #10b981, #059669);
+    }
+
+    .badge-nsaid {
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+    }
+
+    .badge-probiotic {
+      background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    }
+
+    .badge-gi {
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+    }
+
+    .badge-supplement {
+      background: linear-gradient(135deg, #ec4899, #db2777);
+    }
+
+    .badge-topical {
+      background: linear-gradient(135deg, #06b6d4, #0891b2);
+    }
+
+    /* Hover effects */
+    .hover-lift {
+      transition: all 0.3s ease;
+    }
+
+    .hover-lift:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Scrollbar styling */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #10b981, #059669);
+      border-radius: 10px;
+    }
+
+    /* Input focus */
+    input:focus,
+    select:focus {
+      outline: none;
+      border-color: #10b981 !important;
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+    }
+
+    /* Skeleton loader */
+    @keyframes skeleton-shimmer {
+      0% {
+        background-position: -400px 0;
+      }
+
+      100% {
+        background-position: 400px 0;
+      }
+    }
+
+    .skeleton {
+      background: linear-gradient(90deg, #e2e8f0 25%, #f1f5f9 50%, #e2e8f0 75%);
+      background-size: 400px 100%;
+      animation: skeleton-shimmer 1.5s ease-in-out infinite;
+      border-radius: 8px;
+    }
+
+    .dark .skeleton {
+      background: linear-gradient(90deg, #374151 25%, #4b5563 50%, #374151 75%);
+      background-size: 400px 100%;
+    }
+
+    /* Dark mode styles */
+    .dark body,
+    body.dark {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    }
+
+    .dark .glass {
+      background: rgba(30, 41, 59, 0.9);
+      border-color: rgba(71, 85, 105, 0.5);
+    }
+
+    .dark .gradient-header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+    }
+
+    .dark .bg-white,
+    .dark .bg-white\/50,
+    .dark .bg-white\/70 {
+      background: #1e293b !important;
+    }
+
+    .dark .bg-gray-50 {
+      background: #334155 !important;
+    }
+
+    .dark .text-gray-900,
+    .dark .text-gray-800,
+    .dark .text-gray-700 {
+      color: #f1f5f9 !important;
+    }
+
+    .dark .text-gray-600,
+    .dark .text-gray-500 {
+      color: #94a3b8 !important;
+    }
+
+    .dark .border-gray-200,
+    .dark .border-gray-100 {
+      border-color: #475569 !important;
+    }
+
+    .dark .border-emerald-100,
+    .dark .border-emerald-200 {
+      border-color: #065f46 !important;
+    }
+
+    .dark .bg-emerald-50,
+    .dark .from-emerald-50,
+    .dark .to-teal-50 {
+      background: #064e3b !important;
+    }
+
+    .dark .bg-emerald-100 {
+      background: #065f46 !important;
+    }
+
+    .dark .text-emerald-700 {
+      color: #6ee7b7 !important;
+    }
+
+    .dark .bg-violet-50,
+    .dark .from-violet-50,
+    .dark .to-purple-50 {
+      background: #3b0764 !important;
+    }
+
+    .dark .bg-amber-50 {
+      background: #451a03 !important;
+    }
+
+    .dark .border-amber-200 {
+      border-color: #b45309 !important;
+    }
+
+    .dark input,
+    .dark select {
+      background: #1e293b;
+      color: #f1f5f9;
+      border-color: #475569;
+    }
+
+    .dark input::placeholder {
+      color: #64748b;
+    }
+
+    .dark ::-webkit-scrollbar-track {
+      background: #1e293b;
+    }
+
+    .dark .hover-lift:hover {
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    /* PWA Install Banner */
+    .pwa-banner {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      animation: slideDown 0.5s ease-out;
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useMemo, useEffect } = React;
+
+    // Icons
+    const Search = () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>;
+    const Pill = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"></path><path d="m8.5 8.5 7 7"></path></svg>;
+    const Dog = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.656 1 1.261-.472 1.96-1.45 2.344-2.5"></path><path d="M14.267 5.172c0-1.39 1.577-2.493 3.5-2.172 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.45-2.239-2.5"></path><path d="M8 14v.5"></path><path d="M16 14v.5"></path><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"></path><path d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444c0-1.061-.162-2.2-.493-3.309m-9.243-6.082A8.801 8.801 0 0 1 12 5c.78 0 1.5.108 2.161.306"></path></svg>;
+    const Cat = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 5c.67 0 1.35.09 2 .26 1.78-2 5.03-2.84 6.42-2.26 1.4.58-.42 7-.42 7 .57 1.07 1 2.24 1 3.44C21 17.9 16.97 21 12 21s-9-3-9-7.56c0-1.25.5-2.4 1-3.44 0 0-1.89-6.42-.5-7 1.39-.58 4.72.23 6.5 2.23A9.04 9.04 0 0 1 12 5Z"></path><path d="M8 14v.5"></path><path d="M16 14v.5"></path><path d="M11.25 16.25h1.5L12 17l-.75-.75Z"></path></svg>;
+    const Calculator = () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect width="16" height="20" x="4" y="2" rx="2"></rect><line x1="8" x2="16" y1="6" y2="6"></line><line x1="16" x2="16" y1="14" y2="18"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path></svg>;
+    const Droplet = () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>;
+    const Plus = () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>;
+    const Edit = () => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>;
+    const Trash = () => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>;
+    const X = () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>;
+    const Star = ({ filled }) => <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill={filled ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>;
+    const Heart = ({ filled }) => <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill={filled ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>;
+    const Stethoscope = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"></path><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"></path><circle cx="20" cy="10" r="2"></circle></svg>;
+    const Moon = () => <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>;
+    const Sun = () => <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>;
+    const Download = () => <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>;
+
+    // Skeleton Loader Component
+    const SkeletonCard = () => (
+      <div className="p-4 border-b border-gray-100">
+        <div className="flex items-start gap-3">
+          <div className="skeleton w-1.5 h-10 rounded-full"></div>
+          <div className="flex-1">
+            <div className="skeleton h-5 w-3/4 mb-2"></div>
+            <div className="skeleton h-4 w-1/2 mb-2"></div>
+            <div className="skeleton h-3 w-2/3"></div>
+          </div>
+        </div>
+      </div>
+    );
+
+    // Drug Categories
+    const CATEGORIES = [
+      { id: 'all', name: 'All', icon: '💊', color: 'bg-gray-500' },
+      { id: 'antibiotic', name: 'Antibiotics', icon: '🦠', color: 'bg-emerald-500' },
+      { id: 'nsaid', name: 'NSAIDs', icon: '🔥', color: 'bg-orange-500' },
+      { id: 'gi', name: 'GI Drugs', icon: '🫁', color: 'bg-blue-500' },
+      { id: 'probiotic', name: 'Probiotics', icon: '🧫', color: 'bg-purple-500' },
+      { id: 'supplement', name: 'Supplements', icon: '💪', color: 'bg-pink-500' },
+      { id: 'topical', name: 'Topical', icon: '🩹', color: 'bg-cyan-500' },
+      { id: 'other', name: 'Other', icon: '📋', color: 'bg-slate-500' },
+    ];
+
+    // Helper to get category from generic name
+    const getCategory = (med) => {
+      const name = (med.generic_name + ' ' + med.notes).toLowerCase();
+      if (name.includes('probiotic') || name.includes('lactobacillus')) return 'probiotic';
+      if (name.includes('antibiotic') || ['amoxicillin', 'cefotaxime', 'ceftriaxone', 'azithromycin', 'clarithromycin', 'cefalexin', 'ciprofloxacin', 'doxycycline', 'metronidazole'].some(a => name.includes(a))) return 'antibiotic';
+      if (name.includes('nsaid') || ['ketoprofen', 'meloxicam', 'piroxicam'].some(n => name.includes(n))) return 'nsaid';
+      if (['antacid', 'omeprazole', 'ranitidine', 'famotidine', 'pantoprazole', 'laxative', 'lactulose', 'antiemetic', 'ondansetron', 'metoclopramide', 'antidiarrheal'].some(g => name.includes(g))) return 'gi';
+      if (['vitamin', 'calcium', 'mineral', 'supplement', 'liver tonic', 'multivitamin'].some(s => name.includes(s))) return 'supplement';
+      if (['topical', 'eye', 'ear', 'ophthalmic', 'otic', 'cream', 'spray'].some(t => name.includes(t))) return 'topical';
+      return 'other';
+    };
+
+    const DEFAULT_MEDICATIONS = [
+      // ========== (A) ANTIBIOTICS ==========
+      { id: "1", brand_name: "Augmentin / Curam", generic_name: "Amoxicillin + Clavulanic acid", species: "both", dose_mg_per_kg_min: 12.5, dose_mg_per_kg_max: 25, concentration_value: null, concentration_unit: "N/A", dosage_form: "suspension/tablet", route: "PO", unit_description: "Susp 156, 312, 457, 600; Tab 625, 1000 mg", notes: "Give every 8-12 hours. Avoid in animals with diarrhea.", frequency: "q8-12h" },
+      { id: "2", brand_name: "Xorin / Cefotax", generic_name: "Cefotaxime", species: "both", dose_mg_per_kg_min: 40, dose_mg_per_kg_max: 50, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable", route: "IV/IM", unit_description: "Vials 250, 500, 1000 mg", notes: "Third-generation cephalosporin. Used post-op.", frequency: "q8h" },
+      { id: "3", brand_name: "Ceftriaxone (dog)", generic_name: "Ceftriaxone", species: "dog", dose_mg_per_kg_min: 15, dose_mg_per_kg_max: 50, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable", route: "IV/IM/SC", unit_description: "Vials 250, 500, 1000 mg (Wintriaxone, Xoraxon)", notes: "Dog-specific dosing. Give every 12-24 hours.", frequency: "q12-24h" },
+      { id: "4", brand_name: "Ceftriaxone (cat)", generic_name: "Ceftriaxone", species: "cat", dose_mg_per_kg_min: 25, dose_mg_per_kg_max: 50, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable", route: "IV/IM/SC", unit_description: "Vials 250, 500, 1000 mg (Wintriaxone, Xoraxon)", notes: "Cat-specific dosing. Give every 12-24 hours.", frequency: "q12-24h" },
+      { id: "5", brand_name: "Xithrone", generic_name: "Azithromycin", species: "both", dose_mg_per_kg_min: 5, dose_mg_per_kg_max: 10, concentration_value: 200, concentration_unit: "mg/bottle", dosage_form: "suspension", route: "PO", unit_description: "200 mg suspension", notes: "Macrolide antibiotic. Give once daily. Hepatotoxic potential.", frequency: "q24h" },
+      { id: "6", brand_name: "Klacid / Klarimix (dog)", generic_name: "Clarithromycin", species: "dog", dose_mg_per_kg_min: 4, dose_mg_per_kg_max: 12, concentration_value: null, concentration_unit: "N/A", dosage_form: "suspension/tablet", route: "PO", unit_description: "Susp 125, 250 mg", notes: "Give every 12 hours. Monitor liver function.", frequency: "q12h" },
+      { id: "6b", brand_name: "Klacid / Klarimix (cat)", generic_name: "Clarithromycin", species: "cat", dose_mg_per_kg_min: 5, dose_mg_per_kg_max: 10, concentration_value: null, concentration_unit: "N/A", dosage_form: "suspension/tablet", route: "PO", unit_description: "Susp 125, 250 mg", notes: "Give every 12 hours. Monitor liver function.", frequency: "q12h" },
+      { id: "7", brand_name: "Ceporex / Cephalexin (PO)", generic_name: "Cefalexin", species: "both", dose_mg_per_kg_min: 15, dose_mg_per_kg_max: 15, concentration_value: 250, concentration_unit: "mg/tab", dosage_form: "tablet/suspension", route: "PO", unit_description: "Susp 125, 250 mg; Tab 250, 500, 1000 mg", notes: "Oral: 15mg/kg q8-12h. For skin infections (staph).", frequency: "q8-12h" },
+      { id: "7b", brand_name: "Ceporex / Cephalexin (IM/SC)", generic_name: "Cefalexin", species: "both", dose_mg_per_kg_min: 10, dose_mg_per_kg_max: 10, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable", route: "IM/SC", unit_description: "Injectable form", notes: "IM/SC: 10mg/kg q24h. For skin infections.", frequency: "q24h" },
+      { id: "8", brand_name: "Ciprofloxacin / Cipropay", generic_name: "Ciprofloxacin", species: "both", dose_mg_per_kg_min: 20, dose_mg_per_kg_max: 25, concentration_value: 250, concentration_unit: "mg/tab", dosage_form: "tablet", route: "PO", unit_description: "Tab 250, 500 mg", notes: "Fluoroquinolone. Good for urinary infections. Once daily or divided.", frequency: "q24h" },
+      { id: "9", brand_name: "Vibramycin / Doxymycin", generic_name: "Doxycycline", species: "both", dose_mg_per_kg_min: 10, dose_mg_per_kg_max: 10, concentration_value: 100, concentration_unit: "mg/cap", dosage_form: "capsule", route: "PO", unit_description: "Capsule 100 mg", notes: "Tetracycline. Used for blood parasites (ehrlichiosis). Give once daily.", frequency: "q24h" },
+
+      // ========== (B) ANTI-INFLAMMATORY & ANTIPYRETICS ==========
+      { id: "10", brand_name: "Dexamethasone", generic_name: "Dexamethasone", species: "both", dose_mg_per_kg_min: 0.01, dose_mg_per_kg_max: 0.16, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable/oral", route: "IM/SC/PO", unit_description: "Various preparations available", notes: "Corticosteroid. Use tapering regimen (3-day system). Give once daily.", frequency: "q24h" },
+      { id: "11", brand_name: "Predsol / Xilone", generic_name: "Prednisolone", species: "both", dose_mg_per_kg_min: 0.5, dose_mg_per_kg_max: 2, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup/tablet", route: "PO/IV/SC", unit_description: "Syrup 5mg/15mg; Solupred 20mg; Histacortin-H 5mg", notes: "Anti-inflammatory: 0.5-1mg/kg; Immunosuppression: 1-2mg/kg", frequency: "q24h" },
+      { id: "12", brand_name: "Alphinterin / Ambezim-G", generic_name: "Alpha-chemotrypsin", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet", route: "PO", unit_description: "Tablets", notes: "Anti-inflammatory enzyme. 1 tablet BID or TID. Dose is per animal, not per kg.", frequency: "q8-12h" },
+      { id: "13", brand_name: "Maxilase", generic_name: "Alpha-amylase", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup", notes: "Mucolytic enzyme. 1-5 ml/animal every 8-12 hours. Dose is per animal.", frequency: "q8-12h" },
+      { id: "14", brand_name: "Ketofen (Oral)", generic_name: "Ketoprofen", species: "both", dose_mg_per_kg_min: 1, dose_mg_per_kg_max: 1, concentration_value: null, concentration_unit: "N/A", dosage_form: "capsule/syrup", route: "PO", unit_description: "Cap 25, 50, 75, 100, 200 mg; Syrup 12.5 mg", notes: "NSAID. Oral: 1mg/kg q24h. Very irritating to stomach - avoid if possible.", frequency: "q24h" },
+      { id: "15", brand_name: "Ketofen (Injectable)", generic_name: "Ketoprofen", species: "both", dose_mg_per_kg_min: 2, dose_mg_per_kg_max: 2, concentration_value: 100, concentration_unit: "mg/amp", dosage_form: "injectable", route: "SC/IV/IM", unit_description: "Amp 100 mg", notes: "NSAID. Injectable: 2mg/kg q24h. Very effective antipyretic. Preferred route.", frequency: "q24h" },
+      { id: "16", brand_name: "Mobic / Mobitil", generic_name: "Meloxicam", species: "both", dose_mg_per_kg_min: 0.1, dose_mg_per_kg_max: 0.2, concentration_value: 15, concentration_unit: "mg/amp", dosage_form: "injectable/tablet", route: "SC/IV/PO", unit_description: "Tab 7.5, 15 mg; Amp 15 mg", notes: "NSAID. Initial: 0.2mg/kg, Maintenance: 0.1mg/kg. Effective for bone inflammation.", frequency: "q24h" },
+      { id: "17", brand_name: "Feldene", generic_name: "Piroxicam", species: "dog", dose_mg_per_kg_min: 0.3, dose_mg_per_kg_max: 0.3, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/injectable", route: "PO/SC/IV/IM", unit_description: "Tab 10, 20 mg; Amp 20 mg", notes: "NSAID. Dogs only: 0.3mg/kg PO q24h.", frequency: "q24h" },
+
+      // ========== (C) ANTIHISTAMINICS ==========
+      { id: "18", brand_name: "Allergy (dog)", generic_name: "Chlorphenamine", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup", route: "PO", unit_description: "Tab 4 mg; Syrup 2 mg", notes: "Antihistamine. Dogs: 4-8mg per animal q8-12h. Dose is per animal.", frequency: "q8-12h" },
+      { id: "19", brand_name: "Allergy (cat)", generic_name: "Chlorphenamine", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup", route: "PO", unit_description: "Tab 4 mg; Syrup 2 mg", notes: "Antihistamine. Cats: 2-4mg per animal q8-12h. Dose is per animal.", frequency: "q8-12h" },
+      { id: "20", brand_name: "Tavagyl", generic_name: "Clemastine", species: "both", dose_mg_per_kg_min: 0.1, dose_mg_per_kg_max: 0.1, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup/injectable", route: "PO/IM", unit_description: "Tab 1 mg; Syrup 0.5 mg; Amp 2 mg", notes: "Antihistamine. 0.1mg/kg PO q12h.", frequency: "q12h" },
+      { id: "21", brand_name: "Claritine", generic_name: "Loratadine", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup", route: "PO", unit_description: "Tab 10 mg; Syrup 5 mg", notes: "Antihistamine. 5-15mg per animal q24h. Dose is per animal, not per kg.", frequency: "q24h" },
+      { id: "22", brand_name: "Zyrtec", generic_name: "Cetirizine", species: "both", dose_mg_per_kg_min: 0.25, dose_mg_per_kg_max: 0.25, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup", route: "PO", unit_description: "Tab 10 mg; Syrup 5 mg", notes: "Antihistamine. 0.25mg/kg or 5-10mg per animal q12h.", frequency: "q12h" },
+
+      // ========== (D) ANTIEMETICS ==========
+      { id: "23", brand_name: "Cortigen B6", generic_name: "Vitamin B Complex", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable", route: "IM", unit_description: "Ampoules", notes: "Antiemetic. 1 ampoule IM q12h. Dose is per animal.", frequency: "q12h" },
+      { id: "24", brand_name: "Motilium / Motinorm", generic_name: "Domperidone", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup/tablet", route: "PO", unit_description: "Syrup 5 mg; Tab 10 mg", notes: "Antiemetic. 2-5mg per animal q8h. Dose is per animal.", frequency: "q8h" },
+      { id: "25", brand_name: "Primperan", generic_name: "Metoclopramide", species: "both", dose_mg_per_kg_min: 0.2, dose_mg_per_kg_max: 0.5, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup/tablet/injectable", route: "PO/IM/IV", unit_description: "Syrup 5 mg; Tab 10 mg; Amp 10 mg", notes: "Antiemetic/Prokinetic. 0.2-0.5mg/kg q8h.", frequency: "q8h" },
+      { id: "26", brand_name: "Zofran / Dansit (IV)", generic_name: "Ondansetron", species: "both", dose_mg_per_kg_min: 0.5, dose_mg_per_kg_max: 0.5, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable", route: "IV", unit_description: "Amp 4, 8 mg", notes: "Potent antiemetic. 0.5mg/kg IV q12h.", frequency: "q12h" },
+      { id: "27", brand_name: "Zofran / Dansit (PO)", generic_name: "Ondansetron", species: "both", dose_mg_per_kg_min: 0.5, dose_mg_per_kg_max: 1, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet", route: "PO", unit_description: "Tab 8 mg", notes: "Potent antiemetic. 0.5-1mg/kg PO q12h.", frequency: "q12h" },
+
+      // ========== (E) COUGH/BRONCHODILATOR/MUCOLYTIC ==========
+      { id: "28", brand_name: "Guava / Balsam", generic_name: "Herbal Extract", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup", notes: "Cough sedative. 2-5ml per animal q8-12h. Dose is per animal.", frequency: "q8-12h" },
+      { id: "29", brand_name: "Bisolvon (dog)", generic_name: "Bromhexine", species: "dog", dose_mg_per_kg_min: 2, dose_mg_per_kg_max: 2.5, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup/tablet/injectable", route: "PO/IM", unit_description: "Syrup 4 mg; Tab 8 mg; Amp 4 mg", notes: "Mucolytic. Dogs: 2-2.5mg/kg PO q12h.", frequency: "q12h" },
+      { id: "30", brand_name: "Bisolvon (cat)", generic_name: "Bromhexine", species: "cat", dose_mg_per_kg_min: 1, dose_mg_per_kg_max: 1, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup/tablet/injectable", route: "PO/IM", unit_description: "Syrup 4 mg; Tab 8 mg; Amp 4 mg", notes: "Mucolytic. Cats: 1mg/kg PO q24h.", frequency: "q24h" },
+      { id: "31", brand_name: "Acetylcysteine", generic_name: "Acetylcysteine", species: "both", dose_mg_per_kg_min: 50, dose_mg_per_kg_max: 50, concentration_value: null, concentration_unit: "N/A", dosage_form: "sachet", route: "PO", unit_description: "Sachets", notes: "Mucolytic. 50mg/kg PO q8h. Also used for acetaminophen toxicity.", frequency: "q8h" },
+      { id: "32", brand_name: "Ventolin (dog)", generic_name: "Salbutamol", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "inhaler/tablet/syrup/injectable", route: "Inhalation/PO/IV", unit_description: "Inhaler; Tab 2 mg; Syrup 2 mg; Amp 0.5 mg", notes: "Bronchodilator. Dogs: 100-300 ug q4-6h. Dose is per animal.", frequency: "q4-6h" },
+      { id: "33", brand_name: "Ventolin (cat)", generic_name: "Salbutamol", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "inhaler/tablet/syrup/injectable", route: "Inhalation/PO/IV", unit_description: "Inhaler; Tab 2 mg; Syrup 2 mg; Amp 0.5 mg", notes: "Bronchodilator. Cats: 100 ug q4-6h. Dose is per animal.", frequency: "q4-6h" },
+      { id: "34", brand_name: "Aironyl (dog)", generic_name: "Terbutaline", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup", route: "PO", unit_description: "Tab 2.5 mg; Syrup 1.5 mg", notes: "Bronchodilator. Dogs: 1.25-5mg per animal q8-12h.", frequency: "q8-12h" },
+      { id: "35", brand_name: "Aironyl (cat)", generic_name: "Terbutaline", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup", route: "PO", unit_description: "Tab 2.5 mg; Syrup 1.5 mg", notes: "Bronchodilator. Cats: 0.312-1.25mg per animal q8-12h.", frequency: "q8-12h" },
+      { id: "36", brand_name: "Etaphylline (dog)", generic_name: "Theophylline", species: "dog", dose_mg_per_kg_min: 15, dose_mg_per_kg_max: 20, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable/syrup", route: "IV/PO", unit_description: "Amp 500 mg; Syrup 125 mg", notes: "Bronchodilator. Dogs: 15-20mg/kg q12-24h.", frequency: "q12-24h" },
+      { id: "37", brand_name: "Etaphylline (cat)", generic_name: "Theophylline", species: "cat", dose_mg_per_kg_min: 10, dose_mg_per_kg_max: 10, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable/syrup", route: "IV/PO", unit_description: "Amp 500 mg; Syrup 125 mg", notes: "Bronchodilator. Cats: 10mg/kg q12-24h.", frequency: "q12-24h" },
+
+      // ========== (F) ANTACIDS ==========
+      { id: "38", brand_name: "Mucogel / Epicogel", generic_name: "Aluminium Antacids", species: "both", dose_mg_per_kg_min: 0.5, dose_mg_per_kg_max: 1, concentration_value: null, concentration_unit: "N/A", dosage_form: "suspension", route: "PO", unit_description: "Suspension", notes: "Antacid. 0.5-1ml/kg q6-8h.", frequency: "q6-8h" },
+      { id: "39", brand_name: "Ranitack / Rani (dog)", generic_name: "Ranitidine", species: "dog", dose_mg_per_kg_min: 2, dose_mg_per_kg_max: 2, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/injectable/syrup", route: "PO/IV/IM", unit_description: "Tab 75, 150 mg; Amp 50 mg; Noerosive Syrup", notes: "H2 blocker. Dogs: 2mg/kg q8-12h.", frequency: "q8-12h" },
+      { id: "40", brand_name: "Ranitack / Rani (cat)", generic_name: "Ranitidine", species: "cat", dose_mg_per_kg_min: 2.5, dose_mg_per_kg_max: 3.5, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/injectable/syrup", route: "PO/IV/IM", unit_description: "Tab 75, 150 mg; Amp 50 mg; Noerosive Syrup", notes: "H2 blocker. Cats: 2.5-3.5mg/kg q8-12h.", frequency: "q8-12h" },
+      { id: "41", brand_name: "Antodine", generic_name: "Famotidine", species: "both", dose_mg_per_kg_min: 0.5, dose_mg_per_kg_max: 1, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/injectable", route: "PO/IV", unit_description: "Tab 20, 40 mg; Amp 20 mg", notes: "H2 blocker. 0.5-1mg/kg q12-24h.", frequency: "q12-24h" },
+      { id: "42", brand_name: "Risek", generic_name: "Omeprazole", species: "both", dose_mg_per_kg_min: 0.5, dose_mg_per_kg_max: 1.5, concentration_value: null, concentration_unit: "N/A", dosage_form: "capsule/injectable", route: "PO/IV", unit_description: "Cap 10, 20, 40 mg; Vial 40 mg", notes: "Proton pump inhibitor. 0.5-1.5mg/kg q24h.", frequency: "q24h" },
+      { id: "43", brand_name: "Controloc / Pantoloc", generic_name: "Pantoprazole", species: "both", dose_mg_per_kg_min: 0.7, dose_mg_per_kg_max: 1, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/injectable", route: "IV/PO", unit_description: "Tab 20, 40 mg; Vial 40 mg", notes: "Proton pump inhibitor. 0.7-1mg/kg IV q24h.", frequency: "q24h" },
+
+      // ========== (H) LAXATIVES ==========
+      { id: "44", brand_name: "Egycusate (dog oral)", generic_name: "Docusate Sodium", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup", notes: "Stool softener. Dogs: 50-100mg PO q12h. Dose is per animal.", frequency: "q12h" },
+      { id: "45", brand_name: "Egycusate (dog rectal)", generic_name: "Docusate Sodium", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "enema", route: "Rectal", unit_description: "5% solution", notes: "Stool softener. Dogs: 10-15ml (5%) rectal q12h.", frequency: "q12h" },
+      { id: "46", brand_name: "Egycusate (cat)", generic_name: "Docusate Sodium", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup/enema", route: "PO/Rectal", unit_description: "Syrup, 5% solution", notes: "Stool softener. Cats: 50mg PO or 2ml (5%) rectal q12h.", frequency: "q12h" },
+      { id: "47", brand_name: "Lactulose (dog)", generic_name: "Lactulose", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup", notes: "Osmotic laxative. Dogs: 5-15ml PO q8h. Dose is per animal.", frequency: "q8h" },
+      { id: "48", brand_name: "Lactulose (cat)", generic_name: "Lactulose", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup", notes: "Osmotic laxative. Cats: 0.5-5ml PO q24h. Dose is per animal.", frequency: "q24h" },
+      { id: "49", brand_name: "Paraffin Oil (dog)", generic_name: "Paraffin", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "oil", route: "PO", unit_description: "Oil", notes: "Lubricant laxative. Dogs: 1-2 tablespoons q12-24h.", frequency: "q12-24h" },
+      { id: "50", brand_name: "Paraffin Oil (cat)", generic_name: "Paraffin", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "oil", route: "PO", unit_description: "Oil", notes: "Lubricant laxative. Cats: 10-25mm (small amount) q12-24h.", frequency: "q12-24h" },
+      { id: "51", brand_name: "Phosphate Enema", generic_name: "Phosphate Enema", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "enema", route: "Rectal", unit_description: "Enema, Enemax", notes: "⚠️ DOGS ONLY - DO NOT USE IN CATS! Dogs: 60-128ml. Dose is per animal.", frequency: "Once" },
+      { id: "52", brand_name: "Glycerin Suppository (dog)", generic_name: "Glycerin", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "suppository", route: "Rectal", unit_description: "Suppository", notes: "Laxative. Dogs: 1-2 small suppositories rectally.", frequency: "Once" },
+      { id: "53", brand_name: "Glycerin Suppository (cat)", generic_name: "Glycerin", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "solution", route: "Rectal", unit_description: "5% solution", notes: "Laxative. Cats: 2ml of 5% solution rectally.", frequency: "Once" },
+
+      // ========== (H) ANTIDIARRHEALS ==========
+      { id: "54", brand_name: "Streptoquin", generic_name: "Streptomycin / Sulphonamide", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup", notes: "Antidiarrheal. 2-5ml per animal q8-12h. Dose is per animal.", frequency: "q8-12h" },
+      { id: "55", brand_name: "Flagyl / Flagelat (dog)", generic_name: "Metronidazole", species: "dog", dose_mg_per_kg_min: 10, dose_mg_per_kg_max: 25, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup/injectable", route: "PO/IV/SC", unit_description: "Syrup 125, 200 mg; Tab 250, 500 mg; Vial 500 mg", notes: "For protozoal diarrhea. Dogs: 10-25mg/kg q12h.", frequency: "q12h" },
+      { id: "56", brand_name: "Flagyl / Flagelat (cat)", generic_name: "Metronidazole", species: "cat", dose_mg_per_kg_min: 8, dose_mg_per_kg_max: 10, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup/injectable", route: "PO/IV/SC", unit_description: "Syrup 125, 200 mg; Tab 250, 500 mg; Vial 500 mg", notes: "For protozoal diarrhea. Cats: 8-10mg/kg q12h.", frequency: "q12h" },
+      { id: "57", brand_name: "Kapect Compound", generic_name: "Sulphonamide / Trimethoprim", species: "both", dose_mg_per_kg_min: 15, dose_mg_per_kg_max: 15, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup 120 mg", notes: "Antidiarrheal. 15mg/kg PO q12h.", frequency: "q12h" },
+      { id: "58", brand_name: "Antinal", generic_name: "Nifuroxazide", species: "both", dose_mg_per_kg_min: 4.4, dose_mg_per_kg_max: 4.4, concentration_value: null, concentration_unit: "N/A", dosage_form: "capsule/syrup", route: "PO", unit_description: "Cap; Syrup 200 mg", notes: "Intestinal antiseptic. 4.4mg/kg q8h.", frequency: "q8h" },
+
+      // ========== (I) ANTI-HEMORRHAGE ==========
+      { id: "59", brand_name: "Dicynone / Haemostop", generic_name: "Ethamsylate", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/injectable", route: "PO/IV/IM", unit_description: "Tab 250, 500 mg; Amp 250 mg", notes: "Hemostatic. 1 tablet/ampoule q8-24h. Dose is per animal.", frequency: "q8-24h" },
+
+      // ========== (J) SUPPLEMENTS & VITAMINS ==========
+      { id: "60", brand_name: "Epicozyme / Becozyme / Neurotone", generic_name: "Vitamin B Complex", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup/injectable/tablet", route: "PO/IM", unit_description: "Syrup, Amp, Tab", notes: "B vitamin supplement. 1-4ml daily. Dose is per animal.", frequency: "q24h" },
+      { id: "61", brand_name: "Hepaticum / Hepatofort", generic_name: "Liver Tonic", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup/capsule", route: "PO", unit_description: "Syrup, Cap", notes: "Liver support. 2-5ml per animal q8-12h.", frequency: "q8-12h" },
+      { id: "62", brand_name: "Totavit / Sansovit / Halorang (dog)", generic_name: "Multivitamin", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup", notes: "Multivitamin. Dogs: 1-5ml daily. Dose is per animal.", frequency: "q24h" },
+      { id: "63", brand_name: "Totavit / Sansovit / Halorang (cat)", generic_name: "Multivitamin", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup", notes: "Multivitamin. Cats: 0.5-3ml daily. Dose is per animal.", frequency: "q24h" },
+      { id: "64", brand_name: "Hydrosafe / Hydran (dog)", generic_name: "Minerals (Rehydration)", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "sachet", route: "PO", unit_description: "Sachets", notes: "Oral rehydration. Dogs: 1-3 sachets. Dose is per animal.", frequency: "As needed" },
+      { id: "65", brand_name: "Hydrosafe / Hydran (cat)", generic_name: "Minerals (Rehydration)", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "sachet", route: "PO", unit_description: "Sachets", notes: "Oral rehydration. Cats: 0.3-0.6 sachets. Dose is per animal.", frequency: "As needed" },
+      { id: "66", brand_name: "Cal-Bor-Mag (Injectable)", generic_name: "Calcium", species: "both", dose_mg_per_kg_min: 50, dose_mg_per_kg_max: 150, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable", route: "IV", unit_description: "Injectable", notes: "Calcium supplement. 50-150mg/kg IV slowly with ECG monitoring.", frequency: "As needed" },
+      { id: "67", brand_name: "Osteocare / Decal-B12 (dog)", generic_name: "Calcium", species: "dog", dose_mg_per_kg_min: 5, dose_mg_per_kg_max: 22, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup", route: "PO", unit_description: "Tab, Syrup", notes: "Oral calcium. Dogs: 5-22mg/kg daily.", frequency: "q24h" },
+      { id: "68", brand_name: "Osteocare / Decal-B12 (cat)", generic_name: "Calcium", species: "cat", dose_mg_per_kg_min: 10, dose_mg_per_kg_max: 25, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup", route: "PO", unit_description: "Tab, Syrup", notes: "Oral calcium. Cats: 10-25mg/kg daily.", frequency: "q24h" },
+
+      // ========== (K) ANTIFUNGALS ==========
+      { id: "69", brand_name: "Diflucan (dog)", generic_name: "Fluconazole", species: "dog", dose_mg_per_kg_min: 2.5, dose_mg_per_kg_max: 5, concentration_value: null, concentration_unit: "N/A", dosage_form: "capsule", route: "PO", unit_description: "Cap 150 mg", notes: "Systemic antifungal. Dogs: 2.5-5mg/kg q12h.", frequency: "q12h" },
+      { id: "70", brand_name: "Diflucan (cat)", generic_name: "Fluconazole", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "capsule", route: "PO", unit_description: "Cap 150 mg", notes: "Systemic antifungal. Cats: 50-100mg per cat q12h. Dose per animal.", frequency: "q12h" },
+      { id: "71", brand_name: "Itraconazole / Itrapex", generic_name: "Itraconazole", species: "both", dose_mg_per_kg_min: 5, dose_mg_per_kg_max: 5, concentration_value: null, concentration_unit: "N/A", dosage_form: "capsule", route: "PO", unit_description: "Cap 100 mg", notes: "Antifungal. 5mg/kg daily. Pulse therapy: 1 week on, 1 week off.", frequency: "q24h" },
+      { id: "72", brand_name: "Lamasil / Lamafin", generic_name: "Terbinafine", species: "both", dose_mg_per_kg_min: 20, dose_mg_per_kg_max: 40, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet", route: "PO", unit_description: "Tab 125, 250 mg", notes: "Antifungal. 20-40mg/kg daily. Pulse therapy recommended.", frequency: "q24h" },
+
+      // ========== (M) EYE PREPARATIONS ==========
+      { id: "73", brand_name: "Tobrin / Ciprocin / Tobrex", generic_name: "Eye Antibiotic", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "eye drops", route: "Ophthalmic", unit_description: "Eye drops", notes: "Ophthalmic antibiotic. 1 drop q6-12h.", frequency: "q6-12h" },
+      { id: "74", brand_name: "Tobradex / Isoptomaxitrol", generic_name: "Eye Antibiotic + Steroid", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "eye drops", route: "Ophthalmic", unit_description: "Eye drops", notes: "Combined antibiotic/steroid. 1 drop q6-12h. Avoid with corneal ulcers.", frequency: "q6-12h" },
+
+      // ========== (N) EAR PREPARATIONS ==========
+      { id: "75", brand_name: "Otal / Otosept", generic_name: "Ear Antibiotic + Steroid", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "ear drops", route: "Otic", unit_description: "Ear drops", notes: "Otic preparation. 1-4 drops q8-12h.", frequency: "q8-12h" },
+
+      // ========== (O) TOPICAL PREPARATIONS ==========
+      { id: "76", brand_name: "Fucidin / Oxy-G", generic_name: "Topical Antibiotic", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "cream/spray", route: "Topical", unit_description: "Cream, Spray", notes: "Topical antibiotic. Apply to affected area BID-TID.", frequency: "q8-12h" },
+      { id: "77", brand_name: "Healsol / Iurexoul", generic_name: "Healing Promoter", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "spray/cream", route: "Topical", unit_description: "Spray, Cream", notes: "Wound healing promoter. Apply to wounds BID.", frequency: "q12h" },
+      { id: "78", brand_name: "Cyteal", generic_name: "Skin Antiseptic", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "solution", route: "Topical", unit_description: "Solution (dilute 1:9)", notes: "Antiseptic wash. Dilute 1:9 with water before use.", frequency: "As needed" },
+
+      // ========== SYNULOX (Veterinary specific) ==========
+      { id: "79", brand_name: "Synulox", generic_name: "Amoxicillin + Clavulanic acid", species: "both", dose_mg_per_kg_min: 12.5, dose_mg_per_kg_max: 12.5, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable", route: "IM/SC", unit_description: "Veterinary injectable", notes: "Veterinary antibiotic. For respiratory, urinary, skin infections. 12.5mg/kg.", frequency: "q24h" },
+
+      // ========== PROBIOTICS ==========
+      { id: "80", brand_name: "Lacteol Forte (cat)", generic_name: "Lactobacillus LB (Probiotic)", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: 10, concentration_unit: "billion CFU/sachet", dosage_form: "oral sachet", route: "PO", unit_description: "Sachet 10 billion CFU (10×10⁹); Pack of 6 sachets", notes: "🐱 CATS: 1/4 to 1/2 sachet per cat daily (1-5 billion CFU/day). For therapeutic use (IBD, severe diarrhea): up to 1/2 sachet BID. Mix with food. Human product used in veterinary practice. Indications: Antibiotic-associated diarrhea prevention, acute infectious diarrhea, H. pylori therapy support, GI microbiome restoration.", frequency: "q12-24h" },
+      { id: "81", brand_name: "Lacteol Forte (small dog <10kg)", generic_name: "Lactobacillus LB (Probiotic)", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: 10, concentration_unit: "billion CFU/sachet", dosage_form: "oral sachet", route: "PO", unit_description: "Sachet 10 billion CFU (10×10⁹); Pack of 6 sachets", notes: "🐕 SMALL DOGS (<10kg): 1/4 to 1/2 sachet daily (2.5-5 billion CFU). For therapeutic use: up to 1/2 sachet BID. Mix with food. Human product used in veterinary practice. Indications: Antibiotic-associated diarrhea, acute GI infections, post-antibiotic gut restoration.", frequency: "q12-24h" },
+      { id: "82", brand_name: "Lacteol Forte (medium dog 10-25kg)", generic_name: "Lactobacillus LB (Probiotic)", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: 10, concentration_unit: "billion CFU/sachet", dosage_form: "oral sachet", route: "PO", unit_description: "Sachet 10 billion CFU (10×10⁹); Pack of 6 sachets", notes: "🐕 MEDIUM DOGS (10-25kg): 1/2 to 1 sachet daily (5-10 billion CFU). For therapeutic use: up to 1 sachet BID. Mix with food. Human product used in veterinary practice. Indications: Antibiotic-associated diarrhea, acute GI infections, post-antibiotic gut restoration.", frequency: "q12-24h" },
+      { id: "83", brand_name: "Lacteol Forte (large dog >25kg)", generic_name: "Lactobacillus LB (Probiotic)", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: 10, concentration_unit: "billion CFU/sachet", dosage_form: "oral sachet", route: "PO", unit_description: "Sachet 10 billion CFU (10×10⁹); Pack of 6 sachets", notes: "🐕 LARGE DOGS (>25kg): 1 to 2 sachets daily (10-20 billion CFU). For therapeutic use: up to 1 sachet BID. Mix with food. Human product used in veterinary practice. Indications: Antibiotic-associated diarrhea, acute GI infections, post-antibiotic gut restoration.", frequency: "q12-24h" }
+    ];
+
+    const VetDosageCalculator = () => {
+      const [medications, setMedications] = useState([]);
+      const [searchTerm, setSearchTerm] = useState('');
+      const [selectedMed, setSelectedMed] = useState(null);
+      const [species, setSpecies] = useState('');
+      const [weight, setWeight] = useState('');
+      const [result, setResult] = useState(null);
+      const [concentrationMg, setConcentrationMg] = useState('');
+      const [concentrationMl, setConcentrationMl] = useState('');
+      const [showConcentrationInput, setShowConcentrationInput] = useState(false);
+      const [showAddModal, setShowAddModal] = useState(false);
+      const [editingMed, setEditingMed] = useState(null);
+      const [showDeleteConfirm, setShowDeleteConfirm] = useState(null);
+      const [activeCategory, setActiveCategory] = useState('all');
+      const [favorites, setFavorites] = useState([]);
+      const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
+      const [darkMode, setDarkMode] = useState(false);
+      const [isLoading, setIsLoading] = useState(true);
+      const [deferredPrompt, setDeferredPrompt] = useState(null);
+      const [showInstallBanner, setShowInstallBanner] = useState(false);
+
+      // Load medications, favorites, and dark mode from localStorage on mount
+      useEffect(() => {
+        // Simulate loading delay for skeleton effect
+        const loadData = async () => {
+          setIsLoading(true);
+          await new Promise(resolve => setTimeout(resolve, 500));
+
+          const saved = localStorage.getItem('vetCalcMedications');
+          const savedFavorites = localStorage.getItem('vetCalcFavorites');
+          const savedDarkMode = localStorage.getItem('vetCalcDarkMode');
+
+          if (saved) {
+            setMedications(JSON.parse(saved));
+          } else {
+            setMedications(DEFAULT_MEDICATIONS);
+            localStorage.setItem('vetCalcMedications', JSON.stringify(DEFAULT_MEDICATIONS));
+          }
+          if (savedFavorites) {
+            setFavorites(JSON.parse(savedFavorites));
+          }
+          if (savedDarkMode === 'true') {
+            setDarkMode(true);
+            document.documentElement.classList.add('dark');
+          }
+          setIsLoading(false);
+        };
+        loadData();
+      }, []);
+
+      // PWA Install Prompt
+      useEffect(() => {
+        const handleBeforeInstallPrompt = (e) => {
+          e.preventDefault();
+          setDeferredPrompt(e);
+          // Check if user hasn't dismissed the banner recently
+          const dismissed = localStorage.getItem('vetCalcInstallDismissed');
+          const dismissedTime = dismissed ? parseInt(dismissed) : 0;
+          const daysSinceDismissed = (Date.now() - dismissedTime) / (1000 * 60 * 60 * 24);
+          if (daysSinceDismissed > 7) {
+            setShowInstallBanner(true);
+          }
+        };
+        window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+        return () => window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
+      }, []);
+
+      // Toggle dark mode
+      const toggleDarkMode = () => {
+        const newMode = !darkMode;
+        setDarkMode(newMode);
+        localStorage.setItem('vetCalcDarkMode', newMode.toString());
+        if (newMode) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      };
+
+      // Handle PWA install
+      const handleInstallClick = async () => {
+        if (deferredPrompt) {
+          deferredPrompt.prompt();
+          const { outcome } = await deferredPrompt.userChoice;
+          if (outcome === 'accepted') {
+            setShowInstallBanner(false);
+          }
+          setDeferredPrompt(null);
+        }
+      };
+
+      // Dismiss install banner
+      const dismissInstallBanner = () => {
+        setShowInstallBanner(false);
+        localStorage.setItem('vetCalcInstallDismissed', Date.now().toString());
+      };
+
+      // Save medications to localStorage whenever they change
+      const saveMedications = (meds) => {
+        setMedications(meds);
+        localStorage.setItem('vetCalcMedications', JSON.stringify(meds));
+      };
+
+      // Toggle favorite
+      const toggleFavorite = (medId) => {
+        const newFavorites = favorites.includes(medId)
+          ? favorites.filter(id => id !== medId)
+          : [...favorites, medId];
+        setFavorites(newFavorites);
+        localStorage.setItem('vetCalcFavorites', JSON.stringify(newFavorites));
+      };
+
+      const filteredMeds = useMemo(() => {
+        let filtered = medications;
+
+        // Filter by search term
+        if (searchTerm) {
+          const term = searchTerm.toLowerCase();
+          filtered = filtered.filter(med =>
+            med.brand_name.toLowerCase().includes(term) ||
+            med.generic_name.toLowerCase().includes(term)
+          );
+        }
+
+        // Filter by category
+        if (activeCategory !== 'all') {
+          filtered = filtered.filter(med => getCategory(med) === activeCategory);
+        }
+
+        // Filter by favorites
+        if (showFavoritesOnly) {
+          filtered = filtered.filter(med => favorites.includes(med.id));
+        }
+
+        return filtered;
+      }, [searchTerm, medications, activeCategory, showFavoritesOnly, favorites]);
+
+      const calculateDosage = () => {
+        if (!selectedMed || !species || !weight) return;
+        const w = parseFloat(weight);
+        if (isNaN(w) || w <= 0) return;
+        const minDose = selectedMed.dose_mg_per_kg_min * w;
+        const maxDose = selectedMed.dose_mg_per_kg_max * w;
+        const avgDose = (minDose + maxDose) / 2;
+        let volumeData = null;
+        if (concentrationMg && concentrationMl) {
+          const concMg = parseFloat(concentrationMg);
+          const concMl = parseFloat(concentrationMl);
+          if (!isNaN(concMg) && !isNaN(concMl) && concMg > 0 && concMl > 0) {
+            const mgPerMl = concMg / concMl;
+            volumeData = {
+              minVolume: (minDose / mgPerMl).toFixed(2),
+              maxVolume: (maxDose / mgPerMl).toFixed(2),
+              avgVolume: (avgDose / mgPerMl).toFixed(2),
+              concentration: `${concMg}mg/${concMl}ml`
+            };
+          }
+        }
+        setResult({
+          minDose: minDose.toFixed(2),
+          maxDose: maxDose.toFixed(2),
+          avgDose: avgDose.toFixed(2),
+          volume: volumeData
+        });
+      };
+
+      const handleMedSelect = (med) => {
+        setSelectedMed(med);
+        setResult(null);
+        setConcentrationMg('');
+        setConcentrationMl('');
+        setShowConcentrationInput(false);
+        if (med.species === 'dog' || med.species === 'cat') {
+          setSpecies(med.species);
+        }
+        if (med.concentration_value && med.concentration_value > 0) {
+          setConcentrationMg(med.concentration_value.toString());
+          setConcentrationMl('1');
+        }
+      };
+
+      const resetForm = () => {
+        setSelectedMed(null);
+        setSpecies('');
+        setWeight('');
+        setResult(null);
+        setSearchTerm('');
+        setConcentrationMg('');
+        setConcentrationMl('');
+        setShowConcentrationInput(false);
+      };
+
+      const handleAddMedication = (newMed) => {
+        const medWithId = { ...newMed, id: Date.now().toString() };
+        saveMedications([...medications, medWithId]);
+        setShowAddModal(false);
+      };
+
+      const handleEditMedication = (updatedMed) => {
+        saveMedications(medications.map(m => m.id === updatedMed.id ? updatedMed : m));
+        setEditingMed(null);
+        if (selectedMed && selectedMed.id === updatedMed.id) {
+          setSelectedMed(updatedMed);
+        }
+      };
+
+      const handleDeleteMedication = (id) => {
+        saveMedications(medications.filter(m => m.id !== id));
+        setShowDeleteConfirm(null);
+        if (selectedMed && selectedMed.id === id) {
+          resetForm();
+        }
+      };
+
+      return (
+        <div className={`min-h-screen p-4 md:p-6 transition-colors duration-300 ${darkMode ? 'dark' : ''}`}>
+          {/* PWA Install Banner */}
+          {showInstallBanner && (
+            <div className="pwa-banner fixed top-0 left-0 right-0 z-50 p-4 text-white shadow-lg">
+              <div className="max-w-4xl mx-auto flex items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-white/20 rounded-xl">
+                    <Download />
+                  </div>
+                  <div>
+                    <div className="font-semibold">Install VetCalc Pro</div>
+                    <div className="text-sm text-emerald-100">Add to home screen for quick access</div>
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <button
+                    onClick={handleInstallClick}
+                    className="px-4 py-2 bg-white text-emerald-700 rounded-lg font-semibold hover:bg-emerald-50 transition-all"
+                  >
+                    Install
+                  </button>
+                  <button
+                    onClick={dismissInstallBanner}
+                    className="p-2 text-white/70 hover:text-white transition-all"
+                  >
+                    <X />
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+
+          <div className={`max-w-4xl mx-auto ${showInstallBanner ? 'pt-20' : ''}`}>
+            {/* Premium Header */}
+            <div className="glass rounded-3xl shadow-2xl overflow-hidden animate-fade-in">
+              <div className="gradient-header p-6 md:p-8 text-white relative overflow-hidden">
+                {/* Background decoration */}
+                <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32"></div>
+                <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
+
+                <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                  <div className="flex items-center gap-4">
+                    <div className="p-3 bg-white/20 rounded-2xl animate-float">
+                      <Stethoscope />
+                    </div>
+                    <div>
+                      <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight">VetCalc Pro</h1>
+                      <p className="text-emerald-100 text-sm md:text-base mt-1">
+                        {medications.length} Medications Available
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-2">
+                    {/* Dark Mode Toggle */}
+                    <button
+                      onClick={toggleDarkMode}
+                      className="p-2.5 rounded-xl bg-white/20 text-white hover:bg-white/30 transition-all"
+                      title={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+                    >
+                      {darkMode ? <Sun /> : <Moon />}
+                    </button>
+                    <button
+                      onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
+                      className={`px-4 py-2.5 rounded-xl font-semibold flex items-center gap-2 transition-all ${showFavoritesOnly
+                        ? 'bg-yellow-400 text-yellow-900 shadow-lg'
+                        : 'bg-white/20 text-white hover:bg-white/30'
+                        }`}
+                    >
+                      <Star filled={showFavoritesOnly} />
+                      <span className="hidden sm:inline">Favorites</span>
+                    </button>
+                    <button
+                      onClick={() => setShowAddModal(true)}
+                      className="bg-white text-emerald-700 px-4 py-2.5 rounded-xl font-semibold flex items-center gap-2 hover:bg-emerald-50 transition-all shadow-lg hover:shadow-xl hover-lift"
+                    >
+                      <Plus /> <span className="hidden sm:inline">Add Drug</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Category Filter Tabs */}
+              <div className="px-4 md:px-6 py-4 bg-white/50 border-b border-emerald-100 overflow-x-auto">
+                <div className="flex gap-2 min-w-max">
+                  {CATEGORIES.map(cat => (
+                    <button
+                      key={cat.id}
+                      onClick={() => setActiveCategory(cat.id)}
+                      className={`px-4 py-2 rounded-xl text-sm font-medium transition-all flex items-center gap-2 ${activeCategory === cat.id
+                        ? 'bg-emerald-500 text-white shadow-lg'
+                        : 'bg-white text-gray-600 hover:bg-emerald-50 border border-gray-200'
+                        }`}
+                    >
+                      <span>{cat.icon}</span>
+                      <span>{cat.name}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div className="p-4 md:p-6 space-y-6">
+                {/* Search Section */}
+                <div>
+                  <div className="relative">
+                    <div className="absolute left-4 top-1/2 -translate-y-1/2 text-emerald-500"><Search /></div>
+                    <input
+                      type="text"
+                      placeholder="Search medications by name..."
+                      value={searchTerm}
+                      onChange={(e) => setSearchTerm(e.target.value)}
+                      className="w-full pl-12 pr-4 py-4 bg-white border-2 border-emerald-100 rounded-2xl focus:border-emerald-500 transition-all text-gray-700 placeholder-gray-400 shadow-sm"
+                    />
+                    {searchTerm && (
+                      <button
+                        onClick={() => setSearchTerm('')}
+                        className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                      >
+                        <X />
+                      </button>
+                    )}
+                  </div>
+
+                  {/* Drug List */}
+                  {(searchTerm || activeCategory !== 'all' || showFavoritesOnly) && (
+                    <div className="mt-4 max-h-80 overflow-y-auto rounded-2xl border-2 border-emerald-100 bg-white shadow-inner">
+                      {isLoading ? (
+                        // Skeleton Loaders
+                        <div>
+                          <SkeletonCard />
+                          <SkeletonCard />
+                          <SkeletonCard />
+                          <SkeletonCard />
+                        </div>
+                      ) : filteredMeds.length > 0 ? (
+                        filteredMeds.map((med) => {
+                          const category = getCategory(med);
+                          const catInfo = CATEGORIES.find(c => c.id === category) || CATEGORIES[7];
+                          const isFavorite = favorites.includes(med.id);
+
+                          return (
+                            <div key={med.id} className="group relative border-b border-gray-100 last:border-b-0 hover:bg-emerald-50/50 transition-all">
+                              <button
+                                onClick={() => { handleMedSelect(med); setSearchTerm(''); }}
+                                className="w-full text-left p-4 pr-24"
+                              >
+                                <div className="flex items-start gap-3">
+                                  <span className={`mt-1 w-1.5 h-10 rounded-full ${catInfo.color}`}></span>
+                                  <div className="flex-1 min-w-0">
+                                    <div className="flex items-center gap-2 flex-wrap">
+                                      <span className="font-semibold text-gray-900">{med.brand_name}</span>
+                                      <span className={`px-2 py-0.5 rounded-full text-xs font-medium text-white ${catInfo.color}`}>
+                                        {catInfo.icon} {catInfo.name}
+                                      </span>
+                                    </div>
+                                    <div className="text-sm text-gray-600 truncate">{med.generic_name}</div>
+                                    <div className="text-xs text-gray-500 mt-1 flex items-center gap-2">
+                                      <span className="px-1.5 py-0.5 bg-emerald-100 text-emerald-700 rounded text-xs font-medium">{med.species === 'both' ? 'Dogs & Cats' : med.species === 'dog' ? 'Dog' : 'Cat'}</span>
+                                      <span>•</span>
+                                      <span>{med.dosage_form}</span>
+                                      <span>•</span>
+                                      <span>{med.route}</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </button>
+                              {/* Action buttons */}
+                              <div className="absolute right-2 top-1/2 -translate-y-1/2 flex gap-1">
+                                <button
+                                  onClick={(e) => { e.stopPropagation(); toggleFavorite(med.id); }}
+                                  className={`p-2 rounded-lg transition-all ${isFavorite ? 'text-yellow-500' : 'text-gray-300 hover:text-yellow-500'}`}
+                                >
+                                  <Star filled={isFavorite} />
+                                </button>
+                                <button
+                                  onClick={(e) => { e.stopPropagation(); setEditingMed(med); }}
+                                  className="p-2 text-gray-400 hover:text-emerald-600 hover:bg-emerald-100 rounded-lg transition-all opacity-0 group-hover:opacity-100"
+                                >
+                                  <Edit />
+                                </button>
+                                <button
+                                  onClick={(e) => { e.stopPropagation(); setShowDeleteConfirm(med); }}
+                                  className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-100 rounded-lg transition-all opacity-0 group-hover:opacity-100"
+                                >
+                                  <Trash />
+                                </button>
+                              </div>
+                            </div>
+                          );
+                        })
+                      ) : (
+                        <div className="p-8 text-center text-gray-500">
+                          <div className="text-4xl mb-2">🔍</div>
+                          <div className="font-medium">No medications found</div>
+                          <div className="text-sm mt-1">Try adjusting your search or filters</div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+
+                {selectedMed && (
+                  <div className="bg-gradient-to-r from-emerald-50 to-teal-50 border-2 border-emerald-200 rounded-2xl p-5 animate-fade-in">
+                    <div className="flex justify-between items-start">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-2">
+                          <span className="px-2.5 py-1 bg-emerald-500 text-white rounded-lg text-sm font-semibold">{selectedMed.species === 'both' ? 'Dogs & Cats' : selectedMed.species === 'dog' ? 'Dog' : 'Cat'}</span>
+                          <div>
+                            <h3 className="font-bold text-lg text-gray-900">{selectedMed.brand_name}</h3>
+                            <p className="text-emerald-700 font-medium">{selectedMed.generic_name}</p>
+                          </div>
+                        </div>
+                        <div className="mt-3 grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+                          <div className="bg-white/70 rounded-xl p-3">
+                            <div className="text-gray-500 text-xs mb-1">Form</div>
+                            <div className="font-semibold text-gray-800">{selectedMed.dosage_form}</div>
+                          </div>
+                          <div className="bg-white/70 rounded-xl p-3">
+                            <div className="text-gray-500 text-xs mb-1">Route</div>
+                            <div className="font-semibold text-gray-800">{selectedMed.route}</div>
+                          </div>
+                          <div className="bg-white/70 rounded-xl p-3">
+                            <div className="text-gray-500 text-xs mb-1">Dose</div>
+                            {selectedMed.dose_mg_per_kg_min === 0 && selectedMed.dose_mg_per_kg_max === 0 ? (
+                              <div className="font-semibold text-purple-600">Per animal</div>
+                            ) : (
+                              <div className="font-semibold text-gray-800">{selectedMed.dose_mg_per_kg_min}-{selectedMed.dose_mg_per_kg_max} mg/kg</div>
+                            )}
+                          </div>
+                          {selectedMed.frequency && (
+                            <div className="bg-white/70 rounded-xl p-3">
+                              <div className="text-gray-500 text-xs mb-1">Frequency</div>
+                              <div className="font-semibold text-gray-800">{selectedMed.frequency}</div>
+                            </div>
+                          )}
+                        </div>
+                        {selectedMed.unit_description && (
+                          <div className="mt-3 text-sm text-gray-600">
+                            <span className="font-semibold">Available:</span> {selectedMed.unit_description}
+                          </div>
+                        )}
+                      </div>
+                      <button onClick={resetForm} className="text-emerald-600 hover:text-emerald-800 text-sm font-semibold bg-white/70 px-3 py-1.5 rounded-lg hover:bg-white transition-all">
+                        ✕ Change
+                      </button>
+                    </div>
+                    {selectedMed.notes && (
+                      <div className="mt-4 p-4 bg-amber-50 border border-amber-200 rounded-xl text-sm text-gray-700">
+                        <span className="font-semibold text-amber-600">⚠️ Note:</span> {selectedMed.notes}
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {selectedMed && selectedMed.dose_mg_per_kg_min === 0 && selectedMed.dose_mg_per_kg_max === 0 && (
+                  <div className="bg-gradient-to-r from-purple-50 to-indigo-50 border-2 border-purple-300 rounded-lg p-6">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                      <span className="text-2xl">📋</span> Per-Animal Dosing
+                    </h3>
+                    <p className="text-gray-700 mb-4">
+                      This medication uses <span className="font-semibold text-purple-700">per-animal dosing</span> rather than weight-based (mg/kg) dosing.
+                      Please refer to the notes above for specific dosing instructions.
+                    </p>
+                    <div className="bg-white rounded-lg p-4 border border-purple-200">
+                      <div className="text-sm font-semibold text-purple-800 mb-2">💡 Dosing Guide:</div>
+                      <div className="text-gray-700 whitespace-pre-line">{selectedMed.notes}</div>
+                    </div>
+                    {selectedMed.frequency && (
+                      <div className="mt-3 text-sm text-gray-600">
+                        <span className="font-semibold">Frequency:</span> {selectedMed.frequency}
+                      </div>
+                    )}
+                  </div>
+                )}
+
+                {selectedMed && !(selectedMed.dose_mg_per_kg_min === 0 && selectedMed.dose_mg_per_kg_max === 0) && (
+                  <div className="space-y-4 animate-fade-in">
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <label className="block text-sm font-semibold text-gray-700 mb-2">🐾 Select Species</label>
+                        <div className="flex gap-3">
+                          <button
+                            onClick={() => setSpecies('dog')}
+                            disabled={selectedMed.species === 'cat'}
+                            className={`flex-1 p-4 rounded-2xl border-2 transition-all hover-lift ${species === 'dog' ? 'border-emerald-500 bg-emerald-50 shadow-lg' : 'border-gray-200 bg-white'} ${selectedMed.species === 'cat' ? 'opacity-50 cursor-not-allowed' : 'hover:border-emerald-300'}`}
+                          >
+                            <div className="w-10 h-10 mx-auto mb-2 text-emerald-600"><Dog /></div>
+                            <div className="font-semibold text-gray-800">Dog</div>
+                          </button>
+                          <button
+                            onClick={() => setSpecies('cat')}
+                            disabled={selectedMed.species === 'dog'}
+                            className={`flex-1 p-4 rounded-2xl border-2 transition-all hover-lift ${species === 'cat' ? 'border-emerald-500 bg-emerald-50 shadow-lg' : 'border-gray-200 bg-white'} ${selectedMed.species === 'dog' ? 'opacity-50 cursor-not-allowed' : 'hover:border-emerald-300'}`}
+                          >
+                            <div className="w-10 h-10 mx-auto mb-2 text-emerald-600"><Cat /></div>
+                            <div className="font-semibold text-gray-800">Cat</div>
+                          </button>
+                        </div>
+                      </div>
+                      <div>
+                        <label className="block text-sm font-semibold text-gray-700 mb-2">⚖️ Patient Weight</label>
+                        <div className="relative">
+                          <input
+                            type="number"
+                            step="0.1"
+                            min="0"
+                            placeholder="Enter weight"
+                            value={weight}
+                            onChange={(e) => setWeight(e.target.value)}
+                            className="w-full px-4 py-4 border-2 border-gray-200 rounded-2xl focus:border-emerald-500 bg-white text-lg"
+                          />
+                          <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 font-medium">kg</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-gradient-to-r from-violet-50 to-purple-50 border-2 border-violet-200 rounded-2xl p-4">
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="flex items-center gap-2 text-violet-700">
+                          <Droplet />
+                          <h4 className="font-semibold">Drug Concentration (Optional)</h4>
+                        </div>
+                        <button
+                          onClick={() => setShowConcentrationInput(!showConcentrationInput)}
+                          className={`px-3 py-1.5 rounded-lg text-sm font-semibold transition-all ${showConcentrationInput ? 'bg-violet-500 text-white' : 'bg-white text-violet-600 border border-violet-300 hover:bg-violet-100'}`}
+                        >
+                          {showConcentrationInput ? '✓ Enabled' : '+ Add'}
+                        </button>
+                      </div>
+                      {showConcentrationInput && (
+                        <div className="grid grid-cols-2 gap-3 animate-fade-in">
+                          <div>
+                            <label className="block text-xs font-semibold text-gray-700 mb-1">Drug Amount (mg)</label>
+                            <input
+                              type="number"
+                              step="0.1"
+                              placeholder="e.g., 100"
+                              value={concentrationMg}
+                              onChange={(e) => setConcentrationMg(e.target.value)}
+                              className="w-full px-3 py-3 border-2 border-gray-200 rounded-xl focus:border-violet-500 text-sm bg-white"
+                            />
+                          </div>
+                          <div>
+                            <label className="block text-xs font-semibold text-gray-700 mb-1">Per Volume (ml)</label>
+                            <input
+                              type="number"
+                              step="0.1"
+                              placeholder="e.g., 5"
+                              value={concentrationMl}
+                              onChange={(e) => setConcentrationMl(e.target.value)}
+                              className="w-full px-3 py-3 border-2 border-gray-200 rounded-xl focus:border-violet-500 text-sm bg-white"
+                            />
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                {selectedMed && !(selectedMed.dose_mg_per_kg_min === 0 && selectedMed.dose_mg_per_kg_max === 0) && species && weight && (
+                  <button
+                    onClick={calculateDosage}
+                    className="w-full gradient-primary text-white py-5 rounded-2xl font-bold text-lg transition-all flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl hover-lift animate-pulse-glow"
+                  >
+                    <Calculator /> Calculate Dosage
+                  </button>
+                )}
+
+                {result && (
+                  <div className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 border-2 border-emerald-300 rounded-3xl p-6 animate-fade-in shadow-lg">
+                    <h3 className="text-xl font-bold text-gray-900 mb-5 flex items-center gap-3">
+                      <span className="p-2 bg-emerald-500 text-white rounded-xl">💊</span>
+                      <span>Calculated Dosage</span>
+                    </h3>
+                    <div className="mb-5">
+                      <div className="text-sm text-gray-600 mb-3 font-semibold uppercase tracking-wide">Dosage (mg)</div>
+                      <div className="grid md:grid-cols-3 gap-4">
+                        <div className="bg-white rounded-2xl p-5 text-center shadow-sm hover-lift border border-gray-100">
+                          <div className="text-xs text-gray-500 mb-2 uppercase tracking-wide">Minimum</div>
+                          <div className="text-3xl font-bold text-gray-700">{result.minDose}</div>
+                          <div className="text-sm text-gray-500">mg</div>
+                        </div>
+                        <div className="bg-emerald-500 rounded-2xl p-5 text-center shadow-lg hover-lift">
+                          <div className="text-xs text-emerald-100 mb-2 uppercase tracking-wide">Recommended</div>
+                          <div className="text-3xl font-bold text-white">{result.avgDose}</div>
+                          <div className="text-sm text-emerald-100">mg</div>
+                        </div>
+                        <div className="bg-white rounded-2xl p-5 text-center shadow-sm hover-lift border border-gray-100">
+                          <div className="text-xs text-gray-500 mb-2 uppercase tracking-wide">Maximum</div>
+                          <div className="text-3xl font-bold text-gray-700">{result.maxDose}</div>
+                          <div className="text-sm text-gray-500">mg</div>
+                        </div>
+                      </div>
+                    </div>
+                    {result.volume && (
+                      <div className="mb-5">
+                        <div className="text-sm text-gray-600 mb-3 font-semibold flex items-center gap-2 uppercase tracking-wide">
+                          <Droplet className="text-violet-500" /> Volume at {result.volume.concentration}
+                        </div>
+                        <div className="grid md:grid-cols-3 gap-4">
+                          <div className="bg-violet-50 rounded-2xl p-5 text-center border border-violet-200 hover-lift">
+                            <div className="text-xs text-violet-600 mb-2 uppercase tracking-wide">Minimum</div>
+                            <div className="text-3xl font-bold text-violet-700">{result.volume.minVolume}</div>
+                            <div className="text-sm text-violet-500">ml</div>
+                          </div>
+                          <div className="bg-violet-500 rounded-2xl p-5 text-center shadow-lg hover-lift">
+                            <div className="text-xs text-violet-100 mb-2 uppercase tracking-wide">Recommended</div>
+                            <div className="text-3xl font-bold text-white">{result.volume.avgVolume}</div>
+                            <div className="text-sm text-violet-100">ml</div>
+                          </div>
+                          <div className="bg-violet-50 rounded-2xl p-5 text-center border border-violet-200 hover-lift">
+                            <div className="text-xs text-violet-600 mb-2 uppercase tracking-wide">Maximum</div>
+                            <div className="text-3xl font-bold text-violet-700">{result.volume.maxVolume}</div>
+                            <div className="text-sm text-violet-500">ml</div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                    <div className="mt-5 p-5 bg-white rounded-2xl border-2 border-emerald-200 shadow-sm">
+                      <div className="font-bold text-lg text-emerald-700 mb-3 flex items-center gap-2">
+                        📋 Prescription Summary
+                      </div>
+                      <div className="grid md:grid-cols-2 gap-3 text-sm">
+                        <div className="flex items-center gap-2 p-2 bg-gray-50 rounded-lg">
+                          <span className="px-2 py-0.5 bg-emerald-100 text-emerald-700 rounded text-xs font-semibold">{species === 'dog' ? 'Dog' : 'Cat'}</span>
+                          <span><span className="font-semibold">Patient:</span> {weight}kg</span>
+                        </div>
+                        <div className="flex items-center gap-2 p-2 bg-gray-50 rounded-lg">
+                          <span className="text-lg">💊</span>
+                          <span><span className="font-semibold">Drug:</span> {selectedMed.brand_name}</span>
+                        </div>
+                        <div className="flex items-center gap-2 p-2 bg-emerald-50 rounded-lg">
+                          <span className="text-lg">💉</span>
+                          <span><span className="font-semibold">Dose:</span> {result.avgDose}mg ({result.minDose}-{result.maxDose}mg)</span>
+                        </div>
+                        {result.volume && (
+                          <div className="flex items-center gap-2 p-2 bg-violet-50 rounded-lg">
+                            <span className="text-lg">💧</span>
+                            <span><span className="font-semibold">Volume:</span> {result.volume.avgVolume}ml</span>
+                          </div>
+                        )}
+                        <div className="flex items-center gap-2 p-2 bg-gray-50 rounded-lg">
+                          <span className="text-lg">🩺</span>
+                          <span><span className="font-semibold">Route:</span> {selectedMed.route}</span>
+                        </div>
+                        {selectedMed.frequency && (
+                          <div className="flex items-center gap-2 p-2 bg-gray-50 rounded-lg">
+                            <span className="text-lg">⏰</span>
+                            <span><span className="font-semibold">Frequency:</span> {selectedMed.frequency}</span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* Footer */}
+            <div className="text-center mt-8 space-y-3">
+              <p className="text-gray-500 text-sm">⚕️ Always verify dosages before prescribing</p>
+              <p className="text-emerald-600 text-sm font-medium flex items-center justify-center gap-2">
+                <span className="text-lg">👨‍💻</span>
+                Developed by <span className="font-bold">Mahmoud Abdelnasser</span>
+              </p>
+            </div>
+          </div>
+
+          {/* Add/Edit Modal */}
+          {(showAddModal || editingMed) && (
+            <MedicationModal
+              medication={editingMed}
+              onSave={editingMed ? handleEditMedication : handleAddMedication}
+              onClose={() => { setShowAddModal(false); setEditingMed(null); }}
+            />
+          )}
+
+          {/* Delete Confirmation */}
+          {showDeleteConfirm && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+              <div className="bg-white rounded-lg p-6 max-w-md w-full">
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Delete Medication?</h3>
+                <p className="text-gray-600 mb-4">
+                  Are you sure you want to delete <span className="font-semibold">{showDeleteConfirm.brand_name}</span>? This action cannot be undone.
+                </p>
+                <div className="flex gap-3">
+                  <button
+                    onClick={() => setShowDeleteConfirm(null)}
+                    className="flex-1 px-4 py-2 border-2 border-gray-300 rounded-lg font-semibold hover:bg-gray-50"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    onClick={() => handleDeleteMedication(showDeleteConfirm.id)}
+                    className="flex-1 px-4 py-2 bg-red-500 text-white rounded-lg font-semibold hover:bg-red-600"
+                  >
+                    Delete
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      );
+    };
+
+    const MedicationModal = ({ medication, onSave, onClose }) => {
+      const [formData, setFormData] = useState(medication || {
+        brand_name: '',
+        generic_name: '',
+        species: 'both',
+        dose_mg_per_kg_min: '',
+        dose_mg_per_kg_max: '',
+        concentration_value: '',
+        concentration_unit: '',
+        dosage_form: '',
+        route: '',
+        unit_description: '',
+        notes: ''
+      });
+
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!formData.brand_name || !formData.generic_name || !formData.dose_mg_per_kg_min || !formData.dose_mg_per_kg_max) {
+          alert('Please fill in all required fields (marked with *)');
+          return;
+        }
+        const processedData = {
+          ...formData,
+          dose_mg_per_kg_min: parseFloat(formData.dose_mg_per_kg_min),
+          dose_mg_per_kg_max: parseFloat(formData.dose_mg_per_kg_max),
+          concentration_value: formData.concentration_value ? parseFloat(formData.concentration_value) : null
+        };
+        onSave(processedData);
+      };
+
+      return (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 overflow-y-auto">
+          <div className="bg-white rounded-lg p-4 sm:p-6 max-w-2xl w-full my-4 sm:my-8 max-h-[90vh] overflow-y-auto">
+            <div className="flex justify-between items-center mb-4 sticky top-0 bg-white pb-2 border-b border-gray-200">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
+                {medication ? 'Edit Medication' : 'Add New Medication'}
+              </h3>
+              <button onClick={onClose} className="text-gray-500 hover:text-gray-700 p-2">
+                <X />
+              </button>
+            </div>
+
+            <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4 mt-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">
+                    Brand Name <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    value={formData.brand_name}
+                    onChange={(e) => setFormData({ ...formData, brand_name: e.target.value })}
+                    className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    placeholder="e.g., Augmentin"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">
+                    Generic Name <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    value={formData.generic_name}
+                    onChange={(e) => setFormData({ ...formData, generic_name: e.target.value })}
+                    className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    placeholder="e.g., Amoxicillin"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-1">Species</label>
+                <select
+                  value={formData.species}
+                  onChange={(e) => setFormData({ ...formData, species: e.target.value })}
+                  className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                >
+                  <option value="both">Both (Dogs & Cats)</option>
+                  <option value="dog">Dogs Only</option>
+                  <option value="cat">Cats Only</option>
+                </select>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">
+                    Min Dose (mg/kg) <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="number"
+                    step="0.01"
+                    value={formData.dose_mg_per_kg_min}
+                    onChange={(e) => setFormData({ ...formData, dose_mg_per_kg_min: e.target.value })}
+                    className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    placeholder="e.g., 10"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">
+                    Max Dose (mg/kg) <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="number"
+                    step="0.01"
+                    value={formData.dose_mg_per_kg_max}
+                    onChange={(e) => setFormData({ ...formData, dose_mg_per_kg_max: e.target.value })}
+                    className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    placeholder="e.g., 20"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">Dosage Form</label>
+                  <input
+                    type="text"
+                    value={formData.dosage_form}
+                    onChange={(e) => setFormData({ ...formData, dosage_form: e.target.value })}
+                    className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    placeholder="e.g., tablet, injectable"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">Route</label>
+                  <input
+                    type="text"
+                    value={formData.route}
+                    onChange={(e) => setFormData({ ...formData, route: e.target.value })}
+                    className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    placeholder="e.g., PO, IV, IM, SC"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">Concentration Value</label>
+                  <input
+                    type="number"
+                    step="0.01"
+                    value={formData.concentration_value}
+                    onChange={(e) => setFormData({ ...formData, concentration_value: e.target.value })}
+                    className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    placeholder="e.g., 250"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">Concentration Unit</label>
+                  <input
+                    type="text"
+                    value={formData.concentration_unit}
+                    onChange={(e) => setFormData({ ...formData, concentration_unit: e.target.value })}
+                    className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    placeholder="e.g., mg/tab, mg/ml"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-1">Available Preparations</label>
+                <input
+                  type="text"
+                  value={formData.unit_description}
+                  onChange={(e) => setFormData({ ...formData, unit_description: e.target.value })}
+                  className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                  placeholder="e.g., Tablets 250-500 mg, Vials 1000mg"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-1">Notes / Warnings</label>
+                <textarea
+                  value={formData.notes}
+                  onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
+                  className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                  rows="3"
+                  placeholder="Any special instructions, warnings, or contraindications..."
+                />
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-3 pt-4 sticky bottom-0 bg-white border-t border-gray-200 pb-2">
+                <button
+                  type="button"
+                  onClick={onClose}
+                  className="w-full sm:flex-1 px-4 py-3 text-base border-2 border-gray-300 rounded-lg font-semibold hover:bg-gray-50 transition"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="w-full sm:flex-1 px-4 py-3 text-base bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition"
+                >
+                  {medication ? 'Save Changes' : 'Add Medication'}
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      );
+    };
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<VetDosageCalculator />);
+  </script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(reg => console.log('✅ Service Worker registered - Full offline support active!'))
+          .catch(err => console.log('Service Worker registration failed:', err));
+      });
+    }
+  </script>
+</body>
+
+</html>
