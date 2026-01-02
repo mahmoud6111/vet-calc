@@ -1,11 +1,11 @@
 {
-  "name": "Vet Dosage Calculator Pro",
+  "name": "VetCalc Pro - Veterinary Dosage Calculator",
   "short_name": "VetCalc Pro",
-  "description": "Full-featured offline veterinary dosage calculator with 19 medications",
+  "description": "Premium veterinary dosage calculator with 83+ medications. Created by Mahmoud Abdelnasser.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#2563eb",
+  "background_color": "#ecfdf5",
+  "theme_color": "#059669",
   "orientation": "portrait",
   "scope": "/",
   "icons": [
