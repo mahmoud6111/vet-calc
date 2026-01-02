@@ -1,4 +1,4 @@
-const CACHE_NAME = 'vet-calc-pro-v5';
+const CACHE_NAME = 'vet-calc-pro-v6';
 const urlsToCache = [
   '/',
   '/index.html',
