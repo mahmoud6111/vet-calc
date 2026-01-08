@@ -1,0 +1,22 @@
+{
+    "name": "vetcalc-pro",
+    "version": "1.0.0",
+    "description": "VetCalc Pro - Premium Veterinary Dosage Calculator",
+    "main": "index.html",
+    "scripts": {
+        "build": "mkdir dist 2>nul & copy index.html dist\\ & copy sw.js dist\\ & copy manifest.json dist\\ & copy icon-192.png dist\\ & copy icon-512.png dist\\",
+        "cap:sync": "npx cap sync",
+        "cap:open:android": "npx cap open android",
+        "cap:open:ios": "npx cap open ios"
+    },
+    "author": "Mahmoud Abdelnasser",
+    "license": "MIT",
+    "dependencies": {
+        "@capacitor/android": "^6.0.0",
+        "@capacitor/core": "^6.0.0",
+        "@capacitor/ios": "^6.0.0"
+    },
+    "devDependencies": {
+        "@capacitor/cli": "^6.0.0"
+    }
+}
