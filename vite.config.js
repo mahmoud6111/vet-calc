@@ -18,7 +18,7 @@ export default defineConfig({
         const outDir = resolve(__dirname, 'dist');
         if (!existsSync(outDir)) mkdirSync(outDir, { recursive: true });
 
-        const files = ['sw.js', 'manifest.json', 'icon-192.png', 'icon-512.png'];
+        const files = ['sw.js', 'manifest.json', 'icon-192.png', 'icon-512.png', 'og-image.png'];
         for (const f of files) {
           const src = resolve(__dirname, f);
           if (existsSync(src)) copyFileSync(src, resolve(outDir, f));
@@ -70,6 +70,7 @@ export default defineConfig({
             .replace(/sizes="192x192"[^>]*href="[^"]*"/g, 'sizes="192x192" href="/icon-192.png"')
             .replace(/sizes="512x512"[^>]*href="[^"]*"/g, 'sizes="512x512" href="/icon-512.png"')
             .replace(/rel="apple-touch-icon"[^>]*href="[^"]*"/g, 'rel="apple-touch-icon" href="/icon-192.png"')
+            .replace(/content="\/assets\/og-image-[^"]+\.png"/g, 'content="/og-image.png"')
             .replace(/<link[^>]*rel="preconnect"[^>]*>/g, '');
 
           writeFileSync(htmlPath, html);

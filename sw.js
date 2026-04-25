@@ -1,4 +1,4 @@
-const CACHE_NAME = 'vet-idrug-v2';
+const CACHE_NAME = 'vet-idrug-v3';
 
 const urlsToCache = [
   '/',
@@ -6,6 +6,7 @@ const urlsToCache = [
   '/manifest.json',
   '/icon-192.png',
   '/icon-512.png',
+  '/og-image.png',
   '/fonts/inter.css',
   '/fonts/Inter-400.ttf',
   '/fonts/Inter-500.ttf',
