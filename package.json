@@ -5,7 +5,7 @@
     "main": "index.html",
     "scripts": {
         "dev": "vite",
-        "build": "mkdir dist 2>nul & copy index.html dist\\ & copy sw.js dist\\ & copy manifest.json dist\\ & copy icon-192.png dist\\ & copy icon-512.png dist\\",
+        "build": "vite build",
         "cap:sync": "npx cap sync",
         "cap:open:android": "npx cap open android",
         "cap:open:ios": "npx cap open ios"
