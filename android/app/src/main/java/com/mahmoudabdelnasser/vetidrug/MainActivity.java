@@ -1,4 +1,4 @@
-package com.mahmoudabdelnasser.vetcalcpro;
+package com.mahmoudabdelnasser.vetidrug;
 
 import com.getcapacitor.BridgeActivity;
 

@@ -1,6 +1,6 @@
 {
-    "appId": "com.mahmoudabdelnasser.vetcalcpro",
-    "appName": "VetCalc Pro",
+    "appId": "com.mahmoudabdelnasser.vetidrug",
+    "appName": "Vet-iDrug",
     "webDir": "dist",
     "server": {
         "androidScheme": "https"

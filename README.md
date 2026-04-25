@@ -1,4 +1,4 @@
-# VetCalc Pro
+# Vet-iDrug
 
 Premium Veterinary Dosage Calculator with 83+ medications.
 

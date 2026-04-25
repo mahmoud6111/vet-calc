@@ -1,6 +1,6 @@
 {
-  "name": "VetCalc Pro - Veterinary Dosage Calculator",
-  "short_name": "VetCalc Pro",
+  "name": "Vet-iDrug - Veterinary Dosage Calculator",
+  "short_name": "Vet-iDrug",
   "description": "Premium veterinary dosage calculator with 83+ medications. Created by Mahmoud Abdelnasser.",
   "start_url": "/",
   "display": "standalone",
