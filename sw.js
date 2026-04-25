@@ -1,15 +1,21 @@
-const CACHE_NAME = 'vet-idrug-v1';
+const CACHE_NAME = 'vet-idrug-v2';
+
 const urlsToCache = [
   '/',
   '/index.html',
   '/manifest.json',
   '/icon-192.png',
   '/icon-512.png',
-  'https://unpkg.com/react@18/umd/react.production.min.js',
-  'https://unpkg.com/react-dom@18/umd/react-dom.production.min.js',
-  'https://unpkg.com/@babel/standalone/babel.min.js',
-  'https://cdn.tailwindcss.com',
-  'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap'
+  '/fonts/inter.css',
+  '/fonts/Inter-400.ttf',
+  '/fonts/Inter-500.ttf',
+  '/fonts/Inter-600.ttf',
+  '/fonts/Inter-700.ttf',
+  '/fonts/Inter-800.ttf',
+  '/vendor/react.production.min.js',
+  '/vendor/react-dom.production.min.js',
+  '/vendor/babel.min.js',
+  '/vendor/tailwind.js'
 ];
 
 self.addEventListener('install', event => {
