@@ -3,16 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#059669">
   <meta name="description" content="Vet-iDrug - Veterinary Dosage Calculator - Premium Offline App for Pet Hospitals">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <title>Vet-iDrug - Veterinary Dosage Calculator</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
-  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+  <link rel="apple-touch-icon" href="/icon-192.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -314,6 +314,14 @@
       direction: rtl;
       text-align: right;
       font-family: 'Noto Sans Arabic', 'Arial', sans-serif;
+    }
+
+    .scroll-tabs {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .scroll-tabs::-webkit-scrollbar {
+      display: none;
     }
 
     #splash-screen {
@@ -810,7 +818,7 @@
           {/* PWA Install Banner */}
           {showInstallBanner && (
             <div className="pwa-banner fixed top-0 left-0 right-0 z-50 p-4 text-white shadow-lg">
-              <div className="max-w-4xl mx-auto flex items-center justify-between gap-4">
+              <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
                 <div className="flex items-center gap-3">
                   <div className="p-2 bg-white/20 rounded-xl">
                     <Download />
@@ -823,13 +831,13 @@
                 <div className="flex gap-2">
                   <button
                     onClick={handleInstallClick}
-                    className="px-4 py-2 bg-white text-emerald-700 rounded-lg font-semibold hover:bg-emerald-50 transition-all"
+                    className="px-4 py-2.5 bg-white text-emerald-700 rounded-lg font-semibold hover:bg-emerald-50 transition-all active:scale-95"
                   >
                     Install
                   </button>
                   <button
                     onClick={dismissInstallBanner}
-                    className="p-2 text-white/70 hover:text-white transition-all"
+                    className="p-2.5 text-white/70 hover:text-white transition-all"
                   >
                     <X />
                   </button>
@@ -841,7 +849,7 @@
           <div className={`max-w-4xl mx-auto ${showInstallBanner ? 'pt-20' : ''}`}>
             {/* Premium Header */}
             <div className="glass rounded-3xl shadow-2xl overflow-hidden animate-fade-in">
-              <div className="gradient-header p-6 md:p-8 text-white relative overflow-hidden">
+              <div className="gradient-header p-4 md:p-8 text-white relative overflow-hidden">
                 {/* Background decoration */}
                 <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32"></div>
                 <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
@@ -862,14 +870,14 @@
                     {/* Dark Mode Toggle */}
                     <button
                       onClick={toggleDarkMode}
-                      className="p-2.5 rounded-xl bg-white/20 text-white hover:bg-white/30 transition-all"
+                      className="p-3 rounded-xl bg-white/20 text-white hover:bg-white/30 transition-all active:scale-95"
                       title={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
                     >
                       {darkMode ? <Sun /> : <Moon />}
                     </button>
                     <button
                       onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
-                      className={`px-4 py-2.5 rounded-xl font-semibold flex items-center gap-2 transition-all ${showFavoritesOnly
+                      className={`px-4 py-3 rounded-xl font-semibold flex items-center gap-2 transition-all active:scale-95 ${showFavoritesOnly
                         ? 'bg-yellow-400 text-yellow-900 shadow-lg'
                         : 'bg-white/20 text-white hover:bg-white/30'
                         }`}
@@ -879,7 +887,7 @@
                     </button>
                     <button
                       onClick={() => setShowAddModal(true)}
-                      className="bg-white text-emerald-700 px-4 py-2.5 rounded-xl font-semibold flex items-center gap-2 hover:bg-emerald-50 transition-all shadow-lg hover:shadow-xl hover-lift"
+                      className="bg-white text-emerald-700 px-4 py-3 rounded-xl font-semibold flex items-center gap-2 hover:bg-emerald-50 transition-all shadow-lg hover:shadow-xl hover-lift active:scale-95"
                     >
                       <Plus /> <span className="hidden sm:inline">Add Drug</span>
                     </button>
@@ -888,13 +896,13 @@
               </div>
 
               {/* Category Filter Tabs */}
-              <div className="px-4 md:px-6 py-4 bg-white/50 border-b border-emerald-100 overflow-x-auto">
+              <div className="px-4 md:px-6 py-4 bg-white/50 border-b border-emerald-100 overflow-x-auto scroll-tabs">
                 <div className="flex gap-2 min-w-max">
                   {CATEGORIES.map(cat => (
                     <button
                       key={cat.id}
                       onClick={() => setActiveCategory(cat.id)}
-                      className={`px-4 py-2 rounded-xl text-sm font-medium transition-all flex items-center gap-2 ${activeCategory === cat.id
+                      className={`px-4 py-2.5 rounded-xl text-sm font-medium transition-all flex items-center gap-2 whitespace-nowrap ${activeCategory === cat.id
                         ? 'bg-emerald-500 text-white shadow-lg'
                         : 'bg-white text-gray-600 hover:bg-emerald-50 border border-gray-200'
                         }`}
@@ -921,7 +929,7 @@
                     {searchTerm && (
                       <button
                         onClick={() => setSearchTerm('')}
-                        className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                        className="absolute right-3 top-1/2 -translate-y-1/2 p-1.5 text-gray-400 hover:text-gray-600 rounded-lg active:scale-95"
                       >
                         <X />
                       </button>
@@ -947,9 +955,9 @@
 
                           return (
                             <div key={med.id} className="group relative border-b border-gray-100 last:border-b-0 hover:bg-emerald-50/50 transition-all">
-                              <button
+<button
                                 onClick={() => { handleMedSelect(med); setSearchTerm(''); }}
-                                className="w-full text-left p-4 pr-24"
+                                className="w-full text-left p-4 pr-16 sm:pr-24"
                               >
                                 <div className="flex items-start gap-3">
                                   <span className={`mt-1 w-1.5 h-10 rounded-full ${catInfo.color}`}></span>
@@ -960,9 +968,9 @@
                                         {catInfo.icon} {catInfo.name}
                                       </span>
                                     </div>
-                                    <div className="text-sm text-gray-600 truncate">{med.generic_name}</div>
-                                    <div className="text-xs text-gray-500 mt-1 flex items-center gap-2">
-                                      <span className="px-1.5 py-0.5 bg-emerald-100 text-emerald-700 rounded text-xs font-medium">{med.species === 'both' ? 'Dogs & Cats' : med.species === 'dog' ? 'Dog' : 'Cat'}</span>
+                                    <div className="text-sm text-gray-600 line-clamp-2">{med.generic_name}</div>
+                                    <div className="text-sm text-gray-500 mt-1 flex items-center gap-2 flex-wrap">
+                                      <span className="px-1.5 py-0.5 bg-emerald-100 text-emerald-700 rounded text-sm font-medium">{med.species === 'both' ? 'Dogs & Cats' : med.species === 'dog' ? 'Dog' : 'Cat'}</span>
                                       <span>•</span>
                                       <span>{med.dosage_form}</span>
                                       <span>•</span>
@@ -975,19 +983,20 @@
                               <div className="absolute right-2 top-1/2 -translate-y-1/2 flex gap-1">
                                 <button
                                   onClick={(e) => { e.stopPropagation(); toggleFavorite(med.id); }}
-                                  className={`p-2 rounded-lg transition-all ${isFavorite ? 'text-yellow-500' : 'text-gray-300 hover:text-yellow-500'}`}
+                                  className={`p-2.5 rounded-lg transition-all ${isFavorite ? 'text-yellow-500' : 'text-gray-300 hover:text-yellow-500'}`}
                                 >
                                   <Star filled={isFavorite} />
                                 </button>
                                 <button
                                   onClick={(e) => { e.stopPropagation(); setEditingMed(med); }}
-                                  className="p-2 text-gray-400 hover:text-emerald-600 hover:bg-emerald-100 rounded-lg transition-all opacity-0 group-hover:opacity-100"
+                                  className="p-2.5 text-gray-400 hover:text-emerald-600 hover:bg-emerald-100 rounded-lg transition-all sm:opacity-0 sm:group-hover:opacity-100"
+
                                 >
                                   <Edit />
                                 </button>
                                 <button
                                   onClick={(e) => { e.stopPropagation(); setShowDeleteConfirm(med); }}
-                                  className="p-2 text-gray-400 hover:text-red-600 hover:bg-red-100 rounded-lg transition-all opacity-0 group-hover:opacity-100"
+                                  className="p-2.5 text-gray-400 hover:text-red-600 hover:bg-red-100 rounded-lg transition-all sm:opacity-0 sm:group-hover:opacity-100"
                                 >
                                   <Trash />
                                 </button>
@@ -1017,7 +1026,7 @@
                             <p className="text-emerald-700 font-medium">{selectedMed.generic_name}</p>
                           </div>
                         </div>
-                        <div className="mt-3 grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+                        <div className="mt-3 grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm">
                           <div className="bg-white/70 rounded-xl p-3">
                             <div className="text-gray-500 text-xs mb-1">Form</div>
                             <div className="font-semibold text-gray-800">{selectedMed.dosage_form}</div>
@@ -1047,7 +1056,7 @@
                           </div>
                         )}
                       </div>
-                      <button onClick={resetForm} className="text-emerald-600 hover:text-emerald-800 text-sm font-semibold bg-white/70 px-3 py-1.5 rounded-lg hover:bg-white transition-all">
+                      <button onClick={resetForm} className="text-emerald-600 hover:text-emerald-800 text-sm font-semibold bg-white/70 px-4 py-2 rounded-lg hover:bg-white transition-all active:scale-95">
                         ✕ Change
                       </button>
                     </div>
@@ -1130,15 +1139,15 @@
                         </div>
                         <button
                           onClick={() => setShowConcentrationInput(!showConcentrationInput)}
-                          className={`px-3 py-1.5 rounded-lg text-sm font-semibold transition-all ${showConcentrationInput ? 'bg-violet-500 text-white' : 'bg-white text-violet-600 border border-violet-300 hover:bg-violet-100'}`}
+                          className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all ${showConcentrationInput ? 'bg-violet-500 text-white' : 'bg-white text-violet-600 border border-violet-300 hover:bg-violet-100'}`}
                         >
                           {showConcentrationInput ? '✓ Enabled' : '+ Add'}
                         </button>
                       </div>
                       {showConcentrationInput && (
-                        <div className="grid grid-cols-2 gap-3 animate-fade-in">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 animate-fade-in">
                           <div>
-                            <label className="block text-xs font-semibold text-gray-700 mb-1">Drug Amount (mg)</label>
+                            <label className="block text-sm font-semibold text-gray-700 mb-1">Drug Amount (mg)</label>
                             <input
                               type="number"
                               step="0.1"
@@ -1149,7 +1158,7 @@
                             />
                           </div>
                           <div>
-                            <label className="block text-xs font-semibold text-gray-700 mb-1">Per Volume (ml)</label>
+                            <label className="block text-sm font-semibold text-gray-700 mb-1">Per Volume (ml)</label>
                             <input
                               type="number"
                               step="0.1"
@@ -1168,7 +1177,7 @@
                 {selectedMed && !(selectedMed.dose_mg_per_kg_min === 0 && selectedMed.dose_mg_per_kg_max === 0) && species && weight && (
                   <button
                     onClick={calculateDosage}
-                    className="w-full gradient-primary text-white py-5 rounded-2xl font-bold text-lg transition-all flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl hover-lift animate-pulse-glow"
+                    className="w-full gradient-primary text-white py-5 rounded-2xl font-bold text-lg transition-all flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl hover-lift animate-pulse-glow active:scale-[0.98]"
                   >
                     <Calculator /> Calculate Dosage
                   </button>
@@ -1184,17 +1193,17 @@
                       <div className="text-sm text-gray-600 mb-3 font-semibold uppercase tracking-wide">Dosage (mg)</div>
                       <div className="grid md:grid-cols-3 gap-4">
                         <div className="bg-white rounded-2xl p-5 text-center shadow-sm hover-lift border border-gray-100">
-                          <div className="text-xs text-gray-500 mb-2 uppercase tracking-wide">Minimum</div>
+                          <div className="text-sm text-gray-500 mb-2 uppercase tracking-wide">Minimum</div>
                           <div className="text-3xl font-bold text-gray-700">{result.minDose}</div>
                           <div className="text-sm text-gray-500">mg</div>
                         </div>
                         <div className="bg-emerald-500 rounded-2xl p-5 text-center shadow-lg hover-lift">
-                          <div className="text-xs text-emerald-100 mb-2 uppercase tracking-wide">Recommended</div>
+                          <div className="text-sm text-emerald-100 mb-2 uppercase tracking-wide">Recommended</div>
                           <div className="text-3xl font-bold text-white">{result.avgDose}</div>
                           <div className="text-sm text-emerald-100">mg</div>
                         </div>
                         <div className="bg-white rounded-2xl p-5 text-center shadow-sm hover-lift border border-gray-100">
-                          <div className="text-xs text-gray-500 mb-2 uppercase tracking-wide">Maximum</div>
+                          <div className="text-sm text-gray-500 mb-2 uppercase tracking-wide">Maximum</div>
                           <div className="text-3xl font-bold text-gray-700">{result.maxDose}</div>
                           <div className="text-sm text-gray-500">mg</div>
                         </div>
@@ -1207,17 +1216,17 @@
                         </div>
                         <div className="grid md:grid-cols-3 gap-4">
                           <div className="bg-violet-50 rounded-2xl p-5 text-center border border-violet-200 hover-lift">
-                            <div className="text-xs text-violet-600 mb-2 uppercase tracking-wide">Minimum</div>
+                            <div className="text-sm text-violet-600 mb-2 uppercase tracking-wide">Minimum</div>
                             <div className="text-3xl font-bold text-violet-700">{result.volume.minVolume}</div>
                             <div className="text-sm text-violet-500">ml</div>
                           </div>
                           <div className="bg-violet-500 rounded-2xl p-5 text-center shadow-lg hover-lift">
-                            <div className="text-xs text-violet-100 mb-2 uppercase tracking-wide">Recommended</div>
+                            <div className="text-sm text-violet-100 mb-2 uppercase tracking-wide">Recommended</div>
                             <div className="text-3xl font-bold text-white">{result.volume.avgVolume}</div>
                             <div className="text-sm text-violet-100">ml</div>
                           </div>
                           <div className="bg-violet-50 rounded-2xl p-5 text-center border border-violet-200 hover-lift">
-                            <div className="text-xs text-violet-600 mb-2 uppercase tracking-wide">Maximum</div>
+                            <div className="text-sm text-violet-600 mb-2 uppercase tracking-wide">Maximum</div>
                             <div className="text-3xl font-bold text-violet-700">{result.volume.maxVolume}</div>
                             <div className="text-sm text-violet-500">ml</div>
                           </div>
@@ -1229,25 +1238,25 @@
                         📋 Prescription Summary
                       </div>
                       <div className="grid md:grid-cols-2 gap-3 text-sm">
-                        <div className="flex items-center gap-2 p-2 bg-gray-50 rounded-lg">
-                          <span className="px-2 py-0.5 bg-emerald-100 text-emerald-700 rounded text-xs font-semibold">{species === 'dog' ? 'Dog' : 'Cat'}</span>
+                        <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg">
+                          <span className="px-2 py-0.5 bg-emerald-100 text-emerald-700 rounded text-sm font-semibold">{species === 'dog' ? 'Dog' : 'Cat'}</span>
                           <span><span className="font-semibold">Patient:</span> {weight}kg</span>
                         </div>
-                        <div className="flex items-center gap-2 p-2 bg-gray-50 rounded-lg">
+                        <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg">
                           <span className="text-lg">💊</span>
                           <span><span className="font-semibold">Drug:</span> {selectedMed.brand_name}</span>
                         </div>
-                        <div className="flex items-center gap-2 p-2 bg-gray-50 rounded-lg">
+                        <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg">
                           <span className="text-lg">⚖️</span>
                           <span><span className="font-semibold">Dose:</span> {result.avgDose} mg</span>
                         </div>
                         {result.volume && (
-                          <div className="flex items-center gap-2 p-2 bg-violet-50 rounded-lg">
+                          <div className="flex items-center gap-2 p-3 bg-violet-50 rounded-lg">
                             <span className="text-lg">💧</span>
                             <span><span className="font-semibold">Volume:</span> {result.volume.avgVolume}ml</span>
                           </div>
                         )}
-                        <div className="flex items-center gap-2 p-2 bg-gray-50 rounded-lg">
+                        <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg">
                           <span className="text-lg">🩺</span>
                           <span><span className="font-semibold">Route:</span> {selectedMed.route}</span>
                         </div>
@@ -1295,13 +1304,13 @@
                 <div className="flex gap-3">
                   <button
                     onClick={() => setShowDeleteConfirm(null)}
-                    className="flex-1 px-4 py-2 border-2 border-gray-300 rounded-lg font-semibold hover:bg-gray-50"
+                    className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg font-semibold hover:bg-gray-50 active:scale-95 transition-all"
                   >
                     Cancel
                   </button>
                   <button
                     onClick={() => handleDeleteMedication(showDeleteConfirm.id)}
-                    className="flex-1 px-4 py-2 bg-red-500 text-white rounded-lg font-semibold hover:bg-red-600"
+                    className="flex-1 px-4 py-3 bg-red-500 text-white rounded-lg font-semibold hover:bg-red-600 active:scale-95 transition-all"
                   >
                     Delete
                   </button>
@@ -1365,7 +1374,7 @@
                     type="text"
                     value={formData.brand_name}
                     onChange={(e) => setFormData({ ...formData, brand_name: e.target.value })}
-                    className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                     placeholder="e.g., Augmentin"
                     required
                   />
@@ -1378,7 +1387,7 @@
                     type="text"
                     value={formData.generic_name}
                     onChange={(e) => setFormData({ ...formData, generic_name: e.target.value })}
-                    className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                     placeholder="e.g., Amoxicillin"
                     required
                   />
@@ -1390,7 +1399,7 @@
                 <select
                   value={formData.species}
                   onChange={(e) => setFormData({ ...formData, species: e.target.value })}
-                  className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                  className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                 >
                   <option value="both">Both (Dogs & Cats)</option>
                   <option value="dog">Dogs Only</option>
@@ -1408,7 +1417,7 @@
                     step="0.01"
                     value={formData.dose_mg_per_kg_min}
                     onChange={(e) => setFormData({ ...formData, dose_mg_per_kg_min: e.target.value })}
-                    className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                     placeholder="e.g., 10"
                     required
                   />
@@ -1422,7 +1431,7 @@
                     step="0.01"
                     value={formData.dose_mg_per_kg_max}
                     onChange={(e) => setFormData({ ...formData, dose_mg_per_kg_max: e.target.value })}
-                    className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                     placeholder="e.g., 20"
                     required
                   />
@@ -1436,7 +1445,7 @@
                     type="text"
                     value={formData.dosage_form}
                     onChange={(e) => setFormData({ ...formData, dosage_form: e.target.value })}
-                    className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                     placeholder="e.g., tablet, injectable"
                   />
                 </div>
@@ -1446,7 +1455,7 @@
                     type="text"
                     value={formData.route}
                     onChange={(e) => setFormData({ ...formData, route: e.target.value })}
-                    className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                     placeholder="e.g., PO, IV, IM, SC"
                   />
                 </div>
@@ -1460,7 +1469,7 @@
                     step="0.01"
                     value={formData.concentration_value}
                     onChange={(e) => setFormData({ ...formData, concentration_value: e.target.value })}
-                    className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                     placeholder="e.g., 250"
                   />
                 </div>
@@ -1470,7 +1479,7 @@
                     type="text"
                     value={formData.concentration_unit}
                     onChange={(e) => setFormData({ ...formData, concentration_unit: e.target.value })}
-                    className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                     placeholder="e.g., mg/tab, mg/ml"
                   />
                 </div>
@@ -1482,7 +1491,7 @@
                   type="text"
                   value={formData.unit_description}
                   onChange={(e) => setFormData({ ...formData, unit_description: e.target.value })}
-                  className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                  className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                   placeholder="e.g., Tablets 250-500 mg, Vials 1000mg"
                 />
               </div>
@@ -1492,7 +1501,7 @@
                 <textarea
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                  className="w-full px-3 py-2 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                  className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                   rows="3"
                   placeholder="Any special instructions, warnings, or contraindications..."
                 />
