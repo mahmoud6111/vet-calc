@@ -326,6 +326,174 @@
 
     
 
+    /* Prescription Templates styles */
+    .template-card {
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .template-card:hover {
+      transform: translateY(-2px);
+    }
+    .dark .template-card {
+      background: rgba(30, 41, 59, 0.8);
+      border-color: rgba(51, 65, 85, 0.5);
+    }
+    .species-badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.15rem 0.6rem;
+      border-radius: 9999px;
+      white-space: nowrap;
+    }
+    .category-badge {
+      font-size: 0.65rem;
+      font-weight: 600;
+      padding: 0.1rem 0.5rem;
+      border-radius: 9999px;
+      white-space: nowrap;
+    }
+    .prescription-tab-btn {
+      transition: all 0.2s ease;
+    }
+    .prescription-tab-btn.active {
+      background: #10b981;
+      color: white;
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    }
+    .prescription-tab-btn:not(.active) {
+      background: rgba(255,255,255,0.5);
+      color: #6b7280;
+      border: 1px solid #e5e7eb;
+    }
+    .dark .prescription-tab-btn:not(.active) {
+      background: rgba(30, 41, 59, 0.5);
+      color: #94a3b8;
+      border-color: #475569;
+    }
+    .prescription-tab-btn:not(.active):hover {
+      background: #d1fae5;
+      color: #065f46;
+    }
+    .dark .prescription-tab-btn:not(.active):hover {
+      background: rgba(16, 185, 129, 0.15);
+      color: #6ee7b7;
+    }
+    .prescription-detail {
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+    .prescription-detail::-webkit-scrollbar {
+      width: 6px;
+    }
+    .prescription-detail::-webkit-scrollbar-thumb {
+      background: #d1d5db;
+      border-radius: 3px;
+    }
+    .dark .prescription-detail::-webkit-scrollbar-thumb {
+      background: #475569;
+    }
+    .editor-section {
+      margin-bottom: 1.5rem;
+    }
+    .editor-section-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #065f46;
+      margin-bottom: 0.75rem;
+    }
+    .dark .editor-section-title {
+      color: #6ee7b7;
+    }
+    .drug-row {
+      background: #f0fdf4;
+      border: 1px solid #d1fae5;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .dark .drug-row {
+      background: rgba(15, 23, 42, 0.5);
+      border-color: rgba(51, 65, 85, 0.5);
+    }
+    .apply-summary {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .apply-drug-item {
+      border-left: 3px solid #10b981;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+    .dark .apply-drug-item {
+      border-left-color: #6ee7b7;
+    }
+    .empty-state {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: #9ca3af;
+    }
+    .dark .empty-state {
+      color: #64748b;
+    }
+
+    /* Print styles */
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      .print-area, .print-area * {
+        visibility: visible;
+      }
+      .print-area {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 20px;
+      }
+      .print-area .no-print {
+        display: none !important;
+      }
+      .print-header {
+        text-align: center;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #059669;
+      }
+      .print-header h1 {
+        font-size: 22px;
+        font-weight: 800;
+        color: #065f46;
+      }
+      .print-header p {
+        font-size: 13px;
+        color: #6b7280;
+        margin-top: 4px;
+      }
+      .print-drug {
+        margin-bottom: 12px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e5e7eb;
+      }
+      .print-drug h3 {
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .print-drug p {
+        font-size: 12px;
+        color: #4b5563;
+        margin: 2px 0;
+      }
+      .print-footer {
+        margin-top: 30px;
+        font-size: 11px;
+        color: #9ca3af;
+        text-align: center;
+        border-top: 1px solid #e5e7eb;
+        padding-top: 10px;
+      }
+    }
+
     /* RTL support for Arabic */
     .rtl {
       direction: rtl;
@@ -608,6 +776,701 @@
       { id: "83", brand_name: "Lacteol Forte (large dog >25kg)", generic_name: "Lactobacillus LB (Probiotic)", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: 10, concentration_unit: "billion CFU/sachet", dosage_form: "oral sachet", route: "PO", unit_description: "Sachet 10 billion CFU (10×10⁹); Pack of 6 sachets", notes: "🐕 LARGE DOGS (>25kg): 1 to 2 sachets daily (10-20 billion CFU). For therapeutic use: up to 1 sachet BID. Mix with food. Human product used in veterinary practice. Indications: Antibiotic-associated diarrhea, acute GI infections, post-antibiotic gut restoration.", frequency: "q12-24h" }
     ];
 
+    const BUILTIN_TEMPLATES = [
+      {
+        id: 'builtin-fpv',
+        name: 'Feline Panleukopenia Virus (FPV)',
+        category: 'viral',
+        species: 'cat',
+        icon: '🐱',
+        description: 'Standard FPV treatment protocol for hospitalised cats',
+        drugs: [
+          { drug_id: "2", drug_name: 'Cefotaxime', dose_note: '40-50 mg/kg IV q8h', purpose: 'Prevent secondary bacterial infection', duration: '5-7 days' },
+          { drug_id: "25", drug_name: 'Metoclopramide', dose_note: '0.2-0.5 mg/kg q8h', purpose: 'Control vomiting', duration: '3-5 days' },
+          { drug_id: "16", drug_name: 'Meloxicam', dose_note: '0.1-0.2 mg/kg q24h', purpose: 'Anti-inflammatory', duration: '3-5 days' },
+          { drug_id: "42", drug_name: 'Omeprazole', dose_note: '0.5-1.5 mg/kg q24h', purpose: 'GI protection', duration: '5-7 days' },
+          { drug_id: "60", drug_name: 'Vitamin B Complex', dose_note: '1-4 ml IM q24h', purpose: 'Supportive care', duration: '5-7 days' }
+        ],
+        supportive_care: [
+          'IV fluids (Lactated Ringer\'s or 0.9% NaCl)',
+          'Keep patient warm and isolated',
+          'Monitor CBC daily',
+          'Syringe feed if anorexic'
+        ],
+        notes: 'FPV is highly contagious. Strict isolation required. Vaccination is the best prevention.',
+        created_at: '2026-05-26T00:00:00Z',
+        is_builtin: true
+      },
+      {
+        id: 'builtin-fcv',
+        name: 'Feline Calicivirus (FCV)',
+        category: 'viral',
+        species: 'cat',
+        icon: '🐱',
+        description: 'FCV treatment protocol with supportive care',
+        drugs: [
+          { drug_id: "2", drug_name: 'Cefotaxime', dose_note: '40-50 mg/kg IV q8h', purpose: 'Prevent secondary bacterial infection', duration: '5-7 days' },
+          { drug_id: "16", drug_name: 'Meloxicam', dose_note: '0.1-0.2 mg/kg q24h', purpose: 'Reduce oral inflammation and fever', duration: '3-5 days' },
+          { drug_id: "73", drug_name: 'Eye Antibiotic', dose_note: '1 drop q6-12h', purpose: 'Ophthalmic antibiotic for conjunctivitis', duration: '7 days' }
+        ],
+        supportive_care: [
+          'IV or SC fluids for dehydration',
+          'Soft food or syringe feeding',
+          'Oral antiseptic mouthwash',
+          'Isolate from other cats'
+        ],
+        notes: 'FCV can cause severe oral ulcers and pneumonia. Monitor respiratory status closely.',
+        created_at: '2026-05-26T00:00:00Z',
+        is_builtin: true
+      },
+      {
+        id: 'builtin-herpes',
+        name: 'Feline Herpesvirus / Rhinotracheitis',
+        category: 'viral',
+        species: 'cat',
+        icon: '😿',
+        description: 'FHV-1 treatment for upper respiratory infection in cats',
+        drugs: [
+          { drug_id: "73", drug_name: 'Eye Antibiotic', dose_note: '1 drop q6h', purpose: 'Treat conjunctivitis', duration: '7-10 days' },
+          { drug_id: "74", drug_name: 'Eye Antibiotic + Steroid', dose_note: '1 drop q8h', purpose: 'Severe corneal involvement (avoid if ulcerated)', duration: '5-7 days' }
+        ],
+        supportive_care: [
+          'L-lysine 250-500 mg PO q12h',
+          'Nebulisation with saline',
+          'Gentle eye cleaning with warm water',
+          'Appetite stimulation'
+        ],
+        notes: 'Stress is a major trigger. Avoid steroids if corneal ulceration is present. Most cats remain latently infected.',
+        created_at: '2026-05-26T00:00:00Z',
+        is_builtin: true
+      },
+      {
+        id: 'builtin-cpv',
+        name: 'Canine Parvovirus (CPV)',
+        category: 'viral',
+        species: 'dog',
+        icon: '🐕',
+        description: 'Intensive CPV treatment protocol for hospitalised dogs',
+        drugs: [
+          { drug_id: "2", drug_name: 'Cefotaxime', dose_note: '40-50 mg/kg IV q8h', purpose: 'Prevent secondary bacterial infection', duration: '5-7 days' },
+          { drug_id: "25", drug_name: 'Metoclopramide', dose_note: '0.2-0.5 mg/kg q8h', purpose: 'Control vomiting', duration: '3-5 days' },
+          { drug_id: "16", drug_name: 'Meloxicam', dose_note: '0.1-0.2 mg/kg q24h', purpose: 'Anti-inflammatory', duration: '3 days' },
+          { drug_id: "42", drug_name: 'Omeprazole', dose_note: '0.5-1.5 mg/kg q24h', purpose: 'GI protection', duration: '5-7 days' }
+        ],
+        supportive_care: [
+          'Aggressive IV fluid therapy',
+          'Monitor electrolytes and glucose',
+          'Isolation ward required',
+          'Hand wash and footbath protocols',
+          'Withhold food for 24-48h, then bland diet'
+        ],
+        notes: 'CPV is a medical emergency. High mortality in unvaccinated puppies. Strict isolation is critical.',
+        created_at: '2026-05-26T00:00:00Z',
+        is_builtin: true
+      },
+      {
+        id: 'builtin-ringworm',
+        name: 'Dermatophytosis / Ringworm',
+        category: 'fungal',
+        species: 'both',
+        icon: '🍄',
+        description: 'Antifungal treatment protocol for dermatophytosis in dogs and cats',
+        drugs: [
+          { drug_id: "71", drug_name: 'Itraconazole', dose_note: '5 mg/kg PO q24h', purpose: 'Systemic antifungal therapy', duration: '4-8 weeks' },
+          { drug_id: "72", drug_name: 'Terbinafine', dose_note: '20-40 mg/kg PO q24h', purpose: 'Alternative systemic antifungal', duration: '4-6 weeks' },
+          { drug_id: "76", drug_name: 'Topical Antibiotic', dose_note: 'Apply to affected areas BID', purpose: 'Topical antifungal/antibacterial', duration: 'Until lesions resolve' }
+        ],
+        supportive_care: [
+          'Clip hair around lesions',
+          'Environmental decontamination (bleach 1:10)',
+          'Isolate affected animals',
+          'Wear gloves when handling',
+          'Wood\'s lamp examination for Microsporum canis'
+        ],
+        notes: 'Treatment should continue for 2-4 weeks beyond clinical cure. Zoonotic — handle with gloves.',
+        created_at: '2026-05-26T00:00:00Z',
+        is_builtin: true
+      },
+      {
+        id: 'builtin-distemper',
+        name: 'Canine Distemper (Supportive)',
+        category: 'viral',
+        species: 'dog',
+        icon: '🐕',
+        description: 'Supportive care protocol for canine distemper virus',
+        drugs: [
+          { drug_id: "2", drug_name: 'Cefotaxime', dose_note: '40-50 mg/kg IV q8h', purpose: 'Prevent secondary bacterial pneumonia', duration: '7-10 days' },
+          { drug_id: "25", drug_name: 'Metoclopramide', dose_note: '0.2-0.5 mg/kg q8h', purpose: 'Control vomiting', duration: '3-5 days' },
+          { drug_id: "16", drug_name: 'Meloxicam', dose_note: '0.1-0.2 mg/kg q24h', purpose: 'Reduce fever and inflammation', duration: '3-5 days' }
+        ],
+        supportive_care: [
+          'IV fluids for dehydration',
+          'Nutritional support — high-calorie diet',
+          'Respiratory support if pneumonia develops',
+          'Neurological symptom management',
+          'Isolation from other dogs'
+        ],
+        notes: 'No specific antiviral treatment. Prognosis guarded, especially with neurological signs. Vaccination is key.',
+        created_at: '2026-05-26T00:00:00Z',
+        is_builtin: true
+      },
+      {
+        id: 'builtin-otitis',
+        name: 'Otitis Externa',
+        category: 'bacterial',
+        species: 'both',
+        icon: '👂',
+        description: 'Treatment protocol for otitis externa in dogs and cats',
+        drugs: [
+          { drug_id: "75", drug_name: 'Ear Antibiotic + Steroid', dose_note: '1-4 drops q8-12h', purpose: 'Topical antibiotic with anti-inflammatory', duration: '7-14 days' },
+          { drug_id: "7", drug_name: 'Cefalexin', dose_note: '15 mg/kg PO q8-12h', purpose: 'Systemic antibiotic for severe cases', duration: '7-14 days' }
+        ],
+        supportive_care: [
+          'Clean ear canal with ear cleaner before drops',
+          'Identify and treat underlying cause (allergies, parasites)',
+          'Avoid moisture in ears during treatment',
+          'Recheck after 7 days'
+        ],
+        notes: 'Chronic otitis may require culture and sensitivity testing. Rule out ear mites in cats.',
+        created_at: '2026-05-26T00:00:00Z',
+        is_builtin: true
+      },
+      {
+        id: 'builtin-uri-dog',
+        name: 'Upper Respiratory Infection (URI) – Dog',
+        category: 'bacterial',
+        species: 'dog',
+        icon: '🐕',
+        description: 'Canine infectious respiratory disease complex treatment',
+        drugs: [
+          { drug_id: "9", drug_name: 'Doxycycline', dose_note: '10 mg/kg PO q24h', purpose: 'Primary antibiotic for URI', duration: '7-10 days' },
+          { drug_id: "16", drug_name: 'Meloxicam', dose_note: '0.1-0.2 mg/kg q24h', purpose: 'Reduce fever and inflammation', duration: '3-5 days' },
+          { drug_id: "29", drug_name: 'Bromhexine', dose_note: '2-2.5 mg/kg PO q12h', purpose: 'Mucolytic for cough', duration: '5-7 days' }
+        ],
+        supportive_care: [
+          'Rest and reduced exercise',
+          'Steam therapy (humidifier)',
+          'Encourage eating with palatable food',
+          'Monitor for pneumonia signs',
+          'Isolate from other dogs'
+        ],
+        notes: 'Kennel cough complex. Most cases are self-limiting. Antibiotics only if bacterial infection suspected.',
+        created_at: '2026-05-26T00:00:00Z',
+        is_builtin: true
+      }
+    ];
+
+    const PrescriptionEditor = ({ template, medications, onSave, onCancel }) => {
+      const [formData, setFormData] = useState(template ? {
+        ...template,
+        drugs: template.drugs.map(d => ({ ...d })),
+        supportive_care: [...(template.supportive_care || [])]
+      } : {
+        id: Date.now().toString(),
+        name: '',
+        icon: '📋',
+        species: 'both',
+        category: 'other',
+        description: '',
+        drugs: [{ drug_name: '', dose_note: '', purpose: '', duration: '', drug_id: '' }],
+        supportive_care: [''],
+        notes: '',
+        created_at: new Date().toISOString(),
+        is_builtin: false
+      });
+
+      const [errors, setErrors] = useState({});
+
+      const updateField = (field, value) => setFormData({ ...formData, [field]: value });
+
+      const updateDrug = (idx, field, value) => {
+        const drugs = [...formData.drugs];
+        drugs[idx] = { ...drugs[idx], [field]: value };
+        if (field === 'drug_name' && value) {
+          const match = medications.find(m =>
+            m.brand_name.toLowerCase() === value.toLowerCase() ||
+            m.generic_name.toLowerCase() === value.toLowerCase()
+          );
+          if (match) drugs[idx].drug_id = match.id;
+        }
+        setFormData({ ...formData, drugs });
+      };
+
+      const addDrug = () => setFormData({
+        ...formData,
+        drugs: [...formData.drugs, { drug_name: '', dose_note: '', purpose: '', duration: '', drug_id: '' }]
+      });
+
+      const removeDrug = (idx) => setFormData({
+        ...formData,
+        drugs: formData.drugs.filter((_, i) => i !== idx)
+      });
+
+      const updateSupportiveCare = (idx, value) => {
+        const items = [...formData.supportive_care];
+        items[idx] = value;
+        setFormData({ ...formData, supportive_care: items });
+      };
+
+      const addSupportiveCare = () => setFormData({
+        ...formData,
+        supportive_care: [...formData.supportive_care, '']
+      });
+
+      const removeSupportiveCare = (idx) => setFormData({
+        ...formData,
+        supportive_care: formData.supportive_care.filter((_, i) => i !== idx)
+      });
+
+      const validate = () => {
+        const newErrors = {};
+        if (!formData.name.trim()) newErrors.name = 'Template name is required';
+        if (formData.drugs.length === 0 || formData.drugs.every(d => !d.drug_name.trim())) {
+          newErrors.drugs = 'At least one drug with a name is required';
+        }
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
+      };
+
+      const handleSave = () => {
+        if (!validate()) return;
+        onSave({
+          ...formData,
+          drugs: formData.drugs.filter(d => d.drug_name.trim()),
+          supportive_care: formData.supportive_care.filter(s => s.trim()),
+          created_at: formData.created_at || new Date().toISOString()
+        });
+      };
+
+      return (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 overflow-y-auto">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 max-w-3xl w-full my-8 max-h-[90vh] overflow-y-auto shadow-2xl">
+            <div className="flex justify-between items-center mb-6 sticky top-0 bg-white dark:bg-gray-800 pb-4 border-b border-gray-200 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-gray-800 dark:text-white">
+                {template ? (template.is_builtin ? 'Clone & Customize' : 'Edit Prescription Template') : 'New Prescription Template'}
+              </h3>
+              <button
+                onClick={onCancel}
+                className="p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-all"
+              >
+                <X />
+              </button>
+            </div>
+
+            {/* Basic Info */}
+            <div className="space-y-4 mb-6">
+              <h4 className="font-bold text-emerald-700 dark:text-emerald-400 flex items-center gap-2 text-sm">📋 Basic Info</h4>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="col-span-2 sm:col-span-1">
+                  <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">Name *</label>
+                  <input
+                    type="text"
+                    value={formData.name}
+                    onChange={(e) => updateField('name', e.target.value)}
+                    placeholder="e.g., Canine Parvo Protocol"
+                    className={`w-full px-4 py-3 bg-white dark:bg-gray-700 border-2 rounded-xl text-gray-700 dark:text-gray-200 placeholder-gray-400 ${errors.name ? 'border-red-400' : 'border-gray-200 dark:border-gray-600'} focus:border-emerald-500 transition-all`}
+                  />
+                  {errors.name && <p className="text-xs text-red-500 mt-1">{errors.name}</p>}
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">Icon (emoji)</label>
+                  <input
+                    type="text"
+                    value={formData.icon}
+                    onChange={(e) => updateField('icon', e.target.value)}
+                    placeholder="e.g., 🐱"
+                    maxLength="2"
+                    className="w-full px-4 py-3 bg-white dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 rounded-xl text-gray-700 dark:text-gray-200 placeholder-gray-400 focus:border-emerald-500 transition-all"
+                  />
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">Species *</label>
+                  <select
+                    value={formData.species}
+                    onChange={(e) => updateField('species', e.target.value)}
+                    className="w-full px-4 py-3 bg-white dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 rounded-xl text-gray-700 dark:text-gray-200 focus:border-emerald-500 transition-all"
+                  >
+                    <option value="both">🐾 Both</option>
+                    <option value="cat">🐱 Cat</option>
+                    <option value="dog">🐕 Dog</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">Category *</label>
+                  <select
+                    value={formData.category}
+                    onChange={(e) => updateField('category', e.target.value)}
+                    className="w-full px-4 py-3 bg-white dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 rounded-xl text-gray-700 dark:text-gray-200 focus:border-emerald-500 transition-all"
+                  >
+                    <option value="viral">Viral</option>
+                    <option value="bacterial">Bacterial</option>
+                    <option value="fungal">Fungal</option>
+                    <option value="parasitic">Parasitic</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">Description</label>
+                <textarea
+                  value={formData.description}
+                  onChange={(e) => updateField('description', e.target.value)}
+                  placeholder="Brief description of this protocol..."
+                  rows="2"
+                  className="w-full px-4 py-3 bg-white dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 rounded-xl text-gray-700 dark:text-gray-200 placeholder-gray-400 focus:border-emerald-500 transition-all"
+                />
+              </div>
+            </div>
+
+            {/* Drug List */}
+            <div className="space-y-3 mb-6">
+              <div className="flex items-center justify-between">
+                <h4 className="font-bold text-emerald-700 dark:text-emerald-400 flex items-center gap-2 text-sm">💊 Medications</h4>
+                <button
+                  onClick={addDrug}
+                  className="px-3 py-1.5 text-sm bg-emerald-500 text-white rounded-lg font-semibold hover:bg-emerald-600 transition-all active:scale-95"
+                >
+                  + Add Drug
+                </button>
+              </div>
+              {errors.drugs && <p className="text-xs text-red-500">{errors.drugs}</p>}
+              {formData.drugs.map((drug, idx) => (
+                <div key={idx} className="p-4 bg-gray-50 dark:bg-gray-700/50 rounded-xl border border-gray-200 dark:border-gray-700">
+                  <div className="flex justify-between items-start mb-2">
+                    <span className="text-xs font-semibold text-gray-500 dark:text-gray-400">Drug #{idx + 1}</span>
+                    <button
+                      onClick={() => removeDrug(idx)}
+                      className="text-xs text-red-500 hover:text-red-700 px-2 py-1 hover:bg-red-50 dark:hover:bg-red-900/30 rounded-lg transition-all"
+                    >
+                      ✕ Remove
+                    </button>
+                  </div>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div>
+                      <label className="block text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1">Drug Name *</label>
+                      <input
+                        type="text"
+                        value={drug.drug_name}
+                        onChange={(e) => updateDrug(idx, 'drug_name', e.target.value)}
+                        list="medication-list"
+                        placeholder="e.g., Doxycycline"
+                        className="w-full px-3 py-2.5 bg-white dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 rounded-lg text-sm text-gray-700 dark:text-gray-200 placeholder-gray-400 focus:border-emerald-500 transition-all"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1">Duration</label>
+                      <input
+                        type="text"
+                        value={drug.duration}
+                        onChange={(e) => updateDrug(idx, 'duration', e.target.value)}
+                        placeholder="e.g., 5-7 days"
+                        className="w-full px-3 py-2.5 bg-white dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 rounded-lg text-sm text-gray-700 dark:text-gray-200 placeholder-gray-400 focus:border-emerald-500 transition-all"
+                      />
+                    </div>
+                    <div className="col-span-2">
+                      <label className="block text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1">Dose Note *</label>
+                      <textarea
+                        value={drug.dose_note}
+                        onChange={(e) => updateDrug(idx, 'dose_note', e.target.value)}
+                        placeholder="e.g., 40-50 mg/kg IV q8h"
+                        rows="1"
+                        className="w-full px-3 py-2.5 bg-white dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 rounded-lg text-sm text-gray-700 dark:text-gray-200 placeholder-gray-400 focus:border-emerald-500 transition-all"
+                      />
+                    </div>
+                    <div className="col-span-2">
+                      <label className="block text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1">Purpose</label>
+                      <input
+                        type="text"
+                        value={drug.purpose}
+                        onChange={(e) => updateDrug(idx, 'purpose', e.target.value)}
+                        placeholder="e.g., Prevent secondary bacterial infection"
+                        className="w-full px-3 py-2.5 bg-white dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 rounded-lg text-sm text-gray-700 dark:text-gray-200 placeholder-gray-400 focus:border-emerald-500 transition-all"
+                      />
+                    </div>
+                  </div>
+                  <input type="hidden" value={drug.drug_id} />
+                </div>
+              ))}
+            </div>
+
+            {/* datalist for medication autocomplete */}
+            <datalist id="medication-list">
+              {medications.map((med) => (
+                <option key={med.id} value={med.brand_name} label={`${med.generic_name} (${med.species})`} />
+              ))}
+            </datalist>
+
+            {/* Supportive Care */}
+            <div className="space-y-3 mb-6">
+              <div className="flex items-center justify-between">
+                <h4 className="font-bold text-emerald-700 dark:text-emerald-400 flex items-center gap-2 text-sm">🏥 Supportive Care</h4>
+                <button
+                  onClick={addSupportiveCare}
+                  className="px-3 py-1.5 text-sm bg-emerald-500 text-white rounded-lg font-semibold hover:bg-emerald-600 transition-all active:scale-95"
+                >
+                  + Add Item
+                </button>
+              </div>
+              {formData.supportive_care.map((item, idx) => (
+                <div key={idx} className="flex gap-2 items-start">
+                  <input
+                    type="text"
+                    value={item}
+                    onChange={(e) => updateSupportiveCare(idx, e.target.value)}
+                    placeholder="e.g., IV fluids (Lactated Ringer's or 0.9% NaCl)"
+                    className="flex-1 px-4 py-3 bg-white dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 rounded-xl text-sm text-gray-700 dark:text-gray-200 placeholder-gray-400 focus:border-emerald-500 transition-all"
+                  />
+                  <button
+                    onClick={() => removeSupportiveCare(idx)}
+                    className="p-3 text-red-500 hover:text-red-700 hover:bg-red-50 dark:hover:bg-red-900/30 rounded-xl transition-all"
+                    title="Remove"
+                  >
+                    ✕
+                  </button>
+                </div>
+              ))}
+            </div>
+
+            {/* Notes */}
+            <div className="space-y-2 mb-6">
+              <h4 className="font-bold text-emerald-700 dark:text-emerald-400 flex items-center gap-2 text-sm">⚠️ Notes</h4>
+              <textarea
+                value={formData.notes}
+                onChange={(e) => updateField('notes', e.target.value)}
+                placeholder="Clinical notes, warnings, or special instructions..."
+                rows="3"
+                className="w-full px-4 py-3 bg-white dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 rounded-xl text-gray-700 dark:text-gray-200 placeholder-gray-400 focus:border-emerald-500 transition-all"
+              />
+            </div>
+
+            {/* Actions */}
+            <div className="flex gap-3 pt-4 sticky bottom-0 bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+              <button
+                onClick={onCancel}
+                className="flex-1 px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-xl font-semibold text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all active:scale-95"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleSave}
+                className="flex-1 px-4 py-3 bg-emerald-500 text-white rounded-xl font-semibold hover:bg-emerald-600 transition-all active:scale-95 shadow-lg"
+              >
+                {template ? 'Save Changes' : 'Create Template'}
+              </button>
+            </div>
+          </div>
+        </div>
+      );
+    };
+
+    const MedicationModal = ({ medication, onSave, onClose }) => {
+      const [formData, setFormData] = useState(medication || {
+        brand_name: '',
+        generic_name: '',
+        species: 'both',
+        dose_mg_per_kg_min: '',
+        dose_mg_per_kg_max: '',
+        concentration_value: '',
+        concentration_unit: '',
+        dosage_form: '',
+        route: '',
+        unit_description: '',
+        notes: ''
+      });
+
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!formData.brand_name || !formData.generic_name || !formData.dose_mg_per_kg_min || !formData.dose_mg_per_kg_max) {
+          alert('Please fill in all required fields (marked with *)');
+          return;
+        }
+        const processedData = {
+          ...formData,
+          dose_mg_per_kg_min: parseFloat(formData.dose_mg_per_kg_min),
+          dose_mg_per_kg_max: parseFloat(formData.dose_mg_per_kg_max),
+          concentration_value: formData.concentration_value ? parseFloat(formData.concentration_value) : null
+        };
+        onSave(processedData);
+      };
+
+      return (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 overflow-y-auto">
+          <div className="bg-white rounded-lg p-4 sm:p-6 max-w-2xl w-full my-4 sm:my-8 max-h-[90vh] overflow-y-auto">
+            <div className="flex justify-between items-center mb-4 sticky top-0 bg-white pb-2 border-b border-gray-200">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
+                {medication ? 'Edit Medication' : 'Add New Medication'}
+              </h3>
+              <button onClick={onClose} className="text-gray-500 hover:text-gray-700 p-2">
+                <X />
+              </button>
+            </div>
+
+            <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4 mt-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">
+                    Brand Name <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    value={formData.brand_name}
+                    onChange={(e) => setFormData({ ...formData, brand_name: e.target.value })}
+                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    placeholder="e.g., Augmentin"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">
+                    Generic Name <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    value={formData.generic_name}
+                    onChange={(e) => setFormData({ ...formData, generic_name: e.target.value })}
+                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    placeholder="e.g., Amoxicillin"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-1">Species</label>
+                <select
+                  value={formData.species}
+                  onChange={(e) => setFormData({ ...formData, species: e.target.value })}
+                  className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                >
+                  <option value="both">Both (Dogs & Cats)</option>
+                  <option value="dog">Dogs Only</option>
+                  <option value="cat">Cats Only</option>
+                </select>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">
+                    Min Dose (mg/kg) <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="number"
+                    step="0.01"
+                    value={formData.dose_mg_per_kg_min}
+                    onChange={(e) => setFormData({ ...formData, dose_mg_per_kg_min: e.target.value })}
+                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    placeholder="e.g., 10"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">
+                    Max Dose (mg/kg) <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="number"
+                    step="0.01"
+                    value={formData.dose_mg_per_kg_max}
+                    onChange={(e) => setFormData({ ...formData, dose_mg_per_kg_max: e.target.value })}
+                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    placeholder="e.g., 20"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">Dosage Form</label>
+                  <input
+                    type="text"
+                    value={formData.dosage_form}
+                    onChange={(e) => setFormData({ ...formData, dosage_form: e.target.value })}
+                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    placeholder="e.g., tablet, injectable"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">Route</label>
+                  <input
+                    type="text"
+                    value={formData.route}
+                    onChange={(e) => setFormData({ ...formData, route: e.target.value })}
+                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    placeholder="e.g., PO, IV, IM, SC"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">Concentration Value</label>
+                  <input
+                    type="number"
+                    step="0.01"
+                    value={formData.concentration_value}
+                    onChange={(e) => setFormData({ ...formData, concentration_value: e.target.value })}
+                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    placeholder="e.g., 250"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-1">Concentration Unit</label>
+                  <input
+                    type="text"
+                    value={formData.concentration_unit}
+                    onChange={(e) => setFormData({ ...formData, concentration_unit: e.target.value })}
+                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    placeholder="e.g., mg/tab, mg/ml"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-1">Available Preparations</label>
+                <input
+                  type="text"
+                  value={formData.unit_description}
+                  onChange={(e) => setFormData({ ...formData, unit_description: e.target.value })}
+                  className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                  placeholder="e.g., Tablets 250-500 mg, Vials 1000mg"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-1">Notes / Warnings</label>
+                <textarea
+                  value={formData.notes}
+                  onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
+                  className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                  rows="3"
+                  placeholder="Any special instructions, warnings, or contraindications..."
+                />
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-3 pt-4 sticky bottom-0 bg-white border-t border-gray-200 pb-2">
+                <button
+                  type="button"
+                  onClick={onClose}
+                  className="w-full sm:flex-1 px-4 py-3 text-base border-2 border-gray-300 rounded-lg font-semibold hover:bg-gray-50 transition"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="w-full sm:flex-1 px-4 py-3 text-base bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition"
+                >
+                  {medication ? 'Save Changes' : 'Add Medication'}
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      );
+    };
+
     const VetDosageCalculator = () => {
       const [medications, setMedications] = useState([]);
       const [searchTerm, setSearchTerm] = useState('');
@@ -628,6 +1491,20 @@
       const [isLoading, setIsLoading] = useState(true);
       const [deferredPrompt, setDeferredPrompt] = useState(null);
       const [showInstallBanner, setShowInstallBanner] = useState(false);
+
+      // Prescription Templates state
+      const [activeTab, setActiveTab] = useState('calculator');
+      const [prescriptions, setPrescriptions] = useState([]);
+      const [showPrescriptionModal, setShowPrescriptionModal] = useState(false);
+      const [editingPrescription, setEditingPrescription] = useState(null);
+      const [viewingPrescription, setViewingPrescription] = useState(null);
+      const [prescriptionSearch, setPrescriptionSearch] = useState('');
+      const [prescriptionCategory, setPrescriptionCategory] = useState('all');
+      const [prescriptionSpecies, setPrescriptionSpecies] = useState('all');
+      const [showApplyDialog, setShowApplyDialog] = useState(false);
+      const [appliedWeight, setAppliedWeight] = useState('');
+      const [appliedSpecies, setAppliedSpecies] = useState('');
+      const [showPrescriptionDelete, setShowPrescriptionDelete] = useState(null);
 
       // Load medications, favorites, and dark mode from localStorage on mount
       useEffect(() => {
@@ -653,6 +1530,19 @@
             setDarkMode(true);
             document.documentElement.classList.add('dark');
           }
+
+          // Load prescription templates from localStorage and merge with built-ins
+          try {
+            const savedPrescriptions = localStorage.getItem('vet_prescriptions_v1');
+            const userTemplates = savedPrescriptions ? JSON.parse(savedPrescriptions) : [];
+            if (!Array.isArray(userTemplates)) throw new Error('Invalid prescriptions data');
+            const merged = [...BUILTIN_TEMPLATES, ...userTemplates.filter(t => !t.is_builtin)];
+            setPrescriptions(merged);
+          } catch (e) {
+            console.warn('Failed to load prescriptions:', e);
+            setPrescriptions([...BUILTIN_TEMPLATES]);
+          }
+
           setIsLoading(false);
         };
         loadData();
@@ -717,6 +1607,17 @@
       const saveMedications = (meds) => {
         setMedications(meds);
         localStorage.setItem('vetiDrugMedications', JSON.stringify(meds));
+      };
+
+      // Save prescription templates to localStorage
+      const saveTemplates = (templates) => {
+        setPrescriptions(templates);
+        try {
+          const userOnly = templates.filter(t => !t.is_builtin);
+          localStorage.setItem('vet_prescriptions_v1', JSON.stringify(userOnly));
+        } catch (e) {
+          alert('Unable to save. Storage is full. Please remove some templates.');
+        }
       };
 
       // Toggle favorite
@@ -912,6 +1813,28 @@
                 </div>
               </div>
 
+              {/* Tab Navigation: Calculator | Prescriptions */}
+              <div className="px-4 md:px-6 py-3 bg-white/50 border-b border-emerald-100">
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => setActiveTab('calculator')}
+                    className={`prescription-tab-btn px-5 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-2 ${activeTab === 'calculator' ? 'active' : ''}`}
+                  >
+                    <span>💊</span>
+                    <span>Drug Calculator</span>
+                  </button>
+                  <button
+                    onClick={() => setActiveTab('prescriptions')}
+                    className={`prescription-tab-btn px-5 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-2 ${activeTab === 'prescriptions' ? 'active' : ''}`}
+                  >
+                    <span>📋</span>
+                    <span>Prescriptions</span>
+                  </button>
+                </div>
+              </div>
+
+              {activeTab === 'calculator' && (
+              <React.Fragment>
               {/* Category Filter Tabs */}
               <div className="px-4 md:px-6 py-4 bg-white/50 border-b border-emerald-100 overflow-x-auto scroll-tabs">
                 <div className="flex gap-2 min-w-max">
@@ -1286,10 +2209,177 @@
                       </div>
                     </div>
 
-              </div>
+               </div>
                 )}
               </div>
-            </div>
+            </React.Fragment>
+            )}
+
+            {/* Prescriptions Tab */}
+            {activeTab === 'prescriptions' && (
+              <div className="p-4 md:p-6">
+                {/* Search and Filters */}
+                <div className="flex flex-col md:flex-row gap-3 mb-4">
+                  <div className="relative flex-1">
+                    <div className="absolute left-4 top-1/2 -translate-y-1/2 text-emerald-500"><Search /></div>
+                    <input
+                      type="text"
+                      placeholder="Search templates by name, species, or category..."
+                      value={prescriptionSearch}
+                      onChange={(e) => setPrescriptionSearch(e.target.value)}
+                      className="w-full pl-12 pr-4 py-3 bg-white border-2 border-emerald-100 rounded-2xl focus:border-emerald-500 transition-all text-gray-700 placeholder-gray-400 shadow-sm"
+                    />
+                    {prescriptionSearch && (
+                      <button
+                        onClick={() => setPrescriptionSearch('')}
+                        className="absolute right-3 top-1/2 -translate-y-1/2 p-1.5 text-gray-400 hover:text-gray-600 rounded-lg active:scale-95"
+                      >
+                        <X />
+                      </button>
+                    )}
+                  </div>
+                  <button
+                    onClick={() => { setEditingPrescription(null); setShowPrescriptionModal(true); }}
+                    className="bg-emerald-500 text-white px-5 py-3 rounded-xl font-semibold flex items-center gap-2 hover:bg-emerald-600 transition-all shadow-lg hover:shadow-xl active:scale-95 whitespace-nowrap"
+                  >
+                    <Plus /> <span>New Prescription</span>
+                  </button>
+                </div>
+
+                {/* Category Filter Tabs */}
+                <div className="flex gap-2 mb-4 overflow-x-auto scroll-tabs">
+                  {[
+                    { id: 'all', name: 'All', color: 'bg-gray-500' },
+                    { id: 'viral', name: 'Viral', color: 'bg-red-500' },
+                    { id: 'bacterial', name: 'Bacterial', color: 'bg-emerald-500' },
+                    { id: 'fungal', name: 'Fungal', color: 'bg-purple-500' },
+                    { id: 'parasitic', name: 'Parasitic', color: 'bg-yellow-500' },
+                    { id: 'other', name: 'Other', color: 'bg-slate-500' }
+                  ].map(cat => (
+                    <button
+                      key={cat.id}
+                      onClick={() => setPrescriptionCategory(cat.id)}
+                      className={`px-4 py-2 rounded-xl text-sm font-medium transition-all whitespace-nowrap ${prescriptionCategory === cat.id
+                        ? `${cat.color} text-white shadow-lg`
+                        : 'bg-white text-gray-600 hover:bg-emerald-50 border border-gray-200'
+                        }`}
+                    >
+                      {cat.name}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Species Filter */}
+                <div className="flex gap-2 mb-4">
+                  {['all', 'cat', 'dog', 'both'].map(s => (
+                    <button
+                      key={s}
+                      onClick={() => setPrescriptionSpecies(s)}
+                      className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${prescriptionSpecies === s
+                        ? 'bg-emerald-500 text-white'
+                        : 'bg-white text-gray-500 border border-gray-200 hover:bg-emerald-50'
+                        }`}
+                    >
+                      {s === 'all' ? 'All' : s === 'cat' ? '🐱 Cats' : s === 'dog' ? '🐕 Dogs' : '🐾 Both'}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Template Cards Grid */}
+                {prescriptions.filter(t => {
+                  const matchesSearch = !prescriptionSearch ||
+                    t.name.toLowerCase().includes(prescriptionSearch.toLowerCase()) ||
+                    t.category.toLowerCase().includes(prescriptionSearch.toLowerCase()) ||
+                    t.species.toLowerCase().includes(prescriptionSearch.toLowerCase());
+                  const matchesCategory = prescriptionCategory === 'all' || t.category === prescriptionCategory;
+                  const matchesSpecies = prescriptionSpecies === 'all' || t.species === prescriptionSpecies;
+                  return matchesSearch && matchesCategory && matchesSpecies;
+                }).length === 0 ? (
+                  <div className="empty-state">
+                    <div className="text-4xl mb-3">📋</div>
+                    <p className="text-lg font-medium">No templates found</p>
+                    <p className="text-sm mt-1">Try adjusting your search or filters</p>
+                  </div>
+                ) : (
+                  <div className="grid gap-3">
+                    {prescriptions.filter(t => {
+                      const matchesSearch = !prescriptionSearch ||
+                        t.name.toLowerCase().includes(prescriptionSearch.toLowerCase()) ||
+                        t.category.toLowerCase().includes(prescriptionSearch.toLowerCase()) ||
+                        t.species.toLowerCase().includes(prescriptionSearch.toLowerCase());
+                      const matchesCategory = prescriptionCategory === 'all' || t.category === prescriptionCategory;
+                      const matchesSpecies = prescriptionSpecies === 'all' || t.species === prescriptionSpecies;
+                      return matchesSearch && matchesCategory && matchesSpecies;
+                    }).map(template => (
+                      <div
+                        key={template.id}
+                        className="template-card bg-white rounded-2xl p-4 border-2 border-emerald-100 shadow-sm hover:shadow-md"
+                        onClick={() => setViewingPrescription(template)}
+                      >
+                        <div className="flex items-start justify-between">
+                          <div className="flex items-center gap-3">
+                            <span className="text-2xl">{template.icon || '📋'}</span>
+                            <div>
+                              <h3 className="font-bold text-gray-800">{template.name}</h3>
+                              <p className="text-sm text-gray-500 mt-0.5">{template.description}</p>
+                            </div>
+                          </div>
+                          <div className="flex gap-2">
+                            <button
+                              onClick={(e) => { e.stopPropagation(); setViewingPrescription(template); }}
+                              className="p-2 text-gray-400 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all active:scale-95"
+                              title="View"
+                            >
+                              👁
+                            </button>
+                            <button
+                              onClick={(e) => { e.stopPropagation(); setEditingPrescription(template); setShowPrescriptionModal(true); }}
+                              className="p-2 text-gray-400 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all active:scale-95"
+                              title="Edit"
+                            >
+                              ✏️
+                            </button>
+                            {!template.is_builtin && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  setShowPrescriptionDelete(template);
+                                }}
+                                className="p-2 text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-lg transition-all active:scale-95"
+                                title="Delete"
+                              >
+                                🗑️
+                              </button>
+                            )}
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2 mt-3">
+                          <span className={`species-badge ${
+                            template.species === 'cat' ? 'bg-orange-100 text-orange-700' :
+                            template.species === 'dog' ? 'bg-blue-100 text-blue-700' :
+                            'bg-purple-100 text-purple-700'
+                          }`}>
+                            {template.species === 'cat' ? '🐱 Cat' : template.species === 'dog' ? '🐕 Dog' : '🐾 Both'}
+                          </span>
+                          <span className={`category-badge ${
+                            template.category === 'viral' ? 'bg-red-100 text-red-700' :
+                            template.category === 'bacterial' ? 'bg-emerald-100 text-emerald-700' :
+                            template.category === 'fungal' ? 'bg-purple-100 text-purple-700' :
+                            template.category === 'parasitic' ? 'bg-yellow-100 text-yellow-700' :
+                            'bg-slate-100 text-slate-700'
+                          }`}>
+                            {template.category}
+                          </span>
+                          <span className="text-xs text-gray-400 ml-auto">
+                            {template.drugs.length} drug{template.drugs.length !== 1 ? 's' : ''}
+                          </span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* Footer */}
             <div className="text-center mt-8 space-y-3">
@@ -1335,213 +2425,342 @@
               </div>
             </div>
           )}
-        </div>
-      );
-    };
 
-    const MedicationModal = ({ medication, onSave, onClose }) => {
-      const [formData, setFormData] = useState(medication || {
-        brand_name: '',
-        generic_name: '',
-        species: 'both',
-        dose_mg_per_kg_min: '',
-        dose_mg_per_kg_max: '',
-        concentration_value: '',
-        concentration_unit: '',
-        dosage_form: '',
-        route: '',
-        unit_description: '',
-        notes: ''
-      });
+          {/* Prescription Detail Modal */}
+          {viewingPrescription && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+              <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 max-w-2xl w-full max-h-[85vh] prescription-detail shadow-2xl">
+                <div className="flex justify-between items-center mb-4 sticky top-0 bg-white dark:bg-gray-800 pb-3 border-b border-gray-200 dark:border-gray-700">
+                  <div className="flex items-center gap-3">
+                    <span className="text-3xl">{viewingPrescription.icon || '📋'}</span>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-800 dark:text-white">{viewingPrescription.name}</h3>
+                      <div className="flex items-center gap-2 mt-1">
+                        <span className={`species-badge ${
+                          viewingPrescription.species === 'cat' ? 'bg-orange-100 text-orange-700' :
+                          viewingPrescription.species === 'dog' ? 'bg-blue-100 text-blue-700' :
+                          'bg-purple-100 text-purple-700'
+                        }`}>
+                          {viewingPrescription.species === 'cat' ? '🐱 Cat' : viewingPrescription.species === 'dog' ? '🐕 Dog' : '🐾 Both'}
+                        </span>
+                        <span className={`category-badge ${
+                          viewingPrescription.category === 'viral' ? 'bg-red-100 text-red-700' :
+                          viewingPrescription.category === 'bacterial' ? 'bg-emerald-100 text-emerald-700' :
+                          viewingPrescription.category === 'fungal' ? 'bg-purple-100 text-purple-700' :
+                          viewingPrescription.category === 'parasitic' ? 'bg-yellow-100 text-yellow-700' :
+                          'bg-slate-100 text-slate-700'
+                        }`}>
+                          {viewingPrescription.category}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => setViewingPrescription(null)}
+                    className="p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-all"
+                  >
+                    <X />
+                  </button>
+                </div>
 
-      const handleSubmit = (e) => {
-        e.preventDefault();
-        if (!formData.brand_name || !formData.generic_name || !formData.dose_mg_per_kg_min || !formData.dose_mg_per_kg_max) {
-          alert('Please fill in all required fields (marked with *)');
-          return;
-        }
-        const processedData = {
-          ...formData,
-          dose_mg_per_kg_min: parseFloat(formData.dose_mg_per_kg_min),
-          dose_mg_per_kg_max: parseFloat(formData.dose_mg_per_kg_max),
-          concentration_value: formData.concentration_value ? parseFloat(formData.concentration_value) : null
-        };
-        onSave(processedData);
-      };
+                <div className="space-y-5">
+                  {/* Description */}
+                  {viewingPrescription.description && (
+                    <p className="text-gray-600 dark:text-gray-400 text-sm">{viewingPrescription.description}</p>
+                  )}
 
-      return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50 overflow-y-auto">
-          <div className="bg-white rounded-lg p-4 sm:p-6 max-w-2xl w-full my-4 sm:my-8 max-h-[90vh] overflow-y-auto">
-            <div className="flex justify-between items-center mb-4 sticky top-0 bg-white pb-2 border-b border-gray-200">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                {medication ? 'Edit Medication' : 'Add New Medication'}
-              </h3>
-              <button onClick={onClose} className="text-gray-500 hover:text-gray-700 p-2">
-                <X />
-              </button>
+                  {/* Drug List */}
+                  <div>
+                    <h4 className="font-bold text-emerald-700 dark:text-emerald-400 mb-3 flex items-center gap-2">💊 Medications</h4>
+                    <div className="space-y-3">
+                      {viewingPrescription.drugs.map((drug, idx) => (
+                        <div key={idx} className="drug-row">
+                          <div className="flex items-start justify-between">
+                            <div>
+                              <span className="font-bold text-gray-800 dark:text-white">{drug.drug_name}</span>
+                              {drug.purpose && <span className="text-xs text-gray-500 dark:text-gray-400 ml-2">— {drug.purpose}</span>}
+                            </div>
+                            {drug.duration && (
+                              <span className="text-xs bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded-full font-medium whitespace-nowrap">{drug.duration}</span>
+                            )}
+                          </div>
+                          <p className="text-sm text-emerald-600 dark:text-emerald-400 font-medium mt-1">{drug.dose_note}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Supportive Care */}
+                  {viewingPrescription.supportive_care && viewingPrescription.supportive_care.length > 0 && (
+                    <div>
+                      <h4 className="font-bold text-emerald-700 dark:text-emerald-400 mb-2 flex items-center gap-2">🏥 Supportive Care</h4>
+                      <ul className="space-y-1.5">
+                        {viewingPrescription.supportive_care.map((item, idx) => (
+                          <li key={idx} className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
+                            <span className="text-emerald-500 mt-0.5">•</span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* Notes */}
+                  {viewingPrescription.notes && (
+                    <div className="bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700 rounded-xl p-4">
+                      <h4 className="font-bold text-amber-700 dark:text-amber-400 mb-1 flex items-center gap-2">⚠️ Notes</h4>
+                      <p className="text-sm text-amber-800 dark:text-amber-300">{viewingPrescription.notes}</p>
+                    </div>
+                  )}
+                </div>
+
+                {/* Actions */}
+                <div className="flex flex-wrap gap-3 mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+                  <button
+                    onClick={() => setShowApplyDialog(true)}
+                    className="flex-1 px-4 py-3 bg-emerald-500 text-white rounded-xl font-semibold hover:bg-emerald-600 transition-all active:scale-95 shadow-lg"
+                  >
+                    Apply to Patient
+                  </button>
+                  <button
+                    onClick={() => { setEditingPrescription(viewingPrescription); setShowPrescriptionModal(true); setViewingPrescription(null); }}
+                    className="px-4 py-3 bg-white dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-xl font-semibold hover:bg-gray-50 dark:hover:bg-gray-600 transition-all active:scale-95"
+                  >
+                    ✏️ Edit
+                  </button>
+                  <button
+                    onClick={() => {
+                      const clone = { ...viewingPrescription, id: Date.now().toString(), name: 'My ' + viewingPrescription.name, is_builtin: false, created_at: new Date().toISOString() };
+                      setEditingPrescription(clone);
+                      setShowPrescriptionModal(true);
+                      setViewingPrescription(null);
+                    }}
+                    className="px-4 py-3 bg-white dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-xl font-semibold hover:bg-gray-50 dark:hover:bg-gray-600 transition-all active:scale-95"
+                  >
+                    📋 Clone & Customize
+                  </button>
+                  <button
+                    onClick={() => setViewingPrescription(null)}
+                    className="px-4 py-3 text-gray-500 hover:text-gray-700 dark:text-gray-400 rounded-xl font-medium transition-all"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
             </div>
+          )}
 
-            <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4 mt-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1">
-                    Brand Name <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    value={formData.brand_name}
-                    onChange={(e) => setFormData({ ...formData, brand_name: e.target.value })}
-                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
-                    placeholder="e.g., Augmentin"
-                    required
-                  />
+          {/* Apply to Patient Dialog */}
+          {showApplyDialog && viewingPrescription && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+              <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 max-w-2xl w-full max-h-[85vh] overflow-y-auto shadow-2xl apply-summary">
+                <div className="flex justify-between items-center mb-4">
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-white flex items-center gap-2">
+                    📋 Apply: {viewingPrescription.name}
+                  </h3>
+                  <button
+                    onClick={() => { setShowApplyDialog(false); setAppliedWeight(''); setAppliedSpecies(''); }}
+                    className="p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-all"
+                  >
+                    <X />
+                  </button>
                 </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1">
-                    Generic Name <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    value={formData.generic_name}
-                    onChange={(e) => setFormData({ ...formData, generic_name: e.target.value })}
-                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
-                    placeholder="e.g., Amoxicillin"
-                    required
-                  />
+
+                {/* Patient Info Form */}
+                <div className="space-y-4 mb-4">
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">Patient Species *</label>
+                    <div className="flex gap-3">
+                      {['cat', 'dog'].map(s => (
+                        <button
+                          key={s}
+                          onClick={() => setAppliedSpecies(s)}
+                          className={`flex-1 px-4 py-3 rounded-xl font-semibold transition-all text-base ${
+                            appliedSpecies === s
+                              ? 'bg-emerald-500 text-white shadow-lg'
+                              : 'bg-white dark:bg-gray-700 text-gray-600 dark:text-gray-300 border-2 border-gray-200 dark:border-gray-600 hover:bg-emerald-50 dark:hover:bg-gray-600'
+                          }`}
+                        >
+                          {s === 'cat' ? '🐱 Cat' : '🐕 Dog'}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1">Patient Weight (kg) *</label>
+                    <input
+                      type="number"
+                      value={appliedWeight}
+                      onChange={(e) => setAppliedWeight(e.target.value)}
+                      placeholder="e.g., 4.5"
+                      min="0"
+                      step="0.1"
+                      className="w-full px-4 py-3 bg-white dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 rounded-xl focus:border-emerald-500 transition-all text-gray-700 dark:text-gray-200 placeholder-gray-400"
+                    />
+                  </div>
+                </div>
+
+                {appliedWeight && appliedSpecies && (
+                  /* Step 2: Summary sheet */
+                  <div className="print-area">
+                    <div className="no-print flex justify-end mb-4">
+                      <button
+                        onClick={() => { setShowApplyDialog(false); setAppliedWeight(''); setAppliedSpecies(''); setViewingPrescription(null); }}
+                        className="px-4 py-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 rounded-lg transition-all"
+                      >
+                        Close
+                      </button>
+                    </div>
+
+                    <div className="print-header">
+                      <h1>Vet-iDrug — Prescription Summary</h1>
+                      <p>Template: {viewingPrescription.name}</p>
+                      <p>Patient: {appliedSpecies === 'cat' ? '🐱 Cat' : '🐕 Dog'} — {appliedWeight} kg</p>
+                      <p>Date: {new Date().toLocaleDateString()}</p>
+                    </div>
+
+                    <div className="space-y-4">
+                      {viewingPrescription.drugs.map((drug, idx) => {
+                        // Try to match drug with existing medications database
+                        const matched = medications.find(m =>
+                          m.id === drug.drug_id ||
+                          m.brand_name.toLowerCase().includes(drug.drug_name.toLowerCase()) ||
+                          m.generic_name.toLowerCase().includes(drug.drug_name.toLowerCase())
+                        );
+                        const w = parseFloat(appliedWeight);
+                        const canCalc = matched && matched.dose_mg_per_kg_min > 0 && matched.dose_mg_per_kg_max > 0 && !isNaN(w) && w > 0;
+                        const minMg = canCalc ? (matched.dose_mg_per_kg_min * w).toFixed(1) : null;
+                        const maxMg = canCalc ? (matched.dose_mg_per_kg_max * w).toFixed(1) : null;
+                        const avgMg = canCalc ? (((matched.dose_mg_per_kg_min + matched.dose_mg_per_kg_max) / 2) * w).toFixed(1) : null;
+
+                        return (
+                          <div key={idx} className="apply-drug-item pb-3">
+                            <div className="flex items-start justify-between">
+                              <h3 className="font-bold text-gray-800 dark:text-white">{drug.drug_name}</h3>
+                              {drug.duration && (
+                                <span className="text-xs bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded-full font-medium">{drug.duration}</span>
+                              )}
+                            </div>
+                            <p className="text-sm font-medium text-emerald-600 dark:text-emerald-400 mt-1">{drug.dose_note}</p>
+                            {canCalc ? (
+                              <div className="flex gap-4 mt-1.5 text-sm">
+                                <span className="text-gray-600 dark:text-gray-400">Dose: <strong>{minMg} – {maxMg} mg</strong></span>
+                                <span className="text-violet-600 dark:text-violet-400">Average: <strong>{avgMg} mg</strong></span>
+                              </div>
+                            ) : (
+                              <p className="text-xs text-amber-600 dark:text-amber-400 mt-1">
+                                ⚠️ Drug not found in database — dose note shown above
+                              </p>
+                            )}
+                            {drug.purpose && <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Purpose: {drug.purpose}</p>}
+                          </div>
+                        );
+                      })}
+                    </div>
+
+                    {/* Supportive Care */}
+                    {viewingPrescription.supportive_care && viewingPrescription.supportive_care.length > 0 && (
+                      <div className="mt-4 pt-3 border-t border-gray-200 dark:border-gray-700">
+                        <h4 className="font-semibold text-gray-700 dark:text-gray-300 text-sm mb-2">Supportive Care:</h4>
+                        <ul className="space-y-1">
+                          {viewingPrescription.supportive_care.map((item, idx) => (
+                            <li key={idx} className="text-xs text-gray-600 dark:text-gray-400 flex items-start gap-1.5">
+                              <span>•</span>
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {/* Notes */}
+                    {viewingPrescription.notes && (
+                      <div className="mt-4 pt-3 border-t border-gray-200 dark:border-gray-700 text-xs text-amber-700 dark:text-amber-400">
+                        ⚠️ {viewingPrescription.notes}
+                      </div>
+                    )}
+
+                    <div className="print-footer">
+                      Generated by Vet-iDrug — Always verify dosages before prescribing
+                    </div>
+
+                    <div className="no-print flex gap-3 mt-6">
+                      <button
+                        onClick={() => window.print()}
+                        className="flex-1 px-4 py-3 bg-emerald-500 text-white rounded-xl font-semibold hover:bg-emerald-600 transition-all active:scale-95 shadow-lg"
+                      >
+                        🖨️ Print Prescription
+                      </button>
+                      <button
+                        onClick={() => { setShowApplyDialog(false); setAppliedWeight(''); setAppliedSpecies(''); }}
+                        className="px-4 py-3 border-2 border-gray-200 dark:border-gray-600 text-gray-600 dark:text-gray-400 rounded-xl font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-all"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+
+          {/* Prescription Delete Confirmation */}
+          {showPrescriptionDelete && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+              <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 max-w-md w-full shadow-2xl">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Delete Prescription Template?</h3>
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  Are you sure you want to delete <span className="font-semibold">{showPrescriptionDelete.name}</span>? This action cannot be undone.
+                </p>
+                <div className="flex gap-3">
+                  <button
+                    onClick={() => setShowPrescriptionDelete(null)}
+                    className="flex-1 px-4 py-3 border-2 border-gray-300 dark:border-gray-600 rounded-xl font-semibold text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 active:scale-95 transition-all"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    onClick={() => {
+                      saveTemplates(prescriptions.filter(t => t.id !== showPrescriptionDelete.id));
+                      setShowPrescriptionDelete(null);
+                    }}
+                    className="flex-1 px-4 py-3 bg-red-500 text-white rounded-xl font-semibold hover:bg-red-600 active:scale-95 transition-all"
+                  >
+                    Delete
+                  </button>
                 </div>
               </div>
+            </div>
+          )}
 
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-1">Species</label>
-                <select
-                  value={formData.species}
-                  onChange={(e) => setFormData({ ...formData, species: e.target.value })}
-                  className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
-                >
-                  <option value="both">Both (Dogs & Cats)</option>
-                  <option value="dog">Dogs Only</option>
-                  <option value="cat">Cats Only</option>
-                </select>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1">
-                    Min Dose (mg/kg) <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="number"
-                    step="0.01"
-                    value={formData.dose_mg_per_kg_min}
-                    onChange={(e) => setFormData({ ...formData, dose_mg_per_kg_min: e.target.value })}
-                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
-                    placeholder="e.g., 10"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1">
-                    Max Dose (mg/kg) <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="number"
-                    step="0.01"
-                    value={formData.dose_mg_per_kg_max}
-                    onChange={(e) => setFormData({ ...formData, dose_mg_per_kg_max: e.target.value })}
-                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
-                    placeholder="e.g., 20"
-                    required
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1">Dosage Form</label>
-                  <input
-                    type="text"
-                    value={formData.dosage_form}
-                    onChange={(e) => setFormData({ ...formData, dosage_form: e.target.value })}
-                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
-                    placeholder="e.g., tablet, injectable"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1">Route</label>
-                  <input
-                    type="text"
-                    value={formData.route}
-                    onChange={(e) => setFormData({ ...formData, route: e.target.value })}
-                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
-                    placeholder="e.g., PO, IV, IM, SC"
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1">Concentration Value</label>
-                  <input
-                    type="number"
-                    step="0.01"
-                    value={formData.concentration_value}
-                    onChange={(e) => setFormData({ ...formData, concentration_value: e.target.value })}
-                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
-                    placeholder="e.g., 250"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-1">Concentration Unit</label>
-                  <input
-                    type="text"
-                    value={formData.concentration_unit}
-                    onChange={(e) => setFormData({ ...formData, concentration_unit: e.target.value })}
-                    className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
-                    placeholder="e.g., mg/tab, mg/ml"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-1">Available Preparations</label>
-                <input
-                  type="text"
-                  value={formData.unit_description}
-                  onChange={(e) => setFormData({ ...formData, unit_description: e.target.value })}
-                  className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
-                  placeholder="e.g., Tablets 250-500 mg, Vials 1000mg"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-1">Notes / Warnings</label>
-                <textarea
-                  value={formData.notes}
-                  onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                  className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
-                  rows="3"
-                  placeholder="Any special instructions, warnings, or contraindications..."
-                />
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-3 pt-4 sticky bottom-0 bg-white border-t border-gray-200 pb-2">
-                <button
-                  type="button"
-                  onClick={onClose}
-                  className="w-full sm:flex-1 px-4 py-3 text-base border-2 border-gray-300 rounded-lg font-semibold hover:bg-gray-50 transition"
-                >
-                  Cancel
-                </button>
-                <button
-                  type="submit"
-                  className="w-full sm:flex-1 px-4 py-3 text-base bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition"
-                >
-                  {medication ? 'Save Changes' : 'Add Medication'}
-                </button>
-              </div>
-            </form>
-          </div>
+          {/* Prescription Editor Modal */}
+          {showPrescriptionModal && (
+            <PrescriptionEditor
+              template={editingPrescription}
+              medications={medications}
+              onSave={(saved) => {
+                const savedWithId = {
+                  ...saved,
+                  id: saved.is_builtin ? Date.now().toString() : saved.id,
+                  is_builtin: false
+                };
+                const exists = prescriptions.find(t => t.id === savedWithId.id);
+                if (exists) {
+                  saveTemplates(prescriptions.map(t => t.id === savedWithId.id ? savedWithId : t));
+                } else {
+                  saveTemplates([...prescriptions, savedWithId]);
+                }
+                setShowPrescriptionModal(false);
+                setEditingPrescription(null);
+              }}
+              onCancel={() => {
+                setShowPrescriptionModal(false);
+                setEditingPrescription(null);
+              }}
+            />
+          )}
         </div>
+      </div>
       );
     };
 
