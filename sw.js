@@ -1,8 +1,10 @@
-const CACHE_NAME = 'vet-idrug-v3';
+const CACHE_NAME = 'vet-idrug-v14';
 
 const urlsToCache = [
   '/',
   '/index.html',
+  '/default-medications.js',
+  '/chat-service.js',
   '/manifest.json',
   '/icon-192.png',
   '/icon-512.png',
@@ -42,21 +44,39 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        if (response) return response;
-        return fetch(event.request).then(fetchResponse => {
-          if (!fetchResponse || fetchResponse.status !== 200) {
-            return fetchResponse;
+  const request = event.request;
+  const url = new URL(request.url);
+
+  // Only handle same-origin GET requests (let Firebase/CDN requests through)
+  if (request.method !== 'GET' || url.origin !== self.location.origin) return;
+
+  // Network-first for navigations, HTML, JS, and CSS so app updates always show
+  if (request.mode === 'navigate' || url.pathname.endsWith('.html') || url.pathname.endsWith('.js') || url.pathname.endsWith('.css')) {
+    event.respondWith(
+      fetch(request)
+        .then(response => {
+          if (response && response.status === 200) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
           }
-          const responseToCache = fetchResponse.clone();
-          caches.open(CACHE_NAME).then(cache => {
-            cache.put(event.request, responseToCache);
-          });
-          return fetchResponse;
+          return response;
+        })
+        .catch(() => caches.match(request).then(match => match || caches.match('/index.html')))
+    );
+    return;
+  }
+
+  // Cache-first for static assets (fonts, images, manifest, vendor)
+  event.respondWith(
+    caches.match(request)
+      .then(cached => {
+        if (cached) return cached;
+        return fetch(request).then(response => {
+          if (!response || response.status !== 200) return response;
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
+          return response;
         });
       })
-      .catch(() => caches.match('/index.html'))
   );
 });

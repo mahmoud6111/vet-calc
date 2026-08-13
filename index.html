@@ -29,6 +29,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
   <link rel="apple-touch-icon" href="/icon-192.png">
   <link href="/fonts/inter.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Readex+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script crossorigin src="/vendor/react.production.min.js"></script>
   <script crossorigin src="/vendor/react-dom.production.min.js"></script>
   <script src="/vendor/babel.min.js"></script>
@@ -45,12 +46,99 @@
   
   <style>
     * {
-      font-family: 'Inter', system-ui, sans-serif;
+      font-family: 'Inter', 'Readex Pro', 'Cairo', system-ui, sans-serif;
     }
 
     body {
       background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 50%, #a7f3d0 100%);
       min-height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding: 1rem 2rem;
+      }
+    }
+
+    #root {
+      width: 100%;
+      min-height: 100vh;
+    }
+
+    @media (min-width: 1024px) {
+      body {
+        padding: 1.5rem 3rem;
+      }
+      
+      #root {
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+    }
+
+    /* Mobile Bottom Navigation Safe Area */
+    .safe-area-inset {
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    /* Mobile styles */
+    .content-top-offset {
+      padding-top: 70px;
+    }
+
+    .banner-top-offset {
+      padding-top: 130px;
+    }
+
+    @media (max-width: 767px) {
+      .top-nav {
+        padding-top: env(safe-area-inset-top, 0px);
+      }
+
+      .content-top-offset {
+        padding-top: calc(env(safe-area-inset-top, 0px) + 70px);
+      }
+
+      .banner-top-offset {
+        padding-top: calc(env(safe-area-inset-top, 0px) + 130px);
+      }
+
+      .mobile-bottom-padding {
+        padding-bottom: 20px;
+      }
+      
+      .mobile-top-padding {
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-left: 0;
+        padding-right: 0;
+      }
+      
+      #root {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    /* Mobile tab active indicator */
+    @media (max-width: 767px) {
+      .mobile-tab-active {
+        position: relative;
+      }
+      
+      .mobile-tab-active::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 3px;
+        background: #10b981;
+        border-radius: 2px;
+      }
     }
 
     /* Animations */
@@ -119,6 +207,20 @@
       -webkit-backdrop-filter: blur(20px);
     }
 
+    @media (min-width: 768px) {
+      .glass {
+        border-radius: 1.5rem;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .glass {
+        border-radius: 0;
+        margin: 0;
+        width: 100%;
+      }
+    }
+
     .glass-dark {
       background: rgba(6, 78, 59, 0.9);
       backdrop-filter: blur(20px);
@@ -131,6 +233,12 @@
 
     .gradient-header {
       background: linear-gradient(135deg, #064e3b 0%, #047857 50%, #059669 100%);
+    }
+
+    @media (max-width: 767px) {
+      .gradient-header {
+        border-radius: 0;
+      }
     }
 
     .gradient-result {
@@ -581,7 +689,7 @@
   </style>
 </head>
 
-<body>
+  <body className="mobile-top-padding">
   <div id="splash-screen">
     <div class="splash-icon">
       <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5">
@@ -597,8 +705,13 @@
 
   <div id="root"></div>
 
-  <script type="text/babel">
-    const { useState, useMemo, useEffect } = React;
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="default-medications.js"></script>
+  <script src="chat-service.js"></script>
+    <script type="text/babel">
+    const { useState, useMemo, useEffect, useRef } = React;
 
     // Icons
     const Search = () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>;
@@ -662,124 +775,23 @@
       return 'other';
     };
 
-    const DEFAULT_MEDICATIONS = [
-      // ========== (A) ANTIBIOTICS ==========
-      { id: "1", brand_name: "Augmentin / Curam", generic_name: "Amoxicillin + Clavulanic acid", species: "both", dose_mg_per_kg_min: 12.5, dose_mg_per_kg_max: 25, concentration_value: null, concentration_unit: "N/A", dosage_form: "suspension/tablet", route: "PO", unit_description: "Susp 156, 312, 457, 600; Tab 625, 1000 mg", notes: "Give every 8-12 hours. Avoid in animals with diarrhea.", frequency: "q8-12h" },
-      { id: "2", brand_name: "Xorin / Cefotax", generic_name: "Cefotaxime", species: "both", dose_mg_per_kg_min: 40, dose_mg_per_kg_max: 50, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable", route: "IV/IM", unit_description: "Vials 250, 500, 1000 mg", notes: "Third-generation cephalosporin. Used post-op.", frequency: "q8h" },
-      { id: "3", brand_name: "Ceftriaxone (dog)", generic_name: "Ceftriaxone", species: "dog", dose_mg_per_kg_min: 15, dose_mg_per_kg_max: 50, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable", route: "IV/IM/SC", unit_description: "Vials 250, 500, 1000 mg (Wintriaxone, Xoraxon)", notes: "Dog-specific dosing. Give every 12-24 hours.", frequency: "q12-24h" },
-      { id: "4", brand_name: "Ceftriaxone (cat)", generic_name: "Ceftriaxone", species: "cat", dose_mg_per_kg_min: 25, dose_mg_per_kg_max: 50, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable", route: "IV/IM/SC", unit_description: "Vials 250, 500, 1000 mg (Wintriaxone, Xoraxon)", notes: "Cat-specific dosing. Give every 12-24 hours.", frequency: "q12-24h" },
-      { id: "5", brand_name: "Xithrone", generic_name: "Azithromycin", species: "both", dose_mg_per_kg_min: 5, dose_mg_per_kg_max: 10, concentration_value: 200, concentration_unit: "mg/bottle", dosage_form: "suspension", route: "PO", unit_description: "200 mg suspension", notes: "Macrolide antibiotic. Give once daily. Hepatotoxic potential.", frequency: "q24h" },
-      { id: "6", brand_name: "Klacid / Klarimix (dog)", generic_name: "Clarithromycin", species: "dog", dose_mg_per_kg_min: 4, dose_mg_per_kg_max: 12, concentration_value: null, concentration_unit: "N/A", dosage_form: "suspension/tablet", route: "PO", unit_description: "Susp 125, 250 mg", notes: "Give every 12 hours. Monitor liver function.", frequency: "q12h" },
-      { id: "6b", brand_name: "Klacid / Klarimix (cat)", generic_name: "Clarithromycin", species: "cat", dose_mg_per_kg_min: 5, dose_mg_per_kg_max: 10, concentration_value: null, concentration_unit: "N/A", dosage_form: "suspension/tablet", route: "PO", unit_description: "Susp 125, 250 mg", notes: "Give every 12 hours. Monitor liver function.", frequency: "q12h" },
-      { id: "7", brand_name: "Ceporex / Cephalexin (PO)", generic_name: "Cefalexin", species: "both", dose_mg_per_kg_min: 15, dose_mg_per_kg_max: 15, concentration_value: 250, concentration_unit: "mg/tab", dosage_form: "tablet/suspension", route: "PO", unit_description: "Susp 125, 250 mg; Tab 250, 500, 1000 mg", notes: "Oral: 15mg/kg q8-12h. For skin infections (staph).", frequency: "q8-12h" },
-      { id: "7b", brand_name: "Ceporex / Cephalexin (IM/SC)", generic_name: "Cefalexin", species: "both", dose_mg_per_kg_min: 10, dose_mg_per_kg_max: 10, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable", route: "IM/SC", unit_description: "Injectable form", notes: "IM/SC: 10mg/kg q24h. For skin infections.", frequency: "q24h" },
-      { id: "8", brand_name: "Ciprofloxacin / Cipropay", generic_name: "Ciprofloxacin", species: "both", dose_mg_per_kg_min: 20, dose_mg_per_kg_max: 25, concentration_value: 250, concentration_unit: "mg/tab", dosage_form: "tablet", route: "PO", unit_description: "Tab 250, 500 mg", notes: "Fluoroquinolone. Good for urinary infections. Once daily or divided.", frequency: "q24h" },
-      { id: "9", brand_name: "Vibramycin / Doxymycin", generic_name: "Doxycycline", species: "both", dose_mg_per_kg_min: 10, dose_mg_per_kg_max: 10, concentration_value: 100, concentration_unit: "mg/cap", dosage_form: "capsule", route: "PO", unit_description: "Capsule 100 mg", notes: "Tetracycline. Used for blood parasites (ehrlichiosis). Give once daily.", frequency: "q24h" },
+    const getSpeciesLabel = (sp) => {
+      switch (sp) {
+        case 'dog': return '🐕 Dog';
+        case 'cat': return '🐱 Cat';
+        case 'both': return '🐾 Dogs & Cats';
+        case 'cattle': return '🐮 Cattle';
+        case 'horse': return '🐴 Horse';
+        case 'sheep_goat': return '🐑 Sheep & Goat';
+        case 'camel': return '🐪 Camel';
+        case 'poultry': return '🐓 Poultry';
+        case 'large_animal': return '🐄 Large Animals';
+        default: return sp || 'General';
+      }
+    };
 
-      // ========== (B) ANTI-INFLAMMATORY & ANTIPYRETICS ==========
-      { id: "10", brand_name: "Dexamethasone", generic_name: "Dexamethasone", species: "both", dose_mg_per_kg_min: 0.01, dose_mg_per_kg_max: 0.16, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable/oral", route: "IM/SC/PO", unit_description: "Various preparations available", notes: "Corticosteroid. Use tapering regimen (3-day system). Give once daily.", frequency: "q24h" },
-      { id: "11", brand_name: "Predsol / Xilone", generic_name: "Prednisolone", species: "both", dose_mg_per_kg_min: 0.5, dose_mg_per_kg_max: 2, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup/tablet", route: "PO/IV/SC", unit_description: "Syrup 5mg/15mg; Solupred 20mg; Histacortin-H 5mg", notes: "Anti-inflammatory: 0.5-1mg/kg; Immunosuppression: 1-2mg/kg", frequency: "q24h" },
-      { id: "12", brand_name: "Alphinterin / Ambezim-G", generic_name: "Alpha-chemotrypsin", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet", route: "PO", unit_description: "Tablets", notes: "Anti-inflammatory enzyme. 1 tablet BID or TID. Dose is per animal, not per kg.", frequency: "q8-12h" },
-      { id: "13", brand_name: "Maxilase", generic_name: "Alpha-amylase", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup", notes: "Mucolytic enzyme. 1-5 ml/animal every 8-12 hours. Dose is per animal.", frequency: "q8-12h" },
-      { id: "14", brand_name: "Ketofen (Oral)", generic_name: "Ketoprofen", species: "both", dose_mg_per_kg_min: 1, dose_mg_per_kg_max: 1, concentration_value: null, concentration_unit: "N/A", dosage_form: "capsule/syrup", route: "PO", unit_description: "Cap 25, 50, 75, 100, 200 mg; Syrup 12.5 mg", notes: "NSAID. Oral: 1mg/kg q24h. Very irritating to stomach - avoid if possible.", frequency: "q24h" },
-      { id: "15", brand_name: "Ketofen (Injectable)", generic_name: "Ketoprofen", species: "both", dose_mg_per_kg_min: 2, dose_mg_per_kg_max: 2, concentration_value: 100, concentration_unit: "mg/amp", dosage_form: "injectable", route: "SC/IV/IM", unit_description: "Amp 100 mg", notes: "NSAID. Injectable: 2mg/kg q24h. Very effective antipyretic. Preferred route.", frequency: "q24h" },
-      { id: "16", brand_name: "Mobic / Mobitil", generic_name: "Meloxicam", species: "both", dose_mg_per_kg_min: 0.1, dose_mg_per_kg_max: 0.2, concentration_value: 15, concentration_unit: "mg/amp", dosage_form: "injectable/tablet", route: "SC/IV/PO", unit_description: "Tab 7.5, 15 mg; Amp 15 mg", notes: "NSAID. Initial: 0.2mg/kg, Maintenance: 0.1mg/kg. Effective for bone inflammation.", frequency: "q24h" },
-      { id: "17", brand_name: "Feldene", generic_name: "Piroxicam", species: "dog", dose_mg_per_kg_min: 0.3, dose_mg_per_kg_max: 0.3, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/injectable", route: "PO/SC/IV/IM", unit_description: "Tab 10, 20 mg; Amp 20 mg", notes: "NSAID. Dogs only: 0.3mg/kg PO q24h.", frequency: "q24h" },
-
-      // ========== (C) ANTIHISTAMINICS ==========
-      { id: "18", brand_name: "Allergy (dog)", generic_name: "Chlorphenamine", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup", route: "PO", unit_description: "Tab 4 mg; Syrup 2 mg", notes: "Antihistamine. Dogs: 4-8mg per animal q8-12h. Dose is per animal.", frequency: "q8-12h" },
-      { id: "19", brand_name: "Allergy (cat)", generic_name: "Chlorphenamine", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup", route: "PO", unit_description: "Tab 4 mg; Syrup 2 mg", notes: "Antihistamine. Cats: 2-4mg per animal q8-12h. Dose is per animal.", frequency: "q8-12h" },
-      { id: "20", brand_name: "Tavagyl", generic_name: "Clemastine", species: "both", dose_mg_per_kg_min: 0.1, dose_mg_per_kg_max: 0.1, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup/injectable", route: "PO/IM", unit_description: "Tab 1 mg; Syrup 0.5 mg; Amp 2 mg", notes: "Antihistamine. 0.1mg/kg PO q12h.", frequency: "q12h" },
-      { id: "21", brand_name: "Claritine", generic_name: "Loratadine", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup", route: "PO", unit_description: "Tab 10 mg; Syrup 5 mg", notes: "Antihistamine. 5-15mg per animal q24h. Dose is per animal, not per kg.", frequency: "q24h" },
-      { id: "22", brand_name: "Zyrtec", generic_name: "Cetirizine", species: "both", dose_mg_per_kg_min: 0.25, dose_mg_per_kg_max: 0.25, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup", route: "PO", unit_description: "Tab 10 mg; Syrup 5 mg", notes: "Antihistamine. 0.25mg/kg or 5-10mg per animal q12h.", frequency: "q12h" },
-
-      // ========== (D) ANTIEMETICS ==========
-      { id: "23", brand_name: "Cortigen B6", generic_name: "Vitamin B Complex", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable", route: "IM", unit_description: "Ampoules", notes: "Antiemetic. 1 ampoule IM q12h. Dose is per animal.", frequency: "q12h" },
-      { id: "24", brand_name: "Motilium / Motinorm", generic_name: "Domperidone", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup/tablet", route: "PO", unit_description: "Syrup 5 mg; Tab 10 mg", notes: "Antiemetic. 2-5mg per animal q8h. Dose is per animal.", frequency: "q8h" },
-      { id: "25", brand_name: "Primperan", generic_name: "Metoclopramide", species: "both", dose_mg_per_kg_min: 0.2, dose_mg_per_kg_max: 0.5, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup/tablet/injectable", route: "PO/IM/IV", unit_description: "Syrup 5 mg; Tab 10 mg; Amp 10 mg", notes: "Antiemetic/Prokinetic. 0.2-0.5mg/kg q8h.", frequency: "q8h" },
-      { id: "26", brand_name: "Zofran / Dansit (IV)", generic_name: "Ondansetron", species: "both", dose_mg_per_kg_min: 0.5, dose_mg_per_kg_max: 0.5, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable", route: "IV", unit_description: "Amp 4, 8 mg", notes: "Potent antiemetic. 0.5mg/kg IV q12h.", frequency: "q12h" },
-      { id: "27", brand_name: "Zofran / Dansit (PO)", generic_name: "Ondansetron", species: "both", dose_mg_per_kg_min: 0.5, dose_mg_per_kg_max: 1, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet", route: "PO", unit_description: "Tab 8 mg", notes: "Potent antiemetic. 0.5-1mg/kg PO q12h.", frequency: "q12h" },
-
-      // ========== (E) COUGH/BRONCHODILATOR/MUCOLYTIC ==========
-      { id: "28", brand_name: "Guava / Balsam", generic_name: "Herbal Extract", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup", notes: "Cough sedative. 2-5ml per animal q8-12h. Dose is per animal.", frequency: "q8-12h" },
-      { id: "29", brand_name: "Bisolvon (dog)", generic_name: "Bromhexine", species: "dog", dose_mg_per_kg_min: 2, dose_mg_per_kg_max: 2.5, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup/tablet/injectable", route: "PO/IM", unit_description: "Syrup 4 mg; Tab 8 mg; Amp 4 mg", notes: "Mucolytic. Dogs: 2-2.5mg/kg PO q12h.", frequency: "q12h" },
-      { id: "30", brand_name: "Bisolvon (cat)", generic_name: "Bromhexine", species: "cat", dose_mg_per_kg_min: 1, dose_mg_per_kg_max: 1, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup/tablet/injectable", route: "PO/IM", unit_description: "Syrup 4 mg; Tab 8 mg; Amp 4 mg", notes: "Mucolytic. Cats: 1mg/kg PO q24h.", frequency: "q24h" },
-      { id: "31", brand_name: "Acetylcysteine", generic_name: "Acetylcysteine", species: "both", dose_mg_per_kg_min: 50, dose_mg_per_kg_max: 50, concentration_value: null, concentration_unit: "N/A", dosage_form: "sachet", route: "PO", unit_description: "Sachets", notes: "Mucolytic. 50mg/kg PO q8h. Also used for acetaminophen toxicity.", frequency: "q8h" },
-      { id: "32", brand_name: "Ventolin (dog)", generic_name: "Salbutamol", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "inhaler/tablet/syrup/injectable", route: "Inhalation/PO/IV", unit_description: "Inhaler; Tab 2 mg; Syrup 2 mg; Amp 0.5 mg", notes: "Bronchodilator. Dogs: 100-300 ug q4-6h. Dose is per animal.", frequency: "q4-6h" },
-      { id: "33", brand_name: "Ventolin (cat)", generic_name: "Salbutamol", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "inhaler/tablet/syrup/injectable", route: "Inhalation/PO/IV", unit_description: "Inhaler; Tab 2 mg; Syrup 2 mg; Amp 0.5 mg", notes: "Bronchodilator. Cats: 100 ug q4-6h. Dose is per animal.", frequency: "q4-6h" },
-      { id: "34", brand_name: "Aironyl (dog)", generic_name: "Terbutaline", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup", route: "PO", unit_description: "Tab 2.5 mg; Syrup 1.5 mg", notes: "Bronchodilator. Dogs: 1.25-5mg per animal q8-12h.", frequency: "q8-12h" },
-      { id: "35", brand_name: "Aironyl (cat)", generic_name: "Terbutaline", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup", route: "PO", unit_description: "Tab 2.5 mg; Syrup 1.5 mg", notes: "Bronchodilator. Cats: 0.312-1.25mg per animal q8-12h.", frequency: "q8-12h" },
-      { id: "36", brand_name: "Etaphylline (dog)", generic_name: "Theophylline", species: "dog", dose_mg_per_kg_min: 15, dose_mg_per_kg_max: 20, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable/syrup", route: "IV/PO", unit_description: "Amp 500 mg; Syrup 125 mg", notes: "Bronchodilator. Dogs: 15-20mg/kg q12-24h.", frequency: "q12-24h" },
-      { id: "37", brand_name: "Etaphylline (cat)", generic_name: "Theophylline", species: "cat", dose_mg_per_kg_min: 10, dose_mg_per_kg_max: 10, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable/syrup", route: "IV/PO", unit_description: "Amp 500 mg; Syrup 125 mg", notes: "Bronchodilator. Cats: 10mg/kg q12-24h.", frequency: "q12-24h" },
-
-      // ========== (F) ANTACIDS ==========
-      { id: "38", brand_name: "Mucogel / Epicogel", generic_name: "Aluminium Antacids", species: "both", dose_mg_per_kg_min: 0.5, dose_mg_per_kg_max: 1, concentration_value: null, concentration_unit: "N/A", dosage_form: "suspension", route: "PO", unit_description: "Suspension", notes: "Antacid. 0.5-1ml/kg q6-8h.", frequency: "q6-8h" },
-      { id: "39", brand_name: "Ranitack / Rani (dog)", generic_name: "Ranitidine", species: "dog", dose_mg_per_kg_min: 2, dose_mg_per_kg_max: 2, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/injectable/syrup", route: "PO/IV/IM", unit_description: "Tab 75, 150 mg; Amp 50 mg; Noerosive Syrup", notes: "H2 blocker. Dogs: 2mg/kg q8-12h.", frequency: "q8-12h" },
-      { id: "40", brand_name: "Ranitack / Rani (cat)", generic_name: "Ranitidine", species: "cat", dose_mg_per_kg_min: 2.5, dose_mg_per_kg_max: 3.5, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/injectable/syrup", route: "PO/IV/IM", unit_description: "Tab 75, 150 mg; Amp 50 mg; Noerosive Syrup", notes: "H2 blocker. Cats: 2.5-3.5mg/kg q8-12h.", frequency: "q8-12h" },
-      { id: "41", brand_name: "Antodine", generic_name: "Famotidine", species: "both", dose_mg_per_kg_min: 0.5, dose_mg_per_kg_max: 1, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/injectable", route: "PO/IV", unit_description: "Tab 20, 40 mg; Amp 20 mg", notes: "H2 blocker. 0.5-1mg/kg q12-24h.", frequency: "q12-24h" },
-      { id: "42", brand_name: "Risek", generic_name: "Omeprazole", species: "both", dose_mg_per_kg_min: 0.5, dose_mg_per_kg_max: 1.5, concentration_value: null, concentration_unit: "N/A", dosage_form: "capsule/injectable", route: "PO/IV", unit_description: "Cap 10, 20, 40 mg; Vial 40 mg", notes: "Proton pump inhibitor. 0.5-1.5mg/kg q24h.", frequency: "q24h" },
-      { id: "43", brand_name: "Controloc / Pantoloc", generic_name: "Pantoprazole", species: "both", dose_mg_per_kg_min: 0.7, dose_mg_per_kg_max: 1, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/injectable", route: "IV/PO", unit_description: "Tab 20, 40 mg; Vial 40 mg", notes: "Proton pump inhibitor. 0.7-1mg/kg IV q24h.", frequency: "q24h" },
-
-      // ========== (H) LAXATIVES ==========
-      { id: "44", brand_name: "Egycusate (dog oral)", generic_name: "Docusate Sodium", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup", notes: "Stool softener. Dogs: 50-100mg PO q12h. Dose is per animal.", frequency: "q12h" },
-      { id: "45", brand_name: "Egycusate (dog rectal)", generic_name: "Docusate Sodium", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "enema", route: "Rectal", unit_description: "5% solution", notes: "Stool softener. Dogs: 10-15ml (5%) rectal q12h.", frequency: "q12h" },
-      { id: "46", brand_name: "Egycusate (cat)", generic_name: "Docusate Sodium", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup/enema", route: "PO/Rectal", unit_description: "Syrup, 5% solution", notes: "Stool softener. Cats: 50mg PO or 2ml (5%) rectal q12h.", frequency: "q12h" },
-      { id: "47", brand_name: "Lactulose (dog)", generic_name: "Lactulose", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup", notes: "Osmotic laxative. Dogs: 5-15ml PO q8h. Dose is per animal.", frequency: "q8h" },
-      { id: "48", brand_name: "Lactulose (cat)", generic_name: "Lactulose", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup", notes: "Osmotic laxative. Cats: 0.5-5ml PO q24h. Dose is per animal.", frequency: "q24h" },
-      { id: "49", brand_name: "Paraffin Oil (dog)", generic_name: "Paraffin", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "oil", route: "PO", unit_description: "Oil", notes: "Lubricant laxative. Dogs: 1-2 tablespoons q12-24h.", frequency: "q12-24h" },
-      { id: "50", brand_name: "Paraffin Oil (cat)", generic_name: "Paraffin", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "oil", route: "PO", unit_description: "Oil", notes: "Lubricant laxative. Cats: 10-25mm (small amount) q12-24h.", frequency: "q12-24h" },
-      { id: "51", brand_name: "Phosphate Enema", generic_name: "Phosphate Enema", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "enema", route: "Rectal", unit_description: "Enema, Enemax", notes: "⚠️ DOGS ONLY - DO NOT USE IN CATS! Dogs: 60-128ml. Dose is per animal.", frequency: "Once" },
-      { id: "52", brand_name: "Glycerin Suppository (dog)", generic_name: "Glycerin", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "suppository", route: "Rectal", unit_description: "Suppository", notes: "Laxative. Dogs: 1-2 small suppositories rectally.", frequency: "Once" },
-      { id: "53", brand_name: "Glycerin Suppository (cat)", generic_name: "Glycerin", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "solution", route: "Rectal", unit_description: "5% solution", notes: "Laxative. Cats: 2ml of 5% solution rectally.", frequency: "Once" },
-
-      // ========== (H) ANTIDIARRHEALS ==========
-      { id: "54", brand_name: "Streptoquin", generic_name: "Streptomycin / Sulphonamide", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup", notes: "Antidiarrheal. 2-5ml per animal q8-12h. Dose is per animal.", frequency: "q8-12h" },
-      { id: "55", brand_name: "Flagyl / Flagelat (dog)", generic_name: "Metronidazole", species: "dog", dose_mg_per_kg_min: 10, dose_mg_per_kg_max: 25, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup/injectable", route: "PO/IV/SC", unit_description: "Syrup 125, 200 mg; Tab 250, 500 mg; Vial 500 mg", notes: "For protozoal diarrhea. Dogs: 10-25mg/kg q12h.", frequency: "q12h" },
-      { id: "56", brand_name: "Flagyl / Flagelat (cat)", generic_name: "Metronidazole", species: "cat", dose_mg_per_kg_min: 8, dose_mg_per_kg_max: 10, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup/injectable", route: "PO/IV/SC", unit_description: "Syrup 125, 200 mg; Tab 250, 500 mg; Vial 500 mg", notes: "For protozoal diarrhea. Cats: 8-10mg/kg q12h.", frequency: "q12h" },
-      { id: "57", brand_name: "Kapect Compound", generic_name: "Sulphonamide / Trimethoprim", species: "both", dose_mg_per_kg_min: 15, dose_mg_per_kg_max: 15, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup 120 mg", notes: "Antidiarrheal. 15mg/kg PO q12h.", frequency: "q12h" },
-      { id: "58", brand_name: "Antinal", generic_name: "Nifuroxazide", species: "both", dose_mg_per_kg_min: 4.4, dose_mg_per_kg_max: 4.4, concentration_value: null, concentration_unit: "N/A", dosage_form: "capsule/syrup", route: "PO", unit_description: "Cap; Syrup 200 mg", notes: "Intestinal antiseptic. 4.4mg/kg q8h.", frequency: "q8h" },
-
-      // ========== (I) ANTI-HEMORRHAGE ==========
-      { id: "59", brand_name: "Dicynone / Haemostop", generic_name: "Ethamsylate", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/injectable", route: "PO/IV/IM", unit_description: "Tab 250, 500 mg; Amp 250 mg", notes: "Hemostatic. 1 tablet/ampoule q8-24h. Dose is per animal.", frequency: "q8-24h" },
-
-      // ========== (J) SUPPLEMENTS & VITAMINS ==========
-      { id: "60", brand_name: "Epicozyme / Becozyme / Neurotone", generic_name: "Vitamin B Complex", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup/injectable/tablet", route: "PO/IM", unit_description: "Syrup, Amp, Tab", notes: "B vitamin supplement. 1-4ml daily. Dose is per animal.", frequency: "q24h" },
-      { id: "61", brand_name: "Hepaticum / Hepatofort", generic_name: "Liver Tonic", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup/capsule", route: "PO", unit_description: "Syrup, Cap", notes: "Liver support. 2-5ml per animal q8-12h.", frequency: "q8-12h" },
-      { id: "62", brand_name: "Totavit / Sansovit / Halorang (dog)", generic_name: "Multivitamin", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup", notes: "Multivitamin. Dogs: 1-5ml daily. Dose is per animal.", frequency: "q24h" },
-      { id: "63", brand_name: "Totavit / Sansovit / Halorang (cat)", generic_name: "Multivitamin", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "syrup", route: "PO", unit_description: "Syrup", notes: "Multivitamin. Cats: 0.5-3ml daily. Dose is per animal.", frequency: "q24h" },
-      { id: "64", brand_name: "Hydrosafe / Hydran (dog)", generic_name: "Minerals (Rehydration)", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "sachet", route: "PO", unit_description: "Sachets", notes: "Oral rehydration. Dogs: 1-3 sachets. Dose is per animal.", frequency: "As needed" },
-      { id: "65", brand_name: "Hydrosafe / Hydran (cat)", generic_name: "Minerals (Rehydration)", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "sachet", route: "PO", unit_description: "Sachets", notes: "Oral rehydration. Cats: 0.3-0.6 sachets. Dose is per animal.", frequency: "As needed" },
-      { id: "66", brand_name: "Cal-Bor-Mag (Injectable)", generic_name: "Calcium", species: "both", dose_mg_per_kg_min: 50, dose_mg_per_kg_max: 150, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable", route: "IV", unit_description: "Injectable", notes: "Calcium supplement. 50-150mg/kg IV slowly with ECG monitoring.", frequency: "As needed" },
-      { id: "67", brand_name: "Osteocare / Decal-B12 (dog)", generic_name: "Calcium", species: "dog", dose_mg_per_kg_min: 5, dose_mg_per_kg_max: 22, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup", route: "PO", unit_description: "Tab, Syrup", notes: "Oral calcium. Dogs: 5-22mg/kg daily.", frequency: "q24h" },
-      { id: "68", brand_name: "Osteocare / Decal-B12 (cat)", generic_name: "Calcium", species: "cat", dose_mg_per_kg_min: 10, dose_mg_per_kg_max: 25, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet/syrup", route: "PO", unit_description: "Tab, Syrup", notes: "Oral calcium. Cats: 10-25mg/kg daily.", frequency: "q24h" },
-
-      // ========== (K) ANTIFUNGALS ==========
-      { id: "69", brand_name: "Diflucan (dog)", generic_name: "Fluconazole", species: "dog", dose_mg_per_kg_min: 2.5, dose_mg_per_kg_max: 5, concentration_value: null, concentration_unit: "N/A", dosage_form: "capsule", route: "PO", unit_description: "Cap 150 mg", notes: "Systemic antifungal. Dogs: 2.5-5mg/kg q12h.", frequency: "q12h" },
-      { id: "70", brand_name: "Diflucan (cat)", generic_name: "Fluconazole", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "capsule", route: "PO", unit_description: "Cap 150 mg", notes: "Systemic antifungal. Cats: 50-100mg per cat q12h. Dose per animal.", frequency: "q12h" },
-      { id: "71", brand_name: "Itraconazole / Itrapex", generic_name: "Itraconazole", species: "both", dose_mg_per_kg_min: 5, dose_mg_per_kg_max: 5, concentration_value: null, concentration_unit: "N/A", dosage_form: "capsule", route: "PO", unit_description: "Cap 100 mg", notes: "Antifungal. 5mg/kg daily. Pulse therapy: 1 week on, 1 week off.", frequency: "q24h" },
-      { id: "72", brand_name: "Lamasil / Lamafin", generic_name: "Terbinafine", species: "both", dose_mg_per_kg_min: 20, dose_mg_per_kg_max: 40, concentration_value: null, concentration_unit: "N/A", dosage_form: "tablet", route: "PO", unit_description: "Tab 125, 250 mg", notes: "Antifungal. 20-40mg/kg daily. Pulse therapy recommended.", frequency: "q24h" },
-
-      // ========== (M) EYE PREPARATIONS ==========
-      { id: "73", brand_name: "Tobrin / Ciprocin / Tobrex", generic_name: "Eye Antibiotic", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "eye drops", route: "Ophthalmic", unit_description: "Eye drops", notes: "Ophthalmic antibiotic. 1 drop q6-12h.", frequency: "q6-12h" },
-      { id: "74", brand_name: "Tobradex / Isoptomaxitrol", generic_name: "Eye Antibiotic + Steroid", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "eye drops", route: "Ophthalmic", unit_description: "Eye drops", notes: "Combined antibiotic/steroid. 1 drop q6-12h. Avoid with corneal ulcers.", frequency: "q6-12h" },
-
-      // ========== (N) EAR PREPARATIONS ==========
-      { id: "75", brand_name: "Otal / Otosept", generic_name: "Ear Antibiotic + Steroid", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "ear drops", route: "Otic", unit_description: "Ear drops", notes: "Otic preparation. 1-4 drops q8-12h.", frequency: "q8-12h" },
-
-      // ========== (O) TOPICAL PREPARATIONS ==========
-      { id: "76", brand_name: "Fucidin / Oxy-G", generic_name: "Topical Antibiotic", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "cream/spray", route: "Topical", unit_description: "Cream, Spray", notes: "Topical antibiotic. Apply to affected area BID-TID.", frequency: "q8-12h" },
-      { id: "77", brand_name: "Healsol / Iurexoul", generic_name: "Healing Promoter", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "spray/cream", route: "Topical", unit_description: "Spray, Cream", notes: "Wound healing promoter. Apply to wounds BID.", frequency: "q12h" },
-      { id: "78", brand_name: "Cyteal", generic_name: "Skin Antiseptic", species: "both", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: null, concentration_unit: "N/A", dosage_form: "solution", route: "Topical", unit_description: "Solution (dilute 1:9)", notes: "Antiseptic wash. Dilute 1:9 with water before use.", frequency: "As needed" },
-
-      // ========== SYNULOX (Veterinary specific) ==========
-      { id: "79", brand_name: "Synulox", generic_name: "Amoxicillin + Clavulanic acid", species: "both", dose_mg_per_kg_min: 12.5, dose_mg_per_kg_max: 12.5, concentration_value: null, concentration_unit: "N/A", dosage_form: "injectable", route: "IM/SC", unit_description: "Veterinary injectable", notes: "Veterinary antibiotic. For respiratory, urinary, skin infections. 12.5mg/kg.", frequency: "q24h" },
-
-      // ========== PROBIOTICS ==========
-      { id: "80", brand_name: "Lacteol Forte (cat)", generic_name: "Lactobacillus LB (Probiotic)", species: "cat", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: 10, concentration_unit: "billion CFU/sachet", dosage_form: "oral sachet", route: "PO", unit_description: "Sachet 10 billion CFU (10×10⁹); Pack of 6 sachets", notes: "🐱 CATS: 1/4 to 1/2 sachet per cat daily (1-5 billion CFU/day). For therapeutic use (IBD, severe diarrhea): up to 1/2 sachet BID. Mix with food. Human product used in veterinary practice. Indications: Antibiotic-associated diarrhea prevention, acute infectious diarrhea, H. pylori therapy support, GI microbiome restoration.", frequency: "q12-24h" },
-      { id: "81", brand_name: "Lacteol Forte (small dog <10kg)", generic_name: "Lactobacillus LB (Probiotic)", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: 10, concentration_unit: "billion CFU/sachet", dosage_form: "oral sachet", route: "PO", unit_description: "Sachet 10 billion CFU (10×10⁹); Pack of 6 sachets", notes: "🐕 SMALL DOGS (<10kg): 1/4 to 1/2 sachet daily (2.5-5 billion CFU). For therapeutic use: up to 1/2 sachet BID. Mix with food. Human product used in veterinary practice. Indications: Antibiotic-associated diarrhea, acute GI infections, post-antibiotic gut restoration.", frequency: "q12-24h" },
-      { id: "82", brand_name: "Lacteol Forte (medium dog 10-25kg)", generic_name: "Lactobacillus LB (Probiotic)", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: 10, concentration_unit: "billion CFU/sachet", dosage_form: "oral sachet", route: "PO", unit_description: "Sachet 10 billion CFU (10×10⁹); Pack of 6 sachets", notes: "🐕 MEDIUM DOGS (10-25kg): 1/2 to 1 sachet daily (5-10 billion CFU). For therapeutic use: up to 1 sachet BID. Mix with food. Human product used in veterinary practice. Indications: Antibiotic-associated diarrhea, acute GI infections, post-antibiotic gut restoration.", frequency: "q12-24h" },
-      { id: "83", brand_name: "Lacteol Forte (large dog >25kg)", generic_name: "Lactobacillus LB (Probiotic)", species: "dog", dose_mg_per_kg_min: 0, dose_mg_per_kg_max: 0, concentration_value: 10, concentration_unit: "billion CFU/sachet", dosage_form: "oral sachet", route: "PO", unit_description: "Sachet 10 billion CFU (10×10⁹); Pack of 6 sachets", notes: "🐕 LARGE DOGS (>25kg): 1 to 2 sachets daily (10-20 billion CFU). For therapeutic use: up to 1 sachet BID. Mix with food. Human product used in veterinary practice. Indications: Antibiotic-associated diarrhea, acute GI infections, post-antibiotic gut restoration.", frequency: "q12-24h" }
-    ];
+    // DEFAULT_MEDICATIONS is loaded from default-medications.js
+    const DEFAULT_MEDICATIONS = window.DEFAULT_MEDICATIONS;
 
     const BUILTIN_TEMPLATES = [
       {
@@ -1476,10 +1488,977 @@
       );
     };
 
+    
+                        const VetCommunityChat = () => {
+      const [activeView, setActiveView] = useState('forums');
+      const [activeChannel, setActiveChannel] = useState('dosage_qa');
+      const [messages, setMessages] = useState([]);
+      const [newMessage, setNewMessage] = useState('');
+      const [tag, setTag] = useState('Dosage Inquiry');
+      const [replyToMsg, setReplyToMsg] = useState(null);
+      const [searchQuery, setSearchQuery] = useState('');
+      const [filterType, setFilterType] = useState('all');
+      const [species, setSpecies] = useState('');
+      const [composerOpen, setComposerOpen] = useState(false);
+      const composerInputRef = useRef(null);
+      const [selectedThreadDoc, setSelectedThreadDoc] = useState(null);
+      const [isOnline, setIsOnline] = useState(navigator.onLine);
+      const [selectedUserProfile, setSelectedUserProfile] = useState(null);
+      const chatEndRef = useRef(null);
+      const MAX_POST_LENGTH = 10000;
+      const [onlineCount, setOnlineCount] = useState(null);
+
+      const [userProfile, setUserProfile] = useState(() => {
+        try {
+          const saved = localStorage.getItem('vetiDrugUserProfile');
+          return saved ? JSON.parse(saved) : { name: '', title: 'Veterinarian', avatar: '🩺' };
+        } catch (e) {
+          return { name: '', title: 'Veterinarian', avatar: '🩺' };
+        }
+      });
+
+      const [userKey] = useState(() => {
+        let savedKey = localStorage.getItem('vetiDrugUserKey');
+        if (!savedKey) {
+          savedKey = 'user_' + Math.random().toString(36).substr(2, 9);
+          localStorage.setItem('vetiDrugUserKey', savedKey);
+        }
+        return savedKey;
+      });
+
+      const [showProfileModal, setShowProfileModal] = useState(false);
+      const [inputName, setInputName] = useState(userProfile.name);
+      const [inputTitle, setInputTitle] = useState(userProfile.title);
+      const [inputAvatar, setInputAvatar] = useState(userProfile.avatar || '🩺');
+
+      // Forum channels (Reddit-style)
+      const forumChannels = [
+        { id: 'dosage_qa', sub: 'r/DosageQA', name: 'Dosage & Pharmacotherapy', icon: '💊', desc: 'Dose calculations, CRI rates & protocols' },
+        { id: 'small_animals', sub: 'r/SmallAnimalMed', name: 'Small Animal Medicine', icon: '🐕', desc: 'Canine & feline clinical cases' },
+        { id: 'large_animals', sub: 'r/LargeAnimalMed', name: 'Large Animal Practice', icon: '🐮', desc: 'Ruminant, equine & avian medicine' }
+      ];
+
+      // Live chat channels (WhatsApp-style)
+      const liveChatChannels = [
+        { id: 'general', sub: 'r/VetLounge', name: 'Clinical Lounge', icon: '☕', desc: 'Live practice discussions & networking' }
+      ];
+
+      const allChannels = [...forumChannels, ...liveChatChannels];
+      const channels = activeView === 'forums' ? forumChannels : liveChatChannels;
+      const currentChannelObj = allChannels.find(c => c.id === activeChannel) || allChannels[0];
+
+      const speciesOptions = [
+        { id: '', label: '🐾 Any' },
+        { id: 'Canine', label: '🐕 Canine' },
+        { id: 'Feline', label: '🐈 Feline' },
+        { id: 'Equine', label: '🐎 Equine' },
+        { id: 'Bovine', label: '🐄 Bovine' }
+      ];
+      const tagOptions = ['Dosage Inquiry', 'Case Study', 'Protocol Review', 'Clinical Lounge'];
+
+      // Monitor online status
+      useEffect(() => {
+        const handleOnline = () => setIsOnline(true);
+        const handleOffline = () => setIsOnline(false);
+        window.addEventListener('online', handleOnline);
+        window.addEventListener('offline', handleOffline);
+        return () => {
+          window.removeEventListener('online', handleOnline);
+          window.removeEventListener('offline', handleOffline);
+        };
+      }, []);
+
+      // Subscribe to active channel messages
+      useEffect(() => {
+        let unsubscribe = () => {};
+        if (window.VetChatService) {
+          unsubscribe = window.VetChatService.subscribeToChannel(activeChannel, (newMsgs) => {
+            setMessages(newMsgs);
+          });
+        }
+        return () => unsubscribe();
+      }, [activeChannel]);
+
+      // Listen for local tab updates
+      useEffect(() => {
+        const handleLocalUpdate = (e) => {
+          if (e.detail && e.detail.channelId === activeChannel) {
+            setMessages(e.detail.messages);
+          }
+        };
+        window.addEventListener('vetChatLocalUpdate', handleLocalUpdate);
+        return () => window.removeEventListener('vetChatLocalUpdate', handleLocalUpdate);
+      }, [activeChannel]);
+
+      // Presence / online users tracking
+      useEffect(() => {
+        if (window.VetChatService) {
+          window.VetChatService.startPresenceTracking();
+          const unsubscribe = window.VetChatService.subscribeToPresence((count) => setOnlineCount(count));
+          return () => {
+            if (unsubscribe) unsubscribe();
+            window.VetChatService.stopPresenceTracking();
+          };
+        }
+      }, []);
+
+      // Auto-scroll live chat to bottom when messages change
+      useEffect(() => {
+        if (activeView === 'chat' && chatEndRef.current) {
+          chatEndRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }, [messages, activeView]);
+
+      const handleSaveProfile = (e) => {
+        e.preventDefault();
+        if (!inputName.trim()) return;
+        const profile = { name: inputName.trim(), title: inputTitle.trim() || 'Veterinarian', avatar: inputAvatar };
+        setUserProfile(profile);
+        localStorage.setItem('vetiDrugUserProfile', JSON.stringify(profile));
+        setShowProfileModal(false);
+      };
+
+      const handleSendMessage = async (e, targetParentId = null) => {
+        e.preventDefault();
+        if (!newMessage.trim()) return;
+        if (!userProfile.name) {
+          setShowProfileModal(true);
+          return;
+        }
+
+        if (window.VetChatService) {
+          const parentId = targetParentId || (replyToMsg ? replyToMsg.id : null);
+          await window.VetChatService.sendMessage(activeChannel, userProfile, newMessage, tag, parentId, species);
+          setNewMessage('');
+          setReplyToMsg(null);
+          setComposerOpen(false);
+        }
+      };
+
+      const openComposer = () => {
+        if (!userProfile.name) {
+          setShowProfileModal(true);
+          return;
+        }
+        setComposerOpen(true);
+        setTimeout(() => {
+          if (composerInputRef.current) composerInputRef.current.focus();
+        }, 60);
+      };
+
+      const openProfileModal = () => {
+        setInputName(userProfile.name);
+        setInputTitle(userProfile.title);
+        setInputAvatar(userProfile.avatar || '🩺');
+        setShowProfileModal(true);
+      };
+
+      const handleUpvote = async (msgId) => {
+        if (window.VetChatService) {
+          await window.VetChatService.upvoteMessage(activeChannel, msgId, userKey);
+        }
+      };
+
+      const handleDownvote = async (msgId) => {
+        if (window.VetChatService) {
+          await window.VetChatService.downvoteMessage(activeChannel, msgId, userKey);
+        }
+      };
+
+      const handleSoftDelete = async (msgId) => {
+        if (window.VetChatService && confirm('Delete this post? This action cannot be undone.')) {
+          await window.VetChatService.softDeleteMessage(activeChannel, msgId);
+          setSelectedThreadDoc(null);
+        }
+      };
+
+      const handleShowUserProfile = async (uid) => {
+        if (window.VetChatService) {
+          const profile = await window.VetChatService.getUserProfile(uid);
+          if (profile) {
+            setSelectedUserProfile(profile);
+          }
+        }
+      };
+
+      const formatTime = (ts) => {
+        if (!ts) return '';
+        const d = new Date(ts);
+        return d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      };
+
+      // Filter & Group Messages
+      const parentMessages = messages.filter(m => !m.parentId);
+      const repliesMap = {};
+      messages.filter(m => m.parentId).forEach(r => {
+        repliesMap[r.parentId] = repliesMap[r.parentId] || [];
+        repliesMap[r.parentId].push(r);
+      });
+
+      // Search & Filter Logic
+      const filteredParents = parentMessages.filter(msg => {
+        const textMatch = msg.text.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                          msg.author.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                          (msg.tag && msg.tag.toLowerCase().includes(searchQuery.toLowerCase())) ||
+                          (msg.species && msg.species.toLowerCase().includes(searchQuery.toLowerCase()));
+        if (!textMatch) return false;
+
+        if (filterType === 'unanswered') return !repliesMap[msg.id] || repliesMap[msg.id].length === 0;
+        if (filterType === 'answered') return repliesMap[msg.id] && repliesMap[msg.id].length > 0;
+        return true;
+      });
+
+      // Live chat bubbles: all non-deleted messages in chronological order
+      const chatMessages = messages
+        .filter(m => !m.deleted)
+        .sort((a, b) => (a.timestamp || 0) - (b.timestamp || 0));
+
+      // Thread Detail View Data
+      const activeThreadReplies = selectedThreadDoc ? (repliesMap[selectedThreadDoc.id] || []) : [];
+      const topAnswer = activeThreadReplies.length > 0
+        ? [...activeThreadReplies].sort((a, b) => ((b.upvotes || 0) - (b.downvotes || 0)) - ((a.upvotes || 0) - (a.downvotes || 0)))[0]
+        : null;
+
+      return (
+        <div className="p-3 sm:p-6 space-y-4 animate-fade-in font-sans max-w-3xl mx-auto">
+          {/* ── Action toolbar ── */}
+          <div className="bg-white/95 dark:bg-slate-800/95 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-md">
+            {/* Identity + Ask */}
+            <div className="flex items-center gap-3 px-4 pt-3">
+              <button
+                onClick={openProfileModal}
+                title="Edit your profile"
+                className="relative w-10 h-10 shrink-0 rounded-full bg-gradient-to-br from-indigo-100 to-emerald-100 dark:from-slate-700 dark:to-slate-700 flex items-center justify-center text-lg ring-2 ring-indigo-500/20 hover:ring-indigo-500/60 transition-all"
+              >
+                {userProfile.avatar || '🩺'}
+                <span className={`absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full border-2 border-white dark:border-slate-800 ${isOnline ? 'bg-emerald-500' : 'bg-amber-400'}`}></span>
+              </button>
+              <div className="flex-1 min-w-0">
+                <div className="font-extrabold text-sm text-slate-900 dark:text-slate-100 truncate">
+                  {userProfile.name ? userProfile.name : 'Medical Practitioner'}
+                </div>
+                <div className="text-[11px] text-slate-500 dark:text-slate-400 truncate">
+                  {userProfile.name ? userProfile.title : 'Set your profile to join the community'}
+                </div>
+              </div>
+              {onlineCount !== null && onlineCount !== undefined && (
+                <span className="hidden sm:flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-emerald-700 dark:text-emerald-400 text-[11px] font-bold shrink-0">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  {onlineCount} online
+                </span>
+              )}
+              {activeView === 'forums' && (
+                <button
+                  onClick={openComposer}
+                  className="px-4 py-2.5 rounded-full text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-700 transition-all active:scale-95 shadow-sm flex items-center gap-1.5 shrink-0"
+                >
+                  <Plus />
+                  <span className="hidden sm:inline">Ask a Question</span>
+                  <span className="sm:hidden">Ask</span>
+                </button>
+              )}
+            </div>
+
+            {/* Forums / Live Chat switch */}
+            <div className="px-4 py-2.5">
+              <div className="flex gap-1 bg-slate-100 dark:bg-slate-900 rounded-full p-1">
+                <button
+                  onClick={() => { setActiveView('forums'); setActiveChannel('dosage_qa'); setSelectedThreadDoc(null); setSearchQuery(''); }}
+                  className={`flex-1 py-2 rounded-full text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${
+                    activeView === 'forums'
+                      ? 'bg-white dark:bg-slate-700 text-indigo-600 dark:text-indigo-300 shadow-sm'
+                      : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100'
+                  }`}
+                >
+                  <span>📋</span>
+                  <span>Q&A Forums</span>
+                </button>
+                <button
+                  onClick={() => { setActiveView('chat'); setActiveChannel('general'); setSelectedThreadDoc(null); setSearchQuery(''); }}
+                  className={`flex-1 py-2 rounded-full text-xs font-bold transition-all flex items-center justify-center gap-1.5 ${
+                    activeView === 'chat'
+                      ? 'bg-white dark:bg-slate-700 text-emerald-600 dark:text-emerald-300 shadow-sm'
+                      : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100'
+                  }`}
+                >
+                  <span>💬</span>
+                  <span>Live Chat</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* ── Context strip: forum pills + scoped search + status filters ── */}
+          <div className="bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm p-3 space-y-2.5">
+            {/* Forum / channel pills */}
+            <div className="flex gap-2 overflow-x-auto scroll-tabs">
+              {channels.map(ch => (
+                <button
+                  key={ch.id}
+                  onClick={() => { setActiveChannel(ch.id); setSelectedThreadDoc(null); setSearchQuery(''); }}
+                  className={`px-3.5 py-2 rounded-full border text-xs font-bold whitespace-nowrap transition-all flex items-center gap-1.5 shrink-0 ${
+                    activeChannel === ch.id
+                      ? 'border-indigo-500 bg-indigo-600 text-white shadow-sm'
+                      : 'border-slate-200 bg-slate-50 dark:bg-slate-900 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:border-indigo-300 hover:bg-indigo-50 dark:hover:bg-slate-800'
+                  }`}
+                >
+                  <span>{ch.icon}</span>
+                  <span>{ch.sub}</span>
+                </button>
+              ))}
+            </div>
+
+            {activeView === 'forums' ? (
+              <>
+                {/* Scoped search — only within this forum */}
+                <div className="relative">
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    placeholder={`Search ${currentChannelObj.name}...`}
+                    className="w-full pl-9 pr-10 py-2.5 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-full text-sm text-slate-900 dark:text-slate-100 focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 font-medium shadow-xs placeholder-slate-400"
+                  />
+                  <span className="absolute left-3 top-2.5 text-slate-400 text-sm">🔍</span>
+                  {searchQuery && (
+                    <button
+                      onClick={() => setSearchQuery('')}
+                      className="absolute right-2 top-2 w-6 h-6 flex items-center justify-center rounded-full text-xs text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-slate-600 transition-all"
+                    >
+                      ✕
+                    </button>
+                  )}
+                </div>
+
+                {/* Clinical status filters */}
+                <div className="flex items-center gap-1.5 overflow-x-auto scroll-tabs">
+                  {searchQuery && (
+                    <span className="text-[10px] font-bold text-indigo-600 dark:text-indigo-400 shrink-0 whitespace-nowrap">
+                      {filteredParents.length} found
+                    </span>
+                  )}
+                  <button
+                    onClick={() => setFilterType('all')}
+                    className={`px-3 py-1.5 rounded-full text-[11px] font-bold transition-all whitespace-nowrap shrink-0 ${
+                      filterType === 'all'
+                        ? 'bg-indigo-600 text-white shadow-xs'
+                        : 'bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
+                    }`}
+                  >
+                    All questions
+                  </button>
+                  <button
+                    onClick={() => setFilterType('unanswered')}
+                    className={`px-3 py-1.5 rounded-full text-[11px] font-bold transition-all whitespace-nowrap shrink-0 flex items-center gap-1 ${
+                      filterType === 'unanswered'
+                        ? 'bg-amber-500 text-white shadow-xs'
+                        : 'bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-400 hover:bg-amber-100 dark:hover:bg-amber-900/40'
+                    }`}
+                  >
+                    <span>⏳</span>
+                    <span>Need answers</span>
+                  </button>
+                  <button
+                    onClick={() => setFilterType('answered')}
+                    className={`px-3 py-1.5 rounded-full text-[11px] font-bold transition-all whitespace-nowrap shrink-0 flex items-center gap-1 ${
+                      filterType === 'answered'
+                        ? 'bg-emerald-600 text-white shadow-xs'
+                        : 'bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-400 hover:bg-emerald-100 dark:hover:bg-emerald-900/40'
+                    }`}
+                  >
+                    <span>✓</span>
+                    <span>Answered</span>
+                  </button>
+                </div>
+              </>
+            ) : (
+              <div className="flex items-center justify-between px-1">
+                <span className="flex items-center gap-1.5 text-[11px] font-bold text-emerald-600 dark:text-emerald-400">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  {onlineCount !== null && onlineCount !== undefined ? `${onlineCount} online` : 'Live'}
+                </span>
+                <span className="text-[11px] text-slate-400 font-medium">
+                  {chatMessages.length} messages
+                </span>
+              </div>
+            )}
+          </div>
+
+          {/* ── Quick-ask composer / chat input ── */}
+          {activeView === 'forums' ? (
+            composerOpen ? (
+              <form onSubmit={handleSendMessage} className="bg-white dark:bg-slate-800 rounded-3xl border border-indigo-200 dark:border-indigo-500/40 shadow-md p-4 space-y-3 ring-2 ring-indigo-500/10">
+                <div className="flex items-center justify-between">
+                  <span className="text-sm font-bold text-slate-900 dark:text-slate-100">
+                    New question in <span className="text-indigo-600">{currentChannelObj.sub}</span>
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => setComposerOpen(false)}
+                    className="w-7 h-7 flex items-center justify-center rounded-full text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-slate-600 transition-all"
+                  >
+                    <X />
+                  </button>
+                </div>
+
+                {/* Species */}
+                <div className="flex items-center gap-1.5 overflow-x-auto scroll-tabs">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 shrink-0">Species</span>
+                  {speciesOptions.map(s => (
+                    <button
+                      type="button"
+                      key={s.id}
+                      onClick={() => setSpecies(s.id)}
+                      className={`px-3 py-1.5 rounded-full text-[11px] font-bold transition-all whitespace-nowrap shrink-0 ${
+                        species === s.id
+                          ? 'bg-indigo-600 text-white shadow-xs'
+                          : 'bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:bg-indigo-50'
+                      }`}
+                    >
+                      {s.label}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Clinical tag */}
+                <div className="flex items-center gap-1.5 overflow-x-auto scroll-tabs">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 shrink-0">Topic</span>
+                  {tagOptions.map(t => (
+                    <button
+                      type="button"
+                      key={t}
+                      onClick={() => setTag(t)}
+                      className={`px-3 py-1.5 rounded-full text-[11px] font-bold transition-all whitespace-nowrap shrink-0 ${
+                        tag === t
+                          ? 'bg-indigo-600 text-white shadow-xs'
+                          : 'bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:bg-indigo-50'
+                      }`}
+                    >
+                      {t}
+                    </button>
+                  ))}
+                </div>
+
+                <textarea
+                  ref={composerInputRef}
+                  rows="3"
+                  dir="auto"
+                  value={newMessage}
+                  onChange={(e) => {
+                    if (e.target.value.length <= MAX_POST_LENGTH) {
+                      setNewMessage(e.target.value);
+                    }
+                  }}
+                  placeholder={`Describe your case — include species, weight, dose & clinical signs for faster answers...`}
+                  className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 text-sm font-medium text-slate-900 dark:text-slate-100 placeholder-slate-400 resize-none"
+                />
+
+                <div className="flex items-center justify-between gap-2">
+                  <span className={`text-[11px] font-medium ${newMessage.length > MAX_POST_LENGTH * 0.9 ? 'text-amber-600' : 'text-slate-400'}`}>
+                    {newMessage.length} / {MAX_POST_LENGTH}
+                  </span>
+                  <button
+                    type="submit"
+                    disabled={!newMessage.trim()}
+                    className={`px-5 py-2 rounded-full font-bold text-xs text-white transition-all flex items-center gap-1.5 shadow-xs ${
+                      newMessage.trim()
+                        ? 'bg-indigo-600 hover:bg-indigo-700 active:scale-95'
+                        : 'bg-slate-300 dark:bg-slate-700 cursor-not-allowed opacity-60'
+                    }`}
+                  >
+                    <span>Post Question</span>
+                    <span>🚀</span>
+                  </button>
+                </div>
+              </form>
+            ) : (
+              <button
+                onClick={openComposer}
+                className="w-full flex items-center gap-2.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl px-4 py-3 shadow-sm hover:border-indigo-300 transition-all text-left"
+              >
+                <span className="w-8 h-8 bg-slate-100 dark:bg-slate-700 rounded-full flex items-center justify-center text-base shrink-0">
+                  {userProfile.avatar || '🩺'}
+                </span>
+                <span className="flex-1 text-sm text-slate-400 font-medium truncate">
+                  Ask {currentChannelObj.sub} a clinical question...
+                </span>
+                <span className="px-3 py-1.5 rounded-full bg-indigo-600 text-white text-[11px] font-bold shrink-0">Ask</span>
+              </button>
+            )
+          ) : (
+            <form onSubmit={handleSendMessage} className="bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm p-2 flex items-end gap-2">
+              <textarea
+                ref={composerInputRef}
+                rows="1"
+                dir="auto"
+                value={newMessage}
+                onChange={(e) => {
+                  if (e.target.value.length <= MAX_POST_LENGTH) {
+                    setNewMessage(e.target.value);
+                  }
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    handleSendMessage(e);
+                  }
+                }}
+                placeholder={userProfile.name ? `Message ${currentChannelObj.name}...` : "Set your profile to send a message"}
+                className="flex-1 max-h-28 min-h-[40px] px-3 py-2 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 text-sm font-medium text-slate-900 dark:text-slate-100 placeholder-slate-400 resize-none"
+              />
+              <button
+                type="submit"
+                disabled={!newMessage.trim()}
+                className={`w-10 h-10 shrink-0 rounded-full flex items-center justify-center transition-all ${
+                  newMessage.trim()
+                    ? 'bg-emerald-600 text-white shadow-sm active:scale-95'
+                    : 'bg-slate-200 dark:bg-slate-700 text-slate-400 cursor-not-allowed'
+                }`}
+                title="Send message"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="m22 2-7 20-4-9-9-4Z"></path><path d="M22 2 11 13"></path></svg>
+              </button>
+            </form>
+          )}
+
+          {/* ── Feed ── */}
+          {activeView === 'forums' ? (
+            <div className="space-y-2">
+              {filteredParents.length > 0 ? (
+                filteredParents.map((msg) => {
+                  const replies = repliesMap[msg.id] || [];
+                  const score = (msg.upvotes || 0) - (msg.downvotes || 0);
+                  const hasUpvoted = (msg.upvotedBy || []).includes(userKey);
+                  const hasDownvoted = (msg.downvotedBy || []).includes(userKey);
+                  const isAnswered = replies.length > 0;
+                  const title = msg.text.split('\n')[0];
+                  const preview = msg.text.split('\n').slice(1).join('\n').trim();
+
+                  return (
+                    <div
+                      key={msg.id}
+                      className={`bg-white dark:bg-slate-800 border rounded-2xl px-3.5 py-3 shadow-xs hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-pointer overflow-hidden ${
+                        isAnswered
+                          ? 'border-slate-200 dark:border-slate-700 hover:border-emerald-300 dark:hover:border-emerald-500'
+                          : 'border-slate-200 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-500'
+                      }`}
+                      onClick={() => setSelectedThreadDoc(msg)}
+                    >
+                      {/* Status + clinical badges */}
+                      <div className="flex items-center gap-1.5 flex-wrap">
+                        <span className={`px-2 py-0.5 rounded-full text-[10px] font-extrabold flex items-center gap-1 ${
+                          isAnswered
+                            ? 'bg-emerald-100 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-400'
+                            : 'bg-amber-100 dark:bg-amber-950/50 text-amber-700 dark:text-amber-400'
+                        }`}>
+                          {isAnswered ? <span>✓</span> : <span>⏳</span>}
+                          <span>{isAnswered ? `Answered (${replies.length})` : 'Needs answer'}</span>
+                        </span>
+                        {msg.species && (
+                          <span className="px-2 py-0.5 bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 rounded-full text-[10px] font-bold">
+                            {speciesOptions.find(s => s.id === msg.species)?.label || msg.species}
+                          </span>
+                        )}
+                        <span className="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 rounded-full text-[10px] font-bold">
+                          {msg.tag || 'Clinical'}
+                        </span>
+                        <span className="ml-auto text-[10px] text-slate-400 font-medium shrink-0">
+                          {formatTime(msg.timestamp)}
+                        </span>
+                      </div>
+
+                      {/* Question title */}
+                      <div className="mt-1.5 font-bold text-sm sm:text-[15px] text-slate-900 dark:text-slate-100 leading-snug line-clamp-2">
+                        {title}
+                      </div>
+
+                      {/* Preview */}
+                      {preview && (
+                        <p dir="auto" className="mt-0.5 text-xs sm:text-sm font-normal text-slate-500 dark:text-slate-400 whitespace-pre-line line-clamp-1 leading-relaxed">
+                          {preview}
+                        </p>
+                      )}
+
+                      {/* Meta / actions */}
+                      <div className="mt-2 flex items-center gap-3 text-[11px] text-slate-500 dark:text-slate-400 font-bold">
+                        <button
+                          onClick={(e) => { e.stopPropagation(); if (msg.authorUid) handleShowUserProfile(msg.authorUid); }}
+                          className="flex items-center gap-1 hover:text-indigo-600 truncate"
+                        >
+                          <span className="text-sm">{msg.avatar || '🩺'}</span>
+                          <span className="font-semibold truncate">{msg.author}</span>
+                        </button>
+                        <span className="flex items-center gap-1 hover:text-indigo-600">
+                          <span>💬</span>
+                          <span>{replies.length}</span>
+                        </span>
+                        <span className="flex items-center gap-0.5">
+                          <button
+                            onClick={(e) => { e.stopPropagation(); handleUpvote(msg.id); }}
+                            className={`p-0.5 rounded transition-all text-xs ${hasUpvoted ? 'text-orange-600' : 'hover:text-orange-600'}`}
+                            title="Upvote"
+                          >
+                            ▲
+                          </button>
+                          <span className={`text-xs font-extrabold ${score > 0 ? 'text-orange-600 dark:text-orange-400' : score < 0 ? 'text-indigo-600' : 'text-slate-500'}`}>
+                            {score}
+                          </span>
+                          <button
+                            onClick={(e) => { e.stopPropagation(); handleDownvote(msg.id); }}
+                            className={`p-0.5 rounded transition-all text-xs ${hasDownvoted ? 'text-indigo-600' : 'hover:text-indigo-600'}`}
+                            title="Downvote"
+                          >
+                            ▼
+                          </button>
+                        </span>
+                        {window.VetChatService && window.VetChatService.canDeleteMessage(msg) && (
+                          <button
+                            onClick={(e) => { e.stopPropagation(); handleSoftDelete(msg.id); }}
+                            className="ml-auto hover:text-red-600 text-red-400"
+                            title="Delete"
+                          >
+                            🗑️
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })
+              ) : (
+                <div className="p-12 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl text-center text-slate-400 space-y-2">
+                  <div className="text-4xl mb-1">{searchQuery ? '🔍' : '📋'}</div>
+                  <div className="font-bold text-sm text-slate-700 dark:text-slate-300">
+                    {searchQuery
+                      ? `No results for "${searchQuery}" in ${currentChannelObj.sub}`
+                      : filterType === 'unanswered'
+                        ? 'No open questions waiting for answers 🎉'
+                        : filterType === 'answered'
+                          ? 'No answered questions in this forum yet'
+                          : `No clinical threads posted in ${currentChannelObj.sub} yet`}
+                  </div>
+                  <div className="text-xs text-slate-500">
+                    {searchQuery
+                      ? 'Try different keywords or clear your search'
+                      : 'Post a new inquiry or case study below!'}
+                  </div>
+                  {searchQuery ? (
+                    <button
+                      onClick={() => setSearchQuery('')}
+                      className="mt-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold rounded-full shadow-xs transition-all active:scale-95"
+                    >
+                      Clear search
+                    </button>
+                  ) : (
+                    <button
+                      onClick={openComposer}
+                      className="mt-2 px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold rounded-full shadow-xs transition-all active:scale-95"
+                    >
+                      Ask the community
+                    </button>
+                  )}
+                </div>
+              )}
+            </div>
+          ) : (
+            /* Live chat bubbles */
+            <div className="bg-white dark:bg-slate-800 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-sm p-3 space-y-2.5 max-h-[60vh] overflow-y-auto scroll-tabs">
+              {chatMessages.length > 0 ? (
+                chatMessages.map((msg) => {
+                  const isMine = (msg.authorUid && msg.authorUid === (window.VetChatService && window.VetChatService.getCurrentUserUid()))
+                    || (!msg.authorUid && msg.author === userProfile.name);
+                  return (
+                    <div key={msg.id} className={`flex ${isMine ? 'justify-end' : 'justify-start'}`}>
+                      <div className={`max-w-[80%] rounded-2xl px-3.5 py-2.5 shadow-xs ${
+                        isMine
+                          ? 'bg-emerald-600 text-white rounded-br-md'
+                          : 'bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 rounded-bl-md'
+                      }`}>
+                        <div className={`text-[10px] font-bold mb-0.5 flex items-center gap-1.5 ${isMine ? 'text-emerald-100' : 'text-slate-500 dark:text-slate-400'}`}>
+                          <span>{msg.avatar || '🩺'}</span>
+                          <button
+                            onClick={() => { if (msg.authorUid) handleShowUserProfile(msg.authorUid); }}
+                            className={`font-bold ${isMine ? 'text-white' : 'text-slate-700 dark:text-slate-300'} hover:underline truncate max-w-[160px]`}
+                          >
+                            {isMine ? 'You' : msg.author}
+                          </button>
+                          <span className="opacity-60">{formatTime(msg.timestamp)}</span>
+                          {window.VetChatService && window.VetChatService.canDeleteMessage(msg) && (
+                            <button
+                              onClick={() => handleSoftDelete(msg.id)}
+                              className="opacity-60 hover:opacity-100"
+                              title="Delete"
+                            >
+                              🗑️
+                            </button>
+                          )}
+                        </div>
+                        <p dir="auto" className="text-sm whitespace-pre-line leading-relaxed break-words">
+                          {msg.text}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })
+              ) : (
+                <div className="p-10 text-center text-slate-400 space-y-1.5">
+                  <div className="text-3xl">☕</div>
+                  <div className="text-sm font-bold text-slate-600 dark:text-slate-300">No messages yet</div>
+                  <div className="text-xs">Say hello to the Clinical Lounge!</div>
+                </div>
+              )}
+              <div ref={chatEndRef} />
+            </div>
+          )}
+
+          {/* Reddit Thread Detail Drawer / Modal */}
+          {selectedThreadDoc && (
+            <div className="fixed inset-0 bg-slate-950/70 backdrop-blur-xs flex items-center justify-center p-3 sm:p-5 z-50 animate-fade-in overflow-y-auto">
+              <div className="bg-white dark:bg-slate-800 rounded-2xl p-5 sm:p-6 max-w-3xl w-full border border-slate-200 dark:border-slate-700 shadow-2xl space-y-4 my-auto max-h-[90vh] overflow-y-auto">
+                {/* Header Back Button */}
+                <div className="flex justify-between items-center border-b border-slate-100 dark:border-slate-700 pb-3">
+                  <button
+                    onClick={() => setSelectedThreadDoc(null)}
+                    className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-100 dark:bg-slate-700 hover:bg-indigo-50 text-indigo-600 dark:text-indigo-400 rounded-lg text-xs font-bold transition-all"
+                  >
+                    <span>←</span>
+                    <span>Back to {currentChannelObj.sub}</span>
+                  </button>
+                  <span className="text-xs font-bold text-slate-400">{currentChannelObj.sub} • Question</span>
+                </div>
+
+                {/* Original Question Card */}
+                <div className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl p-4 sm:p-5 space-y-2.5">
+                  <div className="flex items-center justify-between text-xs">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span>{selectedThreadDoc.avatar || '🩺'}</span>
+                      <span className="font-bold text-slate-900 dark:text-slate-100">{selectedThreadDoc.author}</span>
+                      <span className="text-indigo-600 font-medium">({selectedThreadDoc.title})</span>
+                    </div>
+                    <span className="text-slate-400 shrink-0">{formatTime(selectedThreadDoc.timestamp)}</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    {selectedThreadDoc.species && (
+                      <span className="px-2 py-0.5 bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 rounded-full text-[10px] font-bold">
+                        {speciesOptions.find(s => s.id === selectedThreadDoc.species)?.label || selectedThreadDoc.species}
+                      </span>
+                    )}
+                    <span className="px-2 py-0.5 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 rounded-full text-[10px] font-bold">
+                      {selectedThreadDoc.tag || 'Clinical'}
+                    </span>
+                  </div>
+                  <p dir="auto" className="text-sm sm:text-base font-medium text-slate-900 dark:text-slate-100 whitespace-pre-line leading-relaxed">
+                    {selectedThreadDoc.text}
+                  </p>
+                </div>
+
+                {/* Verified Clinical Solution (Top Voted Answer) */}
+                {topAnswer && ((topAnswer.upvotes || 0) - (topAnswer.downvotes || 0)) > 0 && (
+                  <div className="bg-emerald-500/10 dark:bg-emerald-950/40 border-2 border-emerald-500/50 rounded-xl p-4 space-y-2 relative shadow-xs">
+                    <div className="flex items-center justify-between border-b border-emerald-200 dark:border-emerald-800/60 pb-2">
+                      <span className="bg-emerald-600 text-white text-[10px] font-extrabold px-2.5 py-0.5 rounded flex items-center gap-1.5 uppercase tracking-wider">
+                        <span>🛡️</span>
+                        <span>Verified Clinical Solution</span>
+                      </span>
+                      <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
+                        ▲ {topAnswer.upvotes || 0} Peer Upvotes
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2 text-xs pt-1">
+                      <span>{topAnswer.avatar || '🩺'}</span>
+                      <span className="font-bold text-slate-900 dark:text-slate-100">{topAnswer.author}</span>
+                      <span className="text-emerald-600 font-medium">• {topAnswer.title}</span>
+                    </div>
+                    <p dir="auto" className="text-xs sm:text-sm font-normal text-slate-800 dark:text-slate-200 whitespace-pre-line leading-relaxed pl-1">
+                      {topAnswer.text}
+                    </p>
+                  </div>
+                )}
+
+                {/* Answers tree */}
+                <div className="space-y-3">
+                  <h4 className="font-bold text-xs text-slate-700 dark:text-slate-300 uppercase tracking-wider">
+                    Clinical Answers ({activeThreadReplies.length})
+                  </h4>
+
+                  {activeThreadReplies.length > 0 ? (
+                    activeThreadReplies.map((rep) => {
+                      const repScore = (rep.upvotes || 0) - (rep.downvotes || 0);
+                      const isTop = topAnswer && rep.id === topAnswer.id && repScore > 0;
+
+                      return (
+                        <div key={rep.id} className={`p-3.5 rounded-xl border space-y-2 transition-all ${
+                          isTop ? 'bg-emerald-50/30 dark:bg-emerald-950/20 border-emerald-300' : 'bg-slate-50 dark:bg-slate-700/50 border-slate-200 dark:border-slate-700'
+                        }`}>
+                          <div className="flex items-center justify-between text-xs">
+                            <div className="flex items-center gap-2">
+                              <span>{rep.avatar || '🩺'}</span>
+                              <span className="font-bold text-slate-900 dark:text-slate-100">{rep.author}</span>
+                              <span className="text-indigo-600 font-medium">({rep.title})</span>
+                            </div>
+                            <span className="text-slate-400">{formatTime(rep.timestamp)}</span>
+                          </div>
+                          <p dir="auto" className="text-xs sm:text-sm text-slate-800 dark:text-slate-200 whitespace-pre-line leading-relaxed pl-1">
+                            {rep.text}
+                          </p>
+                          <div className="flex items-center justify-end gap-2 text-xs pt-1">
+                            <button
+                              onClick={() => handleUpvote(rep.id)}
+                              className="px-2.5 py-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded text-emerald-700 font-bold hover:bg-emerald-50"
+                            >
+                              ▲ Upvote ({rep.upvotes || 0})
+                            </button>
+                          </div>
+                        </div>
+                      );
+                    })
+                  ) : (
+                    <div className="p-6 text-center text-slate-400 text-xs">
+                      No answers yet. Be the first to help this colleague!
+                    </div>
+                  )}
+                </div>
+
+                {/* Answer Composer */}
+                <form onSubmit={(e) => handleSendMessage(e, selectedThreadDoc.id)} className="bg-white dark:bg-slate-900 p-3.5 rounded-xl border border-slate-200 dark:border-slate-700 space-y-2">
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300">Share your clinical advice</label>
+                  <textarea
+                    rows="2"
+                    dir="auto"
+                    value={newMessage}
+                    onChange={(e) => setNewMessage(e.target.value)}
+                    placeholder="Write your recommendation, dose or protocol..."
+                    className="w-full px-3 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-xl text-sm font-medium text-slate-900 dark:text-slate-100 focus:outline-none focus:border-indigo-500 resize-none"
+                  />
+                  <div className="flex items-center justify-end gap-2">
+                    <span className={`text-[11px] font-medium text-slate-400 ${newMessage.length > MAX_POST_LENGTH * 0.9 ? 'text-amber-600' : ''}`}>
+                      {newMessage.length}/{MAX_POST_LENGTH}
+                    </span>
+                    <button
+                      type="submit"
+                      disabled={!newMessage.trim()}
+                      className="px-4 py-1.5 bg-indigo-600 hover:bg-indigo-700 font-bold text-xs text-white rounded-full shadow-xs disabled:opacity-50 active:scale-95"
+                    >
+                      Post Answer
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          )}
+
+          {/* Profile Edit Modal */}
+          {showProfileModal && (
+            <div className="fixed inset-0 bg-slate-950/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 animate-fade-in">
+              <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 max-w-md w-full border border-slate-200 dark:border-slate-700 shadow-2xl space-y-4">
+                <div className="flex justify-between items-center border-b border-slate-100 dark:border-slate-700 pb-3">
+                  <h3 className="font-extrabold text-base text-slate-900 dark:text-slate-100">👤 Set Your Practitioner Profile</h3>
+                  <button onClick={() => setShowProfileModal(false)} className="text-slate-400 hover:text-slate-600"><X /></button>
+                </div>
+                <form onSubmit={handleSaveProfile} className="space-y-4">
+                  <div>
+                    <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Your Name & Title <span className="text-red-500">*</span></label>
+                    <input
+                      type="text"
+                      required
+                      placeholder="e.g., Dr. Ahmed Mahmoud"
+                      value={inputName}
+                      onChange={(e) => setInputName(e.target.value)}
+                      className="w-full px-3.5 py-2.5 bg-white dark:bg-slate-700 border border-slate-300 dark:border-slate-600 rounded-xl text-sm font-medium text-slate-900 dark:text-slate-100 focus:border-indigo-500"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Specialty / Role</label>
+                    <input
+                      type="text"
+                      placeholder="e.g., Veterinary Pharmacologist / Equine Specialist"
+                      value={inputTitle}
+                      onChange={(e) => setInputTitle(e.target.value)}
+                      className="w-full px-3.5 py-2.5 bg-white dark:bg-slate-700 border border-slate-300 dark:border-slate-600 rounded-xl text-sm font-medium text-slate-900 dark:text-slate-100 focus:border-indigo-500"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Avatar Emoji</label>
+                    <div className="flex gap-2">
+                      {['🩺', '🐕', '🐱', '🐴', '🐮', '🐓', '🐪', '💊'].map(a => (
+                        <button
+                          type="button"
+                          key={a}
+                          onClick={() => setInputAvatar(a)}
+                          className={`p-2 rounded-xl text-xl transition-all ${inputAvatar === a ? 'bg-indigo-100 border-2 border-indigo-500 scale-105 shadow-xs' : 'bg-slate-100 hover:bg-slate-200'}`}
+                        >
+                          {a}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="flex gap-3 pt-2">
+                    <button
+                      type="button"
+                      onClick={() => setShowProfileModal(false)}
+                      className="flex-1 py-2.5 border border-slate-300 rounded-xl font-bold text-xs text-slate-600 hover:bg-slate-50"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="submit"
+                      className="flex-1 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-xl font-bold text-xs text-white shadow-xs"
+                    >
+                      Save Profile
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          )}
+
+          {/* User Profile View Card Modal */}
+          {selectedUserProfile && (
+            <div className="fixed inset-0 bg-slate-950/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 animate-fade-in" onClick={() => setSelectedUserProfile(null)}>
+              <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 max-w-sm w-full border border-slate-200 dark:border-slate-700 shadow-2xl space-y-4" onClick={(e) => e.stopPropagation()}>
+                <div className="flex justify-between items-center border-b border-slate-100 dark:border-slate-700 pb-3">
+                  <h3 className="font-extrabold text-base text-slate-900 dark:text-slate-100">👤 User Profile</h3>
+                  <button onClick={() => setSelectedUserProfile(null)} className="text-slate-400 hover:text-slate-600 text-xl">&times;</button>
+                </div>
+                <div className="text-center space-y-3">
+                  <div className="w-16 h-16 mx-auto bg-slate-100 dark:bg-slate-700 rounded-2xl flex items-center justify-center text-3xl">
+                    {selectedUserProfile.avatar || '🩺'}
+                  </div>
+                  <div>
+                    <div className="font-extrabold text-lg text-slate-900 dark:text-slate-100">{selectedUserProfile.displayName || 'Anonymous Vet'}</div>
+                    <div className="text-sm text-slate-500 dark:text-slate-400">{selectedUserProfile.title || 'Veterinarian'}</div>
+                  </div>
+                  <div className="flex justify-center gap-6 text-sm">
+                    <div className="text-center">
+                      <div className="font-bold text-indigo-600">{selectedUserProfile.postCount || 0}</div>
+                      <div className="text-xs text-slate-500">Posts</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="font-bold text-emerald-600">{selectedUserProfile.messageCount || 0}</div>
+                      <div className="text-xs text-slate-500">Messages</div>
+                    </div>
+                  </div>
+                  <div className="text-xs text-slate-400">
+                    Joined: {selectedUserProfile.joinDate ? new Date(selectedUserProfile.joinDate).toLocaleDateString() : 'Unknown'}
+                  </div>
+                </div>
+                <button
+                  onClick={() => setSelectedUserProfile(null)}
+                  className="w-full py-2.5 bg-slate-100 dark:bg-slate-700 hover:bg-slate-200 dark:hover:bg-slate-600 rounded-xl font-bold text-xs text-slate-700 dark:text-slate-300 transition-all"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      );
+    };
+
     const VetDosageCalculator = () => {
       const [medications, setMedications] = useState([]);
       const [searchTerm, setSearchTerm] = useState('');
       const [selectedMed, setSelectedMed] = useState(null);
+      const infoRef = useRef(null);
       const [species, setSpecies] = useState('');
       const [weight, setWeight] = useState('');
       const [result, setResult] = useState(null);
@@ -1490,6 +2469,7 @@
       const [editingMed, setEditingMed] = useState(null);
       const [showDeleteConfirm, setShowDeleteConfirm] = useState(null);
       const [activeCategory, setActiveCategory] = useState('all');
+      const [animalTypeFilter, setAnimalTypeFilter] = useState('small');
       const [favorites, setFavorites] = useState([]);
       const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
       const [darkMode, setDarkMode] = useState(false);
@@ -1523,7 +2503,24 @@
           const savedDarkMode = localStorage.getItem('vetiDrugDarkMode');
 
           if (saved) {
-            setMedications(JSON.parse(saved));
+            const parsed = JSON.parse(saved);
+            const existingIds = new Set(parsed.map(m => m.id));
+            const missingDefaults = DEFAULT_MEDICATIONS.filter(d => !existingIds.has(d.id));
+            const updated = [...parsed, ...missingDefaults].map(savedMed => {
+              const defaultMed = DEFAULT_MEDICATIONS.find(d => d.id === savedMed.id);
+              if (defaultMed) {
+                return {
+                  ...savedMed,
+                  species: defaultMed.species,
+                  concentration_value: (savedMed.concentration_value === null || savedMed.concentration_value === undefined) ? defaultMed.concentration_value : savedMed.concentration_value,
+                  concentration_unit: (savedMed.concentration_unit === null || savedMed.concentration_unit === undefined) ? defaultMed.concentration_unit : savedMed.concentration_unit,
+                  concentration_ml: savedMed.concentration_ml || defaultMed.concentration_ml || 1
+                };
+              }
+              return savedMed;
+            });
+            setMedications(updated);
+            localStorage.setItem('vetiDrugMedications', JSON.stringify(updated));
           } else {
             setMedications(DEFAULT_MEDICATIONS);
             localStorage.setItem('vetiDrugMedications', JSON.stringify(DEFAULT_MEDICATIONS));
@@ -1637,6 +2634,17 @@
       const filteredMeds = useMemo(() => {
         let filtered = medications;
 
+        // Filter by Species Practice Type (Small Animals vs Large Animals vs All)
+        if (animalTypeFilter === 'small') {
+          filtered = filtered.filter(med =>
+            ['dog', 'cat', 'both'].includes(med.species)
+          );
+        } else if (animalTypeFilter === 'large') {
+          filtered = filtered.filter(med =>
+            ['cattle', 'horse', 'sheep_goat', 'camel', 'poultry', 'large_animal', 'both'].includes(med.species)
+          );
+        }
+
         // Filter by search term
         if (searchTerm) {
           const term = searchTerm.toLowerCase();
@@ -1657,7 +2665,7 @@
         }
 
         return filtered;
-      }, [searchTerm, medications, activeCategory, showFavoritesOnly, favorites]);
+      }, [searchTerm, medications, activeCategory, showFavoritesOnly, favorites, animalTypeFilter]);
 
       const calculateDosage = () => {
         if (!selectedMed || !species || !weight) return;
@@ -1694,13 +2702,23 @@
         setConcentrationMg('');
         setConcentrationMl('');
         setShowConcentrationInput(false);
-        if (med.species === 'dog' || med.species === 'cat') {
+        if (['dog', 'cat', 'cattle', 'horse', 'sheep_goat', 'camel', 'poultry'].includes(med.species)) {
           setSpecies(med.species);
+        } else if (med.species === 'large_animal') {
+          setSpecies('cattle');
+        } else {
+          setSpecies('dog');
         }
         if (med.concentration_value && med.concentration_value > 0) {
           setConcentrationMg(med.concentration_value.toString());
-          setConcentrationMl('1');
+          setConcentrationMl(med.concentration_ml ? med.concentration_ml.toString() : '1');
+          setShowConcentrationInput(true);
         }
+        setTimeout(() => {
+          if (infoRef.current) {
+            infoRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 50);
       };
 
       const resetForm = () => {
@@ -1769,22 +2787,68 @@
             </div>
           )}
 
-          <div className={`max-w-4xl mx-auto ${showInstallBanner ? 'pt-20' : ''}`}>
+          <div className={`px-0 sm:px-6 lg:px-8 mobile-bottom-padding content-top-offset ${showInstallBanner ? 'banner-top-offset' : ''}`}>
+            {/* Main Navigation: Fixed Top Facebook-style Bar */}
+            <div className={`top-nav fixed left-0 right-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 shadow-sm ${showInstallBanner ? 'top-[64px]' : 'top-0'}`}>
+              <div className="flex justify-around items-center max-w-lg mx-auto">
+                <button
+                  onClick={() => setActiveTab('calculator')}
+                  className={`flex-1 flex flex-col items-center py-3 px-2 transition-all border-b-2 ${
+                    activeTab === 'calculator'
+                      ? 'border-emerald-600 text-emerald-600 dark:text-emerald-400 dark:border-emerald-400'
+                      : 'border-transparent text-gray-500 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400'
+                  }`}
+                >
+                  <svg className="w-6 h-6 mb-1" fill="none" stroke="currentColor" strokeWidth={activeTab === 'calculator' ? 2.5 : 2} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                  <span className="text-[10px] font-semibold">Medications</span>
+                </button>
+                <button
+                  onClick={() => setActiveTab('prescriptions')}
+                  className={`flex-1 flex flex-col items-center py-3 px-2 transition-all border-b-2 ${
+                    activeTab === 'prescriptions'
+                      ? 'border-emerald-600 text-emerald-600 dark:text-emerald-400 dark:border-emerald-400'
+                      : 'border-transparent text-gray-500 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400'
+                  }`}
+                >
+                  <svg className="w-6 h-6 mb-1" fill="none" stroke="currentColor" strokeWidth={activeTab === 'prescriptions' ? 2.5 : 2} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  <span className="text-[10px] font-semibold">Prescriptions</span>
+                </button>
+                <button
+                  onClick={() => setActiveTab('community')}
+                  className={`flex-1 flex flex-col items-center py-3 px-2 transition-all border-b-2 ${
+                    activeTab === 'community'
+                      ? 'border-emerald-600 text-emerald-600 dark:text-emerald-400 dark:border-emerald-400'
+                      : 'border-transparent text-gray-500 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400'
+                  }`}
+                >
+                  <svg className="w-6 h-6 mb-1" fill="none" stroke="currentColor" strokeWidth={activeTab === 'community' ? 2.5 : 2} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                  </svg>
+                  <span className="text-[10px] font-semibold">Community</span>
+                </button>
+              </div>
+            </div>
+
             {/* Premium Header */}
-            <div className="glass rounded-3xl shadow-2xl overflow-hidden animate-fade-in">
-              <div className="gradient-header p-4 md:p-8 text-white relative overflow-hidden">
+            <div className="glass md:rounded-3xl shadow-2xl overflow-hidden animate-fade-in">
+              {activeTab === 'calculator' && (
+              <div className="gradient-header p-3 md:p-8 text-white relative overflow-hidden">
                 {/* Background decoration */}
                 <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32"></div>
                 <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
 
-                <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-                  <div className="flex items-center gap-4">
-                    <div className="p-3 bg-white/20 rounded-2xl animate-float">
+                <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-3 md:gap-4">
+                  <div className="flex items-center gap-3 md:gap-4">
+                    <div className="p-2 md:p-3 bg-white/20 rounded-2xl animate-float">
                       <Stethoscope />
                     </div>
                     <div>
-                      <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight">Vet-iDrug</h1>
-                      <p className="text-emerald-100 text-sm md:text-base mt-1">
+                      <h1 className="text-xl md:text-3xl font-extrabold tracking-tight">Vet-iDrug</h1>
+                      <p className="text-emerald-100 text-xs md:text-base mt-0.5 md:mt-1">
                         {medications.length} Medications Available
                       </p>
                     </div>
@@ -1817,29 +2881,52 @@
                   </div>
                 </div>
               </div>
-
-              {/* Tab Navigation: Calculator | Prescriptions */}
-              <div className="px-4 md:px-6 py-3 bg-white/50 border-b border-emerald-100">
-                <div className="flex gap-2">
-                  <button
-                    onClick={() => setActiveTab('calculator')}
-                    className={`prescription-tab-btn px-5 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-2 ${activeTab === 'calculator' ? 'active' : ''}`}
-                  >
-                    <span>💊</span>
-                    <span>Drug Calculator</span>
-                  </button>
-                  <button
-                    onClick={() => setActiveTab('prescriptions')}
-                    className={`prescription-tab-btn px-5 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-2 ${activeTab === 'prescriptions' ? 'active' : ''}`}
-                  >
-                    <span>📋</span>
-                    <span>Prescriptions</span>
-                  </button>
-                </div>
-              </div>
+              )}
 
               {activeTab === 'calculator' && (
+              <div className="pb-24 md:pb-0">
               <React.Fragment>
+              {/* Species Practice Type Switcher */}
+              <div className="px-4 md:px-6 pt-4 pb-3 bg-gradient-to-r from-emerald-50/70 to-teal-50/70 border-b border-emerald-100 flex flex-col sm:flex-row items-center justify-between gap-3">
+                <div className="flex items-center gap-1 p-1 bg-white/90 dark:bg-gray-800 rounded-2xl w-full sm:w-auto shadow-sm border border-emerald-200/60">
+                  <button
+                    onClick={() => setAnimalTypeFilter('small')}
+                    className={`flex-1 sm:flex-none px-2 sm:px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1 sm:gap-2 ${
+                      animalTypeFilter === 'small'
+                        ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
+                        : 'text-gray-600 hover:text-emerald-700 hover:bg-emerald-50/50'
+                    }`}
+                  >
+                    <span className="md:hidden">🐶🐱 Pets</span>
+                    <span className="hidden md:inline">Small Animals (Pets)</span>
+                  </button>
+                  <button
+                    onClick={() => setAnimalTypeFilter('large')}
+                    className={`flex-1 sm:flex-none px-2 sm:px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1 sm:gap-2 ${
+                      animalTypeFilter === 'large'
+                        ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
+                        : 'text-gray-600 hover:text-emerald-700 hover:bg-emerald-50/50'
+                    }`}
+                  >
+                    <span className="md:hidden">🐮🐴 Livestock</span>
+                    <span className="hidden md:inline">Large Animals (Livestock)</span>
+                  </button>
+                  <button
+                    onClick={() => setAnimalTypeFilter('all')}
+                    className={`flex-1 sm:flex-none px-2.5 sm:px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1 sm:gap-1.5 ${
+                      animalTypeFilter === 'all'
+                        ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
+                        : 'text-gray-600 hover:text-emerald-700 hover:bg-emerald-50/50'
+                    }`}
+                  >
+                    <span className="md:hidden">🐾 All</span>
+                    <span className="hidden md:inline">All Species</span>
+                  </button>
+                </div>
+                <div className="text-xs font-semibold text-emerald-800 bg-emerald-100/80 px-3 py-1.5 rounded-full border border-emerald-200">
+                  Showing {filteredMeds.length} {animalTypeFilter === 'small' ? 'pet & common' : animalTypeFilter === 'large' ? 'livestock & common' : 'total'} drugs
+                </div>
+              </div>
               {/* Category Filter Tabs */}
               <div className="px-4 md:px-6 py-4 bg-white/50 border-b border-emerald-100 overflow-x-auto scroll-tabs">
                 <div className="flex gap-2 min-w-max">
@@ -1915,7 +3002,7 @@
                                     </div>
                                     <div className="text-sm text-gray-600 line-clamp-2">{med.generic_name}</div>
                                     <div className="text-sm text-gray-500 mt-1 flex items-center gap-2 flex-wrap">
-                                      <span className="px-1.5 py-0.5 bg-emerald-100 text-emerald-700 rounded text-sm font-medium">{med.species === 'both' ? 'Dogs & Cats' : med.species === 'dog' ? 'Dog' : 'Cat'}</span>
+                                      <span className="px-1.5 py-0.5 bg-emerald-100 text-emerald-700 rounded text-sm font-medium">{getSpeciesLabel(med.species)}</span>
                                       <span>•</span>
                                       <span>{med.dosage_form}</span>
                                       <span>•</span>
@@ -1961,11 +3048,11 @@
                 </div>
 
                 {selectedMed && (
-                  <div className="bg-gradient-to-r from-emerald-50 to-teal-50 border-2 border-emerald-200 rounded-2xl p-5 animate-fade-in">
+                  <div ref={infoRef} className="scroll-mt-28 bg-gradient-to-r from-emerald-50 to-teal-50 border-2 border-emerald-200 rounded-2xl p-5 animate-fade-in">
                     <div className="flex justify-between items-start">
                       <div className="flex-1">
                         <div className="flex items-center gap-3 mb-2">
-                          <span className="px-2.5 py-1 bg-emerald-500 text-white rounded-lg text-sm font-semibold">{selectedMed.species === 'both' ? 'Dogs & Cats' : selectedMed.species === 'dog' ? 'Dog' : 'Cat'}</span>
+                          <span className="px-2.5 py-1 bg-emerald-500 text-white rounded-lg text-sm font-semibold">{getSpeciesLabel(selectedMed.species)}</span>
                           <div>
                             <h3 className="font-bold text-lg text-gray-900">{selectedMed.brand_name}</h3>
                             <p className="text-emerald-700 font-medium">{selectedMed.generic_name}</p>
@@ -2014,20 +3101,20 @@
                 )}
 
                 {selectedMed && selectedMed.dose_mg_per_kg_min === 0 && selectedMed.dose_mg_per_kg_max === 0 && (
-                  <div className="bg-gradient-to-r from-purple-50 to-indigo-50 border-2 border-purple-300 rounded-lg p-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                  <div className="bg-gradient-to-r from-purple-50 to-indigo-50 dark:from-purple-950 dark:to-indigo-950 border-2 border-purple-300 dark:border-purple-800 rounded-lg p-6">
+                    <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-3 flex items-center gap-2">
                       <span className="text-2xl">📋</span> Per-Animal Dosing
                     </h3>
-                    <p className="text-gray-700 mb-4">
-                      This medication uses <span className="font-semibold text-purple-700">per-animal dosing</span> rather than weight-based (mg/kg) dosing.
+                    <p className="text-slate-700 dark:text-slate-300 mb-4">
+                      This medication uses <span className="font-semibold text-purple-700 dark:text-purple-300">per-animal dosing</span> rather than weight-based (mg/kg) dosing.
                       Please refer to the notes above for specific dosing instructions.
                     </p>
-                    <div className="bg-white rounded-lg p-4 border border-purple-200">
-                      <div className="text-sm font-semibold text-purple-800 mb-2">💡 Dosing Guide:</div>
-                      <div className="text-gray-700 whitespace-pre-line">{selectedMed.notes}</div>
+                    <div className="bg-white dark:bg-gray-800 rounded-lg p-4 border border-purple-200 dark:border-purple-800">
+                      <div className="text-sm font-semibold text-purple-800 dark:text-purple-300 mb-2">💡 Dosing Guide:</div>
+                      <div className="text-slate-700 dark:text-slate-300 whitespace-pre-line">{selectedMed.notes}</div>
                     </div>
                     {selectedMed.frequency && (
-                      <div className="mt-3 text-sm text-gray-600">
+                      <div className="mt-3 text-sm text-slate-600 dark:text-slate-400">
                         <span className="font-semibold">Frequency:</span> {selectedMed.frequency}
                       </div>
                     )}
@@ -2040,23 +3127,70 @@
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-sm font-semibold text-gray-700 mb-2">🐾 Select Species</label>
-                        <div className="flex gap-3">
-                          <button
-                            onClick={() => setSpecies('dog')}
-                            disabled={selectedMed.species === 'cat'}
-                            className={`flex-1 p-4 rounded-2xl border-2 transition-all hover-lift ${species === 'dog' ? 'border-emerald-500 bg-emerald-50 shadow-lg' : 'border-gray-200 bg-white'} ${selectedMed.species === 'cat' ? 'opacity-50 cursor-not-allowed' : 'hover:border-emerald-300'}`}
-                          >
-                            <div className="w-10 h-10 mx-auto mb-2 text-emerald-600"><Dog /></div>
-                            <div className="font-semibold text-gray-800">Dog</div>
-                          </button>
-                          <button
-                            onClick={() => setSpecies('cat')}
-                            disabled={selectedMed.species === 'dog'}
-                            className={`flex-1 p-4 rounded-2xl border-2 transition-all hover-lift ${species === 'cat' ? 'border-emerald-500 bg-emerald-50 shadow-lg' : 'border-gray-200 bg-white'} ${selectedMed.species === 'dog' ? 'opacity-50 cursor-not-allowed' : 'hover:border-emerald-300'}`}
-                          >
-                            <div className="w-10 h-10 mx-auto mb-2 text-emerald-600"><Cat /></div>
-                            <div className="font-semibold text-gray-800">Cat</div>
-                          </button>
+                        <div className="flex gap-2 flex-wrap">
+                          {['dog', 'both'].includes(selectedMed.species) && (
+                            <button
+                              onClick={() => setSpecies('dog')}
+                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center ${species === 'dog' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
+                            >
+                              <div className="text-xl mb-1">🐶</div>
+                              <div className="text-xs sm:text-sm font-bold">Dog</div>
+                            </button>
+                          )}
+                          {['cat', 'both'].includes(selectedMed.species) && (
+                            <button
+                              onClick={() => setSpecies('cat')}
+                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center ${species === 'cat' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
+                            >
+                              <div className="text-xl mb-1">🐱</div>
+                              <div className="text-xs sm:text-sm font-bold">Cat</div>
+                            </button>
+                          )}
+                          {['cattle', 'large_animal'].includes(selectedMed.species) && (
+                            <button
+                              onClick={() => setSpecies('cattle')}
+                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center ${species === 'cattle' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
+                            >
+                              <div className="text-xl mb-1">🐮</div>
+                              <div className="text-xs sm:text-sm font-bold">Cattle</div>
+                            </button>
+                          )}
+                          {['horse', 'large_animal'].includes(selectedMed.species) && (
+                            <button
+                              onClick={() => setSpecies('horse')}
+                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center ${species === 'horse' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
+                            >
+                              <div className="text-xl mb-1">🐴</div>
+                              <div className="text-xs sm:text-sm font-bold">Horse</div>
+                            </button>
+                          )}
+                          {['sheep_goat', 'large_animal'].includes(selectedMed.species) && (
+                            <button
+                              onClick={() => setSpecies('sheep_goat')}
+                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center ${species === 'sheep_goat' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
+                            >
+                              <div className="text-xl mb-1">🐑</div>
+                              <div className="text-xs sm:text-sm font-bold">Sheep/Goat</div>
+                            </button>
+                          )}
+                          {['camel', 'large_animal'].includes(selectedMed.species) && (
+                            <button
+                              onClick={() => setSpecies('camel')}
+                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center ${species === 'camel' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
+                            >
+                              <div className="text-xl mb-1">🐪</div>
+                              <div className="text-xs sm:text-sm font-bold">Camel</div>
+                            </button>
+                          )}
+                          {['poultry', 'large_animal'].includes(selectedMed.species) && (
+                            <button
+                              onClick={() => setSpecies('poultry')}
+                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center ${species === 'poultry' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
+                            >
+                              <div className="text-xl mb-1">🐓</div>
+                              <div className="text-xs sm:text-sm font-bold">Poultry</div>
+                            </button>
+                          )}
                         </div>
                       </div>
                       <div>
@@ -2080,37 +3214,44 @@
                       <div className="flex items-center justify-between mb-3">
                         <div className="flex items-center gap-2 text-violet-700">
                           <Droplet />
-                          <h4 className="font-semibold">Drug Concentration (Optional)</h4>
+                          <div>
+                            <h4 className="font-semibold text-gray-900">Drug Concentration</h4>
+                            {selectedMed.concentration_value && (
+                              <p className="text-xs text-violet-600 font-medium">
+                                Pre-selected: {selectedMed.concentration_value} {selectedMed.concentration_unit} ({selectedMed.concentration_ml || 1} mL) — <span className="underline">Editable below</span>
+                              </p>
+                            )}
+                          </div>
                         </div>
                         <button
                           onClick={() => setShowConcentrationInput(!showConcentrationInput)}
-                          className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all ${showConcentrationInput ? 'bg-violet-500 text-white' : 'bg-white text-violet-600 border border-violet-300 hover:bg-violet-100'}`}
+                          className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${showConcentrationInput ? 'bg-violet-600 text-white shadow-sm' : 'bg-white text-violet-600 border border-violet-300 hover:bg-violet-100'}`}
                         >
-                          {showConcentrationInput ? '✓ Enabled' : '+ Add'}
+                          {showConcentrationInput ? '✓ Pre-selected & Active' : '+ Customize Concentration'}
                         </button>
                       </div>
                       {showConcentrationInput && (
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 animate-fade-in">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 animate-fade-in pt-1">
                           <div>
-                            <label className="block text-sm font-semibold text-gray-700 mb-1">Drug Amount (mg)</label>
+                            <label className="block text-xs font-semibold text-gray-700 mb-1">Drug Amount (mg)</label>
                             <input
                               type="number"
                               step="0.1"
-                              placeholder="e.g., 100"
+                              placeholder="e.g., 500"
                               value={concentrationMg}
                               onChange={(e) => setConcentrationMg(e.target.value)}
-                              className="w-full px-3 py-3 border-2 border-gray-200 rounded-xl focus:border-violet-500 text-sm bg-white"
+                              className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-xl focus:border-violet-500 text-sm bg-white font-medium"
                             />
                           </div>
                           <div>
-                            <label className="block text-sm font-semibold text-gray-700 mb-1">Per Volume (ml)</label>
+                            <label className="block text-xs font-semibold text-gray-700 mb-1">Per Volume / Unit (mL)</label>
                             <input
                               type="number"
                               step="0.1"
-                              placeholder="e.g., 5"
+                              placeholder="e.g., 2"
                               value={concentrationMl}
                               onChange={(e) => setConcentrationMl(e.target.value)}
-                              className="w-full px-3 py-3 border-2 border-gray-200 rounded-xl focus:border-violet-500 text-sm bg-white"
+                              className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-xl focus:border-violet-500 text-sm bg-white font-medium"
                             />
                           </div>
                         </div>
@@ -2179,34 +3320,34 @@
                       </div>
                     )}
                     <div className="mt-5 p-5 bg-white rounded-2xl border-2 border-emerald-200 shadow-sm">
-                      <div className="font-bold text-lg text-emerald-700 mb-3 flex items-center gap-2">
+                      <div className="font-bold text-lg text-emerald-700 dark:text-emerald-400 mb-3 flex items-center gap-2">
                         📋 Prescription Summary
                       </div>
                       <div className="grid md:grid-cols-2 gap-3 text-sm">
-                        <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg">
-                          <span className="px-2 py-0.5 bg-emerald-100 text-emerald-700 rounded text-sm font-semibold">{species === 'dog' ? 'Dog' : 'Cat'}</span>
+                        <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg dark:text-slate-200">
+                          <span className="px-2 py-0.5 bg-emerald-100 text-emerald-700 dark:text-emerald-300 rounded text-sm font-semibold">{species === 'dog' ? 'Dog' : 'Cat'}</span>
                           <span><span className="font-semibold">Patient:</span> {weight}kg</span>
                         </div>
-                        <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg">
+                        <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg dark:text-slate-200">
                           <span className="text-lg">💊</span>
                           <span><span className="font-semibold">Drug:</span> {selectedMed.brand_name}</span>
                         </div>
-                        <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg">
+                        <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg dark:text-slate-200">
                           <span className="text-lg">⚖️</span>
                           <span><span className="font-semibold">Dose:</span> {result.avgDose} mg</span>
                         </div>
                         {result.volume && (
-                          <div className="flex items-center gap-2 p-3 bg-violet-50 rounded-lg">
+                          <div className="flex items-center gap-2 p-3 bg-violet-50 dark:bg-violet-950/60 rounded-lg dark:text-slate-200">
                             <span className="text-lg">💧</span>
                             <span><span className="font-semibold">Volume:</span> {result.volume.avgVolume}ml</span>
                           </div>
                         )}
-                        <div className="flex items-center gap-2 p-3 bg-gray-50 rounded-lg">
+                        <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg dark:text-slate-200">
                           <span className="text-lg">🩺</span>
                           <span><span className="font-semibold">Route:</span> {selectedMed.route}</span>
                         </div>
                         {selectedMed.frequency && (
-                          <div className="flex items-center gap-2 p-2 bg-gray-50 rounded-lg">
+                          <div className="flex items-center gap-2 p-2 bg-gray-50 dark:bg-gray-800 rounded-lg dark:text-slate-200">
                             <span className="text-lg">⏰</span>
                             <span><span className="font-semibold">Frequency:</span> {selectedMed.frequency}</span>
                           </div>
@@ -2218,11 +3359,12 @@
                 )}
               </div>
             </React.Fragment>
+            </div>
             )}
 
             {/* Prescriptions Tab */}
             {activeTab === 'prescriptions' && (
-              <div className="p-4 md:p-6">
+              <div className="p-4 md:p-6 pb-24 md:pb-6">
                 {/* Search and Filters */}
                 <div className="flex flex-col md:flex-row gap-3 mb-4">
                   <div className="relative flex-1">
@@ -2306,7 +3448,7 @@
                     <p className="text-sm mt-1">Try adjusting your search or filters</p>
                   </div>
                 ) : (
-                  <div className="grid gap-3">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {prescriptions.filter(t => {
                       const matchesSearch = !prescriptionSearch ||
                         t.name.toLowerCase().includes(prescriptionSearch.toLowerCase()) ||
@@ -2383,6 +3525,12 @@
                     ))}
                   </div>
                 )}
+              </div>
+            )}
+
+            {activeTab === 'community' && (
+              <div className="pb-24 md:pb-0">
+                <VetCommunityChat />
               </div>
             )}
 
