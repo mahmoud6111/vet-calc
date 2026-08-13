@@ -1884,8 +1884,8 @@
             )}
           </div>
 
-          {/* ── Quick-ask composer / chat input ── */}
-          {activeView === 'forums' ? (
+          {/* ── Quick-ask composer ── */}
+          {activeView === 'forums' && (
             composerOpen ? (
               <form onSubmit={handleSendMessage} className="bg-white dark:bg-slate-800 rounded-3xl border border-indigo-200 dark:border-indigo-500/40 shadow-md p-4 space-y-3 ring-2 ring-indigo-500/10">
                 <div className="flex items-center justify-between">
