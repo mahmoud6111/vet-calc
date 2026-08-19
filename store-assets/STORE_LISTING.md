@@ -16,9 +16,9 @@ InVet-Dosage Calculator
 
 ### Short Description (Max 80 characters)
 ```
-Fast, offline veterinary drug dosage calculator with 83+ medications for pets.
+Fast, offline veterinary drug dosage calculator with 1000+ medications.
 ```
-*(Character count: 77 / 80)*
+*(Character count: 71 / 80)*
 
 ---
 
@@ -30,7 +30,7 @@ Calculate precise drug dosages, fluid therapy rates, constant rate infusions (CR
 
 🐾 KEY FEATURES:
 
-✅ 83+ Essential Veterinary Medications
+✅ 1000+ Veterinary Medications & Formulations
 Instantly search and calculate dosages across key therapeutic categories:
 • Emergency & Resuscitation (Epinephrine, Atropine, Naloxone, Lidocaine)
 • Analgesics & NSAIDs (Meloxicam, Carprofen, Buprenorphine, Gabapentin)
