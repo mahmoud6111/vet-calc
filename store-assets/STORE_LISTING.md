@@ -16,52 +16,52 @@ InVet-Dosage Calculator
 
 ### Short Description (Max 80 characters)
 ```
-Fast, offline veterinary drug dosage calculator with 1000+ medications.
+Accurate veterinary drug dosage calculator with 1000+ medications.
 ```
-*(Character count: 71 / 80)*
+*(Character count: 66 / 80)*
 
 ---
 
 ### Full Description (Max 4000 characters)
 ```markdown
-InVet-Dosage Calculator is a fast, accurate, and offline-first veterinary clinical calculator designed for practicing veterinarians, vet technicians, and veterinary students. 
+InVet-Dosage Calculator is a fast, accurate veterinary clinical calculator designed for practicing veterinarians, veterinary technicians, and vet students.
 
 Calculate precise drug dosages, fluid therapy rates, constant rate infusions (CRI), and emergency resuscitation protocols in seconds for canine and feline patients.
 
-🐾 KEY FEATURES:
+KEY FEATURES:
 
-✅ 1000+ Veterinary Medications & Formulations
+• 1000+ Veterinary Medications & Formulations
 Instantly search and calculate dosages across key therapeutic categories:
-• Emergency & Resuscitation (Epinephrine, Atropine, Naloxone, Lidocaine)
-• Analgesics & NSAIDs (Meloxicam, Carprofen, Buprenorphine, Gabapentin)
-• Antimicrobials & Antibiotics (Amoxicillin-Clavulanate, Enrofloxacin, Metronidazole)
-• Anesthesia & Sedatives (Propofol, Ketamine, Dexmedetomidine, Midazolam)
-• Cardiovascular, Respiratory, GI, and Antidotes
+- Emergency & Resuscitation (Epinephrine, Atropine, Naloxone, Lidocaine)
+- Analgesics & NSAIDs (Meloxicam, Carprofen, Buprenorphine, Gabapentin)
+- Antimicrobials & Antibiotics (Amoxicillin-Clavulanate, Enrofloxacin, Metronidazole)
+- Anesthesia & Sedatives (Propofol, Ketamine, Dexmedetomidine, Midazolam)
+- Cardiovascular, Respiratory, Gastrointestinal, and Antidotes
 
-✅ Smart Dose Range & Safety Warnings
-• Automatically calculates Minimum, Average, and Maximum dosage tiers based on patient body weight.
-• Highlights high-risk medications, species-specific contraindications, and organ toxicity notes.
+• Smart Dose Range & Safety Warnings
+- Automatically calculates Minimum, Average, and Maximum dosage tiers based on patient body weight.
+- Displays species-specific contraindications, concentration options, and toxicity notes.
 
-✅ Fast Search & Species Filters
-• Filter by Dog 🐕 or Cat 🐱 with one tap.
-• Instant search by Generic Name, Brand Name, or Therapeutic Class.
-• Mark frequently used drugs as Favorites for rapid access in emergency triage.
+• Species Filters & Fast Search
+- Filter by Dog or Cat with one tap.
+- Instant search by Generic Name, Brand Name, or Therapeutic Class.
+- Mark frequently used drugs as Favorites for rapid clinical access.
 
-✅ Customizable Prescription Templates
-• Select standard protocol templates (Post-Op Pain, Canine Infectious Respiratory Disease, Feline URI, etc.).
-• Generate printable prescription summaries with one click.
+• Clinical Protocol & Prescription Templates
+- Access standard treatment protocols (FPV, Canine Distemper, Post-Op Pain, Feline URI, and more).
+- Generate structured prescription summaries.
 
-✅ 100% Offline Capability & Dark Mode
-• Designed for exam rooms and emergency clinics with zero internet required.
-• High-contrast Dark Mode optimized for night shifts and low-light environments.
+• Offline Drug Calculation & Dark Mode
+- Core drug database and dosage calculations function completely offline without internet.
+- High-contrast Dark Mode optimized for low-light clinical environments.
 
-✅ Veterinary Community Hub
-• Connect with fellow veterinary professionals, share clinical advice, and discuss treatment cases.
+• Veterinary Community Forum
+- Connect with veterinary colleagues to discuss clinical cases and share professional insights.
 
-⚕️ CLINICAL DISCLAIMER:
+CLINICAL DISCLAIMER:
 InVet-Dosage Calculator is intended solely as an educational and clinical reference tool for licensed veterinarians, veterinary technicians, and veterinary healthcare professionals. It does not replace professional veterinary clinical judgment, diagnosis, or patient evaluation. Always verify drug dosages, concentrations, and manufacturer guidelines prior to administration.
 
-Created by Mahmoud Abdelnasser.
+Developed by Mahmoud Abdelnasser.
 ```
 
 ---
