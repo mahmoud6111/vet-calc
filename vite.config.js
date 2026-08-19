@@ -18,7 +18,7 @@ export default defineConfig({
         const outDir = resolve(__dirname, 'dist');
         if (!existsSync(outDir)) mkdirSync(outDir, { recursive: true });
 
-        const files = ['sw.js', 'manifest.json', 'icon-192.png', 'icon-512.png', 'og-image.png', 'default-medications.js', 'chat-service.js'];
+        const files = ['sw.js', 'manifest.json', 'icon-192.png', 'icon-512.png', 'og-image.png', 'logo-avatar.png', 'logo-banner.png', 'default-medications.js', 'chat-service.js'];
         for (const f of files) {
           const src = resolve(__dirname, f);
           if (existsSync(src)) copyFileSync(src, resolve(outDir, f));

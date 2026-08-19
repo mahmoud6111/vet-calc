@@ -1,14 +1,15 @@
 {
-    "appId": "com.mahmoudabdelnasser.vetidrug",
-    "appName": "Vet-iDrug",
+    "appId": "com.invet",
+    "appName": "InVet-Dosage Calculator",
     "webDir": "dist",
     "server": {
         "androidScheme": "https"
     },
     "plugins": {
         "SplashScreen": {
+            "launchShowDuration": 0,
             "launchAutoHide": true,
-            "backgroundColor": "#059669",
+            "backgroundColor": "#064e3b",
             "androidSplashResourceName": "splash",
             "showSpinner": false
         }

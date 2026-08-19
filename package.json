@@ -1,7 +1,7 @@
 {
-    "name": "vet-idrug",
-    "version": "1.0.0",
-    "description": "Vet-iDrug - Premium Veterinary Dosage Calculator",
+    "name": "invet-dosage-calculator",
+    "version": "1.0.1",
+    "description": "InVet - Premium Veterinary Dosage Calculator",
     "main": "index.html",
     "scripts": {
         "dev": "vite",

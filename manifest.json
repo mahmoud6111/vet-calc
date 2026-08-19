@@ -1,7 +1,7 @@
 {
-  "name": "Vet-iDrug - Veterinary Dosage Calculator",
-  "short_name": "Vet-iDrug",
-  "description": "Premium veterinary dosage calculator with 83+ medications. Created by Mahmoud Abdelnasser.",
+  "name": "InVet-Dosage Calculator",
+  "short_name": "InVet Calc",
+  "description": "InVet - Premium veterinary dosage calculator with 1000+ medications. Created by Mahmoud Abdelnasser.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ecfdf5",

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'vet-idrug-v14';
+const CACHE_NAME = 'invet-v20';
 
 const urlsToCache = [
   '/',

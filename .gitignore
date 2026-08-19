@@ -28,9 +28,11 @@ android/app/build/
 android/.gradle/
 ios/App/Pods/
 *.keystore
+*.jks
 
-# Native builds (deploy web app only, never commit the APK)
+# Native builds (deploy web app only, never commit the APK/AAB)
 *.apk
+*.aab
 
 # Tooling
 .opencode/
