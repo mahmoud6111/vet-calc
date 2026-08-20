@@ -2745,9 +2745,13 @@
                   dosage_form: defaultMed.dosage_form,
                   frequency: defaultMed.frequency,
                   unit_description: defaultMed.unit_description,
-                  concentration_value: (savedMed.concentration_value === null || savedMed.concentration_value === undefined) ? defaultMed.concentration_value : savedMed.concentration_value,
-                  concentration_unit: (savedMed.concentration_unit === null || savedMed.concentration_unit === undefined) ? defaultMed.concentration_unit : savedMed.concentration_unit,
-                  concentration_ml: savedMed.concentration_ml || defaultMed.concentration_ml || 1
+                  notes: defaultMed.notes,
+                  dose_mg_per_kg_min: defaultMed.dose_mg_per_kg_min,
+                  dose_mg_per_kg_max: defaultMed.dose_mg_per_kg_max,
+                  species_doses: defaultMed.species_doses,
+                  concentration_value: defaultMed.concentration_value,
+                  concentration_unit: defaultMed.concentration_unit,
+                  concentration_ml: defaultMed.concentration_ml || 1
                 };
               }
               return savedMed;
@@ -2908,8 +2912,37 @@
         if (!selectedMed || !species || !weight) return;
         const w = parseFloat(weight);
         if (isNaN(w) || w <= 0) return;
-        const minDose = selectedMed.dose_mg_per_kg_min * w;
-        const maxDose = selectedMed.dose_mg_per_kg_max * w;
+
+        let minDoseMgKg = selectedMed.dose_mg_per_kg_min;
+        let maxDoseMgKg = selectedMed.dose_mg_per_kg_max;
+        let currentFreq = selectedMed.frequency;
+        let currentRoute = selectedMed.route;
+        let contraindicationWarning = null;
+
+        // Check if species-specific dosing rules exist
+        if (selectedMed.species_doses && selectedMed.species_doses[species]) {
+          const spInfo = selectedMed.species_doses[species];
+          if (spInfo.contraindicated) {
+            contraindicationWarning = spInfo.warning || `⚠️ This medication is strictly contraindicated in ${getSpeciesLabel(species)}!`;
+          } else {
+            if (spInfo.min !== undefined) minDoseMgKg = spInfo.min;
+            if (spInfo.max !== undefined) maxDoseMgKg = spInfo.max;
+            if (spInfo.freq) currentFreq = spInfo.freq;
+            if (spInfo.route) currentRoute = spInfo.route;
+          }
+        }
+
+        if (contraindicationWarning) {
+          setResult({
+            contraindicated: true,
+            warning: contraindicationWarning,
+            species: species
+          });
+          return;
+        }
+
+        const minDose = minDoseMgKg * w;
+        const maxDose = maxDoseMgKg * w;
         const avgDose = (minDose + maxDose) / 2;
         let volumeData = null;
         if (concentrationMg && concentrationMl) {
@@ -2929,6 +2962,10 @@
           minDose: minDose.toFixed(2),
           maxDose: maxDose.toFixed(2),
           avgDose: avgDose.toFixed(2),
+          minDoseMgKg: minDoseMgKg,
+          maxDoseMgKg: maxDoseMgKg,
+          frequency: currentFreq,
+          route: currentRoute,
           volume: volumeData
         });
       };
@@ -3298,28 +3335,34 @@
                           </div>
                         </div>
                         <div className="mt-3 grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm">
-                          <div className="bg-white/70 rounded-xl p-3">
+                          <div className="bg-white/70 dark:bg-gray-800/80 rounded-xl p-3">
                             <div className="text-gray-500 text-xs mb-1">Form</div>
-                            <div className="font-semibold text-gray-800">{selectedMed.dosage_form}</div>
+                            <div className="font-semibold text-gray-800 dark:text-slate-200">{selectedMed.dosage_form}</div>
                           </div>
-                          <div className="bg-white/70 rounded-xl p-3">
+                          <div className="bg-white/70 dark:bg-gray-800/80 rounded-xl p-3">
                             <div className="text-gray-500 text-xs mb-1">Route</div>
-                            <div className="font-semibold text-gray-800">{selectedMed.route}</div>
+                            <div className="font-semibold text-gray-800 dark:text-slate-200">
+                              {(selectedMed.species_doses && selectedMed.species_doses[species] && selectedMed.species_doses[species].route) || selectedMed.route}
+                            </div>
                           </div>
-                          <div className="bg-white/70 rounded-xl p-3">
-                            <div className="text-gray-500 text-xs mb-1">Dose</div>
-                            {selectedMed.dose_mg_per_kg_min === 0 && selectedMed.dose_mg_per_kg_max === 0 ? (
+                          <div className="bg-white/70 dark:bg-gray-800/80 rounded-xl p-3">
+                            <div className="text-gray-500 text-xs mb-1">Dose {species ? `(${getSpeciesLabel(species)})` : ''}</div>
+                            {selectedMed.species_doses && selectedMed.species_doses[species] && selectedMed.species_doses[species].contraindicated ? (
+                              <div className="font-bold text-red-600 text-xs">⛔ Contraindicated</div>
+                            ) : selectedMed.species_doses && selectedMed.species_doses[species] ? (
+                              <div className="font-semibold text-emerald-700 dark:text-emerald-300">{selectedMed.species_doses[species].min}-{selectedMed.species_doses[species].max} mg/kg</div>
+                            ) : selectedMed.dose_mg_per_kg_min === 0 && selectedMed.dose_mg_per_kg_max === 0 ? (
                               <div className="font-semibold text-purple-600">Per animal</div>
                             ) : (
-                              <div className="font-semibold text-gray-800">{selectedMed.dose_mg_per_kg_min}-{selectedMed.dose_mg_per_kg_max} mg/kg</div>
+                              <div className="font-semibold text-gray-800 dark:text-slate-200">{selectedMed.dose_mg_per_kg_min}-{selectedMed.dose_mg_per_kg_max} mg/kg</div>
                             )}
                           </div>
-                          {selectedMed.frequency && (
-                            <div className="bg-white/70 rounded-xl p-3">
-                              <div className="text-gray-500 text-xs mb-1">Frequency</div>
-                              <div className="font-semibold text-gray-800">{selectedMed.frequency}</div>
+                          <div className="bg-white/70 dark:bg-gray-800/80 rounded-xl p-3">
+                            <div className="text-gray-500 text-xs mb-1">Frequency</div>
+                            <div className="font-semibold text-gray-800 dark:text-slate-200">
+                              {(selectedMed.species_doses && selectedMed.species_doses[species] && selectedMed.species_doses[species].freq) || selectedMed.frequency || 'Per protocol'}
                             </div>
-                          )}
+                          </div>
                         </div>
                         {selectedMed.unit_description && (
                           <div className="mt-3 text-sm text-gray-600">
@@ -3508,14 +3551,27 @@
                   </button>
                 )}
 
-                {result && (
+                {result && result.contraindicated ? (
+                  <div className="bg-red-50 dark:bg-red-950/50 border-2 border-red-400 rounded-3xl p-6 animate-fade-in shadow-lg">
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="text-3xl">🚫</span>
+                      <div>
+                        <h3 className="text-lg font-bold text-red-800 dark:text-red-300">Species Safety Contraindication</h3>
+                        <p className="text-xs text-red-600 dark:text-red-400 font-semibold">{getSpeciesLabel(species)}</p>
+                      </div>
+                    </div>
+                    <div className="p-4 bg-white dark:bg-gray-800 rounded-2xl border border-red-200 dark:border-red-800 text-sm font-medium text-red-900 dark:text-red-200 leading-relaxed">
+                      {result.warning}
+                    </div>
+                  </div>
+                ) : result && (
                   <div className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 border-2 border-emerald-300 rounded-3xl p-6 animate-fade-in shadow-lg">
                     <h3 className="text-xl font-bold text-gray-900 mb-5 flex items-center gap-3">
                       <span className="p-2 bg-emerald-500 text-white rounded-xl">💊</span>
                       <span>Calculated Dosage</span>
                     </h3>
                     <div className="mb-5">
-                      <div className="text-sm text-gray-600 mb-3 font-semibold uppercase tracking-wide">Dosage (mg)</div>
+                      <div className="text-sm text-gray-600 mb-3 font-semibold uppercase tracking-wide">Dosage (mg) {result.minDoseMgKg ? `— ${result.minDoseMgKg}-${result.maxDoseMgKg} mg/kg` : ''}</div>
                       <div className="grid md:grid-cols-3 gap-4">
                         <div className="bg-white rounded-2xl p-5 text-center shadow-sm hover-lift border border-gray-100">
                           <div className="text-sm text-gray-500 mb-2 uppercase tracking-wide">Minimum</div>
@@ -3564,7 +3620,7 @@
                       </div>
                       <div className="grid md:grid-cols-2 gap-3 text-sm">
                         <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg dark:text-slate-200">
-                          <span className="px-2 py-0.5 bg-emerald-100 text-emerald-700 dark:text-emerald-300 rounded text-sm font-semibold">{species === 'dog' ? 'Dog' : 'Cat'}</span>
+                          <span className="px-2 py-0.5 bg-emerald-100 text-emerald-700 dark:text-emerald-300 rounded text-sm font-semibold">{getSpeciesLabel(species)}</span>
                           <span><span className="font-semibold">Patient:</span> {weight}kg</span>
                         </div>
                         <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg dark:text-slate-200">
@@ -3583,12 +3639,12 @@
                         )}
                         <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-gray-800 rounded-lg dark:text-slate-200">
                           <span className="text-lg">🩺</span>
-                          <span><span className="font-semibold">Route:</span> {selectedMed.route}</span>
+                          <span><span className="font-semibold">Route:</span> {result.route || selectedMed.route}</span>
                         </div>
-                        {selectedMed.frequency && (
+                        {(result.frequency || selectedMed.frequency) && (
                           <div className="flex items-center gap-2 p-2 bg-gray-50 dark:bg-gray-800 rounded-lg dark:text-slate-200">
                             <span className="text-lg">⏰</span>
-                            <span><span className="font-semibold">Frequency:</span> {selectedMed.frequency}</span>
+                            <span><span className="font-semibold">Frequency:</span> {result.frequency || selectedMed.frequency}</span>
                           </div>
                         )}
                       </div>

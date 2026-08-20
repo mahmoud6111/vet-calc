@@ -190,7 +190,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Various preparations available",
             "notes": "Category: Corticosteroid (Glucocorticoid). Long-acting, potent glucocorticoid with 30x the anti-inflammatory potency of cortisol. Indications: Ketosis in dairy cattle, acute hypersensitivity/anaphylaxis, inflammatory musculoskeletal conditions, and induction of parturition. Dosage: Cattle/Horses 0.02-0.1 mg/kg IV/IM; Dogs/Cats 0.05-0.2 mg/kg IV/IM/SC. ⚠️ WARNING: Induces abortion in pregnant ruminants during last trimester! Withdrawal: Meat 8 days, Milk 72 hours. Ref: Plumb's 9th Ed. p. 347.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose / q24h",
+                        "route": "IV or IM (⚠️ Induces abortion in late pregnancy!)"
+                  },
+                  "horse": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose",
+                        "route": "IM (⚠️ Induces abortion!)"
+                  },
+                  "camel": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  }
+            }
       },
       {
             "id": "11",
@@ -254,7 +292,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Cap 25, 50, 75, 100, 200 mg; Syrup 12.5 mg",
             "notes": "Category: NSAIDs. Dual inhibitor of COX and 5-lipoxygenase (LOX) offering strong analgesic and antipyretic relief. Indications: Acute musculoskeletal inflammation, lameness, colic in horses, and post-partum fever in cattle. Dosage: Cattle/Horses 3 mg/kg IV/IM q24h for 1-3 days; Dogs 1-2 mg/kg PO/SC/IM q24h (max 5 days). Advantage: 0-day milk withdrawal! Meat withdrawal: 4 days. Ref: Plumb's 9th Ed. p. 646.",
             "frequency": "q24h max 5 days",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "species_doses": {
+                  "cattle": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h for 1-3 days",
+                        "route": "IV or deep IM (0-day milk withdrawal!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IV"
+                  },
+                  "sheep_goat": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "camel": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "dog": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 3-5 days)",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 1-2 days)",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "15",
@@ -270,7 +346,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Amp 100 mg",
             "notes": "Category: NSAIDs. Dual inhibitor of COX and 5-lipoxygenase (LOX) offering strong analgesic and antipyretic relief. Indications: Acute musculoskeletal inflammation, lameness, colic in horses, and post-partum fever in cattle. Dosage: Cattle/Horses 3 mg/kg IV/IM q24h for 1-3 days; Dogs 1-2 mg/kg PO/SC/IM q24h (max 5 days). Advantage: 0-day milk withdrawal! Meat withdrawal: 4 days. Ref: Plumb's 9th Ed. p. 646.",
             "frequency": "q24h",
-            "concentration_ml": 2
+            "concentration_ml": 2,
+            "species_doses": {
+                  "cattle": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h for 1-3 days",
+                        "route": "IV or deep IM (0-day milk withdrawal!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IV"
+                  },
+                  "sheep_goat": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "camel": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "dog": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 3-5 days)",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 1-2 days)",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "16",
@@ -286,7 +400,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab 7.5, 15 mg; Amp 15 mg",
             "notes": "Category: NSAIDs. Preferential COX-2 inhibitor with excellent anti-inflammatory and analgesic efficacy. Indications: Bovine respiratory disease, calf diarrhea (adjunct), acute mastitis, locomotor disorders, and perioperative orthopedic pain. Dosage: Cattle 0.5 mg/kg SC/IV single dose; Horses 0.6 mg/kg IV/PO q24h; Dogs 0.2 mg/kg initial then 0.1 mg/kg PO/SC q24h. Withdrawal: Cattle meat 15 days, Milk 5 days. Ref: Plumb's 9th Ed. p. 720.",
             "frequency": "q24h",
-            "concentration_ml": 1.5
+            "concentration_ml": 1.5,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV (Meat w/d: 15d, Milk w/d: 5d)"
+                  },
+                  "horse": {
+                        "min": 0.6,
+                        "max": 0.6,
+                        "freq": "q24h",
+                        "route": "IV or PO"
+                  },
+                  "sheep_goat": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV"
+                  },
+                  "dog": {
+                        "min": 0.1,
+                        "max": 0.2,
+                        "freq": "0.2 mg/kg day 1, then 0.1 mg/kg q24h",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.1,
+                        "freq": "0.1-0.2 mg/kg single SC dose, or 0.05 mg/kg PO q24-48h",
+                        "route": "SC or PO"
+                  },
+                  "poultry": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "q12-24h",
+                        "route": "PO or IM"
+                  }
+            }
       },
       {
             "id": "17",
@@ -1374,7 +1532,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Bayer)",
             "notes": "Category: NSAIDs. COMPOSITION: Each 1 ml contains: - Flunixin (as meglumine) 50 mg PROPERTIES: Non-steroidal antiinflammatory, analgesic and antipyretic for use in horses, cattle, pigs and dogs. PHARMACOLOGY: - Flunixin meglumine is a non-steroidal antinflammalory agent with analgesic and antipyretic activity. Flunix... | Ref: Ref: Plumb's 9th Ed. p. 488.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "85",
@@ -1422,7 +1616,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Bimeda Co.)",
             "notes": "Category: Anthelmintic. Anthelmintic (Halogenated Phenol) HEPANIL 34 FOR CATTLE AND SHEEP PRESENTATION: A bright, orange-red solution for injection, containing Nitroxynil Injection BP (Vet) 34% w/v. USES: HEPANIL 34 solution is indicated for the treatment of fascioliasis (infestations of mature and immature Fasciola hepati... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "88",
@@ -1431,14 +1657,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.1,
             "dose_mg_per_kg_max": 2.2,
-            "concentration_value": 83,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "50 ml vial (MSD Co. (Intervet))",
             "notes": "Category: NSAIDs. DESCRIPTION Each ml contains - Flunixin meglumine 83 mg (eq to 50 mg flunixin) Target species: Cattle & Horses ACTIVITY Flunixin meglumine is a potent, non-narcotic, non-steroidal analgesic agent with anti-inflammatory and anti-pyretic activity. It is significantly more potent than pentazocine, mepe... | Corrected dose: 1.1-2.2 mg/kg (was 11 mg/kg which is 10x the correct dose). Ref: Plumb's Vet Drug Handbook.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "89",
@@ -1447,14 +1709,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 25,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: NSAIDs. Composition: Each 1 ml contains - Diclofenac sodium 25 mg Properties: Diclofenac sodium, sodium 2-( 2,6 dichlorophenyl) amino]phenylacetate is one of the non-steroidal anti-ipflammatory drugs (NSAIDS), belongs to the phenyl acetic acid derivatives. Diclofenac sodium as anti-inflammatory, analgesic a... | Ref: Cattle 1 mg/kg IM q24h. Dogs/Cats 1-2 mg/kg PO q12h. Merck Vet Manual. | Ref: Cattle 1 mg/kg IM q24h. Merck Vet Manual.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h (1-3 days)",
+                        "route": "Deep IM (Meat w/d: 28d)"
+                  },
+                  "horse": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ NOT recommended in dogs (high incidence of severe gastrointestinal perforation)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats."
+                  }
+            }
       },
       {
             "id": "90",
@@ -1463,14 +1759,42 @@ window.DEFAULT_MEDICATIONS = [
             "species": "horse",
             "dose_mg_per_kg_min": 2.2,
             "dose_mg_per_kg_max": 4.4,
-            "concentration_value": 100,
+            "concentration_value": 80,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV",
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: NSAIDs + SAIDs. Composition Each 100 ml contains: - 18gm phenylbutazone - 0.035gm dexamethasone. Indications and Usage Horses and ponies: feverish illnesses including mastitis and traumatic reticulitis; diseases of locomotive systems including arthritis, periarthritis, tendonitis, tendovaginitis, bursitis, myositis... | Ref: Horses 2.2-4.4 mg/kg IV/PO q24h. Cattle 10 mg/kg PO (rarely used). Plumb's. Do NOT use in cats.",
             "frequency": "q24h (horses), q48h (cattle)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h (taper after day 1)",
+                        "route": "IV or PO"
+                  },
+                  "cattle": {
+                        "min": 4.4,
+                        "max": 8.8,
+                        "freq": "q48h (beef only)",
+                        "route": "IV (Strictly prohibited in female dairy cattle >20mo)"
+                  },
+                  "dog": {
+                        "min": 7,
+                        "max": 7,
+                        "freq": "q8h",
+                        "route": "PO (max 800mg/day with food)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats due to high risk of severe toxicity and renal failure."
+                  },
+                  "poultry": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
+                  }
+            }
       },
       {
             "id": "91",
@@ -1479,14 +1803,42 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 2.2,
             "dose_mg_per_kg_max": 4.4,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV",
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: NSAIDs. Composition: Each 100 ml contains - Phenylbutazone 20 gm Indications: It is used to relief the inflammatory conditions associate disorders with muscoskeletal system in horses and dogs Dosage & Administrations: » It may be administered once daily for not more than 5 successive days. - Horses: 1 ml / ... | Ref: Horses 2.2-4.4 mg/kg IV/PO q24h. Cattle 10 mg/kg PO (rarely used). Plumb's. Do NOT use in cats.",
             "frequency": "q24h (horses), q48h (cattle)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h (taper after day 1)",
+                        "route": "IV or PO"
+                  },
+                  "cattle": {
+                        "min": 4.4,
+                        "max": 8.8,
+                        "freq": "q48h (beef only)",
+                        "route": "IV (Strictly prohibited in female dairy cattle >20mo)"
+                  },
+                  "dog": {
+                        "min": 7,
+                        "max": 7,
+                        "freq": "q8h",
+                        "route": "PO (max 800mg/day with food)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats due to high risk of severe toxicity and renal failure."
+                  },
+                  "poultry": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
+                  }
+            }
       },
       {
             "id": "92",
@@ -1559,14 +1911,14 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 6,
             "dose_mg_per_kg_max": 8,
-            "concentration_value": 20,
-            "concentration_unit": "mg/20ml",
+            "concentration_value": 10,
+            "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV",
             "unit_description": "20 ml vial (N/A)",
             "notes": "Category: Anesthetic. Composition: Propofol 20 mg / 20ml Properties: • Rapid onset of action • Induction of general anesthesia in dogs and cats • Recovery after 20 min in dogs and 30 min in cats Dose: 6-8 mg / Kg I/V",
             "frequency": "q24h",
-            "concentration_ml": 20
+            "concentration_ml": 1
       },
       {
             "id": "97",
@@ -1582,7 +1934,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: SAIDs. Composition: Each 1 ml contains: - Dexamthasone Sodium Phosphate 2 mg Properties - Dexamethasone is readily absorbed into tissue, and rapidly distributed to kidneys, liver, muscle, and intestines. - It is metabolized in the liver and primarily excreted by the kidneys. - Dexamethasone is a synthetic ... | Ref: Ref: Plumb's 9th Ed. p. 347.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose / q24h",
+                        "route": "IV or IM (⚠️ Induces abortion in late pregnancy!)"
+                  },
+                  "horse": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose",
+                        "route": "IM (⚠️ Induces abortion!)"
+                  },
+                  "camel": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  }
+            }
       },
       {
             "id": "98",
@@ -1591,7 +1981,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1,
             "dose_mg_per_kg_max": 2,
-            "concentration_value": 100,
+            "concentration_value": 20,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
@@ -1607,14 +1997,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.02,
             "dose_mg_per_kg_max": 0.1,
-            "concentration_value": 100,
+            "concentration_value": 2,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: SAIDs. Composition: Each 1 ml contains: - Dexamethasone sodium phosphate 2 mg (Equivalent to 1.52 mg Dexamethasone). Properties: Dexamethasone is a synthetic corticosteroid with potent anti-inflammatory action. The mechanism by which corticosterioids exert their effect at cellular level remains unclear how... | Ref: Cattle/Horses anti-inflammatory: 0.02-0.1 mg/kg IV/IM. Ketosis (cattle): 1 mg/cow. Plumb's.",
             "frequency": "single dose or q24h (taper)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose / q24h",
+                        "route": "IV or IM (⚠️ Induces abortion in late pregnancy!)"
+                  },
+                  "horse": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose",
+                        "route": "IM (⚠️ Induces abortion!)"
+                  },
+                  "camel": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  }
+            }
       },
       {
             "id": "100",
@@ -1630,7 +2058,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Coophavet Co.)",
             "notes": "Category: SAIDs. Composition: Each 100 ml contains: - Dexamethasone sodium phosphate 200 mg Indications: In cattle, sheep, goats & pigs: • Ketosis (acetonemia) • Allergic reactions • Eczyma • Mastitis • Milk fever • Pneumonia (asthma) • Arthritis and inflammation of joint. In horses: Inflammation of Musclo-skeletal ... | Ref: Cattle/Horses anti-inflammatory: 0.02-0.1 mg/kg IV/IM. Ketosis (cattle): 1 mg/cow. Plumb's.",
             "frequency": "single dose or q24h (taper)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose / q24h",
+                        "route": "IV or IM (⚠️ Induces abortion in late pregnancy!)"
+                  },
+                  "horse": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose",
+                        "route": "IM (⚠️ Induces abortion!)"
+                  },
+                  "camel": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  }
+            }
       },
       {
             "id": "101",
@@ -1639,14 +2105,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 0.05,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 2.64,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (El kenana group)",
             "notes": "Category: SAIDs. COMPOSITION Each 1 ml contains: - Dexamethasone sodium phosphate 2.64 mg ( eq to Dexamethasone base 2 mg) INDICATIONS • Cattle, buffaloes, sheep and goats: - Ketosis, Allergic reactions, Mastitis, Milk fever, Eczema, Asthma, Arthritis & Inflamatory joint lesions. • Horses, dogs and cats: - inflammat... | Ref: Dogs/Cats anti-inflammatory: 0.05-0.2 mg/kg IV/IM/PO q12-24h. Shock: 2-4 mg/kg IV. Plumb's.",
             "frequency": "q12-24h (taper)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose / q24h",
+                        "route": "IV or IM (⚠️ Induces abortion in late pregnancy!)"
+                  },
+                  "horse": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose",
+                        "route": "IM (⚠️ Induces abortion!)"
+                  },
+                  "camel": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  }
+            }
       },
       {
             "id": "102",
@@ -1662,7 +2166,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Memphis)",
             "notes": "Category: SAIDs. Composition: Each ml contains: - Dexamethasone (as Sodium phosphate) 2 mg Properties: Dexamethasone is a glucocorticoids has a marked anti-inflammatory activity by suppressing the inflammatory reaction in a wide variety of conditions as in cases of respiratory diseases, gastrointestinal diseases, in... | Ref: Cattle/Horses anti-inflammatory: 0.02-0.1 mg/kg IV/IM. Ketosis (cattle): 1 mg/cow. Plumb's.",
             "frequency": "single dose or q24h (taper)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose / q24h",
+                        "route": "IV or IM (⚠️ Induces abortion in late pregnancy!)"
+                  },
+                  "horse": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose",
+                        "route": "IM (⚠️ Induces abortion!)"
+                  },
+                  "camel": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  }
+            }
       },
       {
             "id": "103",
@@ -1719,14 +2261,42 @@ window.DEFAULT_MEDICATIONS = [
             "species": "horse",
             "dose_mg_per_kg_min": 2.2,
             "dose_mg_per_kg_max": 4.4,
-            "concentration_value": 15,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV",
             "unit_description": "100 ml vial (Tornel)",
             "notes": "Category: NSAIDs. Composition: Each ml contains: - Fenilbutazone 200 mg - DiBenzilic Alcohol 1.5 % - Water c.b.p 1 ml Species Equines and bovines. Administration Route - Slow intravenous. Dose - Horses: 5 ml to 10 ml, for each 450 kg / body weight. - Don't exceed for more than 5 days. Indications - Keep in a cool dry... | Ref: Horses 2.2-4.4 mg/kg IV/PO q24h. Cattle 10 mg/kg PO (rarely used). Plumb's. Do NOT use in cats.",
             "frequency": "q24h (horses), q48h (cattle)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h (taper after day 1)",
+                        "route": "IV or PO"
+                  },
+                  "cattle": {
+                        "min": 4.4,
+                        "max": 8.8,
+                        "freq": "q48h (beef only)",
+                        "route": "IV (Strictly prohibited in female dairy cattle >20mo)"
+                  },
+                  "dog": {
+                        "min": 7,
+                        "max": 7,
+                        "freq": "q8h",
+                        "route": "PO (max 800mg/day with food)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats due to high risk of severe toxicity and renal failure."
+                  },
+                  "poultry": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
+                  }
+            }
       },
       {
             "id": "107",
@@ -1742,7 +2312,35 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (OPI pharma)",
             "notes": "Category: NSAIDs. Composition Each 1 ml contains: - Phenylbutazone 200 mg - Sodium salicylate 20 mg/ml - Pipperment + mentol + Eucalyptus oil + lemon oil Indications and Usage Ponies and horses: musculoskeletal disorders such as tendinitis, arthritis, bursitis, and neuritis; visceral pains (colic); laminitis; luxatio... | Ref: Horses 2.2-4.4 mg/kg IV/PO q24h. Cattle 10 mg/kg PO (rarely used). Plumb's. Do NOT use in cats.",
             "frequency": "q24h (horses), q48h (cattle)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h (taper after day 1)",
+                        "route": "IV or PO"
+                  },
+                  "cattle": {
+                        "min": 4.4,
+                        "max": 8.8,
+                        "freq": "q48h (beef only)",
+                        "route": "IV (Strictly prohibited in female dairy cattle >20mo)"
+                  },
+                  "dog": {
+                        "min": 7,
+                        "max": 7,
+                        "freq": "q8h",
+                        "route": "PO (max 800mg/day with food)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats due to high risk of severe toxicity and renal failure."
+                  },
+                  "poultry": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
+                  }
+            }
       },
       {
             "id": "108",
@@ -1751,14 +2349,42 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2.2,
             "dose_mg_per_kg_max": 4.4,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV",
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: NSAIDs. Composition Each 100 ml contains: - Phenylbutazone 20 gm Properties Phenylbutazone has analgesic, anti-inflammatory, antipyretic, and mild uricosuric properties. The proposed mechanism of action is by the inhibition of cyclooxygenase, thereby reducing prostaglandin synthesis. Other pharmacologic act... | Ref: Horses 2.2-4.4 mg/kg IV/PO q24h. Cattle 10 mg/kg PO (rarely used). Plumb's. Do NOT use in cats.",
             "frequency": "q24h (horses), q48h (cattle)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h (taper after day 1)",
+                        "route": "IV or PO"
+                  },
+                  "cattle": {
+                        "min": 4.4,
+                        "max": 8.8,
+                        "freq": "q48h (beef only)",
+                        "route": "IV (Strictly prohibited in female dairy cattle >20mo)"
+                  },
+                  "dog": {
+                        "min": 7,
+                        "max": 7,
+                        "freq": "q8h",
+                        "route": "PO (max 800mg/day with food)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats due to high risk of severe toxicity and renal failure."
+                  },
+                  "poultry": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
+                  }
+            }
       },
       {
             "id": "109",
@@ -1774,7 +2400,35 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Delta Pharma)",
             "notes": "Category: NSAIDs. Composition: Each 1ml contains: – Phenyl butazone 200 mg. Indications: Phenyl-D 20% is used for relief and treatment of pain associated with inflammatory conditions in musculoskeletal disorders in horses and ponies as: 1. Osteoarthritis of medial and distal bones of the hock. 2. Arthritis of spine a... | Ref: Horses 2.2-4.4 mg/kg IV/PO q24h. Cattle 10 mg/kg PO (rarely used). Plumb's. Do NOT use in cats.",
             "frequency": "q24h (horses), q48h (cattle)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h (taper after day 1)",
+                        "route": "IV or PO"
+                  },
+                  "cattle": {
+                        "min": 4.4,
+                        "max": 8.8,
+                        "freq": "q48h (beef only)",
+                        "route": "IV (Strictly prohibited in female dairy cattle >20mo)"
+                  },
+                  "dog": {
+                        "min": 7,
+                        "max": 7,
+                        "freq": "q8h",
+                        "route": "PO (max 800mg/day with food)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats due to high risk of severe toxicity and renal failure."
+                  },
+                  "poultry": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
+                  }
+            }
       },
       {
             "id": "110",
@@ -1790,7 +2444,35 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (VMD Pharma)",
             "notes": "Category: NSAIDs. Composition: Each 1 ml contains: - Phenylbutazon 200 mg Species: cattle, horse, cat and dog Indications: - Arthritis, bursitis, myositis, tendinitis, tendo vaginitis and neuritis, mastitis and metritis - Painful injury (such as luxation, sprain, muscle damage), enzootic pneumonia Dosage and Administ... | Ref: Horses 2.2-4.4 mg/kg IV/PO q24h. Cattle 10 mg/kg PO (rarely used). Plumb's. Do NOT use in cats.",
             "frequency": "q24h (horses), q48h (cattle)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h (taper after day 1)",
+                        "route": "IV or PO"
+                  },
+                  "cattle": {
+                        "min": 4.4,
+                        "max": 8.8,
+                        "freq": "q48h (beef only)",
+                        "route": "IV (Strictly prohibited in female dairy cattle >20mo)"
+                  },
+                  "dog": {
+                        "min": 7,
+                        "max": 7,
+                        "freq": "q8h",
+                        "route": "PO (max 800mg/day with food)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats due to high risk of severe toxicity and renal failure."
+                  },
+                  "poultry": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
+                  }
+            }
       },
       {
             "id": "111",
@@ -1806,7 +2488,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: NSAIDs. Composition Each 1 ml contains: - Ketoprofen 100 mg Properties Ketoprofen is a derivative of phenylpropionic acid, and belongs to the non-steroidal anti-inflammatory drugs. Like all such substances, its principal pharmacological actions are anti-inflammatory, analgesic and anti-pyretic. The mechanis... | Ref: Horses 2.2 mg/kg IV q24h. Cattle 3 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h for 1-3 days",
+                        "route": "IV or deep IM (0-day milk withdrawal!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IV"
+                  },
+                  "sheep_goat": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "camel": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "dog": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 3-5 days)",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 1-2 days)",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "112",
@@ -1822,7 +2542,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Delta Pharma)",
             "notes": "Category: NSAIDs. Composition: Each 1 ml contains: - Ketoprofen 100 mg Indications : - Cattle: Treatment of Acute Mastitis, Metritis, Calf, pneumonia, 3day sickness, Downer-cow syndrome & Claw affections (Foot rot). - Horses: Treatment of Colic, Laminitis, Tendonitis, Osteo-arthritis. - Dogs and Cats: Treatment of Hi... | Ref: Dogs 1-2 mg/kg PO/SC/IM q24h. Cats 1 mg/kg SC single dose. Plumb's.",
             "frequency": "q24h max 5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h for 1-3 days",
+                        "route": "IV or deep IM (0-day milk withdrawal!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IV"
+                  },
+                  "sheep_goat": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "camel": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "dog": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 3-5 days)",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 1-2 days)",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "113",
@@ -1838,7 +2596,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (kela Co.)",
             "notes": "Category: NSAIDs. Indications: Cattle, horse, dog and cat: • Inflammation and pain associated with musculoskeletal disorders • Cow: Acute Mastitis, Metritis, Calf, pneumonia, 3day sickness, Downer-cow syndrome & Claw affections • Horse: Colic. Contra-indications and Precautions: • Care in animals less than 6 weeks of... | Ref: Dogs 1-2 mg/kg PO/SC/IM q24h. Cats 1 mg/kg SC single dose. Plumb's.",
             "frequency": "q24h max 5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h for 1-3 days",
+                        "route": "IV or deep IM (0-day milk withdrawal!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IV"
+                  },
+                  "sheep_goat": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "camel": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "dog": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 3-5 days)",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 1-2 days)",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "114",
@@ -1854,7 +2650,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: NSAIDs. Composition Each 1 ml contains: - Ketoprofen 100 mg. Properties: Ketoprofen exhibits actions similar to that of other non-steroidal anti-inflammatory agents (NSAIDs) in that it possesses antipyretic, analgesic and anti-inflammatory activity. It acts by the inhibition of cyclooxygenase catalysis of a... | Ref: Horses 2.2 mg/kg IV q24h. Cattle 3 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h for 1-3 days",
+                        "route": "IV or deep IM (0-day milk withdrawal!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IV"
+                  },
+                  "sheep_goat": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "camel": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "dog": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 3-5 days)",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 1-2 days)",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "115",
@@ -1879,14 +2713,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.5,
             "dose_mg_per_kg_max": 1,
-            "concentration_value": 0.2,
+            "concentration_value": 20,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/SC",
             "unit_description": "100 ml vial (Al Madina)",
             "notes": "Category: NSAIDs. Properties: - MELOXICAM Non-steroidal, anti-inflammatory, which acts by inhibition of prostaglandin synthesis to give the anti inflammatory, analgesic, antiexudative and antipyretic effect. - MELOXICAM also have anti-endotoxic properties as it inhibit the production of thromboxane b2 by E. Coli endo... | Ref: Cattle 0.5 mg/kg IV/SC. Horses 0.6 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV (Meat w/d: 15d, Milk w/d: 5d)"
+                  },
+                  "horse": {
+                        "min": 0.6,
+                        "max": 0.6,
+                        "freq": "q24h",
+                        "route": "IV or PO"
+                  },
+                  "sheep_goat": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV"
+                  },
+                  "dog": {
+                        "min": 0.1,
+                        "max": 0.2,
+                        "freq": "0.2 mg/kg day 1, then 0.1 mg/kg q24h",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.1,
+                        "freq": "0.1-0.2 mg/kg single SC dose, or 0.05 mg/kg PO q24-48h",
+                        "route": "SC or PO"
+                  },
+                  "poultry": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "q12-24h",
+                        "route": "PO or IM"
+                  }
+            }
       },
       {
             "id": "117",
@@ -1895,14 +2773,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 0.1,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 20,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (Avico)",
             "notes": "Category: NSAIDs. Composition: Each 1 ml contains Meloxicam 20 mg Properties - MELOXICAM AVICO is non steroidal anti-inflammatory antiexudative antipyretic, analgesic drug of oxicam class, it has wide application use in farm animal's cattle's, sheep and goats, also in equine and in small animals dogs and cats. - Mode... | Ref: Dogs 0.1-0.2 mg/kg PO/SC q24h. Cats 0.05-0.1 mg/kg SC single dose only. Plumb's.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV (Meat w/d: 15d, Milk w/d: 5d)"
+                  },
+                  "horse": {
+                        "min": 0.6,
+                        "max": 0.6,
+                        "freq": "q24h",
+                        "route": "IV or PO"
+                  },
+                  "sheep_goat": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV"
+                  },
+                  "dog": {
+                        "min": 0.1,
+                        "max": 0.2,
+                        "freq": "0.2 mg/kg day 1, then 0.1 mg/kg q24h",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.1,
+                        "freq": "0.1-0.2 mg/kg single SC dose, or 0.05 mg/kg PO q24-48h",
+                        "route": "SC or PO"
+                  },
+                  "poultry": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "q12-24h",
+                        "route": "PO or IM"
+                  }
+            }
       },
       {
             "id": "118",
@@ -1918,7 +2840,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Delta Pharma)",
             "notes": "Category: NSAIDs. Composition: Each 1 ml contains - Meloxicam 5 mg Properties: - Meloxicam is a Cox2-receptor preferential NSAID. - Meloxicam has anti-inflammatory analgesic and antipyretic activity similar to other NSAIDs. Mode of Action: MELOXIDEL 0.5% acts by inhibition of cyclogenase, phospholipase A2 and inhibit... | Ref: Cattle 0.5 mg/kg IV/SC. Horses 0.6 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV (Meat w/d: 15d, Milk w/d: 5d)"
+                  },
+                  "horse": {
+                        "min": 0.6,
+                        "max": 0.6,
+                        "freq": "q24h",
+                        "route": "IV or PO"
+                  },
+                  "sheep_goat": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV"
+                  },
+                  "dog": {
+                        "min": 0.1,
+                        "max": 0.2,
+                        "freq": "0.2 mg/kg day 1, then 0.1 mg/kg q24h",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.1,
+                        "freq": "0.1-0.2 mg/kg single SC dose, or 0.05 mg/kg PO q24-48h",
+                        "route": "SC or PO"
+                  },
+                  "poultry": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "q12-24h",
+                        "route": "PO or IM"
+                  }
+            }
       },
       {
             "id": "119",
@@ -1934,7 +2900,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Boehringer Ingelheim)",
             "notes": "Category: NSAIDs. Composition - Meloxicam 20 mg/ml Target species Cattle, pigs and horses Indications ■ Cattle: - For use in acute respiratory infection with appropriate antibiotic therapy to reduce clinical signs in cattle. - For use in diarrhoea in combination with oral re-hydration therapy to reduce clinical signs... | Ref: Cattle 0.5 mg/kg IV/SC. Horses 0.6 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV (Meat w/d: 15d, Milk w/d: 5d)"
+                  },
+                  "horse": {
+                        "min": 0.6,
+                        "max": 0.6,
+                        "freq": "q24h",
+                        "route": "IV or PO"
+                  },
+                  "sheep_goat": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV"
+                  },
+                  "dog": {
+                        "min": 0.1,
+                        "max": 0.2,
+                        "freq": "0.2 mg/kg day 1, then 0.1 mg/kg q24h",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.1,
+                        "freq": "0.1-0.2 mg/kg single SC dose, or 0.05 mg/kg PO q24-48h",
+                        "route": "SC or PO"
+                  },
+                  "poultry": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "q12-24h",
+                        "route": "PO or IM"
+                  }
+            }
       },
       {
             "id": "120",
@@ -1950,7 +2960,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "30 ml vial (Adwia)",
             "notes": "Category: NSAIDs. Composition: Each ml contains: - Meloxicam 20 mg Properties: - Meloxicam is a non-steroidal anti inflammatory drug (NSAID) of the oxicam class which acts by inhibition of prostaglandin synthesis, thereby exerting anti-intlammatory, anti-exudaive, analgesic and antipyretic properties. - Meloxicam als... | Ref: Cattle 0.5 mg/kg IV/SC. Horses 0.6 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV (Meat w/d: 15d, Milk w/d: 5d)"
+                  },
+                  "horse": {
+                        "min": 0.6,
+                        "max": 0.6,
+                        "freq": "q24h",
+                        "route": "IV or PO"
+                  },
+                  "sheep_goat": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV"
+                  },
+                  "dog": {
+                        "min": 0.1,
+                        "max": 0.2,
+                        "freq": "0.2 mg/kg day 1, then 0.1 mg/kg q24h",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.1,
+                        "freq": "0.1-0.2 mg/kg single SC dose, or 0.05 mg/kg PO q24-48h",
+                        "route": "SC or PO"
+                  },
+                  "poultry": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "q12-24h",
+                        "route": "PO or IM"
+                  }
+            }
       },
       {
             "id": "121",
@@ -1959,14 +3013,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.5,
             "dose_mg_per_kg_max": 1,
-            "concentration_value": 0.2,
+            "concentration_value": 20,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/SC",
             "unit_description": "50 ml vial (Norbrook)",
             "notes": "Category: NSAIDs. Properties: - MELOXICAM Non-steroidal, anti-inflammatory, which acts by inhibition of prostaglandin synthesis to give the anti inflammatory, analgesic, antiexudative and antipyretic effect. - MELOXICAM also have anti-endotoxic properties as it inhibit the production of thromboxane b2 by E. Coli endo... | Ref: Cattle 0.5 mg/kg IV/SC. Horses 0.6 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV (Meat w/d: 15d, Milk w/d: 5d)"
+                  },
+                  "horse": {
+                        "min": 0.6,
+                        "max": 0.6,
+                        "freq": "q24h",
+                        "route": "IV or PO"
+                  },
+                  "sheep_goat": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV"
+                  },
+                  "dog": {
+                        "min": 0.1,
+                        "max": 0.2,
+                        "freq": "0.2 mg/kg day 1, then 0.1 mg/kg q24h",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.1,
+                        "freq": "0.1-0.2 mg/kg single SC dose, or 0.05 mg/kg PO q24-48h",
+                        "route": "SC or PO"
+                  },
+                  "poultry": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "q12-24h",
+                        "route": "PO or IM"
+                  }
+            }
       },
       {
             "id": "122",
@@ -1982,7 +3080,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Ceva Co.)",
             "notes": "Category: NSAIDs. COMPOSITION - Meloxicam 20 mg - Excipient q.s.f. 1 ml PROPERTIES Meloxicam is a non-steroidal anti-inflammatory drug (NSAID) of the oxicam class which acts by inhibition of prostaglandin synthesis, thereby exerting anti-inflammatory, anti-exudative, analgesic and antipyretic effects. It reduces leuk... | Ref: Cattle 0.5 mg/kg IV/SC. Horses 0.6 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV (Meat w/d: 15d, Milk w/d: 5d)"
+                  },
+                  "horse": {
+                        "min": 0.6,
+                        "max": 0.6,
+                        "freq": "q24h",
+                        "route": "IV or PO"
+                  },
+                  "sheep_goat": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV"
+                  },
+                  "dog": {
+                        "min": 0.1,
+                        "max": 0.2,
+                        "freq": "0.2 mg/kg day 1, then 0.1 mg/kg q24h",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.1,
+                        "freq": "0.1-0.2 mg/kg single SC dose, or 0.05 mg/kg PO q24-48h",
+                        "route": "SC or PO"
+                  },
+                  "poultry": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "q12-24h",
+                        "route": "PO or IM"
+                  }
+            }
       },
       {
             "id": "123",
@@ -1991,7 +3133,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "dog",
             "dose_mg_per_kg_min": 2.2,
             "dose_mg_per_kg_max": 4.4,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/SC",
@@ -2062,7 +3204,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: NSAIDs. Composition: Each 1 ml contains: - Flunixin meglumine 82.88 mg (Equivalent to 50 mg Flunixin). Properties: Flunixin is a very potent inhibitor of cyclooxygenase and like other NSAIDs, it exhibits analgesic, anti-inflammatory and antipyretic activity. Indications: FLAMICURE is indicated in cattle for... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "128",
@@ -2078,7 +3256,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Bremer Pharma)",
             "notes": "Category: NSAIDs. Composition: Flunixin 50 mg / 1 ml Properties: Non-steroidal analgesic, anti-inflammatory, anti-endotoxic and anti-pyretic Indications: • Alleviation of visceral pain and inflammation in colicky conditions • Different musculoskeletal disorders in horses • Reduces pain and pyrexia caused by different... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "129",
@@ -2087,14 +3301,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.1,
             "dose_mg_per_kg_max": 2.2,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "50 ml vial (Arabcomed)",
             "notes": "Category: NSAIDs. Properties: Non-steroidal analgesic, anti-inflammatory, anti-endotoxic and anti-pyretic Indications: • Alleviation of visceral pain and inflammation in colicky conditions • Different musculoskeletal disorders in horses • Reduces pain and pyrexia caused by different infectious diseases in bovine espe... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "130",
@@ -2103,14 +3353,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.1,
             "dose_mg_per_kg_max": 1.1,
-            "concentration_value": 50,
+            "concentration_value": 82.88,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "50 ml vial (Avico)",
             "notes": "Category: NSAIDs. Composition: Each 1 ml contains: Flunixin (Equivalent to 82.88 mg Flunixin Meglumine) 50 mg Properties - Among the Non-Steroidal Anti-Inflammatory Drugs, Flunixin Meglumine is considered to be of the most potent, it has analgesic, anti-inflammatory and antipyretic activity. - It is significantly mor... | Ref: Ref: Plumb's 9th Ed. p. 488.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "131",
@@ -2119,14 +3405,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.1,
             "dose_mg_per_kg_max": 2.2,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (Zoetis)",
             "notes": "Category: NSAIDs. Properties: Non-steroidal analgesic, anti-inflammatory, anti-endotoxic and anti-pyretic Indications: • Alleviation of visceral pain and inflammation in colicky conditions • Different musculoskeletal disorders in horses • Reduces pain and pyrexia caused by different infectious diseases in bovine espe... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "132",
@@ -2142,7 +3464,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (UCCMA - Ghannam)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition: Each 100 ml contain: - Gentamicin sulphate 17 g (eq to Gentamicin base 10 g) Properities: - Gentamicin is an aminoglycoside broad-spectrum antibiotic, active against. most gram-positive and gram-negative bacteria and Mycoplasma. - It exerts its antibacterial action by ireversible bindin... | Ref: Ref: Plumb's 9th Ed. p. 504.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM (Meat w/d: 40d; extended in calves)"
+                  },
+                  "horse": {
+                        "min": 6.6,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  }
+            }
       },
       {
             "id": "133",
@@ -2151,14 +3511,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "horse",
             "dose_mg_per_kg_min": 1.1,
             "dose_mg_per_kg_max": 2.2,
-            "concentration_value": 100,
+            "concentration_value": 82.95,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "50 ml vial (El kenana group)",
             "notes": "Category: NSAIDs. COMPOSITION Each 1 ml contains: - Flunixin Meglumine 82.95 mg (eq to Flunixin Base 50 mg) INDICATIONS • Horse: Flunixin meglumin is recommended for: 1- Alleviation of inflammation and associated pain in musculoskeletal disorders. 2- Alleviation visceral pain associated with colic. 3- Treatment of en... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "134",
@@ -2167,14 +3563,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.1,
             "dose_mg_per_kg_max": 2.2,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (Ceva Co.)",
             "notes": "Category: NSAIDs. Properties: Non-steroidal analgesic, anti-inflammatory, anti-endotoxic and anti-pyretic Indications: • Alleviation of visceral pain and inflammation in colicky conditions • Different musculoskeletal disorders in horses • Reduces pain and pyrexia caused by different infectious diseases in bovine espe... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "135",
@@ -2199,7 +3631,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.5,
             "dose_mg_per_kg_max": 1.1,
-            "concentration_value": 100,
+            "concentration_value": 20,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -2222,7 +3654,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (UCCMA - Ghannam)",
             "notes": "Category: NSAIDs. Properties: Nonsteroidal Anti-inflammatory, analgesic and anti-pyretic Indications: • Diseases of the respiratory system (e.g. bronchopneumonia). • Genitourinary system (e.g. metritis) • Mammary gland (e.g. mastitis) • Musculoskeletal disorders (e.g. acute and chronic lameness, arthritis, desmitis, ... | Ref: Cattle 1 mg/kg IM q24h. Dogs/Cats 1-2 mg/kg PO q12h. Merck Vet Manual. | Ref: Cattle 1 mg/kg IM q24h. Merck Vet Manual.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h (1-3 days)",
+                        "route": "Deep IM (Meat w/d: 28d)"
+                  },
+                  "horse": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ NOT recommended in dogs (high incidence of severe gastrointestinal perforation)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats."
+                  }
+            }
       },
       {
             "id": "138",
@@ -2231,14 +3697,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 25,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: NSAIDs. Composition Each 100 ml contains: - Diclofenac sodium 2.69 gm (eq to Diclofenac 2.5 gm) Properties - Diclofenac is a nonsteroidal anti-inflammatory drug (NSAID) with anti-inflammatory, analgesic and antipyretic activity. - Acts on the metabolism of arachidonic acid by inhibiting the enzyme cyclooxyg... | Ref: Cattle 1 mg/kg IM q24h. Dogs/Cats 1-2 mg/kg PO q12h. Merck Vet Manual. | Ref: Cattle 1 mg/kg IM q24h. Merck Vet Manual.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h (1-3 days)",
+                        "route": "Deep IM (Meat w/d: 28d)"
+                  },
+                  "horse": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ NOT recommended in dogs (high incidence of severe gastrointestinal perforation)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats."
+                  }
+            }
       },
       {
             "id": "139",
@@ -2247,14 +3747,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: NSAIDs. Composition: Each 1 ml contains Diclofenac Na 50 mg Properties - Diclofenac is a nonsteroidal anti-inflammatory drug (NSAID) taken to reduce inflammation and as an analgesic reducing pain in certain conditions. - Anti-inflammatory painkillers like diclofenac are sometimes called non-steroidal anti-i... | Ref: Cattle 1 mg/kg IM q24h. Dogs/Cats 1-2 mg/kg PO q12h. Merck Vet Manual. | Ref: Cattle 1 mg/kg IM q24h. Merck Vet Manual.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h (1-3 days)",
+                        "route": "Deep IM (Meat w/d: 28d)"
+                  },
+                  "horse": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ NOT recommended in dogs (high incidence of severe gastrointestinal perforation)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats."
+                  }
+            }
       },
       {
             "id": "140",
@@ -2263,14 +3797,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
             "unit_description": "100 ml vial (Primavet)",
             "notes": "Category: NSAIDs. Composition: Each 100 ml contains: - Diclofenac Sodium 6.2 gm (eq. to Diclofenace base 5 gm) Properties: - Dicloprima is non steroidal drug with anti-inflammatory, analgesic, antirheumatic and antipyretic effect. - Dicloprima contains diclofenac sodium which is believed to be inhibiting cyclo-oxygen... | Ref: Cattle 1 mg/kg IM q24h. Dogs/Cats 1-2 mg/kg PO q12h. Merck Vet Manual. | Ref: Cattle 1 mg/kg IM q24h. Merck Vet Manual.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h (1-3 days)",
+                        "route": "Deep IM (Meat w/d: 28d)"
+                  },
+                  "horse": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ NOT recommended in dogs (high incidence of severe gastrointestinal perforation)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats."
+                  }
+            }
       },
       {
             "id": "141",
@@ -2286,7 +3854,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: NSAIDs. Composition:- Each 100 ml contains: - Diclofenac sodium 6.2 gm (eq to Diciofenac base 5 gm) Indications: • Diseases of the respiratory system (e.g. bronchopneumonia). • Genitourinary system (e.g. metritis) • Mammary gland (e.g. mastitis) • Musculoskeletal disorders (e.g. acute and chronic lameness, ... | Ref: Cattle 1 mg/kg IM q24h. Dogs/Cats 1-2 mg/kg PO q12h. Merck Vet Manual. | Ref: Cattle 1 mg/kg IM q24h. Merck Vet Manual.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h (1-3 days)",
+                        "route": "Deep IM (Meat w/d: 28d)"
+                  },
+                  "horse": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ NOT recommended in dogs (high incidence of severe gastrointestinal perforation)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats."
+                  }
+            }
       },
       {
             "id": "142",
@@ -2302,7 +3904,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Allam Co.)",
             "notes": "Category: NSAIDs. Composition: Each 100 ml contains: - Diclofenac sodium 6.2 gm (equi. to Diclofenac base 5 gm) Properties: Declo 5% is non steroidal drug with anti-inflammatory, analgesic, antirheumatic and antipyretic effect. - Declo 5% contains diclofenac sodium, which is believed to inhibiting cyclo-oxygenase pat... | Ref: Cattle 1 mg/kg IM q24h. Dogs/Cats 1-2 mg/kg PO q12h. Merck Vet Manual. | Ref: Cattle 1 mg/kg IM q24h. Merck Vet Manual.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h (1-3 days)",
+                        "route": "Deep IM (Meat w/d: 28d)"
+                  },
+                  "horse": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ NOT recommended in dogs (high incidence of severe gastrointestinal perforation)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats."
+                  }
+            }
       },
       {
             "id": "143",
@@ -2334,7 +3970,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml Bottle (Arabcomed)",
             "notes": "Category: Antibiotic (Phenicol). Composition Each 100 ml contains - Florfenicol 10 gm Properties - Florfenicol is a broad-spectrum synthetic antibiotic in the phenicol group that is active against most Gram-positive and Gram-negative bacteria . - It acts by binding to the 50S ribosome subunit and inhibiting bacterial protein synthe... | Ref: Cattle 20 mg/kg IM q48h or 40 mg/kg SC (long-acting). Plumb's.",
             "frequency": "q48h IM or q24h SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h (2 doses) OR 40 mg/kg SC single dose",
+                        "route": "IM or SC (⚠️ NEVER GIVE IV. Prohibited in lactating dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h or 40 mg/kg SC once",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h",
+                        "route": "IM or SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal acute colitis and dysbiosis)."
+                  },
+                  "dog": {
+                        "min": 20,
+                        "max": 30,
+                        "freq": "q12-24h (refractory cases)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 20,
+                        "max": 25,
+                        "freq": "q12-24h",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "145",
@@ -2350,7 +4022,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (Arabcomed)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each 1 tablet (Bolus) contains: - Oxytetracycline HCI 540 mg (eq to Oxytetracycline base 500 mg) Properties: Oxytetracycline acts as bacteriostatic antibiotic and inhibits protein synthesis by reversibly binding to 30S ribosomal subunits of susceptible organisms, thereby preventing bind... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "146",
@@ -2471,14 +4187,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 20,
             "dose_mg_per_kg_max": 20,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "100 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Antibiotic (Tetracycline). Composition Each ml contains: - Oxytetracycline 200 mg (eq to Oxytetracycline Dihydrate 216 mg) Pharmacodynamic properties - Oxytetracycline is a bacteriostatic antibiotic that inhibits protein synthesis in susceptible bacteria. Inside the cell it binds irreversibly to receptors on the 30S subunit o... | Ref: Ref: Plumb's 9th Ed. p. 892.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "154",
@@ -2494,7 +4254,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "200 ml Spray (Adwia)",
             "notes": "Category: Topical Antiseptic. Composition: Each 100 ml contains: - Oxytetracycline 2.5 gm - Crystal Violet 190 mg Indications: • Topical infections • Mucosal infections • Surgical procedures and wounds • Hoof infections | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "155",
@@ -2510,7 +4314,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Spray (Bayer)",
             "notes": "Category: Topical Antiseptic. Indications: • Topical infections • Mucosal infections • Surgical procedures and wounds • Hoof infections | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "156",
@@ -2526,7 +4374,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Spray (Zoetis)",
             "notes": "Category: Topical Antiseptic. Indications: • Topical infections • Mucosal infections • Surgical procedures and wounds • Hoof infections | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "157",
@@ -2542,7 +4434,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Spray (N/A)",
             "notes": "Category: Topical Antiseptic. Indications: • Topical infections • Mucosal infections • Surgical procedures and wounds • Hoof infections | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "158",
@@ -2558,7 +4494,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "140 gm Spray (Norbrook)",
             "notes": "Category: Topical Antiseptic. Alamycin Aerosol is a cutaneous antimicrobial blue coloured spray containing oxytetracycline hydrochloride. It is indicated for the treatment of foot rot in sheep and topical infections caused by organisms sensitive to oxytetracycline in cattle, sheep and pigs. Active Ingredient Each 140g aerosol ca... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "159",
@@ -2743,7 +4723,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 100,
+            "concentration_value": 20,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
@@ -2935,7 +4915,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 100,
+            "concentration_value": 230,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV",
@@ -2983,7 +4963,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 100,
+            "concentration_value": 240,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
@@ -3015,7 +4995,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 100,
+            "concentration_value": 230,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV",
@@ -3063,7 +5043,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.6,
             "dose_mg_per_kg_max": 0.6,
-            "concentration_value": 0.6,
+            "concentration_value": 150,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -3159,7 +5139,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 100,
+            "concentration_value": 150,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
@@ -3335,7 +5315,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "horse",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 5,
+            "concentration_value": 100,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -3351,7 +5331,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 5,
+            "concentration_value": 100,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -3383,7 +5363,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
@@ -3399,7 +5379,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
@@ -3463,7 +5443,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 1,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
@@ -3614,7 +5594,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml Bottle (Pharma swede)",
             "notes": "Category: Anthelmintic. Composition: Each 1 ml contains: - Triclabendazole 50 mg - Levamisole HCl 37.5 mg Indicationts: - In case of Acute, subacute and chronic fascioliasis (either hepatica or gigantica) affecting sheep & goats and cattle. - Adult and immature forms of round worms such as: Haemonchus, Oestertagia, Coopria... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "225",
@@ -3623,7 +5637,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 33,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 100,
+            "concentration_value": 333,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -3678,7 +5692,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Dopharma)",
             "notes": "Category: NSAIDs. COMPOSITION - Meloxicam 30 mg / ml PROPERTIES Meloxicam is a non-steroidal anti-inflammatory drug (NSAID) of the oxicam class which acts by inhibition of prostaglandin synthesis, thereby exerting anti-inflammatory, anti-exudative, analgesic and antipyretic effects. It reduces leukocyte infiltration ... | Ref: Cattle 0.5 mg/kg IV/SC. Horses 0.6 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV (Meat w/d: 15d, Milk w/d: 5d)"
+                  },
+                  "horse": {
+                        "min": 0.6,
+                        "max": 0.6,
+                        "freq": "q24h",
+                        "route": "IV or PO"
+                  },
+                  "sheep_goat": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV"
+                  },
+                  "dog": {
+                        "min": 0.1,
+                        "max": 0.2,
+                        "freq": "0.2 mg/kg day 1, then 0.1 mg/kg q24h",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.1,
+                        "freq": "0.1-0.2 mg/kg single SC dose, or 0.05 mg/kg PO q24-48h",
+                        "route": "SC or PO"
+                  },
+                  "poultry": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "q12-24h",
+                        "route": "PO or IM"
+                  }
+            }
       },
       {
             "id": "229",
@@ -3703,14 +5761,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: NSAIDs. Composition Each 100 ml contains: - Diclofenac sodium 5.38 gm (eq to Diclofenac 5 gm) Properties - Diclofenac is a nonsteroidal anti-inflammatory drug (NSAID) with anti-inflammatory, analgesic and antipyretic activity. - Acts on the metabolism of arachidonic acid by inhibiting the enzyme cyclooxygen... | Ref: Cattle 1 mg/kg IM q24h. Dogs/Cats 1-2 mg/kg PO q12h. Merck Vet Manual. | Ref: Cattle 1 mg/kg IM q24h. Merck Vet Manual.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h (1-3 days)",
+                        "route": "Deep IM (Meat w/d: 28d)"
+                  },
+                  "horse": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ NOT recommended in dogs (high incidence of severe gastrointestinal perforation)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats."
+                  }
+            }
       },
       {
             "id": "231",
@@ -3838,7 +5930,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Zoetis)",
             "notes": "Category: Mastitis Preparation. Content: CEFTIOFUR HYDROCHLORIDE Target: Dry cow (subclinical) Information: • Infuse one syringe into each quarter at dry off. Withdrawal Time: Milk : 3 days. | Ref: Cattle 1-2.2 mg/kg SC/IM q24h. Horses 2.2 mg/kg IM q12-24h. Plumb's.",
             "frequency": "q24h SC/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IM or SC (0-DAY MILK WITHDRAWAL!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  }
+            }
       },
       {
             "id": "239",
@@ -3902,7 +6026,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Boehringer Ingelheim)",
             "notes": "Category: Mastitis Preparation. Content: Oxytetracycline, oleandomycin and neomycin and prednisolone Target: Lactating cow Information: • Big Gun treatment for severe cases of mastitis • 3 tubes at 24 hour intervals Withholding periods: MILK 96 hours/8 milkings | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "243",
@@ -4039,14 +6207,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition: Each 100 ml contains: - Ivermectin 1 gm Indications: Cattle and buffalo: Gastrointestinal and Lung Worm, Cattle Grubs, Mites and Lice and It also aids in the control of cattle ticks Sheep and Goats: GIT round worms, Lung worms & Nasal Bots Dosage and Administra... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "252",
@@ -4062,7 +6268,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Pharma swede)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition: Each 1 ml contains - Ivermectin 10 mg. Properties: Ivermectin is an endectocide with activity against a wide range of internal and external parasites. It enhances the release of gamma amino butyric acid (GABA) at presynaptic neurons. GABA acts as an inhibitory ... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "253",
@@ -4071,14 +6315,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (UCCMA - Ghannam)",
             "notes": "Category: Anthelmintic. Composition: - Ivermectin 1 gm - Excipient Q.S.ad 100 ml lvermectin kills Parasitic round worms and ectoparasites, such as mites, lice and other insects. Mode of action: - Ivermectin acts by stimulating the release and the binding of a neruro-mediator: gamma-aminobutyric acid (GABA). - GABA acts as ... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "254",
@@ -4087,14 +6369,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (OPI pharma)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Indications: Cattle and buffalo: Gastrointestinal and Lung Worm, Cattle Grubs, Mites and Lice and It also aids in the control of cattle ticks Sheep and Goats: GIT round worms, Lung worms & Nasal Bots Dosage and Administration: S/C only • Cattle, Buffaloes, Sheep, Goat and c... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "255",
@@ -4110,7 +6430,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Avico)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Avimec injectable solution is a new parasiticide developed by AVICO. For the treatment and control of internal and external parasites of cattle, sheep, camels and rabbits. Composition: Each 1 ml contains: - Ivermectin 10 mg Properties: - It is effectively treat & control in... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "256",
@@ -4126,7 +6484,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Elyoser (Alfasan))",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition: Each 1 ml contains - Ivermectin 10 mg Properties: - Ivermectin is an endectocide derived from the avermectin. It kills certain parasitic nematodes and arthropods. The action is unique which involves GABA, a neurotransmitter that serves as a signal from one nerv... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "257",
@@ -4142,7 +6538,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Norbrook)",
             "notes": "Category: Anthelmintic. PRESENTATION A clear, colourless, slightly viscous, sterile, non-aqueous solution containing 1% w/v ivermectin. (((CATTLE)))) For the treatment and control of internal and external parasites of beef and non-lactating dairy cattle. INTRODUCTION One low-volume dose of Noromectin Injection effectively ... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "258",
@@ -4158,7 +6592,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Livisto (Invesa))",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition: - Ivermectin 10 mg - Excipient q.s. 1 ml Properties: - Ivermectin in an avermectin, a group of drugs that has a unique mode of action against a broad spectrum of parasites. The avermectins are macrocyclic fermentation products of an actinomycete, Streptomyces a... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "259",
@@ -4167,14 +6639,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition Each 100 ml contains: 1gm ivermectin. Indications Cattle: - Gastrointestinal roundworms: (adult & fourth-stage larvae) Ostertagia spp. (including inhibited O. ostertagi), Haemonchus placei, Trichostrongylus axei, T. colubriformis, Cooperia spp., Oesophagostomum ... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "260",
@@ -4183,14 +6693,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (El-Nasr)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition: Each 1 ml contains - Ivermectin 10 mg Properties: Ivermectin is a unique new chemical moiety. Its broad spectrum efficacy and wide safety margin helps to control and treat internal and external parasites. Mode of Action: - Ivermectin paralyzes and ultimately ki... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "261",
@@ -4215,14 +6763,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (Amoun)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Indications: Cattle and buffalo: Gastrointestinal and Lung Worm, Cattle Grubs, Mites and Lice and It also aids in the control of cattle ticks Sheep and Goats: GIT round worms, Lung worms & Nasal Bots Dosage and Administration: S/C only • Cattle, Buffaloes, Sheep, Goat and c... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "263",
@@ -4231,14 +6817,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (Merial)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Indications: Cattle and buffalo: Gastrointestinal and Lung Worm, Cattle Grubs, Mites and Lice and It also aids in the control of cattle ticks Sheep and Goats: GIT round worms, Lung worms & Nasal Bots Dosage and Administration: S/C only • Cattle, Buffaloes, Sheep, Goat and c... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "264",
@@ -4254,7 +6878,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Pharma swede)",
             "notes": "Category: Anthelmintic. Composition Each 1 ml contains: - Ivermectin 10 mg - Clorsulon 100 mg Properties: - Ivermectin is an endectocide with activity against a wide range of internal and external parasites. It enhances the release of gamma amino butyric acid (GABA) at presynaptic neurons. GABA acts as an inhibitory neurot... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "265",
@@ -4263,14 +6925,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Anthelmintic. Composition: Each 100 ml contains: - Ivermectin 1 gm - Clorsulon 10 gm Properties: - Ivermectin is an endectocide with activity against a wide range of internal and external parasites. It enhances the release of gamma amino butyric acid (GABA) at presynaptic neurons. GABA acts as an inhibitory neuro... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "266",
@@ -4279,14 +6979,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (Arabcomed)",
             "notes": "Category: Anthelmintic. Properties: - Ivermectin is an endectocide with activity against a wide range of internal and external parasites. It enhances the release of gamma amino butyric acid (GABA) at presynaptic neurons. GABA acts as an inhibitory neurotransmitter and blocks the post-synaptic stimulation of the adjacent ne... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "267",
@@ -4295,14 +7033,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (Avico)",
             "notes": "Category: Anthelmintic. Composition: Each 1 ml contains: - Ivermectin 10 mg - Clorsulon 100 mg Properties & Indications: Avimec Super is a broad spectrum endectocide for cattle & sheep. - It is indicated for the treatment & control of roundworms, parafilaria, adult liver fluke, lice, mange mites, sandtampans, blue-ticks, s... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "268",
@@ -4311,14 +7087,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (El kenana group)",
             "notes": "Category: Anthelmintic. COMPOSITION Each 1 ml contains: - Ivermectin ( Active ) 10 mg - Clorsulon 100 mg INDICATIONS • KEMEC SUPER provides broad spectrum efficacy against both Internal & External parasites of cattle and sheep • KEMEC SUPER Indicated for treatment and control of: - Cattle and Buffaloes: Liver flukes, Gastr... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "269",
@@ -4327,14 +7141,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: Anthelmintic. Composition: Each 100 ml contains: - Ivermectin 1 gm - Clorsulon 10 gm Dosage and Administration: S/C only • Cattle, Buffaloes, Sheep, Goat and Camel: 1 ml/50 kg Cattle: Inject under the loose skin in front of or behind the shoulder. Sheep: Inject under the loose skin behind the shoulder, the axilla... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "270",
@@ -4350,7 +7202,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Atco pharma)",
             "notes": "Category: Anthelmintic. Composition Each 100ml contains: - 1 gm ivermectin - 10 gm clorsulon Indications and Usage Major internal parasites including: mature liver flukes (Fasciola hepatica and Fasciola gigantica); gastrointestinal nematodes including immature and inhibited larvae, lung worms, ascarids, tricuris, eye worms... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "271",
@@ -4359,14 +7249,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Mobedco)",
             "notes": "Category: Anthelmintic. Properties: - Ivermectin is an endectocide with activity against a wide range of internal and external parasites. It enhances the release of gamma amino butyric acid (GABA) at presynaptic neurons. GABA acts as an inhibitory neurotransmitter and blocks the post-synaptic stimulation of the adjacent ne... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "272",
@@ -4375,14 +7303,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (UCCMA - Ghannam)",
             "notes": "Category: Anthelmintic. Properties: - Ivermectin is an endectocide with activity against a wide range of internal and external parasites. It enhances the release of gamma amino butyric acid (GABA) at presynaptic neurons. GABA acts as an inhibitory neurotransmitter and blocks the post-synaptic stimulation of the adjacent ne... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "273",
@@ -4391,14 +7357,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (Merial)",
             "notes": "Category: Anthelmintic. Properties: - Ivermectin is an endectocide with activity against a wide range of internal and external parasites. It enhances the release of gamma amino butyric acid (GABA) at presynaptic neurons. GABA acts as an inhibitory neurotransmitter and blocks the post-synaptic stimulation of the adjacent ne... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "274",
@@ -4407,14 +7411,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (Delta Pharma)",
             "notes": "Category: Anthelmintic. Composition: Each 100 ml contains: Active substance(s): - Ivermectin 1 gm - Clorsulon 10 gm Properties: » Ivermectin is a macrocyclic lactone class of endectocides and acts by binding with glutamate-gated chloride ion channels in the invertebrate nerve and muscles cell lead to increase the permeabil... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "275",
@@ -4423,7 +7465,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
@@ -4446,7 +7488,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Anthelmintic. Anthelmintic (Imidazothiazole) Levamnisole Injectable solution (B.P. Vet. 2004) for veterinary use. Composition: Each 1 ml contains: - Levamisole HCL 75 mg (eq to levamisole 63.64 mg) Indications: - Levamisole HCI is a broad-spectrum anthelmintic drug used for treatment and control of nematode and l... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "277",
@@ -4462,7 +7538,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Anthelmintic. Anthelmintic (Imidazothiazole) COMPOSITION: Each ml contains: - Levamisole Hydrochloride 118 mg (eq to Levamisole base 100 mg) INDICATIONS: LEVAPAN 10% injection is indicated for cattle and sheep for the treatment and control of: 1- Gastrointestinal worms: Bunostomum spp., Chabertia spp., Cooperia s... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "278",
@@ -4478,7 +7588,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Anthelmintic. Anthelmintic (Imidazothiazole) Composition: Each 1 ml contains: - Levamisole HCL 100 mg (a.i.) Properties - AVISOLE Is effective against the parasitic round worms which are resistant to benzimidazoles. - Levamisole hydrochloride which is the active ingredient of AVISOLE has a paralyzing action on th... | Ref: Ref: Plumb's 9th Ed. p. 660.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "279",
@@ -4487,14 +7631,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 8,
-            "concentration_value": 7.5,
+            "concentration_value": 100,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Memphis)",
             "notes": "Category: Anthelmintic. Anthelmintic (Imidazothiazole) Composition: Each 100 ml contains: - Levamisol hydrochlorid 11.79 gm (eq. to 10 gm base) Properties : Levamisole acts as a cholinergic agonist nicotine-like, and performs a depolarizing neuromuscular blockade for spastic paralysis of the nematodes. The anthelmintic eff... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "280",
@@ -4503,14 +7681,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 8,
-            "concentration_value": 100,
+            "concentration_value": 75,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "100 ml Bottle (El-Nasr)",
             "notes": "Category: Anthelmintic. Anthelmintic (Imidazothiazole) Composition Each 100 ml contains - Levamisole Hydrochloride 7.5 gm - Levamiazole contains levamisole that is the levo isomer of tetramisole. - The levo-isomer is the only active portion of racemic tetramisole. Indications: Levamisole works against the more common Nemat... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "281",
@@ -4519,14 +7731,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 8,
-            "concentration_value": 100,
+            "concentration_value": 75,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (OPI pharma)",
             "notes": "Category: Anthelmintic. Anthelmintic (Imidazothiazole) Composition Each ml contains: - Levamisole hydrochloride 75 mg Indications: It is recommended effectively for both larval and adult stages of nematodes in the gastro-intestinal tract and lungs. Dosage and Administration: 1 ml / 10 kg bodyweight by S/C Contraindication:... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "282",
@@ -4542,7 +7788,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Norbrook)",
             "notes": "Category: Anthelmintic. Anthelmintic (Imidazothiazole) Levacide Injection is a broad spectrum levamisole containing anthelmintic for use in the treatment and control of nematode infections in cattle and sheep. Levacide Injection should be used in cases of parasitic gastroenteritis and lungworm caused by mature and developi... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "283",
@@ -4551,14 +7831,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 8,
-            "concentration_value": 100,
+            "concentration_value": 75,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: Anthelmintic. Anthelmintic (Imidazothiazole) Composition Each 1ml contains: - 75mg levamisole hydrochloride (eq. to levamisole base 67.5mg). Indications and Usage Cattle and sheep: for the treatment and control of nematodes such as lung worm (Dictyocaulus spp.) and gastrointestinal round worms including Trichostr... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "284",
@@ -4574,7 +7888,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Anthelmintic. Anthelmintic (Halogenated Phenol) Composition: Each ml contains: - Nitroxinil 340 mg Properties: Nitroxinil is a fasciolicide which is only active by injection. Nitroxinil is a substituted phenol that inhibits the phosphorylation in the cell mitochondria of worms and, consequently, blocks this chann... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "285",
@@ -4590,7 +7936,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Anthelmintic. Anthelmintic (Halogenated Phenol) Composition Each 100 ml contains: - Nitroxynil 25 gm Properties: - Dovix 25% is a fasciolicide contains Nitroxynil that belongs to the substituted phenols chemical group, which inhibit OXIdative phosphorlyzation of the worm. - The substituted phenols act to uncouple... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "286",
@@ -4599,14 +7977,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 12.5,
-            "concentration_value": 100,
+            "concentration_value": 250,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (El kenana group)",
             "notes": "Category: Anthelmintic. Anthelmintic (Halogenated Phenol) COMPOSITION Each 100 ml contains: - Nitroxynel 25 gm INDICATIONS - Distomatosis caused by ( mature fasciola hepatica and fasciola gigantica) - Nematodosis caused by heamonchus. - Oesophagostomum - Bunostomum in cattle, sheep and goats. - Oestrus ovis in sheep and ca... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "287",
@@ -4615,14 +8025,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 12.5,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: Anthelmintic. Anthelmintic (Halogenated Phenol) Composition Each 100 ml contains: 25 gm nitroxynil. Indications and Usage Cattle and sheep: for treatment of distomatosis (mature forms of Fasciola hepatica and fasciola gigantica) and nematodosis (immature and adult forms of Haemonchus contortus, Haemonchus placei,... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "288",
@@ -4631,14 +8073,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 12.5,
-            "concentration_value": 250,
+            "concentration_value": 340,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (A M group)",
             "notes": "Category: Anthelmintic. Anthelmintic (Halogenated Phenol) Properties: Fasciolicidal anthelmintic Indications: • Indicated for the treatment of fascioliasis (infestation of mature and immature Fasciola hepatica) in cattle and sheep. • It is also effective, at the recommended dose rate, against adult and larval infestations ... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "289",
@@ -4647,14 +8121,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 12.5,
-            "concentration_value": 100,
+            "concentration_value": 250,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (Merial)",
             "notes": "Category: Anthelmintic. Anthelmintic (Halogenated Phenol) COMPOSITION Each 100 ml contains: Nitroxynel 25 gm INDICATIONS - Distomatosis caused by ( mature fasciola hepatica and fasciola gigantica) - Nematodosis caused by heamonchus. - Oesophagostomum - Bunostomum in cattle, sheep and goats. - Oestrus ovis in sheep and came... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "290",
@@ -4663,14 +8169,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 12.5,
-            "concentration_value": 100,
+            "concentration_value": 250,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (CID Co.)",
             "notes": "Category: Anthelmintic. Anthelmintic (Halogenated Phenol) COMPOSITION Each 100 ml contains: - Nitroxynel 25 gm INDICATIONS - Distomatosis caused by ( mature fasciola hepatica and fasciola gigantica) - Nematodosis caused by heamonchus. - Oesophagostomum - Bunostomum in cattle, sheep and goats. - Oestrus ovis in sheep and ca... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "291",
@@ -4686,7 +8224,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Delta Pharma)",
             "notes": "Category: Anthelmintic. Composition: Each 1 ml contains - Nitroxinil 340 mg Properties: Fasciodel 34% is a fasciolicide, which is effective against Fasciola hepatica infestations and has some activity against GIT nematodes. Mode of Action: - Nitroxinil is belong to the substituted phenols chemicals group which inhibit oxid... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "292",
@@ -4711,7 +8281,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 20,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
@@ -4727,14 +8297,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 125,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Anthelmintic. Composition: Each 1 ml contains: - Closantel (as Closantel Sodium Dihydrate) 125 mg - Ivermectin 5 mg Properties - IVECLOSA is a member of the salicylanilide class of anthelmintics. Salicylanilides are hydrogen (proton) ionophores (Referred to as oxidative phosphorylase uncouplers.) The chemical str... | Ref: Cattle/Sheep 5-10 mg/kg PO or 5 mg/kg SC. Merck Vet Manual.",
             "frequency": "single dose (repeat in 6-8 weeks)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "295",
@@ -4750,7 +8358,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Anthelmintic. Anthelmintic (Salicylanilide) Composition Each 100 ml contains: - Rafoxanide 7.5 gm Properties - Rafoxanide acts by uncoupling oxidative phosphorylation of flukes, including reduced ATP levels, decreased glycogen content and accumulation of succinate. - Rafoxanide also binds strongly to plasma prote... | Ref: Cattle 7.5-15 mg/kg PO; Sheep 7.5-15 mg/kg PO. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO or SC (Meat w/d: 28d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose (Fasciola & nasal bots)",
+                        "route": "PO or SC"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "296",
@@ -4766,7 +8406,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Anthelmintic. Anthelmintic (Salicylanilide) Composition Each 1 ml contains Rafoxanide 75 mg. Indications : FLUKANIL 7.5% is indicated for the treatment of different parasites affecting cattle and buffaloes such as: • liver flukes infestation (adult and young flukes 6-10 week age). • Blood sucking nematodes [espec... | Ref: Cattle 7.5-15 mg/kg PO; Sheep 7.5-15 mg/kg PO. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO or SC (Meat w/d: 28d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose (Fasciola & nasal bots)",
+                        "route": "PO or SC"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "297",
@@ -4782,7 +8454,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (El kenana group)",
             "notes": "Category: Anthelmintic. Anthelmintic (Salicylanilide) COMPOSITION Each 100 ml. contains: - Rafoxanide 7.5 gm INDICATIONS - RAFOXAJECT is indicated for the treatment of different parasites affecting cattle and Sheep such as: • liver flukes infestation (adult and young flukes 6-10 week age). • Blood sucking nematodes [especi... | Ref: Cattle 7.5-15 mg/kg PO; Sheep 7.5-15 mg/kg PO. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO or SC (Meat w/d: 28d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose (Fasciola & nasal bots)",
+                        "route": "PO or SC"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "298",
@@ -4798,7 +8502,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Anthelmintic. Composition: Each 1ml contains: - Ivermectin 10 mg - Rafoxanide 125 mg Mode Of Action: - The mode of action of Ivermectin against the parasites is related to the inhibition of the parasite motility. - It apparently increases the release of γ-aminobutyric acid (GABA) from the synaptosomes of the nerv... | Ref: Cattle 7.5-15 mg/kg PO; Sheep 7.5-15 mg/kg PO. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "299",
@@ -4830,7 +8572,49 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Sachet (Pharma swede)",
             "notes": "Category: Antibiotic (Macrolide). Composition: Each pack (110 gm) contains: - Tylosin Tartrate 110 gm (eq to Tylosin Base 100 gm) Properties: - Tylosin is one of the macrolide antibiotics. It acts through inhibiting protein synthesis by binding with 50S ribosomal subunits. - Tylosin is a bacteriostatic antibiotic act against Gram-po... | Ref: Cattle 10-20 mg/kg IM q12-24h. Pigs 8-10 mg/kg IM. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q24h (max 5 days)",
+                        "route": "IM (Meat w/d: 21d, Milk w/d: 4d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal clostridial enteritis)."
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12h (Tylosin-responsive enteropathy)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q12h",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water for CRD",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "301",
@@ -4846,7 +8630,49 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 gm Powder (Pharma swede)",
             "notes": "Category: Antibiotic (Macrolide). Composition: Each 1 gm contains: - Tylosin Tartrate 110 mg (eq to Tylosin base 100 mg) - Doxycycline HCl 133 mg (eq to Doxycycline base 125 mg) Indications: - Tydovet is indicated for the treatment of respiratory and gastrointestinal infections caused by tylosin and/or doxycycline sensitive microorg... | Ref: Cattle 10-20 mg/kg IM q12-24h. Pigs 8-10 mg/kg IM. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q24h (max 5 days)",
+                        "route": "IM (Meat w/d: 21d, Milk w/d: 4d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal clostridial enteritis)."
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12h (Tylosin-responsive enteropathy)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q12h",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water for CRD",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "302",
@@ -4887,7 +8713,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 7,
             "dose_mg_per_kg_max": 15,
-            "concentration_value": 100,
+            "concentration_value": 150,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -4903,14 +8729,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 54,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Antibiotic (Tetracycline). Composition Each 100 ml contains: - Oxytetracycline HCL 5.4 gm (eq to Oxytetracycline base 5 gm) Properties - Oxytetracycline is a bacteriostatic antibiotic that inhibits protein synthesis in susceptible bacteria. Inside the cell it binds irreversibly to receptors on the 30S subunit of the bacterial... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "306",
@@ -4935,7 +8805,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "poultry",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 20,
-            "concentration_value": 100,
+            "concentration_value": 313.2,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
@@ -4967,7 +8837,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 2,
             "dose_mg_per_kg_max": 4,
-            "concentration_value": 100,
+            "concentration_value": 40,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
@@ -4990,7 +8860,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Badr Pharma)",
             "notes": "Category: Antibiotic (Phenicol). Composition: Florfenicol 300 mg / ml Properties - Florfenicol is a synthetic broad spectrum antimicrobial. It acts by inhibition of microbial protein synthesis by binding to the 50 S subunit of the 70 S ribosome and impairing peptidyl transferase activity. The binding of aminoacyl-tRNA to the active... | Ref: Cattle 20 mg/kg IM q48h or 40 mg/kg SC (long-acting). Plumb's.",
             "frequency": "q48h IM or q24h SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h (2 doses) OR 40 mg/kg SC single dose",
+                        "route": "IM or SC (⚠️ NEVER GIVE IV. Prohibited in lactating dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h or 40 mg/kg SC once",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h",
+                        "route": "IM or SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal acute colitis and dysbiosis)."
+                  },
+                  "dog": {
+                        "min": 20,
+                        "max": 30,
+                        "freq": "q12-24h (refractory cases)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 20,
+                        "max": 25,
+                        "freq": "q12-24h",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "311",
@@ -5006,7 +8912,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Bayer)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) COMPOSITION: - Ivermectin 10 mg / ml INDICATIONS: - Ivermectin paralyzes and ultimately kills Parasitic nematodes, and insects by a unique effect on the nervous system of these parasites, at therapeutic doses Ivermectin will be tolerated by live stock since it does not read... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "312",
@@ -5022,7 +8966,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Bayer)",
             "notes": "Category: Antibiotic (Quinolone). Composition - Enrofloxacin 100 mg / ml Indications: - Cattle Diseases of the respiratory and alimentary tract of bacterial or mycoplasmal origin (e.g. pasteurellosis, mycoplasmosis, coli-bacillosis, coli-septicaemia and salmonellosis) and secondary bacterial infections subsequent to viral infections... | Ref: Ref: Plumb's 9th Ed. p. 418.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "2.5-5 mg/kg q24h or 7.5-12.5 mg/kg single SC dose",
+                        "route": "SC or IM (Prohibited in lactating dairy cattle)"
+                  },
+                  "sheep_goat": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h for 3-5 days",
+                        "route": "SC or IM"
+                  },
+                  "camel": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h or divided q12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 5,
+                        "freq": "q24h (⚠️ DO NOT EXCEED 5 mg/kg due to irreversible feline retinal blindness!)",
+                        "route": "PO or SC"
+                  },
+                  "poultry": {
+                        "min": 10,
+                        "max": 15,
+                        "freq": "In drinking water for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "313",
@@ -5038,7 +9020,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Vetoquinol)",
             "notes": "Category: Diuretic. Diurizone injectable solution is Anti-edematous, anti-inflammatory and diuretic COMPOSITION - Hydrochlorothiazide 5 g - Dexamethasone 0.05 g - Benzyl alcohol 1 ml - Excipient to 100 ml PROPERTIES - Hydrochlorothiazide non mercurial diuretic greatly increasing renal excretion of water thus facilitati... | Ref: Cattle/Horses anti-inflammatory: 0.02-0.1 mg/kg IV/IM. Ketosis (cattle): 1 mg/cow. Plumb's.",
             "frequency": "single dose or q24h (taper)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose / q24h",
+                        "route": "IV or IM (⚠️ Induces abortion in late pregnancy!)"
+                  },
+                  "horse": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose",
+                        "route": "IM (⚠️ Induces abortion!)"
+                  },
+                  "camel": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  }
+            }
       },
       {
             "id": "314",
@@ -5047,7 +9067,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 250,
             "dose_mg_per_kg_max": 1000,
-            "concentration_value": 50,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV",
@@ -5079,7 +9099,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 33,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 100,
+            "concentration_value": 333,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -5095,14 +9115,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 7.5,
             "dose_mg_per_kg_max": 15,
-            "concentration_value": 7.5,
+            "concentration_value": 75,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "100 ml Bottle (Primavet)",
             "notes": "Category: Anthelmintic. Anthelmintic (Salicylanilide) Composition: Each 100 ml contains: - Rafoxanide 7.5 gram Properties: - Rafoxanide, a hałogenated salicylanilide. - It's used as an adulticide for both F hepatica and F gigantica, but it also has the advantage of having respeciable efficacy for immature flukes. Rafoxanid... | Ref: Cattle 7.5-15 mg/kg PO; Sheep 7.5-15 mg/kg PO. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO or SC (Meat w/d: 28d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose (Fasciola & nasal bots)",
+                        "route": "PO or SC"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "318",
@@ -5134,7 +9186,35 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Taba medical pharma)",
             "notes": "Category: NSAIDs. Composition: Each ml contains: - Phenyl butazone 200 mg - Phenyl butazone is to inhibit cyclo-oxygenase, the enzyme that converts arachidonic acid fo the cyclic endoperoxides, PGG2 and PGH2, by the actions of further specific enzymes, these compounds are converted to a major group of inflammatory me... | Ref: Horses 2.2-4.4 mg/kg IV/PO q24h. Cattle 10 mg/kg PO (rarely used). Plumb's. Do NOT use in cats.",
             "frequency": "q24h (horses), q48h (cattle)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h (taper after day 1)",
+                        "route": "IV or PO"
+                  },
+                  "cattle": {
+                        "min": 4.4,
+                        "max": 8.8,
+                        "freq": "q48h (beef only)",
+                        "route": "IV (Strictly prohibited in female dairy cattle >20mo)"
+                  },
+                  "dog": {
+                        "min": 7,
+                        "max": 7,
+                        "freq": "q8h",
+                        "route": "PO (max 800mg/day with food)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats due to high risk of severe toxicity and renal failure."
+                  },
+                  "poultry": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
+                  }
+            }
       },
       {
             "id": "320",
@@ -5198,7 +9278,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: Antibiotic (Quinolone). Composition: Each ml contains: - Enrofloxacin 100 mg *Benzyl alcohol 20 mg Properties - The effective anti-bacterial agent which belongs to fluoroquinolone group. - Has a broad spectrum efficacy against a wide range of Gm+Ve, Gm-ve bacteria and mycoplasma. Dosage: - Sheep, Goats, cattle, camels, rab... | Ref: Cattle 5-7.5 mg/kg SC q24h. Horses 5-7.5 mg/kg IV q24h. Plumb's.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "2.5-5 mg/kg q24h or 7.5-12.5 mg/kg single SC dose",
+                        "route": "SC or IM (Prohibited in lactating dairy cattle)"
+                  },
+                  "sheep_goat": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h for 3-5 days",
+                        "route": "SC or IM"
+                  },
+                  "camel": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h or divided q12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 5,
+                        "freq": "q24h (⚠️ DO NOT EXCEED 5 mg/kg due to irreversible feline retinal blindness!)",
+                        "route": "PO or SC"
+                  },
+                  "poultry": {
+                        "min": 10,
+                        "max": 15,
+                        "freq": "In drinking water for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "324",
@@ -5255,7 +9373,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 0.02,
             "dose_mg_per_kg_max": 0.5,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -5735,14 +9853,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "poultry",
             "dose_mg_per_kg_min": 2,
             "dose_mg_per_kg_max": 3,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: Antibiotic (Macrolide) + NSAIDs. Composition: Each ml contains: - Fosfomycin sodium 100 mg - Tylosin 50 mg - Ketoprofen 30 mg Indications: Forloxin is recommended as an aid in the treatment of bacterial infections of poultry and pigs, cattle susceptible to the action of fosfomycin and tylosin. Dosage: • Intramuscular injection for ... | Ref: Horses 2.2 mg/kg IV q24h. Cattle 3 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h for 1-3 days",
+                        "route": "IV or deep IM (0-day milk withdrawal!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IV"
+                  },
+                  "sheep_goat": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "camel": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "dog": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 3-5 days)",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 1-2 days)",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "358",
@@ -5783,7 +9939,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 250,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -5815,7 +9971,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 200,
+            "concentration_value": 125,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -6199,14 +10355,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 7.5,
             "dose_mg_per_kg_max": 7.5,
-            "concentration_value": 22.5,
+            "concentration_value": 75,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "2.5 L Bottle (Univet Co.)",
             "notes": "Category: Anthelmintic. COMPOSITION Each ml contains: - Rafoxanide 22.5 mg - Levamisole Hydrochloride 15.0 mg Pharmacodynamic properties - Rafoxanide, one of the active principles of MULTIDOSE, is one of a group of halogenated salicylanilides with the chemical formula (3’-chloro-4’-(p-chlorophenoxy)-3, 5-diiodosalicylanili... | Ref: Ref: Plumb's 9th Ed. p. 660.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "387",
@@ -6270,7 +10460,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Avico)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition: Each 1 ml contains: Ivermectin 0.8 mg Properties - The Ivermectin family of compounds of which Ivermectin is a member kills certain parasitic nematodes (roundworms) and arthropods. - The action is unique and not shared by other antiparasitic agents and involves... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "391",
@@ -6279,14 +10507,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "1L Bottle (Arabcomed)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition Each 1 ml contains: - Ivermectin 800 μg Properties - Ivermectin belongs Pharmacotherapeuticgroup of anthelmintic 3-AV. - Ivermectin is a 22, 23-dihydro derivative of an avermectin (which is a fermentation product produced by Streptomyces avermitilis) and consist... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "392",
@@ -6302,7 +10568,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Univet Co.)",
             "notes": "Category: Anthelmintic. COMPOSITION Each 1 ml contains: - Fenbendazole 100 mg - Rafoxanide 100 mg Pharmacodynamic properties - Fenbendazole, like many benzimidazoles, blocks fumarate reductase which results in the inhibition of the formation of adenosine triphosphate (involved in mitochondrial energy). There is also eviden... | Ref: Cattle 7.5-15 mg/kg PO; Sheep 7.5-15 mg/kg PO. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO or SC (Meat w/d: 28d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose (Fasciola & nasal bots)",
+                        "route": "PO or SC"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "393",
@@ -6318,7 +10616,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "200 ml Bottle (Avico)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition: Each 1 ml contains: Ivermectin 5 mg Properties - The Ivermectin family of compounds of which Ivermectin is a member kills certain parasitic nematodes (roundworms) and arthropods. - The action is unique and not shared by other antiparasitic agents and involves a... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "394",
@@ -6334,7 +10670,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1-4 gm vial (Zoetis)",
             "notes": "Category: Antibiotic (3rd Gen Cephalosporin). Advanced veterinary cephalosporin with excellent Gram-negative and Gram-positive efficacy. Indications: Bovine Respiratory Disease, Acute interdigital necrobacillosis (Foot rot), and Acute post-partum metritis. Dosage: Cattle/Swine 1.1-2.2 mg/kg IM/SC q24h for 3-5 days. Advantage: 0-day milk withdrawal in dairy cattle! Meat withdrawal: 4 days. Ref: Plumb's 9th Ed. p. 202.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IM or SC (0-DAY MILK WITHDRAWAL!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  }
+            }
       },
       {
             "id": "395",
@@ -6343,14 +10711,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "poultry",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 8,
-            "concentration_value": 100,
+            "concentration_value": 75,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "1L Bottle (Avico)",
             "notes": "Category: Anthelmintic. Anthelmintic (Imidazothiazole) Composition: Each 1 ml contains: - Levamisole Hydrachloride 118 gm Properties - Levamisole Hydrochloride (Levamisole avico Liquid) is a highly acceptable antinematodal drug because of its broad range of activity in a large number of hosts (sheep, cattle, horse, chicken... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "396",
@@ -6366,7 +10768,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (Pharma swede)",
             "notes": "Category: Anthelmintic. Anthelmintic (Imidazothiazole) Indications: Effectively for both larval and adult stages of nematodes in the gastro-intestinal tract and lungs. Dosage: - Cattle: 1 bolus /70kg - Sheep and goat: 0.5 bolus/35kg Withdrawal: • Meat: 3 days • Milk: 1 day | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "397",
@@ -6382,7 +10818,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Jovet)",
             "notes": "Category: Anthelmintic. Anthelmintic (Imidazothiazole) Indications: Effectively for both larval and adult stages of nematodes in the gastro-intestinal tract and lungs. Dosage: by oral drenching 1 ml / 15kg Withdrawal: • Meat: 3 days • Milk: 1 day | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "398",
@@ -6391,14 +10861,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "sheep_goat",
             "dose_mg_per_kg_min": 7.5,
             "dose_mg_per_kg_max": 7.5,
-            "concentration_value": 7.5,
+            "concentration_value": 30,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "100 ml Bottle (Memphis)",
             "notes": "Category: Anthelmintic. Anthelmintic (Salicylanilide) Composition: - Rafoxanide 3% W/V Properties & Indications: - Rafoxanide is a halogenated salicylanilide, it is highly effective in cases of facsioliasis&haemonchiasis and is mainly indicated for the treatment of acute and chronic liver flukes infestation in sheep and ca... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO or SC (Meat w/d: 28d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose (Fasciola & nasal bots)",
+                        "route": "PO or SC"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "399",
@@ -6414,7 +10916,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (Pharma swede)",
             "notes": "Category: Anthelmintic. Anthelmintic (Salicylanilide) Composition: Each 1 “Bolus” contains: Rafoxanide 600 mg. Indications: - Fascioliasis in cattle and sheep gastrointestinal nematodes such as Haemonchus spp - Bunstomum spp and Oesophagostomum spp - Nasal bot fly in sheep (Osterus Ovis) Dosage: - To be given orally as a s... | Ref: Cattle 7.5-15 mg/kg PO; Sheep 7.5-15 mg/kg PO. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO or SC (Meat w/d: 28d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose (Fasciola & nasal bots)",
+                        "route": "PO or SC"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "400",
@@ -6439,14 +10973,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 15,
-            "concentration_value": 100,
+            "concentration_value": 25,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "1L Bottle (Arabcomed)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Indications: • Avery effective anthelmintic recommended for the treatment of the different worm Infestations such as round, lung and tape worms as well as liver flukes in cattle, buffaloes, calves, sheep & goats. • Also, it kills the eggs of worms and flukes. Dose: - Ora... | Ref: Ruminants 5-15 mg/kg PO. Horses 5-10 mg/kg PO x 5 days. Merck Vet Manual.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "402",
@@ -6455,14 +11021,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 15,
-            "concentration_value": 100,
+            "concentration_value": 25,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "1L Bottle (MAPCO)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Indications: • Avery effective anthelmintic recommended for the treatment of the different worm Infestations such as round, lung and tape worms as well as liver flukes in cattle, buffaloes, calves, sheep & goats. • Also, it kills the eggs of worms and flukes. Dose: - Cat... | Ref: Ruminants 5-15 mg/kg PO. Horses 5-10 mg/kg PO x 5 days. Merck Vet Manual.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "403",
@@ -6471,14 +11069,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 7.5,
             "dose_mg_per_kg_max": 7.5,
-            "concentration_value": 7.5,
+            "concentration_value": 100,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "1L Bottle (Univet Co.)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) COMPOSITION Albendazole 10 % w/v Pharmacodynamic properties - Tramazole 10% is a broad spectrum multi-purpose anthelmintic for the control of mature and developing immature forms of gastrointestinal roundworms, lungworms, tapeworm and adult liver fluke in cattle and shee... | Ref: Ref: Plumb's 9th Ed. p. 26.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "404",
@@ -6494,7 +11124,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Bottle (Adwia)",
             "notes": "Category: Anthelmintic. Composition Each 1 ml contains : Triclabendazole 50 mg. Ivermectin 1 mg. Indications: • Eradicates Internal parasites such as liver flukes as Fasciola (in case of early immature, immature and mature Fasciola stages), gastro-intestinal round worms , lung worms, tissue invading flays larvae . • Eradic... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "405",
@@ -6503,7 +11171,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 12,
             "dose_mg_per_kg_max": 12,
-            "concentration_value": 12,
+            "concentration_value": 100,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
@@ -6695,14 +11363,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 25,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
             "unit_description": "100 ml vial (Al Watanyea)",
             "notes": "Category: NSAIDs. COMPOSITION Each 100 ml contains: - Diclofenac 2.5 gm (as sodium) PROPERTIES Diclofenac is a NSAID (Non steroidal anti inflammatory drug) that act on the metabolism of arachidonic acid by inhibiting of cyclooxygenase enzyme responsible for the synthesis of prostaglandins, prostacyclin and thromboxan... | Ref: Cattle 1 mg/kg IM q24h. Dogs/Cats 1-2 mg/kg PO q12h. Merck Vet Manual. | Ref: Cattle 1 mg/kg IM q24h. Merck Vet Manual.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h (1-3 days)",
+                        "route": "Deep IM (Meat w/d: 28d)"
+                  },
+                  "horse": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ NOT recommended in dogs (high incidence of severe gastrointestinal perforation)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats."
+                  }
+            }
       },
       {
             "id": "418",
@@ -6727,14 +11429,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 25,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 100,
+            "concentration_value": 500,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (Alexandria Co.)",
             "notes": "Category: Analgesic, Antipyretic & Spasmolytic. Composition: Each 100 ml contains: - Analgin 50 gm Properties: » The importance of pain management and the use of NSAID in animals have recently increased significantly. NSAID have the potential to relieve pain and inflammation without the immunosuppressive and metabolic side effects associated with... | Ref: Cattle/Horses 25-50 mg/kg IV/IM q8-12h. Dogs/Cats 25-50 mg/kg IM/SC q8h. Plumb's.",
             "frequency": "q8-12h IM/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or deep IM"
+                  },
+                  "horse": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h (Spasmodic colic)",
+                        "route": "Slow IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q8-12h",
+                        "route": "SC, IM or IV"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12-24h (use with caution)",
+                        "route": "SC"
+                  }
+            }
       },
       {
             "id": "420",
@@ -6775,14 +11515,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 8,
-            "concentration_value": 100,
+            "concentration_value": 120,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "1L Bottle (Avico)",
             "notes": "Category: Anthelmintic. Composition: Each 1 ml contains: - Triclabendazole 120 mg - Levamisole hydrochloride 75 mg Properties - Our new product BOVINEX contains two potent anthelmintic active ingredient, each of which has its own spectrum of activity that is integrated with the other, AVICO had proved to have all what make... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "423",
@@ -6798,7 +11572,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Pharma swede)",
             "notes": "Category: Anthelmintic. Composition: Each 1 ml contains: • Triclabendazole 120 mg • Levamisole HCL 75 mg (eq to 63.6 mg Levamisole) Properties: • Levamisole is a broad spectrum anthelmintic for the treatment and control of gastrointestinal and pulmonary nematodes by stimulating parasympathetic and sympathetic ganglia in su... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "424",
@@ -6814,7 +11622,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Atco pharma)",
             "notes": "Category: Anthelmintic. Composition Each 1ml contains: - levamisole HCL 85mg (eq. to 75mg levamisole base). - triclabendazole 120mg. Indications and Usage Cattle and buffalo: acute, subacute and chronic fascioliasis (either F. hepatica or F. gigantica); adult and immature forms of round worms such as: Haemonchus, Oesteragi... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "425",
@@ -6830,7 +11672,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Delta Pharma)",
             "notes": "Category: Anthelmintic. Conntent: - Levamisole 7.5% - Triclabendazole 12% Indications: A comprehensive wormer and flukicide that covers wide spectrum of gastric, intestinal, and lungworms. It is also effective against all of the three stages of liver fluke. Dosage: • Calves, Cattle and Buffaloes: 5ml/50Kg Withdrawal time: ... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "426",
@@ -6839,14 +11715,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 7.5,
             "dose_mg_per_kg_max": 7.5,
-            "concentration_value": 100,
+            "concentration_value": 60,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "1L Bottle (Avico)",
             "notes": "Category: Anthelmintic. Composition: Each 1 ml contains: - Oxyclozanide 60 mg - Levamisole hydrochloride 30 mg Properties - Levamisole and oxyclozanide acts against broad spectrum against gastrointestinal worms and against lung worms. - levamisole cause an increase of the axial muscle tone followed by paralysis of the worm... | Ref: Ref: Plumb's 9th Ed. p. 660.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "427",
@@ -6862,7 +11772,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Delta Pharma)",
             "notes": "Category: Anthelmintic. COMPOSITION Each 1 ml contains: – Oxyclozanide 60 mg – Levamisole HCL 30 mg PROPERTIES » Levamizole is a member of imidazothiazoles that acts by interfering with parasite nerve transmission causing muscular spasm and rapid expulsion. It stimulates the parasympathetic and sympathetic ganglia in susce... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "428",
@@ -6871,14 +11815,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 8,
-            "concentration_value": 7.5,
+            "concentration_value": 30,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "1L Bottle (Atco pharma)",
             "notes": "Category: Anthelmintic. Composition Each 100 ml contains: - Levamisole HCL 3 gm (eq. to 2.7 gm levamisole base) - Oxyclozanide 6 gm Properties - Levanide is a combination of two anthelmintics; Oxyclozanide& Levamisole. - Oxyclozanide is an anthelmintic of the salicylanilide group. The salicylanilides are proton ionophores,... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "429",
@@ -6894,7 +11872,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Pharma swede)",
             "notes": "Category: Anthelmintic. Composition Each 1 ml contains : - Triclabendazole 50 mg. - Ivermectin 1 mg. Indications : Trimec suspension is broad spectrum anthelmintic indicated for treatment and control of internal and external parasites that affect sheep, goats, cattle and buffaloes. Trimec eradicates Internal parasites such... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "430",
@@ -6910,7 +11926,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Avico)",
             "notes": "Category: Anthelmintic. Composition: Each 1 ml contains: - Ivermectin 2 mg - Triclabendazole 120 mg Properties - TRIMECTIN CATTLE is an effective combination of both Triclabendazole and Ivermectin to be applied in cattle, making a comprehensive wormer and flukicide that covers wide spectrum of gastric, intestinal, and lung... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "431",
@@ -6926,7 +11980,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Univet Co.)",
             "notes": "Category: Anthelmintic. COMPOSITION Each 1 ml contains: - Fenbendazole 50 mg - Rafoxanide 50 mg Pharmacodynamic properties - Fenbendazole, like many benzimidazoles, blocks fumarate reductase which results in the inhibition of the formation of adenosine triphosphate (involved in mitochondrial energy). There is also evidence... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO or SC (Meat w/d: 28d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose (Fasciola & nasal bots)",
+                        "route": "PO or SC"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "432",
@@ -6951,7 +12037,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.2,
             "dose_mg_per_kg_max": 2.4,
-            "concentration_value": 100,
+            "concentration_value": 121.15,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
@@ -7111,7 +12197,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2.5,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -7159,7 +12245,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2.5,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -7230,7 +12316,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1-4 gm vial (Zoetis)",
             "notes": "Category: Antibiotic (3rd Gen Cephalosporin). Advanced veterinary cephalosporin with excellent Gram-negative and Gram-positive efficacy. Indications: Bovine Respiratory Disease, Acute interdigital necrobacillosis (Foot rot), and Acute post-partum metritis. Dosage: Cattle/Swine 1.1-2.2 mg/kg IM/SC q24h for 3-5 days. Advantage: 0-day milk withdrawal in dairy cattle! Meat withdrawal: 4 days. Ref: Plumb's 9th Ed. p. 202.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IM or SC (0-DAY MILK WITHDRAWAL!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  }
+            }
       },
       {
             "id": "451",
@@ -7310,7 +12428,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 gm Powder (Arabcomed)",
             "notes": "Category: Anthelmintic. Indications: Prevention and treatment of Coccidosis in calves and lamps Dosage: • Calves: 1g/20Kg • Lambs: 1g/5-10Kg Withdrawal: 24 hour | Ref: Ref: Plumb's 9th Ed. p. 68.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "Prevention: 5 mg/kg x 21d; Treatment: 10 mg/kg x 5d",
+                        "route": "PO drench or in feed"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "5-10 mg/kg PO daily x 5d",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "125-250 ppm in drinking water for 5-7 days",
+                        "route": "PO (in water)"
+                  },
+                  "dog": {
+                        "min": 100,
+                        "max": 200,
+                        "freq": "q24h for 7 days (Coccidiosis)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 100,
+                        "max": 200,
+                        "freq": "q24h for 7 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "456",
@@ -7326,7 +12476,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder (Avico)",
             "notes": "Category: Anthelmintic. - 24% Powder Each 1 gm contains: Amprolium HCl 240 mg - 60% Powder Each 1 gm contains: Amprolium HCl 600 mg Indications: Prevention and treatment of Coccidosis in calves and lamps Dosage: 20%: • Calves: 1g/20Kg • Lambs: 1g/5-10Kg Withdrawal: 24 hour Pack: 100 gm, 500 gm, 1 kg | Ref: Ref: Plumb's 9th Ed. p. 68.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "Prevention: 5 mg/kg x 21d; Treatment: 10 mg/kg x 5d",
+                        "route": "PO drench or in feed"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "5-10 mg/kg PO daily x 5d",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "125-250 ppm in drinking water for 5-7 days",
+                        "route": "PO (in water)"
+                  },
+                  "dog": {
+                        "min": 100,
+                        "max": 200,
+                        "freq": "q24h for 7 days (Coccidiosis)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 100,
+                        "max": 200,
+                        "freq": "q24h for 7 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "457",
@@ -7342,7 +12524,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder (Atco pharma)",
             "notes": "Category: Anthelmintic. Indications: Prevention and treatment of Coccidosis in calves and lamps Dosage: • Calves: 1g / 20 Kg • Lambs: 1g / 5-10 Kg Withdrawal: 24 hour | Ref: Ref: Plumb's 9th Ed. p. 68.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "Prevention: 5 mg/kg x 21d; Treatment: 10 mg/kg x 5d",
+                        "route": "PO drench or in feed"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "5-10 mg/kg PO daily x 5d",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "125-250 ppm in drinking water for 5-7 days",
+                        "route": "PO (in water)"
+                  },
+                  "dog": {
+                        "min": 100,
+                        "max": 200,
+                        "freq": "q24h for 7 days (Coccidiosis)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 100,
+                        "max": 200,
+                        "freq": "q24h for 7 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "458",
@@ -7470,7 +12684,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (N/A)",
             "notes": "Category: NSAIDs. Composition Each 100 ml contains: - Flunixin meglumine 5 gm Indications and Usage - Cattle: antipyretic activities in acute inflammation associated to diseases of the respiratory tract; pre– and post ophthalmic surgery; acute coliform mastitis with endotoxic shock. - Horses and ponies: treatment of ... | Ref: Ref: Plumb's 9th Ed. p. 488.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "466",
@@ -7534,7 +12784,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "24 Tablets (Zoetis)",
             "notes": "Category: Antibiotic (Tetracycline). Content: Oxytetracycline Indications: for the treatment of diarrhea and enteritis. Dosage: 2 tablets per 100 lb of body weight every 12 hours. | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "470",
@@ -7550,7 +12844,35 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Zoetis)",
             "notes": "Category: NSAIDs. COMPOSITION Each 1 ml contains: - Phenylbutazone 186.1 mg - Sodium salicylate 50 mg Indications: Acute arthritis Contraindications - Do not use in animals with cardio-renal conditions, edema, gastritis or hemoglobinuria. - Do not use in case of hypersensitivity to non-steroidal anti-inflammatory dru... | Ref: Horses 2.2-4.4 mg/kg IV/PO q24h. Cattle 10 mg/kg PO (rarely used). Plumb's. Do NOT use in cats.",
             "frequency": "q24h (horses), q48h (cattle)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h (taper after day 1)",
+                        "route": "IV or PO"
+                  },
+                  "cattle": {
+                        "min": 4.4,
+                        "max": 8.8,
+                        "freq": "q48h (beef only)",
+                        "route": "IV (Strictly prohibited in female dairy cattle >20mo)"
+                  },
+                  "dog": {
+                        "min": 7,
+                        "max": 7,
+                        "freq": "q8h",
+                        "route": "PO (max 800mg/day with food)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats due to high risk of severe toxicity and renal failure."
+                  },
+                  "poultry": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
+                  }
+            }
       },
       {
             "id": "471",
@@ -7566,7 +12888,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (EIPICO)",
             "notes": "Category: Antibiotic (Quinolone). Composition: Each ml contains - Marbofloxacin 100 mg Properties: Marbofloxacin is a synthetic, bactericidal antimicrobial, belonging to the fluoroquinolone group, which acts by inhibition of DNA gyrase. It has a broad-spectrum activity in vitro against mycoplasma, Gram-negative bacteria (pasteurella... | Ref: Ref: Plumb's 9th Ed. p. 696.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2,
+                        "max": 8,
+                        "freq": "2 mg/kg q24h x 3-5d OR 8 mg/kg IM single dose",
+                        "route": "IM, SC or IV (Meat w/d: 6d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  },
+                  "cat": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  }
+            }
       },
       {
             "id": "472",
@@ -7591,7 +12945,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2.5,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
@@ -7662,7 +13016,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Antibiotic (Tetracycline). COMPOSITION Each 1 mℓ of Engemycin® 10% contains 100 mg oxytetracycline in a complex with magnesium oxide and polyvinylpyrolidone in water for injection. It contains sodium formaldehyde-desulfoxylate as a preservative. INDICATIONS • Cattle: For the treatment of tick-borne gallsickness (anaplasmosis)... | Ref: Ref: Plumb's 9th Ed. p. 892.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "478",
@@ -7671,7 +13069,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 33,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 100,
+            "concentration_value": 333,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -7703,14 +13101,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 7.5,
             "dose_mg_per_kg_max": 7.5,
-            "concentration_value": 7.5,
+            "concentration_value": 25,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "1L Bottle (Univet Co.)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) COMPOSITION Albendazole 2.5 % w/v Pharmacodynamic properties - Tramazole 2.5% is a broad spectrum multi-purpose anthelmintic for the control of mature and developing immature forms of gastrointestinal roundworms, lungworms, tapeworm and adult liver fluke in cattle and sh... | Ref: Ref: Plumb's 9th Ed. p. 26.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "481",
@@ -7726,7 +13156,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Vetoquinol)",
             "notes": "Category: Antibiotic (Quinolone). MARBOCYL 2% Broad spectrum antibiotic solution for injection: Gram+, Gram- and Mycoplasma. Low MIC. Quick bactericidal activity. Excellent tissular distribution. Composition - Marbofloxacin 20 mg - Disodium edetate 0.1 mg - Thioglycerol 0.5 mg - M-cresol 2 mg - Excipient to 1 ml Properties Marboflox... | Ref: Ref: Plumb's 9th Ed. p. 696.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2,
+                        "max": 8,
+                        "freq": "2 mg/kg q24h x 3-5d OR 8 mg/kg IM single dose",
+                        "route": "IM, SC or IV (Meat w/d: 6d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  },
+                  "cat": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  }
+            }
       },
       {
             "id": "482",
@@ -7758,7 +13220,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Oral Paste (Virbac)",
             "notes": "Category: Anthelmintic. COMPOSITION - Ivermectin 18.7 mg/gm Target species: Horses Indications • Roundworms in the stomach and intestines. • Large strongyles: - Strongylus vulgaris: adults and 4th larval (arterial) stages - Strongylus edentatus: adults and 4th larval (tissue) stages - Strongylus equinus: adults • Small str... | Ref: Ref: Plumb's 9th Ed. p. 636.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "484",
@@ -7790,7 +13290,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (El-Nasr)",
             "notes": "Category: Analgesic, Antipyretic & Spasmolytic. Composition: Each 100 ml Contains - Dipyrone 50 gm (1-Phenyl 2,3 dimethyl-5-pyrazolone-4-methyl- aminomethane sulphonate sodium) Properties: - ANALGIN is a potent central analgesic, antipyretic and antimeumatic agent with marked sedative and spasmolytic properties on animals, - Spasmolytic effect of... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or deep IM"
+                  },
+                  "horse": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h (Spasmodic colic)",
+                        "route": "Slow IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q8-12h",
+                        "route": "SC, IM or IV"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12-24h (use with caution)",
+                        "route": "SC"
+                  }
+            }
       },
       {
             "id": "486",
@@ -7799,14 +13337,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 25,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 100,
+            "concentration_value": 500,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Analgesic, Antipyretic & Spasmolytic. Composition: Each 100 ml contains: - Analgin 50 gm Properties: - Metamizole (Analgin) belongs to the group of pyrazolone derivatives and is used as an analgesic, anti-inflammatory, antipyretic and antispasmodic. - It belongs to the group of non-steroidal anti-inflammatory drugs, which have a signifi... | Ref: Cattle/Horses 25-50 mg/kg IV/IM q8-12h. Dogs/Cats 25-50 mg/kg IM/SC q8h. Plumb's.",
             "frequency": "q8-12h IM/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or deep IM"
+                  },
+                  "horse": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h (Spasmodic colic)",
+                        "route": "Slow IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q8-12h",
+                        "route": "SC, IM or IV"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12-24h (use with caution)",
+                        "route": "SC"
+                  }
+            }
       },
       {
             "id": "487",
@@ -7831,14 +13407,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 25,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 100,
+            "concentration_value": 500,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (El kenana group)",
             "notes": "Category: Analgesic, Antipyretic & Spasmolytic. COMPOSITION Each 100 ml contains: - Dipyrone 50 gm INDICATIONS • NOVACIN 50 is indicated for Horses, Dogs & Cats: – Pain relief (colic, neuritis, neuralgia, tendovaginitis and to calm animal during examination and treatment). – Inflammatory conditions (acute and chronic arthritis, lumbago, rheumatic... | Ref: Cattle/Horses 25-50 mg/kg IV/IM q8-12h. Dogs/Cats 25-50 mg/kg IM/SC q8h. Plumb's.",
             "frequency": "q8-12h IM/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or deep IM"
+                  },
+                  "horse": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h (Spasmodic colic)",
+                        "route": "Slow IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q8-12h",
+                        "route": "SC, IM or IV"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12-24h (use with caution)",
+                        "route": "SC"
+                  }
+            }
       },
       {
             "id": "489",
@@ -7863,7 +13477,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 0.1,
             "dose_mg_per_kg_max": 0.3,
-            "concentration_value": 100,
+            "concentration_value": 500,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
@@ -7879,7 +13493,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 0.1,
             "dose_mg_per_kg_max": 0.3,
-            "concentration_value": 100,
+            "concentration_value": 500,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
@@ -7959,7 +13573,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 7,
+            "concentration_value": 1.7,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
@@ -7982,7 +13596,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Arabcomed)",
             "notes": "Category: Anthelmintic. Anthelmintic (Salicylanilide) Composition Each 100 ml contains: - Rafoxanide 3 gm Properties Rafoxanide acts by uncoupling oxidative phosphorylation of flukes, including reduced ATP levels, decreased glycogen content and accumulation of succinate. Indications - Rafoxanide is used as fasciolicide in ... | Ref: Cattle 7.5-15 mg/kg PO; Sheep 7.5-15 mg/kg PO. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO or SC (Meat w/d: 28d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose (Fasciola & nasal bots)",
+                        "route": "PO or SC"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "498",
@@ -7991,7 +13637,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 12,
-            "concentration_value": 500,
+            "concentration_value": 100,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
@@ -8110,7 +13756,49 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Powder (Atco pharma)",
             "notes": "Category: Antibiotic (Macrolide). Composition: Each pack contains: - Tylosin Tartrate 86.5 gm (eq to Tylosin Base 80 gm) Properties: - Tylosin is one of the macrolide antibiotics. It acts through inhibiting protein synthesis by binding with 50S ribosomal subunits. - Tylosin is a bacteriostatic antibiotic act against Gram-positive ba... | Ref: Cattle 10-20 mg/kg IM q12-24h. Pigs 8-10 mg/kg IM. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q24h (max 5 days)",
+                        "route": "IM (Meat w/d: 21d, Milk w/d: 4d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal clostridial enteritis)."
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12h (Tylosin-responsive enteropathy)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q12h",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water for CRD",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "506",
@@ -8199,7 +13887,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 7,
             "dose_mg_per_kg_max": 15,
-            "concentration_value": 100,
+            "concentration_value": 150,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -8247,7 +13935,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 7,
             "dose_mg_per_kg_max": 15,
-            "concentration_value": 100,
+            "concentration_value": 150,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -8263,7 +13951,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 15,
             "dose_mg_per_kg_max": 15,
-            "concentration_value": 100,
+            "concentration_value": 150,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -8302,7 +13990,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "5 x 10ml vial (Arabcomed)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition Each 100 ml contains: - Gentamicin base (as sulphate) 5 gm Properties Gentamycin sulphate is bactericidal in action, acting directly on the bacterial ribosome where it inhibits protein synthesis and decreases the fidelity of translation of the genetic code. The substance is highly polar ... | Ref: Cattle/Horses 6.6 mg/kg IM/IV q24h. Neonates 6 mg/kg IV. Plumb's.",
             "frequency": "q24h IM/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM (Meat w/d: 40d; extended in calves)"
+                  },
+                  "horse": {
+                        "min": 6.6,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  }
+            }
       },
       {
             "id": "518",
@@ -8311,14 +14037,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 25,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 100,
+            "concentration_value": 500,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Analgesic, Antipyretic & Spasmolytic. Composition: Each 1 ml contains: - Dipyrone 500 mg Properties: - Metamizole (noramidopyrine or dipyrone) is a nonsteroidal anti -inflammatory family of pyrazoles with antispasmodic, analgesic and antipyretic. - Analgesic, it acts directly on the nerve centers of pain. - Antipyretic and anti- inflamm... | Ref: Cattle/Horses 25-50 mg/kg IV/IM q8-12h. Dogs/Cats 25-50 mg/kg IM/SC q8h. Plumb's.",
             "frequency": "q8-12h IM/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or deep IM"
+                  },
+                  "horse": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h (Spasmodic colic)",
+                        "route": "Slow IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q8-12h",
+                        "route": "SC, IM or IV"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12-24h (use with caution)",
+                        "route": "SC"
+                  }
+            }
       },
       {
             "id": "519",
@@ -8359,14 +14123,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 7.5,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "1L Bottle (Avico)",
             "notes": "Category: Antibiotic (Quinolone). Composition: Each 1 ml contains: - Enrofloxacin 200 mg Indications: - For the prevention and treatment of most diseases affecting respiratory, digestive and urogenital tracts, caused by gram-positive & gram-negative bacteria, as well as, Mycoplasma e.g. CRD complex. - Colibacillosis, Salmonellosis d... | Ref: Cattle 5-7.5 mg/kg SC q24h. Horses 5-7.5 mg/kg IV q24h. Plumb's.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "2.5-5 mg/kg q24h or 7.5-12.5 mg/kg single SC dose",
+                        "route": "SC or IM (Prohibited in lactating dairy cattle)"
+                  },
+                  "sheep_goat": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h for 3-5 days",
+                        "route": "SC or IM"
+                  },
+                  "camel": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h or divided q12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 5,
+                        "freq": "q24h (⚠️ DO NOT EXCEED 5 mg/kg due to irreversible feline retinal blindness!)",
+                        "route": "PO or SC"
+                  },
+                  "poultry": {
+                        "min": 10,
+                        "max": 15,
+                        "freq": "In drinking water for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "522",
@@ -8382,7 +14184,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition: Each 100 ml contains: - Gentamicin base (as sulphate) 10 gm Properties: - Gentamycin sulphate is bactericidal in action, acting directly on the bacterial ribosome where it inhibits protein synthesis and decreases the fidelity of translation of the genetic code. - The substance is highly... | Ref: Cattle/Horses 6.6 mg/kg IM/IV q24h. Neonates 6 mg/kg IV. Plumb's.",
             "frequency": "q24h IM/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM (Meat w/d: 40d; extended in calves)"
+                  },
+                  "horse": {
+                        "min": 6.6,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  }
+            }
       },
       {
             "id": "523",
@@ -8398,7 +14238,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Primavet)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition: Each 1 ml contain Gentamicin sulfate 125 mg eq to 100 mg Gentamicin base Indication: For treatment of respiratory, gastrointestinal and urogenital infections (bronchitis, pneumonia, pyelonephritis, cystitis, urethritis, endometritis, metritis, colibacillosis, salmonellosis, infected wou... | Ref: Cattle/Horses 6.6 mg/kg IM/IV q24h. Neonates 6 mg/kg IV. Plumb's.",
             "frequency": "q24h IM/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM (Meat w/d: 40d; extended in calves)"
+                  },
+                  "horse": {
+                        "min": 6.6,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  }
+            }
       },
       {
             "id": "524",
@@ -8414,7 +14292,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (MAPCO)",
             "notes": "Category: Antibiotic (Aminoglycoside). Properties: Aminoglycoside antibiotic which has a bactericidal effect against many gram -ve & some +ve bacteria. Indications: • Urinary tract infections: Cystitis and nephritis. • Respiratory tract infections: Tonsilitis, pneumonia, and tracheobronchitis. • Skin and soft tissues: Pyodermatitis, woun... | Ref: Cattle/Horses 6.6 mg/kg IM/IV q24h. Neonates 6 mg/kg IV. Plumb's.",
             "frequency": "q24h IM/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM (Meat w/d: 40d; extended in calves)"
+                  },
+                  "horse": {
+                        "min": 6.6,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  }
+            }
       },
       {
             "id": "525",
@@ -8423,7 +14339,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 20,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
@@ -8446,7 +14362,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition: Each 1 ml Contains: - Gentamicin Sulfate 120.5 mg (eq Gentamicin base 100 mg) Properties: - Gentamicin is a broad-spectrum antibiotic possessing unique properties against important gram negative and gram positive organisms. The source of gentamicin is a strain of Microsporum purpurea. -... | Ref: Ref: Plumb's 9th Ed. p. 504.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM (Meat w/d: 40d; extended in calves)"
+                  },
+                  "horse": {
+                        "min": 6.6,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  }
+            }
       },
       {
             "id": "527",
@@ -8558,7 +14512,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Zoetis)",
             "notes": "Category: Antibiotic (3rd Gen Cephalosporin). Advanced veterinary cephalosporin with excellent Gram-negative and Gram-positive efficacy. Indications: Bovine Respiratory Disease, Acute interdigital necrobacillosis (Foot rot), and Acute post-partum metritis. Dosage: Cattle/Swine 1.1-2.2 mg/kg IM/SC q24h for 3-5 days. Advantage: 0-day milk withdrawal in dairy cattle! Meat withdrawal: 4 days. Ref: Plumb's 9th Ed. p. 202.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IM or SC (0-DAY MILK WITHDRAWAL!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  }
+            }
       },
       {
             "id": "534",
@@ -8574,7 +14560,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "250 ml vial (Ceva Co.)",
             "notes": "Category: Antibiotic (Cephalosporin). Composition - Ceftiofur (as hydrochloride) 50 mg/ml Indications Cattle: - bacterial respiratory disease associated with Pasteurella multocida, Mannheimia haemolytica and Haemophilus somnus. - acute interdigital necrobacillosis (panaritium, foot rot), associated with Fusobacterium necrophorum and Bac... | Ref: Cattle 1-2.2 mg/kg SC/IM q24h. Horses 2.2 mg/kg IM q12-24h. Plumb's.",
             "frequency": "q24h SC/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IM or SC (0-DAY MILK WITHDRAWAL!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  }
+            }
       },
       {
             "id": "535",
@@ -8590,7 +14608,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1 gm vial (El kenana group)",
             "notes": "Category: Antibiotic (Cephalosporin). COMPOSITION - Sterile Powder (ceftiofur sodium) is a multi-species antibiotic that requires reconstitution with sterile water prior to administration. INDICATIONS • Poultry: - Day-old Chicks: KENAFUR ® (ceftiofur sodium) Sterile Powder is indicated for the control of early mortality, associated with... | Ref: Cattle 1-2.2 mg/kg SC/IM q24h. Horses 2.2 mg/kg IM q12-24h. Plumb's.",
             "frequency": "q24h SC/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IM or SC (0-DAY MILK WITHDRAWAL!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  }
+            }
       },
       {
             "id": "536",
@@ -8606,7 +14656,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (HIPRA Co.)",
             "notes": "Category: Antibiotic (Cephalosporin). COMPOSITION PER ML: - Ceftiofur (as hydrochloride) 50 mg - Oil based vehicle q.s.ad 1 ml INDICATION(S): » Infections associated with bacteria sensitive to ceftiofur: - For the treatment of bacterial respiratory disease associated with Mannheimia haemolytica (former Pasteurella haemolytica), Pasteure... | Ref: Cattle 1-2.2 mg/kg SC/IM q24h. Horses 2.2 mg/kg IM q12-24h. Plumb's.",
             "frequency": "q24h SC/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IM or SC (0-DAY MILK WITHDRAWAL!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  }
+            }
       },
       {
             "id": "537",
@@ -8622,7 +14704,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Vetoquinol)",
             "notes": "Category: Antibiotic (Cephalosporin). Properties: ceftiour hydrochloride susp. 3rd generation cephalosporin Gram + Broad-spectrum Ab – Bacteriocidal – beta lactamase resistant Indications: Respiratory tract infection especially that caused by pasteurella and interdigital necrobacillosis Dosage and Administration: I/M or S/C • Cattle: 4 ... | Ref: Cattle 1-2.2 mg/kg SC/IM q24h. Horses 2.2 mg/kg IM q12-24h. Plumb's.",
             "frequency": "q24h SC/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IM or SC (0-DAY MILK WITHDRAWAL!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  }
+            }
       },
       {
             "id": "538",
@@ -8670,7 +14784,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Univet Co.)",
             "notes": "Category: Anthelmintic. Anthelmintic (Salicylanilide) COMPOSITION Each ml contains : Rafoxanide 30 mg Pharmacodynamic properties - Rafoxanide, the active principle of Ranide 30 mg / ml Oral Drench, is one of a group of halogenated salicylanilides with the chemical formula 3’-chloro-4’-(p-chlorophenoxy)-3,5-diiodosalicylani... | Ref: Cattle 7.5-15 mg/kg PO; Sheep 7.5-15 mg/kg PO. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO or SC (Meat w/d: 28d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose (Fasciola & nasal bots)",
+                        "route": "PO or SC"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "541",
@@ -8695,14 +14841,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each 100 ml contains: - Oxytetracycline dihydrate 21.564 gm (Equiv to 20 gm oxytetracycline Anhydrous) Properties: The tetracyclines are broad-spectrum antibacterials. Oxytetracycline is a bacteriostatic antibiotic. It exerts its action by inhibiting the protein synthesis of the bacteri... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "543",
@@ -8718,7 +14908,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each 1 ml contains: - Oxytetracycline HCl 54 mg. - Lidocaine HCl 1 mg. Indications : - For the treatment of bacterial infections caused by Gram-negative and Gram-positive bacteria affecting respiratory, urinary and gastrointestinal tracts such as bronchopneumonia, pleuropneuomonia, ente... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "544",
@@ -8727,14 +14961,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each 1 ml contains: - Oxytetracycline dihydrate (a.i.) 200 mg Properties - Oxytetracycline is a wide spectrum antibiotic which is used for local and systemic infections. - Oxytetracycline has a bacteriostatic action against a large number of Gram-positive and Gram-negative, microorganis... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "545",
@@ -8750,7 +15028,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Antibiotic (Tetracycline). Composition Each 100 ml contains: - Oxytetracycline HCL 21.6 gm (eq to Oxytetracycline base 20 gm) Properties - Oxytetracycline is a bacteriostatic antibiotic that inhibits protein synthesis in susceptible bacteria. Inside the cell it binds irreversibly to receptors on the 30S subunit of the bacteri... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "546",
@@ -8766,7 +15088,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (VMD Pharma)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each 1 ml contains: - Oxytetracycline base (as dihydrate) 200 mg Species: Cattle, sheep and goat. Indications: Infections caused by micro-organisms susceptible to oxytetracycline, such as respiratory infections, urinary tract infections, gastroenteritis, metritis, salmonellosis, dysente... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "547",
@@ -8775,14 +15141,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 20,
             "dose_mg_per_kg_max": 20,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "30 ml vial (Primavet)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each 1ml contains: Oxytetracycline hydrochloride 215.86 mg Equi to oxytetracycline base 200 mg. Indication: Cattle, Sheep, Goat and pigs - Endometriosis, mastitis and inflammation of the joint. - Pneumonia and shipping fever complex associated with Pasteurella spp. and Hemophilus spp. -... | Ref: Ref: Plumb's 9th Ed. p. 892.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "548",
@@ -8798,7 +15208,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Delta Pharma)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each 100 ml contains: - Oxytetracycline HCL 5.396 gm (Eq. to oxytetracycline base 5 gm) Properties: - Delta-oxy 5% is a broad spectrum antibiotic for cattle, horse, sheep, goat and pigs, with bacteriostatic action against wide range of gram +ve bacteria (Streptococcus Spp., Staphylococu... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "549",
@@ -8807,14 +15261,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 20,
             "dose_mg_per_kg_max": 20,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "100 ml vial (Norbrook)",
             "notes": "Category: Antibiotic (Tetracycline). COMPOSITION Active Substance(s): - Oxytetracycline 200 mg (eq. to Oxytetracycline Dihydrate 216 mg) Excipients: - Sodium Formaldehyde Sulphoxylate 2 mg - Magnesium Oxide Light - 2-Pyrrolidone - Povidone K12 - Monoethanolamine - Hydrochloric Acid - Water for Injections PHARMACEUTICAL FORM A clear amb... | Ref: Ref: Plumb's 9th Ed. p. 892.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "550",
@@ -8839,14 +15337,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (kela Co.)",
             "notes": "Category: Antibiotic (Tetracycline). Properties: Wide spectrum bacteriostatic tetracycline antibiotic Indications: • Gram-negative and Gram-positive bacteria affecting respiratory, urinary and GIT • Effective against anaplasma, mycoplasma, chlamydia and rickettsia infections. Dosage and Administration: Deep I/M • Cattle, Buffaloes, She... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "552",
@@ -8855,14 +15397,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2,
             "dose_mg_per_kg_max": 2,
-            "concentration_value": 100,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Tetracycline) + NSAIDs. Composition: Each 1 ml contains: - Oxytetracycline (as Oxytetracycline dihydrate) 300 mg - Flunixin (as flunixin meglumine) 20 mg Indications - Specifically formulated to provide initial anti-inflammatory for 24-36 hours and sustained anti-bacterial activity for 5-6 days following a single administr... | Ref: Ref: Plumb's 9th Ed. p. 892.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "553",
@@ -8871,14 +15449,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.1,
             "dose_mg_per_kg_max": 2.2,
-            "concentration_value": 100,
+            "concentration_value": 320,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Antibiotic (Tetracycline) + NSAIDs. Composition: Each 100 ml contains: - Oxytetracycline dihydrate 32 gm (eq to Oxytetracycline base 30 gm) - Flunixin meglumine 3.32 gm (eq to flunixin base 2 gm) Properties: - Oxytetracycline inhibits protein synthesis in susceptible microorganisms. A wide range of organisms are known to be sensitive ... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "554",
@@ -8887,14 +15501,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.1,
             "dose_mg_per_kg_max": 2.2,
-            "concentration_value": 100,
+            "concentration_value": 323.40000000000003,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (Delta Pharma)",
             "notes": "Category: Antibiotic (Tetracycline) + NSAIDs. Composition: Each 100 ml contains: - Oxytetracycline dihydrate 32.34 gm (Eq. to Oxytetracycline base 30 gm) - Flunixin meglumine 3.32 gm (Eq. to flunixin base 2 gm) Properties: Delta-oxy Plus L.A is a combination of oxytetracycline and flunixin. - Oxytetracycline is a broad spectrum antibiotic with ... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "555",
@@ -8903,14 +15553,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 2,
             "dose_mg_per_kg_max": 2,
-            "concentration_value": 300,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (Norbrook)",
             "notes": "Category: Antibiotic (Tetracycline). Broad-spectrum bacteriostatic antibiotic inhibiting 30S protein synthesis. Indications: Bovine respiratory disease (BRD), Anaplasmosis, Foot rot, Leptospirosis, Wooden tongue, and Metritis. Dosage: Cattle/Sheep/Swine: Standard 5-10 mg/kg IV/IM q24h; LA (200 mg/ml) 20 mg/kg IM/SC single dose. Withdrawal: Meat 28 days, Milk 7 days. Ref: Plumb's 9th Ed. p. 892.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "556",
@@ -8919,14 +15605,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.1,
             "dose_mg_per_kg_max": 2.2,
-            "concentration_value": 100,
+            "concentration_value": 108,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Antibiotic (Tetracycline) + NSAIDs. Composition Each 1 ml contains : - Oxytetracycline HCl 108 mg. (Equivalent to 100 mg Oxytetracycline) - Flunixin Meglumine 33 mg. (Equivalent to 20 mg Flunixin) Properties: - Provide initial anti-inflammatory for 24-36 hours and sustained anti-bacterial activity for 5-6 days following a single admin... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "557",
@@ -8935,14 +15657,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.1,
             "dose_mg_per_kg_max": 2.2,
-            "concentration_value": 100,
+            "concentration_value": 323.475,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "30 ml vial (Adwia)",
             "notes": "Category: Antibiotic (Tetracycline) + NSAIDs. Composition Each 1 ml contains: - Oxytetracycline dihydrate 323.475 mg (eq to oxytetracycline anhydrous 300 mg) - Flunixin Meglumine 33.2 mg (eq to flunixin 20 mg) Properties: Provide initial anti-inflammatory for 24-36 hours and sustained anti-bacterial activity for 5-6 days following a single admi... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "558",
@@ -8958,7 +15716,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (Pharma swede)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each 1 bolus contains: - Oxytetracycline HCL 500 mg (eq to 463 mg Oxytetracycline) Properties - Oxytetracycline is a broad spectrum bacteriostatic antibiotic against wide range of Gram-positive and Gram-negative organisms. - It is also effective against wide range of mycoplasma, Rickett... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "559",
@@ -8974,7 +15776,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (Delta Pharma)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each DELTA OXY BOLUS contains: Oxytetracycline HCl 500 mg. Indications : Delta-Oxy Bolus is used for treatment of the following diseases in calves caused by organisms sensitive as to oxytetracycline as: 1-Bacterial Enteritis (Scour) caused by Salmonella typhimurium and Escherichia coli ... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "560",
@@ -8990,7 +15836,49 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Macrolide). Composition: Each 1 ml conains: - Tylosin (as tylosin tartarate) 200 mg (a.i.) Description: - Tylosin injection is avaiable in a concentration of 200 mg/ml. The product is recommended for intramuscular injection only in beef cattle, non lactating dairy cattle. It is rapidly absorbed after IM Injecti... | Ref: Ref: Plumb's 9th Ed. p. 1175.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q24h (max 5 days)",
+                        "route": "IM (Meat w/d: 21d, Milk w/d: 4d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal clostridial enteritis)."
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12h (Tylosin-responsive enteropathy)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q12h",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water for CRD",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "561",
@@ -8999,14 +15887,56 @@ window.DEFAULT_MEDICATIONS = [
             "species": "poultry",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 216.35,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Antibiotic (Macrolide). Composition: Each 1 ml contains: - Tylosin tartrate 216.35 mg (eq. to Tylosin base 200 mg) Properties: Tylosin is a macrolide antibiotic which has a particular action against Mycoplasma spp isolated from chickens, turkeys, cattle, sheep and goats. It is also effective against several species of Spir... | Ref: Ref: Plumb's 9th Ed. p. 1175.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q24h (max 5 days)",
+                        "route": "IM (Meat w/d: 21d, Milk w/d: 4d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal clostridial enteritis)."
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12h (Tylosin-responsive enteropathy)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q12h",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water for CRD",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "562",
@@ -9022,7 +15952,49 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (MAPCO)",
             "notes": "Category: Antibiotic (Macrolide). Properties: Macrolide antibiotic which has a particular action against Mycoplasma spp. And also effective against several species of Spirochaetes. Indications: Treatment of pneumonia, foot rot and metritis caused by Mycoplasma, Streptococcus & Staphylococcus spp. Dosage and Administration: Deep I/M ... | Ref: Cattle 10-20 mg/kg IM q12-24h. Pigs 8-10 mg/kg IM. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q24h (max 5 days)",
+                        "route": "IM (Meat w/d: 21d, Milk w/d: 4d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal clostridial enteritis)."
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12h (Tylosin-responsive enteropathy)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q12h",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water for CRD",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "563",
@@ -9038,7 +16010,49 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Delta Pharma)",
             "notes": "Category: Antibiotic (Macrolide). Each 1 ml DELTA TYLO 20% contains: - Tylosin 200 mg. Properties: Macrolide antibiotic which has a particular action against Mycoplasma spp. And also effective against several species of Spirochaetes Indications : Delta Tylo 20% is used for Control and Treatment of: 1- Shipping fever and pneumonia. 2... | Ref: Cattle 10-20 mg/kg IM q12-24h. Pigs 8-10 mg/kg IM. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q24h (max 5 days)",
+                        "route": "IM (Meat w/d: 21d, Milk w/d: 4d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal clostridial enteritis)."
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12h (Tylosin-responsive enteropathy)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q12h",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water for CRD",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "564",
@@ -9047,14 +16061,56 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 4,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "100 ml vial (Primavet)",
             "notes": "Category: Antibiotic (Macrolide). Composition: Each ml contains: - Tylosin Tartrate 216 mg (eq To Tylosin base 200 mg) Indications: Cattle, sheep & goats: - Treatment of bovine respiratory complex (shipping fever, pneumonia) usually associated with Pasteurella multocida and Actinomyces pyogenes. - Foot rot (necrotic pododermatitis) ... | Ref: Ref: Plumb's 9th Ed. p. 1175.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q24h (max 5 days)",
+                        "route": "IM (Meat w/d: 21d, Milk w/d: 4d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal clostridial enteritis)."
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12h (Tylosin-responsive enteropathy)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q12h",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water for CRD",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "565",
@@ -9070,7 +16126,49 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: Antibiotic (Macrolide). Properties: Macrolide antibiotic which has a particular action against Mycoplasma spp. And also effective against several species of Spirochaetes. Indications: Treatment of pneumonia, foot rot and metritis caused by Mycoplasma, Streptococcus & Staphylococcus spp. Dosage and Administration: Deep I/M ... | Ref: Cattle 10-20 mg/kg IM q12-24h. Pigs 8-10 mg/kg IM. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q24h (max 5 days)",
+                        "route": "IM (Meat w/d: 21d, Milk w/d: 4d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal clostridial enteritis)."
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12h (Tylosin-responsive enteropathy)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q12h",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water for CRD",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "566",
@@ -9086,7 +16184,33 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Arabcomed)",
             "notes": "Category: Antibiotic (Macrolide). Composition: Each 100 ml contains: - Tilmicosin phosphate 33.4 gm (eq to Tilmicosin base 30 gm) Properties: - Tilmicosin is a semi-synthetic macrolide antibiotic which acts by inhibition of bacterial protein synthesis through binding reversibly to 50S ribosomal subunit in susceptible organisms. - Ti... | Ref: Ref: Plumb's 9th Ed. p. 1125.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC ONLY (⚠️ LETHAL IF GIVEN IV! Meat w/d: 42d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC ONLY (⚠️ LETHAL IV!)"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ FATAL in horses! Tilmicosin induces lethal cardiovascular collapse in equines."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs (cardiotoxic)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "567",
@@ -9102,7 +16226,33 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: Antibiotic (Macrolide). Composition Each 1 ml contains: - Tilmicosin 300 mg Indications and Usage - Cattle and sheep: bovine respiratory diseases (BRD) caused by Pasteurella haemolytica; pneumonic - Pasteurellosis due to Pasteurella multocida; staphylococcal and streptococcal infections. Dosage - For active ingredient, 10m... | Ref: Ref: Plumb's 9th Ed. p. 1125.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC ONLY (⚠️ LETHAL IF GIVEN IV! Meat w/d: 42d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC ONLY (⚠️ LETHAL IV!)"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ FATAL in horses! Tilmicosin induces lethal cardiovascular collapse in equines."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs (cardiotoxic)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "568",
@@ -9111,14 +16261,40 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Antibiotic (Macrolide). Properties: Semi-synthetic macrolide bacteriostatic antibiotic Indications: Treatment of ovine and bovine respiratory disease (BRD) associated with Mannheimia haemolytica & Pasteurella multocida. Dosage: S/C only • Cattle and sheep: 1ml/30Kg Withdrawal period(s): • Meat: Cattle 60 days Sheep: 42 day... | Ref: Ref: Plumb's 9th Ed. p. 1125.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC ONLY (⚠️ LETHAL IF GIVEN IV! Meat w/d: 42d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC ONLY (⚠️ LETHAL IV!)"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ FATAL in horses! Tilmicosin induces lethal cardiovascular collapse in equines."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs (cardiotoxic)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "569",
@@ -9127,14 +16303,40 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Elanco Co.)",
             "notes": "Category: Antibiotic (Macrolide). Properties: Semi-synthetic macrolide bacteriostatic antibiotic Indications: Treatment of ovine and bovine respiratory disease (BRD) associated with Mannheimia haemolytica & Pasteurella multocida. Dosage: S/C only • Cattle and sheep: 1ml/30Kg Withdrawal period(s): • Meat: Cattle 60 days Sheep: 42 day... | Ref: Ref: Plumb's 9th Ed. p. 1125.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC ONLY (⚠️ LETHAL IF GIVEN IV! Meat w/d: 42d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC ONLY (⚠️ LETHAL IV!)"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ FATAL in horses! Tilmicosin induces lethal cardiovascular collapse in equines."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs (cardiotoxic)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "570",
@@ -9150,7 +16352,33 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Delta Pharma)",
             "notes": "Category: Antibiotic (Macrolide). Composition: Each 1 ml COSIVET 30% contains: Tilmicosin 300 mg Indications : Cosivet is used in cattle , sheep & Goat for the treatment of: Cattle: 1- Bovine Respiratory Diseases (BRD). 2- Interdigital Necrobacillosis. 3- Actinobacillus Pleuropneumoniae infection. 4- Mycoplasma Hypopneumoniae infect... | Ref: Ref: Plumb's 9th Ed. p. 1125.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC ONLY (⚠️ LETHAL IF GIVEN IV! Meat w/d: 42d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC ONLY (⚠️ LETHAL IV!)"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ FATAL in horses! Tilmicosin induces lethal cardiovascular collapse in equines."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs (cardiotoxic)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "571",
@@ -9230,7 +16458,49 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (kela Co.)",
             "notes": "Category: Antibiotic (Macrolide). Tylokel 20 Injectable Solution COMPOSITION: - Tylosin tartrate eq 200 mg base - Excipients up to 1 ml PHARMACOLOGICAL PROPERTIES: - Macrolide antibiotic active against Gram-positive bacteria, some Gram-negative bacteria, spirochetes (e.g. Treponema hyodysenteriae), and mycoplasma. - For the treatmen... | Ref: Cattle 10-20 mg/kg IM q12-24h. Pigs 8-10 mg/kg IM. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q24h (max 5 days)",
+                        "route": "IM (Meat w/d: 21d, Milk w/d: 4d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal clostridial enteritis)."
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12h (Tylosin-responsive enteropathy)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q12h",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water for CRD",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "576",
@@ -9246,7 +16516,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Antibiotic (Quinolone). Composition: Each 1 ml contains: - Enrofloxacin 100 mg Properties: - FLOXAD - 10 Inj. is an excellent anti-microbial agent which belongs to the second generation of quinolones. The mode of action of Enrofloxacin is believed to be the inhibition of DNA gyrase that maintains superhelical twist in DNA.... | Ref: Cattle 5-7.5 mg/kg SC q24h. Horses 5-7.5 mg/kg IV q24h. Plumb's.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "2.5-5 mg/kg q24h or 7.5-12.5 mg/kg single SC dose",
+                        "route": "SC or IM (Prohibited in lactating dairy cattle)"
+                  },
+                  "sheep_goat": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h for 3-5 days",
+                        "route": "SC or IM"
+                  },
+                  "camel": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h or divided q12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 5,
+                        "freq": "q24h (⚠️ DO NOT EXCEED 5 mg/kg due to irreversible feline retinal blindness!)",
+                        "route": "PO or SC"
+                  },
+                  "poultry": {
+                        "min": 10,
+                        "max": 15,
+                        "freq": "In drinking water for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "577",
@@ -9262,7 +16570,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Quinolone). Composition: Each 1 ml contains: - Enrofloxacin 100 mg Properties - Enrofloxacin belongs to the second generation of the family of compounds known as the 4 quinolones. - The mode of action of quinolones is belived to be the inhibitiuon of DNA gyrase, an essential bacterial enzyme that maintains supe... | Ref: Ref: Plumb's 9th Ed. p. 418.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "2.5-5 mg/kg q24h or 7.5-12.5 mg/kg single SC dose",
+                        "route": "SC or IM (Prohibited in lactating dairy cattle)"
+                  },
+                  "sheep_goat": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h for 3-5 days",
+                        "route": "SC or IM"
+                  },
+                  "camel": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h or divided q12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 5,
+                        "freq": "q24h (⚠️ DO NOT EXCEED 5 mg/kg due to irreversible feline retinal blindness!)",
+                        "route": "PO or SC"
+                  },
+                  "poultry": {
+                        "min": 10,
+                        "max": 15,
+                        "freq": "In drinking water for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "578",
@@ -9278,7 +16624,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Bayer)",
             "notes": "Category: Antibiotic (Quinolone). Composition - Enrofloxacin 50 mg / ml Indications: - Cattle Diseases of the respiratory and alimentary tract of bacterial or mycoplasmal origin (e.g. pasteurellosis, mycoplasmosis, coli-bacillosis, coli-septicaemia and salmonellosis) and secondary bacterial infections subsequent to viral infections ... | Ref: Cattle 5-7.5 mg/kg SC q24h. Horses 5-7.5 mg/kg IV q24h. Plumb's.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "2.5-5 mg/kg q24h or 7.5-12.5 mg/kg single SC dose",
+                        "route": "SC or IM (Prohibited in lactating dairy cattle)"
+                  },
+                  "sheep_goat": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h for 3-5 days",
+                        "route": "SC or IM"
+                  },
+                  "camel": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h or divided q12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 5,
+                        "freq": "q24h (⚠️ DO NOT EXCEED 5 mg/kg due to irreversible feline retinal blindness!)",
+                        "route": "PO or SC"
+                  },
+                  "poultry": {
+                        "min": 10,
+                        "max": 15,
+                        "freq": "In drinking water for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "579",
@@ -9319,14 +16703,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 8,
             "dose_mg_per_kg_max": 8,
-            "concentration_value": 300,
+            "concentration_value": 100,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (Ceva Co.)",
             "notes": "Category: Antibiotic (Quinolone). COMPOSTION Each 1 ml contains - Marbofloxacin 100 mg - Excipients q.s. 1 ml PROPERTIES • Pharmacodynamic properties Marbofloxacin is a synthetic, bactericidal antimicrobial, belonging to the fluoroquinolone group, which acts by inhibition of DNA gyrase. It has a bread-spectrum activity in vitro agai... | Ref: Ref: Plumb's 9th Ed. p. 696.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2,
+                        "max": 8,
+                        "freq": "2 mg/kg q24h x 3-5d OR 8 mg/kg IM single dose",
+                        "route": "IM, SC or IV (Meat w/d: 6d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  },
+                  "cat": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  }
+            }
       },
       {
             "id": "582",
@@ -9342,7 +16758,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Vetoquinol)",
             "notes": "Category: Antibiotic (Quinolone). COMPOSITION - Marbofloxacin 100 mg - Thioglycerol 1 mg - m-cresol 2 mg - Disodium Edetate 0.1 mg - Excipient to 1 ml Cattle SC, IM and IV and Sows IM INDICATIONS IN CATTLE: - Treatment of respiratory infections caused by sensitive strains of Pasteurella multocida, Mannheimia (Pasteurella) haemolytic... | Ref: Ref: Plumb's 9th Ed. p. 696.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2,
+                        "max": 8,
+                        "freq": "2 mg/kg q24h x 3-5d OR 8 mg/kg IM single dose",
+                        "route": "IM, SC or IV (Meat w/d: 6d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  },
+                  "cat": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  }
+            }
       },
       {
             "id": "583",
@@ -9351,7 +16799,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 33,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 100,
+            "concentration_value": 358,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -9367,7 +16815,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 33,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 100,
+            "concentration_value": 330,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -9383,7 +16831,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 33,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 330,
+            "concentration_value": 333,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -9399,14 +16847,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 0.5,
             "dose_mg_per_kg_max": 1,
-            "concentration_value": 400,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/SC",
             "unit_description": "100 ml vial (Ceva Co.)",
             "notes": "Category: Antibiotic (Phenicol) + NSAIDs. Composition Each ml contains: Active substances: - Florfenicol 400 mg - Meloxicam 5 mg Excipients: Dimethyl sulfoxide, Glycerol formal, stabilised. Indications For therapeutic treatment of bovine respiratory disease (BRD) associated with pyrexia due to Mannheimia haemolytica, Pasteurella multocida a... | Ref: Cattle 0.5 mg/kg IV/SC. Horses 0.6 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV (Meat w/d: 15d, Milk w/d: 5d)"
+                  },
+                  "horse": {
+                        "min": 0.6,
+                        "max": 0.6,
+                        "freq": "q24h",
+                        "route": "IV or PO"
+                  },
+                  "sheep_goat": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV"
+                  },
+                  "dog": {
+                        "min": 0.1,
+                        "max": 0.2,
+                        "freq": "0.2 mg/kg day 1, then 0.1 mg/kg q24h",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.1,
+                        "freq": "0.1-0.2 mg/kg single SC dose, or 0.05 mg/kg PO q24-48h",
+                        "route": "SC or PO"
+                  },
+                  "poultry": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "q12-24h",
+                        "route": "PO or IM"
+                  }
+            }
       },
       {
             "id": "587",
@@ -9415,7 +16907,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 15,
             "dose_mg_per_kg_max": 24,
-            "concentration_value": 100,
+            "concentration_value": 240,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -9431,7 +16923,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 15,
             "dose_mg_per_kg_max": 24,
-            "concentration_value": 100,
+            "concentration_value": 240,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -9447,7 +16939,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 15,
             "dose_mg_per_kg_max": 24,
-            "concentration_value": 100,
+            "concentration_value": 240,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -9463,7 +16955,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 15,
             "dose_mg_per_kg_max": 24,
-            "concentration_value": 1,
+            "concentration_value": 240,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -9479,7 +16971,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 15,
             "dose_mg_per_kg_max": 24,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
@@ -9495,7 +16987,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 15,
             "dose_mg_per_kg_max": 24,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -9511,7 +17003,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 15,
             "dose_mg_per_kg_max": 24,
-            "concentration_value": 100,
+            "concentration_value": 240,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
@@ -9527,7 +17019,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 15,
             "dose_mg_per_kg_max": 24,
-            "concentration_value": 100,
+            "concentration_value": 240,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -9559,7 +17051,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 24,
             "dose_mg_per_kg_max": 24,
-            "concentration_value": 200,
+            "concentration_value": 240,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -9575,14 +17067,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 20,
             "dose_mg_per_kg_max": 40,
-            "concentration_value": 100,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Antibiotic (Phenicol). Composition Each ml contains: - Florfenicol 300 mg PROPERTIES: Florfenicol is a broad-spectrum antibiotic that has activity against many bacteria. It acts by binding to 50S ribosome, thereby inhibiting bacterial protein synthesis. Florfenicol has activity against gram-positive bacteria such as Staph... | Ref: Cattle 20 mg/kg IM q48h or 40 mg/kg SC (long-acting). Plumb's.",
             "frequency": "q48h IM or q24h SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h (2 doses) OR 40 mg/kg SC single dose",
+                        "route": "IM or SC (⚠️ NEVER GIVE IV. Prohibited in lactating dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h or 40 mg/kg SC once",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h",
+                        "route": "IM or SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal acute colitis and dysbiosis)."
+                  },
+                  "dog": {
+                        "min": 20,
+                        "max": 30,
+                        "freq": "q12-24h (refractory cases)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 20,
+                        "max": 25,
+                        "freq": "q12-24h",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "598",
@@ -9598,7 +17126,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Delta Pharma)",
             "notes": "Category: Antibiotic (Phenicol). Composition: Each 100 ml contains: - Florfenicol 30 gm Properties: - Florfenicol is a fluorinated analog of chloramphenicol. It has activity against many bacteria as Pasteurella multocida, Mannheimia haemolytica, Haemophilus somnus, Fusobacterium necrophorum and melaninogenicus and Moraxella bovis i... | Ref: Ref: Plumb's 9th Ed. p. 473.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h (2 doses) OR 40 mg/kg SC single dose",
+                        "route": "IM or SC (⚠️ NEVER GIVE IV. Prohibited in lactating dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h or 40 mg/kg SC once",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h",
+                        "route": "IM or SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal acute colitis and dysbiosis)."
+                  },
+                  "dog": {
+                        "min": 20,
+                        "max": 30,
+                        "freq": "q12-24h (refractory cases)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 20,
+                        "max": 25,
+                        "freq": "q12-24h",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "599",
@@ -9607,14 +17171,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 20,
             "dose_mg_per_kg_max": 20,
-            "concentration_value": 100,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Phenicol). Composition: Each 1 ml contains: - Florfenicol 300 mg Properties - AVIFLOR Injection is an efficient synthetic antibiotic For Intramuscular and Subcutaneous Use in Cattle. - Florfenicol is primarily bacteriostatic and acts by binding to the 50S ribosomal subunit and inhibiting bacterial protein synt... | Ref: Ref: Plumb's 9th Ed. p. 473.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h (2 doses) OR 40 mg/kg SC single dose",
+                        "route": "IM or SC (⚠️ NEVER GIVE IV. Prohibited in lactating dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h or 40 mg/kg SC once",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h",
+                        "route": "IM or SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal acute colitis and dysbiosis)."
+                  },
+                  "dog": {
+                        "min": 20,
+                        "max": 30,
+                        "freq": "q12-24h (refractory cases)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 20,
+                        "max": 25,
+                        "freq": "q12-24h",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "600",
@@ -9623,14 +17223,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 40,
             "dose_mg_per_kg_max": 40,
-            "concentration_value": 40,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "50 ml vial (Arabcomed)",
             "notes": "Category: Antibiotic (Phenicol). Composition Each 100 ml contains: - Florfenicol 30 gm Properties - Florfenicol is a synthetic broad spectrum antibiotic effective against most Gram-positive and Gram-negative isolated from domestic animals. Florfenicol acts by inhibiting protein synthesis at ribosomal level and is bacteriostatic. La... | Ref: Ref: Plumb's 9th Ed. p. 473.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h (2 doses) OR 40 mg/kg SC single dose",
+                        "route": "IM or SC (⚠️ NEVER GIVE IV. Prohibited in lactating dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h or 40 mg/kg SC once",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h",
+                        "route": "IM or SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal acute colitis and dysbiosis)."
+                  },
+                  "dog": {
+                        "min": 20,
+                        "max": 30,
+                        "freq": "q12-24h (refractory cases)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 20,
+                        "max": 25,
+                        "freq": "q12-24h",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "601",
@@ -9646,7 +17282,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Antibiotic (Phenicol). Description Nuflor is a light golden solution for injection, containing 300 mg/ml florfenicol. Activity: Florfenicol is a bacteriostatic synthetic broad-spectrum antibiotic effective against most Gram positive and Gram negative bacteria isolated from domestic animals. Indications: In cattle, Nutlor ... | Ref: Ref: Plumb's 9th Ed. p. 473.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h (2 doses) OR 40 mg/kg SC single dose",
+                        "route": "IM or SC (⚠️ NEVER GIVE IV. Prohibited in lactating dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h or 40 mg/kg SC once",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h",
+                        "route": "IM or SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal acute colitis and dysbiosis)."
+                  },
+                  "dog": {
+                        "min": 20,
+                        "max": 30,
+                        "freq": "q12-24h (refractory cases)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 20,
+                        "max": 25,
+                        "freq": "q12-24h",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "602",
@@ -9655,14 +17327,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 20,
             "dose_mg_per_kg_max": 40,
-            "concentration_value": 100,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "250 ml vial (HIPRA Co.)",
             "notes": "Category: Antibiotic (Phenicol). Properties: Analogue of thiamphenicol that has greater antimicrobial activity than chloramphenicol – Bacteriostatic Indications: Bacterial pneumonia and respiratory infections as BRD and Pododermatitis / interdigital phlegmon Contraindication: Not to be given by I/V injection route Dosage and Admini... | Ref: Cattle 20 mg/kg IM q48h or 40 mg/kg SC (long-acting). Plumb's.",
             "frequency": "q48h IM or q24h SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h (2 doses) OR 40 mg/kg SC single dose",
+                        "route": "IM or SC (⚠️ NEVER GIVE IV. Prohibited in lactating dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h or 40 mg/kg SC once",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h",
+                        "route": "IM or SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal acute colitis and dysbiosis)."
+                  },
+                  "dog": {
+                        "min": 20,
+                        "max": 30,
+                        "freq": "q12-24h (refractory cases)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 20,
+                        "max": 25,
+                        "freq": "q12-24h",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "603",
@@ -9671,14 +17379,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 20,
             "dose_mg_per_kg_max": 40,
-            "concentration_value": 100,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: Antibiotic (Phenicol). Composition Each 100 ml contain - 20 gm florfenicol. Indications and Usage Cows: bovine respiratory disease (BRD), a.k.a. shipping fever or transient fever, associated with florfenicol–sensitive bacteria. Dosage - I/M injection in neck muscles. - For active ingredient, 20mg florfenicol base/kg b.wt.... | Ref: Cattle 20 mg/kg IM q48h or 40 mg/kg SC (long-acting). Plumb's.",
             "frequency": "q48h IM or q24h SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h (2 doses) OR 40 mg/kg SC single dose",
+                        "route": "IM or SC (⚠️ NEVER GIVE IV. Prohibited in lactating dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h or 40 mg/kg SC once",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h",
+                        "route": "IM or SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal acute colitis and dysbiosis)."
+                  },
+                  "dog": {
+                        "min": 20,
+                        "max": 30,
+                        "freq": "q12-24h (refractory cases)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 20,
+                        "max": 25,
+                        "freq": "q12-24h",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "604",
@@ -9694,7 +17438,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "30 ml vial (Ceva Co.)",
             "notes": "Category: Antibiotic (Phenicol). Composition: - Florfenicol 300 mg / ml Pharmacodynamic properties - Florfenicol is a synthetic broad-spectrum antibiotic effective against most Gram positive and Gram negative bacteria isolated from domestic animals. - Florfenicol acts by inhibiting bacteria protein synthesis at the ribosomal level,... | Ref: Ref: Plumb's 9th Ed. p. 473.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h (2 doses) OR 40 mg/kg SC single dose",
+                        "route": "IM or SC (⚠️ NEVER GIVE IV. Prohibited in lactating dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h or 40 mg/kg SC once",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h",
+                        "route": "IM or SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal acute colitis and dysbiosis)."
+                  },
+                  "dog": {
+                        "min": 20,
+                        "max": 30,
+                        "freq": "q12-24h (refractory cases)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 20,
+                        "max": 25,
+                        "freq": "q12-24h",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "605",
@@ -9703,14 +17483,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 40,
             "dose_mg_per_kg_max": 40,
-            "concentration_value": 100,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Phenicol) + NSAIDs. Composition: Each 1 ml contains: - Florfenicol 300.0 mg - Flunixin (as flunixin meglumine) 16.5 mg Properties Treatment of respiratory infections caused by Mannheimia haemolytica, Pasteurella multocida, Mycoplasma bovis and Histophilus somni associated with pyrexia. Indications Treatment of respirat... | Ref: Ref: Plumb's 9th Ed. p. 473.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "606",
@@ -9719,14 +17535,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.1,
             "dose_mg_per_kg_max": 2.2,
-            "concentration_value": 100,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (Science Med Co.)",
             "notes": "Category: Antibiotic (Phenicol) + NSAIDs. Composition Each 1 ml contains: - Florfenicol 300 mg. - Flunixin ( as flunixin meglumine ) 16.5 mg. Indication: Treatment of respiratory infections associated with pyrexia. Dosage: Single S/C • 2 ml/15 kg b. wt. Instructions: • Dose volume given at any one injection site should not exceed 10 ml. • R... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "607",
@@ -9735,14 +17587,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.1,
             "dose_mg_per_kg_max": 2.2,
-            "concentration_value": 100,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Antibiotic (Phenicol) + NSAIDs. Indication: Treatment of respiratory infections associated with pyrexia. Dosage: Single S/C • 2 ml/15 kg b. wt. Instructions: • Dose volume given at any one injection site should not exceed 10 ml. • Recommended to treat animals in the early stages of the disease and to evaluate the response to treat... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "608",
@@ -9758,7 +17646,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Antibiotic (Phenicol) + NSAIDs. COMPOSITION Each ml contains: Active substance: - Florfenicol 300 mg - Flunixin (as flunixin meglumine) 16.5 mg Excipients Propylene glycol (E1520) 150 mg, N-methyl-2-pyrrolidone, Anhydrous citric acid and (Macrogol 300). PHARMACEUTICAL FORM Solution for injection. Clear, light yellow to straw colou... | Ref: Ref: Plumb's 9th Ed. p. 473.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "609",
@@ -9847,7 +17771,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 2.5,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
@@ -9870,7 +17794,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Bullvet >> sama vet pharm)",
             "notes": "Category: Anthelmintic + Supportive treatment. Composition: - Ivermectin 1% - Vitamin AD3E Indications: • Control of mature and immature round worms as well as lung worms affecting Sheep, Goats , Cows, Buffaloes and Camels. It also controls nasal bot, cattle grubs, mites, tick and lice that affect different animal species. • The physiological Fu... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "616",
@@ -9886,7 +17848,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Univet Co.)",
             "notes": "Category: Antibiotic (Tetracycline). COMPOSITION Each ml contains: - Oxytetracycline (as dihydrate) 200 mg Pharmacodynamic properties Oxytetracycline interferes with bacterial protein synthesis. Following diffusion through the outer cell membrane, oxytetracyclineis actively transported to the inner cytoplasmicmembrane. It binds to rece... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "617",
@@ -9902,7 +17908,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "250 ml vial (Bullvet >> sama vet pharm)",
             "notes": "Category: Anthelmintic. Properties: Fasciolicidal anthelmintic DOVEMIX 34/100. - Nitroxinil 34% + Cyanocobalamin 100 mcg (Vit B12) Indications: • Indicated for the treatment of fascioliasis (infestation of mature and immature Fasciola hepatica) in cattle and sheep. • It is also effective, at the recommended dose rate, agai... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "618",
@@ -10119,7 +18157,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 2.5,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
@@ -10135,14 +18173,42 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2.2,
             "dose_mg_per_kg_max": 4.4,
-            "concentration_value": 4.4,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV",
             "unit_description": "100 ml vial (Raa Pharma)",
             "notes": "Category: NSAIDs. Arthenile Injectable solution (For vet use) Composition: Each 100 ml contains: - Phenylbutazone 20 gm - Sodium salicylate 2 gm Properties: » Phenylbutazone is a pyrazolone non-steroidal anti-inflammatory. analgesic and antipyretic agent. Phenylbutazone acts by inhibiting the production of prostaglan... | Ref: Horses 2.2-4.4 mg/kg IV/PO q24h. Cattle 10 mg/kg PO (rarely used). Plumb's. Do NOT use in cats.",
             "frequency": "q24h (horses), q48h (cattle)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h (taper after day 1)",
+                        "route": "IV or PO"
+                  },
+                  "cattle": {
+                        "min": 4.4,
+                        "max": 8.8,
+                        "freq": "q48h (beef only)",
+                        "route": "IV (Strictly prohibited in female dairy cattle >20mo)"
+                  },
+                  "dog": {
+                        "min": 7,
+                        "max": 7,
+                        "freq": "q8h",
+                        "route": "PO (max 800mg/day with food)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats due to high risk of severe toxicity and renal failure."
+                  },
+                  "poultry": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
+                  }
+            }
       },
       {
             "id": "633",
@@ -10151,14 +18217,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 12.5,
-            "concentration_value": 100,
+            "concentration_value": 340,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (Badr Pharma)",
             "notes": "Category: Anthelmintic. Composition Each ml contains: - Nitroxinil 340 mg Properties: Nitroxinil is effective against mature flukes of Fasciola hepatica and Fasciola gigantica., Haemonchosis and Parafilaria bovicola, against adult and larval infestations of Haemonchus contortus in cattle and sheep and Haemonchus placei, Oe... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "634",
@@ -10174,7 +18272,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Badr Pharma)",
             "notes": "Category: Anthelmintic. Anthelmintic (Imidazothiazole) Vamizole 7.5% Levamisole hydrochloride Injectable solution For veterinary use only Composition: Each 1 ml contains: - Levamisole hydrochloride 75 mg Properties: Levamisole is a broad spectrum anthelmintic. It acts by interfering with parasite nerve transmission causing... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "635",
@@ -10183,7 +18315,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2.5,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
@@ -10199,14 +18331,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.1,
             "dose_mg_per_kg_max": 2.2,
-            "concentration_value": 100,
+            "concentration_value": 83,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "50 ml vial (Badr Pharma)",
             "notes": "Category: NSAIDs. Composition: Each 100 ml contains: - Flunixin meglumine 8.3 gm (eq to Flunixin base 5 gm) Properties: Flunixin meglumine has a potent analgesic, antipyretic and anti-inflammatory activity. Mode of action MAROFLAM acts by inhibition of cyclo-oxygenase cnzyme leading to reduced sythesis of prostagland... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "637",
@@ -10215,14 +18383,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "30 ml vial (Badr Pharma)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each 100 ml contains Oxytetracycline Dihydrate21.5 gm (Equivalent to Oxytetracycline base 20 gm). Indications: For the treatment of diseases caused by oxytetracycline susceptible organisms including: In Cattle: 1- treatment of pneumonia and shipping fever complex associated with Pasteur... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "638",
@@ -10254,7 +18466,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Anthelmintic. Composition - Nitroxynil 34% - Ivermectin 0.67% - Clorsulon 6.7% Indication: - Internal parasite as GIT & Lung worms. - External parasite as ticks, lice & mange. - Liver flukes Dosage and mode of administration: SC Cattle: 3 ml /100 kg of body weight and repeated. | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "640",
@@ -10318,7 +18568,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (HIPRA Co.)",
             "notes": "Category: Antibiotic (Penicillin + Aminoglycoside). COMPOSITION PER ML: - Amoxicillin trihydrate 150 mg - Gentamicin sulphate 40 mg. Amoxicillin and gentamicin are two known antibiotics that individually have particular and interesting therapeutic properties, and when acting together they have a broad antibacterial spectrum which includes Gram (+) mi... | Ref: Cattle/Horses 6.6 mg/kg IM/IV q24h. Neonates 6 mg/kg IV. Plumb's.",
             "frequency": "q24h IM/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM (Meat w/d: 40d; extended in calves)"
+                  },
+                  "horse": {
+                        "min": 6.6,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  }
+            }
       },
       {
             "id": "644",
@@ -10359,7 +18647,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 100,
+            "concentration_value": 13,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -10375,7 +18663,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "horse",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 15,
-            "concentration_value": 9,
+            "concentration_value": 333.8173,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
@@ -10446,7 +18734,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (kela Co.)",
             "notes": "Category: Antibiotic (Quinolone). COMPOSITION: Each 1 ml contains: - Marbofloxacin 100 mg PROPERTIES: Marbofloxacin is a synthetic, bactericidal antimicrobial, belonging to the fluoroquinolones group which acts by inhibition of DNA gyrase. It has a broad-spectrum activity in vitro against Gram-negative bacteria (E. coli, Histophilus... | Ref: Ref: Plumb's 9th Ed. p. 696.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2,
+                        "max": 8,
+                        "freq": "2 mg/kg q24h x 3-5d OR 8 mg/kg IM single dose",
+                        "route": "IM, SC or IV (Meat w/d: 6d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  },
+                  "cat": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  }
+            }
       },
       {
             "id": "652",
@@ -10455,7 +18775,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.1,
             "dose_mg_per_kg_max": 0.3,
-            "concentration_value": 100,
+            "concentration_value": 4,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
@@ -10471,7 +18791,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2,
             "dose_mg_per_kg_max": 4,
-            "concentration_value": 100,
+            "concentration_value": 40,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
@@ -10535,7 +18855,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 0,
+            "concentration_value": 100,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
@@ -10583,14 +18903,42 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 4,
             "dose_mg_per_kg_max": 4,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: NSAIDs. Composition Each ml contains: - Phenylbutazone 200 mg Properties: Phenylbutazone is a non-steroidal anti-inflammatory, analgesic and antipyretic drug (NSAID) related to the pyrazolone derivative. The anti-inflammatory and analgesic effects of phenylbutazone depend on its ability to inhibit hypothala... | Ref: Ref: Plumb's 9th Ed. p. 942.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h (taper after day 1)",
+                        "route": "IV or PO"
+                  },
+                  "cattle": {
+                        "min": 4.4,
+                        "max": 8.8,
+                        "freq": "q48h (beef only)",
+                        "route": "IV (Strictly prohibited in female dairy cattle >20mo)"
+                  },
+                  "dog": {
+                        "min": 7,
+                        "max": 7,
+                        "freq": "q8h",
+                        "route": "PO (max 800mg/day with food)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats due to high risk of severe toxicity and renal failure."
+                  },
+                  "poultry": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
+                  }
+            }
       },
       {
             "id": "661",
@@ -10606,7 +18954,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Anthelmintic. Anthelmintic (Halogenated Phenol) Composition Each 1 ml contains: - Nitroxinil 340 mg. Properties: Nitroxinil is a fasciolicide which is effective against Fasciola hepatica infestations and has some activity against gastrointestinal nematodes in cattle and sheep. Nitroxinil acts as an uncoupler of o... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "662",
@@ -10670,7 +19050,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Pharma swede)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Composition: Each 1 ml contains: - Albendazole 25 mg Indications: Cattle: - Roundworms infestation by Bunostomum, Chabertia, Cooperia, Haemonchus, Nematodirus, Oesophagostomum, Ostertagia, Strongyloides and Trichostrongylus spp. - Lungworms infestation by Dictyocaulus vi... | Ref: Ruminants 5-15 mg/kg PO. Horses 5-10 mg/kg PO x 5 days. Merck Vet Manual.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "666",
@@ -10686,7 +19098,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Pharma swede)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Composition: Each 1 ml contains: - Albendazole 50 mg Properties: Albendazole is a broad spectrum anthelmintic against roundworms, lungworms, tapeworms and adult liver fluke in Cattle, Sheep and Goats. It belongs to benzimidazoles which act by interrupting parasite energy... | Ref: Ruminants 5-15 mg/kg PO. Horses 5-10 mg/kg PO x 5 days. Merck Vet Manual.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "667",
@@ -10702,7 +19146,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Analgesic, Antipyretic & Spasmolytic. Composition: Each 1 ml. contains - Dipyrone 500 mg. Properties: Dipyrone is a derivative of the pyrazolon analgesics. It is an effective analgesic, anti-inflammatory and antipyretic drug. These effects are due to its action on the central nervous system, leading to pain relief and quietening of the ... | Ref: Cattle/Horses 25-50 mg/kg IV/IM q8-12h. Dogs/Cats 25-50 mg/kg IM/SC q8h. Plumb's.",
             "frequency": "q8-12h IM/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or deep IM"
+                  },
+                  "horse": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h (Spasmodic colic)",
+                        "route": "Slow IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q8-12h",
+                        "route": "SC, IM or IV"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12-24h (use with caution)",
+                        "route": "SC"
+                  }
+            }
       },
       {
             "id": "668",
@@ -10711,7 +19193,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 100,
+            "concentration_value": 150,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
@@ -10727,7 +19209,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 100,
+            "concentration_value": 106.4,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -10750,7 +19232,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Anthelmintic. Composition Each 1 ml contains: - Ivermectin 5 mg. - Closantel 125 mg. Properties : - Ivermectin is an endectocide with activity against a wide range of internal and external parasites. It enhances the release of gamma amino butyric acid (GABA) at presynaptic neurons. GABA acts as an inhibitory neur... | Ref: Cattle/Sheep 5-10 mg/kg PO or 5 mg/kg SC. Merck Vet Manual.",
             "frequency": "single dose (repeat in 6-8 weeks)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "671",
@@ -10782,7 +19302,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Pharma swede)",
             "notes": "Category: Anthelmintic. Composition: Each 1 ml contains: - Levamisole hydrochloride 30 mg. - Oxyclozanide 60 mg. Properties: - Levafluke suspension is a broad spectrum anthelmintic combination contains levamisole hydrochloride as antinematoda and oxyclozanide as a fasciolicide in suspension form. - Levamisole is the l isom... | Ref: Ref: Plumb's 9th Ed. p. 660.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "673",
@@ -10791,14 +19345,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.1,
             "dose_mg_per_kg_max": 2.2,
-            "concentration_value": 100,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "50 ml vial (Pharma swede)",
             "notes": "Category: Antibiotic (Phenicol) + NSAIDs. Composition Each ml contains: - Florfenicol 300 mg - Flunixin ( as flunixin meglumine ) 16.5 mg. Properties: - Florfenicol is a broad spectrum antibiotic that has activity against many bacteria such as Pasteurella multocida, Pasteurella haemolytica, Haemophilus somnus and Mycoplasma bovis. It acts b... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "674",
@@ -10855,14 +19445,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each 1 ml contains: - Oxytetracycline Hydrochloride 50 mg. ( eq to 46.3 mg of Oxytetracycline ) - Bromhexine Hydrochloride 3 mg. (eq to 2.74 mg Bromhexine) - Lidocaine 20 mg. Properties: - OxyClear is a synergistic combination between Oxytetracycline & Bromhexine. - Oxytetracycline is a... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "678",
@@ -10878,7 +19512,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (Pharma swede)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Composition: Each Bolus (4 gm) contains - Albendazole 0.25 gm Properties: Albendazole is a broad spectrum anthelmintic against roundworms, lungworms, tapeworms and adult fasciola in cattle and sheep. It belongs to benzimidazoles which act by interrupting parasite energy ... | Ref: Ruminants 5-15 mg/kg PO. Horses 5-10 mg/kg PO x 5 days. Merck Vet Manual.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "679",
@@ -10894,7 +19560,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each 1 ml contains: - Oxytetracycline dihydrate 215.7 mg (Equivalent to 200 mg oxytetracycline) Properties: Oxytetracycline belongs to tetracyclines which act as bacteriostatic antibiotics and inhibit protein synthesis by reversibly binding to 30S ribosomal subunits of susceptible organ... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "680",
@@ -10903,14 +19613,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 107.93,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each 1 ml contains: - Oxytetracycline HCl 107.93 mg (Equiv. to Oxytetracycline base 100 mg.) Properties: Oxytetracycline is a broad spectrum bacteriostatic antibiotic. It acts through inhibiting protein synthesis by binding with 30S ribosomal subunits. Oxytetracycline is active against ... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "681",
@@ -10926,7 +19680,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Pharma swede)",
             "notes": "Category: Anthelmintic. Composition: Each 1 ml contains: - Fenbendazole 50 mg. - Rafoxanide 50 mg. Indications: Parafluke suspension is a combination of broad spectrum anthelmintic used for the treatment and control of different parasitic infestations in farm animals such as mature and immature stages of gastro-intestinal ... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO or SC (Meat w/d: 28d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose (Fasciola & nasal bots)",
+                        "route": "PO or SC"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "682",
@@ -10942,7 +19728,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Pharma swede)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition: Each 1 ml contains - Ivermectin 0.8 mg. Properties: Ivermectin is an endectocide with activity against a wide range of internal and external parasites. It enhances the release of gamma amino butyric acid (GABA) at presynaptic neurons. GABA acts as an inhibitory... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "683",
@@ -10967,7 +19791,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "poultry",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 100,
+            "concentration_value": 20,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
@@ -10983,14 +19807,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 12.5,
-            "concentration_value": 100,
+            "concentration_value": 340,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Raa Pharma)",
             "notes": "Category: Anthelmintic. Anthelmintic (Halogenated Phenol) Composition: Each 1 ml contains: Nitroxynel 340 mg Indication: In cattle, sheep, goats, and camel: For control of Fasciolosis (larval and adult stage) caused by Fasciola hepatica and F. gigantica; gastrointestinal parasitism “nematodes“ caused by Haemonchus spp., Bu... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "686",
@@ -11118,7 +19974,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Analgesic, Antipyretic & Spasmolytic. Composition: Each 1 ml contains - Dipyrone 500 mg Properties - Dipyrone, like other non-steroidal anti-inflammatory drugs, acts by inhibiting cyclo-oxygenase mediated production of prostaglandins. - It has analgesic, antipyretic and slight anti-inflammatory properties and reportedly has antispasmodi... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or deep IM"
+                  },
+                  "horse": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h (Spasmodic colic)",
+                        "route": "Slow IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q8-12h",
+                        "route": "SC, IM or IV"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12-24h (use with caution)",
+                        "route": "SC"
+                  }
+            }
       },
       {
             "id": "694",
@@ -11191,7 +20085,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 2,
             "dose_mg_per_kg_max": 2,
-            "concentration_value": 100,
+            "concentration_value": 40,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -11207,7 +20101,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 144,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
@@ -11262,7 +20156,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Delta Pharma)",
             "notes": "Category: Antibiotic (Tetracycline). DELTA OXY 20% LA is a broad spectrum, baceriostatc, long acting injectable solution. Composition: Each 1 ml DELTA OXY 20% LA contains: - Oxytetracycline base 200 mg Indications: Delta-Oxy 20% LA is used in cattle, sheep and goat for the treatment of : 1- Respiratory tract infections as pneumonia, br... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "703",
@@ -11287,14 +20225,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 40,
             "dose_mg_per_kg_max": 40,
-            "concentration_value": 450,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "50 ml vial (Adwia)",
             "notes": "Category: Antibiotic (Phenicol). Composition: Each ml contains: - Florfenicol 450 mg Properties: - Florfenicol is a synthetic broad-spectrum antibiotic effective against most Gram-positive and Gram-negative bacteria isolated from domestic animals. Florfenicol acts by inhibiting protein synthesis at the ribosomal level and is bacter... | Ref: Ref: Plumb's 9th Ed. p. 473.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h (2 doses) OR 40 mg/kg SC single dose",
+                        "route": "IM or SC (⚠️ NEVER GIVE IV. Prohibited in lactating dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h or 40 mg/kg SC once",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h",
+                        "route": "IM or SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal acute colitis and dysbiosis)."
+                  },
+                  "dog": {
+                        "min": 20,
+                        "max": 30,
+                        "freq": "q12-24h (refractory cases)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 20,
+                        "max": 25,
+                        "freq": "q12-24h",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "705",
@@ -11310,7 +20284,49 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Antibiotic (Macrolide). Pnmol Injectable Solution For Veterinary Use Only. Composition: Each 1 ml contains: - Tylosin Tartarate 216.384 mg (eq. to Tylosin base 200 mg). Properties: - The macrolides are usually bacteriostatic in action. Tylosin is a macrolide antibiotic which acts by interfering with bacterial protein synth... | Ref: Cattle 10-20 mg/kg IM q12-24h. Pigs 8-10 mg/kg IM. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q24h (max 5 days)",
+                        "route": "IM (Meat w/d: 21d, Milk w/d: 4d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal clostridial enteritis)."
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12h (Tylosin-responsive enteropathy)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q12h",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water for CRD",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "706",
@@ -11351,14 +20367,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 7.5,
             "dose_mg_per_kg_max": 15,
-            "concentration_value": 100,
+            "concentration_value": 75,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Anthelmintic. Anthelmintic (Salicylanilide) Composition: Each 100 ml contains: - Rafoxanide 7.5 gm Indications: • Fasciolicide in cattle and, sheep active against adult and immature flukes aged 6 to 8 weeks and older. • Active against gastrointestinal nematodes (Haemonchus, Bunostomum,Oesophagostomum, and Gaigeri... | Ref: Cattle 7.5-15 mg/kg PO; Sheep 7.5-15 mg/kg PO. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO or SC (Meat w/d: 28d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose (Fasciola & nasal bots)",
+                        "route": "PO or SC"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "709",
@@ -11367,7 +20415,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.2,
             "dose_mg_per_kg_max": 2.4,
-            "concentration_value": 100,
+            "concentration_value": 139,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
@@ -11383,14 +20431,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.1,
             "dose_mg_per_kg_max": 2.2,
-            "concentration_value": 2.2,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "50 ml vial (Mam Egypt Pharm)",
             "notes": "Category: NSAIDs. Composition: Each 100 ml contains: - Flunixin meglumine 8.2448 gm (equivalent to flunixin base 5 gm) Properties: Flunixin meglumine is a non-steroidal anti-inflammatory agent with analgesic and antyretic activity. it acts through inhibition of cyclooxygenase blocks synthesis of eicosanoids, includin... | Ref: Ref: Plumb's 9th Ed. p. 488.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "711",
@@ -11431,14 +20515,42 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2.2,
             "dose_mg_per_kg_max": 4.4,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV",
             "unit_description": "250 ml vial (Virbac)",
             "notes": "Category: NSAIDs. Each 1 ml contains: - Phenylbutazone 200 mg - Sodium salicylate 20 mg INDICATIONS Non-steroidal anti-inflammatory In cattle, horses and pigs, for the treatment of infectious, traumatic and rheumatic arthritis, acute pulmonary infections, myocarditis and endocarditis, as well as musculoskeletal condi... | Ref: Horses 2.2-4.4 mg/kg IV/PO q24h. Cattle 10 mg/kg PO (rarely used). Plumb's. Do NOT use in cats.",
             "frequency": "q24h (horses), q48h (cattle)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h (taper after day 1)",
+                        "route": "IV or PO"
+                  },
+                  "cattle": {
+                        "min": 4.4,
+                        "max": 8.8,
+                        "freq": "q48h (beef only)",
+                        "route": "IV (Strictly prohibited in female dairy cattle >20mo)"
+                  },
+                  "dog": {
+                        "min": 7,
+                        "max": 7,
+                        "freq": "q8h",
+                        "route": "PO (max 800mg/day with food)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats due to high risk of severe toxicity and renal failure."
+                  },
+                  "poultry": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
+                  }
+            }
       },
       {
             "id": "714",
@@ -11463,14 +20575,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each 100 ml contains: - Oxytetracycline 5 gm Properties: Wide spectrum bacteriostatic tetracycline antibiotic Indications: • Gram-negative and Gram-positive bacteria affecting respiratory, urinary and GIT • Effective against anaplasma, mycoplasma, chlamydia and rickettsia infections. Do... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "716",
@@ -11486,7 +20642,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: NSAIDs. Composition: Each ml contains - Meloxicam 20 mg Pharmacotherapeutic group: Anti-inflammatory Mode of action: - Meloxicam is a non-steroidal anti inflammatory drug (NSAID) of the oxicam class which acts by inhibition of prostaglandin synthesis, thereby exerting anti-inflammatory, anti-exudative analg... | Ref: Cattle 0.5 mg/kg IV/SC. Horses 0.6 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV (Meat w/d: 15d, Milk w/d: 5d)"
+                  },
+                  "horse": {
+                        "min": 0.6,
+                        "max": 0.6,
+                        "freq": "q24h",
+                        "route": "IV or PO"
+                  },
+                  "sheep_goat": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV"
+                  },
+                  "dog": {
+                        "min": 0.1,
+                        "max": 0.2,
+                        "freq": "0.2 mg/kg day 1, then 0.1 mg/kg q24h",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.1,
+                        "freq": "0.1-0.2 mg/kg single SC dose, or 0.05 mg/kg PO q24-48h",
+                        "route": "SC or PO"
+                  },
+                  "poultry": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "q12-24h",
+                        "route": "PO or IM"
+                  }
+            }
       },
       {
             "id": "717",
@@ -11559,14 +20759,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 20,
             "dose_mg_per_kg_max": 40,
-            "concentration_value": 100,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
             "unit_description": "50 ml vial (Mam Egypt Pharm)",
             "notes": "Category: Antibiotic (Phenicol). Composition Each ml contains: - Florfenicol 300 mg Properties : Florfenicol is a broad spectrum antibiotic that has activity against many bacteria such as Pasteurella multocida, Pasteurella haemolytica, Haemophilus somnus and Mycoplasma bovis. It acts by binding to the 50S ribosome, thereby inhibiti... | Ref: Cattle 20 mg/kg IM q48h or 40 mg/kg SC (long-acting). Plumb's.",
             "frequency": "q48h IM or q24h SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h (2 doses) OR 40 mg/kg SC single dose",
+                        "route": "IM or SC (⚠️ NEVER GIVE IV. Prohibited in lactating dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h or 40 mg/kg SC once",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h",
+                        "route": "IM or SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal acute colitis and dysbiosis)."
+                  },
+                  "dog": {
+                        "min": 20,
+                        "max": 30,
+                        "freq": "q12-24h (refractory cases)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 20,
+                        "max": 25,
+                        "freq": "q12-24h",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "722",
@@ -11582,7 +20818,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (El kenana group)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) COMPOSITION Each 100 ml contains: - Albendazole 10 gm INDICATIONS - Cattle Sheep and Goats: Albendazole is a broad spectrum anthelmintic used for treatment of worm infestation, it is highly effective against the following: • Gastrointestinal round nematodes (Bunostomum, ... | Ref: Ruminants 5-15 mg/kg PO. Horses 5-10 mg/kg PO x 5 days. Merck Vet Manual.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "723",
@@ -11614,7 +20882,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Oral Paste (Adwia)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition: Each 1 gm contains: - Ivermectin 2 mg Properties: Ivermectin is the first in a series of antiparasitic agents derived from the avermectin family of compounds. Ivermectin is a member of the macrocyclic lactone class of endectocides. Compounds of the class bind s... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "725",
@@ -11639,14 +20945,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (El-Nasr)",
             "notes": "Category: Antibiotic (Tetracycline). COMPOSITION: Each ml Contains: - Oxytetracycline hydrochloride 200 mg PROPERTIES: Oxytetracycline is a broad spectrum antibiotic acting by inhibiting bacterial protein synthesis in gram positive and gram negative bacteria, some Rekittsia, Clamydia and certain blood parasite including theileria and A... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "727",
@@ -11662,7 +21012,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (El-Nasr)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each ml contains - Oxytetracycline HCL (eq to 50 mg Oxytetracycline) Indications: - It is a broad spectrum antibiotic which has a wide spectrum antibacterial activity. - It is indicated for shipping fever, metritis, foot rot, theileriasis and scours in cattle. Dosage: For all animals: 5... | Ref: Ref: Plumb's 9th Ed. p. 892.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "728",
@@ -11678,7 +21072,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (El-Nasr)",
             "notes": "Category: Antibiotic (Quinolone). COMPOSITION: Each 100 ml Contains: - Enrofloxacin 10 gm. INDICATIONS: • Enrofloxacin is a fluroquinolone which very quickly absorbed from the intestine and reaches its maximum concentration in the tissues in 1 hour. It acts by inhibition of bacterial DNA synthesis. • Drug is used in cattle for treat... | Ref: Cattle 5-7.5 mg/kg SC q24h. Horses 5-7.5 mg/kg IV q24h. Plumb's.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "2.5-5 mg/kg q24h or 7.5-12.5 mg/kg single SC dose",
+                        "route": "SC or IM (Prohibited in lactating dairy cattle)"
+                  },
+                  "sheep_goat": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h for 3-5 days",
+                        "route": "SC or IM"
+                  },
+                  "camel": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h or divided q12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 5,
+                        "freq": "q24h (⚠️ DO NOT EXCEED 5 mg/kg due to irreversible feline retinal blindness!)",
+                        "route": "PO or SC"
+                  },
+                  "poultry": {
+                        "min": 10,
+                        "max": 15,
+                        "freq": "In drinking water for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "729",
@@ -11687,14 +21119,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 7.5,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/SC",
             "unit_description": "100 ml vial (El-Nasr)",
             "notes": "Category: Antibiotic (Quinolone). COMPOSITION: Each 100 ml Contains: - Enrofloxacin 5 gm INDICATIONS: • Enrofloxacin is a fluroquinolone which very quickly absorbed from the intestine and reaches its maximum concentration in the tissues in 1 hour. It acts by inhibition of bacterial DNA synthesis. • Drug is used in cattle for treatme... | Ref: Cattle 5-7.5 mg/kg SC q24h. Horses 5-7.5 mg/kg IV q24h. Plumb's.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "2.5-5 mg/kg q24h or 7.5-12.5 mg/kg single SC dose",
+                        "route": "SC or IM (Prohibited in lactating dairy cattle)"
+                  },
+                  "sheep_goat": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h for 3-5 days",
+                        "route": "SC or IM"
+                  },
+                  "camel": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h or divided q12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 5,
+                        "freq": "q24h (⚠️ DO NOT EXCEED 5 mg/kg due to irreversible feline retinal blindness!)",
+                        "route": "PO or SC"
+                  },
+                  "poultry": {
+                        "min": 10,
+                        "max": 15,
+                        "freq": "In drinking water for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "730",
@@ -11710,7 +21180,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (El-Nasr)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition: Each ml Contains: - Gentamycin Sulphate equivalent to 100 mg Gentamycin base Action & Uses: Gentamycin is an aminoglycoside broad spectrum antibiotic active against gram negative and gram positive bacteria. It is used in animals for control the uterine infections (metritis) urinary trac... | Ref: Cattle/Horses 6.6 mg/kg IM/IV q24h. Neonates 6 mg/kg IV. Plumb's.",
             "frequency": "q24h IM/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM (Meat w/d: 40d; extended in calves)"
+                  },
+                  "horse": {
+                        "min": 6.6,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  }
+            }
       },
       {
             "id": "731",
@@ -11726,7 +21234,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Spray (El-Nasr)",
             "notes": "Category: Topical Antiseptic. COMPOSITION: Each 100 ml. Contains: - Oxytetracycline 2.5 gm. - Gentian violet 400 mg. INDICATIONS: It is a broad spectrum antibiotic for c:la treatment of skin local infections around wounds, dermatitis & superficial teat and udder lesions. DOSAGE: - Spray 1 - 2 times daily. Away from 15 - 20 cm. (... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "732",
@@ -11735,7 +21287,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 0,
+            "concentration_value": 100,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
@@ -11831,7 +21383,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 33,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 100,
+            "concentration_value": 333,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
@@ -11854,7 +21406,49 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (El-Nasr)",
             "notes": "Category: Antibiotic (Macrolide). Properties: Macrolide antibiotic which has a particular action against Mycoplasma spp. And also effective against several species of Spirochaetes. Indications: Treatment of pneumonia, foot rot and metritis caused by Mycoplasma, Streptococcus & Staphylococcus spp. Dosage and Administration: Deep I/M ... | Ref: Cattle 10-20 mg/kg IM q12-24h. Pigs 8-10 mg/kg IM. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q24h (max 5 days)",
+                        "route": "IM (Meat w/d: 21d, Milk w/d: 4d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal clostridial enteritis)."
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12h (Tylosin-responsive enteropathy)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q12h",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water for CRD",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "740",
@@ -11863,14 +21457,40 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (Techno Pharm)",
             "notes": "Category: Antibiotic (Macrolide). Composition each 1 mL contains: - Tilmicosin 300 mg ( as sulphate ) Indications Indicated for treatment of Pneumonia in sheep and young cattle associated with Pasteurella haemolytica and P.multocida and other organisms sensitive to Tilmicosin, and for the treatment of ovine mastitis associated with ... | Ref: Ref: Plumb's 9th Ed. p. 1125.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC ONLY (⚠️ LETHAL IF GIVEN IV! Meat w/d: 42d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC ONLY (⚠️ LETHAL IV!)"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ FATAL in horses! Tilmicosin induces lethal cardiovascular collapse in equines."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs (cardiotoxic)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "741",
@@ -11879,14 +21499,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 15,
-            "concentration_value": 113.6,
+            "concentration_value": 13.6,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "1L Bottle (Atco pharma)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Composition Each 1ml contains: - 113.6mg albendazole. Indications Cattle: - adult liver flukes (Fasciola hepatica), heads and segments of tapeworms (Moniezia benedeni, M.expansa), - adult and 4th stage larvae of stomach worms including: brown stomach worm including 4th s... | Ref: Ruminants 5-15 mg/kg PO. Horses 5-10 mg/kg PO x 5 days. Merck Vet Manual.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "742",
@@ -11911,14 +21563,42 @@ window.DEFAULT_MEDICATIONS = [
             "species": "horse",
             "dose_mg_per_kg_min": 2.2,
             "dose_mg_per_kg_max": 4.4,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV",
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: NSAIDs. Composition Each 1ml contains: 200mg phenylbutazone. Indications and Usage Ponies and horses: musculoskeletal disorders such as tendinitis, arthritis, bursitis, and neuritis; visceral pains (colic); laminitis; luxations; and fractures. Dosage By slow I/V administration. - For active ingredient, 4.4m... | Ref: Horses 2.2-4.4 mg/kg IV/PO q24h. Cattle 10 mg/kg PO (rarely used). Plumb's. Do NOT use in cats.",
             "frequency": "q24h (horses), q48h (cattle)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h (taper after day 1)",
+                        "route": "IV or PO"
+                  },
+                  "cattle": {
+                        "min": 4.4,
+                        "max": 8.8,
+                        "freq": "q48h (beef only)",
+                        "route": "IV (Strictly prohibited in female dairy cattle >20mo)"
+                  },
+                  "dog": {
+                        "min": 7,
+                        "max": 7,
+                        "freq": "q8h",
+                        "route": "PO (max 800mg/day with food)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats due to high risk of severe toxicity and renal failure."
+                  },
+                  "poultry": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
+                  }
+            }
       },
       {
             "id": "744",
@@ -11927,7 +21607,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "poultry",
             "dose_mg_per_kg_min": 20,
             "dose_mg_per_kg_max": 20,
-            "concentration_value": 100,
+            "concentration_value": 25,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
@@ -11943,14 +21623,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 4,
             "dose_mg_per_kg_max": 4,
-            "concentration_value": 100,
+            "concentration_value": 152,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
             "unit_description": "50 ml vial (Atco pharma)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition Each 100 ml contains: - Gentamycin sulphate 15.2 gm (eq to 10 gm gentamycin base). Indications and Usage - Poultry: CRD and avian mycoplasmosis - Cattle, sheep, goats: respiratory infections; urinary tract infections; colisepticemia. - Horses, dogs, cats: sepsis; infected burns; respirat... | Ref: Ref: Plumb's 9th Ed. p. 504.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM (Meat w/d: 40d; extended in calves)"
+                  },
+                  "horse": {
+                        "min": 6.6,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  }
+            }
       },
       {
             "id": "746",
@@ -11966,7 +21684,49 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Techno Pharm)",
             "notes": "Category: Antibiotic (Macrolide). Composition each 1 mL contains: Tylosin Tartrate (200 mg) Indications: Treatment of pneumonia, foot rot and metritis caused by Mycoplasma, Streptococcus & Staphylococcus spp. Dosage and Administration: Deep I/M • Cattle, Buffaloes, Sheep & Goats: 1 ml/20 kg • Dog and cats: 0.5 ml/10 kg Withdral Peri... | Ref: Cattle 10-20 mg/kg IM q12-24h. Pigs 8-10 mg/kg IM. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q24h (max 5 days)",
+                        "route": "IM (Meat w/d: 21d, Milk w/d: 4d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal clostridial enteritis)."
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12h (Tylosin-responsive enteropathy)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q12h",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water for CRD",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "747",
@@ -11991,14 +21751,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 8,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "1L Bottle (Avico)",
             "notes": "Category: Anthelmintic. Composition: Each 1 ml contains: - Triclabendazole 50 mg - Levamisole hydrochloride 37.5 mg Properties - Our new product OVINEX contains two potent anthelmintic active ingredient, each of which has its own spectrum of activity that is integrated with the other, AVICO had proved to have all what make... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "749",
@@ -12007,7 +21801,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 50,
             "dose_mg_per_kg_max": 100,
-            "concentration_value": 186,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -12046,7 +21840,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Vetoquinol)",
             "notes": "Category: Antibiotic (Quinolone). COMPOSITION Each ml contains: - Marbofloxacin 160 mg - Benzy alcohol (E 1519) 15 mg INDICATIONS - Therapeutic treatment of respiratory infections in cattle caused by sensitive strains of Pasteurella multocida and Mannheimia haemolytica. - Treatment of acute mastitis caused by sensitive strains of Es... | Ref: Ref: Plumb's 9th Ed. p. 696.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2,
+                        "max": 8,
+                        "freq": "2 mg/kg q24h x 3-5d OR 8 mg/kg IM single dose",
+                        "route": "IM, SC or IV (Meat w/d: 6d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  },
+                  "cat": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  }
+            }
       },
       {
             "id": "752",
@@ -12055,14 +21881,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2,
             "dose_mg_per_kg_max": 3,
-            "concentration_value": 1.9,
+            "concentration_value": 100,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (Livisto (Invesa))",
             "notes": "Category: NSAIDs. Ainil ketoprofen (INN) is an injectable solution for Intravenous or intramuscular route for veterinary use only. Composition: - Ketoprofen 100 mg - Benzyl alcohol 10 mg - Excipient q.s. 1 ml Properties: - Non-steroidal antiinflammatory drug (NSAID), non-narcotic agent with analgesic and antipyretic ... | Ref: Horses 2.2 mg/kg IV q24h. Cattle 3 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h for 1-3 days",
+                        "route": "IV or deep IM (0-day milk withdrawal!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IV"
+                  },
+                  "sheep_goat": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "camel": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "dog": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 3-5 days)",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 1-2 days)",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "753",
@@ -12078,7 +21942,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: Antibiotic (Tetracycline). Composition Each 100 ml contain: - Oxytetracycline HCL 5.4 gm (eq to 5 gm oxytetracycline base) Indications Horses, cows, sheep, goats: actinobacillosis, shipping fever (Pasteurellosis), calf diphtheria, mastitis, metritis, pneumonia, wound infections, abscesses, foot rot, post-operative and postpar... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "754",
@@ -12094,7 +22002,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1 gm vial (Atco pharma)",
             "notes": "Category: Antibiotic (Cephalosporin). Composition Each vial contains: - Ceftiofur sodium 1.105 gm (eq.to 1.06 gm ceftiofur base). Properties: • Respifur is the trade name of ceftiofur sod. a semisynthetic 3rd generation cephlosporins • It has a broad range of activity against a variety of pathogens, including many species of Pasteurella... | Ref: Cattle 1-2.2 mg/kg SC/IM q24h. Horses 2.2 mg/kg IM q12-24h. Plumb's.",
             "frequency": "q24h SC/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IM or SC (0-DAY MILK WITHDRAWAL!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  }
+            }
       },
       {
             "id": "755",
@@ -12103,14 +22043,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 2,
             "dose_mg_per_kg_max": 5,
-            "concentration_value": 100,
+            "concentration_value": 20,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: Antibiotic (Quinolone). Composition Each 1 ml contains: - Marbofloxacin 20 mg Indications and Usage Pre-ruminant cattle, pigs, cats, dogs: for treatment of marbofloxacin sensitive infections including: bronchopneumonia due to mycoplasma spp., Pasteurella spp., and E. coli infections; urogenital infections due to Pasteurell... | Ref: Dogs 2-5 mg/kg PO q24h. Cats 2 mg/kg PO q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2,
+                        "max": 8,
+                        "freq": "2 mg/kg q24h x 3-5d OR 8 mg/kg IM single dose",
+                        "route": "IM, SC or IV (Meat w/d: 6d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  },
+                  "cat": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  }
+            }
       },
       {
             "id": "756",
@@ -12135,14 +22107,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 0.8,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "1L Bottle (Badr Pharma)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) A high-value product for the elimination of parasites in Ruminant. Active principle: 0.08% ivermectin. Dosage: To use at any age and during pregnancy. Administered by drinking in a dose of 2.5 ml / 10 kg. | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "758",
@@ -12151,14 +22161,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 8,
-            "concentration_value": 15,
+            "concentration_value": 75,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "1L Bottle (Badr Pharma)",
             "notes": "Category: Anthelmintic. Composition Each one ml : Levamisole 1.5% Oxyclozanide 3% Indication : In cattle, sheep, goats and camel For control of Fasciolosis (larval and adult stage) caused by Fasciola hepatica and F. gigantica; gastrointestinal parasitism caused by Haemonchus spp., Bunostomum spp., Oesophagostomum spp., coo... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "759",
@@ -12174,7 +22218,49 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Badr Pharma)",
             "notes": "Category: Antibiotic (Macrolide). Composition Each ml contains: - Tylosin 200 mg (eq to Tylosin tartarate 216.3 mg) Properties - Tylosin is a macrolide antibiotic which acts by inhibiting bacterial protein synthesis through binding to 50S ribosomal subunits. It has antibacterial spectrum that is essentially against Gram +ve bacteria... | Ref: Cattle 10-20 mg/kg IM q12-24h. Pigs 8-10 mg/kg IM. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q24h (max 5 days)",
+                        "route": "IM (Meat w/d: 21d, Milk w/d: 4d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal clostridial enteritis)."
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12h (Tylosin-responsive enteropathy)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q12h",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water for CRD",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "760",
@@ -12215,14 +22301,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (Badr Pharma)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each 1 ml contains Oxytetracycline base 50 mg. Indications: For the treatment of diseases caused by oxytetracycline susceptible organisms including: In Cattle: 1- treatment of pneumonia and shipping fever complex associated with Pasteurella spp and Hemophilus spp. 2- Bacterial enteritis... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "763",
@@ -12238,7 +22368,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Badr Pharma)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) COMPOSITION Each 1 ml contains: - Albendazole 100 mg INDICATIONS Albendazole is a broad spectrum anthelmintic used for treatment of worm infestation, it is highly effective against the following: - Gastrointestinal round nematodes (Bunostomum, Chabertia, Haemonchus, Oste... | Ref: Ruminants 5-15 mg/kg PO. Horses 5-10 mg/kg PO x 5 days. Merck Vet Manual.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "764",
@@ -12279,14 +22441,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 27.5,
             "dose_mg_per_kg_max": 27.5,
-            "concentration_value": 100,
+            "concentration_value": 500,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (CID Co.)",
             "notes": "Category: Analgesic, Antipyretic & Spasmolytic. Composition: Each 100 ml contains: - Metamizole 50 gm Properties: Novacid injection contains Metamizole will which is one of the pyrazolone derivatives that belongs to NSAIDS. They are powerful antipyretic, analgesic and anti-iniammatory compounds. Indications & usage: - In all cases associated with... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or deep IM"
+                  },
+                  "horse": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h (Spasmodic colic)",
+                        "route": "Slow IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q8-12h",
+                        "route": "SC, IM or IV"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12-24h (use with caution)",
+                        "route": "SC"
+                  }
+            }
       },
       {
             "id": "767",
@@ -12302,7 +22502,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Medmac)",
             "notes": "Category: Anthelmintic. Composition Each 1 ml contains: - Oxyclozanide 30 mg - Levamisole HCL 15 mg Properties: • Zanidpro is the combination of levamisole HCI and oxyclozanide, it is a broad spectrum anthelmintic for use in the treatment and control of both gastro-intestinal and pulmonary nematodes and adult liver fluke i... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "768",
@@ -12318,7 +22552,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: NSAIDs. Composition: Each 1 ml contains - Meloxicam 20 mg Properties: - MELOXICAM Non-steroidal, anti-inflammatory, which acts by inhibition of prostaglandin synthesis to give the anti inflammatory, analgesic, antiexudative and antipyretic effect. - MELOXICAM also have anti-endotoxic properties as it inhibi... | Ref: Cattle 0.5 mg/kg IV/SC. Horses 0.6 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV (Meat w/d: 15d, Milk w/d: 5d)"
+                  },
+                  "horse": {
+                        "min": 0.6,
+                        "max": 0.6,
+                        "freq": "q24h",
+                        "route": "IV or PO"
+                  },
+                  "sheep_goat": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV"
+                  },
+                  "dog": {
+                        "min": 0.1,
+                        "max": 0.2,
+                        "freq": "0.2 mg/kg day 1, then 0.1 mg/kg q24h",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.1,
+                        "freq": "0.1-0.2 mg/kg single SC dose, or 0.05 mg/kg PO q24-48h",
+                        "route": "SC or PO"
+                  },
+                  "poultry": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "q12-24h",
+                        "route": "PO or IM"
+                  }
+            }
       },
       {
             "id": "769",
@@ -12327,14 +22605,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 12.5,
-            "concentration_value": 100,
+            "concentration_value": 340,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Eipivet)",
             "notes": "Category: Anthelmintic. Anthelmintic (Halogenated Phenol) Composition Each 1 ml contains: Nitroxinil 340 mg. Properties: Nitroxinil is a fasciolicide which is effective against Fasciola hepatica infestations and has some activity against gastrointestinal nematodes in cattle and sheep. Nitroxinil acts as an uncoupler of oxi... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "770",
@@ -12350,7 +22660,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (VIG Co.)",
             "notes": "Category: Anthelmintic. Nematocure Broad spectrum anthelmintic Composition: Each 1 ml contains: - Levamisole Hydrochloride 30 mg - Oxyclozanide 60 mg Indications - Parasitic gastro-enteritis caused by Trichostrongylus, ostertagia spp, Nematoduins spp, Bunostomium spp, Oesophagostomum. - Parasitic bronchitis caused by Dicty... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "771",
@@ -12375,14 +22719,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "poultry",
             "dose_mg_per_kg_min": 20,
             "dose_mg_per_kg_max": 20,
-            "concentration_value": 100,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "100 ml vial (Ghannam)",
             "notes": "Category: Antibiotic (Phenicol). Composition: Each 1 mL contain: - Florfenicol 300 mg Activity: florfenicol is a bacteriostatic synthetic broad-spectrum antibiotic effective against most Gram positive and Gram negative bacteria isolated form domestic animals. Indication: In Cattle and Poultry Bioflor is indicated in diseases caused... | Ref: Ref: Plumb's 9th Ed. p. 473.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h (2 doses) OR 40 mg/kg SC single dose",
+                        "route": "IM or SC (⚠️ NEVER GIVE IV. Prohibited in lactating dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h or 40 mg/kg SC once",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h",
+                        "route": "IM or SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal acute colitis and dysbiosis)."
+                  },
+                  "dog": {
+                        "min": 20,
+                        "max": 30,
+                        "freq": "q12-24h (refractory cases)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 20,
+                        "max": 25,
+                        "freq": "q12-24h",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "773",
@@ -12407,7 +22787,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 7,
             "dose_mg_per_kg_max": 15,
-            "concentration_value": 229.6,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -12430,7 +22810,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Livisto (Invesa))",
             "notes": "Category: Antibiotic (Quinolone). Composition: Each 1 ml contains - Marbofloxacin 100 mg Indications: • Cattle: - Treatment of respiratory tract infections caused by strains of Histophilus somni, Mannheimia haemolytica, Mycoplasma bovis, Pasteurella multocida are sensitive to marbofloxacin. - Treatment of acute mastitis caused by E.... | Ref: Cattle 2-5 mg/kg SC q24h. Plumb's.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2,
+                        "max": 8,
+                        "freq": "2 mg/kg q24h x 3-5d OR 8 mg/kg IM single dose",
+                        "route": "IM, SC or IV (Meat w/d: 6d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  },
+                  "cat": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  }
+            }
       },
       {
             "id": "776",
@@ -12455,7 +22867,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 15,
             "dose_mg_per_kg_max": 24,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
@@ -12478,7 +22890,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Zoetis)",
             "notes": "Category: Antibiotic (Macrolide) + NSAIDs. Composition: Each ml contains: - Tulathromycin 100 mg - Ketoprofen 120 mg Excipients: Monothioglycerol 5 mg Indications: Treatment of bovine respiratory disease (BRD) in Cattle associated with pyrexia due to Mannheimia haemolytica, Pasteurella multocida, Histophilus somni and Mycoplasma bovis suscep... | Ref: Horses 2.2 mg/kg IV q24h. Cattle 3 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h for 1-3 days",
+                        "route": "IV or deep IM (0-day milk withdrawal!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IV"
+                  },
+                  "sheep_goat": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "camel": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "dog": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 3-5 days)",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 1-2 days)",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "779",
@@ -12487,14 +22937,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 12.5,
-            "concentration_value": 100,
+            "concentration_value": 250,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Taba medical pharma)",
             "notes": "Category: Anthelmintic. Anthelmintic (Halogenated Phenol) COMPOSITION: Each 100 ml contains: Nitroxynel 25 gm INDICATIONS: – Distomatosis caused by ( mature fasciola hepatica and fasciola gigantica) Nematodosis caused by heamonchus. - Oesophagostomum - Bunostomum in cattle, sheep and goats. - Oestrus ovis in sheep and came... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "780",
@@ -12503,14 +22985,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 215,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "30 ml vial (N/A)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each 100 ml contains - Oxytetracycline Dihydrate 21.5 gm (eq to Oxytetracycline base 20 gm) Indications: For the treatment of diseases caused by oxytetracycline susceptible organisms including: In Cattle: 1- treatment of pneumonia and shipping fever complex associated with Pasteurella s... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "781",
@@ -12526,7 +23052,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Eva pharma)",
             "notes": "Category: NSAIDs. COMPOSITION: Each 1 ml contains: - Ketoprofen 60 mg PROPERTIES: Ketoprofen is a derivative of phenylpropionic acid, and belongs to the non-steroidal anti-inflammatory drugs. Like all such substances, its principal pharmacological actions are anti-inflammatory, analgesic and anti-pyretic. The mechani... | Ref: Horses 2.2 mg/kg IV q24h. Cattle 3 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h for 1-3 days",
+                        "route": "IV or deep IM (0-day milk withdrawal!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IV"
+                  },
+                  "sheep_goat": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "camel": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "dog": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 3-5 days)",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 1-2 days)",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "782",
@@ -12535,7 +23099,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 16,
             "dose_mg_per_kg_max": 16,
-            "concentration_value": 40,
+            "concentration_value": 240,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -12551,14 +23115,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 7.5,
             "dose_mg_per_kg_max": 15,
-            "concentration_value": 100,
+            "concentration_value": 75,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (Drugest)",
             "notes": "Category: Anthelmintic. Anthelmintic (Salicylanilide) Composition:- - Rafoxanide 7.5 gm / 100 ml Indications: Cattle , sheep & goat: - Highly effective for treatment and control of adult and immature liver flukes ( fasciola hepatica and fasciola gigantica ). - All stages of adult and immature round worms(Haemonchus contort... | Ref: Cattle 7.5-15 mg/kg PO; Sheep 7.5-15 mg/kg PO. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO or SC (Meat w/d: 28d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose (Fasciola & nasal bots)",
+                        "route": "PO or SC"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "784",
@@ -12567,14 +23163,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 5,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Norbrook)",
             "notes": "Category: Anthelmintic. Closamectin Injection for Cattle and Sheep contains ivermectin and closantel and provides advanced fluke, worm and external parasite control in one convenient injection for both cattle and sheep. Cattle- treats liver fluke, gastrointestinal worms, lungworms, eyeworms, cattle grubs, mites and lice. S... | Ref: Cattle/Sheep 5-10 mg/kg PO or 5 mg/kg SC. Merck Vet Manual.",
             "frequency": "single dose (repeat in 6-8 weeks)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "785",
@@ -12590,7 +23224,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (UCCMA - Ghannam)",
             "notes": "Category: Antibiotic (Tetracycline). Composition Each 100 ml contain: - 5 gm oxytetracycline base. Indications Horses, cows, sheep, goats: actinobacillosis, shipping fever (Pasteurellosis), calf diphtheria, mastitis, metritis, pneumonia, wound infections, abscesses, foot rot, post-operative and postpartum infection and anaplasmosis. Do... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "786",
@@ -12631,14 +23309,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 12.5,
-            "concentration_value": 100,
+            "concentration_value": 250,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (UCCMA - Ghannam)",
             "notes": "Category: Anthelmintic. Anthelmintic (Halogenated Phenol) COMPOSITION: Each 100 ml contains: Nitroxynel 25 gm INDICATIONS: – Distomatosis caused by ( mature fasciola hepatica and fasciola gigantica) Nematodosis caused by heamonchus. - Oesophagostomum - Bunostomum in cattle, sheep and goats. - Oestrus ovis in sheep and came... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "789",
@@ -12670,7 +23380,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (N/A)",
             "notes": "Category: NSAIDs. Composition: Each 1 ml contains - Flunixin meglumine 50 mg Properties: - Flunixin (as meglumine) demonstrates potent inhibition of the cyclo-oxygenase system (COX). The enzyme converts arachidonic acid to unstable cyclicendo peroxides, which are converted to prostaglandins, prostacyclin and thrombox... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "791",
@@ -12679,14 +23425,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (Mobedco)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition: Each 1 ml contains: - Ivermectin 10 mg Properties: - Ivermectin is derived from the Avermectins, a family of highly active broad spectrum antiparasitic agents which are isolated from fermentation of the so organism Streptomyces Avermitilis. - It effectively tre... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "792",
@@ -12695,14 +23479,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 2,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (Eva pharma)",
             "notes": "Category: Anthelmintic. COMPOSITION: Each 100 ml contains: Active substances: - Ivermectin 1 gm - Clorsulon 10 gm PROPERTIES: Pharmacotherapeutic Group: Endectocides, ivermectin combinations. » Ivermectin: Ivermectin is a member of the macrocyclic lactone class of endectocides which have a unique mode of action. Compounds ... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "793",
@@ -12734,7 +23556,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Eva pharma)",
             "notes": "Category: Antibiotic (Tetracycline) + NSAIDs. Composition Each 1 ml contains: - Oxytetracycline hydrochloride 100 mg - Flunixin Meglumine 20 mg • Flunitetrine provides Oxytetracycline is a long-acting wide spectrum antibiotic, High potent NSAID and strong anti-endotoxic effect of Flunixin. • Combination therapy in a single injection which provi... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "795",
@@ -12750,7 +23608,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (VIG Co.)",
             "notes": "Category: Anthelmintic. Hepatrimed Oral Suspension COMPOSITION: Each 1 ml contains: - Triclabendazole 50 mg - Ivermectin 1 mg INDICATIONS: Hepatrimed is highly effective against: - Adult, immature and larval stages. - Adult, Immature and nematodes stages as ( Ostetagia, Haemonchus trichostrongylus, Cooperia, Oesophagostomu... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "796",
@@ -12759,14 +23655,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (Arabcomed)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Indications: Cattle and buffalo: Gastrointestinal and Lung Worm, Cattle Grubs, Mites and Lice and It also aids in the control of cattle ticks Sheep and Goats: GIT round worms, Lung worms & Nasal Bots. Dosage and Administration: S/C only • Cattle, Buffaloes, Sheep, Goat and ... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "797",
@@ -12782,7 +23716,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml Bottle (Pharma swede)",
             "notes": "Category: Anthelmintic. Composition: Each 1ml contains: - Levamisole hydrochloride 30 mg. - Oxyclozanide 60 mg. Properties: - Levafluke suspension is a broad spectrum anthelmintic combination contains levamisole hydrochloride as antinematoda and oxyclozanide as a fasciolicide in suspension form. - Levamisole is the l isome... | Ref: Ref: Plumb's 9th Ed. p. 660.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "798",
@@ -12791,14 +23759,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 12.5,
-            "concentration_value": 100,
+            "concentration_value": 250,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (DBK Co.)",
             "notes": "Category: Anthelmintic. Anthelmintic (Halogenated Phenol) COMPOSITION: Each 100 ml contains: Nitroxynel 25 gm INDICATIONS: – Distomatosis caused by ( mature fasciola hepatica and fasciola gigantica) Nematodosis caused by heamonchus. - Oesophagostomum - Bunostomum in cattle, sheep and goats. - Oestrus ovis in sheep and came... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "799",
@@ -12807,14 +23807,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 25,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
             "unit_description": "100 ml vial (Eva pharma)",
             "notes": "Category: NSAIDs. COMPOSITION: Each 100 ml contains: - Diclofenac sodium 2.5 gm (Equ. to Diclofenac base 2.3 gm) PROPERTIES: Diclofenac is a non steroidal Anti-inflammatory drug (NSAID) with anti-inflammatory, analgesic and antipyretic activity. It acts on the metabolism of arachidonic acid by inhibiting the enzyme. ... | Ref: Cattle 1 mg/kg IM q24h. Dogs/Cats 1-2 mg/kg PO q12h. Merck Vet Manual. | Ref: Cattle 1 mg/kg IM q24h. Merck Vet Manual.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h (1-3 days)",
+                        "route": "Deep IM (Meat w/d: 28d)"
+                  },
+                  "horse": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ NOT recommended in dogs (high incidence of severe gastrointestinal perforation)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats."
+                  }
+            }
       },
       {
             "id": "800",
@@ -12823,14 +23857,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.1,
             "dose_mg_per_kg_max": 2.2,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (DFV Co.)",
             "notes": "Category: NSAIDs. COMPOSITION: - Flunixin (meglumine) 50 mg - Excipient q.s. 1 ml FEATURES: Non steroideal, anti-inflammatory drug (NSAID), with antipyretic and analgesic activity non narcotic. Acts by inhibiting the prostaglandins synthesis blocking the ciclooxigenase. Its action is directly upon de CNS, decreasing ... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "801",
@@ -12855,14 +23925,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 15,
-            "concentration_value": 100,
+            "concentration_value": 25,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "1L Bottle (UCCMA - Ghannam)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Composition: Each 1 ml contains: Albendazole 25 mg. Indications : Albendazole is a broad spectrum anthelmentic used for treatment of worm infestations in all ruminants. Dose: Cattle: 15 ml / 50 kg. Sheep & Goats: 2 ml / 10 kg. Warnings: - Not to be used in lactating anim... | Ref: Ruminants 5-15 mg/kg PO. Horses 5-10 mg/kg PO x 5 days. Merck Vet Manual.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "803",
@@ -12935,14 +24037,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 20,
             "dose_mg_per_kg_max": 40,
-            "concentration_value": 100,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: Antibiotic (Phenicol). Composition Each ml contains: Florfenicol 300 mg Properties : Florfenicol is a broad spectrum antibiotic that has activity against many bacteria such as Pasteurella multocida, Pasteurella haemolytica, Haemophilus somnus and Mycoplasma bovis. It acts by binding to the 50S ribosome, thereby inhibiting... | Ref: Cattle 20 mg/kg IM q48h or 40 mg/kg SC (long-acting). Plumb's.",
             "frequency": "q48h IM or q24h SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h (2 doses) OR 40 mg/kg SC single dose",
+                        "route": "IM or SC (⚠️ NEVER GIVE IV. Prohibited in lactating dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h or 40 mg/kg SC once",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h",
+                        "route": "IM or SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal acute colitis and dysbiosis)."
+                  },
+                  "dog": {
+                        "min": 20,
+                        "max": 30,
+                        "freq": "q12-24h (refractory cases)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 20,
+                        "max": 25,
+                        "freq": "q12-24h",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "808",
@@ -12958,7 +24096,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Avico)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Composition: Each 1 ml contains: - Albendazole 25 mg. Indications : Albendazole is a broad spectrum anthelmentic used for treatment of worm infestations in all ruminants. Dose: - Orally as a single dose. Cattle: - For Roundworms and Tapeworms: 1.5 ml / 5 kg. - For Adult ... | Ref: Ruminants 5-15 mg/kg PO. Horses 5-10 mg/kg PO x 5 days. Merck Vet Manual.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "809",
@@ -12990,7 +24160,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (N/A)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Composition: Each 1 ml contains: - Albendazole 25 mg. Indications : Albendazole is a broad spectrum anthelmentic used for treatment of worm infestations in all ruminants. Dose: - Orally as a single dose. Cattle: - For Roundworms and Tapeworms: 1.5 ml / 5 kg. - For Adult ... | Ref: Ruminants 5-15 mg/kg PO. Horses 5-10 mg/kg PO x 5 days. Merck Vet Manual.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "811",
@@ -13006,7 +24208,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Eipivet)",
             "notes": "Category: Anthelmintic. Composition Each 1 ml contains : Triclabendazole 50 mg. Ivermectin 1 mg. Indications: • Eradicates Internal parasites such as liver flukes as Fasciola (in case of early immature, immature and mature Fasciola stages), gastro-intestinal round worms , lung worms, tissue invading flays larvae . • Eradic... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "812",
@@ -13015,14 +24255,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 10,
+            "concentration_value": 250,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Allam Co.)",
             "notes": "Category: Anthelmintic. Pionix Injectable Solution For vet. use only Composition: Each 100 ml contains: - Nitroxynil 25 gm Properties: - Nitroxynil in sheep and cattle are very similar. After subcutaneous injection of a single dose of 10 mg / kg peak plasma levels of 83.6 g / ml are achieved at 9.3 hours in sheep, and plas... | Ref: Ref: NOAH Compendium.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "813",
@@ -13054,7 +24326,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml vial (Bimeda Co.)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition: Ivermectin 1% w/v solution. Indications: • Control of mature and immature round worms as well as lung worms affecting Sheep, Goats , Cows, Buffaloes and Camels. • It also controls nasal bot, cattle grubs, mites, tick and lice that affect different animal specie... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "815",
@@ -13086,7 +24396,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "30 ml vial (Pharma swede)",
             "notes": "Category: NSAIDs. Composition: Each 1 ml contains 20 mg Meloxicam Properties: - MELOXICAM Non-steroidal, anti-inflammatory, which acts by inhibition of prostaglandin synthesis to give the anti inflammatory, analgesic, antiexudative and antipyretic effect. - MELOXICAM also have anti-endotoxic properties as it inhibit ... | Ref: Cattle 0.5 mg/kg IV/SC. Horses 0.6 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV (Meat w/d: 15d, Milk w/d: 5d)"
+                  },
+                  "horse": {
+                        "min": 0.6,
+                        "max": 0.6,
+                        "freq": "q24h",
+                        "route": "IV or PO"
+                  },
+                  "sheep_goat": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV"
+                  },
+                  "dog": {
+                        "min": 0.1,
+                        "max": 0.2,
+                        "freq": "0.2 mg/kg day 1, then 0.1 mg/kg q24h",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.1,
+                        "freq": "0.1-0.2 mg/kg single SC dose, or 0.05 mg/kg PO q24-48h",
+                        "route": "SC or PO"
+                  },
+                  "poultry": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "q12-24h",
+                        "route": "PO or IM"
+                  }
+            }
       },
       {
             "id": "817",
@@ -13118,7 +24472,49 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Antibiotic (Macrolide). Composition Each 100 ml contains - Tylosin tartrate 21.6 gm (eq to Tylosin base 20 gm) Properties - Tylosin is a macrolide antibiotic produced by a strain of Streptomyces fradiae. - It exerts its antimicrobial effect by inhibiting protein synthesis by binds to 50 S ribosome of susceptible micro-orga... | Ref: Cattle 10-20 mg/kg IM q12-24h. Pigs 8-10 mg/kg IM. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q24h (max 5 days)",
+                        "route": "IM (Meat w/d: 21d, Milk w/d: 4d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal clostridial enteritis)."
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12h (Tylosin-responsive enteropathy)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q12h",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water for CRD",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "819",
@@ -13166,7 +24562,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (N/A)",
             "notes": "Category: NSAIDs. Composition: Each 1 ml contains: - Ketoprofen 100 mg Indications: • Analgesic & reduction of inflammation of muscle skeletal disorders, Lamness, Postpartum • Antipyretic effect with rapid onset of action • Reduction of inflammation of acute mastitis Dosage and route of administration: - Cattle: 3 ml... | Ref: Horses 2.2 mg/kg IV q24h. Cattle 3 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h for 1-3 days",
+                        "route": "IV or deep IM (0-day milk withdrawal!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IV"
+                  },
+                  "sheep_goat": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "camel": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "dog": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 3-5 days)",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 1-2 days)",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "822",
@@ -13182,7 +24616,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Zoetis)",
             "notes": "Category: Antibiotic (3rd Gen Cephalosporin). Advanced veterinary cephalosporin with excellent Gram-negative and Gram-positive efficacy. Indications: Bovine Respiratory Disease, Acute interdigital necrobacillosis (Foot rot), and Acute post-partum metritis. Dosage: Cattle/Swine 1.1-2.2 mg/kg IM/SC q24h for 3-5 days. Advantage: 0-day milk withdrawal in dairy cattle! Meat withdrawal: 4 days. Ref: Plumb's 9th Ed. p. 202.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IM or SC (0-DAY MILK WITHDRAWAL!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  }
+            }
       },
       {
             "id": "823",
@@ -13198,7 +24664,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Arab Caps)",
             "notes": "Category: NSAIDs. Composition Each 1 ml contains: - Flunixin Meglumine 82.88 mg (eq to Flunixin 50 mg) Properties - Flunixin Meglumine is a non-steroidal anti-inflammatory drug. It has analgesic, Anti-inflammatory and antipyretic activity. - Flunixin Meglumine acts by interfering with the arachidonic acid pathway of ... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "824",
@@ -13255,14 +24757,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 25,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 100,
+            "concentration_value": 500,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (Memphis)",
             "notes": "Category: Analgesic, Antipyretic & Spasmolytic. COMPOSITION: Each 1 ml contains - Dipyrone 500 mg PROPERTIES ANALGIN has analgesic, antipyretic, it has a central analgesic and at the same time a marked sedative action on animals, the spasmolytic effect on smooth muscles achieved by combining the centrally analgesic component with an action that b... | Ref: Cattle/Horses 25-50 mg/kg IV/IM q8-12h. Dogs/Cats 25-50 mg/kg IM/SC q8h. Plumb's.",
             "frequency": "q8-12h IM/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or deep IM"
+                  },
+                  "horse": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h (Spasmodic colic)",
+                        "route": "Slow IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q8-12h",
+                        "route": "SC, IM or IV"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12-24h (use with caution)",
+                        "route": "SC"
+                  }
+            }
       },
       {
             "id": "828",
@@ -13287,14 +24827,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 6.6,
             "dose_mg_per_kg_max": 6.6,
-            "concentration_value": 100,
+            "concentration_value": 60.2,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (Memphis)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition: Each 1 ml contains: - Gentamicin sulphate 60.2 mg (eq to Gentamicin base 50 mg) Properties: Gentamicin: is parenteral aminoglycoside Antibiotic, its main activity is against Gm –Ve bacteria such as : (Klebsiella spp. , Pseudomonas aeruginosa , E.coli , Salmonella spp. , Bordetella bronc... | Ref: Cattle/Horses 6.6 mg/kg IM/IV q24h. Neonates 6 mg/kg IV. Plumb's.",
             "frequency": "q24h IM/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM (Meat w/d: 40d; extended in calves)"
+                  },
+                  "horse": {
+                        "min": 6.6,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  }
+            }
       },
       {
             "id": "830",
@@ -13310,7 +24888,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Memphis)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition: Each 1 ml contains: - Gentamicin (as sulphate) 100 mg Properties: - Garavet 10% is an aminoglycoside that is active against most gram negative and gram positive bacteria isolated from domestic animals. - Gentamicin is active against Pseudomonas aeruginosa, indole positive and negative P... | Ref: Ref: Plumb's 9th Ed. p. 504.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM (Meat w/d: 40d; extended in calves)"
+                  },
+                  "horse": {
+                        "min": 6.6,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  }
+            }
       },
       {
             "id": "831",
@@ -13326,7 +24942,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Avico)",
             "notes": "Category: Anthelmintic. Anthelmintic (Salicylanilide) Composition: Each 1 ml contains: - Rafoxanide 25 mg Properties - Rafoxanide is a fasciolicide drug, which has a potent activity against adult liver flukes as Fasciola hepatica and Fasciola gigantica. - It also has respectable efficacy against immature fluke. - Rafoxanid... | Ref: Cattle 7.5-15 mg/kg PO; Sheep 7.5-15 mg/kg PO. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO or SC (Meat w/d: 28d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose (Fasciola & nasal bots)",
+                        "route": "PO or SC"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "832",
@@ -13342,7 +24990,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (UCCMA - Ghannam)",
             "notes": "Category: Analgesic, Antipyretic & Spasmolytic. Composition: Each 100 ml contain - Dipyrone 50 gm (1-pheny! 1,2,3 dimethyl, 5 pyrazolone,4-metnyl aminomethane sulphonate sodium) - Analgin is a potent analgesic antipyretic and antirheumatic agent with marked sedative and spasmolytic properties on animals. - The spasmolytic effect of analgin on smo... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or deep IM"
+                  },
+                  "horse": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h (Spasmodic colic)",
+                        "route": "Slow IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q8-12h",
+                        "route": "SC, IM or IV"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12-24h (use with caution)",
+                        "route": "SC"
+                  }
+            }
       },
       {
             "id": "833",
@@ -13374,7 +25060,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (N/A)",
             "notes": "Category: Antibiotic (Tetracycline). Indications: • Treatment of bacterial enteritis • Prevention & treatment of various uterine infections due to retention of placental membranes. • Treatment of various systemic bacterial infections Dosage: Use a suitable balling gun for administration per os: 1 tablet / 20 – 45 kg B.wt For uterine in... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "835",
@@ -13399,14 +25129,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2,
             "dose_mg_per_kg_max": 2,
-            "concentration_value": 2,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "50 ml vial (Arabcomed)",
             "notes": "Category: Anthelmintic. Composition: Each 100 ml contains: - Ivermectin 1 gm - Cloruslon 10 gm Properties: - Ivermectin is a broad-spectrum endectocide of the avermectin family. - Ivermectin has a broad and potent antiparasitic activity against nematodes and arthropods. - It acts by inhibiting nerve impulses. Ivermectin bi... | Ref: Ref: Plumb's 9th Ed. p. 636.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "837",
@@ -13415,14 +25183,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
             "unit_description": "100 ml vial (Pero vet Co.)",
             "notes": "Category: NSAIDs. Composition: Each 100 ml contains - Diclofenac Na 5 gm - Paracetamol 15 gm Properties - Diclofenac is a nonsteroidal anti-inflammatory drug (NSAID) taken to reduce inflammation and as an anti-pyretic and analgesic reducing pain in certain conditions. - Paracetamol is centerally acting NSAID (COX 3 i... | Ref: Cattle 1 mg/kg IM q24h. Dogs/Cats 1-2 mg/kg PO q12h. Merck Vet Manual. | Ref: Cattle 1 mg/kg IM q24h. Merck Vet Manual.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h (1-3 days)",
+                        "route": "Deep IM (Meat w/d: 28d)"
+                  },
+                  "horse": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ NOT recommended in dogs (high incidence of severe gastrointestinal perforation)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats."
+                  }
+            }
       },
       {
             "id": "838",
@@ -13431,14 +25233,42 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2.2,
             "dose_mg_per_kg_max": 4.4,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV",
             "unit_description": "100 ml vial (DFV Co.)",
             "notes": "Category: NSAIDs + SAIDs. COMPOSITION: - Phenylbutazone 200 mg - Dexamethasone 0.25 mg - Excipient q.s. 1 ml DESCRIPTION: Analgesic, anti-inflammatory and anti-pyretic effect, derived from pyrazolone, indicated in the treatment of locomotor system diseases. INDICATIONS: Treatment of primary locomotor system diseases. Coadjut... | Ref: Horses 2.2-4.4 mg/kg IV/PO q24h. Cattle 10 mg/kg PO (rarely used). Plumb's. Do NOT use in cats.",
             "frequency": "q24h (horses), q48h (cattle)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h (taper after day 1)",
+                        "route": "IV or PO"
+                  },
+                  "cattle": {
+                        "min": 4.4,
+                        "max": 8.8,
+                        "freq": "q48h (beef only)",
+                        "route": "IV (Strictly prohibited in female dairy cattle >20mo)"
+                  },
+                  "dog": {
+                        "min": 7,
+                        "max": 7,
+                        "freq": "q8h",
+                        "route": "PO (max 800mg/day with food)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats due to high risk of severe toxicity and renal failure."
+                  },
+                  "poultry": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
+                  }
+            }
       },
       {
             "id": "839",
@@ -13470,7 +25300,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Avico)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Composition Each 1 ml contains: - Albendazole 125 mg Properties - very effective anthelmintic which acts by preventing worms from utilizing glucose. - Glucose is not absorbed and the parasite's glycogen become depleted and the worms are not able to synthesize Adenosine t... | Ref: Ref: Plumb's 9th Ed. p. 26.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "841",
@@ -13486,7 +25348,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Oral Paste (Bimeda Co.)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Bimectin Oral Paste with 1.87mg/g of ivemectin is an excellent option for the treatment of nematode or arthropod infestations in horses sensitive to ivermectin. The calibrated syringe allows accurate dosing and the gel formulation facilitates absorption. What’s more, the Bi... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "842",
@@ -13566,7 +25466,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Avico)",
             "notes": "Category: Anthelmintic. Anthelmintic (Salicylanilide) Composition: Each 1 ml contains: - Rafoxanide 25 mg Properties - Rafoxanide is a fasciolicide drug, which has a potent activity against adult liver flukes as Fasciola hepatica and Fasciola gigantica. - It also has respectable efficacy against immature fluke. - Rafoxanid... | Ref: Cattle 7.5-15 mg/kg PO; Sheep 7.5-15 mg/kg PO. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO or SC (Meat w/d: 28d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose (Fasciola & nasal bots)",
+                        "route": "PO or SC"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "847",
@@ -13598,7 +25530,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Vetoquinol)",
             "notes": "Category: Corticosteroid (Glucocorticoid). Long-acting, potent glucocorticoid with 30x the anti-inflammatory potency of cortisol. Indications: Ketosis in dairy cattle, acute hypersensitivity/anaphylaxis, inflammatory musculoskeletal conditions, and induction of parturition. Dosage: Cattle/Horses 0.02-0.1 mg/kg IV/IM; Dogs/Cats 0.05-0.2 mg/kg IV/IM/SC. ⚠️ WARNING: Induces abortion in pregnant ruminants during last trimester! Withdrawal: Meat 8 days, Milk 72 hours. Ref: Plumb's 9th Ed. p. 347.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose / q24h",
+                        "route": "IV or IM (⚠️ Induces abortion in late pregnancy!)"
+                  },
+                  "horse": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose",
+                        "route": "IM (⚠️ Induces abortion!)"
+                  },
+                  "camel": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  }
+            }
       },
       {
             "id": "849",
@@ -13607,14 +25577,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 20,
             "dose_mg_per_kg_max": 20,
-            "concentration_value": 20,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "100 ml vial (Allam Co.)",
             "notes": "Category: Antibiotic (Phenicol). Composition: Each 100 ml contains: - Florfenicol 30 gm Properties: - Florfenicol is a thiamphenicol derivative with same mechanism of action as chloramphenicol (inhibition of protein synthesis). However, it is more active than either chloramphenicol or thiamphenicol. - Florfenicol has a broad spectr... | Ref: Ref: Plumb's 9th Ed. p. 473.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h (2 doses) OR 40 mg/kg SC single dose",
+                        "route": "IM or SC (⚠️ NEVER GIVE IV. Prohibited in lactating dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h or 40 mg/kg SC once",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h",
+                        "route": "IM or SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal acute colitis and dysbiosis)."
+                  },
+                  "dog": {
+                        "min": 20,
+                        "max": 30,
+                        "freq": "q12-24h (refractory cases)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 20,
+                        "max": 25,
+                        "freq": "q12-24h",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "850",
@@ -13623,14 +25629,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (Allam Co.)",
             "notes": "Category: Anthelmintic. Composition: Each ml contains: - Ivermactin 1 mg - Clorsulon 10 mg Indication: Clormectine inj is an Endectocide used for elimination of external parasites and internal parasites in Cattle and sheep. A) Major internal parasites: - Live flukes: Mature and immature ( Fasciola hepatica and Fasciola gig... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "851",
@@ -13646,7 +25690,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Delta Pharma)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) DELTAZOLE 10% contains: Albendazole 100 mg / ml Indications : DELTAZOLE 10% is used in cattle, sheep and goat for control & treatment of gastro-intestinal round worms, lung worms, tape worms and adult liver flukes infestation. Dosage: - Cattle: 10 ml / 100 kg by oral dre... | Ref: Ruminants 5-15 mg/kg PO. Horses 5-10 mg/kg PO x 5 days. Merck Vet Manual.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "852",
@@ -13655,7 +25731,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 100,
+            "concentration_value": 3,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
@@ -13689,14 +25765,56 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 20,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
             "unit_description": "100 ml vial (VMD Pharma)",
             "notes": "Category: Antibiotic (Macrolide). Composition: Each 1 ml solution contains: - Tylosin base (as tartrate) 200 mg Species: cattle Indications: • Bovine respiratory complex (shipping fever, pneumonia) usually associated with Pasteurella multocida, Fusobacterium, Mycoplasma and Actinomyces pyogenes. • Foot rot (necrotic pododermatitis) ... | Ref: Cattle 10-20 mg/kg IM q12-24h. Pigs 8-10 mg/kg IM. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q24h (max 5 days)",
+                        "route": "IM (Meat w/d: 21d, Milk w/d: 4d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal clostridial enteritis)."
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12h (Tylosin-responsive enteropathy)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q12h",
+                        "route": "PO"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water for CRD",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "855",
@@ -13705,14 +25823,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 9,
             "dose_mg_per_kg_max": 14,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (VMD Pharma)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition: Each 1 ml contains: - Gentamicin base (as sulphate) 50 mg Species: cattle, sheep, goat, horse, cat and dog. Indications: - Infections caused by micro-organisms susceptible to gentamycin, in case of urogenital, respiratory, tissue, skin, uterus and gastro-intestinal infections in horse, ... | Ref: Dogs/Cats 9-14 mg/kg IV/IM q24h (once-daily dosing). Monitor renal function. Plumb's.",
             "frequency": "q24h IV/IM/SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM (Meat w/d: 40d; extended in calves)"
+                  },
+                  "horse": {
+                        "min": 6.6,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  }
+            }
       },
       {
             "id": "856",
@@ -13728,7 +25884,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Al Madina)",
             "notes": "Category: Analgesic, Antipyretic & Spasmolytic. Composition: Each 1 ml contains - Dipyrone 500 mg Properties - Dipyrone, like other non-steroidal anti-inflammatory drugs, acts by inhibiting cyclo-oxygenase mediated production of prostaglandins. - It has analgesic, antipyretic and slight anti-inflammatory properties and reportedly has antispasmodi... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or deep IM"
+                  },
+                  "horse": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h (Spasmodic colic)",
+                        "route": "Slow IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q8-12h",
+                        "route": "SC, IM or IV"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12-24h (use with caution)",
+                        "route": "SC"
+                  }
+            }
       },
       {
             "id": "857",
@@ -13760,7 +25954,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1 gm vial (Primavet)",
             "notes": "Category: Antibiotic (Cephalosporin). Composition: Each vial contains: - Ceftiofur sodium 1.042 mg (ceftiofur base 1 gm) Indication: - Cattle: for treatment of Bovine Respiratory Disease (Shipping fever, Pneumonia) associated with Mannheimia haemolytica, Pasteurella multocida and Histophilus somni. It is also indicated for treatment of ... | Ref: Cattle 1-2.2 mg/kg SC/IM q24h. Horses 2.2 mg/kg IM q12-24h. Plumb's.",
             "frequency": "q24h SC/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IM or SC (0-DAY MILK WITHDRAWAL!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  }
+            }
       },
       {
             "id": "859",
@@ -13785,14 +26011,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1.1,
             "dose_mg_per_kg_max": 2.2,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
             "unit_description": "100 ml vial (Primavet)",
             "notes": "Category: Antibiotic (Tetracycline) + NSAIDs. - Combination Antibiotic and Antipyretic for effective treatment of Pneumonia - Oxytetracycline inhibits the growth of bacteria via attachment to amino acyl transfer RNA on the surface of the 30s ribosomal subunit. Then this agent is bacteriostatic. Also Oxytetracyclines alter the permeability of th... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "861",
@@ -13808,7 +26070,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "4 gm vial (Primavet)",
             "notes": "Category: Antibiotic (Cephalosporin). Composition: Each vial contains: - Ceftiofur sodium 4.168 gm (ceftiofur base 4 gm) Indication: Bovine Respiratory Disease (Shipping fever, Pneumonia) associated with Mannheimia haemolytica, Pasteurella multocida and Histophilus somni. It is also indicated for treatment of acute Bovine Interdigital N... | Ref: Cattle 1-2.2 mg/kg SC/IM q24h. Horses 2.2 mg/kg IM q12-24h. Plumb's.",
             "frequency": "q24h SC/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IM or SC (0-DAY MILK WITHDRAWAL!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  }
+            }
       },
       {
             "id": "862",
@@ -13817,7 +26111,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 6,
             "dose_mg_per_kg_max": 8,
-            "concentration_value": 900,
+            "concentration_value": 250,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
@@ -13840,7 +26134,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each 1 ml contains: - Oxytetracycline Hydrochloride 50 mg - Lidocain hydrochloride 1 mg Properties - Oxytetracycline Hydrochloride is one of the most important and widely used antibiotics in Veterinary Medicine, it has a broad spectrum antibacterial action. - Oxytetracycline HCI interfe... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "864",
@@ -13849,7 +26187,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 33,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 700,
+            "concentration_value": 333,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
@@ -13872,7 +26210,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Avico)",
             "notes": "Category: Mastitis Preparation. Each syringe (8 gm) contains: - Neomycin 250 mg - Oxytetracycline HCl 50 mg - Predinsolone 10 mg Properties - AVIMAST is particularly effective against mastitis caused by bacteria; streptococci, staphylococci, and E. coli which are susceptible to neomycin and oxytetracycline. - It contains the anti-... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "866",
@@ -13904,7 +26286,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Eipivet)",
             "notes": "Category: NSAIDs. Composition Flunixine 50 mg / ml Indications - Flunixin meglumine is a non-steroid, anti-inflammatory drug (NSAID) with non-narcotic analgesic effect and antipyretic activity. - It acts by blocking the prostaglandin biosynthesis, since it inhibits the cyclooxygenase. - It acts directly on the CNS, d... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "868",
@@ -13913,14 +26331,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2.5,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Quinolone). Composition: Each 1 ml contains: - Enrofloxacin 50 mg Properties - Enrofloxacin belongs to the second generation of the family of compounds known as the 4 quinolones. - The mode of action of quinolones is belived to be the inhibitiuon of DNA gyrase, an essential bacterial enzyme that maintains super... | Ref: Ref: Plumb's 9th Ed. p. 418.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "2.5-5 mg/kg q24h or 7.5-12.5 mg/kg single SC dose",
+                        "route": "SC or IM (Prohibited in lactating dairy cattle)"
+                  },
+                  "sheep_goat": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h for 3-5 days",
+                        "route": "SC or IM"
+                  },
+                  "camel": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h or divided q12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 5,
+                        "freq": "q24h (⚠️ DO NOT EXCEED 5 mg/kg due to irreversible feline retinal blindness!)",
+                        "route": "PO or SC"
+                  },
+                  "poultry": {
+                        "min": 10,
+                        "max": 15,
+                        "freq": "In drinking water for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "869",
@@ -13936,7 +26392,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Quinolone + Tetracycline). Composition: Each 1 ml contains: - Enrofloxacin 100 mg - Doxycycline 200 mg Properties - The active ingredients of Enrodox (Enrofloxacin & Doxycycline) have a broad spectrum of activity against wide range of gram negative bacteria including (Pasteurella, salmonellosis, E. coli, and Brucella) as well... | Ref: Ref: Plumb's 9th Ed. p. 386.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "2.5-5 mg/kg q24h or 7.5-12.5 mg/kg single SC dose",
+                        "route": "SC or IM (Prohibited in lactating dairy cattle)"
+                  },
+                  "sheep_goat": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h for 3-5 days",
+                        "route": "SC or IM"
+                  },
+                  "camel": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h or divided q12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 5,
+                        "freq": "q24h (⚠️ DO NOT EXCEED 5 mg/kg due to irreversible feline retinal blindness!)",
+                        "route": "PO or SC"
+                  },
+                  "poultry": {
+                        "min": 10,
+                        "max": 15,
+                        "freq": "In drinking water for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "870",
@@ -13952,7 +26446,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Tetracycline + Macrolide). Composition: Each 1 ml contains: - Tylosin (as Tylosin tartrate ) 100 mg - Oxytetracycline (as dihydrate) 100 mg Properties - Tylox-20 has a broad antibacterial efficacy that includes Gram negative and positive bacteria, protozoas, spirochets, mycoplasmas and chlamydia. - The active ingredient Oxyte... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "871",
@@ -13961,14 +26499,40 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Macrolide). Composition: Each 1 ml contains: Tilmicosin 300 mg Indications Cattle: - Treatment of bovine respiratory disease associated with Mannheimia haemolytica and Pasteurella multocida. - Treatment of interdigital necrobacillosis. Sheep: - Treatment of respiratory tract infections caused by Mannheimia haem... | Ref: Ref: Plumb's 9th Ed. p. 1125.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC ONLY (⚠️ LETHAL IF GIVEN IV! Meat w/d: 42d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC ONLY (⚠️ LETHAL IV!)"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ FATAL in horses! Tilmicosin induces lethal cardiovascular collapse in equines."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in dogs (cardiotoxic)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "872",
@@ -13977,7 +26541,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 2.5,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
@@ -14000,7 +26564,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Tetracycline). Composition: Each 1 ml contains: Oxytetracycline (as dihydrate) 300 mg Properties - Oxytetracycline is a bacteriostatic antibiotic that inhibits protein synthesis in susceptible bacteria. - Inside the cell it binds irreversibly to receptors on the 30S subunit of the bacterial ribosome where it inter... | Ref: Ref: Plumb's 9th Ed. p. 892.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "874",
@@ -14016,7 +26624,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition: Each 1 ml contains: - Gentamycin (as Gentamycin Sulfate) 100 mg (a.i.) Properties GENTAVIC contains Gentamycin which is an aminoglycoside antibiotic which has a bactericidal effect against many gram-negative and some gram-positive bacteria, such as: E. coli, Salmonella spp., Shigella sp... | Ref: Ref: Plumb's 9th Ed. p. 504.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM (Meat w/d: 40d; extended in calves)"
+                  },
+                  "horse": {
+                        "min": 6.6,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 6.6,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 8,
+                        "freq": "q24h",
+                        "route": "IV, SC or IM"
+                  }
+            }
       },
       {
             "id": "875",
@@ -14096,7 +26742,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Avico)",
             "notes": "Category: Anthelmintic. Composition: Each 1 ml contains: - Triclabendazole 50 mg - Ivermectin 1 mg Properties - TRIMECTIN SHEEP is an effective combination of both Triclabendazole and Ivermectin to be applied in sheep, making a comprehensive wormer and flukicide that covers wide spectrum of gastric, intestinal, and lungwor... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "880",
@@ -14137,7 +26821,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "poultry",
             "dose_mg_per_kg_min": 20,
             "dose_mg_per_kg_max": 22,
-            "concentration_value": 100,
+            "concentration_value": 150,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
@@ -14160,7 +26844,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Drugest)",
             "notes": "Category: Anthelmintic. Composition: Each 1 ml contains: - Ivermectin 10 mg - Clorsulon 100 mg properties: Dramktin Plus, is a combination of Ivermectin( an anthelmintic – ectoparasiticide )& Clorsulon( antifascioliasis ) which have a high efficacy in the treatment & control of internal and external parasites of cattle, sh... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "884",
@@ -14169,14 +26891,42 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2.2,
             "dose_mg_per_kg_max": 4.4,
-            "concentration_value": 100,
+            "concentration_value": 180,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV",
             "unit_description": "100 ml vial (Drugest)",
             "notes": "Category: NSAIDs + SAIDs. Each 100 ml contains: - Phenylbutazone 18 gm - Dexamethasone 0.035 gm Properties: 1- Phenylbutazone is a powerful non – steroidal anti- inflammatory, analgesic& anti- pyretic acts mainly in the early stages of inflammatory reactions. 2- Dexamthasone is a synthetic corticosteroid having anti- inflamm... | Ref: Horses 2.2-4.4 mg/kg IV/PO q24h. Cattle 10 mg/kg PO (rarely used). Plumb's. Do NOT use in cats.",
             "frequency": "q24h (horses), q48h (cattle)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h (taper after day 1)",
+                        "route": "IV or PO"
+                  },
+                  "cattle": {
+                        "min": 4.4,
+                        "max": 8.8,
+                        "freq": "q48h (beef only)",
+                        "route": "IV (Strictly prohibited in female dairy cattle >20mo)"
+                  },
+                  "dog": {
+                        "min": 7,
+                        "max": 7,
+                        "freq": "q8h",
+                        "route": "PO (max 800mg/day with food)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats due to high risk of severe toxicity and renal failure."
+                  },
+                  "poultry": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
+                  }
+            }
       },
       {
             "id": "885",
@@ -14185,14 +26935,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 12.5,
-            "concentration_value": 100,
+            "concentration_value": 6.7,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (Arabcomed)",
             "notes": "Category: Anthelmintic. Composition: Each 100 ml contains: - Ivermectin 0.67 gm - Clorsulon 6.7 gm - Nitroxynil (as eglunmine) 34 gm Properties: ➡️ Ivermectin is an avermectin and a fermentation product of Streptomyces avermitilis. It's active against all stages of every major parasitic nematode. It is also a potent ectopa... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "886",
@@ -14208,7 +26996,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Eva pharma)",
             "notes": "Category: Antibiotic (Phenicol) + NSAIDs. COMPOSITION: Each 1 ml contains - Florfenicol 300 mg - Flunixin (meglumine) 16.5 mg PROPERTIES: - Florfenicol is a synthetic, broad spectrum antibiotic active against many gram-positive bacteria isolated from domestic animals. - Florfenicoi acts by inhibiting bacterial protein synthesis at the ribos... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "887",
@@ -14217,14 +27041,42 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2.2,
             "dose_mg_per_kg_max": 4.4,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV",
             "unit_description": "50 ml vial (Kirovest Co.)",
             "notes": "Category: NSAIDs + SAIDs. COMPOSITION: - Phenylbutazone - Dexamethasone DESCRIPTION: Analgesic, anti-inflammatory and anti-pyretic effect, derived from pyrazolone, indicated in the treatment of locomotor system diseases. INDICATIONS: Treatment of primary locomotor system diseases. Coadjutant treatment to the antibiotic thera... | Ref: Horses 2.2-4.4 mg/kg IV/PO q24h. Cattle 10 mg/kg PO (rarely used). Plumb's. Do NOT use in cats.",
             "frequency": "q24h (horses), q48h (cattle)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h (taper after day 1)",
+                        "route": "IV or PO"
+                  },
+                  "cattle": {
+                        "min": 4.4,
+                        "max": 8.8,
+                        "freq": "q48h (beef only)",
+                        "route": "IV (Strictly prohibited in female dairy cattle >20mo)"
+                  },
+                  "dog": {
+                        "min": 7,
+                        "max": 7,
+                        "freq": "q8h",
+                        "route": "PO (max 800mg/day with food)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats due to high risk of severe toxicity and renal failure."
+                  },
+                  "poultry": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
+                  }
+            }
       },
       {
             "id": "888",
@@ -14240,7 +27092,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Atco pharma)",
             "notes": "Category: NSAIDs. Composition Flunixine 50 mg / ml Indications - Flunixin meglumine is a non-steroid, anti-inflammatory drug (NSAID) with non-narcotic analgesic effect and antipyretic activity. - It acts by blocking the prostaglandin biosynthesis, since it inhibits the cyclooxygenase. - It acts directly on the CNS, d... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "889",
@@ -14265,14 +27153,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 20,
             "dose_mg_per_kg_max": 20,
-            "concentration_value": 300,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "100 ml vial (Norbrook)",
             "notes": "Category: Antibiotic (Tetracycline). Broad-spectrum bacteriostatic antibiotic inhibiting 30S protein synthesis. Indications: Bovine respiratory disease (BRD), Anaplasmosis, Foot rot, Leptospirosis, Wooden tongue, and Metritis. Dosage: Cattle/Sheep/Swine: Standard 5-10 mg/kg IV/IM q24h; LA (200 mg/ml) 20 mg/kg IM/SC single dose. Withdrawal: Meat 28 days, Milk 7 days. Ref: Plumb's 9th Ed. p. 892.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "891",
@@ -14297,14 +27229,50 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 20,
             "dose_mg_per_kg_max": 40,
-            "concentration_value": 100,
+            "concentration_value": 300,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: Antibiotic (Phenicol). Composition Each ml contains: - Florfenicol 300 mg Properties : Florfenicol is a broad spectrum antibiotic that has activity against many bacteria such as Pasteurella multocida, Pasteurella haemolytica, Haemophilus somnus and Mycoplasma bovis. It acts by binding to the 50S ribosome, thereby inhibiti... | Ref: Cattle 20 mg/kg IM q48h or 40 mg/kg SC (long-acting). Plumb's.",
             "frequency": "q48h IM or q24h SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h (2 doses) OR 40 mg/kg SC single dose",
+                        "route": "IM or SC (⚠️ NEVER GIVE IV. Prohibited in lactating dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h or 40 mg/kg SC once",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h",
+                        "route": "IM or SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal acute colitis and dysbiosis)."
+                  },
+                  "dog": {
+                        "min": 20,
+                        "max": 30,
+                        "freq": "q12-24h (refractory cases)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 20,
+                        "max": 25,
+                        "freq": "q12-24h",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "893",
@@ -14313,14 +27281,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 1,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM",
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: NSAIDs. Composition: Each 100 ml contains - Diclofenac Na 5 gm - Paracetamol 15 gm Properties - Diclofenac is a nonsteroidal anti-inflammatory drug (NSAID) taken to reduce inflammation and as an anti-pyretic and analgesic reducing pain in certain conditions. - Paracetamol is centerally acting NSAID (COX 3 i... | Ref: Cattle 1 mg/kg IM q24h. Dogs/Cats 1-2 mg/kg PO q12h. Merck Vet Manual. | Ref: Cattle 1 mg/kg IM q24h. Merck Vet Manual.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h (1-3 days)",
+                        "route": "Deep IM (Meat w/d: 28d)"
+                  },
+                  "horse": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ NOT recommended in dogs (high incidence of severe gastrointestinal perforation)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats."
+                  }
+            }
       },
       {
             "id": "894",
@@ -14336,7 +27338,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: Antibiotic (Quinolone). Composition: - Enrofloxacin 10 g / 100 ml Indication • for cattle and poultry in sensitive bacteria such as Colibacillosis, Actinobacillus, Mycoplasma. - Treatment of respiratory inflammation, pneumonia, bronchitis. - Treatment of genital, gastrointestinal infection and urinary infection. - Treatmen... | Ref: Cattle 5-7.5 mg/kg SC q24h. Horses 5-7.5 mg/kg IV q24h. Plumb's.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "2.5-5 mg/kg q24h or 7.5-12.5 mg/kg single SC dose",
+                        "route": "SC or IM (Prohibited in lactating dairy cattle)"
+                  },
+                  "sheep_goat": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h for 3-5 days",
+                        "route": "SC or IM"
+                  },
+                  "camel": {
+                        "min": 2.5,
+                        "max": 5,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  },
+                  "dog": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h or divided q12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 5,
+                        "max": 5,
+                        "freq": "q24h (⚠️ DO NOT EXCEED 5 mg/kg due to irreversible feline retinal blindness!)",
+                        "route": "PO or SC"
+                  },
+                  "poultry": {
+                        "min": 10,
+                        "max": 15,
+                        "freq": "In drinking water for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "895",
@@ -14345,14 +27385,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (Memphis)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition: Each 100 ml contains: - Ivermectin 1 gm Indications: Cattle and buffalo: Gastrointestinal and Lung Worm, Cattle Grubs, Mites and Lice and It also aids in the control of cattle ticks Sheep and Goats: GIT round worms, Lung worms & Nasal Bots Dosage and Administra... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "896",
@@ -14393,14 +27471,42 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2.2,
             "dose_mg_per_kg_max": 4.4,
-            "concentration_value": 100,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV",
             "unit_description": "100 ml vial (Vetoquinol)",
             "notes": "Category: NSAIDs + SAIDs. Dexaphenylarthrite works as potent analgesic anti-inflammatory for training , specially designed for horses and camels of high performance competition. Dexaphenylarthrite works as potent analgesic antiinflammatory for training , specially designed for horses and camels of high performance competitio... | Ref: Horses 2.2-4.4 mg/kg IV/PO q24h. Cattle 10 mg/kg PO (rarely used). Plumb's. Do NOT use in cats.",
             "frequency": "q24h (horses), q48h (cattle)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h (taper after day 1)",
+                        "route": "IV or PO"
+                  },
+                  "cattle": {
+                        "min": 4.4,
+                        "max": 8.8,
+                        "freq": "q48h (beef only)",
+                        "route": "IV (Strictly prohibited in female dairy cattle >20mo)"
+                  },
+                  "dog": {
+                        "min": 7,
+                        "max": 7,
+                        "freq": "q8h",
+                        "route": "PO (max 800mg/day with food)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats due to high risk of severe toxicity and renal failure."
+                  },
+                  "poultry": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
+                  }
+            }
       },
       {
             "id": "899",
@@ -14521,14 +27627,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 25,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 100,
+            "concentration_value": 500,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Analgesic, Antipyretic & Spasmolytic. Composition Each ml contains - Metamizole sodium monohydrate 500 mg Indication Pain associated with colic, arthritis, or fever. Dosage and administration - I.M. injection route - Bovine: 8 ml/100 kg bodyweight. - Calves: 8-10 ml/100 kg bodyweight. - Pigs: 15-20 ml/100 kg bodyweight. - Dogs: 1,4-2 ml... | Ref: Cattle/Horses 25-50 mg/kg IV/IM q8-12h. Dogs/Cats 25-50 mg/kg IM/SC q8h. Plumb's.",
             "frequency": "q8-12h IM/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or deep IM"
+                  },
+                  "horse": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h (Spasmodic colic)",
+                        "route": "Slow IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q8-12h",
+                        "route": "SC, IM or IV"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12-24h (use with caution)",
+                        "route": "SC"
+                  }
+            }
       },
       {
             "id": "907",
@@ -14560,7 +27704,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Kirovest Co.)",
             "notes": "Category: Analgesic, Antipyretic & Spasmolytic. Composition: Each 100 ml Contains: - Dipyrone 50 gm Properties: - Kim-gen 50% is a non-steroidal anti-inflammatory drug and has a central analgesic, antipyretic and antirheumatic agent with marked sedative and spasmolytic properties on animals. - Kim-gen 50% has Spasmolytic effect on smooth muscles ... | Ref: Cattle/Horses 25-50 mg/kg IV/IM q8-12h. Dogs/Cats 25-50 mg/kg IM/SC q8h. Plumb's.",
             "frequency": "q8-12h IM/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or deep IM"
+                  },
+                  "horse": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h (Spasmodic colic)",
+                        "route": "Slow IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q8-12h",
+                        "route": "SC, IM or IV"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12-24h (use with caution)",
+                        "route": "SC"
+                  }
+            }
       },
       {
             "id": "909",
@@ -14624,7 +27806,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "200 ml Spray (MSD Co. (Intervet))",
             "notes": "Category: Topical Antiseptic. Presentation Cutaneous spray suspension Active ingredients per ml: Oxytetracycline hydrochloride 25.00 mg (equivalent to oxytetracycline 23.15 mg) Target species Cattle, sheep and pigs Indications for use For the treatment of the following infections caused by, or associated with, organisms sensitiv... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "913",
@@ -14633,14 +27859,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 7.5,
             "dose_mg_per_kg_max": 7.5,
-            "concentration_value": 7.5,
+            "concentration_value": 100,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "1L Bottle (Nero Pharma)",
             "notes": "Category: Anthelmintic. Composition Each 100 ml contains - Albendazole 10 gm Properties - Albendazole is a broad spectrum benzimidazoloe antiparasitic agent against Nematodes and Cestodes it acts by interrupting of the parasite energy metabolism by binding to tubulin, thereby disrupting micro-tubular cell structure and pre... | Ref: Ref: Plumb's 9th Ed. p. 26.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "914",
@@ -14665,14 +27923,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 12.5,
-            "concentration_value": 100,
+            "concentration_value": 340,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (CID Co.)",
             "notes": "Category: Anthelmintic. Composition Each 100 ml Contains: - Nitroxynil 34 g Properties Nitroxynil is anthelmintic , termatocidal drug, The mechanism of action is thought to be due to uncoupling of oxidative phosphorylation. Indications Fashioning solution is indicated for the treatment of fasciolosis (infestations of matur... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg (of 34% sol) single SC dose",
+                        "route": "SC ONLY (Meat w/d: 60d; strictly prohibited in dairy milk)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 13,
+                        "freq": "1 ml/34 kg single dose",
+                        "route": "SC ONLY"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not indicated in horses."
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in small animals."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats."
+                  }
+            }
       },
       {
             "id": "916",
@@ -14681,7 +27971,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 100,
+            "concentration_value": 20,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -14825,14 +28115,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Bremer Pharma)",
             "notes": "Category: Anthelmintic. COMPOSITION: Each ml contains: - Ivermectin 10 mg THERAPEUTIC GROUP Cattle, Goat, Sheep, Pig INDICATIONS Ivermectin is very effective against the adult and larval forms of nematodes (Ostertagia, Haemonchus, Cooperia, Nematodirus, Bunostomum, Trichuris, Oesophagostomum, Chabertia ovina), but it also ... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "926",
@@ -14864,7 +28192,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Badr Pharma)",
             "notes": "Category: NSAIDs. Composition: Each 1 ml contains: - Ketoprofen 100 mg Indications: In horses indicated for: - The alleviation of inflammation and pain associated with musculo-skeletal disorders and alleviation of visceral pain associated with colic in horses, safe in pregnant mares. In cattle indicated for: - The su... | Ref: Horses 2.2 mg/kg IV q24h. Cattle 3 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h for 1-3 days",
+                        "route": "IV or deep IM (0-day milk withdrawal!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IV"
+                  },
+                  "sheep_goat": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "camel": {
+                        "min": 3,
+                        "max": 3,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "dog": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 3-5 days)",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h (max 1-2 days)",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "928",
@@ -14873,14 +28239,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 2,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (Mam Egypt Pharm)",
             "notes": "Category: Anthelmintic. Composition: Each 100 ml contains - Ivermectin 1 gm Properities - Ivermectin is a broad-spectrum endectocide of the avermectin family. Ivermectin is isolated after purification and hydrogenation of the avermectin-family compounds which are obtained from the fermentation of the soil organism streptom... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "929",
@@ -14928,7 +28332,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Antibiotic (Phenicol). Composition Each ml of contains: - Florfenicol 300 mg Indications NIXFLOR Injectable Solution of synthetic antibiotic is indicated for treatment of bovine respiratory disease (BRID), associated with Pasteurella haemolytica, Pasteurella multocida, and Haemophilus somnus, and for the treatment of bovi... | Ref: Ref: Plumb's 9th Ed. p. 473.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h (2 doses) OR 40 mg/kg SC single dose",
+                        "route": "IM or SC (⚠️ NEVER GIVE IV. Prohibited in lactating dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h or 40 mg/kg SC once",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 20,
+                        "max": 40,
+                        "freq": "20 mg/kg IM q48h",
+                        "route": "IM or SC"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in horses (causes severe, often fatal acute colitis and dysbiosis)."
+                  },
+                  "dog": {
+                        "min": 20,
+                        "max": 30,
+                        "freq": "q12-24h (refractory cases)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 20,
+                        "max": 25,
+                        "freq": "q12-24h",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "932",
@@ -14953,14 +28393,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 50,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 50,
+            "concentration_value": 500,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/IV",
             "unit_description": "50 ml vial (IBASA)",
             "notes": "Category: NSAIDs (Pyrazolone). Metamizole non-opioid analgesic, spasmolytic, and antipyretic agent. Indications: Spasmodic colic, painful esophageal obstruction (choke), high fever, and rheumatic inflammation. Dosage: Cattle/Horses 10-25 mg/kg (20-50 ml/animal) IV/IM q8-12h; Dogs/Cats 25 mg/kg IV/IM q8h. Warnings: Prohibited in US food animals; approved in Egypt/EU with meat withdrawal (12-28 days). Ref: Merck Vet Manual.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or deep IM"
+                  },
+                  "horse": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h (Spasmodic colic)",
+                        "route": "Slow IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q8-12h",
+                        "route": "SC, IM or IV"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12-24h (use with caution)",
+                        "route": "SC"
+                  }
+            }
       },
       {
             "id": "934",
@@ -15113,14 +28591,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2.5,
             "dose_mg_per_kg_max": 2.5,
-            "concentration_value": 100,
+            "concentration_value": 50,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (Alcion Laboratorios)",
             "notes": "Category: NSAIDs. Composition: Each ml contains: - Diclofenac Sodium 500 mg - Excipient q.s. 1ml Indications Diclofenac sodium is a non-steroidal anti-inflammatory drug derived from phenylacetate. Used for the treatment of arthritis, rheumatism and muscle aches. Reduce fever caused by types of bacteria, virus and som... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h (1-3 days)",
+                        "route": "Deep IM (Meat w/d: 28d)"
+                  },
+                  "horse": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ NOT recommended in dogs (high incidence of severe gastrointestinal perforation)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats."
+                  }
+            }
       },
       {
             "id": "944",
@@ -15161,7 +28673,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 33,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 100,
+            "concentration_value": 333,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -15353,7 +28865,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 100,
+            "concentration_value": 500,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -15369,14 +28881,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 25,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 100,
+            "concentration_value": 500,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "50 ml vial (Zoetis)",
             "notes": "Category: Analgesic, Antipyretic & Spasmolytic. Description Highly effective analgesic that acts quickly in the body, indicated for the treatment of animals with muscle pain and inflammation. Formula - Dipyrone Sodium 500 mg - Aqueous vehicle q.s.p 1 ml Properties - D-500 Dipyrone is an analgesic, with antipyretic and antiphlogistic action, - Rec... | Ref: Cattle/Horses 25-50 mg/kg IV/IM q8-12h. Dogs/Cats 25-50 mg/kg IM/SC q8h. Plumb's.",
             "frequency": "q8-12h IM/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or deep IM"
+                  },
+                  "horse": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h (Spasmodic colic)",
+                        "route": "Slow IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q8-12h",
+                        "route": "SC, IM or IV"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12-24h (use with caution)",
+                        "route": "SC"
+                  }
+            }
       },
       {
             "id": "960",
@@ -15385,7 +28935,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 33,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 100,
+            "concentration_value": 333,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM",
@@ -15401,7 +28951,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "poultry",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 15,
-            "concentration_value": 12,
+            "concentration_value": 200,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
@@ -15456,7 +29006,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Al Madina)",
             "notes": "Category: Anthelmintic. Composition: Each 1 ml contains: - Ivermectin 10 mg - Clorsulon 100 mg Indication: » Ivermectin, a member of the avermectin family to control the following parasities: • Gastrointestinal roundwoms: for the control of adult and immature Ostertagia ostertagi (including inhibited fourth stage larvae), ... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "965",
@@ -15488,7 +29076,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Amoun)",
             "notes": "Category: Antibiotic (Quinolone). Composition: Each 1 ml contains - Marbofloxacin 100 mg Properties: Marboflaxacin is a synthetic, bactericidal antimicrobial, belonging to the fluoroquinolone group Which acts by inhibition of DNA gyrase. It has a broad-spectrum activity against Mycoplasma, Gram-positive and Gram-negative bacteria. I... | Ref: Cattle 2-5 mg/kg SC q24h. Plumb's.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2,
+                        "max": 8,
+                        "freq": "2 mg/kg q24h x 3-5d OR 8 mg/kg IM single dose",
+                        "route": "IM, SC or IV (Meat w/d: 6d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  },
+                  "cat": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  }
+            }
       },
       {
             "id": "967",
@@ -15584,7 +29204,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Ceva Co.)",
             "notes": "Category: Antibiotic (Tetracycline). COMPOSITION - Oxytetracycline 20 000 000 IU - Excipient qsf 100 ml INDICATIONS - PIG: Treatment and control of Abscesses, Atrophic Rhinitis, Erysipelas, MMA (Mastitis, Metritis, Agalactia syndrome), Mastitis, Pasteurellosis, Pleuritis, Pneumonia, Post Operative, Post Partum and Wound Infections. - C... | Ref: Ref: Plumb's 9th Ed. p. 892.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "973",
@@ -15616,7 +29280,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Livisto (Invesa))",
             "notes": "Category: Antibiotic (Cephalosporin). COMPOSITION: Each mL of suspension contains: - Ceftiofur hydrochloride 50 mg - Excipients q.s.p 1 mL SPECIES: Bovines, Equines, sheep, goats, pigs and canines. INDICATIONS: - In cattle, sheep and goats. For the treatment of Respiratory Syndrome Cattle (shipping fever and pneumonia), associated with ... | Ref: Ref: Plumb's 9th Ed. p. 202.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IM or SC (0-DAY MILK WITHDRAWAL!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  }
+            }
       },
       {
             "id": "975",
@@ -15641,14 +29337,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 10,
-            "concentration_value": 100,
+            "concentration_value": 19,
             "concentration_unit": "mg/ml",
             "dosage_form": "oral solution",
             "route": "PO",
             "unit_description": "1L Bottle (VIG Co.)",
             "notes": "Category: Anthelmintic. COMPOSITION: Each 1 ml contains: - Albendazole 19 mg - Closantel 37.5 mg INDICATIONS: Treatment of sensitive strains of the following parasites in Ruminant: • Adult and immature gastrointestinal roundworms • Barber's Pole Worm (Haemonchus contortus) • Small Brown Stomach Worm (Teladorsagia, Ostertag... | Ref: Cattle/Sheep 5-10 mg/kg PO or 5 mg/kg SC. Merck Vet Manual.",
             "frequency": "single dose (repeat in 6-8 weeks)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "977",
@@ -15664,7 +29392,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Arab Caps)",
             "notes": "Category: Antibiotic (Quinolone). Composition: Each 100 ml contains: - Marbofloxacin 10 gm Properties: - Marbofloxacin is a synthetic, bactericidal antimicrobial, belonging to the fluoroquinolones group, which acts by inhibition of DNA Gyrase. It has a broad-spectrum activity in vitro against Gram negative bacteria (Pasteurella mult... | Ref: Cattle 2-5 mg/kg SC q24h. Plumb's.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2,
+                        "max": 8,
+                        "freq": "2 mg/kg q24h x 3-5d OR 8 mg/kg IM single dose",
+                        "route": "IM, SC or IV (Meat w/d: 6d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  },
+                  "cat": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  }
+            }
       },
       {
             "id": "978",
@@ -15696,7 +29456,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: SAIDs. Composition: Each 1 ml contains: - Dexamethasone Sodium phosphate 2.6 mg (Eq. to Dexamethasone base 2 mg) Properties: The action of Dexamethasone sodium Phosphate in suppressing inflammatory reactions may be useful in wide variety of conditions of respiratory diseases such as chronic obstructive pul... | Ref: Cattle/Horses anti-inflammatory: 0.02-0.1 mg/kg IV/IM. Ketosis (cattle): 1 mg/cow. Plumb's.",
             "frequency": "single dose or q24h (taper)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose / q24h",
+                        "route": "IV or IM (⚠️ Induces abortion in late pregnancy!)"
+                  },
+                  "horse": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose",
+                        "route": "IM (⚠️ Induces abortion!)"
+                  },
+                  "camel": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  }
+            }
       },
       {
             "id": "980",
@@ -15849,14 +29647,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 10,
             "dose_mg_per_kg_max": 12.5,
-            "concentration_value": 100,
+            "concentration_value": 6.7,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (Al Watanyea)",
             "notes": "Category: Anthelmintic. Composition: Each 100 ml contains: - Ivermectin 0.67 gm - Clorsulon 6.7 gm - Nitroxynil (as eglunmine) 34 gm Properties: ➡️ Ivermectin is an avermectin and a fermentation product of Streptomyces avermitilis. It's active against all stages of every major parasitic nematode. It is also a potent ectopa... | Ref: Cattle 10 mg/kg SC; Sheep/Goats 10-12.5 mg/kg SC. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 4-6 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "990",
@@ -15881,7 +29717,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
@@ -15977,14 +29813,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2,
             "dose_mg_per_kg_max": 5,
-            "concentration_value": 100,
+            "concentration_value": 20,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/SC",
             "unit_description": "50 ml vial (DBK Co.)",
             "notes": "Category: Antibiotic (Quinolone). Composition: Each 1 ml contains: - Marbofloxacin 20 mg Properties: - Marbofloxacin is a synthetic, bactericidal antimicrobial, belonging to the fluoroquinolones group which acts by inhibition of DNA gyrase and of topoisomerase IV. It's effective against wide range of Gram-positive bacteria (includin... | Ref: Cattle 2-5 mg/kg SC q24h. Plumb's.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2,
+                        "max": 8,
+                        "freq": "2 mg/kg q24h x 3-5d OR 8 mg/kg IM single dose",
+                        "route": "IM, SC or IV (Meat w/d: 6d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  },
+                  "cat": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  }
+            }
       },
       {
             "id": "998",
@@ -16000,7 +29868,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: NSAIDs. Composition: Each 1 ml contains : - Meloxicam 40 mg Properties: - MELOXICAM Non-steroidal, anti-inflammatory, which acts by inhibition of prostaglandin synthesis to give the anti inflammatory, analgesic, antiexudative and antipyretic effect. - MELOXICAM also have anti-endotoxic properties as it inhi... | Ref: Cattle 0.5 mg/kg IV/SC. Horses 0.6 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV (Meat w/d: 15d, Milk w/d: 5d)"
+                  },
+                  "horse": {
+                        "min": 0.6,
+                        "max": 0.6,
+                        "freq": "q24h",
+                        "route": "IV or PO"
+                  },
+                  "sheep_goat": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV"
+                  },
+                  "dog": {
+                        "min": 0.1,
+                        "max": 0.2,
+                        "freq": "0.2 mg/kg day 1, then 0.1 mg/kg q24h",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.1,
+                        "freq": "0.1-0.2 mg/kg single SC dose, or 0.05 mg/kg PO q24-48h",
+                        "route": "SC or PO"
+                  },
+                  "poultry": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "q12-24h",
+                        "route": "PO or IM"
+                  }
+            }
       },
       {
             "id": "999",
@@ -16105,14 +30017,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2,
             "dose_mg_per_kg_max": 5,
-            "concentration_value": 100,
+            "concentration_value": 160,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: Antibiotic (Quinolone). Composition: Each 1 ml contains - Marbofloxacin 160 mg Properties: Marboflaxacin is a synthetic, bactericidal antimicrobial, belonging to the fluoroquinolone group Which acts by inhibition of DNA gyrase. It has a broad-spectrum activity against Mycoplasma, Gram-positive and Gram-negative bacteria. I... | Ref: Cattle 2-5 mg/kg SC q24h. Plumb's.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2,
+                        "max": 8,
+                        "freq": "2 mg/kg q24h x 3-5d OR 8 mg/kg IM single dose",
+                        "route": "IM, SC or IV (Meat w/d: 6d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  },
+                  "cat": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  }
+            }
       },
       {
             "id": "1006",
@@ -16137,7 +30081,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "cattle",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
@@ -16160,7 +30104,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Syva)",
             "notes": "Category: Antibiotic (Cephalosporin). ACTIVE INGREDIENT(S) - Ceftiofur (hydrochloride) 50 mg/ mL INDICATIONS • Infections associated with bacteria sensitive to ceftiofur: » Pigs: To treat respiratory infections associated with Pasteurella multocida, Actinobacillus pleuropneumoniae and Streptococcus suis. » Cattle: - To treat respiratory... | Ref: Cattle 1-2.2 mg/kg SC/IM q24h. Horses 2.2 mg/kg IM q12-24h. Plumb's.",
             "frequency": "q24h SC/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h for 3-5 days",
+                        "route": "IM or SC (0-DAY MILK WITHDRAWAL!)"
+                  },
+                  "horse": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q12-24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.2,
+                        "max": 4.4,
+                        "freq": "q24h",
+                        "route": "SC or IM"
+                  }
+            }
       },
       {
             "id": "1009",
@@ -16185,14 +30161,58 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.5,
             "dose_mg_per_kg_max": 1,
-            "concentration_value": 100,
+            "concentration_value": 30,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/SC",
             "unit_description": "50 ml vial (Al Watanyea)",
             "notes": "Category: NSAIDs. Composition: Each 1 ml contains - Meloxicam 30 mg Properties: - MELOXICAM Non-steroidal, anti-inflammatory, which acts by inhibition of prostaglandin synthesis to give the anti inflammatory, analgesic, antiexudative and antipyretic effect. - MELOXICAM also have anti-endotoxic properties as it inhibi... | Ref: Cattle 0.5 mg/kg IV/SC. Horses 0.6 mg/kg IV q24h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV (Meat w/d: 15d, Milk w/d: 5d)"
+                  },
+                  "horse": {
+                        "min": 0.6,
+                        "max": 0.6,
+                        "freq": "q24h",
+                        "route": "IV or PO"
+                  },
+                  "sheep_goat": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 0.5,
+                        "max": 0.5,
+                        "freq": "Single dose",
+                        "route": "SC or IV"
+                  },
+                  "dog": {
+                        "min": 0.1,
+                        "max": 0.2,
+                        "freq": "0.2 mg/kg day 1, then 0.1 mg/kg q24h",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.1,
+                        "freq": "0.1-0.2 mg/kg single SC dose, or 0.05 mg/kg PO q24-48h",
+                        "route": "SC or PO"
+                  },
+                  "poultry": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "q12-24h",
+                        "route": "PO or IM"
+                  }
+            }
       },
       {
             "id": "1011",
@@ -16208,7 +30228,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: NSAIDs. Properties: Nonsteroidal Anti-inflammatory, analgesic and anti-pyretic Indications: • Diseases of the respiratory system (e.g. bronchopneumonia). • Genitourinary system (e.g. metritis) • Mammary gland (e.g. mastitis) • Musculoskeletal disorders (e.g. acute and chronic lameness, arthritis, desmitis, ... | Ref: Cattle 1 mg/kg IM q24h. Dogs/Cats 1-2 mg/kg PO q12h. Merck Vet Manual. | Ref: Cattle 1 mg/kg IM q24h. Merck Vet Manual.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h (1-3 days)",
+                        "route": "Deep IM (Meat w/d: 28d)"
+                  },
+                  "horse": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ NOT recommended in dogs (high incidence of severe gastrointestinal perforation)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats."
+                  }
+            }
       },
       {
             "id": "1012",
@@ -16256,7 +30310,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Badr Pharma)",
             "notes": "Category: Antibiotic (Quinolone). Composition: Each 1 ml contains: - Marbofloxacin 100 mg Properties: - Marbofloxacin is a synthetic, bactericidal antimicrobial, belonging to the fluoroquinolones group, which acts by inhibition of DNA Gyrase. It has a broad-spectrum activity in vitro against Gram negative bacteria (Pasteurella multo... | Ref: Cattle 2-5 mg/kg SC q24h. Plumb's.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2,
+                        "max": 8,
+                        "freq": "2 mg/kg q24h x 3-5d OR 8 mg/kg IM single dose",
+                        "route": "IM, SC or IV (Meat w/d: 6d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  },
+                  "cat": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  }
+            }
       },
       {
             "id": "1015",
@@ -16272,7 +30358,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (VMD Pharma)",
             "notes": "Category: SAIDs. DEXAVETo-0.2 Injectable solution PER ML OF SOLUTION: - Dexamethasone sodium phosphate 2.64 mg (eq. to 2 mg Dexamethasone base) PHARMACOLOGICAL PROPERTIES • Powerful effect and fast distribution • Long anti-inflammatory and anti-allergic effect • Stimulates hepatic gluconeogenesis • Very weak mineral... | Ref: Cattle/Horses anti-inflammatory: 0.02-0.1 mg/kg IV/IM. Ketosis (cattle): 1 mg/cow. Plumb's.",
             "frequency": "single dose or q24h (taper)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose / q24h",
+                        "route": "IV or IM (⚠️ Induces abortion in late pregnancy!)"
+                  },
+                  "horse": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 0.02,
+                        "max": 0.1,
+                        "freq": "Single dose",
+                        "route": "IM (⚠️ Induces abortion!)"
+                  },
+                  "camel": {
+                        "min": 0.02,
+                        "max": 0.05,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  },
+                  "cat": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "q12-24h",
+                        "route": "IV, IM or SC"
+                  }
+            }
       },
       {
             "id": "1016",
@@ -16288,7 +30412,41 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Medizen)",
             "notes": "Category: NSAIDs. COMPOSITION Each 1 ml contains: - Diclofenac sodium 25 mg (eq. to 23 mg Diclofenac base) PROPERTIES Diclofenac is a NSAID (Non steroidal anti inflammatory drug) that act on the metabolism of arachidonic acid by inhibiting of cyclooxygenase enzyme responsible for the synthesis of prostaglandins, pros... | Ref: Cattle 1 mg/kg IM q24h. Dogs/Cats 1-2 mg/kg PO q12h. Merck Vet Manual. | Ref: Cattle 1 mg/kg IM q24h. Merck Vet Manual.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h (1-3 days)",
+                        "route": "Deep IM (Meat w/d: 28d)"
+                  },
+                  "horse": {
+                        "min": 1,
+                        "max": 2.5,
+                        "freq": "q24h",
+                        "route": "IM or IV"
+                  },
+                  "sheep_goat": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 1,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM"
+                  },
+                  "dog": {
+                        "contraindicated": true,
+                        "warning": "⛔ NOT recommended in dogs (high incidence of severe gastrointestinal perforation)."
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Strictly CONTRAINDICATED in cats."
+                  }
+            }
       },
       {
             "id": "1017",
@@ -16297,14 +30455,46 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 2,
             "dose_mg_per_kg_max": 5,
-            "concentration_value": 100,
+            "concentration_value": 160,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "50 ml vial (N/A)",
             "notes": "Category: Antibiotic (Quinolone). Composition: Each 1 ml contains - Marbofloxacin 160 mg Properties: Marboflaxacin is a synthetic, bactericidal antimicrobial, belonging to the fluoroquinolone group Which acts by inhibition of DNA gyrase. It has a broad-spectrum activity against Mycoplasma, Gram-positive and Gram-negative bacteria. I... | Ref: Cattle 2-5 mg/kg SC q24h. Plumb's.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 2,
+                        "max": 8,
+                        "freq": "2 mg/kg q24h x 3-5d OR 8 mg/kg IM single dose",
+                        "route": "IM, SC or IV (Meat w/d: 6d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "camel": {
+                        "min": 2,
+                        "max": 2,
+                        "freq": "q24h",
+                        "route": "IM or SC"
+                  },
+                  "dog": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  },
+                  "cat": {
+                        "min": 2.75,
+                        "max": 5.5,
+                        "freq": "q24h",
+                        "route": "PO, SC or IV"
+                  }
+            }
       },
       {
             "id": "1018",
@@ -16320,7 +30510,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Coophavet Co.)",
             "notes": "Category: Antibiotic (Tetracycline). Active ingredient: Oxytetracyline 200 mg /ml Indication: 1. Treatment of Oxytetracycline sensitive infectious disease, such as leptospirosis, mycoplasma etc. 2. Prevent piglet from early bacterial infection, and injury from from fighting. Administration: - Intramuscular injection - 1 ml per 10 kg bo... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "1019",
@@ -16329,14 +30563,52 @@ window.DEFAULT_MEDICATIONS = [
             "species": "both",
             "dose_mg_per_kg_min": 25,
             "dose_mg_per_kg_max": 50,
-            "concentration_value": 100,
+            "concentration_value": 500,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
             "unit_description": "100 ml vial (Plexopharm (Rexall Ph.))",
             "notes": "Category: NSAIDs. COMPOSITION: Each 100 ml contain - Dipyrone 50 gm - Vitamin C 20 gm INDICATIONS: » Danalgin C® is administered to cattle, horses and dogs for rheumatism, acute and chronic polyarthritis, tendinitis and tendovaginitis as an anti-rheumatic, for inflammatory diseases as an anti-pyretic, for all kinds o... | Ref: Cattle/Horses 25-50 mg/kg IV/IM q8-12h. Dogs/Cats 25-50 mg/kg IM/SC q8h. Plumb's.",
             "frequency": "q8-12h IM/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or deep IM"
+                  },
+                  "horse": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h (Spasmodic colic)",
+                        "route": "Slow IV or IM"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q8-12h",
+                        "route": "IV or IM"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q8-12h",
+                        "route": "SC, IM or IV"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 25,
+                        "freq": "q12-24h (use with caution)",
+                        "route": "SC"
+                  }
+            }
       },
       {
             "id": "1020",
@@ -16352,7 +30624,51 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (DBK Co.)",
             "notes": "Category: Antibiotic (Tetracycline). COMPOSITION: Each tablet contains: - Oxytetracycline Hydrochloride 500 mg PROPERTIES: - Oxytetracycline is a broad spectrum antibiotic of the tetracycline group. Tetracyclines generally acts as bacteriostatic antibiotics and inhibit protein synthesis by reversibly binding to 30S ribosomal subunit of... | Ref: Cattle/Sheep/Horses 5-10 mg/kg IV/IM q12-24h (short-acting) or 20 mg/kg IM q48-72h (long-acting). Plumb's.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA (200mg/ml): 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM or slow IV (Meat w/d: 28d, Milk w/d: 7d)"
+                  },
+                  "sheep_goat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose; Standard: 10 mg/kg q24h",
+                        "route": "IM"
+                  },
+                  "camel": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "LA: 20 mg/kg single dose",
+                        "route": "IM"
+                  },
+                  "horse": {
+                        "min": 5,
+                        "max": 10,
+                        "freq": "q24h (give slowly in large IV volume)",
+                        "route": "Slow IV ONLY (Avoid IM/rapid IV)"
+                  },
+                  "dog": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "cat": {
+                        "min": 10,
+                        "max": 20,
+                        "freq": "q8-12h",
+                        "route": "PO, SC or IM"
+                  },
+                  "poultry": {
+                        "min": 20,
+                        "max": 50,
+                        "freq": "In water/feed",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "1021",
@@ -16368,7 +30684,43 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Adwia)",
             "notes": "Category: NSAIDs. Composition Flunixine 50 mg / ml Indications - Flunixin meglumine is a non-steroid, anti-inflammatory drug (NSAID) with non-narcotic analgesic effect and antipyretic activity. - It acts by blocking the prostaglandin biosynthesis, since it inhibits the cyclooxygenase. - It acts directly on the CNS, d... | Ref: Cattle 1.1-2.2 mg/kg IV q24h. Horses 0.5-1.1 mg/kg IV/IM q12h. Plumb's Vet Drug Handbook.",
             "frequency": "q24h max 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "horse": {
+                        "min": 1.1,
+                        "max": 1.1,
+                        "freq": "q12-24h",
+                        "route": "IV or IM (Visceral pain/colic & endotoxemia)"
+                  },
+                  "cattle": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h (max 3 days)",
+                        "route": "IV (Meat w/d: 4d, Milk w/d: 36h)"
+                  },
+                  "sheep_goat": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV or IM"
+                  },
+                  "camel": {
+                        "min": 1.1,
+                        "max": 2.2,
+                        "freq": "q24h",
+                        "route": "IV"
+                  },
+                  "dog": {
+                        "min": 0.5,
+                        "max": 1,
+                        "freq": "Single dose only",
+                        "route": "IV or SC (Do not repeat due to severe GI ulcer risk)"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
+                  }
+            }
       },
       {
             "id": "1022",
@@ -16400,7 +30752,45 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Nita Pharma)",
             "notes": "Category: Anthelmintic. ANTIPARASITIC DRUG Sterile solution for injection and oral use intramuscularly, orally COMPOSITION Each 1 ml contains: - Ivermectin 10 mg - Tocopheryl acetate (vit E) 40 mg - Exciplents up to 1 ml ADMINISTRATION PROCEDURE » Ivermek is used for treatment and prevention of parasitic diseases in rumina... | Ref: Cattle/Sheep/Goats 0.2 mg/kg SC or PO. Horses 0.2 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose (repeat in 2 weeks if needed)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC (Meat w/d: 35-49d; avoid dairy)"
+                  },
+                  "sheep_goat": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "camel": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "1 ml/50 kg single dose",
+                        "route": "SC"
+                  },
+                  "horse": {
+                        "min": 0.2,
+                        "max": 0.2,
+                        "freq": "Single dose",
+                        "route": "PO paste ONLY (Avoid IM/IV injection!)"
+                  },
+                  "dog": {
+                        "min": 0.05,
+                        "max": 0.2,
+                        "freq": "Single dose (⚠️ Verify MDR1 status in Collies/Shepherds!)",
+                        "route": "PO or SC"
+                  },
+                  "cat": {
+                        "min": 0.2,
+                        "max": 0.4,
+                        "freq": "Single dose",
+                        "route": "PO or SC"
+                  }
+            }
       },
       {
             "id": "1024",
@@ -16409,7 +30799,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0,
             "dose_mg_per_kg_max": 0,
-            "concentration_value": 100,
+            "concentration_value": 208.3,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IV/IM/SC",
@@ -16425,7 +30815,7 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 0.2,
             "dose_mg_per_kg_max": 0.2,
-            "concentration_value": 100,
+            "concentration_value": 10,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "IM/SC",
@@ -16441,14 +30831,48 @@ window.DEFAULT_MEDICATIONS = [
             "species": "large_animal",
             "dose_mg_per_kg_min": 5,
             "dose_mg_per_kg_max": 8,
-            "concentration_value": 117.9,
+            "concentration_value": 100,
             "concentration_unit": "mg/ml",
             "dosage_form": "injectable",
             "route": "SC",
             "unit_description": "100 ml vial (Eva pharma)",
             "notes": "Category: Anthelmintic. COMPOSITION Each 1 ml contains: - Levamisole Hydrochloride 117.9 mg (Eq. to levamisole 100 mg) PROPERTIES Levamisole hydrochloride is a member of the imidothiazole group of anthelmintics. It acts as a ganglion stimulant in sensitive parasite nematodes by exerting a cholinomimetic effect. This result... | Ref: Cattle/Sheep 5-8 mg/kg SC/PO. Dogs (immunostimulant) 0.5-1 mg/kg PO EOD. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "1 ml/10 kg (of 7.5% sol) single dose",
+                        "route": "SC or PO (Meat w/d: 3-7d, Milk w/d: 48h)"
+                  },
+                  "sheep_goat": {
+                        "min": 7.5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "camel": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "Single dose",
+                        "route": "SC or PO"
+                  },
+                  "horse": {
+                        "contraindicated": true,
+                        "warning": "⛔ Not recommended in horses (narrow therapeutic index, CNS toxicity)."
+                  },
+                  "dog": {
+                        "min": 2,
+                        "max": 5,
+                        "freq": "Immune stimulant / microfilaricide",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "contraindicated": true,
+                        "warning": "⛔ Narrow margin of safety in cats."
+                  }
+            }
       },
       {
             "id": "1027",
@@ -16464,7 +30888,39 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Adwia)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Albendazole 100 mg / ml Indications : It's is used in cattle, sheep and goat for control & treatment of gastro-intestinal round worms, lung worms, tape worms and adult liver flukes infestation. Dosage: - Cattle: 10 ml / 100 kg by oral drenching and repeated after 3 weeks... | Ref: Ruminants 5-15 mg/kg PO. Horses 5-10 mg/kg PO x 5 days. Merck Vet Manual.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "species_doses": {
+                  "cattle": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "7.5-10 mg/kg roundworms; 10-15 mg/kg liver flukes",
+                        "route": "PO (⚠️ Contraindicated in 1st trimester pregnancy!)"
+                  },
+                  "sheep_goat": {
+                        "min": 5,
+                        "max": 7.5,
+                        "freq": "5-7.5 mg/kg roundworms; 7.5-10 mg/kg flukes",
+                        "route": "PO (⚠️ Avoid 1st trimester)"
+                  },
+                  "camel": {
+                        "min": 7.5,
+                        "max": 10,
+                        "freq": "Single dose",
+                        "route": "PO"
+                  },
+                  "dog": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12h for 3-5 days (Giardia/parasites)",
+                        "route": "PO"
+                  },
+                  "cat": {
+                        "min": 25,
+                        "max": 50,
+                        "freq": "q12-24h for 3-5 days",
+                        "route": "PO"
+                  }
+            }
       },
       {
             "id": "1028",
