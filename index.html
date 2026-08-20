@@ -2867,14 +2867,18 @@
       const filteredMeds = useMemo(() => {
         let filtered = medications;
 
-        // Filter by Species Practice Type (Small Animals vs Large Animals vs All)
+        // Filter by Species Practice Type (Small Animals vs Large Animals vs Poultry vs All)
         if (animalTypeFilter === 'small') {
           filtered = filtered.filter(med =>
             ['dog', 'cat', 'both'].includes(med.species)
           );
         } else if (animalTypeFilter === 'large') {
           filtered = filtered.filter(med =>
-            ['cattle', 'horse', 'sheep_goat', 'camel', 'poultry', 'large_animal'].includes(med.species)
+            ['cattle', 'horse', 'sheep_goat', 'camel', 'large_animal'].includes(med.species)
+          );
+        } else if (animalTypeFilter === 'poultry') {
+          filtered = filtered.filter(med =>
+            med.species === 'poultry'
           );
         }
 
@@ -3122,40 +3126,54 @@
               <React.Fragment>
               {/* Species Practice Type Switcher */}
               <div className="px-4 md:px-6 pt-4 pb-3 bg-gradient-to-r from-emerald-50/70 to-teal-50/70 border-b border-emerald-100 flex flex-col items-center justify-center gap-3">
-                <div className="flex items-center gap-1 p-1 bg-white/90 dark:bg-gray-800 rounded-2xl w-full sm:w-auto shadow-sm border border-emerald-200/60">
+                <div className="flex items-center gap-1 p-1 bg-white/90 dark:bg-gray-800 rounded-2xl w-full sm:w-auto shadow-sm border border-emerald-200/60 overflow-x-auto">
                   <button
                     onClick={() => setAnimalTypeFilter('small')}
-                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center text-center ${
+                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center text-center whitespace-nowrap ${
                       animalTypeFilter === 'small'
                         ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
                         : 'text-gray-600 hover:text-emerald-700 hover:bg-emerald-50/50'
                     }`}
                   >
-                    Small Animals (Pets)
+                    🐾 Small Animals (Pets)
                   </button>
                   <button
                     onClick={() => setAnimalTypeFilter('large')}
-                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center text-center ${
+                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center text-center whitespace-nowrap ${
                       animalTypeFilter === 'large'
                         ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
                         : 'text-gray-600 hover:text-emerald-700 hover:bg-emerald-50/50'
                     }`}
                   >
-                    Large Animals (Livestock)
+                    🐄 Large Animals (Livestock)
+                  </button>
+                  <button
+                    onClick={() => setAnimalTypeFilter('poultry')}
+                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center text-center whitespace-nowrap ${
+                      animalTypeFilter === 'poultry'
+                        ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
+                        : 'text-gray-600 hover:text-emerald-700 hover:bg-emerald-50/50'
+                    }`}
+                  >
+                    🐓 Poultry
                   </button>
                   <button
                     onClick={() => setAnimalTypeFilter('all')}
-                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center text-center ${
+                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center text-center whitespace-nowrap ${
                       animalTypeFilter === 'all'
                         ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
                         : 'text-gray-600 hover:text-emerald-700 hover:bg-emerald-50/50'
                     }`}
                   >
-                    All Species
+                    🌐 All Species
                   </button>
                 </div>
                 <div className="text-xs font-semibold text-emerald-800 bg-emerald-100/80 px-3 py-1.5 rounded-full border border-emerald-200 text-center">
-                  Showing {filteredMeds.length} {animalTypeFilter === 'small' ? 'small animals (dogs & cats)' : animalTypeFilter === 'large' ? 'large animals (livestock)' : 'total'} drugs
+                  Showing {filteredMeds.length} {
+                    animalTypeFilter === 'small' ? 'small animals (dogs & cats)' :
+                    animalTypeFilter === 'large' ? 'large animals (livestock)' :
+                    animalTypeFilter === 'poultry' ? 'poultry (avian)' : 'total'
+                  } drugs
                 </div>
               </div>
 
@@ -3403,7 +3421,7 @@
                               <div className="text-xs sm:text-sm font-bold">Camel</div>
                             </button>
                           )}
-                          {['poultry', 'large_animal'].includes(selectedMed.species) && (
+                          {selectedMed.species === 'poultry' && (
                             <button
                               onClick={() => setSpecies('poultry')}
                               className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center ${species === 'poultry' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
