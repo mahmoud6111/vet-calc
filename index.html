@@ -1308,7 +1308,7 @@
                     onChange={(e) => updateField('species', e.target.value)}
                     className="w-full px-4 py-3 bg-white dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 rounded-xl text-gray-700 dark:text-gray-200 focus:border-emerald-500 transition-all"
                   >
-                    <option value="both">🐾 Both</option>
+                    <option value="both">🐾 Dogs & Cats</option>
                     <option value="cat">🐱 Cat</option>
                     <option value="dog">🐕 Dog</option>
                   </select>
@@ -1414,7 +1414,7 @@
             {/* datalist for medication autocomplete */}
             <datalist id="medication-list">
               {medications.map((med) => (
-                <option key={med.id} value={med.brand_name} label={`${med.generic_name} (${med.species})`} />
+                <option key={med.id} value={med.brand_name} label={`${med.generic_name} (${getSpeciesLabel(med.species)})`} />
               ))}
             </datalist>
 
@@ -1560,9 +1560,15 @@
                   onChange={(e) => setFormData({ ...formData, species: e.target.value })}
                   className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                 >
-                  <option value="both">Both (Dogs & Cats)</option>
-                  <option value="dog">Dogs Only</option>
-                  <option value="cat">Cats Only</option>
+                  <option value="both">🐾 Dogs & Cats</option>
+                  <option value="dog">🐕 Dogs Only</option>
+                  <option value="cat">🐱 Cats Only</option>
+                  <option value="cattle">🐮 Cattle</option>
+                  <option value="horse">🐴 Horse</option>
+                  <option value="sheep_goat">🐑 Sheep & Goat</option>
+                  <option value="camel">🐪 Camel</option>
+                  <option value="poultry">🐓 Poultry</option>
+                  <option value="large_animal">🐄 Large Animals (General)</option>
                 </select>
               </div>
 
@@ -2735,6 +2741,10 @@
                 return {
                   ...savedMed,
                   species: defaultMed.species,
+                  route: defaultMed.route,
+                  dosage_form: defaultMed.dosage_form,
+                  frequency: defaultMed.frequency,
+                  unit_description: defaultMed.unit_description,
                   concentration_value: (savedMed.concentration_value === null || savedMed.concentration_value === undefined) ? defaultMed.concentration_value : savedMed.concentration_value,
                   concentration_unit: (savedMed.concentration_unit === null || savedMed.concentration_unit === undefined) ? defaultMed.concentration_unit : savedMed.concentration_unit,
                   concentration_ml: savedMed.concentration_ml || defaultMed.concentration_ml || 1
@@ -2864,7 +2874,7 @@
           );
         } else if (animalTypeFilter === 'large') {
           filtered = filtered.filter(med =>
-            ['cattle', 'horse', 'sheep_goat', 'camel', 'poultry', 'large_animal', 'both'].includes(med.species)
+            ['cattle', 'horse', 'sheep_goat', 'camel', 'poultry', 'large_animal'].includes(med.species)
           );
         }
 
@@ -3145,7 +3155,7 @@
                   </button>
                 </div>
                 <div className="text-xs font-semibold text-emerald-800 bg-emerald-100/80 px-3 py-1.5 rounded-full border border-emerald-200 text-center">
-                  Showing {filteredMeds.length} {animalTypeFilter === 'small' ? 'pet & common' : animalTypeFilter === 'large' ? 'livestock & common' : 'total'} drugs
+                  Showing {filteredMeds.length} {animalTypeFilter === 'small' ? 'small animals (dogs & cats)' : animalTypeFilter === 'large' ? 'large animals (livestock)' : 'total'} drugs
                 </div>
               </div>
 
@@ -3638,7 +3648,7 @@
                         : 'bg-white text-gray-500 border border-gray-200 hover:bg-emerald-50'
                         }`}
                     >
-                      {s === 'all' ? 'All' : s === 'cat' ? '🐱 Cats' : s === 'dog' ? '🐕 Dogs' : '🐾 Both'}
+                      {s === 'all' ? 'All' : s === 'cat' ? '🐱 Cats' : s === 'dog' ? '🐕 Dogs' : '🐾 Dogs & Cats'}
                     </button>
                   ))}
                 </div>
@@ -3717,7 +3727,7 @@
                             template.species === 'dog' ? 'bg-blue-100 text-blue-700' :
                             'bg-purple-100 text-purple-700'
                           }`}>
-                            {template.species === 'cat' ? '🐱 Cat' : template.species === 'dog' ? '🐕 Dog' : '🐾 Both'}
+                            {template.species === 'cat' ? '🐱 Cat' : template.species === 'dog' ? '🐕 Dog' : '🐾 Dogs & Cats'}
                           </span>
                           <span className={`category-badge ${
                             template.category === 'viral' ? 'bg-red-100 text-red-700' :
@@ -3820,7 +3830,7 @@
                           viewingPrescription.species === 'dog' ? 'bg-blue-100 text-blue-700' :
                           'bg-purple-100 text-purple-700'
                         }`}>
-                          {viewingPrescription.species === 'cat' ? '🐱 Cat' : viewingPrescription.species === 'dog' ? '🐕 Dog' : '🐾 Both'}
+                          {viewingPrescription.species === 'cat' ? '🐱 Cat' : viewingPrescription.species === 'dog' ? '🐕 Dog' : '🐾 Dogs & Cats'}
                         </span>
                         <span className={`category-badge ${
                           viewingPrescription.category === 'viral' ? 'bg-red-100 text-red-700' :
