@@ -8,8 +8,8 @@ This document records the complete setup, configurations, credentials, live URLs
 
 - **App Name**: InVet - Dosage Calculator
 - **Package Name (Application ID)**: com.invet
-- **Current Version**: 1.0.3
-- **Current Version Code**: 5
+- **Current Version**: 1.0.4
+- **Current Version Code**: 6
 - **Target SDK**: API Level 36 (Android 16)
 - **Min SDK**: API Level 22 (Android 5.1)
 - **Architecture**: Web App bundled with Capacitor 6 for Android & iOS.
