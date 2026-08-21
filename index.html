@@ -2751,7 +2751,11 @@
                   species_doses: defaultMed.species_doses,
                   concentration_value: defaultMed.concentration_value,
                   concentration_unit: defaultMed.concentration_unit,
-                  concentration_ml: defaultMed.concentration_ml || 1
+                  concentration_ml: defaultMed.concentration_ml || 1,
+                  food_restriction: defaultMed.food_restriction || 'none',
+                  meat_withdrawal_days: defaultMed.meat_withdrawal_days,
+                  milk_withdrawal_hours: defaultMed.milk_withdrawal_hours,
+                  food_restriction_note: defaultMed.food_restriction_note
                 };
               }
               return savedMed;
@@ -3379,6 +3383,48 @@
                         <span className="font-semibold text-amber-600">⚠️ Note:</span> {selectedMed.notes}
                       </div>
                     )}
+                    {/* Food Safety Banner */}
+                    {selectedMed.food_restriction === 'banned' && ['cattle','sheep_goat','camel','large_animal','poultry'].includes(selectedMed.species) && (
+                      <div className="mt-3 p-4 bg-red-100 border-2 border-red-500 rounded-xl text-sm">
+                        <div className="flex items-center gap-2 font-bold text-red-800 mb-1">
+                          <span>🚫</span> GLOBALLY PROHIBITED IN FOOD-PRODUCING ANIMALS
+                        </div>
+                        <div className="text-red-700 text-xs leading-relaxed">{selectedMed.food_restriction_note}</div>
+                      </div>
+                    )}
+                    {selectedMed.food_restriction === 'manufacturer_label' && ['cattle','sheep_goat','camel','large_animal','poultry'].includes(selectedMed.species) && (
+                      <div className="mt-3 p-4 bg-orange-50 border-2 border-orange-400 rounded-xl text-sm">
+                        <div className="flex items-center gap-2 font-bold text-orange-800 mb-1">
+                          <span>⚠️</span> Manufacturer Restriction — Not for Food-Producing Animals
+                        </div>
+                        <div className="text-orange-700 text-xs leading-relaxed">{selectedMed.food_restriction_note}</div>
+                      </div>
+                    )}
+                    {selectedMed.food_restriction === 'dairy_prohibited' && ['cattle','sheep_goat','camel','large_animal'].includes(selectedMed.species) && (
+                      <div className="mt-3 p-3 bg-yellow-50 border border-yellow-400 rounded-xl text-sm flex items-start gap-2">
+                        <span className="text-xl shrink-0">🥛</span>
+                        <div>
+                          <div className="font-bold text-yellow-800 mb-0.5">Dairy / Milk Restriction</div>
+                          <div className="text-yellow-700 text-xs leading-relaxed">{selectedMed.food_restriction_note}</div>
+                        </div>
+                      </div>
+                    )}
+                    {selectedMed.food_restriction === 'none' && selectedMed.meat_withdrawal_days !== null && selectedMed.meat_withdrawal_days !== undefined && ['cattle','sheep_goat','camel','large_animal','poultry'].includes(selectedMed.species) && (
+                      <div className="mt-3 flex flex-wrap gap-2">
+                        {selectedMed.meat_withdrawal_days === 0 ? (
+                          <span className="inline-flex items-center gap-1 px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs font-bold border border-emerald-300">🥩 0-Day Meat W/D</span>
+                        ) : (
+                          <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold border border-blue-300">🥩 Meat W/D: {selectedMed.meat_withdrawal_days} days</span>
+                        )}
+                        {selectedMed.milk_withdrawal_hours === 0 ? (
+                          <span className="inline-flex items-center gap-1 px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs font-bold border border-emerald-300">🥛 0-Hour Milk W/D</span>
+                        ) : selectedMed.milk_withdrawal_hours > 0 ? (
+                          <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold border border-blue-300">🥛 Milk W/D: {selectedMed.milk_withdrawal_hours}h ({Math.ceil(selectedMed.milk_withdrawal_hours/24)}d)</span>
+                        ) : (
+                          <span className="inline-flex items-center gap-1 px-3 py-1 bg-red-100 text-red-800 rounded-full text-xs font-bold border border-red-300">🥛 Not for dairy milk</span>
+                        )}
+                      </div>
+                    )}
                   </div>
                 )}
 
@@ -3645,6 +3691,30 @@
                           <div className="flex items-center gap-2 p-2 bg-gray-50 dark:bg-gray-800 rounded-lg dark:text-slate-200">
                             <span className="text-lg">⏰</span>
                             <span><span className="font-semibold">Frequency:</span> {result.frequency || selectedMed.frequency}</span>
+                          </div>
+                        )}
+                        {/* Withdrawal Badges in Prescription Summary */}
+                        {selectedMed.food_restriction === 'none' && selectedMed.meat_withdrawal_days !== null && selectedMed.meat_withdrawal_days !== undefined && ['cattle','sheep_goat','camel','large_animal','poultry'].includes(selectedMed.species) && (
+                          <div className="col-span-2 flex flex-wrap gap-2 pt-1">
+                            {selectedMed.meat_withdrawal_days === 0 ? (
+                              <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-emerald-100 text-emerald-800 rounded-full text-xs font-bold border border-emerald-300">🥩 0-Day Meat Withdrawal</span>
+                            ) : (
+                              <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-blue-100 text-blue-800 rounded-full text-xs font-bold border border-blue-300">🥩 Meat Withdrawal: {selectedMed.meat_withdrawal_days} days</span>
+                            )}
+                            {selectedMed.milk_withdrawal_hours === 0 ? (
+                              <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-emerald-100 text-emerald-800 rounded-full text-xs font-bold border border-emerald-300">🥛 0-Hour Milk Withdrawal</span>
+                            ) : selectedMed.milk_withdrawal_hours > 0 ? (
+                              <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-blue-100 text-blue-800 rounded-full text-xs font-bold border border-blue-300">🥛 Milk Withdrawal: {selectedMed.milk_withdrawal_hours}h ({Math.ceil(selectedMed.milk_withdrawal_hours/24)}d)</span>
+                            ) : (
+                              <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-red-100 text-red-800 rounded-full text-xs font-bold border border-red-300">🥛 Not for dairy animals</span>
+                            )}
+                          </div>
+                        )}
+                        {/* Food Restriction Note in Prescription Summary */}
+                        {(selectedMed.food_restriction === 'banned' || selectedMed.food_restriction === 'manufacturer_label' || selectedMed.food_restriction === 'dairy_prohibited') && ['cattle','sheep_goat','camel','large_animal','poultry'].includes(selectedMed.species) && (
+                          <div className={`col-span-2 p-3 rounded-lg text-xs leading-relaxed font-medium ${selectedMed.food_restriction === 'banned' ? 'bg-red-100 text-red-800 border border-red-300' : selectedMed.food_restriction === 'manufacturer_label' ? 'bg-orange-50 text-orange-800 border border-orange-300' : 'bg-yellow-50 text-yellow-800 border border-yellow-300'}`}>
+                            {selectedMed.food_restriction === 'banned' ? '🚫 ' : selectedMed.food_restriction === 'manufacturer_label' ? '⚠️ ' : '🥛 '}
+                            {selectedMed.food_restriction_note}
                           </div>
                         )}
                       </div>

@@ -14,7 +14,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Susp 156, 312, 457, 600; Tab 625, 1000 mg",
             "notes": "Category: Antibiotic (Potentiated Penicillin). Beta-lactam antibiotic with clavulanate beta-lactamase inhibitor. Broad-spectrum bactericidal activity against Gram-positive and Gram-negative aerobes/anaerobes. Indications: Skin, soft tissue, urinary, respiratory, and periodontal infections. Warnings: Contraindicated in penicillin hypersensitivity; avoid oral use in small herbivores. Ref: Plumb's 9th Ed. p. 62.",
             "frequency": "q8-12h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "2",
@@ -30,7 +34,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Vials 250, 500, 1000 mg",
             "notes": "Category: Antibiotic (3rd Gen Cephalosporin). Broad-spectrum bactericidal cephalosporin with excellent Gram-negative activity and CNS penetration. Indications: Severe sepsis, meningitis, respiratory infections, and perioperative surgical prophylaxis. Dosage: Dogs/Cats 20-50 mg/kg IV/IM q8h. Ref: Plumb's 9th Ed. p. 200.",
             "frequency": "q8h",
-            "concentration_ml": 2
+            "concentration_ml": 2,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "3",
@@ -46,7 +54,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Vials 250, 500, 1000 mg (Wintriaxone, Xoraxon)",
             "notes": "Category: Antibiotic (3rd Gen Cephalosporin). Extended-spectrum bactericidal cephalosporin with long half-life. Indications: Severe Gram-negative infections, osteomyelitis, sepsis, and CNS infections. Dosage: Dogs 15-50 mg/kg IV/IM/SC q12-24h; Cats 25-50 mg/kg IV/IM/SC q12-24h. Ref: Plumb's 9th Ed. p. 205.",
             "frequency": "q12-24h",
-            "concentration_ml": 2
+            "concentration_ml": 2,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "4",
@@ -62,7 +74,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Vials 250, 500, 1000 mg (Wintriaxone, Xoraxon)",
             "notes": "Category: Antibiotic (3rd Gen Cephalosporin). Extended-spectrum bactericidal cephalosporin with long half-life. Indications: Severe Gram-negative infections, osteomyelitis, sepsis, and CNS infections. Dosage: Dogs 15-50 mg/kg IV/IM/SC q12-24h; Cats 25-50 mg/kg IV/IM/SC q12-24h. Ref: Plumb's 9th Ed. p. 205.",
             "frequency": "q12-24h",
-            "concentration_ml": 2
+            "concentration_ml": 2,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "5",
@@ -78,7 +94,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "200 mg suspension",
             "notes": "Category: Antibiotic (Macrolide / Azalide). Long-acting azalide antibiotic inhibiting bacterial 50S ribosomal protein synthesis. Indications: Upper respiratory infections, Bartonellosis, feline chlamydiosis, and Babesiosis (with atovaquone). Dosage: Dogs/Cats 5-10 mg/kg PO q24h. Warnings: Potential hepatotoxicity and GI upset. Ref: Plumb's 9th Ed. p. 112.",
             "frequency": "q24h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "6",
@@ -94,7 +114,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Susp 125, 250 mg",
             "notes": "Category: Antibiotic (Macrolide). Acid-stable macrolide antibiotic inhibiting 50S protein synthesis. Indications: Mycobacterial infections, Helicobacter, Rhodococcus equi (with rifampin in foals), and respiratory tract infections. Dosage: Dogs 4-12 mg/kg PO q12h; Cats 5-10 mg/kg PO q12h; Foals 7.5 mg/kg PO q12h. Ref: Plumb's 9th Ed. p. 248.",
             "frequency": "q12h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "6b",
@@ -110,7 +134,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Susp 125, 250 mg",
             "notes": "Category: Antibiotic (Macrolide). Acid-stable macrolide antibiotic inhibiting 50S protein synthesis. Indications: Mycobacterial infections, Helicobacter, Rhodococcus equi (with rifampin in foals), and respiratory tract infections. Dosage: Dogs 4-12 mg/kg PO q12h; Cats 5-10 mg/kg PO q12h; Foals 7.5 mg/kg PO q12h. Ref: Plumb's 9th Ed. p. 248.",
             "frequency": "q12h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "7",
@@ -126,7 +154,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Susp 125, 250 mg; Tab 250, 500, 1000 mg",
             "notes": "Category: Antibiotic (1st Gen Cephalosporin). Bactericidal beta-lactam active primarily against Gram-positive cocci (Staphylococcus pseudintermedius) and some Gram-negatives. Indications: Superficial and deep pyoderma, urinary tract infections, wound infections. Dosage: Dogs/Cats 15-30 mg/kg PO q8-12h; Injectable 10-15 mg/kg IM/SC q24h. Ref: Plumb's 9th Ed. p. 195.",
             "frequency": "q8-12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "7b",
@@ -142,7 +174,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Injectable form",
             "notes": "Category: Antibiotic (1st Gen Cephalosporin). Bactericidal beta-lactam active primarily against Gram-positive cocci (Staphylococcus pseudintermedius) and some Gram-negatives. Indications: Superficial and deep pyoderma, urinary tract infections, wound infections. Dosage: Dogs/Cats 15-30 mg/kg PO q8-12h; Injectable 10-15 mg/kg IM/SC q24h. Ref: Plumb's 9th Ed. p. 195.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "8",
@@ -158,7 +194,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab 250, 500 mg",
             "notes": "Category: Antibiotic (Fluoroquinolone). Concentration-dependent bactericidal DNA gyrase inhibitor. Indications: Severe Gram-negative urinary, soft tissue, and systemic infections. Note: Oral bioavailability in dogs is variable (40-60%); enrofloxacin is preferred when possible. Dosage: Dogs 10-25 mg/kg PO q24h or divided q12h. Ref: Plumb's 9th Ed. p. 238.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "9",
@@ -174,7 +214,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Capsule 100 mg",
             "notes": "Category: Antibiotic (Tetracycline). Lipophilic tetracycline with broad-spectrum and anti-inflammatory activity. Indications: Ehrlichiosis, Anaplasmosis, Lyme borreliosis, Mycoplasma, Leptospirosis, and Wolbachia in heartworm disease. Dosage: Dogs/Cats 5-10 mg/kg PO/IV q12-24h. Warnings: In cats, always follow oral tablets with water/food to prevent esophageal stricture. Ref: Plumb's 9th Ed. p. 386.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "10",
@@ -228,7 +272,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "IV, IM or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "11",
@@ -244,7 +292,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup 5mg/15mg; Solupred 20mg; Histacortin-H 5mg",
             "notes": "Category: Corticosteroid (Glucocorticoid). Intermediate-acting glucocorticoid, active metabolite of prednisone. Indications: Allergic dermatitis, asthma in cats, autoimmune diseases (IMHA/ITP), and lymphoma. Dosage: Anti-inflammatory: 0.5-1 mg/kg PO/SC/IV q12-24h; Immunosuppressive: 2-4 mg/kg PO q12-24h (taper gradually). Ref: Plumb's 9th Ed. p. 981.",
             "frequency": "q24h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "12",
@@ -260,7 +312,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets",
             "notes": "Anti-inflammatory enzyme. 1 tablet BID or TID. Dose is per animal, not per kg.",
             "frequency": "q8-12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "13",
@@ -276,7 +332,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup",
             "notes": "Mucolytic enzyme. 1-5 ml/animal every 8-12 hours. Dose is per animal.",
             "frequency": "q8-12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "14",
@@ -330,7 +390,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h (max 1-2 days)",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "15",
@@ -384,7 +448,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h (max 1-2 days)",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "16",
@@ -444,7 +512,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "17",
@@ -460,7 +532,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab 10, 20 mg; Amp 20 mg",
             "notes": "Category: NSAIDs (Oxicam). Non-selective COX inhibitor with anti-inflammatory and transitional cell carcinoma (TCC) anti-neoplastic effects. Indications: Bladder TCC, squamous cell carcinoma, and refractory osteoarthritis in dogs. Dosage: Dogs 0.3 mg/kg PO q24-48h (always with food). Warnings: High risk of GI ulceration; monitor renal and GI health. Ref: Plumb's 9th Ed. p. 962.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "18",
@@ -476,7 +552,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab 4 mg; Syrup 2 mg",
             "notes": "Antihistamine. Dogs: 4-8mg per animal q8-12h. Dose is per animal.",
             "frequency": "q8-12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "19",
@@ -492,7 +572,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab 4 mg; Syrup 2 mg",
             "notes": "Antihistamine. Cats: 2-4mg per animal q8-12h. Dose is per animal.",
             "frequency": "q8-12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "20",
@@ -508,7 +592,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab 1 mg; Syrup 0.5 mg; Amp 2 mg",
             "notes": "Antihistamine. 0.1mg/kg PO q12h.",
             "frequency": "q12h",
-            "concentration_ml": 2
+            "concentration_ml": 2,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "21",
@@ -524,7 +612,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab 10 mg; Syrup 5 mg",
             "notes": "Antihistamine. 5-15mg per animal q24h. Dose is per animal, not per kg.",
             "frequency": "q24h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "22",
@@ -540,7 +632,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab 10 mg; Syrup 5 mg",
             "notes": "Antihistamine. 0.25mg/kg or 5-10mg per animal q12h.",
             "frequency": "q12h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "23",
@@ -556,7 +652,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Ampoules",
             "notes": "Antiemetic. 1 ampoule IM q12h. Dose is per animal. | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based)",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "24",
@@ -572,7 +672,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup 5 mg; Tab 10 mg",
             "notes": "Antiemetic. 2-5mg per animal q8h. Dose is per animal.",
             "frequency": "q8h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "25",
@@ -588,7 +692,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup 5 mg; Tab 10 mg; Amp 10 mg",
             "notes": "Antiemetic/Prokinetic. 0.2-0.5mg/kg q8h.",
             "frequency": "q8h",
-            "concentration_ml": 2
+            "concentration_ml": 2,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "26",
@@ -604,7 +712,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Amp 4, 8 mg",
             "notes": "Potent antiemetic. 0.5mg/kg IV q12h.",
             "frequency": "q12h",
-            "concentration_ml": 2
+            "concentration_ml": 2,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "27",
@@ -620,7 +732,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab 8 mg",
             "notes": "Potent antiemetic. 0.5-1mg/kg PO q12h.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "28",
@@ -636,7 +752,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup",
             "notes": "Cough sedative. 2-5ml per animal q8-12h. Dose is per animal.",
             "frequency": "q8-12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "29",
@@ -652,7 +772,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup 4 mg; Tab 8 mg; Amp 4 mg",
             "notes": "Category: Mucolytic / Bronchial Secretagogue. Secretolytic agent that disrupts acid mucopolysaccharide fibers in bronchial sputum, reducing viscosity and enhancing antibiotic penetration into pulmonary secretions. Indications: Acute/chronic bronchopneumonia, tracheobronchitis, and calf respiratory disease. Dosage: Cattle/Horses 0.2-0.5 mg/kg IM/PO q24h; Dogs 2 mg/kg PO q12h; Cats 0.5 mg/kg PO q12h. Ref: Plumb's 9th Ed. p. 147.",
             "frequency": "q12h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "30",
@@ -668,7 +792,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup 4 mg; Tab 8 mg; Amp 4 mg",
             "notes": "Category: Mucolytic / Bronchial Secretagogue. Secretolytic agent that disrupts acid mucopolysaccharide fibers in bronchial sputum, reducing viscosity and enhancing antibiotic penetration into pulmonary secretions. Indications: Acute/chronic bronchopneumonia, tracheobronchitis, and calf respiratory disease. Dosage: Cattle/Horses 0.2-0.5 mg/kg IM/PO q24h; Dogs 2 mg/kg PO q12h; Cats 0.5 mg/kg PO q12h. Ref: Plumb's 9th Ed. p. 147.",
             "frequency": "q12h PO",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "31",
@@ -684,7 +812,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Sachets",
             "notes": "Mucolytic. 50mg/kg PO q8h. Also used for acetaminophen toxicity.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "32",
@@ -700,7 +832,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Inhaler; Tab 2 mg; Syrup 2 mg; Amp 0.5 mg",
             "notes": "Bronchodilator. Dogs: 100-300 ug q4-6h. Dose is per animal.",
             "frequency": "q4-6h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "33",
@@ -716,7 +852,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Inhaler; Tab 2 mg; Syrup 2 mg; Amp 0.5 mg",
             "notes": "Bronchodilator. Cats: 100 ug q4-6h. Dose is per animal.",
             "frequency": "q4-6h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "34",
@@ -732,7 +872,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab 2.5 mg; Syrup 1.5 mg",
             "notes": "Category: Bronchodilator (Beta-2 Agonist). Terbutaline relaxes bronchial smooth muscle. Indications: Canine asthma, chronic bronchitis, and collapsing trachea. Dosage: Dogs 0.03-0.05 mg/kg (or 1.25-5 mg per dog) PO q8-12h. Ref: Plumb's 9th Ed. p. 1105.",
             "frequency": "q8-12h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "35",
@@ -748,7 +892,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab 2.5 mg; Syrup 1.5 mg",
             "notes": "Category: Bronchodilator (Beta-2 Agonist). Terbutaline relaxes bronchial smooth muscle. Indications: Feline allergic asthma and bronchospasm. Dosage: Cats 0.03-0.05 mg/kg (or 0.3-1.25 mg per cat) PO q8-12h. Ref: Plumb's 9th Ed. p. 1105.",
             "frequency": "q8-12h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "36",
@@ -764,7 +912,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Amp 500 mg; Syrup 125 mg",
             "notes": "Bronchodilator. Dogs: 15-20mg/kg q12-24h.",
             "frequency": "q12-24h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "37",
@@ -780,7 +932,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Amp 500 mg; Syrup 125 mg",
             "notes": "Bronchodilator. Cats: 10mg/kg q12-24h.",
             "frequency": "q12-24h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "38",
@@ -796,7 +952,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Suspension",
             "notes": "Category: Antacid (Aluminium/Magnesium Hydroxide). Neutralizes gastric acid and protects mucosal lining. Indications: Gastric ulcers, reflux esophagitis, hyperphosphatemia in renal disease. Dosage: Dogs/Cats 0.5-1 ml/kg PO q6-8h. Give 1-2 hours apart from other medications. Ref: Plumb's 9th Ed. p. 48.",
             "frequency": "q6-8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "39",
@@ -812,7 +972,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab 75, 150 mg; Amp 50 mg; Noerosive Syrup",
             "notes": "H2 blocker. Dogs: 2mg/kg q8-12h.",
             "frequency": "q8-12h",
-            "concentration_ml": 2
+            "concentration_ml": 2,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "40",
@@ -828,7 +992,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab 75, 150 mg; Amp 50 mg; Noerosive Syrup",
             "notes": "H2 blocker. Cats: 2.5-3.5mg/kg q8-12h.",
             "frequency": "q8-12h",
-            "concentration_ml": 2
+            "concentration_ml": 2,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "41",
@@ -844,7 +1012,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab 20, 40 mg; Amp 20 mg",
             "notes": "H2 blocker. 0.5-1mg/kg q12-24h.",
             "frequency": "q12-24h",
-            "concentration_ml": 2
+            "concentration_ml": 2,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "42",
@@ -860,7 +1032,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Cap 10, 20, 40 mg; Vial 40 mg",
             "notes": "Proton pump inhibitor. 0.5-1.5mg/kg q24h.",
             "frequency": "q24h",
-            "concentration_ml": 10
+            "concentration_ml": 10,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "43",
@@ -876,7 +1052,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab 20, 40 mg; Vial 40 mg",
             "notes": "Proton pump inhibitor. 0.7-1mg/kg IV q24h.",
             "frequency": "q24h",
-            "concentration_ml": 10
+            "concentration_ml": 10,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "44",
@@ -892,7 +1072,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup",
             "notes": "Stool softener. Dogs: 50-100mg PO q12h. Dose is per animal.",
             "frequency": "q12h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "45",
@@ -908,7 +1092,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "5% solution",
             "notes": "Stool softener. Dogs: 10-15ml (5%) rectal q12h.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "46",
@@ -924,7 +1112,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup, 5% solution",
             "notes": "Stool softener. Cats: 50mg PO or 2ml (5%) rectal q12h.",
             "frequency": "q12h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "47",
@@ -940,7 +1132,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup",
             "notes": "Category: Laxative / Ammonia Reducer. Synthetic non-absorbable disaccharide that acidifies colonic contents, trapping ammonia as unabsorbable ammonium ions and drawing water into bowel lumen. Indications: Hepatic encephalopathy and chronic constipation. Dosage: Dogs: 0.5-1 ml/kg (or 5-15 ml) PO q8h titrated to 2-3 soft stools/day; Cats: 0.5-1 ml/kg (or 2-5 ml) PO q8-12h; Cattle: 50-100 ml PO. Ref: Plumb's 9th Ed. p. 656. | DOSING: Cattle/Horses: 250-500 g Epsom salts or 1-2 Liters Mineral Oil PO via stomach tube; Sheep: 50-100 g. Ref: Merck Vet Manual.",
             "frequency": "q8h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "48",
@@ -956,7 +1152,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup",
             "notes": "Category: Laxative / Ammonia Reducer. Synthetic non-absorbable disaccharide that acidifies colonic contents, trapping ammonia as unabsorbable ammonium ions and drawing water into bowel lumen. Indications: Hepatic encephalopathy and chronic constipation. Dosage: Dogs: 0.5-1 ml/kg (or 5-15 ml) PO q8h titrated to 2-3 soft stools/day; Cats: 0.5-1 ml/kg (or 2-5 ml) PO q8-12h; Cattle: 50-100 ml PO. Ref: Plumb's 9th Ed. p. 656. | DOSING: Cattle/Horses: 250-500 g Epsom salts or 1-2 Liters Mineral Oil PO via stomach tube; Sheep: 50-100 g. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "49",
@@ -972,7 +1172,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Oil",
             "notes": "Lubricant laxative. Dogs: 1-2 tablespoons q12-24h. | DOSING: Cattle/Horses: 250-500 g Epsom salts or 1-2 Liters Mineral Oil PO via stomach tube; Sheep: 50-100 g. Ref: Merck Vet Manual.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "50",
@@ -988,7 +1192,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Oil",
             "notes": "Lubricant laxative. Cats: 10-25mm (small amount) q12-24h. | DOSING: Cattle/Horses: 250-500 g Epsom salts or 1-2 Liters Mineral Oil PO via stomach tube; Sheep: 50-100 g. Ref: Merck Vet Manual.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "51",
@@ -1004,7 +1212,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Enema, Enemax",
             "notes": "⚠️ DOGS ONLY - DO NOT USE IN CATS! Dogs: 60-128ml. Dose is per animal.",
             "frequency": "Once",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "52",
@@ -1020,7 +1232,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Suppository",
             "notes": "Laxative. Dogs: 1-2 small suppositories rectally. | DOSING: Cattle/Horses: 250-500 g Epsom salts or 1-2 Liters Mineral Oil PO via stomach tube; Sheep: 50-100 g. Ref: Merck Vet Manual.",
             "frequency": "Once",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "53",
@@ -1036,7 +1252,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "5% solution",
             "notes": "Laxative. Cats: 2ml of 5% solution rectally. | DOSING: Cattle/Horses: 250-500 g Epsom salts or 1-2 Liters Mineral Oil PO via stomach tube; Sheep: 50-100 g. Ref: Merck Vet Manual.",
             "frequency": "Once",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "54",
@@ -1052,7 +1272,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup",
             "notes": "Antidiarrheal. 2-5ml per animal q8-12h. Dose is per animal.",
             "frequency": "q8-12h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "55",
@@ -1068,7 +1292,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup 125, 200 mg; Tab 250, 500 mg; Vial 500 mg",
             "notes": "Category: Antiprotozoal / Antibiotic (Nitroimidazole). Potent anaerobic bactericidal agent and antiprotozoal. Indications: Giardiasis, Trichomoniasis, anaerobic sepsis, hepatic encephalopathy, and canine/feline chronic diarrhea. Dosage: Dogs 10-25 mg/kg PO/IV q12h; Cats 8-15 mg/kg PO/IV q12h; Cattle (non-food) 10-20 mg/kg PO/IV q12h. ⚠️ Note: Prohibited in food-producing animals in many jurisdictions. Ref: Plumb's 9th Ed. p. 748.",
             "frequency": "q12h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "banned",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "BANNED in all food-producing animals worldwide (EU Reg 37/2010, FDA CVM). Never use in animals entering the food chain."
       },
       {
             "id": "56",
@@ -1084,7 +1312,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup 125, 200 mg; Tab 250, 500 mg; Vial 500 mg",
             "notes": "Category: Antiprotozoal / Antibiotic (Nitroimidazole). Potent anaerobic bactericidal agent and antiprotozoal. Indications: Giardiasis, Trichomoniasis, anaerobic sepsis, hepatic encephalopathy, and canine/feline chronic diarrhea. Dosage: Dogs 10-25 mg/kg PO/IV q12h; Cats 8-15 mg/kg PO/IV q12h; Cattle (non-food) 10-20 mg/kg PO/IV q12h. ⚠️ Note: Prohibited in food-producing animals in many jurisdictions. Ref: Plumb's 9th Ed. p. 748.",
             "frequency": "q12h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "banned",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "BANNED in all food-producing animals worldwide (EU Reg 37/2010, FDA CVM). Never use in animals entering the food chain."
       },
       {
             "id": "57",
@@ -1100,7 +1332,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup 120 mg",
             "notes": "Antidiarrheal. 15mg/kg PO q12h.",
             "frequency": "q12h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "58",
@@ -1116,7 +1352,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Cap; Syrup 200 mg",
             "notes": "Intestinal antiseptic. 4.4mg/kg q8h. | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q8h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "59",
@@ -1132,7 +1372,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab 250, 500 mg; Amp 250 mg",
             "notes": "Hemostatic. 1 tablet/ampoule q8-24h. Dose is per animal.",
             "frequency": "q8-24h",
-            "concentration_ml": 2
+            "concentration_ml": 2,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "60",
@@ -1148,7 +1392,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup, Amp, Tab",
             "notes": "B vitamin supplement. 1-4ml daily. Dose is per animal. | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based)",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "61",
@@ -1164,7 +1412,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup, Cap",
             "notes": "Liver support. 2-5ml per animal q8-12h.",
             "frequency": "q8-12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "62",
@@ -1180,7 +1432,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup",
             "notes": "Multivitamin. Dogs: 1-5ml daily. Dose is per animal. | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "63",
@@ -1196,7 +1452,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syrup",
             "notes": "Multivitamin. Cats: 0.5-3ml daily. Dose is per animal. | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "64",
@@ -1212,7 +1472,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Sachets",
             "notes": "Oral rehydration. Dogs: 1-3 sachets. Dose is per animal. | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "As needed",
-            "concentration_ml": 200
+            "concentration_ml": 200,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "65",
@@ -1228,7 +1492,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Sachets",
             "notes": "Oral rehydration. Cats: 0.3-0.6 sachets. Dose is per animal. | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "As needed",
-            "concentration_ml": 200
+            "concentration_ml": 200,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "66",
@@ -1244,7 +1512,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Injectable",
             "notes": "Category: Electrolyte / Mineral (Calcium). Calcium borogluconate formulation for acute hypocalcemia (Milk fever / Parturient paresis in cattle, eclampsia in bitches). Indications: Tremors, recumbency, loss of consciousness due to acute calcium deficiency. Dosage: Cattle: 250-500 ml IV slowly by gravity over 15-20 minutes with cardiac auscultation; Bitches: 1-1.5 ml/kg 10% solution slowly IV. Ref: Plumb's 9th Ed. p. 165.",
             "frequency": "As needed",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "67",
@@ -1260,7 +1532,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab, Syrup",
             "notes": "Category: Electrolyte / Mineral (Calcium). Calcium borogluconate formulation for acute hypocalcemia (Milk fever / Parturient paresis in cattle, eclampsia in bitches). Indications: Tremors, recumbency, loss of consciousness due to acute calcium deficiency. Dosage: Cattle: 250-500 ml IV slowly by gravity over 15-20 minutes with cardiac auscultation; Bitches: 1-1.5 ml/kg 10% solution slowly IV. Ref: Plumb's 9th Ed. p. 165.",
             "frequency": "q24h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "68",
@@ -1276,7 +1552,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab, Syrup",
             "notes": "Category: Electrolyte / Mineral (Calcium). Calcium borogluconate formulation for acute hypocalcemia (Milk fever / Parturient paresis in cattle, eclampsia in bitches). Indications: Tremors, recumbency, loss of consciousness due to acute calcium deficiency. Dosage: Cattle: 250-500 ml IV slowly by gravity over 15-20 minutes with cardiac auscultation; Bitches: 1-1.5 ml/kg 10% solution slowly IV. Ref: Plumb's 9th Ed. p. 165.",
             "frequency": "q24h",
-            "concentration_ml": 5
+            "concentration_ml": 5,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "69",
@@ -1292,7 +1572,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Cap 150 mg",
             "notes": "Systemic antifungal. Dogs: 2.5-5mg/kg q12h.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "70",
@@ -1308,7 +1592,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Cap 150 mg",
             "notes": "Systemic antifungal. Cats: 50-100mg per cat q12h. Dose per animal.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "71",
@@ -1324,7 +1612,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Cap 100 mg",
             "notes": "Antifungal. 5mg/kg daily. Pulse therapy: 1 week on, 1 week off.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "72",
@@ -1340,7 +1632,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tab 125, 250 mg",
             "notes": "Antifungal. 20-40mg/kg daily. Pulse therapy recommended.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "73",
@@ -1356,7 +1652,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Eye drops",
             "notes": "Ophthalmic antibiotic. 1 drop q6-12h.",
             "frequency": "q6-12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "74",
@@ -1372,7 +1672,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Eye drops",
             "notes": "Combined antibiotic/steroid. 1 drop q6-12h. Avoid with corneal ulcers.",
             "frequency": "q6-12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "75",
@@ -1388,7 +1692,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Ear drops",
             "notes": "Otic preparation. 1-4 drops q8-12h.",
             "frequency": "q8-12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "76",
@@ -1404,7 +1712,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Cream, Spray",
             "notes": "Topical antibiotic. Apply to affected area BID-TID. | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q8-12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "77",
@@ -1420,7 +1732,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Spray, Cream",
             "notes": "Wound healing promoter. Apply to wounds BID. | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "78",
@@ -1436,7 +1752,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Solution (dilute 1:9)",
             "notes": "Antiseptic wash. Dilute 1:9 with water before use. | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "As needed",
-            "concentration_ml": 10
+            "concentration_ml": 10,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "79",
@@ -1452,7 +1772,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Veterinary injectable",
             "notes": "Category: Antibiotic (Potentiated Penicillin). Beta-lactam antibiotic with clavulanate beta-lactamase inhibitor. Broad-spectrum bactericidal activity against Gram-positive and Gram-negative aerobes/anaerobes. Indications: Skin, soft tissue, urinary, respiratory, and periodontal infections. Warnings: Contraindicated in penicillin hypersensitivity; avoid oral use in small herbivores. Ref: Plumb's 9th Ed. p. 62.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "80",
@@ -1468,7 +1792,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Sachet 10 billion CFU (10×10⁹); Pack of 6 sachets",
             "notes": "🐱 CATS: 1/4 to 1/2 sachet per cat daily (1-5 billion CFU/day). For therapeutic use (IBD, severe diarrhea): up to 1/2 sachet BID. Mix with food. Human product used in veterinary practice. Indications: Antibiotic-associated diarrhea prevention, acute infectious diarrhea, H. pylori therapy support, GI microbiome restoration.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "81",
@@ -1484,7 +1812,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Sachet 10 billion CFU (10×10⁹); Pack of 6 sachets",
             "notes": "🐕 SMALL DOGS (<10kg): 1/4 to 1/2 sachet daily (2.5-5 billion CFU). For therapeutic use: up to 1/2 sachet BID. Mix with food. Human product used in veterinary practice. Indications: Antibiotic-associated diarrhea, acute GI infections, post-antibiotic gut restoration.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "82",
@@ -1500,7 +1832,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Sachet 10 billion CFU (10×10⁹); Pack of 6 sachets",
             "notes": "🐕 MEDIUM DOGS (10-25kg): 1/2 to 1 sachet daily (5-10 billion CFU). For therapeutic use: up to 1 sachet BID. Mix with food. Human product used in veterinary practice. Indications: Antibiotic-associated diarrhea, acute GI infections, post-antibiotic gut restoration.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "83",
@@ -1516,7 +1852,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Sachet 10 billion CFU (10×10⁹); Pack of 6 sachets",
             "notes": "🐕 LARGE DOGS (>25kg): 1 to 2 sachets daily (10-20 billion CFU). For therapeutic use: up to 1 sachet BID. Mix with food. Human product used in veterinary practice. Indications: Antibiotic-associated diarrhea, acute GI infections, post-antibiotic gut restoration.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "84",
@@ -1568,7 +1908,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "85",
@@ -1584,7 +1928,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (Ceva Co.)",
             "notes": "Category: GnRh hormone. Natural GnRh hormone Composition for 1 ml: Active substance (s): - Gonadorelin (as diacetate tetrahydrate) 50 μg Excipients - Benzyl alcohol (E1519) 15 mg - Potassium dihydrogen phosphate - Dipotassium phosphate - Sodium chloride - Water for injections PHARMACEUTICAL FORM Clear colourless solution f... | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg IM/IV. Horses: 50-100 mcg IM. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 518.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "86",
@@ -1600,7 +1948,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "10 ml vial (MSD Co. (Intervet))",
             "notes": "Category: GnRh hormone. Synthetic GnRh hormone Ready-to-use injection solution of a synthetic releasing hormone that releases luteinizing hormone (LH) and follicle-stimulating hormone (FSH) from the anterior lobe of the pituitary COMPOSITION Each ml Receptal contains 0.0042 mg buserelin acetate equivalent to 0.004 mg buser... | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg IM/IV. Horses: 50-100 mcg IM. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 156.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "87",
@@ -1648,7 +2000,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "88",
@@ -1700,7 +2056,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "89",
@@ -1750,7 +2110,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly CONTRAINDICATED in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Diclofenac: Meat 28d. Not recommended for dairy animals."
       },
       {
             "id": "90",
@@ -1794,7 +2158,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Phenylbutazone: STRICTLY PROHIBITED in female dairy cattle ≥20 months (causes human aplastic anemia risk via residues — FDA, EU). Meat: 28-day W/D in beef cattle. Do NOT use in animals producing milk for human consumption."
       },
       {
             "id": "91",
@@ -1838,7 +2206,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Phenylbutazone: STRICTLY PROHIBITED in female dairy cattle ≥20 months (causes human aplastic anemia risk via residues — FDA, EU). Meat: 28-day W/D in beef cattle. Do NOT use in animals producing milk for human consumption."
       },
       {
             "id": "92",
@@ -1854,7 +2226,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Anesthetic. Xyla-Ject Injectable Solution For Veterinary Use Only. COMPOSITION: Each 1 ml contains: - Xylazine Hydrochloride 23.3 mg (eq to 20 mg Xylazine base) USES: - Is a sedating, pre-anaesthetic medication, general anaesthesia, in combination with Ketamine & epidural anaesthesia in cattle, horses, dogs & c... | Species-specific doses: Dogs/Cats 0.5-1.1 mg/kg IV/IM. Horses 0.5-1.1 mg/kg IV. Cattle 0.05-0.15 mg/kg IV.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "93",
@@ -1870,7 +2246,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (Zoetis)",
             "notes": "Category: sedative, analgesic & muscle relaxant. Properties: as xylazine but 80-100 time greater in sedation and analgestic effect Indications: • Used safely in horses for a variety of minor surgical and diagnostic procedure Dosage: • 1 or 2 mL per 500 Kg horse IM or IV • I/V: 5-20 µg/kg • I/M: 10-40 µg/Kg | Ref: Horses 10-40 mcg/kg (0.01-0.04 mg/kg) IV/IM. Cattle 30-40 mcg/kg IM. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "94",
@@ -1886,7 +2266,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Ampoule (N/A)",
             "notes": "Category: anxiolytic and sedative. Indication: • Part of anesthetic combination as muscle relaxant (control of convulsions) + calming effect M.O.A: • Increasing the effect of neurotransmitter (GABA) which reducing neuronal excitability in brain. Dosage: • Cattle: 0.5-1 mg/kg I/M • Equine: 0.02-0.1 mg/kg I/V • Dog-Cat: 0.1–0.4 mg/kg, ...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "95",
@@ -1902,7 +2286,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "5 x 3 ml Amp (N/A)",
             "notes": "Category: anxiolytic and sedative. Composition: Midazolam 15 mg / 3 ml Indication: • Part of anesthetic combination as muscle relaxant (control of convulsions) + calming effect. M.O.A: • Increasing the effect of neurotransmitter (GABA) which reducing neuronal excitability in brain. Dosage: • Cattle: 0.6 and 1.2 mg/kg I/V • Equine: 0....",
             "frequency": "q24h",
-            "concentration_ml": 3
+            "concentration_ml": 3,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "96",
@@ -1918,7 +2306,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (N/A)",
             "notes": "Category: Anesthetic. Composition: Propofol 20 mg / 20ml Properties: • Rapid onset of action • Induction of general anesthesia in dogs and cats • Recovery after 20 min in dogs and 30 min in cats Dose: 6-8 mg / Kg I/V",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "97",
@@ -1972,7 +2364,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "IV, IM or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Dexamethasone: Meat 7d, Milk 72h. ⚠️ Induces abortion in late pregnancy."
       },
       {
             "id": "98",
@@ -1988,7 +2384,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Antihistamine. Composition: Each 1 ml contains - Diphenhydramine Hydrochloride 20 mg Properties: - Diphenhydramine is an antihistaminic substance. It acts like other antihistamines through inhibition of histamine at H1 receptors. - It is also has substantial sedative, anticholinergic, antitussive, and antiemetic e... | Ref: Dogs/Cats 1-2 mg/kg IV/IM/PO q8-12h. Cattle/Horses 0.5-1 mg/kg IV slow. Plumb's.",
             "frequency": "q8-12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "99",
@@ -2042,7 +2442,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "IV, IM or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Dexamethasone: Meat 7d, Milk 72h. ⚠️ Induces abortion in late pregnancy."
       },
       {
             "id": "100",
@@ -2096,7 +2500,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "IV, IM or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Dexamethasone: Meat 7d, Milk 72h. ⚠️ Induces abortion in late pregnancy."
       },
       {
             "id": "101",
@@ -2150,7 +2558,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "IV, IM or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "102",
@@ -2204,7 +2616,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "IV, IM or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Dexamethasone: Meat 7d, Milk 72h. ⚠️ Induces abortion in late pregnancy."
       },
       {
             "id": "103",
@@ -2220,7 +2636,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: SAIDs. Properties: Potent steroidal analgesic, anti-inflammatory and anti-allergic. Indications: • Bovin Ketosis (acetonaemia) • Inflammatory conditions of muscles and joints , rheumatoid arthritis , bursitis, dermatitis. • Insect bites, and snake bites in animals • Pregnancy toxaemia in ewes. I/M: • Cattl... | Ref: Dogs/Cats 0.5-2 mg/kg PO/IM anti-inflammatory; Large animals 0.5-1 mg/kg IM. Plumb's.",
             "frequency": "q12-24h (taper)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "104",
@@ -2236,7 +2656,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Zoetis)",
             "notes": "Category: SAIDs. Properties: • Potent steroidal analgesic, anti-inflammatory and anti-allergic \"For Ruminant\". • Long-lasting, 48 hour gluconeogenic activity 10x than prednisolone. • Increases glucose levels quickly, with levels returning to normal within 8-24 hours. Indications: • Severe toxicity, bovine ketosis, m... | Ref: Cattle 0.01-0.03 mg/kg IM (ketosis, inflammation). Plumb's Vet Drug Handbook.",
             "frequency": "single dose IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "105",
@@ -2252,7 +2676,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (Zoetis)",
             "notes": "Category: SAIDs. Indications: • Treat certain allergies, skin condition and type of arthritis • Used in horses, dog and cat • Available in two concentrations, 20 mg per mL and 40 mg per mL. Dosage: Horse: • I/M: 200 mg (10ml) • Intra-synovia: 40-240 mg (120 average) (2-12ml) Dog: • I/M: 20 mg (1ml) • Intra-synovia: ... | Ref: Dogs/Cats 0.5-2 mg/kg PO/IM q12-24h anti-inflammatory; immunosuppressive 2-4 mg/kg. Plumb's.",
             "frequency": "q12-24h (taper)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "106",
@@ -2296,7 +2724,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Phenylbutazone: STRICTLY PROHIBITED in female dairy cattle ≥20 months (causes human aplastic anemia risk via residues — FDA, EU). Meat: 28-day W/D in beef cattle. Do NOT use in animals producing milk for human consumption."
       },
       {
             "id": "107",
@@ -2340,7 +2772,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Phenylbutazone: STRICTLY PROHIBITED in female dairy cattle ≥20 months (causes human aplastic anemia risk via residues — FDA, EU). Meat: 28-day W/D in beef cattle. Do NOT use in animals producing milk for human consumption."
       },
       {
             "id": "108",
@@ -2384,7 +2820,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Phenylbutazone: STRICTLY PROHIBITED in female dairy cattle ≥20 months (causes human aplastic anemia risk via residues — FDA, EU). Meat: 28-day W/D in beef cattle. Do NOT use in animals producing milk for human consumption."
       },
       {
             "id": "109",
@@ -2428,7 +2868,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Phenylbutazone: STRICTLY PROHIBITED in female dairy cattle ≥20 months (causes human aplastic anemia risk via residues — FDA, EU). Meat: 28-day W/D in beef cattle. Do NOT use in animals producing milk for human consumption."
       },
       {
             "id": "110",
@@ -2472,7 +2916,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Phenylbutazone: STRICTLY PROHIBITED in female dairy cattle ≥20 months (causes human aplastic anemia risk via residues — FDA, EU). Meat: 28-day W/D in beef cattle. Do NOT use in animals producing milk for human consumption."
       },
       {
             "id": "111",
@@ -2526,7 +2974,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h (max 1-2 days)",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 3,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ketoprofen: 0-day milk withdrawal in most formulations."
       },
       {
             "id": "112",
@@ -2580,7 +3032,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h (max 1-2 days)",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "113",
@@ -2634,7 +3090,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h (max 1-2 days)",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "114",
@@ -2688,7 +3148,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h (max 1-2 days)",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 3,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ketoprofen: 0-day milk withdrawal in most formulations."
       },
       {
             "id": "115",
@@ -2704,7 +3168,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: NSAIDs. Composition: Each 100 ml conains: - Tolfenamic Acid 40 mg Properties: Non-steroidal analgesic, anti-inflammatory and anti-pyretic Indications: Cattle: • Acute mastitis • Bacterial respiratory disease Dosage: • For mastitis: 1 ml / 10 kg B.wt. as a single IV injection. • For bacterial respiratory dis... | Ref: Cattle/Pigs 2-4 mg/kg IM q48h. Dogs/Cats 4 mg/kg SC q24h x2. Merck.",
             "frequency": "single dose or q48h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "116",
@@ -2764,7 +3232,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 15,
+            "milk_withdrawal_hours": 120,
+            "food_restriction_note": "Meloxicam: Meat 15d, Milk 5 days (120h)."
       },
       {
             "id": "117",
@@ -2824,7 +3296,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "118",
@@ -2884,7 +3360,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 15,
+            "milk_withdrawal_hours": 120,
+            "food_restriction_note": "Meloxicam: Meat 15d, Milk 5 days (120h)."
       },
       {
             "id": "119",
@@ -2944,7 +3424,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 15,
+            "milk_withdrawal_hours": 120,
+            "food_restriction_note": "Meloxicam: Meat 15d, Milk 5 days (120h)."
       },
       {
             "id": "120",
@@ -3004,7 +3488,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 15,
+            "milk_withdrawal_hours": 120,
+            "food_restriction_note": "Meloxicam: Meat 15d, Milk 5 days (120h)."
       },
       {
             "id": "121",
@@ -3064,7 +3552,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 15,
+            "milk_withdrawal_hours": 120,
+            "food_restriction_note": "Meloxicam: Meat 15d, Milk 5 days (120h)."
       },
       {
             "id": "122",
@@ -3124,7 +3616,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 15,
+            "milk_withdrawal_hours": 120,
+            "food_restriction_note": "Meloxicam: Meat 15d, Milk 5 days (120h)."
       },
       {
             "id": "123",
@@ -3140,7 +3636,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: NSAIDs. Composition: Carprofen 5 gm / 100 ml Properties: Long acting non-steroidal anti-inflammatory, relief pain for up to 3 full days. Indications: In Dogs: • Relief of pain and inflammation associated with osteoarthritis • Control of postoperative pain associated with soft tissue (including intra-ocular)... | Ref: Dogs 2.2 mg/kg PO q12h or 4.4 mg/kg q24h. Cats 4 mg/kg SC single dose. Cattle: 0.7 mg/kg IV/SC. Plumb's.",
             "frequency": "q24h PO or single SC/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "124",
@@ -3156,7 +3656,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Avico)",
             "notes": "Category: NSAIDs. Properties: Long acting non-steroidal anti-inflammatory Indications: In Dogs: • Relief of pain and inflammation associated with osteoarthritis • Control of postoperative pain associated with soft tissue (including intra-ocular) • Orthopedic surgeries In Cats: • Control of post-operative pain followi... | Ref: Dogs 2.2 mg/kg PO q12h or 4.4 mg/kg q24h. Cats 4 mg/kg SC single dose. Cattle: 0.7 mg/kg IV/SC. Plumb's.",
             "frequency": "q24h PO or single SC/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "125",
@@ -3172,7 +3676,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Zoetis)",
             "notes": "Category: NSAIDs. COMPOSITION Active substance: - Carprofen 50 mg/ml Excipients: - Ethanol 0.1 ml/ml - Benzyl Alcohol 10 mg/ml INDICATION(S) Rimadyl solution is indicated as an adjunct to antimicrobial therapy to reduce clinical signs in acute infectious respiratory disease and acute mastitis in cattle. CONTRAINDICAT... | Ref: Dogs 2.2 mg/kg PO q12h or 4.4 mg/kg q24h. Cats 4 mg/kg SC single dose. Cattle: 0.7 mg/kg IV/SC. Plumb's.",
             "frequency": "q24h PO or single SC/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "126",
@@ -3188,7 +3696,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: Supportive treatment. COMPOSITION: each 1 ml contains: - Vitamin A 50,000 IU - Vitamin B1 10 mg - Vitamin B2 0.04 mg - Vitamin B6 1 mg - Vitamin B12 0.01 mg - Vitamin D3 25,000 IU - Vitamin E 4 mg - D-panthenol 2 mg - Inositol 2 mg - Choline citrate 5 mg - Nicotin acid 5 mg - Cobalt chloride 0.02 mg - Methionin 5 mg - Mg... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "127",
@@ -3240,7 +3752,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "128",
@@ -3292,7 +3808,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "129",
@@ -3344,7 +3864,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "130",
@@ -3396,7 +3920,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "131",
@@ -3448,7 +3976,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "132",
@@ -3502,7 +4034,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "IV, SC or IM"
                   }
-            }
+            },
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "133",
@@ -3554,7 +4090,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "134",
@@ -3606,7 +4146,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "135",
@@ -3622,7 +4166,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Tornel)",
             "notes": "Category: Antihistamine. Properties: Effective antihistamine, In addition, substantial sedative, anticholinergic, and antiemetic effects. Indications: • Allergic respiratory diseases • Peruritis in allergic skin disorders • Motion sickness • Aseptic laminitis in cattle • Relief upper respiratory tract irritation. Contra-ind... | Ref: Dogs/Cats 1-2 mg/kg IV/IM/PO q8-12h. Cattle/Horses 0.5-1 mg/kg IV slow. Plumb's.",
             "frequency": "q8-12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "136",
@@ -3638,7 +4186,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antihistamine. Composition: Each 1 ml contains: Diphenhydramine hydrochloride 20 mg Properties Diphenhydramine an effective antihistamine. It is an antagonist of the Histamine H1-receptors, to which its anticholinergic, antiemetic, anti-tussive and sedative properties are attributed. Indications Allergamine is eff...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "137",
@@ -3688,7 +4240,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly CONTRAINDICATED in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Diclofenac: Meat 28d. Not recommended for dairy animals."
       },
       {
             "id": "138",
@@ -3738,7 +4294,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly CONTRAINDICATED in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Diclofenac: Meat 28d. Not recommended for dairy animals."
       },
       {
             "id": "139",
@@ -3788,7 +4348,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly CONTRAINDICATED in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Diclofenac: Meat 28d. Not recommended for dairy animals."
       },
       {
             "id": "140",
@@ -3838,7 +4402,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly CONTRAINDICATED in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Diclofenac: Meat 28d. Not recommended for dairy animals."
       },
       {
             "id": "141",
@@ -3888,7 +4456,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly CONTRAINDICATED in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Diclofenac: Meat 28d. Not recommended for dairy animals."
       },
       {
             "id": "142",
@@ -3938,7 +4510,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly CONTRAINDICATED in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Diclofenac: Meat 28d. Not recommended for dairy animals."
       },
       {
             "id": "143",
@@ -3954,7 +4530,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "5 x 2ml Amps (Sanofi)",
             "notes": "Category: Antihistamine (H1 Blocker). Pheniramine maleate. Indications: Acute allergic reactions, urticaria, serum sickness, insect stings, and pruritus. Dosage: Cattle/Horses: 1 mg/kg (approx. 3-4 ampoules per animal) IV/IM; Sheep/Goats: 1 ampoule IM. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "144",
@@ -4006,7 +4586,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "145",
@@ -4066,7 +4650,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "146",
@@ -4082,7 +4670,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "125 gm Ointment (Mega Pharma)",
             "notes": "Category: Topical. Indication: • Myositis • Chronic mastitis • Tendonitis Package: 125 gm | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "147",
@@ -4098,7 +4690,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "125 gm Ointment (Mega Pharma)",
             "notes": "Category: Topical. Indication: • Myositis • Chronic mastitis • Tendonitis • Abscesses | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "148",
@@ -4114,7 +4710,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Ointment (N/A)",
             "notes": "Category: Topical. Indication: • Ripening of abscess • Chronic inflammatory conditions | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "149",
@@ -4130,7 +4730,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "125 gm Ointment (Mega Pharma)",
             "notes": "Category: Topical. COMPOSITION - Cod liver oil - Camomile oil - Panthenol - Zinc oxide - Boric acid INDICATIONS • healing of wounds • udder and teat injury • skin diseases as eczema, burns, allergic conditions • saddle pressure sores • before and after operation as covering ointment APPLICATION - applied in a thick la... | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "150",
@@ -4146,7 +4750,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "125 gm Ointment (N/A)",
             "notes": "Category: Topical. Indication: • Mange in different animals | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "151",
@@ -4162,7 +4770,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml Bottle (Bayer)",
             "notes": "Category: Supportive treatment. PROPERTIES ■ Vigest is a highly palatable and nutritional additive for the enhancement of drinking water and feed intake. ■ The addition of Vigest to drinking water encourages water consumption during periods of heat stress, disease and transpert, when birds and animals normally have reduced Intake.... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "152",
@@ -4178,7 +4790,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Vetoquinol)",
             "notes": "Category: Supportive treatment. Composition: Each ml contains: - THIAMINE (sf hydrochloride): 44.59 mg - PYRIDOXINE (sf hydrochloride): 20.57 mg - Chlorobutanol: 5 mg - Sodium edetate: 0.2 mg • Vitamin B1, also called thiamine hydrochloride, is essential for the nutrition of the nervous system, muscles and glands . It plays a role... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "153",
@@ -4238,7 +4854,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "154",
@@ -4298,7 +4918,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "155",
@@ -4358,7 +4982,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "156",
@@ -4418,7 +5046,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "157",
@@ -4478,7 +5110,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "158",
@@ -4538,7 +5174,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "159",
@@ -4554,7 +5194,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Spray (N/A)",
             "notes": "Category: Topical Antiseptic. Indications: • Prevention and control of Myiasis, for any type of wounds • Forms a weather resistant protective barrier for wounds and sensitive skins. • Hoof infections • Treatment of open wounds • Not used in mucosal lesions | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "160",
@@ -4570,7 +5214,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Spray (N/A)",
             "notes": "Category: Topical Antiseptic. Indications: • Prevention and control of Myiasis, for any type of wounds • Forms a weather resistant protective barrier for wounds and sensitive skins. • Hoof infections • Treatment of open wounds • Not used in mucosal lesions | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "161",
@@ -4586,7 +5234,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Spray (Vetoquinol)",
             "notes": "Category: Topical Antiseptic. Indications: • Prevention and control of Myiasis, for any type of wounds • Forms a weather resistant protective barrier for wounds and sensitive skins. • Hoof infections • Treatment of open wounds • Not used in mucosal lesions | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "162",
@@ -4602,7 +5254,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Spray (N/A)",
             "notes": "Category: Topical Antiseptic. Indications: • Local treatment for superficial wounds and foot root • Minor Surgical procedures | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "163",
@@ -4618,7 +5274,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "250 ml Spray (N/A)",
             "notes": "Category: Topical Antiseptic. Indications: • Local treatment for superficial wounds and foot root • Minor Surgical procedures | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "164",
@@ -4634,7 +5294,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Spray (N/A)",
             "notes": "Category: Topical Antiseptic. Indications: • Local treatment for superficial wounds and foot root • Minor Surgical procedures | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "165",
@@ -4650,7 +5314,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Spray (N/A)",
             "notes": "Category: Topical Antiseptic. Indications: • Dermatitis • Eczema • Udder impetigo • Surgical wounds after operations | Ref: Cattle 10-22 mg/kg PO q12h (neonatal scours). Plumb's.",
             "frequency": "q12h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Oral neomycin: Meat 30d, Milk 72h. Topical/oral only — systemic not approved for food animals."
       },
       {
             "id": "166",
@@ -4666,7 +5334,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Spray (N/A)",
             "notes": "Category: Topical Antiseptic. Indications: • Dermatitis • Eczema • Udder impetigo • Surgical wounds after operations | Ref: Cattle 10-22 mg/kg PO q12h (neonatal scours). Plumb's.",
             "frequency": "q12h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Oral neomycin: Meat 30d, Milk 72h. Topical/oral only — systemic not approved for food animals."
       },
       {
             "id": "167",
@@ -4682,7 +5354,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Spray (N/A)",
             "notes": "Category: Topical Antiseptic. Indications: • Dermatitis • Eczema • Udder impetigo • Surgical wounds after operations | Ref: Cattle 10-22 mg/kg PO q12h (neonatal scours). Plumb's.",
             "frequency": "q12h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Oral neomycin: Meat 30d, Milk 72h. Topical/oral only — systemic not approved for food animals."
       },
       {
             "id": "168",
@@ -4698,7 +5374,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Supportive treatment. Composition: Each ml contains: - Vitamin A (Retinol Palmitate) 15000 IU - Vitamin D3 (Cholecalciferol) 1000 IU - Vitamin E (Alpha tocopheryl Acetate 20 mg - Vitamin B2 (Riboflavin Sodium Phosphate) 5 mg - Vitamin B1 (Thiamine Hydrochloride) 10 mg - Vitamin B6 (Pyridoxine Hydrochloride) 3 mg - Vitami... | DOSING: Per-label volume dosing per animal. Not weight-based mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "169",
@@ -4714,7 +5394,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Supportive treatment. Indications: • Supportive treatment Content: • Vit. A: 1500 I.U. • Vit. D3: 1000 I.U. • Vit E: 20 mg • Vit B1: 10 mg • Vit B2: 5 mg • Vit B6: 3 mg • Vit B12: 25 mcg • Nicotinamide: 35 mg • Dexpanthinol: 25 mg Dosage: • Cattle: 20 to 30 ml • Calves, sheep: 5-10 ml • Wearers and lambs: 2-5ml Manufactu... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "170",
@@ -4730,7 +5414,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Supportive treatment. Composition: Each 1 ml contains: - Vitamin A 100 000 IU - Vitamin D3 20 000 IU - Vitamin E 20 mg Properties : ADEVET is a sterile oily solution of vitamin A (Retinol), Vitamin D3 (Cholecalciferol) and Vitamin E (Tocopherol) for intramuscular injection. Indications: Prevention of symptoms associated ... | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based) | Ref: Ref: Merck Vet Manual.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "171",
@@ -4746,7 +5434,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Supportive treatment. Composition: Each 1 ml contains: - Vitamin A 80000 IU - Vitamin D3 40000 IU - Vitamin E 20 mg Properties: - Vitamin A is converted to retinol in the eye and is also responsible for the stability of cellular membranes. - Vitamin D3 plays a major role in the regulation of calcium and phosphate plasma ... | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based) | Ref: Ref: Merck Vet Manual.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "172",
@@ -4762,7 +5454,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Supportive treatment. Composition: Each 1 ml contains: - Vitamin A 100 000 I.U. - Vitamin D3 20 000 I.U. - Vitamin E 20 mg Properties - Ademin is a sterile oily solution of vitamin A (Retinol), Vitamin D3 (cholecalcipherol) and Vitamin E (Tochopherol) for intramuscular injection. - The physiological Function of Vitamins ... | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based) | Ref: Ref: Merck Vet Manual.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "173",
@@ -4778,7 +5474,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (VMD Pharma)",
             "notes": "Category: Supportive treatment. Composition: Each 1 ml solution contains: - Vitamin A 50.000 I.U. - Vitamin D3 25.000 I.U. - Vitamin E 20 mg. Species: Poultry, cattle, sheep, goats, horses, camels, cats and dogs. Indications: Treatment and prevention of deficiencies of the vitamins A, D3 and/or E, e.g. growth disturbances, non-inf... | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based) | Ref: Ref: Merck Vet Manual.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "174",
@@ -4794,7 +5494,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: Vitamin Supplement (Fat-soluble). Concentrated fat-soluble vitamins for epithelial health, calcium/phosphorus metabolism, bone growth, and fertility. Indications: Hypovitaminosis, rickets, growth retardation, reproductive disorders, retained placenta, and white muscle disease prevention. Dosage: Cattle/Horses: 5-10 ml IM/SC; Calves/Foals: 2-5 ml; Sheep/Goats: 1-3 ml. Repeat in 2-3 months. Ref: Merck Vet Manual.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "175",
@@ -4810,7 +5514,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Bremer Pharma)",
             "notes": "Category: Supportive treatment. Composition for each ml: - Vitamin A 300 000 IU - Vitamin D3 100 000 IU - Vitamin E 50 mg. Dosage: I/M (sheep S/C) Cattle: 5 ml Equine: 4 ml Calves: 2 ml | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based) | Ref: Ref: Merck Vet Manual.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "176",
@@ -4826,7 +5534,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Vitamin Supplement (Fat-soluble). Concentrated fat-soluble vitamins for epithelial health, calcium/phosphorus metabolism, bone growth, and fertility. Indications: Hypovitaminosis, rickets, growth retardation, reproductive disorders, retained placenta, and white muscle disease prevention. Dosage: Cattle/Horses: 5-10 ml IM/SC; Calves/Foals: 2-5 ml; Sheep/Goats: 1-3 ml. Repeat in 2-3 months. Ref: Merck Vet Manual.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "177",
@@ -4842,7 +5554,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Supportive treatment. Composition Each 100 ml contains: - Vitamin A palmitate (10 M.I.U) eq. to 5.55 gm - Vitamin D3 (1 M.I.U) eq. to 0.25 gm - Vitamin E acetate 6.00 gm - Vitamin C 20.00 gm Properties - Vitamin A is converted to retinol in the eye and is also responsible for the stability of cellular membranes. - Vitami... | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based) | Ref: Ref: Merck Vet Manual.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "178",
@@ -4858,7 +5574,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Nita Pharma)",
             "notes": "Category: Supportive treatment. Content: Each 100 ml contains: - Vitamin A 5 000 000 IU - Vitamin D3 500 000 IU - Vitamin E 5000 mg. - Vitamin C 10 000 mg - Propylene glycol 23.3 gm - Water purified up to 100 ml Indications Treatment and Prevention of symptoms associated with vitamin (A, D3, & E) deficiencies such as night blindne... | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based) | Ref: Ref: Merck Vet Manual.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "179",
@@ -4874,7 +5594,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 gm Powder (Arabcomed)",
             "notes": "Category: Antibiotic (polymyxin). Composition Each 1 gm contains: - Colistin (as Colistin sulphate) 500 MIU=16.67 GM Properties - Colistin is a polypeptide antibiotic belongs to the class of polymyxins. - Colistin has a bactericidal action on sensitive bacterial strains, by disorganization of their cytoplasmic membrane, leading to a... | UNIT: IU/kg. Ref: Poultry/Pigs 50,000-75,000 IU/kg drinking water q12h x 3-5 days. NOTE: In mg/kg ≈ 2.5-5 mg/kg. Merck.",
             "frequency": "q12h PO (IU/kg)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "180",
@@ -4890,7 +5614,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Tornel)",
             "notes": "Category: Supportive treatment. COMPOSITION Each ml contains: - Active vitamin B12 (injectable raw liver, N.F. 2 mcg / ml) eq to Cyanocobalamin 0.2 mcg - Vitamin C 5 mg - Vitamin B12 (cyanocobalamin) 500 mcg - Ferrous citrate (eq to 3.6 mcg iron) 0.02 g - Panthenol (B5) 3 mg - Thiamine HCL (B1) 50 mg - Riboflavin (B2) 0.6 mg - Pyr... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "181",
@@ -4906,7 +5634,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Vetoquinol)",
             "notes": "Category: Supportive treatment. Content: Iron, cobalt, Vit B12 and B3 Dosage: I/M or S/C Cattle - horse: 20ml Sheep & Goats: 5ml Calves& Foals: 10ml Lambs & kids: 1-2ml | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "182",
@@ -4922,7 +5654,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml vial (Arabcomed)",
             "notes": "Category: Supportive treatment. Composition Each 100 ml contains - Calcium gluconate 23 gm (eq to Ca 2.1 gm) - Magnesium gluconate 2 gm (eq to Mg 0.12 gm) - Dextrose 10 gm Properties - Calcium is an essential element that is required for normal nerve and musculoskeletal function, cell membrane and capillary permeability and activa... | DOSING: Per-animal IV slow infusion. Cattle: 250-500 mL IV slowly. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 165.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Calcium products: No withdrawal required."
       },
       {
             "id": "183",
@@ -4938,7 +5674,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml vial (Avico)",
             "notes": "Category: Supportive treatment. Composition: Each 1 ml contains: - Calcium borogluconate 230 mg (As Calcium gluconate monohydrate 214.7 mg eq to 19.14 mg calcium) - Sodium Hypophosphite 28.5 mg (As Sodium hypophosphite monohydrate 34.2 mg eq to 10 mg phosphorus) - Magnesium chloride Hexahydrate 45 mg (eq to 5.35 mg Magnesium) - De... | DOSING: Per-animal IV slow infusion. Cattle: 250-500 mL IV slowly. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 165.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Calcium products: No withdrawal required."
       },
       {
             "id": "184",
@@ -4954,7 +5694,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "400 ml vial (Norbrook)",
             "notes": "Category: Electrolyte / Mineral (Calcium). Calcium borogluconate formulation for acute hypocalcemia (Milk fever / Parturient paresis in cattle, eclampsia in bitches). Indications: Tremors, recumbency, loss of consciousness due to acute calcium deficiency. Dosage: Cattle: 250-500 ml IV slowly by gravity over 15-20 minutes with cardiac auscultation; Bitches: 1-1.5 ml/kg 10% solution slowly IV. Ref: Plumb's 9th Ed. p. 165.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Calcium products: No withdrawal required."
       },
       {
             "id": "185",
@@ -4970,7 +5714,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml vial (Tornel)",
             "notes": "Category: Supportive treatment. Composition: Each 100 ml contains: - Ca gluconate 24 gm (Ca 2160 mg) - dextrose 6 gm - L Lysine HCL 3440 mcg (2655.18 mcg synthetic origin) - DL Methionine 480 mcg (476.25 mcg synthetic origin) - L Phenylalanine 1440 mcg - L Leucine 2160 mcg - L Tryptophan 640 mcg - L Valine 480 mcg - L Cysteine 144... | DOSING: Per-label volume dosing per animal. Not weight-based mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "186",
@@ -4986,7 +5734,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml vial (saint-herblon)",
             "notes": "Category: Supportive treatment. Composition: Every 1 ml contain： - Calcium gluconate 280 mg - Magnesium hypophosphite 90 mg - Boric acid 57.5 mg Indication: Cattle, sheep, goats, equidae, pigs, dogs and cats: preventive and curative treatment of hypocalcemia, hypomagnesia, hypophosphatemia (milk fever, parturient paresis, grass te... | DOSING: Per-animal IV slow infusion. Cattle: 250-500 mL IV slowly. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 165.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "187",
@@ -5002,7 +5754,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml vial (El-Nasr)",
             "notes": "Category: Supportive treatment. COMPOSITION: Each 100 ml Contains: - Calcium gluconate 23 gm - Magnesium chloride 2 gm - Dextrose anhydrous 10 gm INDICATIONS: - Calcium deficiency, (Milk Fever richets, osteomalacia and dystrophia fibrosa). - Hypo-magnesiua. (Lactation tetany, grass tetany of Lactative cows, hypomagnesic tetany of ... | DOSING: Per-animal IV slow infusion. Cattle: 250-500 mL IV slowly. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 165.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Calcium products: No withdrawal required."
       },
       {
             "id": "188",
@@ -5018,7 +5774,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "3 x 5ml Amps (Memphis)",
             "notes": "Category: Supportive treatment. Content: Vitamin C 1gm Dosage: I/M or very slow I/V Cattle: 2 ampule Sheep and goat: 1ampule ================================= Properties: Chemical antidot (Reducing agent) Indications: • Met-Hb inducing agent as nitrate, nitrite and last step of cyanide toxicity Route: I/V | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "189",
@@ -5034,7 +5794,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml vial (Pharma swede)",
             "notes": "Category: Supportive treatment. Composition: Each 1 ml contains: - Calcium gluconate ... 230 mg (eq to 21.4 mg calcium) - Magnesium chloride hexahydrate...45 mg (eq to 5.4 mg magnesium) - Sodium hypophosphite monohydrate ... 34.3 mg (eq to 7.4 mg sodium) - Potassium chloride ... 2 mg (eq to 1.05 mg potassium) - Dextrose monohydrat... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "190",
@@ -5050,7 +5814,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Supportive treatment. Composition Each 100 ml contains: - Vitamin E (as alpha tocopherol acetate 100%) 15 gm - Sodium selenite 0.05 gm Properties Both vitamin E and selenium are involved with cellular metabolism of sulfur. Vitamin E has antioxidant properties and, with selenium, it protects against red blood cell hemolys... | Ref: Ref: Plumb's 9th Ed. p. 1195.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "191",
@@ -5066,7 +5834,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (MAPCO)",
             "notes": "Category: Antioxidant / Mineral Supplement. Potent biological antioxidant combination protecting cellular membranes against oxidative damage. Indications: White Muscle Disease (nutritional muscular dystrophy), stiff lamb disease, retained placenta, poor fertility, and immune stimulation. Dosage: Calves/Lambs: 1 ml per 25-50 kg IM/SC; Adult Cattle: 10-20 ml IM. Warnings: Avoid IV administration. Ref: Plumb's 9th Ed. p. 1195.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "192",
@@ -5082,7 +5854,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Nita Pharma)",
             "notes": "Category: Antioxidant / Mineral Supplement. Potent biological antioxidant combination protecting cellular membranes against oxidative damage. Indications: White Muscle Disease (nutritional muscular dystrophy), stiff lamb disease, retained placenta, poor fertility, and immune stimulation. Dosage: Calves/Lambs: 1 ml per 25-50 kg IM/SC; Adult Cattle: 10-20 ml IM. Warnings: Avoid IV administration. Ref: Plumb's 9th Ed. p. 1195.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "193",
@@ -5098,7 +5874,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Elyoser (Alfasan))",
             "notes": "Category: Antioxidant / Mineral Supplement. Potent biological antioxidant combination protecting cellular membranes against oxidative damage. Indications: White Muscle Disease (nutritional muscular dystrophy), stiff lamb disease, retained placenta, poor fertility, and immune stimulation. Dosage: Calves/Lambs: 1 ml per 25-50 kg IM/SC; Adult Cattle: 10-20 ml IM. Warnings: Avoid IV administration. Ref: Plumb's 9th Ed. p. 1195.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "194",
@@ -5114,7 +5894,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Norbrook)",
             "notes": "Category: Antioxidant / Mineral Supplement. Potent biological antioxidant combination protecting cellular membranes against oxidative damage. Indications: White Muscle Disease (nutritional muscular dystrophy), stiff lamb disease, retained placenta, poor fertility, and immune stimulation. Dosage: Calves/Lambs: 1 ml per 25-50 kg IM/SC; Adult Cattle: 10-20 ml IM. Warnings: Avoid IV administration. Ref: Plumb's 9th Ed. p. 1195.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "195",
@@ -5130,7 +5914,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (VMD Pharma)",
             "notes": "Category: Antioxidant / Mineral Supplement. Potent biological antioxidant combination protecting cellular membranes against oxidative damage. Indications: White Muscle Disease (nutritional muscular dystrophy), stiff lamb disease, retained placenta, poor fertility, and immune stimulation. Dosage: Calves/Lambs: 1 ml per 25-50 kg IM/SC; Adult Cattle: 10-20 ml IM. Warnings: Avoid IV administration. Ref: Plumb's 9th Ed. p. 1195.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "196",
@@ -5146,7 +5934,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Supportive treatment. Composition Each 1 ml contains: - Vitamin E acetate 150 mg - Sodium selenite 1.67 mg (eq. to 0.762 mg Selenium). Indications: Treatment & prevention of Vit E & Selenium deficiency: - white muscle disease which leads to cardiac and skeletal dystrophy. - decrease fertility and edema. - improve immunit... | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based) | Ref: Ref: Plumb's 9th Ed. p. 1195.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "197",
@@ -5162,7 +5954,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Plexopharm (Rexall Ph.))",
             "notes": "Category: Supportive treatment. COMPOSITION: Each ml contains: - Zinc ... 40 mg - Manganese ... 10 mg - Copper ... 5 mg - Selenium ... 5 mg DESCRIPTION: • MINARIN® Contains the four most Essential trace minerals for reproduction, immunity and growth in a balanced formulation. • MINARIN® has been formulated to deliver a balanced ra... | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based)",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Selenium: Meat 30d, Milk 48h. Risk of toxicity above label doses."
       },
       {
             "id": "198",
@@ -5178,7 +5974,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "125 ml Bottle (Star pharma)",
             "notes": "Category: Supportive treatment. Composition: - Iron sulfate - Vopper (Copper) sulfate - Cobalt sulfate - Completed by molas as a carrier to 1 liter Indications: 1- This preparation is used in the Treatment of complete loss of Appetite as well as wasting. 2- plays a role in the production and formation of vitamin B12 as well as blo... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "199",
@@ -5194,7 +5994,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Sachet (Livisto (Invesa))",
             "notes": "Category: Supportive treatment. Boviestimul is a powder specially formulated to prevent and correct imbalances in the ruminal flora of ruminants, growth enhancer and stimulate dairy production. Features: - It consists of dehydrated live ruminal flora, which continues its life cycle under appropriate environmental conditions, toget... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "200",
@@ -5210,7 +6014,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1000 gm Sachet (Avico)",
             "notes": "Category: Supportive treatment. Compostion: Each 1 gm contains: - Iron 3.43 mg - Magnesium 0.178 mg - Manganese 0.180 mg - Dicalcium phosphate 100 mg - Zinc 0.224 mg - Copper 0.133 mg - Cobalt 0.027 mg - Sodium chloride 877.149 mg Properties AVISAL is a source of the most important minerals and trace elements needed for the proper... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "201",
@@ -5226,7 +6034,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Sachet (N/A)",
             "notes": "Category: Vaginal Wash. Content: Sodium bicarbonate, boric acid or alum, sodium chloride or sodium chlorophyll and menthol Indications: Treatment of Pyometra Dosage: • 4 sachets dissolved in 1 liter warm distilled water or normal saline then intrauterine infusion 2-3 treatments with 2 days interval + oxytocin | DOSING: 1-2 boluses or 1 vial/syringe intrauterine infusion post-calving or for endometritis/metritis treatment.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "202",
@@ -5242,7 +6054,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Bayer)",
             "notes": "Category: Supportive treatment. A 10% injectable organic phosphorus solution with vitamin B12 contains 1.73 g phosphorus in 100 mL. Composition Each 100 mL contain • Butaphosphan 10 gm • Cyanocobalamin (vit B12) 5 mg Mode of action Vitamin B12, influences protein, carbohydrate and fat metabolism and promotes formation of red blood... | DOSING: Per-animal dose. Horses/Cattle: 1-2 mL/100 kg IV/IM/SC. Refer to product label. | Ref: Ref: Plumb's 9th Ed. p. 159.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "203",
@@ -5258,7 +6074,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Supportive treatment. Composition: Each 100 ml contains: » 1-(n-Butylamino)-1-methylethyl-Phosphorous acid (Butaphosphan) 10 gm (eq to Phosphorous 1.73 gm) » Vitamin B12 0.005 gm Properties: * Butaphosphan is an organic phosphorous compound favorably influence almost all assimilatory processes of the body. * Phosphorus i... | DOSING: Per-animal dose. Horses/Cattle: 1-2 mL/100 kg IV/IM/SC. Refer to product label. | Ref: Ref: Plumb's 9th Ed. p. 159.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "204",
@@ -5274,7 +6094,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml Bottle (kela Co.)",
             "notes": "Category: Supportive treatment. Composition: - Calcium gluconate 279.24 mg (Ca++: 24.96 mg) - Boric acid 77.05 mg - Magnesium chloride 40 mg (Mg++: 4.78 mg) - Excipients up to 1 ml Indications: - Acute hypocalcaemia in cows and ewes (puerperal paresis, milk fever). - Acute hypomagnesaemia in cattle (grass tetany). Contra-indicatio... | DOSING: Per-animal IV slow infusion. Cattle: 250-500 mL IV slowly. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 165.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Calcium products: No withdrawal required."
       },
       {
             "id": "205",
@@ -5290,7 +6114,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Supportive treatment. Composition: Each 100 ml contains: - Butaphosphane 10 gm - Cyanocobalamine 0.05 gm - Folic acid 1.5 gm Indications: • For the use as a supplemental source of nutritional phosphorus in areas where feeding rations are inadequate to supply all phosphorous needs. • In case of Vitamin B12 deficiency asso... | DOSING: Per-animal dose. Horses/Cattle: 1-2 mL/100 kg IV/IM/SC. Refer to product label. | Ref: Ref: Plumb's 9th Ed. p. 159.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "206",
@@ -5306,7 +6134,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (MAPCO)",
             "notes": "Category: Supportive treatment. Indications: • For the use as a supplemental source of nutritional phosphorus in areas where feeding rations are inadequate to supply all phosphorous needs. • In case of Vitamin B12 deficiency associated with cobalt deficiency in cattle, horses and sheep. • It is used to prevent and treat anemia. (V... | DOSING: Per-animal dose. Horses/Cattle: 1-2 mL/100 kg IV/IM/SC. Refer to product label. | Ref: Ref: Plumb's 9th Ed. p. 159.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "207",
@@ -5322,7 +6154,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (El kenana group)",
             "notes": "Category: Supportive treatment. COMPOSITION Each 100 ml contains: - Butaphosphan 10 gm - Cyanocobalamin ( Vit. B12 ) 5 mg INDICATIONS A) Acute diseases and acute metabolic disorders: – Reduced viability and diseases in newborn. Lumbago in horses. – In addition to calcium therapy. B) Chronic diseases and chronic metabolic disorders... | DOSING: Per-animal dose. Horses/Cattle: 1-2 mL/100 kg IV/IM/SC. Refer to product label. | Ref: Ref: Plumb's 9th Ed. p. 159.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "208",
@@ -5338,7 +6174,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: Supportive treatment. Composition Each 100 ml contains: - 1-N-butylamine-1-methylethyl phosphoric acid 10gm (eq to 1.37 phosphorus), - Cyanocobalamin (vitamin B12) 5mg. Indications and Usage - Convalescence and fatigue. - Metabolic dysfunction in young animals. - Nutritional disorders. - Sterility as supportive treatment... | DOSING: Per-animal dose. Horses/Cattle: 1-2 mL/100 kg IV/IM/SC. Refer to product label. | Ref: Ref: Plumb's 9th Ed. p. 159.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "209",
@@ -5354,7 +6194,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Supportive treatment. Composition: Each 1 ml contains: - Toldimfos sodium 200 mg Properties: - Phosphorus is a key component in energy and protein metabolism and also as a structural part of bone. - Phosphorus deficiency in the lactating cow has been associated with the development of post-parturient haemoglobinuria afte... | Ref: Cattle/Horses 5-10 mg/kg IM/SC. Supportive liver-phosphorus supplement. Merck Vet Manual.",
             "frequency": "q24-48h IM/SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "210",
@@ -5370,7 +6214,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Arabcomed)",
             "notes": "Category: Supportive treatment. Composition Each 100 ml contains: - Toldimfos sodium trihydrate 20 gm Properties - Tolditonic Injectable Solution provides a high level of assimilable phosphorus by the most direct routes of administration. - In the animal, all forms of phosphorus are oxidised almost exclusively into the +5 state of... | Ref: Cattle/Horses 5-10 mg/kg IM/SC. Supportive liver-phosphorus supplement. Merck Vet Manual.",
             "frequency": "q24-48h IM/SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "211",
@@ -5386,7 +6234,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Delta Pharma)",
             "notes": "Category: Supportive treatment. Composition: Each 100 ml contains: - Toldimfos sodium 20 gm (eq to toldimfos 17.96 gm) Properties: - Phosphorus is a key component in energy and protein metabolism and also as a structural part of bone. - Phosphorus is characterized by rapid distribution in the body & rapid absorption by the tissues... | Ref: Cattle/Horses 5-10 mg/kg IM/SC. Supportive liver-phosphorus supplement. Merck Vet Manual.",
             "frequency": "q24-48h IM/SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "212",
@@ -5402,7 +6254,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Bremer Pharma)",
             "notes": "Category: Supportive treatment. Composition: - Toldimfos sodium, 3H20 200 mg / ml Indications: Metaphosol is a tonic or roborans indicated for treatment and proph­ylaxis of general metabolic disorders, weakness and prostation after disease, heavy duty in birth, debility of newborn, maldevelopement and stunting in young animals and... | Ref: Cattle/Horses 5-10 mg/kg IM/SC. Supportive liver-phosphorus supplement. Merck Vet Manual.",
             "frequency": "q24-48h IM/SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "213",
@@ -5418,7 +6274,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: Supportive treatment. Composition Each 1 ml contains: - Toldimphos sodium 200mg Indications and Usage Horses, sheep, cattle, goats, dogs: - As a tonic & restorative for the treatment of general metabolic disorders: states of debility and exhaustion, during convalescence or after difficult parturition, debility of the new... | Ref: Cattle/Horses 5-10 mg/kg IM/SC. Supportive liver-phosphorus supplement. Merck Vet Manual.",
             "frequency": "q24-48h IM/SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "214",
@@ -5434,7 +6294,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Supportive treatment. Indications: • As a tonic & restorative for the treatment of general metabolic disorders: states of debility and exhaustion, during convalescence or after difficult parturition, debility of the newborn, developmental and nutritional disorders of young animals. • To support treatment of sterility. • ... | Ref: Cattle/Horses 5-10 mg/kg IM/SC. Supportive liver-phosphorus supplement. Merck Vet Manual.",
             "frequency": "q24-48h IM/SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "215",
@@ -5450,7 +6314,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Supportive treatment. Composition: Each 100 ml contains: - Toldimfos sodium 20 gm - Cobalt 1 mg - Zinc 25 mg - Selenium 10 mg - Molybdenum 5 mg - Manganese 25 mg - Nicotinic acid 500 mg Indications: • As a tonic & restorative for the treatment of general metabolic disorders: states of debility and exhaustion, during conv... | Ref: Cattle/Horses 5-10 mg/kg IM/SC. Supportive liver-phosphorus supplement. Merck Vet Manual.",
             "frequency": "q24-48h IM/SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "216",
@@ -5466,7 +6334,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Choleretic & Liver Tonic. Composition: Each ml contains: - Menbutone 100 mg Indications: Stimulation of gastro-intestinal function. Dosage & Administration: - Cattle, Sheep, Goats, Horses & Dogs: 1 ml / 10 kg B.wt. given by slow I.V. injection. - Depending on the progress of the illness, treatment can be repeated with half t... | Ref: Cattle 5-10 mg/kg IV/IM (liver stimulant, ketosis). Merck Vet Manual.",
             "frequency": "single dose IV/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "217",
@@ -5482,7 +6354,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Choleretic & Liver Tonic. Composition: Each 100 ml contains: - Menbutone 10 gm Properties: Menbutone is a derivative of the oxy-butyric acid and stimulates the secretion of bile (trypsinogen and pepsinogen). After injection, it causes an increase in the secretion of bile, pancreatic juice and pepsin to the 2 – 5 times the no... | Ref: Cattle 5-10 mg/kg IV/IM (liver stimulant, ketosis). Merck Vet Manual.",
             "frequency": "single dose IV/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "218",
@@ -5498,7 +6374,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Boehringer Ingelheim)",
             "notes": "Category: Choleretic & Liver Tonic. Composition: - Menbutone 100 mg / ml Genabil is recommended in the treatment of primary or secondary indigestion, in which a stimulant of the gastrointestinal tract and the secretion of the digestive glands, especially of the bile secretion, is necessary. It also stimulates the secretion of gastric ... | Ref: Cattle 5-10 mg/kg IV/IM (liver stimulant, ketosis). Merck Vet Manual.",
             "frequency": "single dose IV/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "219",
@@ -5514,7 +6394,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Choleretic & Liver Tonic. Bykahepar Injectable digestive stimulant A reliable digestive stimulant for cattle, horses, sheep, dogs, goats and cats. • Single treatment • Multiple indications • Used in many species Composition Each ml solution contains: - Clanobutin sodium 100.07 mg Indications The preparation can be used for a...",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "220",
@@ -5530,7 +6414,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Metabolic Tonic / Rumen Stimulant. Combined vitamins, phosphorus, and metabolic activators. Indications: Anemia, debility, rumen stasis, indigestion, and surgical convalescence. Dosage: Cattle/Horses: 10-20 mL IM/SC; Calves/Sheep: 5-10 mL. Ref: Manufacturer label.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "221",
@@ -5546,7 +6434,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (El-Nasr)",
             "notes": "Category: Tonic and activator of metabolism. COMPOSITION: Each 100 ml contains: - Sodium methyl arsenate 10 gm. INDICATIONS: - In treatment of some forms of anemia. - In treatment of worm infestations (blood parasite infestation). - Antimicrobial action against E. Coli infections. - To promote callus formation in case of bone fracture. - To pr...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "222",
@@ -5562,7 +6454,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Choleretic & Liver Tonic. COMPOSITION - Menbutone 100 mg / ml - Benzyl alcohol 2 mcL / ml (as preservative excipient) Pharmacodynamic - Menbutone, the active ingredient in Bykahepar M, due to its action on the liver, pancreas and stomach, is a stimulant and normalizer of the functions of the digestive system. - In the liver ...",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "223",
@@ -5578,7 +6474,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "6 x 2 ml Amps (N/A)",
             "notes": "Category: Supportive treatment. Indications: • Treatment of vitamin B complex deficiency • Anemia • Neuromuscular disorders • Impaction Dosage: I/M or I/V • Cattle: 3-5 amp • Sheep and goat: 2 amp | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "224",
@@ -5628,7 +6528,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "225",
@@ -5644,7 +6548,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Norbrook)",
             "notes": "Category: Supportive treatment. Each ml contains: - Sulfadimidine 308.9 mg (as Sulfadimidine sodium 333.3 mg) Indications - Indicated for the treatment of infections caused by or associated with organisms sensitive to sulfadimidine. - Sulfadimidine has been shown to be effective in vitro against the following bacterial species: Ac... | Ref: Poultry/Cattle 33-50 mg/kg PO q12-24h x 5 days. Merck Vet Manual.",
             "frequency": "q12-24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "226",
@@ -5660,7 +6568,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Bremer Pharma)",
             "notes": "Category: Supportive treatment. Composition: 1 ml solution contains - Vitamin E 100 mg - Sodium selenite 3 mg Indications: Vitamin E and Selenium deficiency. Dosage: I/M - Cattle: 5-10ml - Calves: 2-5ml - Lambs: 0.5-1ml - Dogs & Cats: 0.5-1ml - Rabbits: 0.25-0.5ml | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based) | Ref: Ref: Plumb's 9th Ed. p. 1195.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "227",
@@ -5676,7 +6588,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "6 Amps (N/A)",
             "notes": "Category: Supportive treatment. Indications: • Treatment of neuritis, lumbago and sciatica Dosage: I/M • Cattle: 3-5 amp • Sheep and goat: 2 amp | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "228",
@@ -5736,7 +6652,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 15,
+            "milk_withdrawal_hours": 120,
+            "food_restriction_note": "Meloxicam: Meat 15d, Milk 5 days (120h)."
       },
       {
             "id": "229",
@@ -5752,7 +6672,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Vetoquinol)",
             "notes": "Category: Supportive treatment. COMPOSITION: Each 1 ml contains: - Toldimphos sodium trihydrate 200 mg PROPERTIES: - The sodium trihydrate salt of dimethylaminomethyl phenylphosphinic acid (or Toldimphos) is an organic compound containing 11.27% phosphorus. Phosphorus plays an important part in the metabolic processes. - It belong... | Ref: Cattle/Horses 5-10 mg/kg IM/SC. Supportive liver-phosphorus supplement. Merck Vet Manual.",
             "frequency": "q24-48h IM/SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "230",
@@ -5802,7 +6726,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly CONTRAINDICATED in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Diclofenac: Meat 28d. Not recommended for dairy animals."
       },
       {
             "id": "231",
@@ -5818,7 +6746,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Zoetis)",
             "notes": "Category: Mastitis Preparation. Content: 500MG CLOXACILLIN BENZATHINE Target: Dry cow Information: • Treatment to be at least 30 days before calving. • Infuse one syringe into each quarter at dry off. | DOSING: Intramammary per quarter. 1 syringe (200-600 mg) per quarter at dry-off. NOT weight-based.",
             "frequency": "single infusion per quarter (dry cow therapy)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "232",
@@ -5834,7 +6766,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Norbrook)",
             "notes": "Category: Mastitis Preparation. Noroclox DC Intramammary Suspension is a dry cow tube containing cloxacillin in a long acting base. It is active against Gram-positive organisms associated with mastitis and is effective against Streptococcus agalactiae, Streptococcus dysgalactiae and other Streptococcal species, and Arcanobacterium... | DOSING: Intramammary per quarter. 1 syringe (200-600 mg) per quarter at dry-off. NOT weight-based.",
             "frequency": "single infusion per quarter (dry cow therapy)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "233",
@@ -5850,7 +6786,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (kela Co.)",
             "notes": "Category: Mastitis Preparation. Content: Cloxacillin benzathine + Excipients Target: Dry cow Information: • 1 syringe per quarter after final milking • Started at least 35 days before expected calving date. | DOSING: Intramammary per quarter. 1 syringe (200-600 mg) per quarter at dry-off. NOT weight-based.",
             "frequency": "single infusion per quarter (dry cow therapy)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "234",
@@ -5866,7 +6806,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Norbrook)",
             "notes": "Category: Mastitis Preparation. Bovaclox DC Xtra Intramammary Suspension is a dry cow tube containing cloxacillin and ampicillin in a long acting base. It is active against both Gram-positive and Gram negative organisms associated with mastitis and is effective against Streptococcus agalactiae and other Streptococcus species, peni... | Ref: Cattle/Horses 5-10 mg/kg IV/IM q12-24h. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Ampicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "235",
@@ -5882,7 +6826,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (MSD Co. (Intervet))",
             "notes": "Category: Mastitis Preparation. Content: Cloxacillin and Ampicillin Target: Dry cow Information: • 1 syringe per quarter after final milking • Milk: Treatment is to be at least 30 days before calving. | Ref: Cattle/Horses 5-10 mg/kg IV/IM q12-24h. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Ampicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "236",
@@ -5898,7 +6846,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Boehringer Ingelheim)",
             "notes": "Category: Antibiotic (Natural Penicillin). Beta-lactam antibiotic active against Gram-positive aerobes and anaerobes (Streptococcus, Clostridium, Actinomyces). Indications: Blackleg, malignant edema, anthrax, tetanus, strangles in horses, and erysipelas in swine. Dosage: Cattle/Horses/Sheep 10,000-20,000 IU/kg (10-20 mg/kg) IM q24h. Withdrawal: Meat 10-14 days, Milk 48-72 hours. Ref: Plumb's 9th Ed. p. 910.",
             "frequency": "intramammary per quarter",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Penicillin G: Meat 30d, Milk 72h."
       },
       {
             "id": "237",
@@ -5914,7 +6866,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Zoetis)",
             "notes": "Category: Antibiotic (Natural Penicillin). Beta-lactam antibiotic active against Gram-positive aerobes and anaerobes (Streptococcus, Clostridium, Actinomyces). Indications: Blackleg, malignant edema, anthrax, tetanus, strangles in horses, and erysipelas in swine. Dosage: Cattle/Horses/Sheep 10,000-20,000 IU/kg (10-20 mg/kg) IM q24h. Withdrawal: Meat 10-14 days, Milk 48-72 hours. Ref: Plumb's 9th Ed. p. 910.",
             "frequency": "intramammary per quarter",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Penicillin G: Meat 30d, Milk 72h."
       },
       {
             "id": "238",
@@ -5962,7 +6918,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "SC or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 5,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ceftiofur has a 0-day milk withdrawal — safe for dairy."
       },
       {
             "id": "239",
@@ -5978,7 +6938,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (MSD Co. (Intervet))",
             "notes": "Category: Mastitis Preparation. COMPOSITION Active: - Cefalonium (as cefalonium dehydrate) 0.25 g / syringe Excipients: Gel base 3 g/syringe The gel base consists of: - Aluminium distearate 0.089 g / syringe - Liquid paraffin Ph Eur to 3 g / syringe INDICATION(S) The veterinary medicinal product is recommended to treat existing su... | DOSING: Infuse 1 syringe per affected teat/quarter immediately after milking. Disinfect teat end before infusion.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "240",
@@ -5994,7 +6958,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Zoetis)",
             "notes": "Category: Mastitis Preparation. Content: Bismuth subnitrate Target: Dry cow Information: • Prevention of new mastitis infections throughout the dry period. | DOSING: Intramammary teat sealant. 1 syringe per teat at dry-off. NOT weight-based.",
             "frequency": "single infusion per teat (internal teat sealant)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "241",
@@ -6010,7 +6978,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Norbrook)",
             "notes": "Category: Mastitis Preparation. Content: Bismuth subnitrate Target: Dry cow Information: • Prevention of new infections through dry period. | DOSING: Intramammary teat sealant. 1 syringe per teat at dry-off. NOT weight-based.",
             "frequency": "single infusion per teat (internal teat sealant)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "242",
@@ -6070,7 +7042,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "243",
@@ -6086,7 +7062,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Zoetis)",
             "notes": "Category: Mastitis Preparation. Content: - Lincomycin 330 mg - Neomycin 100 mg Target: Lactating cow Information: • For twice daily milking: Milk must be discarded during TTT and for not less than 5 milking or 60 hours following the last. | Ref: Cattle 10-22 mg/kg PO q12h (neonatal scours). Plumb's.",
             "frequency": "q12h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Oral neomycin: Meat 30d, Milk 72h. Topical/oral only — systemic not approved for food animals."
       },
       {
             "id": "244",
@@ -6102,7 +7082,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Zoetis)",
             "notes": "Category: Mastitis Preparation. Content: Novobiocin, Neomycin, Procaine penicillin, Dihydrostreptomycin, and Prednisolone. Target: Lactating cow Information: • One infusion that repeated once at 24-48 h. interval in severe. • Milk withdrawal is 108 hours | Ref: Cattle 10-22 mg/kg PO q12h (neonatal scours). Plumb's.",
             "frequency": "q12h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Penicillin G: Meat 30d, Milk 72h."
       },
       {
             "id": "245",
@@ -6118,7 +7102,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Norbrook)",
             "notes": "Category: Mastitis Preparation. Content: Procaine Benzylpenicillin, Streptomycin Sulfate, Neomycin Sulfate, Prednisolone Target: Lactating cow Information: • One infusion that repeated at least three times with 12 h intervals | Ref: Cattle 10-22 mg/kg PO q12h (neonatal scours). Plumb's.",
             "frequency": "q12h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Penicillin G: Meat 30d, Milk 72h."
       },
       {
             "id": "246",
@@ -6134,7 +7122,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Norbrook)",
             "notes": "Category: Mastitis Preparation. Content: Ampicillin and Cloxacillin Target: Lactating cow Information: • One infusion that repeated at least three times with 12 h intervals | Ref: Cattle/Horses 5-10 mg/kg IV/IM q12-24h. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Ampicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "247",
@@ -6150,7 +7142,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (MSD Co. (Intervet))",
             "notes": "Category: Mastitis Preparation. Oily suspension for intramammary use. Composition: Each syringe contains: - Tetracycline HCL … 200 mg - Neomycin base … 250 mg - Bacitracin … 2000 IU - Prednisolone … 10 mg - Base to ... 8 gm Target Species: Lactating cows Indications: Treatment of mastitis in cows, including severe mastitis caused ... | Ref: Cattle 10-22 mg/kg PO q12h (neonatal scours). Plumb's.",
             "frequency": "q12h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Prednisolone: Meat 7d, Milk 72h."
       },
       {
             "id": "248",
@@ -6166,7 +7162,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (MSD Co. (Intervet))",
             "notes": "Category: Mastitis Preparation. COMPOSITION - Cefquinome (as Cefquinome sulphate) 75 mg / 8-g-syringe PHARMACEUTICAL FORM Intramammary ointment TARGET SPECIES Lactating cows INDICATION For the treatment of clinical mastitis in the lactating dairy cow caused by the following cefquinome sensitive organisms: Streptococcus uberis, Str... | DOSING: Intramammary 75 mg/quarter. Cattle mastitis. NOT weight-based. Merck Vet Manual.",
             "frequency": "intramammary per quarter",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 5,
+            "milk_withdrawal_hours": 24,
+            "food_restriction_note": "Cefquinome: Meat 5d, Milk 24h withdrawal."
       },
       {
             "id": "249",
@@ -6182,7 +7182,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Livisto (Invesa))",
             "notes": "Category: Antibiotic (1st Gen Cephalosporin). Bactericidal beta-lactam active primarily against Gram-positive cocci (Staphylococcus pseudintermedius) and some Gram-negatives. Indications: Superficial and deep pyoderma, urinary tract infections, wound infections. Dosage: Dogs/Cats 15-30 mg/kg PO q8-12h; Injectable 10-15 mg/kg IM/SC q24h. Ref: Plumb's 9th Ed. p. 195.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "250",
@@ -6198,7 +7202,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Univet Co.)",
             "notes": "Category: Mastitis Preparation. Terrexine LC is an intramammary suspension for lactating cows, active against staphylococcus, streptococcus and E. Coli mastitis. CONTENT Each 10g syringe of intramammary suspension contains: - Cefalexin (as Cefalexin monohydrate) 200 mg - Kanamycin Monosulfate 100,000 I.U. INDICATIONS Treatment of ... | Ref: Ref: Plumb's 9th Ed. p. 195.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "251",
@@ -6252,7 +7260,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "252",
@@ -6306,7 +7318,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "253",
@@ -6360,7 +7376,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "254",
@@ -6414,7 +7434,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "255",
@@ -6468,7 +7492,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "256",
@@ -6522,7 +7550,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "257",
@@ -6576,7 +7608,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "258",
@@ -6630,7 +7666,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "259",
@@ -6684,7 +7724,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "260",
@@ -6738,7 +7782,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "261",
@@ -6754,7 +7802,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml (N/A)",
             "notes": "Category: Mastitis Preparation. Composition - Peppermint oil - Iodine - Campher - Eucalyptus - Phenol - Copper sulphate - Herbal extract Indications: Mastodin gel is powerful and unique anti-inflammatory and anti-bacterial formula which have quickly effect in mastitis and abcess. Usage: - wash the field by warm water and use it tw... | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "262",
@@ -6808,7 +7860,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "263",
@@ -6862,7 +7918,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "264",
@@ -6916,7 +7976,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "265",
@@ -6970,7 +8034,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "266",
@@ -7024,7 +8092,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "267",
@@ -7078,7 +8150,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "268",
@@ -7132,7 +8208,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "269",
@@ -7186,7 +8266,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "270",
@@ -7240,7 +8324,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "271",
@@ -7294,7 +8382,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "272",
@@ -7348,7 +8440,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "273",
@@ -7402,7 +8498,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "274",
@@ -7456,7 +8556,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "275",
@@ -7472,7 +8576,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "250 ml vial (Zoetis)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Properities - Doramectin is an afermentative-derived macrocyclic lactone isolated from fermentations of selected strains derived from the soil organism Streptomyces averimitilis. Mode of action: Macrocyclic lactone is to modulate chloride ion channel activity in the nervous... | Ref: Cattle 0.2 mg/kg SC or IM. Pigs 0.3 mg/kg IM. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 70,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Doramectin: Meat 70d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "276",
@@ -7522,7 +8630,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "277",
@@ -7572,7 +8684,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "278",
@@ -7622,7 +8738,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "279",
@@ -7672,7 +8792,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "280",
@@ -7722,7 +8846,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "281",
@@ -7772,7 +8900,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "282",
@@ -7822,7 +8954,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "283",
@@ -7872,7 +9008,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "284",
@@ -7920,7 +9060,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "285",
@@ -7968,7 +9112,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "286",
@@ -8016,7 +9164,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "287",
@@ -8064,7 +9216,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "288",
@@ -8112,7 +9268,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "289",
@@ -8160,7 +9320,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "290",
@@ -8208,7 +9372,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "291",
@@ -8256,7 +9424,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "292",
@@ -8272,7 +9444,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "250 ml vial (Tornel)",
             "notes": "Category: Anthelmintic. Anthelmintic (Salicylanilide) Properties: Parasiticide with flukicide activity and efficacy against certain other helminths and arthropods Indications: • Injectable parasiticide against mature and immature forms of trematods (Fasciola hepatica, Fasciola gigantic) nematodes, hematophag (Haemonchus pl... | Ref: Cattle/Sheep 5-10 mg/kg PO or 5 mg/kg SC. Merck Vet Manual.",
             "frequency": "single dose (repeat in 6-8 weeks)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 42,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Closantel: Meat 42d. Not for use in dairy animals."
       },
       {
             "id": "293",
@@ -8288,7 +9464,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "250 ml vial (N/A)",
             "notes": "Category: Anthelmintic. Composition: - Closantel 5 gm / 100 ml Properties: Closantel belongs to the salicylanilide family, its rapid mode of action on the parasite at several levels explains its effectiveness: - Dephosphorylating action on the mitochondria of the cell by depriving them of their energy source “ATP”. - Actio... | Ref: Cattle/Sheep 5-10 mg/kg PO or 5 mg/kg SC. Merck Vet Manual.",
             "frequency": "single dose (repeat in 6-8 weeks)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 42,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Closantel: Meat 42d. Not for use in dairy animals."
       },
       {
             "id": "294",
@@ -8342,7 +9522,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "295",
@@ -8390,7 +9574,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Rafoxanide: Meat 28d. Not for use in dairy animals."
       },
       {
             "id": "296",
@@ -8438,7 +9626,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Rafoxanide: Meat 28d. Not for use in dairy animals."
       },
       {
             "id": "297",
@@ -8486,7 +9678,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Rafoxanide: Meat 28d. Not for use in dairy animals."
       },
       {
             "id": "298",
@@ -8540,7 +9736,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "299",
@@ -8556,7 +9756,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "5 Amps (N/A)",
             "notes": "Category: Bronchodilator. Dosage: • Cattle: 3-4 amp I/M or I/V • Sheep: 1 amp I/M or I/V From reference: • Horse: 5mg/Kg q12h PO or very slow I/V • Cattle: 20mg/Kg q12h PO or q24 in virus D. • Dogs: • Immediate-release: 9 mg/kg q6-8h PO • Sustained release: 10 mg/kg q12h PO. • Cats: • Immediate-release: 4 mg/kg q8-12h PO • S...",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "300",
@@ -8614,7 +9818,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water for CRD",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Tylosin: Meat 21d, Milk 4 days (96h). IM use."
       },
       {
             "id": "301",
@@ -8672,7 +9880,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water for CRD",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Tylosin: Meat 21d, Milk 4 days (96h). IM use."
       },
       {
             "id": "302",
@@ -8688,7 +9900,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "5 Amps (Boehringer Ingelheim)",
             "notes": "Category: Mucolytic. Dosage: • Cattle: 3-4 amp I/M or I/V • Sheep: 1 amp I/M or I/V | Dosing: Cattle/Horses 0.2-0.5 mg/kg IM/PO q24h; Dogs 2 mg/kg PO q12h; Cats 0.5 mg/kg PO q12h. Ref: Plumb's 9th Ed. p. 147.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "303",
@@ -8704,7 +9920,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Ampoule (Boehringer Ingelheim)",
             "notes": "Category: Mucolytic / Surfactant Stimulator. Active metabolite of bromhexine that stimulates surfactant synthesis and ciliary motility while thinning bronchial secretions. Indications: Acute and chronic respiratory disorders with abnormal mucous secretion. Dosage: Large animals: 0.3-0.6 mg/kg IV/IM q24h; Dogs/Cats: 0.5-1 mg/kg PO q12h. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "304",
@@ -8720,7 +9940,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Vetoquinol)",
             "notes": "Category: Antibiotic (Penicillin). COMPOSITION Each 100 ml contains: - Amoxicillin as trihydrate 15 gm - Propylparaben 0.14 gm CHARACTERISTICS - Amoxicillin, a beta-lactam antibiotic, provides bactericidal antibacterial activity against a wide range of Giram negative (e g. Colibacilli, Salmonella, Pasteurella) and Gram positive patho... | Ref: Ref: Plumb's 9th Ed. p. 57.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Amoxicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "305",
@@ -8780,7 +10004,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "306",
@@ -8796,7 +10024,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (kela Co.)",
             "notes": "Category: Antibiotic (Penicillin). COMPOSITION: Amoxicillin (as trihydrate) 150 mg / ml TARGET SPECIES: Cattle, pigs, dogs, cats. INDICATIONS: - For the treatment of infections caused by Gram-positive and Gram-negative bacteria that are susceptible to amoxycillin. CONTRA-INDICATIONS: - Do not use in animals with a history of hypersen... | Ref: Ref: Plumb's 9th Ed. p. 57.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "307",
@@ -8812,7 +10044,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml vial (Pharma swede)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition: Each 1 ml contains: - Streptomycin Sulphate 313.2 mg (eq to streptomycin 250 mg) Indications: - STREPTOSOID is indicated for the treatment of: Enteritis and diarrhea caused by Salmonella spp. and E. coli in Broiler chickens and Non-ruminating calves & lambs. Dosage: - To be added to dri... | Ref: Cattle/Horses 10-20 mg/kg IM q12-24h. Dogs/Cats 10-15 mg/kg IM q12h. Plumb's.",
             "frequency": "q12-24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "308",
@@ -8828,7 +10064,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "25 ml vial (Adwia)",
             "notes": "Category: GnRh hormone. Synthetic GnRh hormone Composition: Each 1 ml contains: - Buserelin acetate: 4.2 µg (eq to 4 µg Buserelin) Properties: Buserelin is a peptide synthetic analogue of the natural gonadotrophin-releasing hormone GnRH. Its effect is 20 - 170 times stronger that of LH-RH, by chemical substitution of the a... | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg IM/IV. Horses: 50-100 mcg IM. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 156.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "309",
@@ -8844,7 +10084,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "5 x 4ml Amps (Sanofi)",
             "notes": "Category: Diuretic. Properties: High-Ceiling diuretic Indications: For treatment of: • In Dogs, Cats & Horses: Edema (pulmonary congestion, ascites) associated with cardiac insufficiency and acute non-inflammatory tissue edema. • In Cattle: Physiological parturient edema of mammary gland and associated structures. Dosa... | Ref: Dogs/Cats 1-4 mg/kg IV/IM/PO q8-12h. Horses 0.5-1 mg/kg IV q12h. Cattle 0.5-1 mg/kg IV. Plumb's.",
             "frequency": "q8-12h IV/IM/PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "310",
@@ -8896,7 +10140,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "311",
@@ -8950,7 +10198,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "312",
@@ -9004,7 +10256,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In drinking water for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "313",
@@ -9058,7 +10314,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "IV, IM or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Dexamethasone: Meat 7d, Milk 72h. ⚠️ Induces abortion in late pregnancy."
       },
       {
             "id": "314",
@@ -9074,7 +10334,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml (Hospira)",
             "notes": "Category: Osmotic Diuretic. Properties: Hyperosmotic diuretic. Indications: Mannitol is administered intravenously for treatment of cerebral edema, acute glaucoma, and conditions associated with tissue edema. Mannitol also has been used to promote urinary excretion of certain toxins and in the management of anuric or oliguric ... | Ref: Ref: Plumb's 9th Ed. p. 692.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "315",
@@ -9090,7 +10354,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1 kg Powder (Arabcomed)",
             "notes": "Category: Hemostasis. Composition Each 100 gm contains: - Menadione Sodium Bisulfite 10 mg Properties and Indication • Vitamin K3 reduces haemorrhages and promotes coagulation of bleeding, so it is recommended in all cases associated with bleeding as: - Gumboro disease. - Coccidiosis. - Parasitic infestations. - Haemorra... | Dosing: Large animals 0.5-2.5 mg/kg SC/IM; Dogs/Cats 2.5-5 mg/kg SC/PO q12-24h for anticoagulant toxicity. Ref: Plumb's 9th Ed. p. 946.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "316",
@@ -9106,7 +10374,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Drugest)",
             "notes": "Category: Antibiotic (Sulfonamide). Composition: Each 100 ml contains: - Sulphadimidine Sodium 33.3 gm (eq to Sulphadimidine base 30 gm) Properties: - Sulphaject is sulphonamide derivative which acts as an antibacterial. - Sulphadimidine & other Sulphonamides have a similar structure to p-aminobenzoic acid (PABA) & interfere with the ... | Ref: Poultry/Cattle 33-50 mg/kg PO q12-24h x 5 days. Merck Vet Manual.",
             "frequency": "q12-24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "317",
@@ -9154,7 +10426,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Rafoxanide: Meat 28d. Not for use in dairy animals."
       },
       {
             "id": "318",
@@ -9170,7 +10446,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: Anti-Dote. Properties - Serum prepared from horse blood after injecting it with several doses of tetanus toxoid. - It is a crude serum that contains anti-tetanus antibodies - It contains tetanus anti-toxin 150 IU / ml Indications To give animals, especially the equine species, passive immunity in cases of deep... | DOSING: Fixed per-animal vaccine/antitoxin dose per label (1-2 mL/animal IM/SC).",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "319",
@@ -9214,7 +10494,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Phenylbutazone: STRICTLY PROHIBITED in female dairy cattle ≥20 months (causes human aplastic anemia risk via residues — FDA, EU). Meat: 28-day W/D in beef cattle. Do NOT use in animals producing milk for human consumption."
       },
       {
             "id": "320",
@@ -9230,7 +10514,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "5 x 1ml Amps (Alamriya)",
             "notes": "Category: Hemostasis. Indications: Treatment of epistaxis, hematuria, hematemesis, melena, uterine hemorrhage and coccidiosis. Dosage: I/M or I/V • Cattle, horse and buffalo: 4-5 Amp. • Sheep, goat and calf: 2 amp. | Dosing: Large animals 0.5-2.5 mg/kg SC/IM; Dogs/Cats 2.5-5 mg/kg SC/PO q12-24h for anticoagulant toxicity. Ref: Plumb's 9th Ed. p. 946.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "321",
@@ -9246,7 +10534,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Medmac)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Composition: Each 1 ml contains: - Oxfendazole 22.65 mg Properties: - The active ingredient is oxfendazole, one of Benzimidazoles wich has anthelmintic activity. Benzimidazoles bind to nematode tubulin, leading to a reduction in the absorption of nutrients, a reduction i...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 120,
+            "food_restriction_note": "Oxfendazole: Meat 7d, Milk 5 days (120h)."
       },
       {
             "id": "322",
@@ -9262,7 +10554,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "8 Effervescent tablets (Zoo tech)",
             "notes": "Category: Anti-Diarrheal. Composition Each 1 Tablet (50 gram) Contains: - Sodium chloride (39.34%) 2.35 gm - Sodium bicarbonate (27.38%) 6.75 gm - Potassiurn chloride (52.44%) 1.15 gm - Glycine 2.25 gm - Citric acid 3.85 gm - Lactose Monohydrate up to 50 gm CHEMICAL ANALYSI5: - lactose 49.8% - Crude protein 0.25% - Crude fat...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "323",
@@ -9316,7 +10612,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In drinking water for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "324",
@@ -9332,7 +10632,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (N/A)",
             "notes": "Category: Gastrointestinal Adsorbent / Antidote. Activated charcoal and natural sulfur for poison adsorption. Indications: Ingestion of plant alkaloids, rodenticides, organophosphates, and chemicals. Dosage: 1-4 g/kg PO slurry in water via stomach tube or syringe. Ref: Plumb's 9th Ed. p. 18.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "325",
@@ -9348,7 +10652,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (Global Napi)",
             "notes": "Category: Gastrointestinal Adsorbent / Antidote. Activated charcoal and simethicone for toxin binding and antiflatulent action. Indications: Acute poisonings and intestinal fermentation. Dosage: 1-4 g/kg PO slurry in water. Ref: Plumb's 9th Ed. p. 18.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "326",
@@ -9364,7 +10672,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Bottle (N/A)",
             "notes": "Category: Physical Demulcent / Emollient. Coats mucous membranes to soothe irritation. Indications: Ingestion of corrosive/caustic chemicals (acids, alkalis). Dosage: Horses/Cattle: 500-1000 mL PO via stomach tube; Small animals: 10-50 mL PO. ⚠️ Contraindicated in fat-soluble toxicosis. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "327",
@@ -9380,7 +10692,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (El-Nasr)",
             "notes": "Category: Parasympathomimitic. COMPOSITION: Each 100 ml contains - Atropine Sulphate 1 gm USES: (1) Parasympatholytic & Antispasmodics. (2) In case of organophosphorus compounds poisoning. ROUTE OF ADMINISTRATION: By Subcutaneous, Intramuscular, Intravenous injection at intervals as required DOSAGE: » Parasympatholytic: - Cattle,... | Ref: Ref: Plumb's 9th Ed. p. 104.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "328",
@@ -9396,7 +10712,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Parasympathomimitic. Composition Each 1 ml contains: - Atropine Sulphate 600 μg (eq to Atropine base 249.84 μg) Properties - Atropine, the prototypical muscarinic blocking agent, is an alkaloid extract from the belladonna plants. - Atropine sulphate interacts with muscarinic receptors of effector cells and by occupying ... | Ref: Ref: Plumb's 9th Ed. p. 104.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "329",
@@ -9412,7 +10732,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (N/A)",
             "notes": "Category: Anti-Dote. Properties: Physiological antidote (Chelator) Indications: • Lead toxicity Dosage: • 25mg/Kg q8 for 2-5days S/C, I/V or I/M",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "330",
@@ -9428,7 +10752,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "5 x 1ml Amps (N/A)",
             "notes": "Category: Anti-Dote. Properties: Physiological antidot (Enzyme activator) Indications: • OPCs toxicity | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "331",
@@ -9444,7 +10772,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "2 x 2ml Amp (N/A)",
             "notes": "Category: Anti-Dote. Properties: Physiological antidot (Chelator) Indications: • Heavy metal toxicity except lead | Ref: Ref: Plumb's 9th Ed. p. 363.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "332",
@@ -9460,7 +10792,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (Sandoz)",
             "notes": "Category: Chelating Agent / Heavy Metal Antidote. D-Penicillamine forms soluble complexes with heavy metals for urinary excretion. Indications: Chronic lead poisoning, copper storage hepatopathy, and cystine urolithiasis. Dosage: Dogs 10-15 mg/kg PO q12h on an empty stomach. Ref: Plumb's 9th Ed. p. 918.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "333",
@@ -9476,7 +10812,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Bottle (N/A)",
             "notes": "Category: Chemical Antidote (Oxidizing Agent). 0.02% (1:5000) solution oxidizes poisons in the gastric lumen. Indications: Poisoning by alkaloids (strychnine, nicotine, morphine), phosphorus, and cyanide. Dosage: Administer 1-2 Liters of 1:5000 solution PO via stomach tube for gastric lavage. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "334",
@@ -9492,7 +10832,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Bottle (N/A)",
             "notes": "Category: Emetic (Gastric Irritant). 3% Hydrogen Peroxide directly stimulates gastric mucosal sensory receptors to induce rapid vomiting. Indications: Immediate induction of emesis in dogs within 1-2 hours of toxin ingestion. Dosage: Dogs: 1-2 mL/kg (max 45 mL) PO once. ⚠️ Avoid in cats. Ref: Plumb's 9th Ed. p. 574.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "335",
@@ -9508,7 +10852,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Ampoule (N/A)",
             "notes": "Category: Anti-Dote. Properties: Chemical antidot (Reducing agent) Indications: • Met-Hb inducing agent as nitrate, nitrite and chlorate toxicity Route: I/V | Ref: Ref: Plumb's 9th Ed. p. 734.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "336",
@@ -9524,7 +10872,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Bottle (N/A)",
             "notes": "Category: Chemical Antidote (Neutralizing / Emetic). Mild alkaline soap solution that neutralizes ingested acids and acts as a mechanical emetic. Indications: Emergency ingestion of concentrated mineral acids. Dosage: 1-2 Liters PO via stomach tube for large animals. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "337",
@@ -9540,7 +10892,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Bottle (N/A)",
             "notes": "Category: Chemical Antidote (Acidifying Agent). 5% Acetic acid lowers ruminal pH, converting toxic free ammonia into unabsorbable ammonium (NH4+) ions. Indications: Acute non-protein nitrogen (urea) and ammonia poisoning in cattle and sheep. Dosage: Cattle: 2-6 Liters PO via stomach tube; Sheep: 0.5-1 Liter PO. Ref: Plumb's 9th Ed. p. 13.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "338",
@@ -9556,7 +10912,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder (N/A)",
             "notes": "Category: Chemical Antidote / Astringent. Forms insoluble copper phosphide precipitate with ingested phosphorus. Indications: Acute yellow phosphorus and zinc phosphide rodenticide ingestion. Dosage: Dissolve 2-4 g in 500 mL water and administer PO immediately; follow with gastric lavage. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h)."
       },
       {
             "id": "339",
@@ -9572,7 +10932,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Bottle (N/A)",
             "notes": "Category: Anti-Dote. Properties: Chemical antidot (precipitating agent) Indications: • Alkaloids and antimony toxicity Route: Oral (should be rapidly washed from GIT)",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "340",
@@ -9588,7 +10952,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (Zoetis)",
             "notes": "Category: GnRH Hormone. Synthetic decapeptide identical to endogenous Gonadotropin-Releasing Hormone. Causes surge release of LH and FSH. Indications: Follicular ovarian cysts, ovulation synchronization in timed AI (Ovsynch, Co-Synch), and improving first-service conception rate. Dosage: Cattle: 100-250 mcg (2-5 ml) IM/IV per animal fixed dose. Ref: Plumb's 9th Ed. p. 518. | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg (or 10-20 mcg Buserelin) IM/IV. (NOT weight-based mg/kg). Ref: Plumb's 9th Ed.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "341",
@@ -9604,7 +10972,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml Vial (Zoetis)",
             "notes": "Category: GnRh hormone. Natural GnRh hormone Each ml of Acegon contains: - Gonadorelin 50 μg (as gonadorelin acetate) Properties: Natural GnRh Physiological function: Release of gonadotrophins (FSH and LH) from anterior pituitary gland (low frequency for FSH and high frequency for LH). Application: 1. Hasten the resumption... | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg IM/IV. Horses: 50-100 mcg IM. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 518.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "342",
@@ -9620,7 +10992,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "10 ml vial (Ceva Co.)",
             "notes": "Category: GnRh hormone. Natural GnRh hormone COMPOSITION - Gonadorelin diacetate tetrahydrate 50 mcg - Excipient q.s.f. 1 ml PROPERTIES - Cystorelin® is a synthetic gonadorelin («Gonadotropin releasing Hormone» GnRH) physiologically and chemically identical to the gonadorelin released by the hypothalamus. It has no antigen... | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg IM/IV. Horses: 50-100 mcg IM. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 518.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "343",
@@ -9636,7 +11012,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml Vial (Parnell)",
             "notes": "Category: GnRH Hormone. Synthetic decapeptide identical to endogenous Gonadotropin-Releasing Hormone. Causes surge release of LH and FSH. Indications: Follicular ovarian cysts, ovulation synchronization in timed AI (Ovsynch, Co-Synch), and improving first-service conception rate. Dosage: Cattle: 100-250 mcg (2-5 ml) IM/IV per animal fixed dose. Ref: Plumb's 9th Ed. p. 518. | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg (or 10-20 mcg Buserelin) IM/IV. (NOT weight-based mg/kg). Ref: Plumb's 9th Ed.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "344",
@@ -9652,7 +11032,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Veyx)",
             "notes": "Category: GnRH Hormone. Synthetic decapeptide identical to endogenous Gonadotropin-Releasing Hormone. Causes surge release of LH and FSH. Indications: Follicular ovarian cysts, ovulation synchronization in timed AI (Ovsynch, Co-Synch), and improving first-service conception rate. Dosage: Cattle: 100-250 mcg (2-5 ml) IM/IV per animal fixed dose. Ref: Plumb's 9th Ed. p. 518. | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg (or 10-20 mcg Buserelin) IM/IV. (NOT weight-based mg/kg). Ref: Plumb's 9th Ed.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "345",
@@ -9668,7 +11052,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Vial (Bayer)",
             "notes": "Category: GnRH Hormone. Synthetic decapeptide identical to endogenous Gonadotropin-Releasing Hormone. Causes surge release of LH and FSH. Indications: Follicular ovarian cysts, ovulation synchronization in timed AI (Ovsynch, Co-Synch), and improving first-service conception rate. Dosage: Cattle: 100-250 mcg (2-5 ml) IM/IV per animal fixed dose. Ref: Plumb's 9th Ed. p. 518. | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg (or 10-20 mcg Buserelin) IM/IV. (NOT weight-based mg/kg). Ref: Plumb's 9th Ed.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "346",
@@ -9684,7 +11072,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (MSD Co. (Intervet))",
             "notes": "Category: GnRh hormone. Natural GnRh hormone Composition Fertagyl is a solution of 0.1 mg/ml Gonadorelin. Gonadorelin is a deca-peptid identical to the natural Gonadotrophin Releasing Hormone (GnRH). Target species: Cattle, rabbits Indication Cattle: cystic ovarian disease, improvement of fertility when given at Artificial... | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg IM/IV. Horses: 50-100 mcg IM. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 518.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "347",
@@ -9700,7 +11092,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "5 x 10 ml (Livisto (Invesa))",
             "notes": "Category: GnRh hormone. Synthetic GnRh hormone Composition Each ml contains: - Buserelin (as Buserelin acetate) 0.004 mg Target species Cattle, horse, rabbit. Indications ■ Cattle: - Early cycle induction post partum. - Treatment of follicular cysts. Improvement of conception rate in artificial insemination procedures, als... | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg IM/IV. Horses: 50-100 mcg IM. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 156.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "348",
@@ -9716,7 +11112,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "2.5 ml Ampoule (Intaspharma)",
             "notes": "Category: GnRh hormone. Synthetic GnRh hormone Properties: Synthetic GnRh analogue contain some modification that reduce susceptibility to proteolytic enzymes and improved binding affinity to GnRh receptors Ten times potency than natural GnRh. Physiological Function: Release of gonadotrophins (FSH and LH) from anterior pit... | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg IM/IV. Horses: 50-100 mcg IM. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 156.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "349",
@@ -9732,7 +11132,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "10 ml vial (Thorn bioscience)",
             "notes": "Category: GnRh hormone. Synthetic GnRh hormone DESCRIPTION: - SucroMate™ Equine (deslorelin acetate) is a sterile, synthetic gonadotropin-releasing hormone (GnRH) analog suspension. - SucroMate™ Equine is a sustained release formulation that forms an in situ gel upon intramuscular injection. - Each mL contains 1.8 mg deslo... | DOSING: Fixed dose implant. Horses: 2.1 mg implant SC. (NOT weight-based)",
             "frequency": "single dose implant",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "350",
@@ -9748,7 +11152,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (Dechra)",
             "notes": "Category: GnRh hormone. Synthetic GnRh hormone It comes as tablets to be injected sub-cutaneously (under the skin), subcutaneous implant characterized by longer and more potent mostly used in equine. Physiological function: Release of gonadotrophins (FSH and LH) from anterior pituitary gland (low frequency for FSH and high... | DOSING: Fixed dose implant. Horses: 2.1 mg implant SC. (NOT weight-based)",
             "frequency": "single dose implant",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "351",
@@ -9764,7 +11172,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Vial (Vetoquinol)",
             "notes": "Category: FSH hormone. Properties: Pituitary gland extract of FSH either from procaine or equine but expensive and time consuming Physiological function: Stimulates follicular growth and selection of dominant follicle Application: 1. Super ovulation during embryo transfer protocol 2. Treatment of ovarian subfunction Dosag... | DOSING: Per-animal fixed dose. Cattle: 200-400 mg total IM divided over 4 days. (NOT weight-based)",
             "frequency": "per superovulation protocol",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "352",
@@ -9780,7 +11192,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Vial (MSD Co. (Intervet))",
             "notes": "Category: Gonadotropin hormone. Properties: Mare’s serum extract during first trimester of pregnancy which has FSH-like effect with some LH activity. Physiological function: Stimulates follicular growth and selection of dominant. Application: 1. Super ovulation during embryo transfer protocol 2. Treatment of ovarian subfunction 3.... | DOSING: Per-animal fixed IU dose. Cattle: 400-600 IU IM. Mares: 1500-3300 IU IM. (NOT weight-based)",
             "frequency": "per protocol",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "353",
@@ -9796,7 +11212,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "10 x 5ml Vial (HIPRA Co.)",
             "notes": "Category: Gonadotropin hormone. COMPOSITION: Freeze-dried serum gonadotrophin (PMSG). Properties: Mare’s serum extract during first trimester of pregnancy which has FSH-like effect with some LH activity. Serum gonadotrophin, in injectable freeze-dried tablet. Physiological function: Stimulates follicular growth and selection of do... | DOSING: Per-animal fixed IU dose. Cattle: 400-600 IU IM. Mares: 1500-3300 IU IM. (NOT weight-based)",
             "frequency": "per protocol",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "354",
@@ -9812,7 +11232,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Vial (Ceva Co.)",
             "notes": "Category: Gonadotropin hormone. Properties: Mare’s serum extract during first trimester of pregnancy which has FSH-like effect with some LH activity Physiological function: Stimulates follicular growth and selection of dominant Application: 1. Super ovulation during embryo transfer protocol 2. Treatment of ovarian subfunction 3. I... | DOSING: Per-animal fixed IU dose. Cattle: 400-600 IU IM. Mares: 1500-3300 IU IM. (NOT weight-based)",
             "frequency": "per protocol",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "355",
@@ -9828,7 +11252,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (Vetoquinol)",
             "notes": "Category: LH hormone. Properties: Pituitary gland extract of LH Physiological function: Follicular maturation and induction of ovulation and maintain CL function Application: • Induction of ovulation in mare and cows • Estrus synchronization • Treatment of follicular cyst • Improve conception rate in repeat breeder • Mal... | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg (or 10-20 mcg Buserelin) IM/IV. (NOT weight-based mg/kg). Ref: Plumb's 9th Ed.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "356",
@@ -9844,7 +11272,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml bottle (N/A)",
             "notes": "Category: Probiotic. Composition Each 1 liter contains: - Choline 3728 mg - Vitamin A 30 000 IU - Lactobacillus acidophillus 50 miliar CFU - Lactobacillus plantarum 10 miliar CFU - Aspergillus oryzae 20 miliar CFU - Saccharomyces cerevisiae 90 miliar CFU - Bacillus subtilis 90 miliar CFU - Bacillus licheniformi 50 milia... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "357",
@@ -9898,7 +11330,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h (max 1-2 days)",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 3,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ketoprofen: 0-day milk withdrawal in most formulations."
       },
       {
             "id": "358",
@@ -9914,7 +11350,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Ampoule (N/A)",
             "notes": "Category: Gonadotropin hormone. Properties: Pregnant women’s serum extract which mainly LH-like but with some FSH-like activity Physiological function: Follicular maturation and induction of ovulation and maintain CL function | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg (or 10-20 mcg Buserelin) IM/IV. (NOT weight-based mg/kg). Ref: Plumb's 9th Ed.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "359",
@@ -9930,7 +11370,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Vet line)",
             "notes": "Category: Supportive treatment. Composition Each 100 ml contains: - DL-Methionine 2500 mg - L-Carnitine 6130 mg - Choline Chloride 2500 mg - Vitamin B3 1200 mg - Sorbitol 1000 mg - Propylene glycol 2000 mg Indications - In case of sever or mild liver and insufficency, Acute disease and metabolic disorders, Reduced viability in new... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "360",
@@ -9946,7 +11390,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Novo Vet)",
             "notes": "Category: Supportive treatment. Composition: Each 100 ml contains: - Sodium dihydrogen orthophosphate-1-hydrate 20 gm - Vitamin B1 250 mg - Vitamin B6 100 mg - Vitamin B12 1.5 mg - Folic acid 100 mg - Nicotinic acid 300 mg - Cobalt chloride 4 mg - Sodium selenite 33 mg - Manganese sulfate 600 mg - Zinc sulfate 500 mg - Prescrvativ... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "361",
@@ -9962,7 +11410,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Vetoquinol)",
             "notes": "Category: Antibiotic (Macrolide). Lydaxx is a ready-to-use sterile parenteral preparation containing tulathromycin, a semi-synthetic macrolide antibiotic of the subclass triamilide. - Each mL of Lydaxx contains 100 mg of tulathromycin as the free base in a propylene glycol vehicle. INDICATIONS: • Beef and Non-lactating Dairy Cattle:...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Tulathromycin: Meat W/D 49 days. Not for use in female dairy cattle producing milk for human consumption (no established milk MRL)."
       },
       {
             "id": "362",
@@ -9978,7 +11430,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: Supportive treatment. COMPOSITION: each 100 ml contains: - Sorbitol 12.5 gm - Methionin 200 mg - Vitamin B2 200 mg - Vitamin B6 2 gm - Vitamin B12 20 mg - Purified water up to 100 ml Effect method: - Vitamin B2 is phosphorilated in the form of coenzym riboflavin-5-phosphate and flavin adenin dinucleotide (FAD) that work ... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Sorbitol: No withdrawal required."
       },
       {
             "id": "363",
@@ -9994,7 +11450,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "5 x 1ml Amps (N/A)",
             "notes": "Category: Estrogen hormone. Properties: Natural form of estrogen Physiological function: 1. Development of female reproductive tract 2. Appearance of female sexual characters 3. Increase vascularity of genital system 4. Retention of water in cervix and vulva 5. Relaxes the cervical canal 6. Appearance of characteristics signs ... | DOSING: Per-animal fixed dose. Cattle: 1-5 mg IM. (NOT weight-based mg/kg)",
             "frequency": "per protocol",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "364",
@@ -10010,7 +11470,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (N/A)",
             "notes": "Category: Supportive treatment. Composition per bolus (75 gm) - Zinc 22140 mg - Copper 10012 mg - Manganese 5022 mg - Selenium 250 mg - Iodine 1195 mg - Cobalt 230 mg - Vitamin A 15000 IU - Vitamin E 3375 IU Excipients: - Vegetable fat (palm oil) 13268 mg - Magnesium stearate 75000 mg Properties: • Obitarie is a bolus composed of ... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "365",
@@ -10026,7 +11490,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "3 x 1ml Amps (Misr)",
             "notes": "Category: Progesterone hormone. Physiological function: • Inhibit the contractility of the uterus (flaccid) • Proliferation and bifurcation of endometrial gland • Act synergistically with estrogen to appear signs of estrus • Development of alveolar system of the udder • Cause cervical secretions to become scanty and visicid and fo... | DOSING: Per-animal fixed dose. Cattle: 500 mg IM (or implant/CIDR). Horses: 150-300 mg IM daily. (NOT weight-based)",
             "frequency": "per protocol",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "366",
@@ -10042,7 +11510,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Vial (MSD Co. (Intervet))",
             "notes": "Category: Progesterone hormone. Composition: Each implant contains: - Norgestomet 3mg Each 2 ml contains: - Norgestomet 3mg - Estradiol valerate 5 mg Indications: Estrus induction and synchronization method that allows: - Induce and synchronize estrus in females in ovarian rest (anoestrus). - Synchronize estrus in cyclical females... | DOSING: Per-animal fixed dose. Cattle: 500 mg IM (or implant/CIDR). Horses: 150-300 mg IM daily. (NOT weight-based)",
             "frequency": "per protocol",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "367",
@@ -10058,7 +11530,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "N/A (Zoetis)",
             "notes": "Category: Progesterone hormone. Physiological function: • Inhibit the contractility of the uterus (flaccid) • Proliferation and bifurcation of endometrial gland • Act synergistically with estrogen to appear signs of estrus • Development of alveolar system of the udder • Cause cervical secretions to become scanty and visicid and fo... | DOSING: Per-animal fixed dose. Cattle: 500 mg IM (or implant/CIDR). Horses: 150-300 mg IM daily. (NOT weight-based)",
             "frequency": "per protocol",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "368",
@@ -10074,7 +11550,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (N/A)",
             "notes": "Category: Progesterone hormone. Physiological function: • Inhibit the contractility of the uterus (flaccid) • Proliferation and bifurcation of endometrial gland • Act synergistically with estrogen to appear signs of estrus • Development of alveolar system of the udder • Cause cervical secretions to become scanty and visicid and fo... | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg (or 10-20 mcg Buserelin) IM/IV. (NOT weight-based mg/kg). Ref: Plumb's 9th Ed.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "369",
@@ -10090,7 +11570,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "30 ml vial (Zoetis)",
             "notes": "Category: Prostaglandin F2α (Natural). Natural PGF2α tromethamine salt inducing luteolysis, smooth muscle contraction, and cervical dilation. Indications: Estrus synchronization, pyometra, abortion induction, and uterine evacuation. Dosage: Cattle: 25 mg (5 ml Lutalyse) IM per animal; Mares: 5-10 mg IM; Swine: 10 mg IM. ⚠️ WARNING: Induces abortion and bronchospasm; handle with extreme care. Ref: Plumb's 9th Ed. p. 367. | DOSING: Per-animal fixed dose. Cattle: 500 mcg Cloprostenol (or 25 mg Dinoprost) IM. ⚠️ Induces abortion! Pregnant women avoid handling. Ref: Plumb's 9th Ed.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "370",
@@ -10106,7 +11590,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Ceva Co.)",
             "notes": "Category: Prostaglandin hormone. Natural prostaglandin hormone PRESENTATION A clear colourless solution for injection. COMPOSITION Each ml Contains: - Dinoprost (as trometamol) 5 mg - Benzyl alcohol 16.5 mg USES ENZAPROST®T is indicated for its luteolytic effects in cattle and pigs, The indications for use are: » Cattle: 5 ml The l... | DOSING: Fixed per-animal dose. Cloprostenol: 500 mcg IM/cattle, 250 mcg IM/horse. Dinoprost: 25 mg IM/cattle. (NOT weight-based) | Ref: Ref: Plumb's 9th Ed. p. 367.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "371",
@@ -10122,7 +11610,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "90 ml vial (Bimeda Co.)",
             "notes": "Category: Prostaglandin hormone. Natural prostaglandin hormone ProstaMate is a sterile solution that contains 5 mg/mL of dinoprost—a naturally occuring prostaglandin F2-alpha — and is indicated for use in cattle. Dosage & Indications ProstaMate Sterile Solution is indicated as a luteolytic agent. ProstaMate is effective only in tho... | DOSING: Fixed per-animal dose. Cloprostenol: 500 mcg IM/cattle, 250 mcg IM/horse. Dinoprost: 25 mg IM/cattle. (NOT weight-based) | Ref: Ref: Plumb's 9th Ed. p. 367.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "372",
@@ -10138,7 +11630,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "10 ml vial (Virbac)",
             "notes": "Category: Prostaglandin hormone. Natural prostaglandin hormone Physiological function: 1. Leuteolysis of the luteal tissue 2. Stimulate mild uterine contraction Application: 1. Induction of estrus in animals with luteal tissue in ovary (CL or luteal cyst) 2. Induction of birth or abortion in CL dependent animals 3. Treatment of ute... | DOSING: Fixed per-animal dose. Cloprostenol: 500 mcg IM/cattle, 250 mcg IM/horse. Dinoprost: 25 mg IM/cattle. (NOT weight-based)",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "373",
@@ -10154,7 +11650,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Vial (MSD Co. (Intervet))",
             "notes": "Category: Prostaglandin hormone. Synthetic prostaglandin hormone COMPOSITION: Active substance per ml: - Cloprostenol sodium 263 µg (eq to 250 µg cloprostenol) Excipients: - Benzyl alcohol 20 mg INDICATIONS: Synthetic prostaglandin analogue for the control of estrus cycle and for therapeutic use. » CATTLE A) Controlled breeding (es... | DOSING: Fixed per-animal dose. Cloprostenol: 500 mcg IM/cattle, 250 mcg IM/horse. Dinoprost: 25 mg IM/cattle. (NOT weight-based) | Ref: Ref: Plumb's 9th Ed. p. 268.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "374",
@@ -10170,7 +11670,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Vial (Parnell)",
             "notes": "Category: Prostaglandin F2α Analog. Synthetic PGF2α luteolytic agent causing regression of corpus luteum within 2-4 days. Indications: Estrus synchronization, luteal cysts, pyometra/endometritis, termination of mummified fetus, and induction of parturition. Dosage: Cattle: 500 mcg (2 ml Estrumate) IM per animal. ⚠️ CAUTION: Induces abortion! Pregnant women and asthmatics must avoid contact. Ref: Plumb's 9th Ed. p. 268. | DOSING: Per-animal fixed dose. Cattle: 500 mcg Cloprostenol (or 25 mg Dinoprost) IM. ⚠️ Induces abortion! Pregnant women avoid handling. Ref: Plumb's 9th Ed.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "375",
@@ -10186,7 +11690,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (Bremer Pharma)",
             "notes": "Category: Prostaglandin hormone. Synthetic prostaglandin hormone Composition Each ml contains - Chloprostenol 250 μg Indications In case of silent heat(anestrus), controlled breeding procedures like embryotransfer,persistant corpus lutum, synchronization, unwelcome pregnancy, luteal cyst, for the treatment of pyometra, chronic endo... | DOSING: Fixed per-animal dose. Cloprostenol: 500 mcg IM/cattle, 250 mcg IM/horse. Dinoprost: 25 mg IM/cattle. (NOT weight-based) | Ref: Ref: Plumb's 9th Ed. p. 268.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "376",
@@ -10202,7 +11710,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (Bayer)",
             "notes": "Category: Prostaglandin hormone. Synthetic prostaglandin hormone Composition: Cloprostenol 250 mcg / ml Physiological function: 1. Leuteolysis of the luteal tissue 2. Stimulate mild uterine contraction Application: 1. Induction of estrus in animals with luteal tissue in ovary (CL or luteal cyst) 2. Induction of birth or abortion in... | DOSING: Fixed per-animal dose. Cloprostenol: 500 mcg IM/cattle, 250 mcg IM/horse. Dinoprost: 25 mg IM/cattle. (NOT weight-based) | Ref: Ref: Plumb's 9th Ed. p. 268.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "377",
@@ -10218,7 +11730,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Veyx)",
             "notes": "Category: Prostaglandin hormone. Synthetic prostaglandin hormone PRESENTATION PGF Veyx forte is a clear, colourless aqueous solution for injection. COMPOSITION Each ml contains: Active substance: - Cloprostenol 0.25 mg (corresponding to 0.263 mg Cloprostenol sodium) Excipients: - Chlorocresol 1 mg INDICATION(S) » Cattle (heifers, c... | DOSING: Fixed per-animal dose. Cloprostenol: 500 mcg IM/cattle, 250 mcg IM/horse. Dinoprost: 25 mg IM/cattle. (NOT weight-based) | Ref: Ref: Plumb's 9th Ed. p. 268.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "378",
@@ -10234,7 +11750,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "5 x 20ml amp (Livisto (Invesa))",
             "notes": "Category: Prostaglandin hormone. Synthetic prostaglandin hormone Properties: Synthetic prostaglandin Physiological function: 1. Leuteolysis of the luteal tissue 2. Stimulate mild uterine contraction Application: 1. Induction of estrus in animals with luteal tissue in ovary (CL or luteal cyst) 2. Induction of birth or abortion in CL... | DOSING: Fixed per-animal dose. Cloprostenol: 500 mcg IM/cattle, 250 mcg IM/horse. Dinoprost: 25 mg IM/cattle. (NOT weight-based) | Ref: Ref: Plumb's 9th Ed. p. 268.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "379",
@@ -10250,7 +11770,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Oxytocin hormone. Composition: Each 1 ml contains: - Oxytocin 10 I.U. Properties: 1. Oxytocin is a hormone; influence the contraction of uterine musculature at the time of parturition, and few days after parturition. 2. Oxytocin facilitates parturition process, expulsion of fetus and placenta also helps in uterine in... | DOSING: Per-animal. Cattle: 20-100 IU IM/IV slow. Horses: 10-20 IU IM/IV slow. Dogs: 2-20 IU IM/SC. Cats: 2-5 IU IM/SC. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 896.",
             "frequency": "as needed",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Oxytocin: No withdrawal required."
       },
       {
             "id": "380",
@@ -10266,7 +11790,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Powder (Pharma swede)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition: Each 1 gm contains: - Streptomycin Sulphate 1000 mg (eq to streptomycin 798.2 mg) Indications: Enteritis and diarrhea caused by Salmonella spp. and E. coli in poultry, calves, and lambs Dosage: - To be added to drinking water - Poultry: 1 – 2 gm. STREPTOSOID / 8 liter of drinking water ... | Ref: Cattle/Horses 10-20 mg/kg IM q12-24h. Dogs/Cats 10-15 mg/kg IM q12h. Plumb's.",
             "frequency": "q12-24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "381",
@@ -10282,7 +11810,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Ampoule (Novartis)",
             "notes": "Category: Pituitary Hormone (Oxytocic). Stimulates rhythmic contraction of uterine smooth muscle and contraction of myoepithelial cells in mammary alveoli (milk letdown). Indications: Uterine inertia (dystocia - ensure cervix is dilated!), retained placenta, post-partum uterine hemorrhage, agalactia, and post-partum uterine involution. Dosage: Cattle/Horses: 10-30 IU IV/IM; Swine: 10-20 IU IM; Dogs: 1-5 IU SC/IM. Ref: Plumb's 9th Ed. p. 896. | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg (or 10-20 mcg Buserelin) IM/IV. (NOT weight-based mg/kg). Ref: Plumb's 9th Ed.",
             "frequency": "as needed",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "382",
@@ -10298,7 +11830,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Veyx)",
             "notes": "Category: Ecbolic. COMPOSITION Each ml contains: Active substance: - Denaverine hydrochloride 40 mg (eq to 36.5 mg Denaverine) Excipients: - Benzyl alcohol (E1519) 20 mg - Propylene glycol - Hydrochloric acid (for pH adjustment) - Water for injections PHARMACEUTICAL FORM Clear, colourless solution for injection Target...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "383",
@@ -10314,7 +11850,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "4 vaginal tablets (N/A)",
             "notes": "Category: Prostaglandin hormone. Properties: Prostaglandin E1 analog Application: Induction of birth in small ruminants especially goat Dosage: • 1-2 tabs intravaginal | DOSING: Per-animal fixed dose. Sheep/Goats: 100-200 mcg vaginally for cervical ripening. (NOT weight-based)",
             "frequency": "per protocol",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "384",
@@ -10330,7 +11870,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (MSD Co. (Intervet))",
             "notes": "Category: Antibiotic (Cephalosporin). Metricure® 500 mg Intrauterine suspension An intrauterine suspension of cefapirin for treatment of endometritis in cows. Cefapirin, a first generation cephalosporin, is a broad spectrum antibiotic with bactericidal action against gram-positive and gram-negative bacteria. Cefapirin is resistant to th... | DOSING: 1-2 boluses or 1 vial/syringe intrauterine infusion post-calving or for endometritis/metritis treatment.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "385",
@@ -10346,7 +11890,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (kela Co.)",
             "notes": "Category: Antibiotic (Tetracycline). Properties: Tetracycline antibiotic Indications: For the prevention and treatment of uterine infections after parturition, caused by chlortetracycline sensitive germs. Dosage: - Insert the bolus as deep as possible in the uterus. - Cows: Prevention: 1 bolus, Treatment: 1-2 boli - Ewes, goats: Preven... | DOSING: 1-2 boluses or 1 vial/syringe intrauterine infusion post-calving or for endometritis/metritis treatment.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "386",
@@ -10396,7 +11944,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "387",
@@ -10412,7 +11964,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Mervue)",
             "notes": "Category: Metabolic Tonic / Liver Support. Concentrated vitamins, carnitine, choline, silymarin (milk thistle), and propylene glycol. Indications: Subclinical/clinical ketosis, fatty liver syndrome, and post-partum anorexia in dairy cows. Dosage: Cattle: 100 mL PO daily for 3-5 days. Ref: Manufacturer label.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "388",
@@ -10428,7 +11984,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "10 Sachet (N/A)",
             "notes": "Category: Vaginal Wash. Properties: (Astringent, antiseptic and mucolytic) Content: Sodium bicarbonate, boric acid or alum, sodium chloride or sodium chlorophyll and menthol. Indications: Treatment of Pyometra. Dosage: • 4 sachets dissolved in 1 liter warm distilled water or normal saline then intrauterine infusion 2-3 tre... | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "389",
@@ -10444,7 +12004,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (Bayer)",
             "notes": "Category: GnRh hormone. Natural GnRh hormone Ovurelin Aqueous lnjectable Solution Gonadotrophin Releasing Hormone (GnRH) Sterile Injection. COMPOSITION Each 1 ml contains: - Gonadorelin (as acetate) 100 mcg PROPERTIES Ovurelin is a clear, colourless, sterile solution for use in the synchronisation of oestrus in combination... | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg IM/IV. Horses: 50-100 mcg IM. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 518.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "390",
@@ -10498,7 +12062,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "391",
@@ -10552,7 +12120,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "392",
@@ -10600,7 +12172,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Rafoxanide: Meat 28d. Not for use in dairy animals."
       },
       {
             "id": "393",
@@ -10654,7 +12230,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "394",
@@ -10702,7 +12282,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "SC or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 5,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ceftiofur has a 0-day milk withdrawal — safe for dairy."
       },
       {
             "id": "395",
@@ -10752,7 +12336,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "396",
@@ -10802,7 +12390,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "397",
@@ -10852,7 +12444,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "398",
@@ -10900,7 +12496,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Rafoxanide: Meat 28d. Not for use in dairy animals."
       },
       {
             "id": "399",
@@ -10948,7 +12548,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Rafoxanide: Meat 28d. Not for use in dairy animals."
       },
       {
             "id": "400",
@@ -10964,7 +12568,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Selmore)",
             "notes": "Category: Supportive treatment. COMPOSITION Each ml contains: - L-Carnitine (synthetic) 200 mg - Purified water up to 1 mL DOSAGE - Cattle & Horse: 3 ml \\ 100 kg body weight. - Dogs: 1 ml \\ 10 kg body weight. - Poultry: 1 ml \\ 1 Liter in drinking water STORAGE Store in dry place away from direct sun light. M.L. No: 000507 Pak. Reg... | Ref: Dogs 50-100 mg/kg PO q24h (dilated cardiomyopathy). Merck Vet Manual.",
             "frequency": "q24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "401",
@@ -11012,7 +12620,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 14,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Albendazole: Meat 14d, Milk 72h. Avoid in 1st trimester pregnancy."
       },
       {
             "id": "402",
@@ -11060,7 +12672,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "403",
@@ -11108,7 +12724,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 14,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Albendazole: Meat 14d, Milk 72h. Avoid in 1st trimester pregnancy."
       },
       {
             "id": "404",
@@ -11162,7 +12782,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "405",
@@ -11178,7 +12802,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Arabcomed)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Composition: Each 100 ml Contains: - Triclabendazole 10 gm Properties: Triclabendazole, the active ingredient of Fluke-Scan 10% pinds to B-tubulin, a structural protein, and blocks polymerization of tubulin into microtubules. This damages the inteqrity and transport Tunc... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "406",
@@ -11194,7 +12822,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (MAPCO)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Composition: Each 100 ml contain: • Triclabendazole 10 gm Indications: For treatment of fascioliasis at any age in Ruminants, it has a strong and selective action against all stages of liver flukes aged 1-12 weeks in all ruminants. Administration : Oral route by a drench... NOTE: High oral dose (200 mg/kg) is the correct standard dose for fasciolicide treatment in ruminants. | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "407",
@@ -11210,7 +12842,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (El kenana group)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Composition Each 100 ml. contains: - Triclabendazole 10 gm Indications KENAFASH D 100 suspension is indicated for the Treatment & Prevention of acute, sub-acute and chronic Fascioliasis caused by immature and adult Fasciola hepatica and Fasciola gigantica sensitive to tr... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "408",
@@ -11226,7 +12862,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (MSD Co. (Intervet))",
             "notes": "Category: Anthelmintic. Composition Each 1 ml contains: - Oxyclozanide 34 mg Indications: In cattle and sheep: - Treatment of fascioliasis due to adult liver fluke (Fasciola hepatica) susceptible to oxyclozanide stages. - Removal of tapeworm segments (Moniezia spp.) Contra-indication: Do not use in animals with known hyper... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "409",
@@ -11242,7 +12882,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Ceva Co.)",
             "notes": "Category: Anthelmintic. Anthelmintic (Salicylanilide) ACTIVE INGREDIENT AND OTHER SUBSTANCES: - Oxyclozanide 34 mg - Methyl prahydroxybenzoate (E218) 1.35 mg - Propyl prahydroxybenzoate (E216) 0.15 mg - Sodium metabisulphite (E222) 1 mg - Excipient q.s.p. 1 ml TARGET SPECIES AND INDICATIONS: Bovins - Ovins: - Treatment of ... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "410",
@@ -11258,7 +12902,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "200 gm Sachet (Zoetis)",
             "notes": "Category: Anthelmintic (Tetrahydropyrimidine). Pyrantel tartrate. Indications: Gastrointestinal roundworms, pinworms, and strongyles in horses, cattle, and sheep. Dosage: Cattle/Horses/Sheep: 12.5 mg/kg (or 10 g powder / 100 kg body weight) PO single dose. Ref: Plumb's 9th Ed. p. 1018.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "411",
@@ -11274,7 +12922,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (MSD Co. (Intervet))",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Panacur° 10% is a broad spectrum anthelmintic against immature and mature stages of gastrointestinal nematodes and lungworms in cattle and against gastrointestinal nematodes in horses, and it is ready-to-use aqueous suspension for oral administration. Composition Each ml... | Ref: Cattle/Sheep/Goats 5-10 mg/kg PO; Horses 10 mg/kg PO x 5 days. Plumb's.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Fenbendazole: Meat 7d, Milk 0 days. Safe for dairy."
       },
       {
             "id": "412",
@@ -11290,7 +12942,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Univet Co.)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) COMPOSITION Fenbendazole 50 mg/ml - Fenbendazole is an anthelmintic belonging to the benzimidazole group which acts by blocking fumerate reductase which results in the inhibition of the formation of adenosine triphosphate(involved in mitochondrial energy). Pharmacodynami... | Ref: Cattle/Sheep/Goats 5-10 mg/kg PO; Horses 10 mg/kg PO x 5 days. Plumb's.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Fenbendazole: Meat 7d, Milk 0 days. Safe for dairy."
       },
       {
             "id": "413",
@@ -11306,7 +12962,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (MSD Co. (Intervet))",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Indications: A broad spectrum anthelmintic for control of immature and mature stages of the following nematodes and cestodes of the gastrointestinal and respiratory tracts of cattle. Dosage: • Cattles, Horses & Pigs: 1ml / 13 kg B.wt. • Sheep: 1ml / 20 kg B.wt. • Dogs & ... | Ref: Dogs/Cats 50 mg/kg PO q24h x 3-5 days. Plumb's Vet Drug Handbook.",
             "frequency": "q24h x 3-5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "414",
@@ -11322,7 +12982,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (MSD Co. (Intervet))",
             "notes": "Category: Anthelmintic. Indications: Gastro-intestinal roundworms (adult, immature and egg stages), Lung worms (adult & immature), Liver fluke (adult) and Tapeworm. Dosage: • Gastrointestinal and Pulmonary Nematodes (adult, larvae and eggs): 15 ml / 100 kg • Cestodes: 20 ml / 100 kg • Hypobiotic Larvae and Liver Fluke, Dic...",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "415",
@@ -11338,7 +13002,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder (Adwia)",
             "notes": "Category: Anthelmintic. Anthelmintic (Salicylanilide) Composition: Each 100 gm contains: - Niclosamide 57 gm Indications: Used for control tapeworm (cestode) infestation in Cattle, Sheep, Goats, Pigs, Dogs, Cats Dosage: • Cattle, Pigs, Sheep & Goats: 1 gm / 15 kg B.wt. • Dogs & Cats: 1 gm / 5 kg B.wt. - can be repeated aft... | Ref: Dogs/Cats 125 mg/kg PO (tapeworm). Cattle/Sheep 50-100 mg/kg PO. Plumb's.",
             "frequency": "single dose PO (repeat in 14 days)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "416",
@@ -11354,7 +13022,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Efervescent Tablet (N/A)",
             "notes": "Category: Anti-Diarrheal. Composition: Each 50 gm contain: - Ascorbic Acid (Vitamin C 99%) 300 mg - Chloride (Sodium chloride 39%) 2.500 mg - Poatassium (Poatassium cholride 52%) 1.000 mg - Sodium (Sodium bi carbonate 27%) 7.000 mg - L-Glutamic acid (Glutamin) 5.000 mg - Pectin (Pectin apa) 150 mg - Citric acid (Citric acid ...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "417",
@@ -11404,7 +13076,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly CONTRAINDICATED in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Diclofenac: Meat 28d. Not recommended for dairy animals."
       },
       {
             "id": "418",
@@ -11420,7 +13096,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 gm Sachet (Arabcomed)",
             "notes": "Category: Anthelmintic. Composition Each 100 gm contains - Piperazine citrate 100 gm (eq to Piperazine base 35 gm) Properties - Piperazine is Internal antiparasitic that acts acts by blocking the neuromuscular transmission in the parasite, due to its effect anticholinergic, which causes a flaccid paralysis. It also blocks ... | Ref: Dogs/Cats 45-65 mg/kg PO single dose (ascarids). Plumb's Vet Drug Handbook.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "419",
@@ -11474,7 +13154,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h (use with caution)",
                         "route": "SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 24,
+            "food_restriction_note": "Dipyrone (metamizole): Meat 4d, Milk 24h. Check local regulations."
       },
       {
             "id": "420",
@@ -11490,7 +13174,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder (Pharma swede)",
             "notes": "Category: Anthelmintic. Anthelmintic (Imidazothiazole) Composition: Each 1 gm contains - Tetramisole HCl 100 mg Indications: ANTHIMIZOL is indicated for the treatment of mature and immature round worms as well as lungworms infestations affecting cattle, buffaloes, sheep and goats Dosage: - Cattle, buffaloes, sheep, and goa... | Ref: Cattle 15 mg/kg SC/IM. Sheep 15 mg/kg SC. Poultry 40 mg/kg. Merck Vet Manual.",
             "frequency": "single dose SC/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "421",
@@ -11506,7 +13194,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 gm Powder (Avico)",
             "notes": "Category: Anthelmintic. Anthelmintic (Imidazothiazole) Composition: Each 1 gm contains: - Tetramisole HCI 100 mg Properties - Tetramisole is a racemic mixture of 2 optical isomers have a broad spectrum anthelmintic activities. [(6-tetramisole or L-tetramisole or Levamisole and R (+) tetramisole]. - Tetramisole is a highly ... | Ref: Cattle 15 mg/kg SC/IM. Sheep 15 mg/kg SC. Poultry 40 mg/kg. Merck Vet Manual.",
             "frequency": "single dose SC/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "422",
@@ -11556,7 +13248,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "423",
@@ -11606,7 +13302,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "424",
@@ -11656,7 +13356,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "425",
@@ -11706,7 +13410,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "426",
@@ -11756,7 +13464,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "427",
@@ -11806,7 +13518,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "428",
@@ -11856,7 +13572,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "429",
@@ -11910,7 +13630,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "430",
@@ -11964,7 +13688,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "431",
@@ -12012,7 +13740,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Rafoxanide: Meat 28d. Not for use in dairy animals."
       },
       {
             "id": "432",
@@ -12028,7 +13760,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Antiprotozoal (Babesia & Anaplasma). Composition: Each ml contains: - Imidocarb dipropionate: 120 mg (eq to Imidocarb base 84.2 mg) Properties 1. Imidocarb is a carbanilide derivative with antiprotozoal activity. It is usually administered as the dipropionate salt. 2.Two mechanisms of action have been proposed: a. As the effect of Imid... | Ref: Cattle/Dogs 1.2-2.4 mg/kg IM q14d (babesiosis). Plumb's Vet Drug Handbook.",
             "frequency": "single dose IM or 2 doses 2 weeks apart",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "433",
@@ -12044,7 +13780,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Arabcomed)",
             "notes": "Category: Antiprotozoal (Babesia & Anaplasma). Composition Each 100 ml contains: - Imidocarb dipropionate 12.115 gm (eq to Imidocarb base 8.5 gm) Properties Imidocarb dipropionate is a substituted carbanilide, used as an antiprotozoan treatment for the control of Babesia spp.Little is known about the mode-of-action of imidocarb dipropionate. It ... | Ref: Cattle/Dogs 1.2-2.4 mg/kg IM q14d (babesiosis). Plumb's Vet Drug Handbook.",
             "frequency": "single dose IM or 2 doses 2 weeks apart",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "434",
@@ -12060,7 +13800,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antiprotozoal (Babesia & Anaplasma). Composition: Each 1 ml contains: Imidocarb dipropionate 120 mg Properties Pharmacological Properties: - Dogs given daily oral doses of 5 mg /kg b. wt. imidocarb dipropionate for 30 days then 24 hours after the last dose. - The highest concentrations were found in liver and then in kidney, no residue... | Ref: Ref: Plumb's 9th Ed. p. 605.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "435",
@@ -12076,7 +13820,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Delta Pharma)",
             "notes": "Category: Antiprotozoal (Babesia & Anaplasma). Composition: Each 1 ml contains: - Imidocarb dipropionate 182 mg (eq to Imidocarb base 120 mg) Properities: - Imidodel is a diamidine of the carbanalide series of antiprotozoal compounds. - Imidodel is effective against Babesia spp infection and acts directly on the parasite leading to an alternatio... | Ref: Cattle/Dogs 1.2-2.4 mg/kg IM q14d (babesiosis). Plumb's Vet Drug Handbook.",
             "frequency": "single dose IM or 2 doses 2 weeks apart",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "436",
@@ -12092,7 +13840,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Antiprotozoal (Babesia & Anaplasma). Indications: • Babesiosis in horses, cattle and dogs. • The prolonged action of imidocarb exerts a prophylactic effect against babesia infection for up to 6 weeks. • Treatment of anaplasma infection of cattle. Dosage: S/C or I/M Treatment of babesia • Cattle & Sheep: 1ml/100kg bwt • Horses, donkeys ... | Ref: Cattle/Dogs 1.2-2.4 mg/kg IM q14d (babesiosis). Plumb's Vet Drug Handbook.",
             "frequency": "single dose IM or 2 doses 2 weeks apart",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "437",
@@ -12108,7 +13860,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Ceva Co.)",
             "notes": "Category: Antiprotozoal (Babesia & Anaplasma). Indications: • Babesiosis in horses, cattle and dogs. • The prolonged action of imidocarb exerts a prophylactic effect against babesia infection for up to 6 weeks. • Treatment of anaplasma infection of cattle. Dosage: S/C or I/M Treatment of babesia • Cattle & Sheep: 1ml/100kg bwt • Horses, donkeys ... | Ref: Cattle/Dogs 1.2-2.4 mg/kg IM q14d (babesiosis). Plumb's Vet Drug Handbook.",
             "frequency": "single dose IM or 2 doses 2 weeks apart",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "438",
@@ -12124,7 +13880,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder Vial (Pharma swede)",
             "notes": "Category: Antiprotozoal (Babesia & Trypanosoma). Composition: Each vial contains: - Diminazene aceturate 1.05 g (eq to 573.4 mg diminazene) - Phenazone 1.31 g Properties: - Diminazene aceturate the active ingredient of Intropar is chemotherapeutic agent possesses a marked babesicidal and trypanocidal activity. - It has also a bactericidal activity... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "439",
@@ -12140,7 +13900,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder Vial (Adwia)",
             "notes": "Category: Antiprotozoal (Babesia & Trypanosoma). Composition: Each vial ( 2.362gm) contains: - Diminazen Aceturate 1050 mg - Phenazone 1312 mg Indications: • The treatment of Babesiosis • The treatment of Trypanosomiasis • Treatment of Theileriosis as well as pyrexia of unknown origin • Disappearance of symptoms may be expected within 24 hours aft... | Ref: Cattle/Horses 3.5-7 mg/kg deep IM. Dogs 3.5 mg/kg IM. Merck Vet Manual.",
             "frequency": "single dose IM (repeat in 1-2 weeks)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "440",
@@ -12156,7 +13920,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "15 ml Vial (Arabcomed)",
             "notes": "Category: Antiprotozoal (Babesia & Trypanosoma). Composition • Before reconstitution each vial 15 ml capacity contains: - Diminazene aceturate 1050 mg - Phenazone 1312.5 mg • After reconstitution - Diminazene aceturate 70 mg / ml - Phenazone 87.5 mg / ml Properties - Diminazene is an aromatic Diminidine derivative; it exerts its antiprotozoal acti... | Ref: Cattle/Horses 3.5-7 mg/kg deep IM. Dogs 3.5 mg/kg IM. Merck Vet Manual.",
             "frequency": "single dose IM (repeat in 1-2 weeks)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "441",
@@ -12172,7 +13940,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "12 Sachet (Avico)",
             "notes": "Category: Antiprotozoal (Babesia & Trypanosoma). AVINAZENE Powder for Injection Composition - 20 ml vial contains: Diminazene 1.05 g - 100 ml vial contains: Diminazene 6.30 g Properties Diminazene aceturate the active ingredient of AVINAZENE is chemotherapeutic agent possesses a marked trypanocidal and babesicidal activity. It has also a bacterici... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "442",
@@ -12188,7 +13960,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "2.36 gm vial (MAPCO)",
             "notes": "Category: Antiprotozoal (Babesia & Trypanosoma). Composition: Each vial (capacity of 15 ml) contains - Diminazineaceturat 1.05 gm (Eq. to 1 gm Diminazine) - Phenazone 1.31 gm Indications : Treatment of Trypanosomiasis and Piroplasmosis affecting different animal species. It's recommended for treatment of mixed infections of Ttrypanosome and Babesi... | Ref: Cattle/Horses 3.5-7 mg/kg deep IM. Dogs 3.5 mg/kg IM. Merck Vet Manual.",
             "frequency": "single dose IM (repeat in 1-2 weeks)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "443",
@@ -12204,7 +13980,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (Pharma swede)",
             "notes": "Category: Antiprotozoal (Theileria). Composition Each 1ml contains: - Buparvaquone 50 mg Properties: - Buparvaquone is a hydroxynapthoquinone which has a specific anti-theilerial action. - Theileria spp. is a parasite occurs within lymphocytic and erythrocytic cells and is transmitted by the bites of various species of ticks. - The mod... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "444",
@@ -12220,7 +14000,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "40 ml vial (Adwia)",
             "notes": "Category: Antiprotozoal (Theileria). Composition: Each 1 ml contains: - Buparvaquone 50 mg Properties: Buparvaquone, the active ingredient in Butaject, is a second generation hydroxynaphthoquinone with special properties that give it a prominent place in the treatment and prophylaxis of bovine, ovine and caprine theileriosis: it is twe... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "445",
@@ -12236,7 +14020,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (Arabcomed)",
             "notes": "Category: Antiprotozoal (Theileria). Composition: Each 1 ml contains: - Buparvaquone 50 mg Properties: • Buparvaquone is an antiprotozoal (anti-theileriasis), it i an analogue of parvaquone, a hydroxynapthoquinone. • Buparvaquone has a greater resistance to metabolic degradation than parvaquone, resulting in-vitro activity of 20 times,... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "446",
@@ -12252,7 +14040,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "40 ml vial (Avico)",
             "notes": "Category: Antiprotozoal (Theileria). Composition: Each 1 ml contains: - Buparvaquone 50 mg Properties » Buparvaquone is a second-generation hydroxynaphthoquinone related to parvaquone, with novel features that make it a promising compound for the therapy and prophylaxis of all forms of theileriosis. » It has been tested extensively aga... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "447",
@@ -12268,7 +14060,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "40 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Antiprotozoal (Theileria). Indications: • Anti-theilerial treatment used in treating Bovine theileriosis • Covers both the schizont and piroplasm phases of theileria could be also used in the incubation period of the disease, or in the clinical phase of the disease. Dosage: I/M • 1ml/20kg Withdrawal: • Meat: 42 days | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "448",
@@ -12284,7 +14080,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (kela Co.)",
             "notes": "Category: Antiprotozoal (Theileria). COMPOSITION: Buparvaquone 50 mg Excipients up to 1 ml. INDICATIONS: Butakel is indicated for the treatment of theileriosis (East Coast fever, Corridor Disease) in cattle caused by Theileria parva parva, Theileria parva bovis, Theileria parva Lawrencei, Theileria annulata, Theileria mutans and Theile... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "449",
@@ -12300,7 +14100,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder (Pharma swede)",
             "notes": "Category: Antiprotozoal (Trypanosoma). Indications: Prevention and treatment of trypanosomiasis in camels, cattle, horses, dogs & pigs Dosage: - by S/C route at dose 1 ml / 40 kg - The injectable solution prepared by dissolving 2.5 g in 15 ml sterile water by adding the water to powder to produce the injection solution. Withdrawal: • Mea... | DOSING: Per-animal fixed dose. Cattle: 1 mL/100 kg SC (babesiosis). NOT standard mg/kg. | Ref: Ref: Merck Vet Manual.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "450",
@@ -12348,7 +14152,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "SC or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 5,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ceftiofur has a 0-day milk withdrawal — safe for dairy."
       },
       {
             "id": "451",
@@ -12364,7 +14172,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Vial (Vetoquinol)",
             "notes": "Category: Antiprotozoal (Trypanosoma). Each package contains: - Vial contains -- Quinuronium sulphate 1.5 gm -- Quinuronium Chloride 1 gm - Sterile water ampoule 12 ml Indications: Prevention and treatment of trypanosomiasis in camels, cattle, horses, dogs & pigs Dosage: - by S/C injection. - 1 vial / 600 kg (0.03 ml / kg) - The injectab... | DOSING: Per-animal fixed dose. Cattle: 1 mL/100 kg SC (babesiosis). NOT standard mg/kg. | Ref: Ref: Merck Vet Manual.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "452",
@@ -12380,7 +14192,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Vial (Merial)",
             "notes": "Category: Antiprotozoal (Trypanosoma). Indications: Prevention and treatment of trypanosomiasis in camels, cattle, horses, dogs & pigs. Dosage: S/C • 1 vial /400kg The injectable solution prepared by dissolving in 20 ml sterile water by adding the water to powder to produce the injection solution. | DOSING: Per-animal fixed dose. Trypanosomosis: 0.25 mg/kg IM x2 q24h. (per protocol)",
             "frequency": "per protocol",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "453",
@@ -12396,7 +14212,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "490 ml Bottle (MSD Co. (Intervet))",
             "notes": "Category: Antiprotozoal (Cryptosporidiosis). Quinazolinone alkaloid with antiprotozoal activity against Cryptosporidium parvum. Indications: Prevention and reduction of diarrhea due to diagnosed Cryptosporidium parvum in newborn calves. Dosage: Calves 0.1 mg/kg (2 ml/10 kg Halocur) PO once daily for 7 consecutive days after feeding. Withdrawal: Meat 13 days. Ref: NOAH Compendium.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "454",
@@ -12412,7 +14232,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (N/A)",
             "notes": "Category: Anti-Diarrheal. Indications: For the prevention and treatment of diarrhoea caused by Cryptosporidium parvum. Ruminants: 15 mg/kg SW or per animal 100 mg BID\" for 5 days in animals 24-47 months old: 200 mg BID for S days in animals 4-11 years old. Recently. a regimen was approved to treat adults. Dog, cat: 25 mg/kg ...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "455",
@@ -12460,7 +14284,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h for 7 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 1,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Amprolium: Meat 1d, Milk 0h. Safe for dairy calves."
       },
       {
             "id": "456",
@@ -12508,7 +14336,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h for 7 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 1,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Amprolium: Meat 1d, Milk 0h. Safe for dairy calves."
       },
       {
             "id": "457",
@@ -12556,7 +14388,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h for 7 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 1,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Amprolium: Meat 1d, Milk 0h. Safe for dairy calves."
       },
       {
             "id": "458",
@@ -12572,7 +14408,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "15 gm Sachet (Pharma swede)",
             "notes": "Category: Anti-Diarrheal. Composition: Each 15 gm sachet contains: - Neomycin Sulfate 625 mg (eq to 400 neomycin base) - Sulphaguanidine 4000 mg - Sulfaquinoxaline Sodium 430 mg (eq to 400 Sulfaquinoxaline base) - Kaolin 4000 mg - Pectin 400 mg - Vitamin A 80000 IU - Bismuth Subnitrate 2000 mg Properties: - Neomycin belongs ...",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "459",
@@ -12588,7 +14428,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Sachet (OPI pharma)",
             "notes": "Category: Anti-Diarrheal. Content: Neomycin sulphate + Sulpha guanidine + Phthalyl sulphathiazole + Kaolin + Pectin + Calcium carbonate Dosage: • 1-2 sachet / day",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Oral neomycin: Meat 30d, Milk 72h. Topical/oral only — systemic not approved for food animals."
       },
       {
             "id": "460",
@@ -12604,7 +14448,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "28 gm Sachet (El-Nasr)",
             "notes": "Category: Anti-Diarrheal. COMPOSITION: Each 28 gm Contains: - Neomycin sulphate 1 gm. - Streptomycin sulphate 0.5 gm. - Sulphagunidine 2.5 gm. - Phthalylsulphathiazole 1.5 gm. - Vitamin B2. 0.1 gm. - Nicotinc acid 0.5 gm. - Pyroxidine 0.2 gm. - Kaolin 10 gm. - Calcium carbonate 11.88 gm. INDICATIONS: Infectious and enzootic ...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Streptomycin (parenteral): Meat 30d, Milk 72h. Note: NOT for long-term use in food animals."
       },
       {
             "id": "461",
@@ -12620,7 +14468,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "12 gm Sachet (Avico)",
             "notes": "Category: Anti-Diarrheal. Composition: Each 12 gm contains: - Neomycin (as Neomycin sulphate) 400 mg - Sulphaguanidine 4000 mg - Kaolin 4000 mg - Pectin 400 mg - Bismuth Subnitrate 2000 mg - Vitamin A 80 000 I.U. Properties - DIACLEAN preparation is a combination of the broad spectrum Neomycin Sulphate with the antiprotozoal...",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "462",
@@ -12636,7 +14488,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Sachet (Boehringer Ingelheim)",
             "notes": "Category: Anti-Diarrheal. Content: Glucose, Dried Citrus Pulp, Sodium Chloride, Sodium Bicarbonate, Inactivated Yeast, Potassium Chloride. Dosage: • Calves: 2 scoops (100 g)/1 sachet in 2 liter water. • For larger calves: 3 scoops (150 g) ⁄ 2 sachets in 3 liter.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "463",
@@ -12652,7 +14508,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 gm Powder (Arabcomed)",
             "notes": "Category: Supportive treatment. Composition Each 100 gm contains: - Vitamin C 20 000 mg Properties and Indication - Vitamin C plays an important role in immune stimulation and antibody formation and increases the resistance against infections. - Vitamin C stimulates the heat-regulating center, so it is used during heat stress. - V... | DOSING: Per-label volume dosing per animal. Not weight-based mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "464",
@@ -12668,7 +14528,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (Pharma swede)",
             "notes": "Category: Anti-Diarrheal. Composition Each 1 “Bolus” contains: - Neomycin Sulfate 0.205 gm. - Sulfaguanidine 1.333 gm. - Bismuth Subnitrate 0.666 gm. - Kaolin 1.333 gm. - Pectin 0.133 gm. indications: DIACURE – bolus is indicated for the treatment of different cases of diarrhea ( bacterial and protozoal ) affecting calves, k...",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h)."
       },
       {
             "id": "465",
@@ -12720,7 +14584,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "466",
@@ -12736,7 +14604,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Sachet (kela Co.)",
             "notes": "Category: Antibiotic (Potentiated Sulfonamide). Sequential double-blockade of bacterial folic acid synthesis resulting in bactericidal synergy. Indications: Respiratory infections, strangles in horses, alimentary tract infections, and mastitis/metritis. Dosage: Cattle/Horses/Swine/Sheep 15-24 mg/kg (combined) IM/IV/PO q24h; Dogs/Cats 15-30 mg/kg PO/SC q12-24h. Withdrawal: Meat 10-14 days, Milk 48-72 hours. Ref: Plumb's 9th Ed. p. 1152.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "467",
@@ -12752,7 +14624,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Sachet (pasteurella multocida)",
             "notes": "Category: Anti-Diarrheal. Composition: Each 1 kg contains: - Sulphadimidine sodium 125 gm - Sulphathiazole sodium 125 gm - Sulphadiazine sodium 125 gm Properties - The mode of action of sulphonamides are bacteriostatic rather than bactericidal and considered to be due to the similarity of their chemical structure to that of ...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "468",
@@ -12768,7 +14644,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Supportive treatment. Injectable and oral solution Composition: containing per ml: - Vitamin B1 (as hydrochloride) 89.18 mg - Vitamin B6 (as hydrochloride) 6.58 mg Indications: Treatment of deficiencies in vitamins B1 and B6. Dosage and administration: - Oral, I.M. or I.V. (except pigs). - 1 ml per 10 kg body weight per ... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "469",
@@ -12828,7 +14708,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "470",
@@ -12872,7 +14756,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Phenylbutazone: STRICTLY PROHIBITED in female dairy cattle ≥20 months (causes human aplastic anemia risk via residues — FDA, EU). Meat: 28-day W/D in beef cattle. Do NOT use in animals producing milk for human consumption."
       },
       {
             "id": "471",
@@ -12920,7 +14808,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "PO, SC or IV"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "472",
@@ -12936,7 +14828,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Bimeda Co.)",
             "notes": "Category: Anti-Diarrheal. COMPOSITION - Sulfadiazine 150 mg/ml - Neomycin (as neomycin sulphate) 25 mg/ml. TARGET SPECIES: Pre-ruminant calves. INDICATIONS For the treatment of diarrhoea in pre-ruminant calves associated with infections caused by organisms known to be, or suspected of being, susceptible to the combination of... | Ref: Ref: Plumb's 9th Ed. p. 802.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "473",
@@ -12952,7 +14848,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "250 ml vial (VMD Pharma)",
             "notes": "Category: Antibiotic (Lincosamide + aminoglycoside). Composition: Each 100 ml contains: - Lincomycin (as Lincomycin HCl) 5 g - Spectinomycin (as Spectinomycin sulphate) 10 g Synergistic combination of: a) Lincomycin: one of lincosamide antibiotic of narrow spectrum acting through inhibition of protein synthesis by binding to the 50S ribosomal subunit,... | Ref: Cattle/Pigs 2.5 mg/kg IM q24h. Plumb's.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Lincomycin: Meat 7d. Not for dairy cattle."
       },
       {
             "id": "474",
@@ -12968,7 +14868,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Sachet (Pharma swede)",
             "notes": "Category: Supportive treatment. Composition: Each 1 gm Contains: - Vitamin A 2000 I.U. - Vitamin E 400 mcg - Iron 4 mg - Manganese 20 mcg - Copper 100 mcg - Zinc 25 mcg - Cobalt 20 mcg - Sod. Carbonate 200 mg - BHT 150 mcg Indications: - Vitamineral is indicated as tonic, appetite stimulant, haematinic and rumen stimulant for larg... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "475",
@@ -12984,7 +14888,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder (N/A)",
             "notes": "Category: Anti-Diarrheal. Dosage: 60 gm in drinking water",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "476",
@@ -13000,7 +14908,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder (N/A)",
             "notes": "Category: Anti-Diarrheal. Dosage: 5 gm in drinking water",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "477",
@@ -13060,7 +14972,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "478",
@@ -13076,7 +14992,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (UCCMA - Ghannam)",
             "notes": "Category: Antibiotic (Sulfonamide). Composition: Each 100 ml contain - Sulphadimidine sodium 33.3 gm Indications: - Sulphadimidine is highly effective against a wide range of bacteria , protozoa and certain rickettsial organisms - Sulphadimidine is rapidly absorbed from the site of injection and slowly excreted by the organism so in m... | Ref: Poultry/Cattle 33-50 mg/kg PO q12-24h x 5 days. Merck Vet Manual.",
             "frequency": "q12-24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "479",
@@ -13092,7 +15012,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "125 gm Ointment (Mega Pharma)",
             "notes": "Category: Topical. INDICATIONS • healing of wounds • udder and teat injury • skin diseases as eczema, burns, allergic conditions • saddle pressure sores | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "480",
@@ -13140,7 +15064,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 14,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Albendazole: Meat 14d, Milk 72h. Avoid in 1st trimester pregnancy."
       },
       {
             "id": "481",
@@ -13188,7 +15116,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "PO, SC or IV"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "482",
@@ -13204,7 +15136,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "40 mg vial (Octoberpharma)",
             "notes": "Category: Antacid ( PPI ). Indications: Treatment and prophylaxis of gastric, abomasal and duodenal ulcers, uremic gastritis, stress-related or drug-induced erosive gastritis,esophagitis, duodenal gastric reflux, & esophageal reflux Dogs and Cats • Intravenous administration (24 hours): 0.5-1 mg/kg IV infusion over 24 hours. ...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "483",
@@ -13258,7 +15194,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "484",
@@ -13274,7 +15214,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (El-Nasr)",
             "notes": "Category: Antacid ( Coat ). Properties: Gastric mucosa protectant Indications: Sucralfate is used to prevent and treat gastric ulcers Small Animal Dosage ■ Dogs Cats: • 0.5-1 g q8-12h PO. • 0.25 g (one-fourth tablet) q8-12h PO. ■ HORSES: a) For adjunctive treatment for preventing stress-induced ul-cers in foals: 10-20 mg/kg PO...",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "485",
@@ -13328,7 +15272,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h (use with caution)",
                         "route": "SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 24,
+            "food_restriction_note": "Dipyrone (metamizole): Meat 4d, Milk 24h. Check local regulations."
       },
       {
             "id": "486",
@@ -13382,7 +15330,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h (use with caution)",
                         "route": "SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 24,
+            "food_restriction_note": "Dipyrone (metamizole): Meat 4d, Milk 24h. Check local regulations."
       },
       {
             "id": "487",
@@ -13398,7 +15350,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Abbassia)",
             "notes": "Category: Vaccine. DESCRIPTION Servac Bivalent inactivated foot & mouth disease oil vaccine. STRAIN - Africa G IV Egypt 2022 - Euro-S America (A-Venezuela) DOSAGE AND ADMINISTRATION - Cattle: 2 ml by subcutaneous or intramuscular injection - Sheep: 1 ml by subcutaneous or intramuscular injection STORAGE - keep at 4 - ... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "488",
@@ -13452,7 +15408,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h (use with caution)",
                         "route": "SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "489",
@@ -13468,7 +15428,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "6 Amps (Adwia)",
             "notes": "Category: Analgesic & Spasmolytic. Properties: Antispasmodic Indications: Indicated for gastrointestinal spasm and urogenital spasm in Cattle, horses and dogs. Dose: 1 amp / 70 Kg | Ref: Cattle/Horses 0.1-0.3 mg/kg IV/IM slow (antispasmodic). Dogs/Cats 0.1 mg/kg IV/IM. Plumb's.",
             "frequency": "q6-8h IV/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "490",
@@ -13484,7 +15448,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Analgesic & Spasmolytic. Composition: Each ml contains: - Hyoscine (Butylscopolamine) 4 mg - dipyrone (Metamizole) 500 mg Indications: antispasmodic and analgesic Indicated for gastrointestinal spasm and urogenital spasm in Cattle, horses and dogs. Dosage Administration: • Horses: 5 ml / 100 kg by IV route • Adult Cattle: 5... | Ref: Cattle/Horses 0.1-0.3 mg/kg IV/IM slow (antispasmodic). Dogs/Cats 0.1 mg/kg IV/IM. Plumb's.",
             "frequency": "q6-8h IV/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "491",
@@ -13500,7 +15468,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Boehringer Ingelheim)",
             "notes": "Category: Analgesic & Spasmolytic. Composition per ml: - Butylscopolamine bromide 4 mg - Metamizole 500 mg Indications - Horses: antispasmodic colic, esophageal obstruction - Not milking cattle: diarrhea, antispasmodic colic, esophageal obstruction - Pigs: esophageal obstruction - Dogs: spasms in the urogenital system Dosage and admi... | Ref: Cattle/Horses 0.1-0.3 mg/kg IV/IM slow (antispasmodic). Dogs/Cats 0.1 mg/kg IV/IM. Plumb's.",
             "frequency": "q6-8h IV/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "492",
@@ -13516,7 +15488,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Anti-cholinestrase. Composition: Each ml conains: - Neostigmine methylsulfate 0.5 mg (eq to 0.334 mg Neostigmine) Properties - Neostigmine is a synthetic quaternary ammonium parasympathomimetic agent, neostigmine bromide and neostigmine methylsulfate. Neostigmine competes with acelyicholine for acetylcholinesterase. As... | Ref: Ref: Plumb's 9th Ed. p. 805.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "493",
@@ -13532,7 +15508,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Novo Vet)",
             "notes": "Category: Anti-Diarrheal. Composition: Each 1 ml contains: - Sulphadimidine 2.1 gm - Sulphadiazine 2.6 gm - Sulphaguanidine 2 gm - Dextrose 2.8 gm - Vitamin A 60000 IU - Vitamin B1 25 mg - Vitamin B2 10 mg - Vitamin B6 2.2 mg - Vitamin B12 200 mcg - Nicotinamide 40 mg - Neomycin 177 mg - Streptomycin 1.75 gm - Sodium chlorid...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "494",
@@ -13548,7 +15528,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Novo Vet)",
             "notes": "Category: Liver & Kidney Tonic. - Ornicarnal plus is a solution combining hepatoprotective, lipotropic and diuretic active ingredients that used for stimulation of the hepatodigestive/renal activity. - Ornicarnal plus used as a metabolic. antioxidant, tonic, growth promotor, anti-hypoxic, diuretic and detoxifying agent. Compositio...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Sorbitol: No withdrawal required."
       },
       {
             "id": "495",
@@ -13564,7 +15548,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (Norbrook)",
             "notes": "Category: Antibiotic (Potentiated Penicillin). Beta-lactam antibiotic with clavulanate beta-lactamase inhibitor. Broad-spectrum bactericidal activity against Gram-positive and Gram-negative aerobes/anaerobes. Indications: Skin, soft tissue, urinary, respiratory, and periodontal infections. Warnings: Contraindicated in penicillin hypersensitivity; avoid oral use in small herbivores. Ref: Plumb's 9th Ed. p. 62.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Amoxicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "496",
@@ -13580,7 +15568,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Novo Vet)",
             "notes": "Category: Supportive treatment. Composition: Each 1 ml contains: - Sodium selenite pentahydrate 1.7 mg - Vitamin E (alpha-tocopherol acetate) 150 mg - Sorbitol 90 mg - Energetic agent 10 mg - Vitamin B1 10 mg - Vitamin B6 3 mg - Vitamin B12 500 mcg - Prescrvative 0.7% Indications : - For fattening animals, activate liver cells to ... | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based) | Ref: Ref: Plumb's 9th Ed. p. 1195.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "497",
@@ -13628,7 +15620,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Rafoxanide: Meat 28d. Not for use in dairy animals."
       },
       {
             "id": "498",
@@ -13644,7 +15640,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Eva pharma)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Composition: - Triclabendazole 10 g / 100 ml Properties: - Triclabendazole differs from other benzimidazoles in that is a narrow spectrum anthelmintic. - The drug accumulates significantly in both immature and adult stages of Fasciola hepatica and stimulates the major ro... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "499",
@@ -13660,7 +15660,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: Supportive treatment. Composition: Each 100 ml Phosphogene Contains: - Toldimfos sodium 20 gm (eq to 3.46 gm phosphorus) Indications: Treatment and prevention of hypophosphataemia. Contraindication: - hyperphosphataemia - low calcium - hypernatremia Properties: phosphorus is closely associated with calcium in animal body... | Ref: Cattle/Horses 5-10 mg/kg IM/SC. Supportive liver-phosphorus supplement. Merck Vet Manual.",
             "frequency": "q24-48h IM/SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "500",
@@ -13676,7 +15680,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder (N/A)",
             "notes": "Category: laxative. Properties: laxative and antiarrhythmic Indications: • Used for constipation and bowel evacuation prior to certain procedures. • An injectable solution of magnesium sulfate is used to treat magnesium deficiency and refractory arrhythmias | DOSING: Cattle/Horses: 250-500 g Epsom salts or 1-2 Liters Mineral Oil PO via stomach tube; Sheep: 50-100 g. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "501",
@@ -13692,7 +15700,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Bottle (N/A)",
             "notes": "Category: laxative. Properties: Lubricant laxative Indications: Treat constipation and fecal impactions. | DOSING: Cattle/Horses: 250-500 g Epsom salts or 1-2 Liters Mineral Oil PO via stomach tube; Sheep: 50-100 g. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "502",
@@ -13708,7 +15720,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Sachet (Avico)",
             "notes": "Category: laxative. Composition: Each pack 101 gm contains: - Magnesium Carbonate 90 gm - Sodium Carbonate 10 gm - Nux Vomica 1 gm Properties - Our product LAXAVET is used to neutralize the acidity of the stomach or rumen which occur in acute carbohydrate engorgement of rumen (rumen over load) and used as laxative in c... | Ref: Ref: Merck Vet Manual. | DOSING: Cattle/Horses: 250-500 g Epsom salts or 1-2 Liters Mineral Oil PO via stomach tube; Sheep: 50-100 g. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Magnesium products: No withdrawal required."
       },
       {
             "id": "503",
@@ -13724,7 +15740,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 gm Sachet (Pharma swede)",
             "notes": "Category: Hemostasis. Composition: Each 1 gm contains: - Menadion Sodium Bisulfite 238 mg ( Vita-K 100 mg). Indications: Vitamin K is indicated in poultry and other animals for the prevention and treatment of hemorrhage associated with various diseases, such as coccidiosis and gumboro, as well as, hemorrhagic syndromes d... | Dosing: Large animals 0.5-2.5 mg/kg SC/IM; Dogs/Cats 2.5-5 mg/kg SC/PO q12-24h for anticoagulant toxicity. Ref: Plumb's 9th Ed. p. 946.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "504",
@@ -13740,7 +15760,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "120ML Syrup (N/A)",
             "notes": "Category: laxative. Properties: laxative and ammonia reducer Indications: • Treatment of hyperammonemia (hepatic encephalopathy) because it decreases blood ammonia concentrations via lowering the pH of the colon; thus ammonia in the colon is not as readily absorbed. • Lactulose also is administered orally to produce a ... | Ref: Ref: Plumb's 9th Ed. p. 656. | DOSING: Cattle/Horses: 250-500 g Epsom salts or 1-2 Liters Mineral Oil PO via stomach tube; Sheep: 50-100 g. Ref: Merck Vet Manual.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "505",
@@ -13798,7 +15822,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water for CRD",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Tylosin: Meat 21d, Milk 4 days (96h). IM use."
       },
       {
             "id": "506",
@@ -13814,7 +15842,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Bayer)",
             "notes": "Category: Ectoparasiticide. COMPOSITION • Flumethrin 10 mg / ml Target Species: Cattle Indications Flumethrin is belong to pyrethroids and used for the control of ticks (Ixodes ricinus), biting lice (Damalinia bovis) and sucking lice (Linognathus vituli, Haemotopinus eurysternus) and psoroptic mange in cattle. Special precauti... | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "507",
@@ -13830,7 +15862,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml Syrup (Pharma swede)",
             "notes": "Category: Anti-bloat (flatulence). Content: Each 1 ml contains: • Diemethicone 25 mg • Turpentine Oil 0.3 ml • Anise Oil 0.01 ml Indications: BLOATRYL is indicated for the treatment of frothy bloat and tympany in cattle, buffaloes, sheep, and goats. Dosage : Large animals: 50 – 100 ml. - BLOATRYL to be injected directly into the rume... | DOSING: Cattle: 100-200 mL PO as oral drench or direct intraruminal injection; Sheep/Goats: 25-50 mL PO. For frothy bloat. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "508",
@@ -13846,7 +15882,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml Syrup (Avico)",
             "notes": "Category: Anti-bloat (flatulence). Composition: Each 1 ml contains: - Methyl silicon 25 mg - Turpentine oil 0.3 mg - Anise oil 0.01 ml Properties - Methyl silicon is an organic compound of silicon, with a basic structure of alternating silicon and oxygen atoms. - Methyl group attach to silicon atoms which form methyl silicon compound... | DOSING: Cattle: 100-200 mL PO as oral drench or direct intraruminal injection; Sheep/Goats: 25-50 mL PO. For frothy bloat. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "509",
@@ -13862,7 +15902,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml Bottle (Adwia)",
             "notes": "Category: Anti-bloat (flatulence). Composition in each 100 ml: 1 gm silica in dimethicone suspension Indications frothy bloat in cattle, sheep, goats Dosage and administration: - cattle: 100 ml - sheep & goat: 25 ml - emulsion is given by oral drenching or local injection into rumenal cavity - shake well before use Storage condition:... | DOSING: Cattle: 100-200 mL PO as oral drench or direct intraruminal injection; Sheep/Goats: 25-50 mL PO. For frothy bloat. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "510",
@@ -13878,7 +15922,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Norbrook)",
             "notes": "Category: Antibiotic (Natural Penicillin). Beta-lactam antibiotic active against Gram-positive aerobes and anaerobes (Streptococcus, Clostridium, Actinomyces). Indications: Blackleg, malignant edema, anthrax, tetanus, strangles in horses, and erysipelas in swine. Dosage: Cattle/Horses/Sheep 10,000-20,000 IU/kg (10-20 mg/kg) IM q24h. Withdrawal: Meat 10-14 days, Milk 48-72 hours. Ref: Plumb's 9th Ed. p. 910.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Penicillin G: Meat 30d, Milk 72h."
       },
       {
             "id": "511",
@@ -13894,7 +15942,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (VMD Pharma)",
             "notes": "Category: Antibiotic (Penicillin). Composition: Each 1 ml contains: - Amoxicillin (as trihydrate) 150 mg Species: - Cattle, sheep, goat, horse, cat and dog. Indications: - Bacterial infections caused by micro-organisms susceptible to penicillins, such as infections of the alimentary tract, respiratory tract, urogenital tract, colifor... | Ref: Ref: Plumb's 9th Ed. p. 57.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "512",
@@ -13910,7 +15962,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Bremer Pharma)",
             "notes": "Category: Antibiotic (Penicillin). Composition: Each ml contains: - Amoxicillin trihydrate 172.2 mg (corresponds to amoxicillin 150 mg) - Aluminium stearate Indications: Bacterial infections caused by M.O susceptible to penicillins, such as infections of the alimentary tract, respiratory tract, urogenital tract, coliform mastitis and... | Ref: Ref: Plumb's 9th Ed. p. 57.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Amoxicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "513",
@@ -13926,7 +15982,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Ceva Co.)",
             "notes": "Category: Antibiotic (Penicillin). COMPOSITION - Amoxicillin (as trihydrate salt) 15 gm - Excipient q.s. 100 ml PROPERTIES Amoxicillin is an half synthetic penicillin. The long acting formulation allows the antibiotic to reach and maintain effective levels of Amoxicillin for 48 hours. The main advantages of Amoxicillin are: • broad s... | Ref: Ref: Plumb's 9th Ed. p. 57.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Amoxicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "514",
@@ -13942,7 +16002,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Livisto (Invesa))",
             "notes": "Category: Antibiotic (Penicillin). Properties: Gram + Broad-spectrum penicillin – beta Bacteriocidal lactamase sensitive – Acid stable Indications: Bacterial infections caused by M.O susceptible to penicillins, such as infections of the alimentary tract, respiratory tract, urogenital tract, coliform mastitis and secondary bacterial i... | Ref: Ref: Plumb's 9th Ed. p. 57.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Amoxicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "515",
@@ -13958,7 +16022,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Penicillin). Composition: Each 1ml contains: - Amoxicillin (as Amoxicillin Trihydrate) 150 mg Properties - AVIMOX- LA a long acting broad spectrum amoxicillin based antibiotic for use in cattle, sheep, dogs and cats where a single injection giving prolonged antibiotic cover is required. - AVIMOX- LA is a broad-s... | Ref: Ref: Plumb's 9th Ed. p. 57.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "516",
@@ -13974,7 +16042,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: Antibiotic (Penicillin). Composition Each 10ml vial contains: - 1.25gm Benzyl penicillin procaine, - 0.2436gm Benzyl penicillin sodium, - 2.626gm streptomycin sulphate. Indications and Usage S.PEN is compound antibiotic preparation active against both G-ve and G+ve bacteria such as E- coli, Haemophilus, strept. spp., salmon... | Ref: Cattle/Horses 10-20 mg/kg IM q12-24h. Dogs/Cats 10-15 mg/kg IM q12h. Plumb's.",
             "frequency": "q12-24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "517",
@@ -14028,7 +16100,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "IV, SC or IM"
                   }
-            }
+            },
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "518",
@@ -14082,7 +16158,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h (use with caution)",
                         "route": "SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 24,
+            "food_restriction_note": "Dipyrone (metamizole): Meat 4d, Milk 24h. Check local regulations."
       },
       {
             "id": "519",
@@ -14098,7 +16178,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder (Atco pharma)",
             "notes": "Category: Antibiotic (Penicillin). Composition Each vial contains: - 16.75gm amoxycillin sodium (eq. to 15gm amoxycillin base). Indications and Usage Cattle, horses, sheep, goats, camels: infections caused by amoxycillin sensitive organisms such as: septicemia, bronchitis, pneumonia, mastitis, metritis, wounds, urinary tract infectio... | Ref: Ref: Plumb's 9th Ed. p. 57.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Amoxicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "520",
@@ -14114,7 +16198,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Univet Co.)",
             "notes": "Category: Antibiotic (Aminopenicillin). Broad-spectrum bactericidal penicillin derivative. Indications: Respiratory, gastrointestinal, and urogenital infections in cattle, sheep, swine, dogs, and cats. Dosage: Cattle/Sheep/Swine 7-15 mg/kg IM/SC q24h; Dogs/Cats 10-20 mg/kg PO/SC/IM q12h. Withdrawal: Meat 14-21 days, Milk 48-72 hours. Ref: Plumb's 9th Ed. p. 57.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Amoxicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "521",
@@ -14168,7 +16256,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In drinking water for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "522",
@@ -14222,7 +16314,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "IV, SC or IM"
                   }
-            }
+            },
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "523",
@@ -14276,7 +16372,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "IV, SC or IM"
                   }
-            }
+            },
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "524",
@@ -14330,7 +16430,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "IV, SC or IM"
                   }
-            }
+            },
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "525",
@@ -14346,7 +16450,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Penicillin + Aminoglycoside). Composition: Each 1 ml contains: - Procaine Penicillin 200 mg - Dihydrostreptomycin Sulphate 250 mg Properties - The combination of penicillin and dihydrostreptomycin is especially useful in the treatment of mixed infections involving both Gram-positive and Gram-negative organisms. - The spectrum of... | Ref: Cattle/Horses 10-20 mg/kg IM q12-24h. Dogs/Cats 10-15 mg/kg IM q12h. Plumb's.",
             "frequency": "q12-24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "526",
@@ -14400,7 +16508,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "IV, SC or IM"
                   }
-            }
+            },
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "527",
@@ -14416,7 +16528,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Univet Co.)",
             "notes": "Category: Antibiotic (Penicillin + Aminoglycoside). PRESENTATION Each ml contains - Procaine Benzylpenicillin 200 mg - Dihydrostreptomycin (as sulphate) 200 mg - Methyl Parahydroxybenzoate (preservative) 1 mg - Sodium Formaldehyde Sulfoxylate 0.432 mg PHARMACODYNAMIC PROPERTIES - Penicillins are rapidly absorbed when injected in an aqueous suspension... | Ref: Cattle/Horses 10-20 mg/kg IM q12-24h. Dogs/Cats 10-15 mg/kg IM q12h. Plumb's.",
             "frequency": "q12-24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "528",
@@ -14432,7 +16548,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Livisto (Invesa))",
             "notes": "Category: Antibiotic (Penicillin + Aminoglycoside). Penbex is a complex antibacterial drug. It is a sterile white suspension for injection. COMPOSITION Each ml contains: - Penicillin procaine G – 200000 ME, - Dihydrostreptomycin sulfate – 250 mg, - Betamethasone – 0.5 mg, - Chlorpheniramine maleate – 8 mg, - Procaine hydrochloride and filler – 15 mg.... | Ref: Cattle/Horses 10-20 mg/kg IM q12-24h. Dogs/Cats 10-15 mg/kg IM q12h. Plumb's.",
             "frequency": "q12-24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "529",
@@ -14448,7 +16568,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (kela Co.)",
             "notes": "Category: Antibiotic (Penicillin + Aminoglycoside). Formula: - Procaine benzylpenicillin 200 000 IU - Dihydrostreptomycin sulphate 200 000 IU (eq dihydrostreptomycin 200 mg) - Excipients up to 1 ml Uses: Treatment of infections caused by penicillin G and/or DHS susceptible microorganisms such as respiratory tract infections, urogenital tract infectio... | Ref: Cattle/Horses 10-20 mg/kg IM q12-24h. Dogs/Cats 10-15 mg/kg IM q12h. Plumb's.",
             "frequency": "q12-24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "530",
@@ -14464,7 +16588,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Norbrook)",
             "notes": "Category: Antibiotic (Penicillin + Aminoglycoside). Presentation: A white to off-white aqueous suspension for parenteral administration. Composition: Each ml contains: - Procaine Penicillin Ph.Eur. 200 mg - Dihydrostreptomycin Sulphate Ph.Eur. 250 mg - Nipasept sodium (antimicrobial preservative) 1.5 mg Uses: - Pen & Strep Injection is indicated for ... | Ref: Cattle/Horses 10-20 mg/kg IM q12-24h. Dogs/Cats 10-15 mg/kg IM q12h. Plumb's.",
             "frequency": "q12-24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "531",
@@ -14480,7 +16608,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Primavet)",
             "notes": "Category: Antibiotic (Cephalosporin). Cefotaxime is 3rd Generation Cephalosporin sterile Powder for Injection Composition: Each vial contains: Cefotaxime sodium 5.2 gm eq to Cefotaxime base 4 gm Indications: - Treatment of pneumonia in calves and lambs (shipping fever), caused by susceptible organisms, including Pasteurella haemolytica,... | Ref: Ref: Plumb's 9th Ed. p. 200.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "532",
@@ -14496,7 +16628,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (MAPCO)",
             "notes": "Category: Antibiotic (Cephalosporin). Properties: 3rd generation cephalosporin Gram + Broad-spectrum Ab – Bacteriocidal – beta lactamase resistant Indications: • Active against g+ve and g-ve organisms • Foals, Dogs & Cats: acute respiratory diseases, urinary tract infections, septicemia and gynecological disease. Dosage: • 1.5 ml / 10Kg | Ref: Ref: Plumb's 9th Ed. p. 200.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "533",
@@ -14544,7 +16680,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "SC or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 5,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ceftiofur has a 0-day milk withdrawal — safe for dairy."
       },
       {
             "id": "534",
@@ -14592,7 +16732,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "SC or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 5,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ceftiofur has a 0-day milk withdrawal — safe for dairy."
       },
       {
             "id": "535",
@@ -14640,7 +16784,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "SC or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 5,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ceftiofur has a 0-day milk withdrawal — safe for dairy."
       },
       {
             "id": "536",
@@ -14688,7 +16836,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "SC or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 5,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ceftiofur has a 0-day milk withdrawal — safe for dairy."
       },
       {
             "id": "537",
@@ -14736,7 +16888,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "SC or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 5,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ceftiofur has a 0-day milk withdrawal — safe for dairy."
       },
       {
             "id": "538",
@@ -14752,7 +16908,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Antibiotic (Cephalosporin). COMPOSITION Each ml contains - Cefquinome sulphate 29.64 mg (eq to 25 mg cefquinome). PHARMACEUTICAL FORM Suspension tor injection TARGET SPECIES Cattle and pigs INDICATIONS For the treatment of bacterial infections in cattle and pigs caused by the Gram positive and Gram negative microorganisms sens... | DOSING: Intramammary 75 mg/quarter. Cattle mastitis. NOT weight-based. Merck Vet Manual.",
             "frequency": "intramammary per quarter",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 5,
+            "milk_withdrawal_hours": 24,
+            "food_restriction_note": "Cefquinome: Meat 5d, Milk 24h withdrawal."
       },
       {
             "id": "539",
@@ -14768,7 +16928,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Univet Co.)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) COMPOSITION Fenbendazole 100 mg/ml - Fenbendazole is an anthelmintic belonging to the benzimidazole group which acts by blocking fumerate reductase which results in the inhibition of the formation of adenosine triphosphate(involved in mitochondrial energy). Pharmacodynam...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Fenbendazole: Meat 7d, Milk 0 days. Safe for dairy."
       },
       {
             "id": "540",
@@ -14816,7 +16980,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Rafoxanide: Meat 28d. Not for use in dairy animals."
       },
       {
             "id": "541",
@@ -14832,7 +17000,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Univet Co.)",
             "notes": "Category: Antibiotic (Penicillin). COMPOSITION Each ml contains: - Amoxicillin 150 mg (eq to amoxicillin trihydrate 172 mg) Pharmacokinetic particulars - Amoxicillin is mainly distributed to the extra-cellular compartment. Its distribution into tissues is facilitated by its low degree of plasma protein binding. Concentrations in pulm... | Ref: Ref: Plumb's 9th Ed. p. 57.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Amoxicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "542",
@@ -14892,7 +17064,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "543",
@@ -14952,7 +17128,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "544",
@@ -15012,7 +17192,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "545",
@@ -15072,7 +17256,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "546",
@@ -15132,7 +17320,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "547",
@@ -15192,7 +17384,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "548",
@@ -15252,7 +17448,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "549",
@@ -15312,7 +17512,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "550",
@@ -15328,7 +17532,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Sachet (Science Med Co.)",
             "notes": "Category: laxative. COMPOSITION - Saccharomyces Service 20 gm - Magnesium (Carbonate) 50 gm - Iron (Ferrous Sulfate) 50 mg - Sodium (NaCl) 1000 mg - Copper sulfate 10 mg - Manganese (Sulfate) 3000 mg - Zinc sulfate 500 mg - Sodium bicarbonate 25 gm - Selenium (Selenite) 0.5 mg INDICATION Over rumen acidosis, tympanitis... | DOSING: Cattle/Horses: 250-500 g Epsom salts or 1-2 Liters Mineral Oil PO via stomach tube; Sheep: 50-100 g. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Magnesium products: No withdrawal required."
       },
       {
             "id": "551",
@@ -15388,7 +17596,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "552",
@@ -15440,7 +17652,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "553",
@@ -15492,7 +17708,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "554",
@@ -15544,7 +17764,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "555",
@@ -15596,7 +17820,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "556",
@@ -15648,7 +17876,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "557",
@@ -15700,7 +17932,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "558",
@@ -15760,7 +17996,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "559",
@@ -15820,7 +18060,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "560",
@@ -15878,7 +18122,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water for CRD",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Tylosin: Meat 21d, Milk 4 days (96h). IM use."
       },
       {
             "id": "561",
@@ -15936,7 +18184,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water for CRD",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Tylosin: Meat 21d, Milk 4 days (96h). IM use."
       },
       {
             "id": "562",
@@ -15994,7 +18246,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water for CRD",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Tylosin: Meat 21d, Milk 4 days (96h). IM use."
       },
       {
             "id": "563",
@@ -16052,7 +18308,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water for CRD",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Tylosin: Meat 21d, Milk 4 days (96h). IM use."
       },
       {
             "id": "564",
@@ -16110,7 +18370,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water for CRD",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Tylosin: Meat 21d, Milk 4 days (96h). IM use."
       },
       {
             "id": "565",
@@ -16168,7 +18432,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water for CRD",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Tylosin: Meat 21d, Milk 4 days (96h). IM use."
       },
       {
             "id": "566",
@@ -16210,7 +18478,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 42,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Tilmicosin: Meat W/D 42 days (SC). PROHIBITED in lactating dairy cattle. ⚠️ FATAL if administered IV or to horses/dogs. SC use only in cattle and sheep."
       },
       {
             "id": "567",
@@ -16252,7 +18524,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 42,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Tilmicosin: Meat W/D 42 days (SC). PROHIBITED in lactating dairy cattle. ⚠️ FATAL if administered IV or to horses/dogs. SC use only in cattle and sheep."
       },
       {
             "id": "568",
@@ -16294,7 +18570,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 42,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Tilmicosin: Meat W/D 42 days (SC). PROHIBITED in lactating dairy cattle. ⚠️ FATAL if administered IV or to horses/dogs. SC use only in cattle and sheep."
       },
       {
             "id": "569",
@@ -16336,7 +18616,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 42,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Tilmicosin: Meat W/D 42 days (SC). PROHIBITED in lactating dairy cattle. ⚠️ FATAL if administered IV or to horses/dogs. SC use only in cattle and sheep."
       },
       {
             "id": "570",
@@ -16378,7 +18662,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 42,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Tilmicosin: Meat W/D 42 days (SC). PROHIBITED in lactating dairy cattle. ⚠️ FATAL if administered IV or to horses/dogs. SC use only in cattle and sheep."
       },
       {
             "id": "571",
@@ -16394,7 +18682,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Zoetis)",
             "notes": "Category: Antibiotic (Macrolide). COMPOSITION Active ingredient - Tulathromycin 100 mg/ml Excipients - Monothioglycerol 5 mg/ml PRESENTATION Clear colourless to slightly yellow solution For injection. INDICATIONS » Cattle - Treatment of bovine respiratory disease associated with Mannheimia haemolytica, Pasteurella multocida, Histoph...",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Tulathromycin: Meat W/D 49 days. Not for use in female dairy cattle producing milk for human consumption (no established milk MRL)."
       },
       {
             "id": "572",
@@ -16410,7 +18702,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Avico)",
             "notes": "Category: Antibiotic (Macrolide). Composition: Each 1 ml contains: - Tulathromycin 100 mg Properties - Tulaxin is mixed bacteriostatic and bacteriocidal antibiotic acting by inhibition of essential protein biosynthesis. - Its works against mannheimia haemollytica, phistophilus somni, pasturella multocide, mycoplasma bovis, actionbac... | Ref: Cattle/Pigs 2.5 mg/kg SC single dose. Merck Vet Manual.",
             "frequency": "single dose SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Tulathromycin: Meat W/D 49 days. Not for use in female dairy cattle producing milk for human consumption (no established milk MRL)."
       },
       {
             "id": "573",
@@ -16426,7 +18722,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Antibiotic (Macrolide). COMPOSITION Active substance: - Tildipirosin 180 mg/ml Excipients: - Citric acid monohydrate - Propylene glycol - Water for injections PHARMACEUTICAL FORM ZUPREVO is a clear yellowish solution for injection containing 180 mg/ml of tildipirosin. TARGET SPECIES Cattle INDICATIONS For the treatment and...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "574",
@@ -16442,7 +18742,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Ceva Co.)",
             "notes": "Category: Antibiotic (Macrolide). COMPOSITION - Spiramycin 60 millions IU - Benzyl alcohol 4.16 gm - Water for injection qs 100 mL PROPERTIES » Spiramycin is an antibiotic of the macrolides group. lt is bacteriostatic and can be bactericidal at high concentrations. Macrolides inhibit protein synthesis by binding to the 50S ribosomal... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "575",
@@ -16500,7 +18804,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water for CRD",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Tylosin: Meat 21d, Milk 4 days (96h). IM use."
       },
       {
             "id": "576",
@@ -16554,7 +18862,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In drinking water for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "577",
@@ -16608,7 +18920,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In drinking water for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "578",
@@ -16662,7 +18978,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In drinking water for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "579",
@@ -16678,7 +18998,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "250 ml vial (Zoetis)",
             "notes": "Category: Antibiotic (Quinolone). COMPOSITION: - Danofloxacin (as mesylate salt) 180 mg /ml INDICATIONS: - For the treatment of bovine respiratory disease (BRD) associated with Mannheimia haemolytica and Pasteurella multocida in beef cattle and for the control of BRD in beef cattle at high risk of developing BRD associated with Mann... | Ref: Ref: Plumb's 9th Ed. p. 336.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "580",
@@ -16694,7 +19018,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Antibiotic (Quinolone). Danocin Injectable Solution For Vet. Use Only Composition: Each 1 ml contains: - Danofloxacin mesilate 31.722 mg (equiv. to danofloxacin 25 mg) Properties: 1. Danofloxacin is a synthetic fluoroquinolone with broad spectrum antimicrobial activity. 2. The antimicrobial activity of danofloxacin is base... | Ref: Ref: Plumb's 9th Ed. p. 336.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "581",
@@ -16742,7 +19070,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "PO, SC or IV"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "582",
@@ -16790,7 +19122,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "PO, SC or IV"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "583",
@@ -16806,7 +19142,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Antibiotic (Sulfonamide). Composition Each 100 ml contains - Sulphadimidine sodium 35.8 gm (eq to Sulphadimidine base 33.3 gm) Properties - Sulfadimidine is a member of the Sulphonamide group of antibiotics. It exerts its bacteriostatic effect by interfering with the biosynthesis of folic acid in susceptible bacteria. Sulfad... | Ref: Poultry/Cattle 33-50 mg/kg PO q12-24h x 5 days. Merck Vet Manual.",
             "frequency": "q12-24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "584",
@@ -16822,7 +19162,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Antibiotic (Sulfonamide). Composition Each 1 ml contains: - Sulphadimidine sodium 330 mg. Indications: - INJECTAL is recommended for the treatment of diseases caused by sulphadimidine sensitive Gram-negative and Gram-positive bacteria such as Pasteurella, Salmonella, E. coli, Fusobacterium necrophorum and Streptococcus sp. a... | Ref: Poultry/Cattle 33-50 mg/kg PO q12-24h x 5 days. Merck Vet Manual.",
             "frequency": "q12-24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "585",
@@ -16838,7 +19182,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Sulfonamide). Composition: Each 1 ml contain: - Sulphadimidine sodium 330 mg Properties - Sulphadimidine Sodium is the active ingredient of AVISULPHA Injectable solution, Sulphadimidine like many sulphonamides in the sulfonamide group, has been utilized for decades in veterinary medicine, hence, the veterinary li... | Ref: Poultry/Cattle 33-50 mg/kg PO q12-24h x 5 days. Merck Vet Manual.",
             "frequency": "q12-24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "586",
@@ -16898,7 +19246,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or IM"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "587",
@@ -16914,7 +19266,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Antibiotic (Sulfonamide). COMPOSITION: Each ml contains: - Sulphadiazine sodium 200 mg (eq to Sulphadiazine 183.85 mg) - Trimethoprim 40 mg PROPERTIES: Sulphadiazine belongs to sulfonamides that inhibit enzymes in the folic acid pathway, thereby inhibiting bacterial thymidine synthesis. The sulfonamide blocks the conversion ... | Ref: Ref: Plumb's 9th Ed. p. 1152.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "588",
@@ -16930,7 +19286,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Sulfonamide). COMPOSITION: Each ml contains - Sulphadiazine sodium 200 mg (eq to Sulphadiazine base 183.85 mg) - Trimethoprim 40 mg PROPERTIES: - Sulphadiazine belongs to sulfonamides that block the conversion of PABA to dihydrofolic acid. - Trimethoprim blocks the conversion of dihydrofolic acid \"DFA\" to tetrahy... | Ref: Ref: Plumb's 9th Ed. p. 1152.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "589",
@@ -16946,7 +19306,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Univet Co.)",
             "notes": "Category: Antibiotic (Sulfonamide). COMPOSITION Each ml contains: - Trimethoprim 40 mg - Sulphadiazine 200 mg Target Species: Cattle and pigs Indications Aquaprim Injection is indicated for the treatment of diseases caused by sensitive gram positive and gram negative organisms. Contraindications - This product should not be given by t... | Ref: Ref: Plumb's 9th Ed. p. 1152.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "590",
@@ -16962,7 +19326,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Norbrook)",
             "notes": "Category: Antibiotic (Potentiated Sulfonamide). Sequential double-blockade of bacterial folic acid synthesis resulting in bactericidal synergy. Indications: Respiratory infections, strangles in horses, alimentary tract infections, and mastitis/metritis. Dosage: Cattle/Horses/Swine/Sheep 15-24 mg/kg (combined) IM/IV/PO q24h; Dogs/Cats 15-30 mg/kg PO/SC q12-24h. Withdrawal: Meat 10-14 days, Milk 48-72 hours. Ref: Plumb's 9th Ed. p. 1152.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "591",
@@ -16978,7 +19346,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Antibiotic (Sulfonamide). Composition: Each 100 ml contains: - Sulfadoxine 20 gm - Trimethoprim 4 gm - Lidocaine HCL 1 gm Indications: • Respiratory infections of bacterial origin including pneumonia, rhinitis, bronchitis and secondary bacterial infections following virus pneumonia and mycoplasmal infections. • Urogenital tr... | Ref: Ref: NOAH Compendium.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "592",
@@ -16994,7 +19366,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Antibiotic (Sulfonamide). Composition Each 100 ml contains: - Sulfadoxine 20 gm - Trimethoprim 4 gm Properties - The two components of Trimethoprim and Sulfadoxine block sequential stages in the synthesis of tetrahydrofolate and thus have a synergistic antibacterial action. - The two components of Trimethoprim and Sulfadoxin... | Ref: Ref: NOAH Compendium.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "593",
@@ -17010,7 +19386,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Delta Pharma)",
             "notes": "Category: Antibiotic (Sulfonamide). Composition: Each 1 ml SULPHA PLUS contains: – Sulfadoxine 200 mg. – Trimethoprim 40 mg. Indications : Sulpha plus is a combination of trimethoprim and sulfadoxine used in Cattle and Horses for the treatment of: Cattle: 1- Respiratory tract infections (bacterial pneumonias including bovine pneumonic... | Ref: Ref: NOAH Compendium.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "594",
@@ -17026,7 +19406,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Antibiotic (Sulfonamide). Composition Each 1 ml contains: – Sulfadoxine 200 mg. – Trimethoprim 40 mg. Target species Cattle, horses, pigs, sheep and goats. Indications Treatment of infections caused by bacteria sensitive to the combination of antibiotics, such as infections of 1. The respiratory, 2. Gastro-intestinal, 3. Uri... | Ref: Ref: NOAH Compendium.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "595",
@@ -17042,7 +19426,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "250 ml vial (Livisto (Invesa))",
             "notes": "Category: Antibiotic (Sulfonamide + Aminoglycoside). Properties: Sulphadimethoxin: Long acting sulfonamide Trimethoprim: synergist Indications: Respiratory tract infections, metritis, pyelitis, pyelonephritis, cystitis, urethritis, pasteurellosis, young animals diarrhoea, mastitis. Dosage: • 1 ml/10 kg b.w./12-24 hours, 3-5 days. Withdrawal period: • ... | Dosing: Cattle/Horses/Swine 15-24 mg/kg (combined) IM/IV/PO q24h. Withdrawal: Meat 10-14 days, Milk 48-72h. Ref: Plumb's 9th Ed. p. 1152.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "596",
@@ -17058,7 +19446,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (kela Co.)",
             "notes": "Category: Antibiotic (Sulfonamide). Kombitrim 240 contains: – Sulfamethoxazole 200 mg – Trimethoprim 40 mg – Excipients up to 1 ml. TARGET SPECIES: Horses, cattle, sheep, goats, pigs, dogs, cats. INDICATIONS: Infections of the respiratory tract, gastro-intestinal tract, and urogenital tract, infections of skin, soft tissues and wounds... | Dosing: Cattle/Horses/Swine 15-24 mg/kg (combined) IM/IV/PO q24h. Withdrawal: Meat 10-14 days, Milk 48-72h. Ref: Plumb's 9th Ed. p. 1152.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "597",
@@ -17110,7 +19502,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "598",
@@ -17162,7 +19558,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "599",
@@ -17214,7 +19614,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "600",
@@ -17266,7 +19670,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "601",
@@ -17318,7 +19726,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "602",
@@ -17370,7 +19782,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "603",
@@ -17422,7 +19838,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "604",
@@ -17474,7 +19894,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "605",
@@ -17526,7 +19950,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "606",
@@ -17578,7 +20006,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "607",
@@ -17630,7 +20062,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "608",
@@ -17682,7 +20118,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "609",
@@ -17698,7 +20138,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (N/A)",
             "notes": "Category: Anesthetic. General effect: 1. Analgesia & amnesia with an anesthetic like state 2. Poor muscle relaxation when used alone 3. Laryngeal reflex remain intact so cannot be used in intubation 4. Induction agent for inhalation anesthesia 5. Increase in blood pressure and heart rate on induction and increase tempera...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "610",
@@ -17714,7 +20158,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Antihistamine. Composition: Each 1 ml contains: - Tripelennamine HCI 20 mg (equi to 17.5 mg Tripelennamine base) Properties: 1. Tripelennamine HCI is an ethylenediamine derivative antihistamine (H1 receptor antagonist). 2. Antihistamine (H1 receptor antagonist) competitively inhibits histamine at H1 receptor sites...",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "611",
@@ -17730,7 +20178,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1 gm vial (N/A)",
             "notes": "Category: Anesthetic. Properties: Ultra short thiobarbiturate Indication: 1. Short surgical procedures 2. Induction agent for inhalation anesthesia Dose: 1. Canine: 20-30 mg/Kg I/V 2. Bovine and equine: 6.6-8.8 mg/Kg IV Technique: Inject 1/3 of dose slowly then other on intervals as Repeated dose cause accumulative effec...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "612",
@@ -17746,7 +20198,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "200 ml Bottle (Pharma swede)",
             "notes": "Category: Antibiotic (Sulfonamide). Composition: Each 1 ml Contains: - Sulphadiazine (Sodium) 200 mg - Trimethoprim 40 mg Properties: - Sulphadiazine belongs to sulfonamides that block the synthesis of dihydrofolic acid from PABA by competitive inhibition of PABA. Trimethoprim blocks the synthesis of tetrahydrofolic acid from dihydrof... | Ref: Ref: Plumb's 9th Ed. p. 1152.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "613",
@@ -17762,7 +20218,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Bullvet >> sama vet pharm)",
             "notes": "Category: Growth Promoter. Composition: Each 100 ml contains:- - Arginine (L-Arginine HCL) 144 mg - Cysteine (L-Cysteine) 320 mg - Glutamine (L-glutamic acid) 320 mg - Glycine 320 mg - Histidine (L-Histidine) 132 Mg - Isoleucine (L-Isoleucine HCL) 360 mg - Leucine (L-Leucine HCL) 428 mg - Lysine (L-Lysine HCL) 544 mg - Methio... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "614",
@@ -17778,7 +20238,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Delta Pharma)",
             "notes": "Category: Antibiotic (Lincosamide + aminoglycoside). Composition: Each 1 ml contains: – Lincomycin base 50 mg – Spectinomycin base 100 mg Indications: Lincodel-S is used in dogs and cats for the treatment of infections caused by Staphylococcus aureus, Pasteurella multocida, Streptococcus spp. and Mycoplasma spp. Lincodel-S is used in chickens for the ... | Ref: Cattle/Pigs 2.5 mg/kg IM q24h. Plumb's.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "615",
@@ -17832,7 +20296,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "616",
@@ -17892,7 +20360,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "617",
@@ -17940,7 +20412,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "618",
@@ -17956,7 +20432,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (El kenana group)",
             "notes": "Category: Antiprotozoal (Coccidia). COMPOSITION Each 100 ml. contains: - Toltrazuril 2.5 gm. INDICATIONS KENAZURIL 2.5% is indicated for the treatment of coccidiosis in chickens & turkeys. DOSAGE – ( 1 ml. KENAZURIL 2.5% / 1 liter of drinking water for continuous period of 48 hours) OR – ( 3 ml. KENAZURIL 2.5%/ 1 liter of drinking wat... | Ref: Cattle/Pigs/Poultry 20 mg/kg PO single dose. Lambs 20 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose PO q2 weeks",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "619",
@@ -17972,7 +20452,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "2.36 gm vial (Arabcomed)",
             "notes": "Category: Antiprotozoal (Babesia & Trypanosoma). Properties: Diminsan 2.36 gm • Diminazene aceturate 1.05 gm • Phenazone (antipyrine) 1.31 gm Indications: Chemotherapeutic active against trypanosomes and babesiae. The product is fixed irreversibly on the living piroplasms. Very often a single injection is sufficient to counteract the infection wit... | Ref: Cattle/Horses 3.5-7 mg/kg deep IM. Dogs 3.5 mg/kg IM. Merck Vet Manual.",
             "frequency": "single dose IM (repeat in 1-2 weeks)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "620",
@@ -17988,7 +20472,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (MSD Co. (Intervet))",
             "notes": "Category: Ectoparasiticide. Instructions for use: For external use by washing, spraying or plunge dip treatment Dosage & Administration: wash or spray 1 ml / 1 L Water Precautions: • Do not spray facing the wind. • Do not eat, drink or smoke while using the product. • In case of contact with eyes and skin, wash immediately wit... | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "621",
@@ -18004,7 +20492,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml Bottle (N/A)",
             "notes": "Category: Ectoparasiticide. Phytopan is safe, Potent and long Acting new Formula For Ectoparasities Control, Emulisifiable Solution For External use, Broad spectrum long acting insecticide for prevention and control of Ticks, Flies, Lices and mange mites resistant to Pyrethroids and Organophosphates Formulation: - Carvacrol 60... | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "622",
@@ -18020,7 +20512,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "250 ml Bottle (Bayer)",
             "notes": "Category: Ectoparasiticide. Properties: Phoxim 500 mg/ml Instructions for use For external use by washing, spraying or plunge dip treatment. Dosage & Administration: wash or spray 1 ml / 1 L Water In severe scabies cases, the concentration is doubled so as to dilute 20 ml of the product plus 10 liters of water. Washing treatme... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "623",
@@ -18036,7 +20532,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "250 ml Bottle (N/A)",
             "notes": "Category: Ectoparasiticide (Organophosphate). Contact insecticide inhibiting acetylcholinesterase. Indications: Control of ticks, lice, mange mites, and blowfly strike. Dosage: Dilute in water per label (1:1000 for plunge dipping or spraying). For external veterinary use only. Withdrawal: Meat 14-28 days. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "624",
@@ -18052,7 +20552,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Novo Vet)",
             "notes": "Category: Growth Promoter. Composition: Each 1 ml contains: - Active Vitamin B12 (Raw liver) 2 mcg - Vitamin B12 (Cyanocobalamin) 500 mcg - Vitamin BI (Thiamine hydrochloride) 50 mg - Vitamin B2 (Riboflavin sodium phosphate) 0.6 mg - Vitamin B3 (Nicotinamide) 45 me - Vitamin B5 (d-Panthenol) 3 mg - Vitamin B6 (pyridoxine hydr... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "625",
@@ -18068,7 +20572,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Vetoquinol)",
             "notes": "Category: Liver & Kidney Tonic. Ornipural is Hepato-protector and Ammonemia regulator Injectable solution COMPOSITION - Betaine 15 mg - Arginine (hydrochloride) 33.3 mg - Ornithine (hydrochloride) 11.8 mg - Citrulline 10 mg - Sorbitol (E420) 200 mg - Metacresol 3 mg - Excipient QS 1 ml TARGET SPECIES Horses, cattle, sheep, pigs, d...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Sorbitol: No withdrawal required."
       },
       {
             "id": "626",
@@ -18084,7 +20592,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder Vial (El-Nasr)",
             "notes": "Category: Antibiotic (Penicillin + Aminoglycoside). COMPOSITION: Each Vial contains: - Penicillin G. Procaine 1.200.000 I.U. - Penicillin G. Sodium 400.000 I.U. - Streptomycin Sulphate 2 gm INDICATIONS: Broad spectrum antibiotic against gram +ve & -ve bacterial infections and inflammations of: Respiratory tract - Genito - urinary tract Gastro intesti... | Ref: Cattle/Horses 10-20 mg/kg IM q12-24h. Dogs/Cats 10-15 mg/kg IM q12h. Plumb's.",
             "frequency": "q12-24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "627",
@@ -18100,7 +20612,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml vial (Ceva Co.)",
             "notes": "Category: Vaccine. Coglavax® Polyvalent Inactivated Vaccine Against Clostridial Infections In Ruminants COMPOSITION: Coglavax contains antigens in sufficient quantity, which ensure satisfactory immunization against Cl. perfringens A, B, C, D and other clostridial infections due to Cl. oedematiens, septicum, tetani and... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based. | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "628",
@@ -18116,7 +20632,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Tablets (Arabcomed)",
             "notes": "Category: Antibiotic (Sulfonamide). Composition Each 1 tablet contains - Sulfadiazine 1.0 gm - Trimethoprim 0.2 gm Properties - The combination of a diaminopyrimidine (Trimethoprim) with a sulfonamide (Sulfadiazine) inhibits sequential steps in the synthesis of folic acid and thus the purines required for DNA synthesis. - The interfer... | Ref: Ref: Plumb's 9th Ed. p. 1152.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "629",
@@ -18132,7 +20652,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Bottle (N/A)",
             "notes": "Category: Ectoparasiticide. Properties: Phoxim 500 mg/ml Instructions for use For external use by washing, spraying or plunge dip treatment. Dosage & Administration: wash or spray 1 ml / 1 L Water In severe scabies cases, the concentration is doubled so as to dilute 20 ml of the product plus 10 liters of water. Washing treatme... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "630",
@@ -18148,7 +20672,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml Bottle (N/A)",
             "notes": "Category: Ectoparasiticide (Organophosphate). Phoxim 50%. Indications: Sarcoptic mange, psoroptic mange, lice, and tick infestations. Dosage: Apply topically to localized mange lesions or dilute 1:1000 for full wash/dip. External use only. Withdrawal: Meat 14-28 days. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "631",
@@ -18164,7 +20692,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Antibiotic (Lincosamide + aminoglycoside). Each 100 ml contains: - Lincomycin 5 gm - Spectinomycin 10 gm Indication: - treating bovine respiratory disease (BRD) - gastroenteritis in calves and lambs Dose: Calves, sheep, goats, lambs & pigs: 1 ml / 10 kg B.wt. by I.M.I. for 2 - 4 days. Dogs & Cats: 1ml / 5 kg B.wt. by I.M.I. may be repeated e... | Ref: Cattle/Pigs 2.5 mg/kg IM q24h. Plumb's.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "632",
@@ -18208,7 +20740,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Phenylbutazone: STRICTLY PROHIBITED in female dairy cattle ≥20 months (causes human aplastic anemia risk via residues — FDA, EU). Meat: 28-day W/D in beef cattle. Do NOT use in animals producing milk for human consumption."
       },
       {
             "id": "633",
@@ -18256,7 +20792,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "634",
@@ -18306,7 +20846,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "635",
@@ -18322,7 +20866,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Mebedco)",
             "notes": "Category: Antibiotic (Lincosamide + aminoglycoside). Composition Each 1 ml contains: - Lincomycin (as Lincomycin Hydrochloride Monohydrate) 50 mg - Spectinomycin (as Spectinomycin Sulfate tetrahydrate) 100 mg Indications Spectovet Inj. is indicated for the treatment of infections caused by organisms sensitive to the action of Lincomycin and/ or Specti... | Ref: Cattle/Pigs 2.5 mg/kg IM q24h. Plumb's.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Lincomycin: Meat 7d. Not for dairy cattle."
       },
       {
             "id": "636",
@@ -18374,7 +20922,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "637",
@@ -18434,7 +20986,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "638",
@@ -18450,7 +21006,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Norbrook)",
             "notes": "Category: Antibiotic (Aminopenicillin). Broad-spectrum bactericidal penicillin derivative. Indications: Respiratory, gastrointestinal, and urogenital infections in cattle, sheep, swine, dogs, and cats. Dosage: Cattle/Sheep/Swine 7-15 mg/kg IM/SC q24h; Dogs/Cats 10-20 mg/kg PO/SC/IM q12h. Withdrawal: Meat 14-21 days, Milk 48-72 hours. Ref: Plumb's 9th Ed. p. 57.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Amoxicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "639",
@@ -18504,7 +21064,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "640",
@@ -18520,7 +21084,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Powder (Ghannam)",
             "notes": "Category: Supportive treatment. Composition: Each 1 kg contains: - Vitamin B1 750 mg - Vitamln B2 1100 mg - Pantothenic acid 1500 mg - Vitamin B6 400 mg - Sodium Citrate 45 gm - Sodium Chloride 65 gm - Sodium Carbonate 50 gm - Potassium Chloride 25 gm - Monopotassium Phosphate 13 gm - Dextrose up to 1 kg Indications - To overcome ... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "641",
@@ -18536,7 +21104,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Zoetis)",
             "notes": "Category: Antibiotic (Penicillin). • Clamoxyl Long Acting 150 mg/ml Suspension for Injection is an off-white oily suspension containing 150 mg/ml amoxicillin as Amoxicillin trihydrate. • The formulation is designed to provide effective antibiotic activity over a period of 48 hours. Indications: - Clamoxyl Long Acting Suspension for I... | Ref: Ref: Plumb's 9th Ed. p. 57.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Amoxicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "642",
@@ -18552,7 +21124,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Sachet (Univet Co.)",
             "notes": "Category: Supportive treatment. Sacrolyte An Electrolyte pale orange homogeneous powder for Poultry and Calves Recommended Use Sacrolyte is a complete feeding stuff recommended for the stabilization of water and electrolyte balance in young calves and poultry. It contains predominantly electrolytes and easily absorbable carbohydra... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "643",
@@ -18606,7 +21182,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "IV, SC or IM"
                   }
-            }
+            },
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "644",
@@ -18622,7 +21202,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Alexandria Co.)",
             "notes": "Category: Supportive treatment. Composition: Each 100 ml contains - Butaphosphan 10 gm - Cyanocobalamin (1-(n-Butylamino)-1-methylethylphosphonous acid 0.005 gm Properties: - Vitamin B12 is a collective term for the Cobalamins of which cyanocobalamin and hydroxocobalamin are the principle compounds. They are cobalt-containing wate... | DOSING: Per-animal dose. Horses/Cattle: 1-2 mL/100 kg IV/IM/SC. Refer to product label. | Ref: Ref: Plumb's 9th Ed. p. 159.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "645",
@@ -18638,7 +21222,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml Bottle (Zoetis)",
             "notes": "Category: Supportive treatment. Duphalyte® solution for injection contains Vitamin B complex, electrolytes, amino acids and glucose. COMPOSITION Each ml contains: » VITAMINS - Vit B1 (hydrochloride) 0.1 mg - Vit B2 (as sodium phosphate) 0.04 mg - Vit B6 (hydrochloride) 0.1 mg - Vit B12 0.05 µg - Nicotinamide 1.5 mg - d-Panthenol 0... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "646",
@@ -18654,7 +21242,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml Bottle (Adwia)",
             "notes": "Category: Supportive treatment. Isotonic Sodium Bicarbonate sterile solution for Injection for veterinary use only. Composition: Each 100 ml contains: - Sodium bicarbonate 1.3 gm Properties: Sodium bicarbonate is soluble and acts rapidly, producing carbon dioxide. This carbon dioxide may worsen pre-existing bloat often encountered... | DOSING: Per-label volume dosing per animal. Not weight-based mg/kg.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "647",
@@ -18670,7 +21262,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition Each 1 ml contains: - Amikacin sulfate 333.8173 mg (eq to 250 mg amikacin base) Indications and Usage Horses: uterine infections (endometritis, metritis, and pyometra) in mares when caused by organisms susceptible to amikacin, including E. coli, pseudomonas spp., and klebsiella spp. Dosa... | Ref: Horses 10-15 mg/kg IV q24h. Dogs/Cats 15-30 mg/kg IV q24h. Foals 7-12 mg/kg IV q24h. Monitor renal function. Plumb's.",
             "frequency": "q24h IV/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "648",
@@ -18686,7 +21282,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Badr Pharma)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition: Each 1 ml contains - Doramectin 10 mg Properties Doramectin is a highly active broad spectrum parasiticide which is active against gastrointestinal roundworms, lungworm, eyeworms, grubs, sucking lice and mange mites. It is a novel fermentation derived macrocycl... | Ref: Cattle 0.2 mg/kg SC or IM. Pigs 0.3 mg/kg IM. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 70,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Doramectin: Meat 70d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "649",
@@ -18702,7 +21302,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1000 ml (Raa Pharma)",
             "notes": "Category: Ectoparasiticide. Used in the treatment of ticks and flea. Composition: flumethrin 10 mg / ml Mode of administration: Topical solution applied on backbone from neck to tail, Applied on Ruminant ,Equine and dogs only Contraindicated in cats | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "650",
@@ -18718,7 +21322,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Arabcomed)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition: - Doramectin 10 mg / ml (1% W / V) Properties: Pharmacotherapeutic group: Doradect injectable solution is a highly active, broad-spectrum parasiticide. It contains doramectin, afermentative derived parasiticide macrocyclic lactone. Doramectin is isolated from f... | Ref: Cattle 0.2 mg/kg SC or IM. Pigs 0.3 mg/kg IM. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 70,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Doramectin: Meat 70d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "651",
@@ -18766,7 +21374,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "PO, SC or IV"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "652",
@@ -18782,7 +21394,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arabcomed)",
             "notes": "Category: Analgesic & Spasmolytic. Composition: Each 100 ml contains: - Butylscopolamine bromide 0.4 gm - Metamizole 50 gm - Butylscopolamine bromide is a spasmolytic agent with particular activity on the smooth muscle of the digestive and urinary systems. It antagonizes the actions of acetylcholine at the muscarinic receptor and als... | Ref: Cattle/Horses 0.1-0.3 mg/kg IV/IM slow (antispasmodic). Dogs/Cats 0.1 mg/kg IV/IM. Plumb's.",
             "frequency": "q6-8h IV/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Butylscopolamine: 0 withdrawal days."
       },
       {
             "id": "653",
@@ -18798,7 +21414,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Arabcomed)",
             "notes": "Category: NSAIDs. Composition: Each 100 ml contains: - Tolfenamic acid 4 gm Properties: - Tolfenamic acid (N-(2-methyl-3-chlorophenyl) anthranilic acid) is a non-steroidal anti-inflammatory drug (NSAID) belonging to the fenamate group. Tolfenamic acid exerts anti-inflammatory, analgesic and antipyretic activities. - ... | Ref: Cattle/Pigs 2-4 mg/kg IM q48h. Dogs/Cats 4 mg/kg SC q24h x2. Merck.",
             "frequency": "single dose or q48h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "654",
@@ -18814,7 +21434,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "120ML Solution (Plexopharm (Rexall Ph.))",
             "notes": "Category: Anti-bloat (flatulence). Composition: Each 1 ml contains: - Simethicone 70 mg - Turpentine oil 0.3 ml - Anise oil 0.01 ml - Paraffin oil 0.2 ml - Fennel oil 0.01 ml Mode of Action (MOA): - Simethicone is an antifoaming agent that reduces surface tension of gas bubbles. - Turpentine oil decreases the gastrointestinal ferment... | DOSING: Cattle: 100-200 mL PO as oral drench or direct intraruminal injection; Sheep/Goats: 25-50 mL PO. For frothy bloat. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "655",
@@ -18830,7 +21454,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "125 ml Bottle (Plexopharm (Rexall Ph.))",
             "notes": "Category: Anti-Diarrheal. Composition: Each 1000 ml contains: - Sulphadimidine 21,300 mg - Sulphaguanidine 21,300 mg - Sulphadiazine 28,400 mg - Streptomycin sulphate 7,600 mg - Neomycin sulphate 1,800 mg - Kaolin 103.3 mg - Pectin 7,100 mg - Sodium chloride 11,333.33 mg - Calcium gluconate 2,200 mg - Magnesium sulphate 600 ...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Streptomycin (parenteral): Meat 30d, Milk 72h. Note: NOT for long-term use in food animals."
       },
       {
             "id": "656",
@@ -18846,7 +21474,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Powder (Plexopharm (Rexall Ph.))",
             "notes": "Category: Probiotic. Dry feed Microbial and Enzyme Supplement. Composition: * Each 1000 gm contains: - Saccharomyces cerevisiae 200 Billion CFU - Total Live Bacteria 20 Billion CFU - Lactobacillus acidophilus 2 Billion CFU - Lactobacillus casei 0.4 Billion CFU - Lactobacillus plantarum 1.6 Billion CFU - Enterococcus fae...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "657",
@@ -18862,7 +21494,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "120 ml Bottle (Plexopharm (Rexall Ph.))",
             "notes": "Category: Liver Tonic. Composition (Each 1000 ml contains) - Milk thistle (silymarin) 4,000 mg - L–Carnitine 100,000 mg - Methionine 55,000 mg - Choline Chloride 75,000 mg - Betaine 60,000 mg - Sorbitol 100,000 mg - Riboflavin 3,000 mg - Beta glucan 20,000 mg - Poly phenols 325 mg - Excipients q.s. 1,000 ml Indications: 1...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Sorbitol: No withdrawal required."
       },
       {
             "id": "658",
@@ -18878,7 +21514,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (N/A)",
             "notes": "Category: Diuretic. Each 1 ml contains: Furosemide ........ 50 mg Indications: Furosix is indicated in the treatment of oedemata associated with cardiac insufficiency, renal dysfunction, trauma and parasitic disease. It is also recommended for the treatment of mammary oedema and limb oedemata. - Furosix gives rapid ons...",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "659",
@@ -18894,7 +21534,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Supportive treatment. Each 100 ml of Aviphosphan contains: - 4-Dimethylamino_2-methylphenyl_phosphonic acid (equivalent to 28 mg phosphorous). - Vitamin B1. 25 mg. - Vitamin B2. 55 mg. - Vitamin B6. 30 mg. - Vitamin B12. 0.5 mg. Indications: • It is used in the treatment of early diseases in young animals that cause a di... | Ref: Cattle/Horses 5-10 mg/kg IM/SC. Supportive liver-phosphorus supplement. Merck Vet Manual.",
             "frequency": "q24-48h IM/SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "660",
@@ -18938,7 +21582,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Phenylbutazone: STRICTLY PROHIBITED in female dairy cattle ≥20 months (causes human aplastic anemia risk via residues — FDA, EU). Meat: 28-day W/D in beef cattle. Do NOT use in animals producing milk for human consumption."
       },
       {
             "id": "661",
@@ -18986,7 +21634,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "662",
@@ -19002,7 +21654,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Pharma swede)",
             "notes": "Category: Antibiotic (Macrolide). Composition Each 1 ml contains: - Tulathromycin 100 mg. Properties : Tulathromycin belongs to macrolide antibiotics, which have antibacterial action by inhibition of protein synthesis by binding to the 50S ribosomal subunit of microorganisms. Tulathromycin acts against gram negative activity compare... | Ref: Cattle/Pigs 2.5 mg/kg SC single dose. Merck Vet Manual.",
             "frequency": "single dose SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Tulathromycin: Meat W/D 49 days. Not for use in female dairy cattle producing milk for human consumption (no established milk MRL)."
       },
       {
             "id": "663",
@@ -19018,7 +21674,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Pharma swede)",
             "notes": "Category: Anthelmintic. Anthelmintic (Salicylanilide) Composition Each 1 ml contains: - Oxyclozanide 34 mg. Properties: Oxyclozanide is a member of the salicylanilide class of anthelmintics. Salicylanilides are hydrogen ionophores which act as potent uncouplers of oxidative phosphorylation. The site of action of these prot... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "664",
@@ -19034,7 +21694,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Pharma swede)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Composition Each 1 ml contains: - Triclabendazole 100 mg. Properties: Triclabendazole is a member of benzimidazole group of anthelmintics. It is a newly launched member with a very different spectrum of activity – directed against liver flukes. It is very potent against ... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "665",
@@ -19082,7 +21746,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 14,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Albendazole: Meat 14d, Milk 72h. Avoid in 1st trimester pregnancy."
       },
       {
             "id": "666",
@@ -19130,7 +21798,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 14,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Albendazole: Meat 14d, Milk 72h. Avoid in 1st trimester pregnancy."
       },
       {
             "id": "667",
@@ -19184,7 +21856,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h (use with caution)",
                         "route": "SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 24,
+            "food_restriction_note": "Dipyrone (metamizole): Meat 4d, Milk 24h. Check local regulations."
       },
       {
             "id": "668",
@@ -19200,7 +21876,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Supportive treatment. Composition: Each 1 ml contains : - dl-alpha tocopheryl acetate 150 mg. (Equiv. to vitamin E 150 IU) - Sodium selenite 1.1 mg. (Equiv. to Selenium 0.5 mg) Properties: Tocosel forte injection composed of Vit. E and Selenium which are essential nutrients for animals. Vitamin E plays an important role ... | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based) | Ref: Ref: Plumb's 9th Ed. p. 1195.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "669",
@@ -19216,7 +21896,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Choleretic & Liver Tonic. Composition: Each 1 ml contains: - Clanobutine sodium 106.4 mg (Equiv. to Clanobutine base 100 mg). Properties: Clanobutine acts as a choleretic agent by increasing the secretory activity of exocrine digestive glands, increasing bile secretion and by stimulation of pancreatic enzymes such as pepsin,... | DOSING: Per-label volume dosing per animal. Not weight-based mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "670",
@@ -19270,7 +21954,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "671",
@@ -19286,7 +21974,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Pharma swede)",
             "notes": "Category: Supportive treatment. Composition: Each 1 ml contains: - Toldimfos sodium 200 mg. Equiv. 14% phosphorus ( 28 mg phosphorus ) Properties: Toldimfos is considered one of phosphorus salts that used for the treatment and prevention of hypophosphataemia in cattle and dogs. Indications: - Skeletal defects, rickets and osteomal... | Ref: Cattle/Horses 5-10 mg/kg IM/SC. Supportive liver-phosphorus supplement. Merck Vet Manual.",
             "frequency": "q24-48h IM/SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "672",
@@ -19336,7 +22028,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "673",
@@ -19388,7 +22084,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "674",
@@ -19404,7 +22104,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: NSAIDs. Composition: Each 1 ml contains: - Carprofen 50 mg Properties: Carprofen is a non-steroidal, anti-inflammatory drug (NSAID) with analgesic and antipyretic properties. It acts primarily by inhibiting cyclo-oxygenase leading to reduce the synthesis of prostaglandins and related compounds. Indications:... | Ref: Dogs 2.2 mg/kg PO q12h or 4.4 mg/kg q24h. Cats 4 mg/kg SC single dose. Cattle: 0.7 mg/kg IV/SC. Plumb's.",
             "frequency": "q24h PO or single SC/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "675",
@@ -19420,7 +22124,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "12 gm Sachet (Pharma swede)",
             "notes": "Category: Anti-Diarrheal. Composition: Each sachet contains: - Neomycin sulphate 571.5 mg. (Neomycin base 400 mg.) - Sulfaguanidine 4000 mg. - Kaolin 4000 mg. - Pectin 400 mg. - Vitamin A 80000 I.U. - Bismuth subnitrate 2000 mg. Properties: - Neomycin belongs to Aminoglycosides that acts against Gram-negative bacteria as E.c...",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h)."
       },
       {
             "id": "676",
@@ -19436,7 +22144,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Supportive treatment. Composition Each 1 ml contains: - Butaphosphan 100 mg - Cyanocobalamin ( Vit. B12 ) 0.05 mg. Properties: Butaphosphan is one of organic phosphorus that is involved in all organic systems for improving the process of assimilation. Vitamin B12 is involved in the synthesis of proteins and red cells. In... | DOSING: Per-animal dose. Horses/Cattle: 1-2 mL/100 kg IV/IM/SC. Refer to product label. | Ref: Ref: Plumb's 9th Ed. p. 159.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "677",
@@ -19496,7 +22208,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "678",
@@ -19544,7 +22260,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 14,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Albendazole: Meat 14d, Milk 72h. Avoid in 1st trimester pregnancy."
       },
       {
             "id": "679",
@@ -19604,7 +22324,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "680",
@@ -19664,7 +22388,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "681",
@@ -19712,7 +22440,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Rafoxanide: Meat 28d. Not for use in dairy animals."
       },
       {
             "id": "682",
@@ -19766,7 +22498,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "683",
@@ -19782,7 +22518,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Pharma swede)",
             "notes": "Category: Antiprotozoal (Babesia & Anaplasma). Composition Each 1 ml contains: - Imidocarb dipropionate 120 mg (Equivalent to 85 mg imidocarb) Properties: Imidocarb dipropionate is N,N’-bis [ 3-(4,5-dihydro-1H-imidazol-2-yl)- phenyl ] urea dipropionate which is a carbanilide diamidine derivative. It is effective against Babesia spp. infection. I... | Ref: Cattle/Dogs 1.2-2.4 mg/kg IM q14d (babesiosis). Plumb's Vet Drug Handbook.",
             "frequency": "single dose IM or 2 doses 2 weeks apart",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "684",
@@ -19798,7 +22538,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Pharma swede)",
             "notes": "Category: Supportive treatment. Composition: Each 1 ml contains: - Vitamin E 20 mg - Sod. Selenite 800 mcg Indications : TOCOSEL – B is recommended for the prevention and treatment of selenium-tocopherol deficiency in cattle, sheep and poultry. Dosage : - Cattle : 10 ml TOCOSEL – B / 67 kg.B.wt / day for 3 – 5 days - Sheep : 1 ml ... | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based) | Ref: Ref: Plumb's 9th Ed. p. 1195.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "685",
@@ -19846,7 +22590,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "686",
@@ -19862,7 +22610,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Veyx)",
             "notes": "Category: Antibiotic (Sulfonamide). COMPOSITION Each 1 ml contains: • Active substances: - Sulfadoxine 200 mg - Trimethoprim 40 mg • Excipients: - Methyl parahydroxybenzoate 0.5 mg PHARMACOLOGICAL PROPERTIES » Pharmacodynamic properties: - Sulfadoxine is used in combination with trimethoprim in the mixing ratio 5 parts sulfadoxine + 1... | Ref: Ref: NOAH Compendium.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "687",
@@ -19878,7 +22630,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Jurox)",
             "notes": "Category: Prostaglandin hormone. Synthetic prostaglandin hormone Juramate Synthetic Prostaglandin for Cattle and Horses A luteolytic agent for clinical use and the control of the bovine and equine oestrus cycles. Active Constituent 250 micrograms/mL Cloprostenol (as the sodium salt) Indications Cattle: A single intramuscular dose o... | DOSING: Fixed per-animal dose. Cloprostenol: 500 mcg IM/cattle, 250 mcg IM/horse. Dinoprost: 25 mg IM/cattle. (NOT weight-based) | Ref: Ref: Plumb's 9th Ed. p. 268.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "688",
@@ -19894,7 +22650,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (kela Co.)",
             "notes": "Category: Mastitis Preparation. MASTI-Kel injector is an Ointment containing penicillin and neomycin for intramammary administration in dairy cows. They are indicated for the treatment of mastitis in dairy cows caused by micro-organisms susceptible to penicillin and/or neomycin. Ingredients 300 mg procaine benzylpenicillin, 500 mg... | Ref: Cattle 10-22 mg/kg PO q12h (neonatal scours). Plumb's.",
             "frequency": "q12h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Penicillin G: Meat 30d, Milk 72h."
       },
       {
             "id": "689",
@@ -19910,7 +22670,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (N/A)",
             "notes": "Category: Ectoparasiticide. Composition Diacidol is a non-systemic public health pesticide, from the organophosphorus compounds, used as ectoparasiticide, contains 60% (w/v) Diazinon (O,O-diehyl 0-2- isopropyl- 6-methylpyramidin- 4-yl Phosphorothioate (IUPAC)) as emulsifiable concentrate. Indications Diacidol: is a non-systemi... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "690",
@@ -19926,7 +22690,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Drugest)",
             "notes": "Category: Supportive treatment. Composition: Each 1 ml contains: - Toldimfos Sodium 200 mg (Sodium-4-dimethylamino-2-methyl phosphonate) Properties: Toldimfos Sodium is the Sodium salt of 4-dimethylamino-2-methyl phosphonate. No specific data on the pharmacodynamic action of toldimfos was submitted. The precise mode of action of t... | Ref: Cattle/Horses 5-10 mg/kg IM/SC. Supportive liver-phosphorus supplement. Merck Vet Manual.",
             "frequency": "q24-48h IM/SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "691",
@@ -19942,7 +22710,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition: Each 1 ml contains: - Eprinomectin 20 mg / ml Properties - Zero-Mec for the treatment of infestations by the internal and external parasite sensitive to eprinomectin: - Sucking lice: Haematopinus eurysternus, Linognathus vituli, Solenopotes capillatus. - Horn f... | Ref: Cattle 0.5 mg/kg pour-on topically. Merck Vet Manual.",
             "frequency": "single dose (pour-on)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Eprinomectin: 0-day meat and milk withdrawal. Only avermectin approved for dairy."
       },
       {
             "id": "692",
@@ -19958,7 +22730,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "3 gm Sachet (Avico)",
             "notes": "Category: Antiprotozoal (Trypanosoma). Composition: Each sachet contains: - Quinapyramine Sulphate 3 gm Properties The Quinapyramine sulphate salt is water soluble to which the curative action of TRYPA-STOP could be attributed, which is a potent trypanocidal. Indications - TRYPA-STOP is composed of quinapyramine sulphate which is a poten... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "693",
@@ -20012,7 +22788,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h (use with caution)",
                         "route": "SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 24,
+            "food_restriction_note": "Dipyrone (metamizole): Meat 4d, Milk 24h. Check local regulations."
       },
       {
             "id": "694",
@@ -20028,7 +22808,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Sachet (Avico)",
             "notes": "Category: Antiprotozoal (Trypanosoma). Composition: Each 2.5 gm contains; - Quinapyramine Sulphate 1.5 gm - Quinapyramine Chloride 1 gm Properties TRYBAN is composed of both Quinapyramine salts (Sulphate and Chloride) which differ in their absorption and action in the body, the Sulphate salt is water soluble to which the curative action ... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "695",
@@ -20044,7 +22828,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Bayer)",
             "notes": "Category: Anti-Diarrheal. Scourban Plus suspension is an oral Anti-Diarrheal Prevention and treatment of intestinal infections of bacterial origin in horses, cattle, goats, pigs, sheep, dogs and cats. Indications: - For the treatment of bacterial infections causing gastroenteritis and scour/pneumonia Complex. - For restoring... | Ref: Ref: Plumb's 9th Ed. p. 802.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "696",
@@ -20060,7 +22848,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Tornel)",
             "notes": "Category: Growth Promoter. FORMULA: Each ml contains: - Boldenone undecylenate ... 50 mg - Sesame oil .... 1 ml PROPERTIES: ■ Boldenone undecylenate is a modern steroid with anabolic properties and little androgenic activity. ■ EQUI-GAN acts beneficially in equines, bovines, porcines and canines. It stimulates appetite and in... | DOSING: Anabolic steroid - per-animal dose. NOT recommended in small animals. (Fixed dose per label)",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "697",
@@ -20076,7 +22868,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Vetoquinol)",
             "notes": "Category: NSAIDs. Ingredient of Tolfine 4% Each ml contains: - Tolfenamic Acid 40 mg - Benzyl Alcohol 1% w/v - Excipients q.s. Indications: - In Cattle : As an adjunct in the treatment of bovine respiratory disease, acute mastitis in conjunction with antibacterial therapy & in musculoskeletal disorders - In Dog : Chr... | DOSING: Infuse 1 syringe per affected teat/quarter immediately after milking. Disinfect teat end before infusion.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "698",
@@ -20092,7 +22888,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Allam Co.)",
             "notes": "Category: NSAIDs. Composition: Each 100 ml contains: - Tolfenamic Acid 4 gm Indication: Tolfenamic acid is usefui for treatment of the acute or chronic pain and lor inflammation in dogs &acute paiu inflammation in cats and also used in case of cattle in case of mastitis & in case of bacterial respiratory disease. Dos... | DOSING: Infuse 1 syringe per affected teat/quarter immediately after milking. Disinfect teat end before infusion.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "699",
@@ -20108,7 +22908,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Supportive treatment. A phosphorus preparation for the promotion of metabolic processes; tonic and restorative. Composition: Each 1 ml contains - Toldimfos 144 mg (eq to 200 mg of toldimfos sodium trihydrate) Properties: The toldimfos belongs to the group of aromatic phosphorus compounds (organic phosphorus) and has stim... | Ref: Cattle/Horses 5-10 mg/kg IM/SC. Supportive liver-phosphorus supplement. Merck Vet Manual.",
             "frequency": "q24-48h IM/SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "700",
@@ -20124,7 +22928,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Sachet (Pharma swede)",
             "notes": "Category: laxative. LAXAVET PLUS Laxative, Antacid, Appetizer Composition: Each pack of (99 g) Contains: - Magnesium Carbonate 87 g - Sodium Carbonate 10 g - Gentiana 2 g Properties: - Magnesium carbonate has an osmotic laxative action and it is used as adjunct in the treatment of abomasal ulceration. - Sodium carbonat... | Ref: Ref: Merck Vet Manual. | DOSING: Cattle/Horses: 250-500 g Epsom salts or 1-2 Liters Mineral Oil PO via stomach tube; Sheep: 50-100 g. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Magnesium products: No withdrawal required."
       },
       {
             "id": "701",
@@ -20140,7 +22948,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Diana)",
             "notes": "Category: Pituitary Hormone (Oxytocic). Stimulates rhythmic contraction of uterine smooth muscle and contraction of myoepithelial cells in mammary alveoli (milk letdown). Indications: Uterine inertia (dystocia - ensure cervix is dilated!), retained placenta, post-partum uterine hemorrhage, agalactia, and post-partum uterine involution. Dosage: Cattle/Horses: 10-30 IU IV/IM; Swine: 10-20 IU IM; Dogs: 1-5 IU SC/IM. Ref: Plumb's 9th Ed. p. 896. | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg (or 10-20 mcg Buserelin) IM/IV. (NOT weight-based mg/kg). Ref: Plumb's 9th Ed.",
             "frequency": "as needed",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Oxytocin: No withdrawal required."
       },
       {
             "id": "702",
@@ -20200,7 +23012,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "703",
@@ -20216,7 +23032,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Hemostasis. Composition: Phytomenadione (Vit k1) 10 mg Indications : Bleeding cases associated with clotting disorder or surgical operation Dosage & Route of administration: N/A | Dosing: Large animals 0.5-2.5 mg/kg SC/IM; Dogs/Cats 2.5-5 mg/kg SC/PO q12-24h for anticoagulant toxicity. Ref: Plumb's 9th Ed. p. 946.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "704",
@@ -20268,7 +23088,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "705",
@@ -20326,7 +23150,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water for CRD",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Tylosin: Meat 21d, Milk 4 days (96h). IM use."
       },
       {
             "id": "706",
@@ -20342,7 +23170,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Adwia)",
             "notes": "Category: Antibiotic (Macrolide). Composition Each 1 ml contains - Tildipirosin 180 mg Indications: Treatment and control of bovine respiratory disease (BRD) associated with Mannheimia haemolytica, Pasteurella multocida, and Histophilus somni in beef and non-lactating dairy cattle Dosage: S/C • Cattle: 1ml/45kg Withdrawal period(s):... | Ref: Cattle 4 mg/kg SC single dose. Pigs 4 mg/kg SC. Merck Vet Manual.",
             "frequency": "single dose SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "707",
@@ -20358,7 +23190,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Parasympathomimitic. Composition: Each ml contains: - Atropine sulphate 10 mg Indications: - Atropine sulphate injection decreases the intestinal motility thus used as Anti-spasmodic drug. - It also decreases bronchial, salivary and intestinal secretions. - It is the antidote of choice in cases of organophosphorus poiso... | Ref: Ref: Plumb's 9th Ed. p. 104.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "708",
@@ -20406,7 +23242,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Rafoxanide: Meat 28d. Not for use in dairy animals."
       },
       {
             "id": "709",
@@ -20422,7 +23262,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Mam Egypt Pharm)",
             "notes": "Category: Antiprotozoal (Babesia & Anaplasma). Composition: Each 100 ml contains: - Imidocarb dipropionate 13.9 gm (Equivalent to 12 gm imidocarb base) Properties: - Imidocarb dipropionato is a substituted carbinilide. used as an antiprotozoan treatment for the control of babesia spp. - Little is known about the mode of action of Imidocarb dipro... | Ref: Cattle/Dogs 1.2-2.4 mg/kg IM q14d (babesiosis). Plumb's Vet Drug Handbook.",
             "frequency": "single dose IM or 2 doses 2 weeks apart",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "710",
@@ -20474,7 +23318,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "711",
@@ -20490,7 +23338,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: NSAIDs. Composition: Each 1 ml contains: - Carprofen 50 mg Properties: Carprofen is a non-steroidal, anti-inflammatory drug (NSAID) with analgesic and antipyretic properties. It acts primarily by inhibiting cyclo-oxygenase leading to reduce the synthesis of prostaglandins and related compounds. Indications:... | Ref: Dogs 2.2 mg/kg PO q12h or 4.4 mg/kg q24h. Cats 4 mg/kg SC single dose. Cattle: 0.7 mg/kg IV/SC. Plumb's.",
             "frequency": "q24h PO or single SC/IV",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "712",
@@ -20506,7 +23358,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (N/A)",
             "notes": "Category: Supportive treatment. Equi-Plex (plus Taurine) Anabolic and increase production of milk in bovines. Taurine and Inositol are especially important for: - Regulation of intestinal movement, improve lipid digestion and absorption & Promote wound healing. great importance for the cells of the bone marrow. eye tissue, udder t... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "713",
@@ -20550,7 +23406,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Phenylbutazone: STRICTLY PROHIBITED in female dairy cattle ≥20 months (causes human aplastic anemia risk via residues — FDA, EU). Meat: 28-day W/D in beef cattle. Do NOT use in animals producing milk for human consumption."
       },
       {
             "id": "714",
@@ -20566,7 +23426,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Syva)",
             "notes": "Category: Antibiotic (Penicillin). COMPOSITION - Amoxicillin (as trihydrate) 15 g - Excipient, s.q.f 100 ml PHARMACEUTICAL FORM - Injectable oil suspension - Shelf life of the final veterinary medicinal product: 2 years. - Shelf life after first opening the immediate packaging: 28 days. THERAPEUTIC INDICATIONS - AMOXIL RETARD is inte... | Ref: Ref: Plumb's 9th Ed. p. 57.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Amoxicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "715",
@@ -20626,7 +23490,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "716",
@@ -20686,7 +23554,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 15,
+            "milk_withdrawal_hours": 120,
+            "food_restriction_note": "Meloxicam: Meat 15d, Milk 5 days (120h)."
       },
       {
             "id": "717",
@@ -20702,7 +23574,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Antibiotic (Nitroimidazole). Composition: Each 1 ml contains: - Metronidazole 5 mg Properties: - Strong Anti-bacterial ( bactericidal ) for anaerobic bacteria ( Gardia ,Trichomonas, Amebia , Balantidium coli) and also; Anti-protozoal, Anti-clostridia, Anti-trichomonas with efficacy against cryptosporidium. - Lipophilic drug Dis... | Ref: Ref: Plumb's 9th Ed. p. 748.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "banned",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "BANNED in all food-producing animals worldwide (EU Reg 37/2010, FDA CVM). Never use in animals entering the food chain."
       },
       {
             "id": "718",
@@ -20718,7 +23594,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "125 gm Ointment (N/A)",
             "notes": "Category: Ectoparasiticide. Composition: benzyl benzoate, salicylic acid, pheno, tar Indications Treatment of most type of mange and ring worm in cattle, sheep, goat, camels, Rabbits, Dogs and Cats. Usage To be applied once a day. Package: 125 gm | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "719",
@@ -20734,7 +23614,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Syva)",
             "notes": "Category: Mastitis Preparation. Content: - Ampicillin (Sodium) 75 mg - Cloxacillin (Sodium) 200 mg Target: Lactating cow | Ref: Cattle/Horses 5-10 mg/kg IV/IM q12-24h. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Ampicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "720",
@@ -20750,7 +23634,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (Syva)",
             "notes": "Category: Mastitis Preparation. Content: - Ampicillin (trihydrate) 250 mg - Cloxacillin (benzathine) 500 mg Target: Dry cow | Ref: Cattle/Horses 5-10 mg/kg IV/IM q12-24h. Plumb's Vet Drug Handbook.",
             "frequency": "q12-24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Ampicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "721",
@@ -20802,7 +23690,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "722",
@@ -20850,7 +23742,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 14,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Albendazole: Meat 14d, Milk 72h. Avoid in 1st trimester pregnancy."
       },
       {
             "id": "723",
@@ -20866,7 +23762,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Oral Paste (Zoetis)",
             "notes": "Category: Anthelmintic. Anthelmintic (Milbemycin) What is Equest Oral Gel? Equest Oral Gel is a deworming product specially produced for horses, that is strictly available on prescription. This has to do with the fact that horses can no longer be dewormed preventively, but can only be treated when your horse is actually di... | Ref: Cattle 0.2 mg/kg SC pour-on. Horses 0.4 mg/kg PO. Sheep 0.2 mg/kg PO. Dogs (Dirofilaria): 0.003 mg/kg PO monthly. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "724",
@@ -20920,7 +23820,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "725",
@@ -20936,7 +23840,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Nita Pharma)",
             "notes": "Category: Liver Tonic. Strolitine Liver tonic, improves metabolism, improves FCR , increases growth rate. Composition: Each 1 liter contains: - L carnitine 50 gm - Magnesium sulphate 250 gm - Sorbitol 200 gm - Propylene glycol 55 gm - Purified water up to 1 liter Properties: Strolitine is a source of L Carnitine and Magne... | Ref: Dogs 50-100 mg/kg PO q24h (dilated cardiomyopathy). Merck Vet Manual.",
             "frequency": "q24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Magnesium products: No withdrawal required."
       },
       {
             "id": "726",
@@ -20996,7 +23904,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "727",
@@ -21056,7 +23968,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "728",
@@ -21110,7 +24026,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In drinking water for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "729",
@@ -21164,7 +24084,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In drinking water for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "730",
@@ -21218,7 +24142,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "IV, SC or IM"
                   }
-            }
+            },
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "731",
@@ -21278,7 +24206,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "732",
@@ -21294,7 +24226,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (El-Nasr)",
             "notes": "Category: Supportive treatment. COMPOSITION: Each 100 ml contains: - Vit A 10,000,000 IU - Vit D3 2,500,000 IU - Vit E 10,000 mg INDICATIONS : - Prevent and treat vitamins A D3 E deficiency symptoms e.g. muscular disordered, rickets, bone deformities retarded. - It is recommended to be used in cases of stress factor (transport, ho... | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based) | Ref: Ref: Merck Vet Manual.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "733",
@@ -21310,7 +24246,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Livisto (Invesa))",
             "notes": "Category: Antiprotozoal (Babesia & Anaplasma). COMPOSITION Each mL contains: - Imidocarb dipropionate 120mg - Excipients q.s.p 1 mL SPECIES Bovine, equine and canine INDICATIONS: Treatment of animals clinically affected by babesiosis, and anaplasmosis. It can be used as a chemoprophylactic control when cattle susceptible is introduced in enzooti... | Ref: Ref: Plumb's 9th Ed. p. 605.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "734",
@@ -21326,7 +24266,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder (El-Nasr)",
             "notes": "Category: Antibiotic (Aminoglycoside). COMPOSITION: Each 100 gm Contains: - Neomycin Sulphate 20 gm. INDICATIONS: - Neomycin is a medium antibiotic affecting both gram +ve and gram —ve bacteria. - It have a great bactericidal effect on E.Coli, Salmonella which cause white scour diarrhea and paratyphoid. - It is administrated for controll... | Ref: Cattle 10-22 mg/kg PO q12h (neonatal scours). Plumb's.",
             "frequency": "q12h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Oral neomycin: Meat 30d, Milk 72h. Topical/oral only — systemic not approved for food animals."
       },
       {
             "id": "735",
@@ -21342,7 +24286,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder (El-Nasr)",
             "notes": "Category: Antibiotic (Aminoglycoside). COMPOSITION: Each 100 gm contains: - Chloramphenicol 20 gm. INDICATIONS: - It is a broad spectrum antibiotic. Active against both gram +ve and gram-ye. - As a prophylactive and treatment against gastrointestinal infections caused by salmonella and E.Coli. DOSAGE: - Treatment period: 3-5 days or as p... | Ref: Ref: Plumb's 9th Ed. p. 215.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "banned",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "BANNED in all food-producing animals worldwide (EU Reg 37/2010, FDA CVM). Never use in animals entering the food chain."
       },
       {
             "id": "736",
@@ -21358,7 +24306,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml bottle (El-Nasr)",
             "notes": "Category: Anthelmintic. Anthelmintic (Imidazothiazole) COMPOSITION: Each 100 ml contains: - L -Tetramisole HCI 10 gm. INDICATIONS: - It is a broad spectrum anthelmintic and active against adult and larval stages of worms. - Treatment of ascariasis and other worm infections e.g. hookworms. - Used as an immunstimulant, (at t... | Ref: Cattle 15 mg/kg SC/IM. Sheep 15 mg/kg SC. Poultry 40 mg/kg. Merck Vet Manual.",
             "frequency": "single dose SC/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "737",
@@ -21374,7 +24326,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder (El-Nasr)",
             "notes": "Category: Antiprotozoal (Coccidia). COMPOSITISON: Each 100 gm Contains: - Sulphadimethoxine 20 gm. - Diaveridine 20 gm. INDICATIONS: For the treatment of coccidiosis in poultry in addition, it is active against enteric and Respiratory diseases sustained by E.Coli, clostridia spp., Pasteurella spp. Salmonella spp., Fowl pox. - N.B.: Do... | Ref: Poultry 55 mg/kg PO day 1, then 27.5 mg/kg q24h x 5 days. Plumb's.",
             "frequency": "q24h x 5 days",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "738",
@@ -21390,7 +24346,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (El-Nasr)",
             "notes": "Category: Antibiotic (Sulfonamide). COMPOSITION: Each 100 ml contains: - Sulphadimidine Sodium 33.3 gm. INDICATIONS: - Sulphadimidine is a broad spectrum antibacterial sulphonamide which acts as bacteriostatic agent against gram +ve & gram –ve bacteria. - It is used in the treatment of respiratory tract infections enteritis, coccidios... | Ref: Poultry/Cattle 33-50 mg/kg PO q12-24h x 5 days. Merck Vet Manual.",
             "frequency": "q12-24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "739",
@@ -21448,7 +24408,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water for CRD",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Tylosin: Meat 21d, Milk 4 days (96h). IM use."
       },
       {
             "id": "740",
@@ -21490,7 +24454,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 42,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Tilmicosin: Meat W/D 42 days (SC). PROHIBITED in lactating dairy cattle. ⚠️ FATAL if administered IV or to horses/dogs. SC use only in cattle and sheep."
       },
       {
             "id": "741",
@@ -21538,7 +24506,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 14,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Albendazole: Meat 14d, Milk 72h. Avoid in 1st trimester pregnancy."
       },
       {
             "id": "742",
@@ -21554,7 +24526,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Atco pharma)",
             "notes": "Category: Antiprotozoal (Coccidia). Composition Each 1ml contains: 2.5mg diclazuril. Indications and Usage - Lambs: for treatment of coccidial infections caused in particular by the more pathogenic Eimeria species such as: Eimeria crandallis and Eimeria ovinoidalis. - Calves: aids in the control of coccidiosis caused by Eimeria bovis ... | Ref: Ref: NOAH Compendium.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "743",
@@ -21598,7 +24574,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Phenylbutazone: STRICTLY PROHIBITED in female dairy cattle ≥20 months (causes human aplastic anemia risk via residues — FDA, EU). Meat: 28-day W/D in beef cattle. Do NOT use in animals producing milk for human consumption."
       },
       {
             "id": "744",
@@ -21614,7 +24594,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Atco pharma)",
             "notes": "Category: Antiprotozoal (Coccidia). Composition Each 100ml contains: 2.5gm toltrazuril. Indications and Usage - Chickens: coccidiosis due to infection by Eimeria acervulina, E. brunetti, E. maxima, E. necatrix, E. tenella, E. mitis. - Turkeys: coccidosis due to infection by E. adenoides, E. meleagrimitis. Dosage Chickens and turkeys: ... | Ref: Cattle/Pigs/Poultry 20 mg/kg PO single dose. Lambs 20 mg/kg PO. Plumb's Vet Drug Handbook.",
             "frequency": "single dose PO q2 weeks",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "745",
@@ -21668,7 +24652,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "IV, SC or IM"
                   }
-            }
+            },
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "746",
@@ -21726,7 +24714,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water for CRD",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "747",
@@ -21742,7 +24734,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Spray (N/A)",
             "notes": "Category: Topical Antiseptic. Indications: • Dermatitis • Eczema • Udder impetigo • Surgical wounds after operations | Ref: Cattle 10-22 mg/kg PO q12h (neonatal scours). Plumb's.",
             "frequency": "q12h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Oral neomycin: Meat 30d, Milk 72h. Topical/oral only — systemic not approved for food animals."
       },
       {
             "id": "748",
@@ -21792,7 +24788,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "749",
@@ -21808,7 +24808,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Nita Pharma)",
             "notes": "Category: Liver Tonic. STROLITINE Enhances energy production for performance, delays fatigue, prevents Tying Up and improves neuromuscular transmission. Composition: Each 100 ml contains - L Carnitine HCL 5g (L-Carnitine 4.077 g) - Magnesium sulfate heptahydrate 25g (Magnesium 2.5 g) - Sorbitol 25 gm - Propylene glycol 55... | Ref: Dogs 50-100 mg/kg PO q24h (dilated cardiomyopathy). Merck Vet Manual.",
             "frequency": "q24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Magnesium products: No withdrawal required."
       },
       {
             "id": "750",
@@ -21824,7 +24828,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Sone)",
             "notes": "Category: Growth Promoter. Content: - Boldenone undecylenate 50mg/1ml Description Boldenone is a steroid anabolic with a very little androgenic activity; it is a great appetite stimulant, it increases vigor, muscular development and gives skin and hair a better appearance. Indication - Is indicated for horses that are energet... | DOSING: Anabolic steroid. Fixed dose per label. Horses: 0.5 mg/kg IM q3-4 weeks. NOT standard small animal use.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "751",
@@ -21872,7 +24880,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "PO, SC or IV"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "752",
@@ -21926,7 +24938,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h (max 1-2 days)",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 3,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ketoprofen: 0-day milk withdrawal in most formulations."
       },
       {
             "id": "753",
@@ -21986,7 +25002,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "754",
@@ -22034,7 +25054,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "SC or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 5,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ceftiofur has a 0-day milk withdrawal — safe for dairy."
       },
       {
             "id": "755",
@@ -22082,7 +25106,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "PO, SC or IV"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "756",
@@ -22098,7 +25126,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition Each vial contains: - Streptomycin sulphate 200 gm (eq to 160 gm streptomycin base). Indications and Usage - Chicken: coryza and colisepticemia. - Cattle and horses: respiratory tract infections due to susceptible micro-organisms. - Turkeys: infectious sinusitis. - Dogs: leptospirosis. D...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "757",
@@ -22152,7 +25184,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "758",
@@ -22202,7 +25238,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "759",
@@ -22260,7 +25300,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water for CRD",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Tylosin: Meat 21d, Milk 4 days (96h). IM use."
       },
       {
             "id": "760",
@@ -22276,7 +25320,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "5 gm vial (Badr Pharma)",
             "notes": "Category: Antibiotic (Cephalosporin). Composition: Each vial contains: - Cefotaxime sodium 5.2 gm (equi to cefotaxime base 5 gm) Properties - Cefotaxime has a relatively wide spectrum of activity against both Gram positive and Gram negative bacteria. - Cefotaxime like the other 3rd generation agents has extended coverage of Gram negativ... | Ref: Ref: Plumb's 9th Ed. p. 200.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "761",
@@ -22292,7 +25340,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Badr Pharma)",
             "notes": "Category: Antibiotic (Lincosamide + aminoglycoside). COMPOSITION Each ml contains - Lincomycin hydrochloride 56.7 mg (eq to Lincomycin base 50 mg) - Spectinomycin sulfate tetrahydrate 151.2 mg (eq to Spectinomycin base 100 mg) PROPERTIES - Mycospectin is a synergistic combination of lincomycin and spectinomycin. - Lincomycin is a lincosamide antibioti... | Ref: Cattle/Pigs 2.5 mg/kg IM q24h. Plumb's.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Lincomycin: Meat 7d. Not for dairy cattle."
       },
       {
             "id": "762",
@@ -22352,7 +25404,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "763",
@@ -22400,7 +25456,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 14,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Albendazole: Meat 14d, Milk 72h. Avoid in 1st trimester pregnancy."
       },
       {
             "id": "764",
@@ -22416,7 +25476,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Raa Pharma)",
             "notes": "Category: Antiprotozoal (Babesia & Anaplasma). Composition: Imidocarb dipropionate for the prevention immunization and treatment of blood parasites Dosage: I/M injection Babesiosis: - prevention: Cattle: 2.5 mL / 100kg. Horses, Donkeys, Mules: 2 mL / 100kg. Imidogan Injection provides protection against babesiosis for up to 4-6 weeks depending o... | Ref: Cattle/Dogs 1.2-2.4 mg/kg IM q14d (babesiosis). Plumb's Vet Drug Handbook.",
             "frequency": "single dose IM or 2 doses 2 weeks apart",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "765",
@@ -22432,7 +25496,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml (N/A)",
             "notes": "Category: Mastitis Preparation. Oregano gel for lactating Dairy cattle - Use the flexible treatment option of Oregano gel sterile gel from two to eight days for the best chance that infected area cured. - Whether it is a mild or stubborn case,Oregano gel is the right product to take it on. Content: - Ceftiofur hydrochloride 125 mg... | DOSING: Infuse 1 syringe per affected teat/quarter immediately after milking. Disinfect teat end before infusion.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "766",
@@ -22486,7 +25554,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h (use with caution)",
                         "route": "SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 24,
+            "food_restriction_note": "Dipyrone (metamizole): Meat 4d, Milk 24h. Check local regulations."
       },
       {
             "id": "767",
@@ -22536,7 +25608,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "768",
@@ -22596,7 +25672,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 15,
+            "milk_withdrawal_hours": 120,
+            "food_restriction_note": "Meloxicam: Meat 15d, Milk 5 days (120h)."
       },
       {
             "id": "769",
@@ -22644,7 +25724,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "770",
@@ -22694,7 +25778,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "771",
@@ -22710,7 +25798,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: Supportive treatment. Content: Vit B complex and iron Dosage: I/M 1 ml / 25 kg body weight | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "772",
@@ -22762,7 +25854,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "773",
@@ -22778,7 +25874,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (kela Co.)",
             "notes": "Category: Supportive treatment. Emulsion for injection – vitamin and mineral complex for animals. STRUCTURE: - Vitamin A 50,000 I.U. - Vitamin PP 5 mg - Vitamin D3 25,000 I.U. - Vitamin B12 0.01 mg - Vitamin B1 10 mg - Vitamin E 4 mg - Vitamin B2 0.04 mg - Choline chloride 5 mg - Vitamin B6 1 mg - Inositol 2 mg - Magnesium 1 mg - ... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "774",
@@ -22794,7 +25894,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Veyx)",
             "notes": "Category: Antibiotic (Penicillin). COMPOSITION Active substance per ml: - Amoxicillin trihydrate 229.6 mg (eq 200 mg Amoxicillin) Excipients: - Butylhydroxyanisole (Ph. Eur) 0.08 mg - Butylhydroxytoluene (Ph. Eur) 0.08 mg PRESENTATION Veyxyl LA 20 % is a white to slightly yellowish oily suspension. INDICATIONS Treat the following dis... | Ref: Ref: Plumb's 9th Ed. p. 57.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Amoxicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "775",
@@ -22842,7 +25946,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "PO, SC or IV"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "776",
@@ -22858,7 +25966,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "2.5 gm vial (N/A)",
             "notes": "Category: Antiprotozoal (Trypanosoma). Composition: Each vial contains: Quinapyramine Sulphate B. Vet. C...........1.5 g Quinapyramine Chloride B. Vet. C............1.0 g Sterile water for Injection B.P. ...................15 ml Description: ASIPYR-V is an antihaemoprotozoal drug used as a curative and prophylactic treatment for Trypanos... | DOSING: Per-animal fixed dose. Cattle: 1 mL/100 kg SC (babesiosis). NOT standard mg/kg. | Ref: Ref: Merck Vet Manual.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "777",
@@ -22874,7 +25986,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Badr Pharma)",
             "notes": "Category: Antibiotic (Sulfonamide). Composition: Each 1 ml contains: – Sulfadoxine 200 mg. – Trimethoprim 40 mg. Indications : combination of trimethoprim and sulfadoxine used in Cattle and Horses for the treatment of: Cattle: 1- Respiratory tract infections (bacterial pneumonias including bovine pneumonic pasteurellosis, shipping fev... | Ref: Ref: NOAH Compendium.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "778",
@@ -22928,7 +26044,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h (max 1-2 days)",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Tulathromycin: Meat W/D 49 days. Not for use in female dairy cattle producing milk for human consumption (no established milk MRL)."
       },
       {
             "id": "779",
@@ -22976,7 +26096,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "780",
@@ -23036,7 +26160,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "781",
@@ -23090,7 +26218,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h (max 1-2 days)",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 3,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ketoprofen: 0-day milk withdrawal in most formulations."
       },
       {
             "id": "782",
@@ -23106,7 +26238,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Vetoquinol)",
             "notes": "Category: Antibiotic (Sulfonamide). SEPTOTRYL® INJECTABLE Anti-infectious COMPOSITION - Trimethoprim 40 mg - Sulfamethoxypyridazine 200 mg - Benzyl alcohol 0.01 ml - Excipient to 1 ml PROPERTIES » Septotryl® Injectable is a combination of two major antibacterial agents: Trimethoprim and Sulfamethoxypyridazine, which are particularly w... | Ref: Ref: Plumb's 9th Ed. p. 1152.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "783",
@@ -23154,7 +26290,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Rafoxanide: Meat 28d. Not for use in dairy animals."
       },
       {
             "id": "784",
@@ -23208,7 +26348,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "785",
@@ -23268,7 +26412,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "786",
@@ -23284,7 +26432,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "2 gm Vial (UCCMA - Ghannam)",
             "notes": "Category: Antibiotic (Penicillin + Aminoglycoside). COMPOSITION: Each Vial contains: - Penicillin G. Procaine 1.200.000 I.U. - Penicillin G. Sodium 400.000 I.U. - Streptomycin Sulphate 2 gm INDICATIONS: Broad spectrum antibiotic against gram +ve & -ve bacterial infections and inflammations of: Respiratory tract - Genito - urinary tract Gastro intesti... | Ref: Cattle/Horses 10-20 mg/kg IM q12-24h. Dogs/Cats 10-15 mg/kg IM q12h. Plumb's.",
             "frequency": "q12-24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "787",
@@ -23300,7 +26452,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (UCCMA - Ghannam)",
             "notes": "Category: Supportive treatment. Composition: Toldimfos 20% Indications: Tony fos 20% is used in cattle & dogs as a primer aiding drug in control and treatment of Hypophosphatemia as in cases of: 1. Grass tetany and Post parturient paresis. 2. Ketosis and Milk fever. 3. Sterility and Repeat breeder. 4. Rickets, Osteomalacia and bon... | Ref: Cattle/Horses 5-10 mg/kg IM/SC. Supportive liver-phosphorus supplement. Merck Vet Manual.",
             "frequency": "q24-48h IM/SC",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "788",
@@ -23348,7 +26504,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "789",
@@ -23364,7 +26524,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Eva pharma)",
             "notes": "Category: Choleretic & Liver Tonic. COMPOSITION: - Menbutone 50 mg / ml - Sorbitol 250 mg / ml PROPERTIES: - Menbutone or genabilic acid, is a derivative of Oxobutyric acid which acts as choleretic excitosecretory, trypsinogen and pepsinogen and as cholagogue. Injected into body, it allows increasing from two to five times the bile, p... | Ref: Cattle 5-10 mg/kg IV/IM (liver stimulant, ketosis). Merck Vet Manual.",
             "frequency": "single dose IV/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Sorbitol: No withdrawal required."
       },
       {
             "id": "790",
@@ -23416,7 +26580,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "791",
@@ -23470,7 +26638,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "792",
@@ -23524,7 +26696,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "793",
@@ -23540,7 +26716,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (kela Co.)",
             "notes": "Category: Antibiotic (Penicillin). Composition: - Procaine benzylpenicillin 300 mg/ml (eq. 300 000 1.U./ml) - Sodium methyl parahydroxybenzoate 1.14 mg - Povidone - Hydrochloric acid, concentrated - Potassium dihydrogen phosphate - Sodium citrate - Disodium edetate - Water for injections up to 1 ml. Indications: Treatment of infectio... | Ref: Ref: Plumb's 9th Ed. p. 910.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Penicillin G: Meat 30d, Milk 72h."
       },
       {
             "id": "794",
@@ -23592,7 +26772,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "795",
@@ -23646,7 +26830,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "796",
@@ -23700,7 +26888,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "797",
@@ -23750,7 +26942,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "798",
@@ -23798,7 +26994,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "799",
@@ -23848,7 +27048,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly CONTRAINDICATED in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Diclofenac: Meat 28d. Not recommended for dairy animals."
       },
       {
             "id": "800",
@@ -23900,7 +27104,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "801",
@@ -23916,7 +27124,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml vial (Science Med Co.)",
             "notes": "Category: Supportive treatment. Composition per 100 ml: - Calcium gluconate 25 gm - Phosphrus 1 gm - Magnesium chloride 5 gm - Vit B1 20 mg - Vit B2 8 mg - Vit B5 10 mg - Vit B6 20 mg - D-glucose 6 gm - Propylene glycol 5 gm Dist. Water up to 100 ml Indications - for treatment of cattle and sheep with hypocalcemia complicated by m... | DOSING: Per-animal IV slow infusion. Cattle: 250-500 mL IV slowly. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 165.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Calcium products: No withdrawal required."
       },
       {
             "id": "802",
@@ -23964,7 +27176,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 14,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Albendazole: Meat 14d, Milk 72h. Avoid in 1st trimester pregnancy."
       },
       {
             "id": "803",
@@ -23980,7 +27196,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Zoetis)",
             "notes": "Category: Anthelmintic. Anthelmintic (Milbemycin) Cydectin 10 % LA Each ml contains: - Moxidectin 100 mg Excipeints: Benzyl Alcohol 70 mg Pharmacodynamic: Moxidectin is an endectocide active against a wide range of internal and external parasites and is a second generation macrocyclic lactone of the milbemycin family. Moxi... | Ref: Cattle 0.2 mg/kg SC pour-on. Horses 0.4 mg/kg PO. Sheep 0.2 mg/kg PO. Dogs (Dirofilaria): 0.003 mg/kg PO monthly. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "804",
@@ -23996,7 +27216,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "48 Effervescent tablets (Zoetis)",
             "notes": "Category: Anti-Diarrheal. Each tablet contains : - Sodium chloride 2.34 g - Potassium chloride 1.12 g - Sodium hydrogen carbonate 6.72 g - Anhydrous citric acid 3.84 g - Lactose monohydrate 32.44 g - Glycine 2.25 g When one Effydral tablet is dissolved in 1 litre of water, the resulting isotonic oral rehydration solution has...",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "805",
@@ -24012,7 +27236,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Zoetis)",
             "notes": "Category: Anthelmintic. Anthelmintic (Milbemycin) A clear yellow to brown Oral Solution. Each ml contains: - Moxidectin 1 mg - Triclabendazole 50 mg Benzyl alcohol (excipient) 40 mg Butylhydroxytoluene (excipient) 1 mg • Cydectin TriclaMox Oral Solution for sheep contains moxidectin and triclabendazole. It is a flukicide c... | Ref: Cattle 0.2 mg/kg SC pour-on. Horses 0.4 mg/kg PO. Sheep 0.2 mg/kg PO. Dogs (Dirofilaria): 0.003 mg/kg PO monthly. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "806",
@@ -24028,7 +27256,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Zoetis)",
             "notes": "Category: Anthelmintic. Anthelmintic (Milbemycin) Cydectin 2% LA Each ml contains: - Moxidectin 20 mg - Benzyl alcohol 70 mg (Excipients) Target Species: Sheep above 15 kg. Indications: Treatment and prevention of mixed infections of gastro-intestinal nematodes, respiratory nematodes and certain arthropod parasites in shee... | Ref: Cattle 0.2 mg/kg SC pour-on. Horses 0.4 mg/kg PO. Sheep 0.2 mg/kg PO. Dogs (Dirofilaria): 0.003 mg/kg PO monthly. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "807",
@@ -24080,7 +27312,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "808",
@@ -24128,7 +27364,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 14,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Albendazole: Meat 14d, Milk 72h. Avoid in 1st trimester pregnancy."
       },
       {
             "id": "809",
@@ -24144,7 +27384,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Science Med Co.)",
             "notes": "Category: Supportive treatment. Composition: Each 1 ml contains - Butaphosphan 100 mg - Cyanocobalamin ( Vit B12 ) 0.1 mg Properties: - Butaphosphan is one of organic phosphorus that is involved in all organic systems for improving the process of assimilation. Vitamin - - B12 is involved in the synthesis of proteins and red cells.... | DOSING: Per-animal dose. Horses/Cattle: 1-2 mL/100 kg IV/IM/SC. Refer to product label. | Ref: Ref: Plumb's 9th Ed. p. 159.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "810",
@@ -24192,7 +27436,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 14,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Albendazole: Meat 14d, Milk 72h. Avoid in 1st trimester pregnancy."
       },
       {
             "id": "811",
@@ -24246,7 +27494,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "812",
@@ -24294,7 +27546,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "813",
@@ -24310,7 +27566,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Serio-Pharm)",
             "notes": "Category: Anti-cholinestrase. Composition: Each ml conains: - Neostigmine methylsulfate 2.5 mg (eq to 1.67 mg Neostigmine) Properties: - Neostigmine methylsulfate is a Parasympathamimetic, which used to intiate peristalsis, empty the bladder and stimulate skeletal muscle contraction. - Neostigmine is an anticholinesterase drug w... | Ref: Ref: Plumb's 9th Ed. p. 805.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "814",
@@ -24364,7 +27624,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "815",
@@ -24380,7 +27644,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Ceva Co.)",
             "notes": "Category: Antibiotic (Penicillin + Aminoglycoside). Composition: Each 1 ml contains: - Benzylpenicillin (as procaine monohydrate) 114 mg - Dihydrostreptomycin (as sulfate) 200 mg Excipients - Sodium methylparahydroxybenzoate (E 219) 1.4 mg - Sodium hydroxymethanesulfinate 4.0 mg - Procaine (as hydrochloric procaine) 17.3 mg INDICATIONS It is recommen... | Ref: Cattle/Horses 10-20 mg/kg IM q12-24h. Dogs/Cats 10-15 mg/kg IM q12h. Plumb's.",
             "frequency": "q12-24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "816",
@@ -24440,7 +27708,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 15,
+            "milk_withdrawal_hours": 120,
+            "food_restriction_note": "Meloxicam: Meat 15d, Milk 5 days (120h)."
       },
       {
             "id": "817",
@@ -24456,7 +27728,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml Bottle (Veyx)",
             "notes": "Category: Supportive treatment. Composition per litre: - L-carnitine 7000 mg - Betaine 3750 mg - Vitamin B1 200 mg - Vitamin B2 80 mg - Vitamin B6 200 mg - Nicotinic acid 3000 mg - Vitamin B12 1000 mg - Pantothenic acid 360 mg - DL – Methionine 500 mg - Glycine 500 mg - L – Lysine 500 mg - L – threonine 40 mg - L-arginine 50 mg - ... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "818",
@@ -24514,7 +27790,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water for CRD",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Tylosin: Meat 21d, Milk 4 days (96h). IM use."
       },
       {
             "id": "819",
@@ -24530,7 +27810,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Plexopharm (Rexall Ph.))",
             "notes": "Category: Choleretic & Liver Tonic. COMPSITION: Each 1 ml contains: - Butanoic acid derivatives (clanobutin) 100 mg - L Carnitine 100 mg PROPERTIES: - L carnitine is amino acid essential in the transport of fats into muscle cells for energy production which cause delaying the accumulation of lactic acid. L-carnitine is an amino acid r... | Ref: Dogs 50-100 mg/kg PO q24h (dilated cardiomyopathy). Merck Vet Manual.",
             "frequency": "q24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "820",
@@ -24546,7 +27830,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Plexopharm (Rexall Ph.))",
             "notes": "Category: Hemostasis. Composition: Each 100 ml contains - Menadione Sodium (Vit K3) 2400 mg - Ferric Ammonium Citrate 1500 mg - Cyanocobalamin (Vit B12) 10 mg Properties: - Haemoken® is a Antihaemorrhagic vasotrophic with procoagulant factor, fast acting, iron and Vit K3 injection in a water base. - Haemoken® provides a ... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "821",
@@ -24600,7 +27888,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h (max 1-2 days)",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 3,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ketoprofen: 0-day milk withdrawal in most formulations."
       },
       {
             "id": "822",
@@ -24648,7 +27940,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "SC or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 5,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ceftiofur has a 0-day milk withdrawal — safe for dairy."
       },
       {
             "id": "823",
@@ -24700,7 +27996,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "824",
@@ -24716,7 +28016,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Norbrook)",
             "notes": "Category: Supportive treatment. Containing per ml: - Vitamin A 15,000 i.u. - Vitamin D3 25 micrograms - Vitamin E 20mg - Vitamin B1 10mg - Vitamin B2 Sodium Phosphate 5mg - Vitamin B6 3mg - Nicotinamide 35mg - Pantothenol 25mg - Vitamin B12 25 micrograms - Chlorocresol (preservative) 1mg USES: prevention and treatment of vitamin d... | DOSING: Per-label volume dosing per animal. Not weight-based mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "825",
@@ -24732,7 +28036,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Elyoser (Alfasan))",
             "notes": "Category: Supportive treatment. Content per ml: • Vitamin A 1500 I.U. • Vitamin D3 1000 I.U. • Vitamin E 20 mg • Vitamin B1 10 mg • Vitamin B2 6.85 mg • Vitamin B6 3 mg • Vitamin B12 0.05 mg • Nicotinamide 35 mg • D-panthenol 25 mg Features of Multivitamins: 1- Homogeneous combination of 9 Vitamins. 2- Rich source for vitamin B Co... | DOSING: Per-label volume dosing per animal. Not weight-based mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "826",
@@ -24748,7 +28056,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Memphis)",
             "notes": "Category: Antibiotic (Sulfonamide). Composition : Each 100 ml contains : Sulphadimidine sodium 33.30 gm (eq. to sulphadimidine base 30.83 gm) Properties: Sulphavet 33.3% injectable solution is the trade name of sulphadimidine (sulphamethazine) which is sulphonamide antibacterial.It acts as antibacterial by competing with para-aminoben... | Ref: Poultry/Cattle 33-50 mg/kg PO q12-24h x 5 days. Merck Vet Manual.",
             "frequency": "q12-24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "827",
@@ -24802,7 +28114,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h (use with caution)",
                         "route": "SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 24,
+            "food_restriction_note": "Dipyrone (metamizole): Meat 4d, Milk 24h. Check local regulations."
       },
       {
             "id": "828",
@@ -24818,7 +28134,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Memphis)",
             "notes": "Category: Parasympathomimitic. Composition: Each 1 ml contains: Atropine sulphate 10 mg (eq. to Atropine base 8.329 mg) Properties and Indication: Anti cholinergic, smooth muscle relaxant and mydriatic used in the follwing cases: 1- As a pre-anesthetic adjuvant to reduce salivation and bronchial secretions 2- Adjunct in gastroint... | Ref: Ref: Plumb's 9th Ed. p. 104.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "829",
@@ -24872,7 +28192,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "IV, SC or IM"
                   }
-            }
+            },
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "830",
@@ -24926,7 +28250,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "IV, SC or IM"
                   }
-            }
+            },
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "831",
@@ -24974,7 +28302,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Rafoxanide: Meat 28d. Not for use in dairy animals."
       },
       {
             "id": "832",
@@ -25028,7 +28360,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h (use with caution)",
                         "route": "SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 24,
+            "food_restriction_note": "Dipyrone (metamizole): Meat 4d, Milk 24h. Check local regulations."
       },
       {
             "id": "833",
@@ -25044,7 +28380,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Spray (N/A)",
             "notes": "Category: Topical Antiseptic. Indications: • Topical infections • Mucosal infections • Surgical procedures and wounds • Hoof infections | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "834",
@@ -25104,7 +28444,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "835",
@@ -25120,7 +28464,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder Vial (N/A)",
             "notes": "Category: Antibiotic (Penicillin + Aminoglycoside). COMPOSITION: Each Vial contains: - Penicillin G. Procaine 1.200.000 I.U. - Penicillin G. Sodium 400.000 I.U. - Streptomycin Sulphate 2 gm INDICATIONS: Broad spectrum antibiotic against gram +ve & -ve bacterial infections and inflammations of: Respiratory tract - Genito - urinary tract Gastro intesti... | Ref: Cattle/Horses 10-20 mg/kg IM q12-24h. Dogs/Cats 10-15 mg/kg IM q12h. Plumb's.",
             "frequency": "q12-24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "836",
@@ -25174,7 +28522,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "837",
@@ -25224,7 +28576,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly CONTRAINDICATED in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Diclofenac: Meat 28d. Not recommended for dairy animals."
       },
       {
             "id": "838",
@@ -25268,7 +28624,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Phenylbutazone: STRICTLY PROHIBITED in female dairy cattle ≥20 months (causes human aplastic anemia risk via residues — FDA, EU). Meat: 28-day W/D in beef cattle. Do NOT use in animals producing milk for human consumption."
       },
       {
             "id": "839",
@@ -25284,7 +28644,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Vetoquinol)",
             "notes": "Category: Supportive treatment. Vita-C is used in cattle, sheep, goats, horses, pigs, dogs, cats and poultry: - treatment of vitamin C deficiency - adjuvant therapy for asthenia, notably in cases of infection or stress Composition - Ascorbic Acid (vitamin C) 200 mg/ml Dosage and administration Vita-C should be intravenous, intramu... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "840",
@@ -25332,7 +28696,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 14,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Albendazole: Meat 14d, Milk 72h. Avoid in 1st trimester pregnancy."
       },
       {
             "id": "841",
@@ -25386,7 +28754,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "842",
@@ -25402,7 +28774,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: Electrolyte / Mineral (Calcium). Calcium borogluconate formulation for acute hypocalcemia (Milk fever / Parturient paresis in cattle, eclampsia in bitches). Indications: Tremors, recumbency, loss of consciousness due to acute calcium deficiency. Dosage: Cattle: 250-500 ml IV slowly by gravity over 15-20 minutes with cardiac auscultation; Bitches: 1-1.5 ml/kg 10% solution slowly IV. Ref: Plumb's 9th Ed. p. 165.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Calcium products: No withdrawal required."
       },
       {
             "id": "843",
@@ -25418,7 +28794,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Brand new)",
             "notes": "Category: Supportive treatment. COMPOSITION Each 100 ml contains: - Calcium gluconate, calcium borogluconate, calcium hydroxide (eq to 4.56 g Calcium) - Magnesium chloride (eq to 0.78 g Magnesium) - 2-aminoethyl-dinydrogenphosphate (eq to 0.132.g Phosphorus) INDICATIONS Acute calcium deficiency, Post-paturent hypocalcaemia (Mik fe... | DOSING: Per-animal IV slow infusion. Cattle: 250-500 mL IV slowly. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 165.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Calcium products: No withdrawal required."
       },
       {
             "id": "844",
@@ -25434,7 +28814,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml vial (Veyx)",
             "notes": "Category: Supportive treatment. Composition: - Calcium gluconate 380 mg (corresponding to Ca2+: 34mg or 0.85 mmol, respectively) - Magnesium chloride hexahydrate 60mg (corresponding to Mg2+: 7.2 mg or 0.30 mmol, respectively) - Boric acid 50 mg Target species: Cattle, sheep, pigs. Indications: - Acute hypocalcaemic conditions. As ... | DOSING: Per-animal IV slow infusion. Cattle: 250-500 mL IV slowly. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 165.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Calcium products: No withdrawal required."
       },
       {
             "id": "845",
@@ -25450,7 +28834,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Syva)",
             "notes": "Category: Antibiotic (Lincosamide + aminoglycoside). Active ingredient - Spectinomycin (sulphate) 100 mg/mL - Lincomycin (hydrochloride) 50 mg/mL Indications - Bovids: Pneumonia, colibacillosis. - Dogs: Pneumonia, colibacillosis. - Porcino: Vibrionic dysentery, Colibacillosis, enzootic pneumonia, salmonellosis, infectious arthritis. - For infections c... | Ref: Cattle/Pigs 2.5 mg/kg IM q24h. Plumb's.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "846",
@@ -25498,7 +28886,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Rafoxanide: Meat 28d. Not for use in dairy animals."
       },
       {
             "id": "847",
@@ -25514,7 +28906,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (N/A)",
             "notes": "Category: Supportive treatment. Each ml contains: - Vit B12 (Cyanocobalamin) 150 ug - Copper Gluconate 0,2 mg - Iron Ammonium Citrate 15 mg - Choline Chloride 10 mg - Vit 82 (Riboflavin sodium 5Phosphate) 13,8 mg - D-Biotin 10 pg - Inositol 10 mg - Vit B6(Pyridoxine HCI) 10 mg - DL -Methionine 20 mg - Niacinamide 100 mg - DL -Lysi... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "848",
@@ -25568,7 +28964,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "IV, IM or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "849",
@@ -25620,7 +29020,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "850",
@@ -25674,7 +29078,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "851",
@@ -25722,7 +29130,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 14,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Albendazole: Meat 14d, Milk 72h. Avoid in 1st trimester pregnancy."
       },
       {
             "id": "852",
@@ -25738,7 +29150,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml Bottle (Plexopharm (Rexall Ph.))",
             "notes": "Category: Supportive treatment. Composition Each 100 ml contains - Vitamin E acetate 15 mg - Sodium selenite 0.3 gm - Excipients q.s.ad. 100 ml Indication: - Treatment and prevention of diseases caused by vitamin E and selenium deficiency. - In cases of nutritional muscular dysthrophy, myositis, necrotic hepatosis, growth retardat... | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based) | Ref: Ref: Plumb's 9th Ed. p. 1195.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "853",
@@ -25756,7 +29172,11 @@ window.DEFAULT_MEDICATIONS = [
             "frequency": "single dose PO",
             "concentration_ml": 1,
             "dose_min": 100,
-            "dose_max": 100
+            "dose_max": 100,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "854",
@@ -25814,7 +29234,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water for CRD",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Tylosin: Meat 21d, Milk 4 days (96h). IM use."
       },
       {
             "id": "855",
@@ -25868,7 +29292,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "IV, SC or IM"
                   }
-            }
+            },
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "856",
@@ -25922,7 +29350,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h (use with caution)",
                         "route": "SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 24,
+            "food_restriction_note": "Dipyrone (metamizole): Meat 4d, Milk 24h. Check local regulations."
       },
       {
             "id": "857",
@@ -25938,7 +29370,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Elyoser (Alfasan))",
             "notes": "Category: Vitamin Supplement (Fat-soluble). Concentrated fat-soluble vitamins for epithelial health, calcium/phosphorus metabolism, bone growth, and fertility. Indications: Hypovitaminosis, rickets, growth retardation, reproductive disorders, retained placenta, and white muscle disease prevention. Dosage: Cattle/Horses: 5-10 ml IM/SC; Calves/Foals: 2-5 ml; Sheep/Goats: 1-3 ml. Repeat in 2-3 months. Ref: Merck Vet Manual.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "858",
@@ -25986,7 +29422,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "SC or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 5,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ceftiofur has a 0-day milk withdrawal — safe for dairy."
       },
       {
             "id": "859",
@@ -26002,7 +29442,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "200 gm vial (Primavet)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition: Each vial contains - Streptomycin sulphate 200 gm (eq o 160 gm streptomycin base) Streptomycin sulfate is an aminoglycoside antibiotic that has a broad spectrum of antimicrobial (bactericidal) action. The drug is active against Mycobacterium tuberculosis , the majority of gram-negative ...",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "860",
@@ -26054,7 +29498,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "861",
@@ -26102,7 +29550,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "SC or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 5,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ceftiofur has a 0-day milk withdrawal — safe for dairy."
       },
       {
             "id": "862",
@@ -26118,7 +29570,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Elyoser (Alfasan))",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition Each ml contains - Kanamycin sulphate 250 mg Mode of action Kanamycin is broad spectrum bactericidal aminoglycoside antibiotic inhibits protein synthesis by irreversible binding to the 30s ribosomal subunit Pharmacokinetics - Rapid Absorption after IM injection - Reach to plasma peak con... | Ref: Ref: Plumb's 9th Ed. p. 642.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "863",
@@ -26178,7 +29634,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "864",
@@ -26194,7 +29654,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Antibiotic (Sulfonamide). Composition: Each 100 ml contains: - Sulphadimidine sodium: 33.3 gm (eq to 30.93 gm Sulphadimidine base) Properties: - Sulphonamides form an extensive series of drugs that differ more in their physicochemical characteristics, and hence in mode of administration and pharmacokinetics, than they do in ... | Ref: Poultry/Cattle 33-50 mg/kg PO q12-24h x 5 days. Merck Vet Manual.",
             "frequency": "q12-24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "865",
@@ -26254,7 +29718,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "866",
@@ -26270,7 +29738,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Tornel)",
             "notes": "Category: Supportive treatment. Each ml contains: • DL-Methionine 100 mcg • L-Lysine-HCL 100 mcg • DL-Carnitine 100 mcg • Cyanocobalamin 500 mcg • Sodium Selenite 1 mg • Uridine Triphosphate 1 mg • Adenosine Triphosphate 2 mg • Magnesium Aspartate 15 mg • Potassium Aspartate 15 mg • Vehicle q.s 1 ml Directions: SUPER PERFORMANCE-L... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "867",
@@ -26322,7 +29794,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "868",
@@ -26376,7 +29852,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In drinking water for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "869",
@@ -26430,7 +29910,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In drinking water for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "870",
@@ -26490,7 +29974,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "871",
@@ -26532,7 +30020,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 42,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Tilmicosin: Meat W/D 42 days (SC). PROHIBITED in lactating dairy cattle. ⚠️ FATAL if administered IV or to horses/dogs. SC use only in cattle and sheep."
       },
       {
             "id": "872",
@@ -26548,7 +30040,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Avico)",
             "notes": "Category: Antibiotic (Lincosamide + aminoglycoside). Composition: Each 1 ml contains: - Lincomycin (Lincomycin hydrochlorid monohydrate) 50 mg - Spectinomycin (Spectinomycin sulfate tetrahydrate) 100 mg Indications - Avispection Injection is indicated for the treatment of infections in non-ruminating calves, sheep, goats, chickens, turkeys, dogs, cats... | Ref: Cattle/Pigs 2.5 mg/kg IM q24h. Plumb's.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "873",
@@ -26608,7 +30104,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "874",
@@ -26662,7 +30162,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "IV, SC or IM"
                   }
-            }
+            },
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "875",
@@ -26678,7 +30182,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "225 ml Bottle (Avico)",
             "notes": "Category: Anti-Diarrheal. Composition: Each 1 ml contains: - Sulphadimidine 21.3 mg - Sulphaguanidine 21.3 mg - Sulphadiazine 28.4 mg - Streptomycin (as Sulphate) 7.6 mg - Neomycin Sulphate 1.8 mg - Hyoscine (as hydrobromide) 0.02 mg - Sodium Chloride 1 1.33 mg - Calcium gluconate 2.2 mg - Magnesium Sulphate 0.6 mg - Potassi...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Streptomycin (parenteral): Meat 30d, Milk 72h. Note: NOT for long-term use in food animals."
       },
       {
             "id": "876",
@@ -26694,7 +30202,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "200 gm Ointment (Avico)",
             "notes": "Category: Ectoparasiticide. Composition: Each 1gm contains: - Benzyl benzoate 50 mg - Salicylic acid 20 mg - Sulphur sublimate 100 mg - Tar 10 mg - Phenol 15 mg Properties - Mangezal produce a comprehensive medication against most types of mange e.g. Sarcoptic, psoroptic and chorioptic in camels, horses, sheep, goats, cattle a... | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "877",
@@ -26710,7 +30222,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Sachet (Avico)",
             "notes": "Category: Supportive treatment. Composition: Each 1 gm contains: - Gentiana 150 mg - Nux vomica 20 mg - Sodium carbonate 400 mg - Vitamin A 2000 mg - Vitamin D3 500 I.U. - Vitamin E 400 I.U. - Vitamin B2 400 mcg - Vitamin B1 200 mcg - Calcium -d- Pantothenate 500 mcg - Nicotinamide 1mcg - Folic acid 50 mg - Iron 40 mcg - Manganese... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "878",
@@ -26726,7 +30242,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 gm Powder (Avico)",
             "notes": "Category: Anthelmintic. Anthelmintic (Imidazothiazole) Composition: Each 1 gm contains: - Tetramisole HCL 300 mg Properties - Tetramisole is a highly acceptable antinematodal drug due to its broad range of activity in a large number of hosts (Sheep, Cattle, Horse and Poultry). - Through its paralysing action on the parasit... | Ref: Cattle 15 mg/kg SC/IM. Sheep 15 mg/kg SC. Poultry 40 mg/kg. Merck Vet Manual.",
             "frequency": "single dose SC/IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "879",
@@ -26780,7 +30300,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "880",
@@ -26796,7 +30320,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Fatro von franken)",
             "notes": "Category: Supportive treatment. Composition: - L-Carnitine Hydrochloride 613.3 mg - Thioctic acid 20.0 mg - Pyridoxine hydrochloride 15.0 mg - Cyanocobalamin 3.0 mg - DL-acetylmethionine 2,000.0 mg - L-arginine 24.0 mg - L-Ornithine Hydrochloride 153.2 mg - L-Citrulline 120.0 mg - L-Lysine Hydrochloride 62.5 mg - Glycine 150.0 mg ... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "881",
@@ -26812,7 +30340,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Brand new)",
             "notes": "Category: Supportive treatment. COMPOSITION: Each ml contains: - Vit A 15,000 IU - Vit D3 1000 IU - Vitamin E 20 mg - Vit B 110 mg - Vit B2 5 mg - Vit B6 3 mg - Nicotinamide 35 mg - Pantothenal 25 mg - Vit B12 50 mcg INDICATIONS: Vitalin is indicated for Prevention and treatment of vitamin deficiencies in animals, particularly dur... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "882",
@@ -26828,7 +30360,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition Each 1 ml contains: - Spectinomycin dihydrochloride 150mg (eq. to 100mg spectinomycin base) Indications Chickens turkeys: CRD and air saccuilits (mycoplasma and/ or E. coli), fowl cholera (past. multocida), infectious coryza (haemophilus gallinarum). Dosage - Chickens and turkeys, by S/C... | Ref: Cattle/Pigs 20-22 mg/kg IM q12h. Poultry 5 mg/kg drinking water. Plumb's.",
             "frequency": "q12h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Spectinomycin: Meat 7d. Not established for dairy."
       },
       {
             "id": "883",
@@ -26882,7 +30418,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "884",
@@ -26926,7 +30466,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Phenylbutazone: STRICTLY PROHIBITED in female dairy cattle ≥20 months (causes human aplastic anemia risk via residues — FDA, EU). Meat: 28-day W/D in beef cattle. Do NOT use in animals producing milk for human consumption."
       },
       {
             "id": "885",
@@ -26980,7 +30524,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "886",
@@ -27032,7 +30580,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "887",
@@ -27076,7 +30628,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Phenylbutazone: STRICTLY PROHIBITED in female dairy cattle ≥20 months (causes human aplastic anemia risk via residues — FDA, EU). Meat: 28-day W/D in beef cattle. Do NOT use in animals producing milk for human consumption."
       },
       {
             "id": "888",
@@ -27128,7 +30684,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "889",
@@ -27144,7 +30704,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Univet Co.)",
             "notes": "Category: Antibiotic (Penicillin). COMPOSITION Each ml contains: - BenzylpenicillinProcaine 300 mg Indications for use, specifying the target species - For the treatment of infections caused by bacteria sensitive to penicillins in cattle, sheep and pigs. Contraindications - Do not administer to animals known to be sensitive to penici... | Ref: Ref: Plumb's 9th Ed. p. 910.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 30,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Penicillin G: Meat 30d, Milk 72h."
       },
       {
             "id": "890",
@@ -27204,7 +30768,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "891",
@@ -27220,7 +30788,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "25 gm (N/A)",
             "notes": "Category: Ectoparasiticide. Composition: - Thymol 10% - Menthole 2.5 % Indications: for control ectoparasites lice, tick, flie and sarcoptes of cattle, sheep and goat. | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "892",
@@ -27272,7 +30844,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "893",
@@ -27322,7 +30898,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly CONTRAINDICATED in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Diclofenac: Meat 28d. Not recommended for dairy animals."
       },
       {
             "id": "894",
@@ -27376,7 +30956,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In drinking water for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "895",
@@ -27430,7 +31014,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "896",
@@ -27446,7 +31034,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Avico)",
             "notes": "Category: Antibiotic (Sulfonamide). Composition: Each 1 ml contains: - Trimethoprim 80 mg - Sulphadiazine Sodium 400 mg Properties - The action of the combination proved to be bactericidal, whereas the components separately were only bacteriostatic in action. - Sulphonamides act as an analogue for para-aminobenzoic acid, (PABA) which ... | Ref: Ref: Plumb's 9th Ed. p. 1152.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "897",
@@ -27462,7 +31054,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "10 x 20ml vial (Zoetis)",
             "notes": "Category: Vaccine. Ultravac® BEF Vaccine Each 2 mL dose contains - Bovine Ephemeral Fever Standard strain (BB2271-919) at ≥ 10^4.3 TCID50 LIVING ATTENUATED VIRAL VACCINE PROPERTIES - Ultravac® BEF vaccine is prepared from an attenuated standard strain (919) of bovine ephemeral fever virus. The vaccine is used in cattl... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "898",
@@ -27506,7 +31102,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly contraindicated in poultry / food-producing birds."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Phenylbutazone: STRICTLY PROHIBITED in female dairy cattle ≥20 months (causes human aplastic anemia risk via residues — FDA, EU). Meat: 28-day W/D in beef cattle. Do NOT use in animals producing milk for human consumption."
       },
       {
             "id": "899",
@@ -27522,7 +31122,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Livisto (Invesa))",
             "notes": "Category: Antibiotic (Penicillin + Aminoglycoside). COMPOSITION Each 1 ml contains: - Potassium penicillin G 50,000 IU - Procaine penicillin G 150,000 IU - Dihydrostreptomycin(sulfate) 250 mg - Trypsin 2,500 U.N.F - Chymotrypsin 1,000 U.N.F. Target species. Cattle, pigs, sheep, horses, dogs and cats Indications - Cattle and horses: pneumonia, pasteur... | Ref: Cattle/Horses 10-20 mg/kg IM q12-24h. Dogs/Cats 10-15 mg/kg IM q12h. Plumb's.",
             "frequency": "q12-24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "900",
@@ -27538,7 +31142,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "5 x 5ml Amps (Marcyrl >> Raa Pharma)",
             "notes": "Category: Oxytocin hormone. Composition: Each 1 ml contain - Oxytocin 16.6 mcg (eq to 10 IU Oxytocin) Properties: - Systemic hormones, excluding sex hormones. - Secreted by the posterior lobe of the pituitary gland, oxytocin stimulates the contraction of the smooth muscles of the uterus, the intestine and the mammary acinis. I... | DOSING: Per-animal. Cattle: 20-100 IU IM/IV slow. Horses: 10-20 IU IM/IV slow. Dogs: 2-20 IU IM/SC. Cats: 2-5 IU IM/SC. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 896.",
             "frequency": "as needed",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Oxytocin: No withdrawal required."
       },
       {
             "id": "901",
@@ -27554,7 +31162,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "4 Bolus (Boehringer Ingelheim)",
             "notes": "Category: Supportive treatment. Composition: Calcium chloride, Calcium sulfate Guaranteed analysis: - Calcium minimum: 21.2% - Calcium maximum: 25.4 % - Each bolus of 192 gm contains 43 gm of calcium Target species & use: Bovikalc is an oral calcium supplement for use around parturition in fresh dairy cows. Actions: - After admini... | Ref: Ref: Plumb's 9th Ed. p. 165.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h)."
       },
       {
             "id": "902",
@@ -27570,7 +31182,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (MAPCO)",
             "notes": "Category: Supportive treatment. Super immune (large animals) Bio Energy Technique preparation works by Homeopathic theory effective for viral and bacterial diseases. Composition Super immune is a phytogenic immune-stimulant which contain a mixture of special & highly purified volatile oils treated by special positive energy to res... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "903",
@@ -27586,7 +31202,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "80 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Antibiotic (Penicillin). Composition Each ml contains: Active substance: - Ampicillin (as anhydrous ampicillin) 100 mg Excipients - Dodecyl gallate (as antioxidant preservative) 87.5 mcg - Aluminium monostearate - Fractionated coconut oil. Pharmaceutical form Suspension for injection. White to off white suspension Pharmacod...",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 21,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Ampicillin: Meat 21d, Milk 48h."
       },
       {
             "id": "904",
@@ -27602,7 +31222,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Arab Caps)",
             "notes": "Category: Supportive treatment. Composition: Each 100 ml contains: - Butaphosphan 10 gm - Vitamin B12 0.005 gm Indications: For treatment of systemic metabolic disorders it promotes protein, Carbohydrate and fat metabolism as well as it influence to the formation of R.B.C.S, for Horse, cattle, foal, calf, sheep, goat, lamb,pig, do... | DOSING: Per-animal dose. Horses/Cattle: 1-2 mL/100 kg IV/IM/SC. Refer to product label. | Ref: Ref: Plumb's 9th Ed. p. 159.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "905",
@@ -27618,7 +31242,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Adwia)",
             "notes": "Category: Anthelmintic. Anthelmintic (Benzimidazole) Composition Each 100 ml contains: - Fenbendazole 10 gm Indications For the treatment of parasite infections due to tho following internal parasites: • Cattle - Lung worms: ( adult and fourth-stage larvae ) Dictyocaulus viviparous. - Stomach worms: Adult and 4th larval st... | Ref: Cattle/Sheep/Goats 5-10 mg/kg PO; Horses 10 mg/kg PO x 5 days. Plumb's.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Fenbendazole: Meat 7d, Milk 0 days. Safe for dairy."
       },
       {
             "id": "906",
@@ -27672,7 +31300,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h (use with caution)",
                         "route": "SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "907",
@@ -27688,7 +31320,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Sachet (Selim pharma)",
             "notes": "Category: Supportive treatment. Supermach Digestant & Appetizer is a well-balanced combination of specific compounds that effectively promote digestion of the diet by increasing the number and activity of microflora and microfauna. Composition: Each sachet of 100 g contains: - Vitamin A 600000 IU - Vitamin D3 60000 IU - Vitamin E ... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "908",
@@ -27742,7 +31378,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h (use with caution)",
                         "route": "SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 24,
+            "food_restriction_note": "Dipyrone (metamizole): Meat 4d, Milk 24h. Check local regulations."
       },
       {
             "id": "909",
@@ -27758,7 +31398,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 gm Sachet (Vetlarg)",
             "notes": "Category: Supportive treatment. Composition per 150 gm: - Sodium chloride 8 gm - Potassium chloride 3 gm - Sodium citrate 5 gm - Starch 20 gm - Vitamin B1 100 mg - Vitamin B2 150 mg - Vitamin B6 50 mg - Pantothenic acid 200 mg - Hybericum 6 gm - Dextrose up to 150 Indication: - V-Lyte is a new formula of a potent electrolytes and ... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "910",
@@ -27774,7 +31418,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 gm Powder (Alexandria Co.)",
             "notes": "Category: Antibiotic (Sulfonamide). Composition: Sulphadimidine Sodium 33.3% Action & Uses: For prevention & treatment of gastrointestinal infections, respiratory infection, fowl cholera & coccidiosis in poultry, turkey, rabbit and calves. Dosage - Treatment -- Poultry & Turkey: 2 g / liter of drinking water for 3-5 days followed by 2... | Ref: Poultry/Cattle 33-50 mg/kg PO q12-24h x 5 days. Merck Vet Manual.",
             "frequency": "q12-24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "911",
@@ -27790,7 +31438,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Alcion Laboratorios)",
             "notes": "Category: Supportive treatment. Composition: Each ml Contains: - Vitamin A 500 000 IU - Vitamin D3 75 000 IU - Vitamin E 50 mg. Indication: treatment or prevention of vitamin A, D3 & E deficiency. Dosage and Administration: - For subcutaneous or intramuscular injection. - Cattle: 5 - 10 ml pre animal - Calves & Foals: 2 - 5 ml pre... | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based) | Ref: Ref: Merck Vet Manual.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "912",
@@ -27850,7 +31502,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "913",
@@ -27898,7 +31554,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 14,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Albendazole: Meat 14d, Milk 72h. Avoid in 1st trimester pregnancy."
       },
       {
             "id": "914",
@@ -27914,7 +31574,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "2.2L Bottle (Elanco Co.)",
             "notes": "Category: Anthelmintic. Composition Each ml of the product contains: Active substance: - Triclabendazole 240 mg Excipients - Methyl parahydroxybenzoate (E218) 1.1 mg - Propyl parahydroxybenzoate (E216) 0.4 mg - Benzyl alcohol (E1519) 5.0 mg - Microcrystalline cellulose and carmellose sodium - Povidone - Simethicone Emulsio... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "915",
@@ -27962,7 +31626,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats."
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "916",
@@ -27978,7 +31646,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Bullvet >> sama vet pharm)",
             "notes": "Category: Supportive treatment. Composition: Each 1 ml contains: - Vitamin A (Retinol Palmitate) 15000 IU - Vitamin D3 (Cholecalcferol) 7500 IU - Vitamin E (Alpha tocopherol Acetate) 20 mg - Vitamin B1 (Thiamin Hydrochloride) 10 mg - Vitamin B2 (Ribofiavin Sodium Phosphate) 5 mg - Vitamin B6 (Pyridoxine Hydrochloride) 3 mg - Vitam... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "917",
@@ -27994,7 +31666,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml Bottle (N/A)",
             "notes": "Category: Antibiotic (Aminoglycoside / Enteric). Poorly absorbed oral aminoglycoside for local gastrointestinal bacterial infections (Colibacillosis, Salmonella enteritis). Dosage: Calves/Foals/Dogs/Cats 10-20 mg/kg PO q12h. Withdrawal: Calves meat 30 days. Ref: Plumb's 9th Ed. p. 802.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "918",
@@ -28010,7 +31686,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "90 ml vial (Abbassia)",
             "notes": "Category: Vaccine. DESCRIPTION Servac Bivalent inactivated foot & mouth disease oil vaccine. STRAIN O, A, SAT2 2012, SAT2 2018 DOSAGE AND ADMINISTRATION - Cattle: 3 ml by subcutaneous or intramuscular injection. - Sheep: 1.5 ml by subcutaneous or intramuscular injection. STORAGE - keep at 4 - 8 C PACKAGE 75 ml, 90 ml ... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "919",
@@ -28026,7 +31706,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "75 ml vial (Abbassia)",
             "notes": "Category: Vaccine. DESCRIPTION Servac Bivalent inactivated foot & mouth disease oil vaccine. STRAIN O, A Iran05, A Africa 2020, SAT2 2012 DOSAGE AND ADMINISTRATION - Cattle: 3 ml by subcutaneous or intramuscular injection. - Sheep: 1.5 ml by subcutaneous or intramuscular injection. STORAGE - keep at 4 - 8 C PACKAGE 75... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "920",
@@ -28042,7 +31726,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Abbassia)",
             "notes": "Category: Vaccine. DESCRIPTION Servac inactivated rift valley fever vaccine. DOSAGE AND ADMINISTRATION - Cattle: 2 ml by subcutaneous injection. - Sheep: 1 ml by subcutaneous injection. STORAGE - keep at 4 - 8 C PACKAGE 50 ml vial | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "921",
@@ -28058,7 +31746,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "15 ml Vial (Pharmagal)",
             "notes": "Category: Vaccine. ROTAGAL Inactivated vaccine Emulsion for injection. Active immunization of pregnant cows and heifers to raise antibodies against Rotavirus, Coronavirus and Escherichia coli strain EC/17 expressing F5 (K99) Adhesin. COMPOSITION One dose of the vaccine (3 ml) contains: - Bovine rotavirus strain TM-91,... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "922",
@@ -28074,7 +31766,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "10 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Vaccine. Rotavec® Corona for the active immunisation of pregnant cows and heifers to raise antibodies against E. coli adhesion E5 (K99) antigen, rotavirus and coronavirus. These antibodies protect calves against these diseases. FOR ANIMAL USE ONLY INDICATIONS For the active immunisation of pregnant cows and ... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "923",
@@ -28090,7 +31786,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Boehringer Ingelheim)",
             "notes": "Category: Vaccine. Aftovaxpur inactivated, purified vaccine against foot and mouth disease FMD Preparation Made from purified double inactivated antigen (BEI), Al(OH)3 and purified saponin as adjuvant. Indications Vaccination of Ruminants against FMD Virus Strains: O + A + SAT2 + Asia Dosage: - Shake well before use -... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "924",
@@ -28106,7 +31806,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Bravet)",
             "notes": "Category: Anti-Dote. Formula: Each 100 mL contains: - Acetyl DL-Methionine 500 gm - Choline Chloride 200 gm - Thiamine Hydrochloride 100 gm - Pyridoxine Hydrochloride 4 gm - L-Arginine Hydrochloride 60 g - Riboflavin 2 gm - Nicotinamide 50 gm - Calcium Pantothenate 20 gm - Glucose 2000 gm - Vehicle q.s.p 100 mL Descript...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "925",
@@ -28160,7 +31864,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "926",
@@ -28176,7 +31884,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "5 x 20 ml vial (Syva)",
             "notes": "Category: Prostaglandin hormone. Synthetic prostaglandin hormone Composition Active ingredient(s) - d-Cloprostenol (as sodium d-Cloprostenol) 0.075 mg/ml Excipient - Chlorocresol 1 mg - Other excipients s.q.f 1 mg Indications • Cattle (cows) - Indications for reproduction: Synchronization or induction of oestrus. Induction of the b... | DOSING: Fixed per-animal dose. Cloprostenol: 500 mcg IM/cattle, 250 mcg IM/horse. Dinoprost: 25 mg IM/cattle. (NOT weight-based) | Ref: Ref: Plumb's 9th Ed. p. 268.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "927",
@@ -28230,7 +31942,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h (max 1-2 days)",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 3,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ketoprofen: 0-day milk withdrawal in most formulations."
       },
       {
             "id": "928",
@@ -28284,7 +32000,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "929",
@@ -28300,7 +32020,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml Bottle (N/A)",
             "notes": "Category: Supportive treatment. HERBATONIC is an isotonic solution contains Vitamins, Sodium Bicarbonate and Propylene Glycol. Composition Each 1 Liter contains: - Vitamin B1 500 mg - Vitamin B6 1000 mg - Sodium Bicarbonate 13000 mg Indications - HERBATONIC is indicated for treatment of metabolic acidosis. - HERBATONIC is used as ... | DOSING: Per-label volume dosing per animal. Not weight-based mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "930",
@@ -28316,7 +32040,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Univet Co.)",
             "notes": "Category: Supportive treatment. Composition: Each 100 ml contains: - Vitamin A (Palmitate) 1500000 IU - Vitamin D3 100000 IU - Vitamin E (Acetate) 1000 mg - Polysorbate-80 6000 mg - Vitamin B1 1000 mg - Vitamin B6 300 mg - Vitamin B2 500 mg - Vitamin B12 5 mg - Pantothenic acid (Panthenol) 2500 mg - Methyl paraben 100 mg - Water u... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "931",
@@ -28368,7 +32096,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Florfenicol: Meat W/D 28d (IM). PROHIBITED in female dairy cattle ≥20 months and in animals producing milk for human consumption (EU Reg 37/2010, FDA). ⚠️ NEVER administer by IV route."
       },
       {
             "id": "932",
@@ -28384,7 +32116,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Novobiotec)",
             "notes": "Category: Antibiotic (Quinolone). Composition: - Levofloxacin HCL 100 mg - Tocopherol acetate 100 mg - Thioglycerol 1 mg - M-cresol 2 mg - Excipient to 1 ml Pharmaceutical Form: Solution for injection. Target species: Cattle & Sows Uses: - Treatment of soft tissue and skin infection. - Treatment of urinary tract infection. - Treatme... | Ref: Ref: Plumb's 9th Ed. p. 665.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "933",
@@ -28438,7 +32174,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h (use with caution)",
                         "route": "SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 24,
+            "food_restriction_note": "Dipyrone (metamizole): Meat 4d, Milk 24h. Check local regulations."
       },
       {
             "id": "934",
@@ -28454,7 +32194,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Universal Animal Care)",
             "notes": "Category: Supportive treatment. Composition: Contains per ml: • Vitamin A 80000 IU • Vitamin D3 40000 IU • Vitamin E 20 mg • Excipients to 1 ml DESCRIPTION: - Vitamin A is involved in the process of formation and preservation of function of epithelial tissues and mucous membranes, is important for fertility and is essential for vi... | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based) | Ref: Ref: Merck Vet Manual.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "935",
@@ -28470,7 +32214,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Virbac)",
             "notes": "Category: Antiprotozoal (Diamidine). Aromatic diamidine for the treatment of Trypanosomiasis (T. congolense, T. vivax, T. brucei) and Babesiosis (B. bovis, B. bigemina). Dosage: Cattle/Sheep/Horses 3.5-7 mg/kg deep IM single dose. Withdrawal: Meat 21 days, Milk 3 days. Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "936",
@@ -28486,7 +32234,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Egyptian International)",
             "notes": "Category: Supportive treatment. Composition: Each 100 ml contain: - Calcium gluconate 28 gm - Magnesium chloride 9 gm - Dextrose 5 gm - Excipients up to 100 ml Indications: For the treatment of calcium and magnesium deficiency in poultry, cattle, swine, goats and sheep. Dosage: - In cattle, Swine, goats and sheep Administer at dos... | DOSING: Per-animal IV slow infusion. Cattle: 250-500 mL IV slowly. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 165.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Calcium products: No withdrawal required."
       },
       {
             "id": "937",
@@ -28502,7 +32254,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Powder Vial (M.C.I Santé animale)",
             "notes": "Category: Vaccine. BOVIVAX LSD-N Freeze-dried vaccine of live attenuated Lumpy Skin Disease virus of cattle. COMPOSITION Each dose of vaccine contains: - Live attenuated Lumpy Skin Desease virus, strain Neethling ≥ 10^3,5 TCID50 INDICATION Prophylactic immunisation of cattle against Lumpy Skin Disease. CONTRAINDICATIO... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "938",
@@ -28518,7 +32274,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1 kg Powder (Over Group)",
             "notes": "Category: Prebiotic / Rumen Stabilizer. Inactive yeast extract (Saccharomyces cerevisiae) and natural tannins. Indications: Enteric stabilization, diarrhea prevention, and appetite stimulation. Dosage: Calves: 10-20 g PO daily; Poultry: 1-2 kg per ton of feed. Ref: Manufacturer label.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "939",
@@ -28534,7 +32294,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 gm Ointment (Katat Parma)",
             "notes": "Category: Topical. lodine topical is used on the skin to treat or prevent skin infection in minor cuts, scrapes or burns. lodine Ointment is also used in a medical setting to help in prevent infection and promote healing in skin wonds, pressure sores or surgical incisions. Safety - Keep out of reach of children. - Kee... | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "940",
@@ -28550,7 +32314,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Vaccine (Bacterial Toxoid/Bacterin). Multi-component clostridial toxoid protecting against Clostridium chauvoei (Blackleg), C. septicum (Malignant edema), C. novyi (Black disease), C. sordellii, and C. perfringens types B, C & D (Enterotoxemia / Pulpy kidney). Dosage: Cattle: 2-5 ml SC; Sheep/Goats: 2 ml SC. Booster 4-6 weeks later, then annually. Ref: Merck Vet Manual. | DOSING: Cattle: 2-5 mL SC; Sheep/Goats: 2 mL SC. Booster in 4-6 weeks, then annual revaccination. Shake well before use.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "941",
@@ -28566,7 +32334,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Vaccine. Bovilis BOVIPAST RSP AQUEOUS SUSPENSION FOR SUBCUTANEOUS INJECTION COMPOSITION: Each dose (5 ml) aqueous suspension contains: - At least 10^5.5 TCID50 inactivate BRS-virus (strain EV 908) - At least 10^7.3 TCID50 inactivated Parainfluenza-3-Virus (strain SF-4-Reisinger), together with 9 x 10^9 cells... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "942",
@@ -28582,7 +32354,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Alcion Laboratorios)",
             "notes": "Category: Supportive treatment. Composition: Each ml contains: - Vitamin E (a-tocopherol acetate) 50 mg - Sodium selenite 0.5 mg - Solvents ad. 1 ml Description: - Vitamin E is a fat-soluble intracellular antioxidant, involved in stabilising unsaturated fatty acids. the main antioxidant property is preventing formation of toxic fr... | DOSING: Per-animal dosing per product label. Cattle/Horses 5-10 mL IM/SC. (NOT standard mg/kg weight-based) | Ref: Ref: Plumb's 9th Ed. p. 1195.",
             "frequency": "per label",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "943",
@@ -28632,7 +32408,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly CONTRAINDICATED in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Diclofenac: Meat 28d. Not recommended for dairy animals."
       },
       {
             "id": "944",
@@ -28648,7 +32428,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "500 ml Bottle (N/A)",
             "notes": "Category: Ectoparasiticide. Flyblock® for protection of cattle against dipterans in the pasture. Contains in 1 ml: - Cyfluthrin 10 mg - essential oil of citronella Flyblock is applied for the protection of cattle during the grazing season against infestation of dipterans-gadflies, botflies, mosquitoes, blackflies and zoophilou... | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "945",
@@ -28664,7 +32448,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Bayer)",
             "notes": "Category: sedative, analgesic & muscle relaxant. CONTAINS PER ML: - Xylazine (base equivalent) 100 mg (present as the hydrochloride) - methyiparaben 0.9 mg - propylparaben 0.1 mg - water for injection - citric acid and sodium citrate for pH adjustment to 5.5 ±0.3. TARGET SPECIES Horses and Cervidae INDICATION - As sedative and analgesic for Horse ... | Ref: Horses 0.5-1.1 mg/kg IV slowly, or 1.1 mg/kg IM. Cattle: 0.05-0.15 mg/kg IV. Plumb's.",
             "frequency": "single dose pre-anesthetic",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "946",
@@ -28680,7 +32468,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Animedica)",
             "notes": "Category: Antibiotic (Sulfonamide). Composition: Each ml contains: - Sulfadimidine Sodium 215.8 mg (eq to 200 mg Sulfadimidine) - Trimethoprim 40 mg - Benzyl Alcohol 20 mg Target species Cattle, Horse & Swine. Indications: Treatment of infectious diseases germs sensitive to Sulfadimidine and Trimethoprim; e.g., primary and secondary i... | Ref: Poultry/Cattle 33-50 mg/kg PO q12-24h x 5 days. Merck Vet Manual.",
             "frequency": "q12-24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "947",
@@ -28696,7 +32488,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Tornel)",
             "notes": "Category: Supportive treatment. FORMULA Each ml contains: - Vitamin B12 (cyanocobalamin 150 mcg - Vitamin B1 150 mg - Vitamin B2 2 mg - Vitamin B6 10 mg - Nicotinamide 150 mg - Choline chlorhydrate 20 mg - D-panthenol 10 mg - Inositol 20 mg - Benzyl alcohol 2 % - Injection grade water q.s 1 ml ADMINISTRATION ROUTE Intramuscular or... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "948",
@@ -28712,7 +32508,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "10 x 2ml amp (Marcyrl >> Raa Pharma)",
             "notes": "Category: Prostaglandin hormone. Synthetic prostaglandin hormone COMPOSITION: Each 1 ml contains: - Cloprostenol Sodium 263 µg (eq to 250 µg Cloprostenol base) PROPERITIES: - Cloprostenol, an analogue of prostaglandin F2 alpha, has luteolytic activity. Following the administration of cloprostenol, the plasma level of progesterone d... | DOSING: Fixed per-animal dose. Cloprostenol: 500 mcg IM/cattle, 250 mcg IM/horse. Dinoprost: 25 mg IM/cattle. (NOT weight-based) | Ref: Ref: Plumb's 9th Ed. p. 268.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "949",
@@ -28728,7 +32528,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "250 ml vial (Tornel)",
             "notes": "Category: Vaccine. BOVIRAL-4 Vaccine against IBR, DVB, PI3 and VRSB. Sterile injectable suspension. formula: Each 5 mL dose contains, in equivalent proportions, inactivated viruses of: - Infectious Bovine Rhinotracheitis Virus (IBR) no less than ... 106.5 CCID* 50%/ dose - Parainfluenza Virus 3 (PI-3) no less than ...... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "950",
@@ -28744,7 +32548,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Tornel)",
             "notes": "Category: Vaccine. FORMULA Each ml contains: - Brucella abortus RB51 strain, rough colonies of Brucella, live, attenuated and lyophilized. PRESENTATION Flasks with 10 doses (20 ml) and 25 doses (50 ml). DOSAGE & ADMINISTRATION - 2 ml by subcutaneous administration. - Only one application in bovines over twelve months ... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "951",
@@ -28760,7 +32568,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "Syringes (MSD Co. (Intervet))",
             "notes": "Category: Mastitis Preparation. SHUTOUT 2.6 g Intramammary Syringe Suspension for Dry Cows COMPOSITION Each 4 g syringe contains: Active substance: - Bismuth subnitrate 2.6 g INDICATION(S) Prevention of new intramammary infections throughout the dry period. In cows considered likely to be free of sub-clinical mastitis, the product... | DOSING: Intramammary teat sealant. 1 syringe per teat at dry-off. NOT weight-based.",
             "frequency": "single infusion per teat (internal teat sealant)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "952",
@@ -28776,7 +32588,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Bimeda Co.)",
             "notes": "Category: Anesthetic. DESCRIPTION Xylazine is supplied in 50 ml multiple dose vials as a sterile solution. Each ml contains 100 mg xylazine. Xylazine Injection is a sedative, analgesic and muscle relaxant for use in horses and Cervidae (Fallow Deer, Mule Deer, Sika Deer, White-Tailed Deer and Elk). Xylazine can be given ... | Ref: Horses 0.5-1.1 mg/kg IV slowly, or 1.1 mg/kg IM. Cattle: 0.05-0.15 mg/kg IV. Plumb's.",
             "frequency": "single dose pre-anesthetic",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "953",
@@ -28792,7 +32608,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Vaccine. BOVILIS® Nasalgen® IP Bovine Rhinotracheitis-Parainfluenza 3 Modified Live Virus Vaccine Taget species: Cattle Indications: Nasalgen® IP vaccine is for the vaccination of healthy cattle 5 months of age or older as an aid in the prevention of disease caused by infectious bovine rhinotracheitis and pa... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "954",
@@ -28808,7 +32628,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "10 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Vaccine. Bovilis® BVD inactivated vaccine against foetal infection with bovine viral diarrhoea Virus (BVDV) COMPOSITION Each dose of 2 ml contains: • Active component: - Inactivated cytopathogenic bovine viral diarrhea (BVD) virus type 1 strain C-86, containing 50 ELISA Units (EU) and inducing at least 4.6 l... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "955",
@@ -28824,7 +32648,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "10 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Vaccine. COMPOSITION Each dose of 2 ml reconstituted vaccine contains: Active substance: - Live bovine herpesvirus type 1 (BHV-1), strain GK/D (gE ̄ )*: 5.7 log10 - 7.3 log10 TCID50**. *gE ̄ : glycoprotein E negative **TCID50: tissue culture infective doses 50% • Excipients: Lyophilisate: - Veggie medium - S... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "956",
@@ -28840,7 +32668,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "25 x 3 ml vial (Zoetis)",
             "notes": "Category: Vaccine. Calf-Guard contains attenuated strains of bovine rotavirus and bovine coronavirus propagated in established cell lines and freeze-dried to preserve stability. Uses For vaccination of healthy newborn calves or pregnant cows as an aid in preventing diarrhea (scours) caused by bovine rotavirus and bovi... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "957",
@@ -28856,7 +32688,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (N/A)",
             "notes": "Category: Antiviral. FORMULA Each 20 mL vial contains: - Chlorobutanol 5g - Oily vehicle q.s.p 20mL MODE OF ACTION - Chlorobutanol probably acts on the metabolism of the virus that causes papillomatosis, preventing its growth. - Chlorobutanol also has a high antiseptic power and is also a local anesthetic, making the ap... | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "958",
@@ -28872,7 +32708,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "200 ml vial (Calbos)",
             "notes": "Category: Supportive treatment. COMPOSITION: Each 100 ml contains: - Sorbitol 50 gm - Vehicle q.s.p 100 ml DESCRIPTION: - SEDACOL is a valuable agent used in the treatment of congestive syndromes of the gastrointestinal system. - SEDACOL is a valuable agent used in the elimination of congestive syndromes of the gastrointestinal sy... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Sorbitol: No withdrawal required."
       },
       {
             "id": "959",
@@ -28926,7 +32766,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h (use with caution)",
                         "route": "SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 24,
+            "food_restriction_note": "Dipyrone (metamizole): Meat 4d, Milk 24h. Check local regulations."
       },
       {
             "id": "960",
@@ -28942,7 +32786,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Bremer Pharma)",
             "notes": "Category: Antibiotic (Sulfonamide). Composition: Each ml solution contains - Sulfadimidine 200 mg - Trimethoprim 40 mg Indication: Treatment of respiratory and genital systems diseases, enteritis, Gram-positive and Gram-negative bacteria, coccidiosis, and skin diseases. Dose: - Large Animals : 1 ml/ 10-15 kg daily for 3-5 days - poult... | Ref: Poultry/Cattle 33-50 mg/kg PO q12-24h x 5 days. Merck Vet Manual.",
             "frequency": "q12-24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "961",
@@ -28958,7 +32806,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml Bottle (UCCMA - Ghannam)",
             "notes": "Category: Antibiotic (Phenicol). Composition: Each 100 ml contain - Flumequine 20 gm Characteristics: 1- Strong bactericidal activity and quick diffusion. 2- Quick metabolism avoids the user the problems of residues. 3- Can be use safely during laying period for layer and breeders. Indications: Prevention & treatment of digestive a... | Ref: Poultry 10-15 mg/kg drinking water q12-24h x 5 days. Cattle 10 mg/kg. Merck Vet Manual.",
             "frequency": "q12-24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "962",
@@ -28974,7 +32826,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (HIPRA Co.)",
             "notes": "Category: Vaccine. COMPOSITION: Inactivated rabbit haemorrhagic disease virus. INDICATIONS: Active immunization in rabbits as of one month of age to prevent the disease caused by rabbit haemorrhagic disease. Immunity starts at 6 days after administration and lasts for 1 year after vaccination. CONTRAINDICATIONS: None.... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "963",
@@ -28990,7 +32846,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml Bottle (Delta Pharma)",
             "notes": "Category: Antibiotic (Nitroimidazole). Composition: - Metronidazole 4% Indications for use: It is used to treat horses, dogs and cats to treat infections caused by anaerobes as follows: (1) Trichomoniasis caused by Trichomonas foetus. (2) Giardiosis caused by Giardia lamblia. (3) Diarrhea in young foals caused by Clostridium difficile. (... | Ref: Ref: Plumb's 9th Ed. p. 748.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "banned",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "BANNED in all food-producing animals worldwide (EU Reg 37/2010, FDA CVM). Never use in animals entering the food chain."
       },
       {
             "id": "964",
@@ -29044,7 +32904,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "965",
@@ -29060,7 +32924,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Veyx)",
             "notes": "Category: Prostaglandin hormone. Synthetic prostaglandin hormone PRESENTATION PGF Veyx forte is a clear, colourless aqueous solution for injection. COMPOSITION Each ml contains: Active substance: - Cloprostenol 0.0875 mg (corresponding to 0.092 mg cloprostenol sodium) Excipients: - Chlorocresol 1 mg INDICATION(S) » Cattle (heifers,... | DOSING: Fixed per-animal dose. Cloprostenol: 500 mcg IM/cattle, 250 mcg IM/horse. Dinoprost: 25 mg IM/cattle. (NOT weight-based) | Ref: Ref: Plumb's 9th Ed. p. 268.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "966",
@@ -29108,7 +32976,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "PO, SC or IV"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "967",
@@ -29124,7 +32996,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 gm Sachet (UCCMA - Ghannam)",
             "notes": "Category: Anthelmintic. Composition: - Piperazine citrate (B.P.VET.1977). Indications: Piperazine is an effective anthelmintic given by mouth as a drench or in food for the treatment of pin worms and round worms infestations in poultry and large animals. Dosage and administration: » Poultry: 10 g / 4 liter drinking water f... | Ref: Dogs/Cats 45-65 mg/kg PO single dose (ascarids). Plumb's Vet Drug Handbook.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "968",
@@ -29140,7 +33016,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Avico)",
             "notes": "Category: Antibiotic (polymyxin). Composition: Each 1 ml contains: - Colistin (as Sulphate) 2000000 I.U. Indications: COLISTIN \"AVICO\" is indicated for the prevention and treatment of enteric infections caused by gram-negative bacteria e.g. E.coli, Salmonella, Shigella in cattle, sheep, chicken and turkey. Target Species: Cattle (ca... | UNIT: IU/kg. Ref: Poultry/Pigs 50,000-75,000 IU/kg drinking water q12h x 3-5 days. NOTE: In mg/kg ≈ 2.5-5 mg/kg. Merck.",
             "frequency": "q12h PO (IU/kg)",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "969",
@@ -29156,7 +33036,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Amoun)",
             "notes": "Category: Anthelmintic. Anthelmintic (Milbemycin) Composition: Each ml contains: - Moxidectin 100 mg Dosage: N/A | Ref: Cattle 0.2 mg/kg SC pour-on. Horses 0.4 mg/kg PO. Sheep 0.2 mg/kg PO. Dogs (Dirofilaria): 0.003 mg/kg PO monthly. Plumb's.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "970",
@@ -29172,7 +33056,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Adwia)",
             "notes": "Category: Antibiotic (Aminoglycoside). Composition Each 100 ml contains: - Kanamycin sulphate 12 gm (eq. to 10 gm kanamycin base) Mode of action Kanamycin is broad spectrum bactericidal aminoglycoside antibiotic inhibits protein synthesis by irreversible binding to the 30s ribosomal subunit. Indications Gram-negative bacteria such as Pas... | Ref: Ref: Plumb's 9th Ed. p. 642.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "manufacturer_label",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Manufacturer Restriction: Not approved for food-producing animals. Systemic aminoglycosides (gentamicin/amikacin/kanamycin/streptomycin) accumulate irreversibly in renal cortical lysosomes of ruminants — residues persist 18–24 months. Approved for: Horses (non-food equines), Dogs, Cats. FARAD: If used extralabel in non-food breeding animals, minimum 24-month withdrawal applies."
       },
       {
             "id": "971",
@@ -29188,7 +33076,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 gm Sachet (Pharma swede)",
             "notes": "Category: Antiprotozoal (Coccidia). Composition: Each 1 gm contains: - Sulphaquinoxaline sodium 150 mg (eq. to 139.8 mg Sulphaqulnozaline) - Sulphadimidine Sodium 70 mg (eq. to 64.9 mg Sulphadimidine ) - Sulphadiazine sodium 70 mg (eq. to 64.3 mg Sulphadiszine ) - Vitamin K3 2 mg - Vitamin A 8000 I.U. Properties: - Coccicure ingredien...",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h)."
       },
       {
             "id": "972",
@@ -29248,7 +33140,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "973",
@@ -29264,7 +33160,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Stavropol Biofabrika)",
             "notes": "Category: Vaccine. Inactivated vaccine against clostridiosis of agricultural animals \"ANTOX 9\" suspension for injection. Composition: Vaccine made from cell culture Clostridium chauvoei, Cl. septicum, and toxoids Cl. novyi type А and В, Cl. perfringens types А, С(B) and D, Cl. sordellii, Cl. tetani formaldehyde inacti... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based. | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "974",
@@ -29312,7 +33212,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "SC or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "975",
@@ -29328,7 +33232,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Vetoquinol)",
             "notes": "Category: Anesthetic. COMPOSITION - Acepromazine 5 mg/ml INDICATIONS Tranquillization, pre-aenesthesia. DOSAGE AND ADMINISTRATION » I.V.: Short period of latency 5 - 7 minutes » I.M.: Latency of 20 - 30 minutes » Horses: - Mild tranquillization or pre-aenesthesia: • I.M. administration: 0,05 mg of Acepromazine per kg of ... | Ref: Ref: Plumb's 9th Ed. p. 4.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "976",
@@ -29376,7 +33284,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 14,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Albendazole: Meat 14d, Milk 72h. Avoid in 1st trimester pregnancy."
       },
       {
             "id": "977",
@@ -29424,7 +33336,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "PO, SC or IV"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "978",
@@ -29440,7 +33356,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "60 ml Bottle (N/A)",
             "notes": "Category: Antifungal. Fungicidal Wash for Cows & Goals Horses, Dogs. Composition: - Difinoconazole 5% w/v Large & Small Animals: - Direct spray of FUNIGSTOP Fungicidal spray on the of infection twice daily for 5 days minimum and repeated after 5-7 days interval. - Done not need to remove crusts and scales from site of in... | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "979",
@@ -29494,7 +33414,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "IV, IM or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Dexamethasone: Meat 7d, Milk 72h. ⚠️ Induces abortion in late pregnancy."
       },
       {
             "id": "980",
@@ -29510,7 +33434,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 gm Sachet (El-Nasr)",
             "notes": "Category: Anthelmintic. Indication: It is effective against ascarid, oxyrid worms, some hook & round worms in pigs, cats, dogs, poultry & horses. Dosage: - Horses: 3.1 gm / Liter of drinking water. - Poultry: 0.9 gm / Liter of drinking water. - Pigs: 3.1 gm / Liter of drinking water. - Dogs & Cats: 1.2 - 1.8 gm / Liter of ... | Ref: Dogs/Cats 45-65 mg/kg PO single dose (ascarids). Plumb's Vet Drug Handbook.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "981",
@@ -29526,7 +33454,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1 kg Powder (N/A)",
             "notes": "Category: Supportive treatment. Composition - Dibasic formula - Calcium - Potassium - Iodine - Medicinal herbs - Copper - Sulphur - Cobalt - Zinc - Sodium - Selenium - Manganese Dibasic Plus is a unique formula of phosphorus, medicinal herbs and trace elements that affect lack of fertility and treat hypophosphatemia in animals. In... | DOSING: Per-label dosing. Volume/animal varies by product. Not standard mg/kg.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "982",
@@ -29542,7 +33474,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Powder (Adwia)",
             "notes": "Category: Antibiotic (Phenicol). Composition: Each 100 gm contains: - Flumequine 10 gm Indications: Indicated for treatment of gastro-enteritis, respiratory infections in Poultry, Calves, Lambs & Kids. Dosage & administration: » Flumequin 10% W.SP is administered orally in drinking water for 3-5 days. - Poultry: 1 gm/ 4 liters of d... | Ref: Poultry 10-15 mg/kg drinking water q12-24h x 5 days. Cattle 10 mg/kg. Merck Vet Manual.",
             "frequency": "q12-24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "983",
@@ -29558,7 +33494,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Plexopharm (Rexall Ph.))",
             "notes": "Category: Supportive treatment. COMPOSITION: Each 1 liter contains: - Riboflavin Sodium Phosphate 1000 mg - Pyridoxine Hydrochloride 1,000 mg - Nicotinamide 3500 mg - Thiamine Hydrochloride 1200 mg - D-Panthenol 1000 mg - Vitamin B 12 10 mg - Biotin 5 mg - Lysine 5000 mg - Methionine 5000 mg - Selenium 100 mg - Folic Acid 200 mg -... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "984",
@@ -29574,7 +33514,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "1L Bottle (Montajat)",
             "notes": "Category: Ectoparasiticide. ECTOFOX Broad Spectrum Acaricide For Livestock COMPOSITION: Each ml contains: - Phoxim 500 mg INDICATIONS: - For use, specifying the target species. - Treatment of nasal bots myiases, scabies infestations by ticks, lice, kissing bugs and control of cockroaches & fies in the farm. DOSAGE AND ADMINIST... | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "985",
@@ -29590,7 +33534,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "200 ml Bottle (N/A)",
             "notes": "Category: Ectoparasiticide. Composition: - Deltamethrin 5% Potent safe insecticide for prevention and treatment of ectoparasite infestations (mange, lice, Ticks, Flies & Mosquitoes). Indications For all types of ectoparasites. Usage: - 0.5 - 1 ml / litre of water by spraying or dipping. - eradicate flying insects by fogging ma... | DOSING: Apply topically to affected area BID or as directed on label. For external veterinary use only.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "986",
@@ -29606,7 +33554,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Boehringer Ingelheim)",
             "notes": "Category: Vaccine. Bar-Vac® 10 is a unique pasteurella and clostridial combination vaccine that provides an economical, convenient way to protect healthy, susceptible cattle, offering 10-way protection against pneumonic pasteurollosis and most common clostridial diseases. COMPOSITION - Pasteurella multocida type A whi... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "987",
@@ -29622,7 +33574,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "250 ml vial (Zoetis)",
             "notes": "Category: Vaccine. ULTRABAC® 8 consists of killed, standardized cultures of Cl. chauvoei, Cl. septicum, Cl. haemolyticum, Cl. novyi, Cl. sordellii, and Cl. perfringens types C and D, with an adjuvant. INDICATIONS For use in healthy cattle and sheep as an aid in preventing blackleg caused by Clostridium chauvoei, malig... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based. | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "988",
@@ -29638,7 +33594,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Eipivet)",
             "notes": "Category: Antibiotic (Quinolone). Danofloxacin 18 % (fluoroquinolones) are active against a wide range of grame-negative organisms and several grame-positive aerobes Indications - EIPIFLOXIN (Danofloxacin) injectable solution is indicated for the treatment of Bovine of Respiratory Disease (BRD) - EIPIFLOXIN (danofloxacin) for the tr... | Ref: Ref: Plumb's 9th Ed. p. 336.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "989",
@@ -29692,7 +33652,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 60,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Nitroxynil: Meat W/D 60 days. PROHIBITED in animals producing milk for human consumption (excreted in milk for months — no established MRL in milk)."
       },
       {
             "id": "990",
@@ -29708,7 +33672,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "10 ml vial (Mevac)",
             "notes": "Category: Vaccine. Live attenuated Lympy Skin Diseases (LSD) virus vaccine (LSDV-Neethling strain) for immunization of cattle against Lumpy Skin Disease virus Composition: - LSDV in a lyophilized form - Sterile Diluent Target species: Cattle Dose: - Cattle: 1 ml / animal Method of application: Subcutaneous (S/C) at th... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "991",
@@ -29724,7 +33692,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Amoun)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition: Each 1 ml contains - Doramectin 10 mg Properities - Doramectin is an afermentative-derived macrocyclic lactone isolated from fermentations of selected strains derived from the soil organism Streptomyces averimitilis. Mode of action: Macrocyclic lactone is to mo... | Ref: Cattle 0.2 mg/kg SC or IM. Pigs 0.3 mg/kg IM. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 70,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Doramectin: Meat 70d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "992",
@@ -29740,7 +33712,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "250 ml vial (Tornel)",
             "notes": "Category: Vaccine. DENKABAC 8® Killed Vaccine & Toxoid for Clostridia and Pasteurella DENKABAC 8 protect your animals from: - Malignant edema - Blackleg - Infectious necrotic hepatitis - Enterotoxaemia - Pulpy kidney - Gas gangrene - Enzootic pneumonia Formula: Each dose 5 ml of DENKABAC 8® contains complete culture o... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "993",
@@ -29756,7 +33732,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "90 ml vial (Mevac)",
             "notes": "Category: Vaccine. Each dose contains ≥ 6 PD50 of inactivated Foot and Mouth Disease Virus Serotypes/Strains: • O-PANASIA2 • O-MANISA 69 • O-EA3 (O-SUDAN) • SAT2/Eri/98 • SAT2/LIB/12 [SAT2 LIBYA] • A-IRAN05 • A/AFRICA-GIV (EGYPT 2022) • A/EURO-SOUTH AMERICA [EURO-SA]. [VENEZUELA] DOSAGE - Cattle & Buffaloes (at 3 mont... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "994",
@@ -29772,7 +33752,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "45 ml vial (ARRIAH)",
             "notes": "Category: Vaccine. Foot and Mouth disease vaccine sorbed polyvalent ( from virus grown in BHK-21 cells ) liquid inactivated of six strains {{ O Mya-98, O PanAsia, O PanAsia 2, A Iran 05, A Saudi 95, SAT 2 Libya 2012 types }}, aqueous solution. POTENCY: ≥ 6 PD50 DOSAGE: » Cattle: 3 ml » Sheep & goat: 1 ml - administer ... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "995",
@@ -29788,7 +33772,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 gm Sachet (Pharma swede)",
             "notes": "Category: Antibiotic (Sulfonamide). SULPHAMIX Water Soluble Powder 20 gm Composition: Each 1 gm contains: - Sulphadimidine sodium 125 mg (eq to 115.8 mg,Sulphadimidine) - Sulphadiazine sodium 125 mg (eq to 114.9 mg Sulphadiazine) - Sulphathiazole sodium 125 mg (eq to 86.88 mg Sulphathiazole) Properties: - SULPHAMIX ingredients are bel... | Ref: Poultry/Cattle 33-50 mg/kg PO q12-24h x 5 days. Merck Vet Manual.",
             "frequency": "q12-24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 10,
+            "milk_withdrawal_hours": 96,
+            "food_restriction_note": "Sulphonamides: Meat 10d, Milk 4 days (96h). Check specific product labeling."
       },
       {
             "id": "996",
@@ -29804,7 +33792,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 gm Sachet (OPI pharma)",
             "notes": "Category: Anthelmintic. Composition: Each 100 gm contains: - Piperazine citrate 100 gm (equal to 35 gm Piperazine base) Indications: Piperazine is an effective antihelmintic used for for treatment of some gastrointestinal round worm specially: - ascarid, oxyurid toxocara & toxascaris in dogs - ascaridia & capillaria in chi... | Ref: Dogs/Cats 45-65 mg/kg PO single dose (ascarids). Plumb's Vet Drug Handbook.",
             "frequency": "single dose PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "997",
@@ -29852,7 +33844,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "PO, SC or IV"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "998",
@@ -29912,7 +33908,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 15,
+            "milk_withdrawal_hours": 120,
+            "food_restriction_note": "Meloxicam: Meat 15d, Milk 5 days (120h)."
       },
       {
             "id": "999",
@@ -29928,7 +33928,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "150 gm Sachet (Syva)",
             "notes": "Category: Supportive treatment. Neodigestol Feed Additive Powder for bovine, sheep and goats COMPOSITION: Each bag (150 g) contains: - Calcium propionate 40 gm - Cobalt sulphate 2 gm - Magnesium sulphate 10 gm - Iron sulphate 4 gm - Brewer's yeast 20 gm - Casein 15 gm - Methionine 5 gm - Glucose 20 gm - Dicalcium phosphate 10 gm -... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1000",
@@ -29944,7 +33948,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Zoetis)",
             "notes": "Category: Antibiotic (Lincosamide + aminoglycoside). COMPOSITION Each ml Contains: Active substances: - Lincomycin (hydrochloride) 50 mg - Spectinomycin (sulfate, tetrahydrate) 100 mg Excipients: - Benzyl Alcohol (E-1519) 9 mg INDICATIONS - Porcine: Infectious arthritis, swine dysentery, Enzootic pneumonia. - Bovine, Sheep & Dogs: Pneumonia TARGET SPE... | Ref: Cattle/Pigs 2.5 mg/kg IM q24h. Plumb's.",
             "frequency": "q24h IM",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1001",
@@ -29960,7 +33968,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "5 x 5ml Amps (Marcyrl)",
             "notes": "Category: GnRh hormone. Synthetic GnRh hormone Composition: Each 1 ml contains: - Buserelin acetate: 4.2 µg (eq to 4 µg Buserelin) Properties: Buserelin is a peptide synthetic analogue of the natural gonadotrophin-releasing hormone GnRH. Its effect is 20 - 170 times stronger that of LH-RH, by chemical substitution of the a... | DOSING: Per-animal fixed dose. Cattle: 100-250 mcg IM/IV. Horses: 50-100 mcg IM. (NOT weight-based mg/kg) | Ref: Ref: Plumb's 9th Ed. p. 156.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1002",
@@ -29976,7 +33988,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 gm Sachet (Mervue)",
             "notes": "Category: Supportive treatment. RUMEN BOOSTER – 100 gm Optimising Rumen Function. For freshly calved cows, calves & racing camels. Providing a speedy means to support normalising of digestive disturbances of either a primary or secondary nature. ANALYTICAL CONSTITUENTS Crude Protein 20.4%, Crude Ash 11.8%, Crude Oil 5.0%, Moisture... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1003",
@@ -29992,7 +34008,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "320 gm Sachet (Mervue)",
             "notes": "Category: Supportive treatment. RUMINOANTACID – 320 gm Antacid. Supports recovery from acidosis of the rumen, following excessive consumption of cereals or rapidly fermentable carbohydrates, or transition acidosis. Note: Transition acidosis in cows usually occurs 3 to 4 days after introduction a new diet For example after calving.... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1004",
@@ -30008,7 +34028,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Atco pharma)",
             "notes": "Category: Antibiotic (Lincosamide + aminoglycoside). Composition: - Lincomycin - Spectinomycin - Bromhexine Indication: - treating bovine respiratory disease (BRD) - gastroenteritis in calves and lambs Dose: Calves, sheep, goats, lambs & pigs: 1 ml / 10 kg B.wt. by I.M.I. for 2 - 4 days. | Ref: Dogs/Cats 0.25-0.5 mg/kg PO q12h. Horses 0.25 mg/kg PO q12h. Cattle 0.25 mg/kg. Plumb's.",
             "frequency": "q12h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Lincomycin: Meat 7d. Not for dairy cattle."
       },
       {
             "id": "1005",
@@ -30056,7 +34080,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "PO, SC or IV"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "1006",
@@ -30072,7 +34100,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "2 kg Powder (Mervue)",
             "notes": "Category: Supportive treatment. Composition per 100 gm: - Vitamin E (a-tocopherol acetate) 250 mg - Vitamin B1 (Thiamine Hydrochloride) 7.5 mg - Vitamin B2 (Riboflavin) 11.5 mg - Vitamin B6 (Pyridoxine Hydrochloride) 4 mg - Vitamin B12 (Cyanocobalmin) 15 µg - Ascorbic Acid E300 (99%) 400 mg - Calcium-D Pantothenate (80%) 15 mg - N... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q12h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       },
       {
             "id": "1007",
@@ -30088,7 +34120,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Over)",
             "notes": "Category: Anthelmintic. Description: Internal and external antiparasitic. Formula: Every 100 ml contains: - Doramectin 1 g - Formulation agents q.s. Indications: Treatment and control of parasitosis caused by gastrointestinal and pulmonary nematodes, bovine mange and cutaneous myiasis. Target species: Cattle. Administratio... | Ref: Cattle 0.2 mg/kg SC or IM. Pigs 0.3 mg/kg IM. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 70,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Doramectin: Meat 70d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "1008",
@@ -30136,7 +34172,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "SC or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 5,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Ceftiofur has a 0-day milk withdrawal — safe for dairy."
       },
       {
             "id": "1009",
@@ -30152,7 +34192,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (CZV)",
             "notes": "Category: Vaccine. LIVE FREEZE-DRIED VACCINE AGAINST BRUCELLOSIS IN CATTLE. • The active substance stimulates active immunity against brucellosis s in bovine. Brucella abortus strain RB51 is an attenuated rough mutant of the virulent strain 2308, derived by classic selection methods, that lacks O-side chains (perosami... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1010",
@@ -30212,7 +34256,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "PO or IM"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 15,
+            "milk_withdrawal_hours": 120,
+            "food_restriction_note": "Meloxicam: Meat 15d, Milk 5 days (120h)."
       },
       {
             "id": "1011",
@@ -30262,7 +34310,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly CONTRAINDICATED in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Diclofenac: Meat 28d. Not recommended for dairy animals."
       },
       {
             "id": "1012",
@@ -30278,7 +34330,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (Zoetis)",
             "notes": "Category: Vaccine. INFORCE 3 » Bovine Rhinotracheitis - Parainfluenza 3 - Respiratory Syncytial Virus Vaccine. » Modified Live Virus » For intranasal use only INDICATIONS: For vaccination of healthy cattle 3 days of age or older, including pregnant cows, to prevent respiratory disease caused by bovine respiratory sync... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1013",
@@ -30294,7 +34350,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Unipharma)",
             "notes": "Category: Supportive treatment. Phosphozal injection For veterinary use only Composition: Each 100 ml contains: » 1-(n- butylamino) 1 - methylethyl phosphonous acid (butaphosphane) 10 gm » Vitamine B12 ( cyanocobalamin) 0.005 gm Properties: phosphozal promotes protein, carbohydrate and fat metabolism, in addition, the formation of... | DOSING: Per-animal dose. Horses/Cattle: 1-2 mL/100 kg IV/IM/SC. Refer to product label. | Ref: Ref: Plumb's 9th Ed. p. 159.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1014",
@@ -30342,7 +34402,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "PO, SC or IV"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "1015",
@@ -30396,7 +34460,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h",
                         "route": "IV, IM or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Dexamethasone: Meat 7d, Milk 72h. ⚠️ Induces abortion in late pregnancy."
       },
       {
             "id": "1016",
@@ -30446,7 +34514,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Strictly CONTRAINDICATED in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Diclofenac: Meat 28d. Not recommended for dairy animals."
       },
       {
             "id": "1017",
@@ -30494,7 +34566,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q24h",
                         "route": "PO, SC or IV"
                   }
-            }
+            },
+            "food_restriction": "dairy_prohibited",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Fluoroquinolone: Prohibited in lactating dairy cattle producing milk for human consumption (EU/US regulations — no established milk MRL). Meat W/D: 14–28 days depending on product. For beef cattle only."
       },
       {
             "id": "1018",
@@ -30554,7 +34630,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "1019",
@@ -30608,7 +34688,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h (use with caution)",
                         "route": "SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1020",
@@ -30668,7 +34752,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "In water/feed",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 28,
+            "milk_withdrawal_hours": 168,
+            "food_restriction_note": "Oxytetracycline: Meat 28d, Milk 7 days (168h). LA formulas: single dose."
       },
       {
             "id": "1021",
@@ -30720,7 +34808,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Contraindicated in cats (high risk of fatal GI ulceration and renal failure)."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 4,
+            "milk_withdrawal_hours": 36,
+            "food_restriction_note": "Flunixin: Meat 4d, Milk 36h. IV use in cattle only."
       },
       {
             "id": "1022",
@@ -30736,7 +34828,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Ceva Co.)",
             "notes": "Category: Vaccine. COMPOSITION For 1 dose vaccine - Pasteurella multocida a3 type - Pasteurella haemolytica type 1 PROPERTIES Inactivated pasteurella vaccine treated with formaldehyde and with aluminum hydroxide gel as adjuvant, formulated from strains selected for their high immunogenic potency. INDICATIONS Sheep & g... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1023",
@@ -30790,7 +34886,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "Single dose",
                         "route": "PO or SC"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 49,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Ivermectin: Meat 49d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "1024",
@@ -30806,7 +34906,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "250 ml vial (Bullvet >> sama vet pharm)",
             "notes": "Category: Supportive treatment. Composition: Each 100 ml contains:- - Calcium ( Calcium Gluconate ) 20.83 gm - Magnesium ( Magnesium Hypophosphite) 5.33 gm - Magnesium ( Magnesium Chloride) 2 gm - Calcium D-Saccherate 1 gm - Boric Acide 4.33 gm - Dextrose 20 gm - Vitamin B1 (Thiamine hydrochloried ) 100 mg - Vitamin B2 (Riboflavin... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Calcium products: No withdrawal required."
       },
       {
             "id": "1025",
@@ -30822,7 +34926,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (Bullvet >> sama vet pharm)",
             "notes": "Category: Anthelmintic. Anthelmintic (Avermectin) Composition: Each 1 ml contains - Doramectin 10 mg Properities - Doramectin is an afermentative-derived macrocyclic lactone isolated from fermentations of selected strains derived from the soil organism Streptomyces averimitilis. Mode of action: Macrocyclic lactone is to mo... | Ref: Cattle 0.2 mg/kg SC or IM. Pigs 0.3 mg/kg IM. Merck Vet Manual.",
             "frequency": "single dose",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 70,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": "Doramectin: Meat 70d. Not for use in animals producing milk for human consumption."
       },
       {
             "id": "1026",
@@ -30872,7 +34980,11 @@ window.DEFAULT_MEDICATIONS = [
                         "contraindicated": true,
                         "warning": "⛔ Narrow margin of safety in cats."
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 7,
+            "milk_withdrawal_hours": 48,
+            "food_restriction_note": "Levamisole: Meat 7d, Milk 48h."
       },
       {
             "id": "1027",
@@ -30920,7 +35032,11 @@ window.DEFAULT_MEDICATIONS = [
                         "freq": "q12-24h for 3-5 days",
                         "route": "PO"
                   }
-            }
+            },
+            "food_restriction": "none",
+            "meat_withdrawal_days": 14,
+            "milk_withdrawal_hours": 72,
+            "food_restriction_note": "Albendazole: Meat 14d, Milk 72h. Avoid in 1st trimester pregnancy."
       },
       {
             "id": "1028",
@@ -30936,7 +35052,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "250 ml vial (Zoetis)",
             "notes": "Category: Vaccine (Bacterial Toxoid/Bacterin). Multi-component clostridial toxoid protecting against Clostridium chauvoei (Blackleg), C. septicum (Malignant edema), C. novyi (Black disease), C. sordellii, and C. perfringens types B, C & D (Enterotoxemia / Pulpy kidney). Dosage: Cattle: 2-5 ml SC; Sheep/Goats: 2 ml SC. Booster 4-6 weeks later, then annually. Ref: Merck Vet Manual. | DOSING: Cattle: 2-5 mL SC; Sheep/Goats: 2 mL SC. Booster in 4-6 weeks, then annual revaccination. Shake well before use.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1029",
@@ -30952,7 +35072,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (Zoetis)",
             "notes": "Category: Vaccine. One Shot Ultra® 8 is effective for vaccination of healthy cattle contains clostridium chauvoei - septicum - haemolyticum - novyi - sordellii - perfringens types c and d - mannheimia haemolytica bacterin-toxoid. Indications Helps protect against diseases caused by the clostridial agents Clostridium c... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1030",
@@ -30968,7 +35092,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "20 ml vial (Zoetis)",
             "notes": "Category: Vaccine. One Shot Ultra® 7 is effective for vaccination of healthy cattle contains clostridium chauvoei - septicum - novyi - sordellii - perfringens types c and d - mannheimia haemolytica bacterin-toxoid. Indications Helps protect against diseases caused by the clostridial agents Clostridium chauvoei; Cl. se... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1031",
@@ -30984,7 +35112,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Zoetis)",
             "notes": "Category: Vaccine. ULTRACHOICE® CD contains clostridium perfringens types c and d bacterin-toxoid. Indications Aids in the prevention of enterotoxemia and enteritis caused by Clostridium perfringens Types B, C and D. For use with Beef, Dairy and Sheep How It Works? ULTRACHOICE® CD helps prevent disease caused by Clost... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based. | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1032",
@@ -31000,7 +35132,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Zoetis)",
             "notes": "Category: Vaccine. ULTRACHOICE® 8 contains clostridium chauvoei - septicum - haemolyticum - novyi - sordellii - perfringens types c and d bacterin-toxoid. Indications Aids in preventing clostridial diseases as black leg caused by Clostridium chauvoei; malignant edema caused by Cl. septicum; bacillary hemoglobinuria ca... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based. | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1033",
@@ -31016,7 +35152,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Zoetis)",
             "notes": "Category: Vaccine. ULTRACHOICE® 7 contains clostridium chauvoei - septicum - novyi - sordellii - perfringens types c and d bacterin-toxoid. Indications Helps protect against clostridial diseases as black leg caused by Clostridium chauvoei; malignant edema caused by Cl. septicum; black disease caused by Cl. novyi; gas-... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based. | Ref: Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1034",
@@ -31032,7 +35172,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "10 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Vaccine. Bovilis® Rotavec Corona Combined Bovine Rotavirus, Coronavirus and E Coli vaccine (inactivated) PRESENTATION A White liquid emulsion vaccine for injection. COMPOSITION Per 2 ml dose: A) Active substance - Bovine rotavirus strain UK-Compton, serotype G6 P5 (inactivated) ≥ 874 U* - Bovine coronavirus,... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1035",
@@ -31048,7 +35192,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "2.5 L Bottle (MSD Co. (Intervet))",
             "notes": "Category: Antiprotozoal (Coccidia). COMPOSITION Active substance - Diclazuril 2.5 mg/ml Excipients - Methyl Parahydroxybenzoate 1.8 - Propyl Parahydroxybenzoate 0.2 - Microcrystalline Cellulose - Carboxymethylcellulose Sodium - Citric Acid Monohydrate - Polysorbate 20 - Sodium Hydroxide (for pH adjustment) - Water, Purified PHARMACEUT... | Ref: Ref: NOAH Compendium.",
             "frequency": "q8h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1036",
@@ -31064,7 +35212,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "50 ml vial (MSD Co. (Intervet))",
             "notes": "Category: Vaccine. COMPOSITION per ml: Active substances: - Formalin killed cells of Salmonella dublin strain S342/70 1 x 109 cells - Formalin killed cells of Salmonella typhimurium strain S341/70 1 x 109 cells Adjuvant: - Aluminium hydroxide gel 200 mg Excipients: - Tris - Maleic acid - Sodium chloride - Formaldehyde... | DOSING: Fixed per-animal vaccine dose per label (1-2 mL/animal IM/SC). Not weight-based.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1037",
@@ -31080,7 +35232,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (Zoetis)",
             "notes": "Category: Vaccine (Bacterial Toxoid/Bacterin). Multi-component clostridial toxoid protecting against Clostridium chauvoei (Blackleg), C. septicum (Malignant edema), C. novyi (Black disease), C. sordellii, and C. perfringens types B, C & D (Enterotoxemia / Pulpy kidney). Dosage: Cattle: 2-5 ml SC; Sheep/Goats: 2 ml SC. Booster 4-6 weeks later, then annually. Ref: Merck Vet Manual. | DOSING: Cattle: 2-5 mL SC; Sheep/Goats: 2 mL SC. Booster in 4-6 weeks, then annual revaccination. Shake well before use.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1038",
@@ -31096,7 +35252,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (First Trading Ph.)",
             "notes": "Category: Liver Tonic. Composition: Each 1 ml contains: - L-Carnitine 100 mg - L-Arginine 50 mg - Glutamic acid 35 mg - Sorbitol 150 mg - Aspartic acid 20 mg - Ribofavine 2 mg - Excipients up to 1 ml Indications: - Increase conversion and growth rate. - Increase milk production. - As a general liver tonic. - As a nutritio... | Ref: Dogs 50-100 mg/kg PO q24h (dilated cardiomyopathy). Merck Vet Manual.",
             "frequency": "q24h PO",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Sorbitol: No withdrawal required."
       },
       {
             "id": "1039",
@@ -31112,7 +35272,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (First Trading Ph.)",
             "notes": "Category: Growth Promoter & Immuno Stimulant. Composition: Each 100 ml contains: - Taurine 10 mg - Inositol 10 mg - Cyanocobalamine (Vit B12) 500 mcg - Copper Sulphate 0.2 mg - Pyridoxine HCL (Vit B6) 3 mg - Riboflavin (Vit B2) 0.6 mg - Vit C 5 mg - Folic acid (Vit B9) 0.6 mg - L–Methionine 10 mg - L–Lysine 50 mg - Iron citrate 20 mg - zinc sul... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1040",
@@ -31128,7 +35292,11 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (First Trading Ph.)",
             "notes": "Category: Supportive treatment. Composition: Each 10 ml contains - Butaphosphan 1000 mg - Cyanocobalamine (Vit B12) 10 mg - Propylene glycol 500 mg Benefits: - Nutritional supplement recommended as growth promoter. - As coadjuvant in all infectious diseases, poisoning, convalescence, sudden temperature changes, per. and post vacci... | DOSING: Per-animal dose. Horses/Cattle: 1-2 mL/100 kg IV/IM/SC. Refer to product label. | Ref: Ref: Plumb's 9th Ed. p. 159.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": null,
+            "milk_withdrawal_hours": null,
+            "food_restriction_note": null
       },
       {
             "id": "1041",
@@ -31144,6 +35312,10 @@ window.DEFAULT_MEDICATIONS = [
             "unit_description": "100 ml vial (First Trading Ph.)",
             "notes": "Category: Growth Promoter. Composition: Each 100 ml contains: - Arginine (L-Arginine HCL) 144 mg - Cysteine (L–Cysteine) 320 mg - Glutamine (L-glutamic acid) 320 mg - Glycine 320 mg - Histidine (L–Histidine) 132 mg - Isoleucine (L-Isoleucine HCL) 360 mg - Lysine (L-Lysine HCL) 544 mg - Leucine (L-Leucine HCL) 428 mg - Phenyla... | DOSING: Volume-based dosing per label. Cattle/Horses 10-25 mL IM/SC/IV; Calves/Foals 5-10 mL. (Not standard mg/kg). Ref: Merck Vet Manual.",
             "frequency": "q24h",
-            "concentration_ml": 1
+            "concentration_ml": 1,
+            "food_restriction": "none",
+            "meat_withdrawal_days": 0,
+            "milk_withdrawal_hours": 0,
+            "food_restriction_note": "Vitamin products: No withdrawal required in standard doses."
       }
 ];

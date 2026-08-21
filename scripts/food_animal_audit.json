@@ -1,0 +1,4215 @@
+{
+  "prohibitedInFoodAnimals": [
+    {
+      "id": "55",
+      "brand": "Flagyl / Flagelat (dog)",
+      "generic": "Metronidazole",
+      "species": "dog",
+      "reason": "Prohibited in food animals globally or manufacturer restriction"
+    },
+    {
+      "id": "56",
+      "brand": "Flagyl / Flagelat (cat)",
+      "generic": "Metronidazole",
+      "species": "cat",
+      "reason": "Prohibited in food animals globally or manufacturer restriction"
+    },
+    {
+      "id": "717",
+      "brand": "Diagyl (Adwia)",
+      "generic": "Metronidazole",
+      "species": "large_animal",
+      "reason": "Prohibited in food animals globally or manufacturer restriction"
+    },
+    {
+      "id": "735",
+      "brand": "Chloramphenicol (El-Nasr)",
+      "generic": "Chloramphenicol",
+      "species": "large_animal",
+      "reason": "Prohibited in food animals globally or manufacturer restriction"
+    },
+    {
+      "id": "963",
+      "brand": "Metrodel 4% (Delta Pharma)",
+      "generic": "Metronidazole",
+      "species": "both",
+      "reason": "Prohibited in food animals globally or manufacturer restriction"
+    }
+  ],
+  "prohibitedInDairy": [
+    {
+      "id": "10",
+      "brand": "Dexamethasone",
+      "generic": "Dexamethasone",
+      "species": "both"
+    },
+    {
+      "id": "87",
+      "brand": "Hepanil 34 (Bimeda Co.)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "90",
+      "brand": "Dexarite (Atco pharma)",
+      "generic": "Phenylbutazone + Dexamethasone",
+      "species": "horse"
+    },
+    {
+      "id": "91",
+      "brand": "Phenylo-ject (Adwia)",
+      "generic": "Phenylbutazone",
+      "species": "both"
+    },
+    {
+      "id": "106",
+      "brand": "Buta-fenil (Tornel)",
+      "generic": "Phenylbutazone",
+      "species": "horse"
+    },
+    {
+      "id": "107",
+      "brand": "Opi-arthridine (OPI pharma)",
+      "generic": "Phenylbutazone",
+      "species": "horse"
+    },
+    {
+      "id": "108",
+      "brand": "Phenylomed (Arabcomed)",
+      "generic": "Phenylbutazone",
+      "species": "large_animal"
+    },
+    {
+      "id": "109",
+      "brand": "Phenyl-D 20% (Delta Pharma)",
+      "generic": "Phenylbutazone",
+      "species": "horse"
+    },
+    {
+      "id": "110",
+      "brand": "Fenylbutazone-20 (VMD Pharma)",
+      "generic": "Phenylbutazone",
+      "species": "both"
+    },
+    {
+      "id": "199",
+      "brand": "Boviestimul (Livisto (Invesa))",
+      "generic": "MINERALs",
+      "species": "cattle"
+    },
+    {
+      "id": "248",
+      "brand": "Cobactan LC (MSD Co. (Intervet))",
+      "generic": "Cefquinome",
+      "species": "cattle"
+    },
+    {
+      "id": "257",
+      "brand": "Noromectin (Norbrook)",
+      "generic": "Ivermectin",
+      "species": "cattle"
+    },
+    {
+      "id": "284",
+      "brand": "Flucare 34% (Adwia)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "285",
+      "brand": "Dovix 25% (Arabcomed)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "286",
+      "brand": "Kenavox (El kenana group)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "287",
+      "brand": "Do-Nex (Atco pharma)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "288",
+      "brand": "Distomicide (A M group)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "289",
+      "brand": "Dovenix (Merial)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "290",
+      "brand": "Fasciolid 25% (CID Co.)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "291",
+      "brand": "Fasciodel 34% (Delta Pharma)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "319",
+      "brand": "Phenylzone (Taba medical pharma)",
+      "generic": "Phenylbutazone",
+      "species": "large_animal"
+    },
+    {
+      "id": "361",
+      "brand": "Lydaxx (Vetoquinol)",
+      "generic": "Tulathromycin",
+      "species": "cattle"
+    },
+    {
+      "id": "387",
+      "brand": "Bovipak (Mervue)",
+      "generic": "Silymarin + Carnitine + Choline + B-Vitamins",
+      "species": "large_animal"
+    },
+    {
+      "id": "394",
+      "brand": "Naxcel (Zoetis)",
+      "generic": "Ceftiofur",
+      "species": "large_animal"
+    },
+    {
+      "id": "450",
+      "brand": "Excenel (Zoetis)",
+      "generic": "Ceftiofur",
+      "species": "large_animal"
+    },
+    {
+      "id": "470",
+      "brand": "Butasyl (Zoetis)",
+      "generic": "Phenylbutazone + Na salicylate",
+      "species": "large_animal"
+    },
+    {
+      "id": "533",
+      "brand": "Excede (Zoetis)",
+      "generic": "Ceftiofur",
+      "species": "large_animal"
+    },
+    {
+      "id": "560",
+      "brand": "Tylosin Avico 20%",
+      "generic": "Tylosin",
+      "species": "cattle"
+    },
+    {
+      "id": "566",
+      "brand": "Tilmoject 30% (Arabcomed)",
+      "generic": "Tilmicosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "567",
+      "brand": "Tilmovet 30% (Atco pharma)",
+      "generic": "Tilmicosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "568",
+      "brand": "Pneumotac (Adwia)",
+      "generic": "Tilmicosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "569",
+      "brand": "Micotil (Elanco Co.)",
+      "generic": "Tilmicosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "570",
+      "brand": "Cosivet 30% (Delta Pharma)",
+      "generic": "Tilmicosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "617",
+      "brand": "Dovemix (Bullvet >> sama vet pharm)",
+      "generic": "Nitroxynil + Cyanocobalamin",
+      "species": "large_animal"
+    },
+    {
+      "id": "632",
+      "brand": "Arthenile (Raa Pharma)",
+      "generic": "Phenylbutazone + Na salicylate",
+      "species": "large_animal"
+    },
+    {
+      "id": "633",
+      "brand": "Flukiless 34% (Badr Pharma)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "639",
+      "brand": "Curamenth (Adwia)",
+      "generic": "Nitroxynil + Ivermectin + Clorsulon",
+      "species": "cattle"
+    },
+    {
+      "id": "660",
+      "brand": "Cabutazone (Pharma swede)",
+      "generic": "Phenylbutazone",
+      "species": "large_animal"
+    },
+    {
+      "id": "661",
+      "brand": "Fasciocure 34% (Pharma swede)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "685",
+      "brand": "Nitrolid 34% (Raa Pharma)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "688",
+      "brand": "Masti Kel (kela Co.)",
+      "generic": "Penicillin G + Neomycin",
+      "species": "cattle"
+    },
+    {
+      "id": "706",
+      "brand": "Tedo (Adwia)",
+      "generic": "Tildipirosin",
+      "species": "cattle"
+    },
+    {
+      "id": "713",
+      "brand": "Arthridine (Virbac)",
+      "generic": "Phenylbutazone + Na salicylate",
+      "species": "large_animal"
+    },
+    {
+      "id": "740",
+      "brand": "Tilmotech (Techno Pharm)",
+      "generic": "Tilmicosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "743",
+      "brand": "Antiflam (Atco pharma)",
+      "generic": "Phenylbutazone",
+      "species": "horse"
+    },
+    {
+      "id": "765",
+      "brand": "Organogel (N/A)",
+      "generic": "Oregano Oil (Essential Oil Antiseptic)",
+      "species": "cattle"
+    },
+    {
+      "id": "769",
+      "brand": "Eipifluk 34% (Eipivet)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "779",
+      "brand": "Fasciolar 25% (Taba medical pharma)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "788",
+      "brand": "Fasiolato 25% (UCCMA - Ghannam)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "798",
+      "brand": "Debonix 25% (DBK Co.)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "812",
+      "brand": "Pionix 25% (Allam Co.)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "822",
+      "brand": "Excenel (Zoetis)",
+      "generic": "Ceftiofur",
+      "species": "large_animal"
+    },
+    {
+      "id": "838",
+      "brand": "Artrivet Forte (DFV Co.)",
+      "generic": "Phenylbutazone + Dexamethasone",
+      "species": "large_animal"
+    },
+    {
+      "id": "848",
+      "brand": "Cortamethasone (Vetoquinol)",
+      "generic": "Dexamethasone",
+      "species": "both"
+    },
+    {
+      "id": "871",
+      "brand": "Avicotil",
+      "generic": "Tilmicosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "884",
+      "brand": "Dexa-Phen (Drugest)",
+      "generic": "Phenylbutazone + Dexamethasone",
+      "species": "large_animal"
+    },
+    {
+      "id": "885",
+      "brand": "Mectico (Arabcomed)",
+      "generic": "Nitroxynil + Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "887",
+      "brand": "Phenylodex (Kirovest Co.)",
+      "generic": "Phenylbutazone + Dexamethasone",
+      "species": "large_animal"
+    },
+    {
+      "id": "898",
+      "brand": "Dexaphenylarthrite (Vetoquinol)",
+      "generic": "Phenylbutazone + Dexamethasone",
+      "species": "large_animal"
+    },
+    {
+      "id": "901",
+      "brand": "Bovikalc (Boehringer Ingelheim)",
+      "generic": "Calcium chloride + Calcium sulfate",
+      "species": "cattle"
+    },
+    {
+      "id": "915",
+      "brand": "Fashioning 34% (CID Co.)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "989",
+      "brand": "Nitromectosul (Al Watanyea)",
+      "generic": "Nitroxynil + Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "1031",
+      "brand": "UltraChoice CD (Zoetis)",
+      "generic": "Clostridia Vaccine",
+      "species": "sheep_goat"
+    }
+  ],
+  "equineOnlyInLargeAnimals": [],
+  "aminoglycosides": [
+    {
+      "id": "132",
+      "brand": "Uccmagent 10% (UCCMA - Ghannam)",
+      "generic": "Gentamicin",
+      "species": "large_animal",
+      "form": "injectable"
+    },
+    {
+      "id": "165",
+      "brand": "Tribiotic (N/A)",
+      "generic": "Neomycin + Bacitracin + Polymyxin B",
+      "species": "large_animal",
+      "form": "spray"
+    },
+    {
+      "id": "166",
+      "brand": "Bivatracin (N/A)",
+      "generic": "Neomycin + Bacitracin",
+      "species": "large_animal",
+      "form": "spray"
+    },
+    {
+      "id": "167",
+      "brand": "Poly biotic (N/A)",
+      "generic": "Neomycin + Bacitracin + Polymyxin B",
+      "species": "large_animal",
+      "form": "spray"
+    },
+    {
+      "id": "242",
+      "brand": "Mastalone (Boehringer Ingelheim)",
+      "generic": "Oxytetracycline + Oleandomycin + Neomycin + Prednisolone",
+      "species": "cattle",
+      "form": "intramammary infusion"
+    },
+    {
+      "id": "243",
+      "brand": "Lincocin forte S (Zoetis)",
+      "generic": "Lincomycin + Neomycin",
+      "species": "cattle",
+      "form": "intramammary infusion"
+    },
+    {
+      "id": "244",
+      "brand": "Tetra-Delta (Zoetis)",
+      "generic": "Penicillin G + Neomycin + Streptomycin + Prednisolone",
+      "species": "cattle",
+      "form": "intramammary infusion"
+    },
+    {
+      "id": "245",
+      "brand": "Multi-ject (Norbrook)",
+      "generic": "Penicillin G + Neomycin + Streptomycin + Prednisolone",
+      "species": "cattle",
+      "form": "intramammary infusion"
+    },
+    {
+      "id": "247",
+      "brand": "Mastijet Fort (MSD Co. (Intervet))",
+      "generic": "Tetracycline + Neomycin + Bacitracin + Prednisolone",
+      "species": "cattle",
+      "form": "intramammary infusion"
+    },
+    {
+      "id": "249",
+      "brand": "Mastilex (Livisto (Invesa))",
+      "generic": "Cefalexin + Kanamycin",
+      "species": "cattle",
+      "form": "intramammary infusion"
+    },
+    {
+      "id": "250",
+      "brand": "Terrexine LC (Univet Co.)",
+      "generic": "Cefalexin + Kanamycin",
+      "species": "cattle",
+      "form": "intramammary infusion"
+    },
+    {
+      "id": "458",
+      "brand": "Diacure powder (Pharma swede)",
+      "generic": "Neomycin + Sulphaguanidine + Kaolin",
+      "species": "large_animal",
+      "form": "oral powder"
+    },
+    {
+      "id": "459",
+      "brand": "Diastop (OPI pharma)",
+      "generic": "Neomycin + Sulfonamides + Kaolin + Pectin",
+      "species": "large_animal",
+      "form": "oral powder"
+    },
+    {
+      "id": "460",
+      "brand": "Biodiaristin (El-Nasr)",
+      "generic": "Neomycin + Streptomycin + Sulfonamides",
+      "species": "large_animal",
+      "form": "oral powder"
+    },
+    {
+      "id": "461",
+      "brand": "Diaclean (Avico)",
+      "generic": "Neomycin + Sulphaguanidine + Kaolin + Pectin",
+      "species": "large_animal",
+      "form": "oral powder"
+    },
+    {
+      "id": "464",
+      "brand": "Diacure Bolus (Pharma swede)",
+      "generic": "Neomycin + Sulfaguanidine + Bismuth",
+      "species": "cattle",
+      "form": "bolus"
+    },
+    {
+      "id": "472",
+      "brand": "Bimastat (Bimeda Co.)",
+      "generic": "Sulphadiazine + Neomycin",
+      "species": "cattle",
+      "form": "oral solution"
+    },
+    {
+      "id": "517",
+      "brand": "Medgent 5% (Arabcomed)",
+      "generic": "Gentamicin",
+      "species": "large_animal",
+      "form": "injectable"
+    },
+    {
+      "id": "522",
+      "brand": "Medgent 10% (Arabcomed)",
+      "generic": "Gentamicin",
+      "species": "large_animal",
+      "form": "injectable"
+    },
+    {
+      "id": "523",
+      "brand": "Gentaprima 10% (Primavet)",
+      "generic": "Gentamicin",
+      "species": "large_animal",
+      "form": "injectable"
+    },
+    {
+      "id": "524",
+      "brand": "Gentacin 10% (MAPCO)",
+      "generic": "Gentamicin",
+      "species": "large_animal",
+      "form": "injectable"
+    },
+    {
+      "id": "526",
+      "brand": "Gentacure-10 (Pharma swede)",
+      "generic": "Gentamicin",
+      "species": "large_animal",
+      "form": "injectable"
+    },
+    {
+      "id": "643",
+      "brand": "Gentamox (HIPRA Co.)",
+      "generic": "Amoxicillin + Gentamicin",
+      "species": "large_animal",
+      "form": "injectable"
+    },
+    {
+      "id": "647",
+      "brand": "Amigasol (Atco pharma)",
+      "generic": "Amikacin",
+      "species": "horse",
+      "form": "injectable"
+    },
+    {
+      "id": "675",
+      "brand": "New Diaclean (Pharma swede)",
+      "generic": "Neomycin + Sulfaguanidine + Kaolin",
+      "species": "large_animal",
+      "form": "oral powder"
+    },
+    {
+      "id": "688",
+      "brand": "Masti Kel (kela Co.)",
+      "generic": "Penicillin G + Neomycin",
+      "species": "cattle",
+      "form": "intramammary infusion"
+    },
+    {
+      "id": "695",
+      "brand": "Scourban Plus (Bayer)",
+      "generic": "Neomycin + Sulphaguanidine + Kaolin",
+      "species": "both",
+      "form": "oral suspension"
+    },
+    {
+      "id": "730",
+      "brand": "Gentamycin 10% (El-Nasr)",
+      "generic": "Gentamicin",
+      "species": "large_animal",
+      "form": "injectable"
+    },
+    {
+      "id": "734",
+      "brand": "Neomycin 20% (El-Nasr)",
+      "generic": "Neomycin",
+      "species": "large_animal",
+      "form": "oral powder"
+    },
+    {
+      "id": "745",
+      "brand": "Ato Gent (Atco pharma)",
+      "generic": "Gentamicin",
+      "species": "both",
+      "form": "injectable"
+    },
+    {
+      "id": "747",
+      "brand": "Trivatracin (N/A)",
+      "generic": "Neomycin + Bacitracin + Polymyxin B",
+      "species": "large_animal",
+      "form": "spray"
+    },
+    {
+      "id": "829",
+      "brand": "Garavet 50 (Memphis)",
+      "generic": "Gentamicin",
+      "species": "large_animal",
+      "form": "injectable"
+    },
+    {
+      "id": "830",
+      "brand": "Garavet 10 (Memphis)",
+      "generic": "Gentamicin",
+      "species": "large_animal",
+      "form": "injectable"
+    },
+    {
+      "id": "855",
+      "brand": "Gentaveto 5 (VMD Pharma)",
+      "generic": "Gentamicin",
+      "species": "both",
+      "form": "injectable"
+    },
+    {
+      "id": "862",
+      "brand": "Kanamycin 25% (Elyoser (Alfasan))",
+      "generic": "Kanamycin",
+      "species": "large_animal",
+      "form": "injectable"
+    },
+    {
+      "id": "865",
+      "brand": "Avimast (Avico)",
+      "generic": "Oxytetracycline + Neomycin + Prednisolone",
+      "species": "cattle",
+      "form": "intramammary infusion"
+    },
+    {
+      "id": "874",
+      "brand": "Gentavic (Avico)",
+      "generic": "Gentamicin",
+      "species": "large_animal",
+      "form": "injectable"
+    },
+    {
+      "id": "917",
+      "brand": "Banscour plus (N/A)",
+      "generic": "Neomycin + Sulphonamides + Pectin",
+      "species": "both",
+      "form": "oral suspension"
+    },
+    {
+      "id": "970",
+      "brand": "Kanamycin 10% (Adwia)",
+      "generic": "Kanamycin",
+      "species": "large_animal",
+      "form": "injectable"
+    }
+  ],
+  "hasExplicitWithdrawal": [
+    {
+      "id": "10",
+      "brand": "Dexamethasone"
+    },
+    {
+      "id": "14",
+      "brand": "Ketofen (Oral)"
+    },
+    {
+      "id": "15",
+      "brand": "Ketofen (Injectable)"
+    },
+    {
+      "id": "16",
+      "brand": "Mobic / Mobitil"
+    },
+    {
+      "id": "236",
+      "brand": "Ubrostar (Boehringer Ingelheim)"
+    },
+    {
+      "id": "237",
+      "brand": "Albadry Plus (Zoetis)"
+    },
+    {
+      "id": "238",
+      "brand": "Spectramast DC (Zoetis)"
+    },
+    {
+      "id": "244",
+      "brand": "Tetra-Delta (Zoetis)"
+    },
+    {
+      "id": "394",
+      "brand": "Naxcel (Zoetis)"
+    },
+    {
+      "id": "396",
+      "brand": "Levapan (Pharma swede)"
+    },
+    {
+      "id": "397",
+      "brand": "Levasol (Jovet)"
+    },
+    {
+      "id": "425",
+      "brand": "Delmisole TZ (Delta Pharma)"
+    },
+    {
+      "id": "447",
+      "brand": "Butalex (MSD Co. (Intervet))"
+    },
+    {
+      "id": "449",
+      "brand": "Tropar forte (Pharma swede)"
+    },
+    {
+      "id": "450",
+      "brand": "Excenel (Zoetis)"
+    },
+    {
+      "id": "453",
+      "brand": "Halocur (MSD Co. (Intervet))"
+    },
+    {
+      "id": "455",
+      "brand": "Amprolium 20% (Arabcomed)"
+    },
+    {
+      "id": "456",
+      "brand": "Aviprol (Avico)"
+    },
+    {
+      "id": "457",
+      "brand": "Atco-Prol 20% (Atco pharma)"
+    },
+    {
+      "id": "466",
+      "brand": "Trimazin 30% (kela Co.)"
+    },
+    {
+      "id": "510",
+      "brand": "Norocillin (Norbrook)"
+    },
+    {
+      "id": "520",
+      "brand": "Trioxyl LA (Univet Co.)"
+    },
+    {
+      "id": "533",
+      "brand": "Excede (Zoetis)"
+    },
+    {
+      "id": "555",
+      "brand": "Hexasol (Norbrook)"
+    },
+    {
+      "id": "568",
+      "brand": "Pneumotac (Adwia)"
+    },
+    {
+      "id": "569",
+      "brand": "Micotil (Elanco Co.)"
+    },
+    {
+      "id": "590",
+      "brand": "Norodine 24 (Norbrook)"
+    },
+    {
+      "id": "595",
+      "brand": "Gentaprim (Livisto (Invesa))"
+    },
+    {
+      "id": "596",
+      "brand": "Kombitrim 240 (kela Co.)"
+    },
+    {
+      "id": "623",
+      "brand": "Diazinon (N/A)"
+    },
+    {
+      "id": "630",
+      "brand": "Cebacil gel (N/A)"
+    },
+    {
+      "id": "638",
+      "brand": "Betamox LA (Norbrook)"
+    },
+    {
+      "id": "706",
+      "brand": "Tedo (Adwia)"
+    },
+    {
+      "id": "822",
+      "brand": "Excenel (Zoetis)"
+    },
+    {
+      "id": "848",
+      "brand": "Cortamethasone (Vetoquinol)"
+    },
+    {
+      "id": "890",
+      "brand": "Alamycin LA 300 (Norbrook)"
+    },
+    {
+      "id": "917",
+      "brand": "Banscour plus (N/A)"
+    },
+    {
+      "id": "933",
+      "brand": "Dipirona (IBASA)"
+    },
+    {
+      "id": "935",
+      "brand": "Virbazene (Virbac)"
+    }
+  ],
+  "missingWithdrawalInFoodSpecies": [
+    {
+      "id": "87",
+      "brand": "Hepanil 34 (Bimeda Co.)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "88",
+      "brand": "Finadyne (MSD Co. (Intervet))",
+      "generic": "Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "89",
+      "brand": "Diflam (Pharma swede)",
+      "generic": "Diclofenac sodium",
+      "species": "large_animal"
+    },
+    {
+      "id": "95",
+      "brand": "Dormicum (N/A)",
+      "generic": "Midazolam",
+      "species": "large_animal"
+    },
+    {
+      "id": "97",
+      "brand": "Avicort",
+      "generic": "Dexamethasone",
+      "species": "large_animal"
+    },
+    {
+      "id": "98",
+      "brand": "Histacure (Pharma swede)",
+      "generic": "Diphenhydramine HCL",
+      "species": "large_animal"
+    },
+    {
+      "id": "99",
+      "brand": "Dexaphan (Pharma swede)",
+      "generic": "Dexamethasone",
+      "species": "large_animal"
+    },
+    {
+      "id": "100",
+      "brand": "Dexacortyl (Coophavet Co.)",
+      "generic": "Dexamethasone",
+      "species": "large_animal"
+    },
+    {
+      "id": "102",
+      "brand": "Dexasone 0.2% (Memphis)",
+      "generic": "Dexamethasone",
+      "species": "large_animal"
+    },
+    {
+      "id": "103",
+      "brand": "Prednl-ject (Adwia)",
+      "generic": "Predinsolone acetate",
+      "species": "large_animal"
+    },
+    {
+      "id": "104",
+      "brand": "Predef 2x (Zoetis)",
+      "generic": "Isoflupredone Acetate",
+      "species": "cattle"
+    },
+    {
+      "id": "108",
+      "brand": "Phenylomed (Arabcomed)",
+      "generic": "Phenylbutazone",
+      "species": "large_animal"
+    },
+    {
+      "id": "111",
+      "brand": "Ketomed 10% (Arabcomed)",
+      "generic": "Ketoprofen",
+      "species": "large_animal"
+    },
+    {
+      "id": "114",
+      "brand": "Ketocure (Pharma swede)",
+      "generic": "Ketoprofen",
+      "species": "large_animal"
+    },
+    {
+      "id": "115",
+      "brand": "Adwifen (Adwia)",
+      "generic": "Tolfenamic Acid",
+      "species": "cattle"
+    },
+    {
+      "id": "116",
+      "brand": "Melox 20 (Al Madina)",
+      "generic": "Meloxicam",
+      "species": "large_animal"
+    },
+    {
+      "id": "118",
+      "brand": "Meloxidel 0.5% (Delta Pharma)",
+      "generic": "Meloxicam",
+      "species": "large_animal"
+    },
+    {
+      "id": "119",
+      "brand": "Metacam (Boehringer Ingelheim)",
+      "generic": "Meloxicam",
+      "species": "large_animal"
+    },
+    {
+      "id": "120",
+      "brand": "Movac (Adwia)",
+      "generic": "Meloxicam",
+      "species": "large_animal"
+    },
+    {
+      "id": "121",
+      "brand": "Loxicom 2% (Norbrook)",
+      "generic": "Meloxicam",
+      "species": "large_animal"
+    },
+    {
+      "id": "122",
+      "brand": "Meloxidyl Ceva (Ceva Co.)",
+      "generic": "Meloxicam",
+      "species": "large_animal"
+    },
+    {
+      "id": "125",
+      "brand": "Rimadyl (Zoetis)",
+      "generic": "Carprofen",
+      "species": "cattle"
+    },
+    {
+      "id": "127",
+      "brand": "Flamicure (Pharma swede)",
+      "generic": "Flunixin Meglumine",
+      "species": "cattle"
+    },
+    {
+      "id": "129",
+      "brand": "Flunidyne (Arabcomed)",
+      "generic": "Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "130",
+      "brand": "Dolorixin (Avico)",
+      "generic": "Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "131",
+      "brand": "Meflosyl (Zoetis)",
+      "generic": "Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "132",
+      "brand": "Uccmagent 10% (UCCMA - Ghannam)",
+      "generic": "Gentamicin",
+      "species": "large_animal"
+    },
+    {
+      "id": "134",
+      "brand": "Flunifen (Ceva Co.)",
+      "generic": "Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "135",
+      "brand": "Antistamine (Tornel)",
+      "generic": "Diphenhydramine HCL",
+      "species": "cattle"
+    },
+    {
+      "id": "136",
+      "brand": "Allergamine (Avico)",
+      "generic": "Diphenhydramine HCL",
+      "species": "large_animal"
+    },
+    {
+      "id": "137",
+      "brand": "Diclofenac 2.5% (UCCMA - Ghannam)",
+      "generic": "Diclofenac sodium",
+      "species": "large_animal"
+    },
+    {
+      "id": "138",
+      "brand": "Voltamoon 2.5% (Arabcomed)",
+      "generic": "Diclofenac sodium",
+      "species": "large_animal"
+    },
+    {
+      "id": "139",
+      "brand": "Avigesic (Avico)",
+      "generic": "Diclofenac sodium",
+      "species": "large_animal"
+    },
+    {
+      "id": "140",
+      "brand": "Dicloprima 5% (Primavet)",
+      "generic": "Diclofenac sodium",
+      "species": "large_animal"
+    },
+    {
+      "id": "141",
+      "brand": "Danflam (N/A)",
+      "generic": "Diclofenac sodium",
+      "species": "large_animal"
+    },
+    {
+      "id": "142",
+      "brand": "Declo 5% (Allam Co.)",
+      "generic": "Diclofenac sodium",
+      "species": "large_animal"
+    },
+    {
+      "id": "143",
+      "brand": "Avil (Sanofi)",
+      "generic": "Pheniramine",
+      "species": "large_animal"
+    },
+    {
+      "id": "144",
+      "brand": "Floromed 10% (Arabcomed)",
+      "generic": "Florfenicol",
+      "species": "large_animal"
+    },
+    {
+      "id": "145",
+      "brand": "Tetramed 500 (Arabcomed)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "152",
+      "brand": "Corebral (Vetoquinol)",
+      "generic": "Vitamin B1 + Vitamin B6",
+      "species": "large_animal"
+    },
+    {
+      "id": "153",
+      "brand": "Engemycin LA (MSD Co. (Intervet))",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "154",
+      "brand": "Oxy-G (Adwia)",
+      "generic": "Oxytetracycline + Gentian Violet",
+      "species": "large_animal"
+    },
+    {
+      "id": "155",
+      "brand": "Tetravet (Bayer)",
+      "generic": "Oxytetracycline + Gentian Violet",
+      "species": "large_animal"
+    },
+    {
+      "id": "156",
+      "brand": "Teramycin (Zoetis)",
+      "generic": "Oxytetracycline + Gentian Violet",
+      "species": "large_animal"
+    },
+    {
+      "id": "157",
+      "brand": "Oxytetravet (N/A)",
+      "generic": "Oxytetracycline + Gentian Violet",
+      "species": "large_animal"
+    },
+    {
+      "id": "158",
+      "brand": "Alamycin (Norbrook)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "165",
+      "brand": "Tribiotic (N/A)",
+      "generic": "Neomycin + Bacitracin + Polymyxin B",
+      "species": "large_animal"
+    },
+    {
+      "id": "166",
+      "brand": "Bivatracin (N/A)",
+      "generic": "Neomycin + Bacitracin",
+      "species": "large_animal"
+    },
+    {
+      "id": "167",
+      "brand": "Poly biotic (N/A)",
+      "generic": "Neomycin + Bacitracin + Polymyxin B",
+      "species": "large_animal"
+    },
+    {
+      "id": "179",
+      "brand": "Colistimed (Arabcomed)",
+      "generic": "Colistin",
+      "species": "large_animal"
+    },
+    {
+      "id": "190",
+      "brand": "Pherol-S-ject (Arabcomed)",
+      "generic": "Vitamin E-Selenium",
+      "species": "large_animal"
+    },
+    {
+      "id": "209",
+      "brand": "Tono-ject (Adwia)",
+      "generic": "Toldimfos",
+      "species": "cattle"
+    },
+    {
+      "id": "210",
+      "brand": "Tolditonic (Arabcomed)",
+      "generic": "Toldimfos",
+      "species": "large_animal"
+    },
+    {
+      "id": "211",
+      "brand": "Delfous 20% (Delta Pharma)",
+      "generic": "Toldimfos",
+      "species": "large_animal"
+    },
+    {
+      "id": "212",
+      "brand": "Metaphosol (Bremer Pharma)",
+      "generic": "Toldimfos",
+      "species": "large_animal"
+    },
+    {
+      "id": "214",
+      "brand": "Tonophosphan compositum (MSD Co. (Intervet))",
+      "generic": "Toldimfos + Vit B12 + Minerals",
+      "species": "large_animal"
+    },
+    {
+      "id": "215",
+      "brand": "Phosphofort (Adwia)",
+      "generic": "Toldimfos + Vit B3 + Minerals",
+      "species": "large_animal"
+    },
+    {
+      "id": "217",
+      "brand": "Hepatonic (Arabcomed)",
+      "generic": "Menbutone",
+      "species": "large_animal"
+    },
+    {
+      "id": "218",
+      "brand": "Genabil (Boehringer Ingelheim)",
+      "generic": "Menbutone",
+      "species": "large_animal"
+    },
+    {
+      "id": "221",
+      "brand": "Arzinal 10% (El-Nasr)",
+      "generic": "Arsenate",
+      "species": "large_animal"
+    },
+    {
+      "id": "222",
+      "brand": "Bykahepar M (MSD Co. (Intervet))",
+      "generic": "Menbutone",
+      "species": "large_animal"
+    },
+    {
+      "id": "224",
+      "brand": "Eradex (Pharma swede)",
+      "generic": "Levamisole + Triclabendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "225",
+      "brand": "Intradine (Norbrook)",
+      "generic": "Sulphadimidine",
+      "species": "large_animal"
+    },
+    {
+      "id": "228",
+      "brand": "Melovem (Dopharma)",
+      "generic": "Meloxicam",
+      "species": "large_animal"
+    },
+    {
+      "id": "229",
+      "brand": "Phosphonortonic 20% (Vetoquinol)",
+      "generic": "Toldimfos",
+      "species": "large_animal"
+    },
+    {
+      "id": "230",
+      "brand": "Voltamoon 5% (Arabcomed)",
+      "generic": "Diclofenac sodium",
+      "species": "large_animal"
+    },
+    {
+      "id": "234",
+      "brand": "Bovaclox DC (Norbrook)",
+      "generic": "Ampicillin + Cloxacillin",
+      "species": "cattle"
+    },
+    {
+      "id": "235",
+      "brand": "Bovaclox (MSD Co. (Intervet))",
+      "generic": "Ampicillin + Cloxacillin",
+      "species": "cattle"
+    },
+    {
+      "id": "242",
+      "brand": "Mastalone (Boehringer Ingelheim)",
+      "generic": "Oxytetracycline + Oleandomycin + Neomycin + Prednisolone",
+      "species": "cattle"
+    },
+    {
+      "id": "243",
+      "brand": "Lincocin forte S (Zoetis)",
+      "generic": "Lincomycin + Neomycin",
+      "species": "cattle"
+    },
+    {
+      "id": "245",
+      "brand": "Multi-ject (Norbrook)",
+      "generic": "Penicillin G + Neomycin + Streptomycin + Prednisolone",
+      "species": "cattle"
+    },
+    {
+      "id": "246",
+      "brand": "Lactaclox (Norbrook)",
+      "generic": "Ampicillin + Cloxacillin",
+      "species": "cattle"
+    },
+    {
+      "id": "247",
+      "brand": "Mastijet Fort (MSD Co. (Intervet))",
+      "generic": "Tetracycline + Neomycin + Bacitracin + Prednisolone",
+      "species": "cattle"
+    },
+    {
+      "id": "249",
+      "brand": "Mastilex (Livisto (Invesa))",
+      "generic": "Cefalexin + Kanamycin",
+      "species": "cattle"
+    },
+    {
+      "id": "250",
+      "brand": "Terrexine LC (Univet Co.)",
+      "generic": "Cefalexin + Kanamycin",
+      "species": "cattle"
+    },
+    {
+      "id": "251",
+      "brand": "Iveen (Adwia)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "252",
+      "brand": "Paramectin (Pharma swede)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "253",
+      "brand": "Ivermectin 1% (UCCMA - Ghannam)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "254",
+      "brand": "Opimec (OPI pharma)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "255",
+      "brand": "Avimec (Avico)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "256",
+      "brand": "Alfamec 1% (Elyoser (Alfasan))",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "257",
+      "brand": "Noromectin (Norbrook)",
+      "generic": "Ivermectin",
+      "species": "cattle"
+    },
+    {
+      "id": "258",
+      "brand": "Promectine (Livisto (Invesa))",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "259",
+      "brand": "Nitmectin (Atco pharma)",
+      "generic": "Ivermectin",
+      "species": "cattle"
+    },
+    {
+      "id": "260",
+      "brand": "Nasromectin (El-Nasr)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "262",
+      "brand": "Ivomax (Amoun)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "263",
+      "brand": "Ivomec (Merial)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "264",
+      "brand": "Paramectin super (Pharma swede)",
+      "generic": "Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "265",
+      "brand": "Iveen plus (Adwia)",
+      "generic": "Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "266",
+      "brand": "Ivermectin super (Arabcomed)",
+      "generic": "Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "267",
+      "brand": "Avimec super (Avico)",
+      "generic": "Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "268",
+      "brand": "Kemec super (El kenana group)",
+      "generic": "Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "269",
+      "brand": "Iverplus (N/A)",
+      "generic": "Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "270",
+      "brand": "Extramectine (Atco pharma)",
+      "generic": "Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "271",
+      "brand": "Tectin super (Mobedco)",
+      "generic": "Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "272",
+      "brand": "Iveruccma plus (UCCMA - Ghannam)",
+      "generic": "Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "273",
+      "brand": "Ivomec Super (Merial)",
+      "generic": "Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "274",
+      "brand": "Delmectin super (Delta Pharma)",
+      "generic": "Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "275",
+      "brand": "Dectomax (Zoetis)",
+      "generic": "Doramectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "276",
+      "brand": "Levamisole 7.5% (Adwia)",
+      "generic": "Levamisole",
+      "species": "large_animal"
+    },
+    {
+      "id": "277",
+      "brand": "Levapan 10% (Pharma swede)",
+      "generic": "Levamisole",
+      "species": "large_animal"
+    },
+    {
+      "id": "278",
+      "brand": "Avisole 10% (Avico)",
+      "generic": "Levamisole",
+      "species": "large_animal"
+    },
+    {
+      "id": "279",
+      "brand": "Memphazole 10% (Memphis)",
+      "generic": "Levamisole",
+      "species": "large_animal"
+    },
+    {
+      "id": "280",
+      "brand": "Levamisole 7.5% (El-Nasr)",
+      "generic": "Levamisole",
+      "species": "large_animal"
+    },
+    {
+      "id": "281",
+      "brand": "Opi-levasole 7.5% (OPI pharma)",
+      "generic": "Levamisole",
+      "species": "large_animal"
+    },
+    {
+      "id": "282",
+      "brand": "Levacide 7.5% (Norbrook)",
+      "generic": "Levamisole",
+      "species": "large_animal"
+    },
+    {
+      "id": "283",
+      "brand": "Atomisol 7.5% (Atco pharma)",
+      "generic": "Levamisole",
+      "species": "large_animal"
+    },
+    {
+      "id": "284",
+      "brand": "Flucare 34% (Adwia)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "285",
+      "brand": "Dovix 25% (Arabcomed)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "286",
+      "brand": "Kenavox (El kenana group)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "287",
+      "brand": "Do-Nex (Atco pharma)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "288",
+      "brand": "Distomicide (A M group)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "289",
+      "brand": "Dovenix (Merial)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "290",
+      "brand": "Fasciolid 25% (CID Co.)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "291",
+      "brand": "Fasciodel 34% (Delta Pharma)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "292",
+      "brand": "Fasciontel (Tornel)",
+      "generic": "Closantel",
+      "species": "large_animal"
+    },
+    {
+      "id": "293",
+      "brand": "Caliersantel (N/A)",
+      "generic": "Closantel",
+      "species": "large_animal"
+    },
+    {
+      "id": "294",
+      "brand": "Iveclosa (Avico)",
+      "generic": "Ivermectin + Closantel",
+      "species": "large_animal"
+    },
+    {
+      "id": "295",
+      "brand": "Rafoxanide 7.5% (Arabcomed)",
+      "generic": "Rafoxanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "296",
+      "brand": "Flukanil 7.5% (Pharma swede)",
+      "generic": "Rafoxanide",
+      "species": "cattle"
+    },
+    {
+      "id": "297",
+      "brand": "Rafoxaject 7.5% (El kenana group)",
+      "generic": "Rafoxanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "298",
+      "brand": "Ramectin (Avico)",
+      "generic": "Rafoxanide + Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "300",
+      "brand": "Tylovet (Pharma swede)",
+      "generic": "Tylosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "301",
+      "brand": "Tydovet (Pharma swede)",
+      "generic": "Tylosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "302",
+      "brand": "Bisolvon (Boehringer Ingelheim)",
+      "generic": "Bromohexine HCL",
+      "species": "large_animal"
+    },
+    {
+      "id": "303",
+      "brand": "Mucosolvan (Boehringer Ingelheim)",
+      "generic": "Ambroxol HCL",
+      "species": "large_animal"
+    },
+    {
+      "id": "304",
+      "brand": "Longamox (Vetoquinol)",
+      "generic": "Amoxicillin",
+      "species": "large_animal"
+    },
+    {
+      "id": "305",
+      "brand": "Oxy five (Arabcomed)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "307",
+      "brand": "Streptosoid (Pharma swede)",
+      "generic": "Streptomycin",
+      "species": "poultry"
+    },
+    {
+      "id": "310",
+      "brand": "Bactilow (Badr Pharma)",
+      "generic": "Florfenicol",
+      "species": "large_animal"
+    },
+    {
+      "id": "311",
+      "brand": "Bomectin (Bayer)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "312",
+      "brand": "Baytril 10% (Bayer)",
+      "generic": "Enrofloxacin",
+      "species": "cattle"
+    },
+    {
+      "id": "313",
+      "brand": "Diurizone (Vetoquinol)",
+      "generic": "Hydrochlorothiazide + Dexamethasone",
+      "species": "large_animal"
+    },
+    {
+      "id": "314",
+      "brand": "Mannitol 20% (Hospira)",
+      "generic": "Mannitol",
+      "species": "large_animal"
+    },
+    {
+      "id": "315",
+      "brand": "Menadione Sodium Bisulfite (Arabcomed)",
+      "generic": "Menadione (vit k3)",
+      "species": "large_animal"
+    },
+    {
+      "id": "316",
+      "brand": "Sulphaject 33.3 (Drugest)",
+      "generic": "Sulphadimidine",
+      "species": "large_animal"
+    },
+    {
+      "id": "317",
+      "brand": "Rafo 7.5% (Primavet)",
+      "generic": "Rafoxanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "319",
+      "brand": "Phenylzone (Taba medical pharma)",
+      "generic": "Phenylbutazone",
+      "species": "large_animal"
+    },
+    {
+      "id": "320",
+      "brand": "Amri-K (Alamriya)",
+      "generic": "Vitamin K",
+      "species": "large_animal"
+    },
+    {
+      "id": "321",
+      "brand": "Fenazol (Medmac)",
+      "generic": "Oxfendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "323",
+      "brand": "Enrobact (N/A)",
+      "generic": "Enrofloxacin",
+      "species": "large_animal"
+    },
+    {
+      "id": "327",
+      "brand": "Atropine sulphate 1% (El-Nasr)",
+      "generic": "Atropine sulphate",
+      "species": "cattle"
+    },
+    {
+      "id": "328",
+      "brand": "Atromed (Arabcomed)",
+      "generic": "Atropine sulphate",
+      "species": "large_animal"
+    },
+    {
+      "id": "329",
+      "brand": "Disodium Edetate (N/A)",
+      "generic": "Disodium Edetate (EDTA)",
+      "species": "large_animal"
+    },
+    {
+      "id": "330",
+      "brand": "Toxogonin (N/A)",
+      "generic": "Obidoxime Chloride",
+      "species": "large_animal"
+    },
+    {
+      "id": "331",
+      "brand": "Dimercaprol (N/A)",
+      "generic": "Dimercaprol (BAL)",
+      "species": "large_animal"
+    },
+    {
+      "id": "332",
+      "brand": "Artamin 250 (Sandoz)",
+      "generic": "Penicillamine",
+      "species": "large_animal"
+    },
+    {
+      "id": "335",
+      "brand": "Methylene Blue (N/A)",
+      "generic": "Methylene Blue",
+      "species": "large_animal"
+    },
+    {
+      "id": "357",
+      "brand": "Forloxin (N/A)",
+      "generic": "Tylosin + Fosfomycin + Ketoprofen",
+      "species": "poultry"
+    },
+    {
+      "id": "361",
+      "brand": "Lydaxx (Vetoquinol)",
+      "generic": "Tulathromycin",
+      "species": "cattle"
+    },
+    {
+      "id": "368",
+      "brand": "Alternogest (N/A)",
+      "generic": "Progesterone",
+      "species": "large_animal"
+    },
+    {
+      "id": "380",
+      "brand": "Streptosoid (Pharma swede)",
+      "generic": "Streptomycin",
+      "species": "poultry"
+    },
+    {
+      "id": "386",
+      "brand": "Univet Multidose (Univet Co.)",
+      "generic": "Rafoxanide + Levamisole",
+      "species": "large_animal"
+    },
+    {
+      "id": "390",
+      "brand": "Avimec liquid (Avico)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "391",
+      "brand": "Osimectin 80 (Arabcomed)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "392",
+      "brand": "Curafluke 10% (Univet Co.)",
+      "generic": "Fenbendazole + Rafoxanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "393",
+      "brand": "Avimec Pour-on (Avico)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "395",
+      "brand": "Levamisole (Avico)",
+      "generic": "Levamisole",
+      "species": "poultry"
+    },
+    {
+      "id": "398",
+      "brand": "Rafoxanide 3% (Memphis)",
+      "generic": "Rafoxanide",
+      "species": "sheep_goat"
+    },
+    {
+      "id": "399",
+      "brand": "Flukanil Bolus (Pharma swede)",
+      "generic": "Rafoxanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "401",
+      "brand": "Albendazole 2.5% (Arabcomed)",
+      "generic": "Albendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "403",
+      "brand": "Tramazole 10% (Univet Co.)",
+      "generic": "Albendazole",
+      "species": "cattle"
+    },
+    {
+      "id": "404",
+      "brand": "Gastole (Adwia)",
+      "generic": "Ivermectin + Triclabendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "405",
+      "brand": "Fluke-scan (Arabcomed)",
+      "generic": "Triclabendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "406",
+      "brand": "Flukazole (MAPCO)",
+      "generic": "Triclabendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "407",
+      "brand": "Kenafash D100 (El kenana group)",
+      "generic": "Triclabendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "408",
+      "brand": "Zanil (MSD Co. (Intervet))",
+      "generic": "Oxyclozanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "409",
+      "brand": "Douvistome (Ceva Co.)",
+      "generic": "Oxyclozanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "410",
+      "brand": "Banmith (Zoetis)",
+      "generic": "Pyrental tartarate",
+      "species": "large_animal"
+    },
+    {
+      "id": "411",
+      "brand": "Panacur 10% (MSD Co. (Intervet))",
+      "generic": "Fenbendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "412",
+      "brand": "Curazole 5% (Univet Co.)",
+      "generic": "Fenbendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "417",
+      "brand": "Diclowat (Al Watanyea)",
+      "generic": "Diclofenac sodium",
+      "species": "large_animal"
+    },
+    {
+      "id": "418",
+      "brand": "Piperazine citrate (Arabcomed)",
+      "generic": "Piperazine",
+      "species": "large_animal"
+    },
+    {
+      "id": "419",
+      "brand": "Analgexvet (Alexandria Co.)",
+      "generic": "Dipyrone",
+      "species": "large_animal"
+    },
+    {
+      "id": "420",
+      "brand": "Anthimizol (Pharma swede)",
+      "generic": "Tetramisole",
+      "species": "large_animal"
+    },
+    {
+      "id": "421",
+      "brand": "Tetramisole (Avico)",
+      "generic": "Tetramisole",
+      "species": "large_animal"
+    },
+    {
+      "id": "422",
+      "brand": "Bovinex (Avico)",
+      "generic": "Levamisole + Triclabendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "423",
+      "brand": "Eradex Forte (Pharma swede)",
+      "generic": "Levamisole + Triclabendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "424",
+      "brand": "Trimisol (Atco pharma)",
+      "generic": "Levamisole + Triclabendazole",
+      "species": "cattle"
+    },
+    {
+      "id": "426",
+      "brand": "Oxy-zole (Avico)",
+      "generic": "Levamisole + Oxyclozanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "427",
+      "brand": "Levazanide (Delta Pharma)",
+      "generic": "Levamisole + Oxyclozanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "428",
+      "brand": "Levanide (Atco pharma)",
+      "generic": "Levamisole + Oxyclozanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "429",
+      "brand": "Trimec (Pharma swede)",
+      "generic": "Ivermectin + Triclabendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "430",
+      "brand": "Trimectin cattle (Avico)",
+      "generic": "Ivermectin + Triclabendazole",
+      "species": "cattle"
+    },
+    {
+      "id": "431",
+      "brand": "Curafluke 5% (Univet Co.)",
+      "generic": "Fenbendazole + Rafoxanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "432",
+      "brand": "Imidocarb (Adwia)",
+      "generic": "Imidocarb",
+      "species": "large_animal"
+    },
+    {
+      "id": "433",
+      "brand": "Imidoject (Arabcomed)",
+      "generic": "Imidocarb",
+      "species": "large_animal"
+    },
+    {
+      "id": "435",
+      "brand": "Imidodel (Delta Pharma)",
+      "generic": "Imidocarb",
+      "species": "large_animal"
+    },
+    {
+      "id": "438",
+      "brand": "Intropar (Pharma swede)",
+      "generic": "Diminazene Aceturate + Phenazone",
+      "species": "large_animal"
+    },
+    {
+      "id": "439",
+      "brand": "Trypa-ject (Adwia)",
+      "generic": "Diminazene Aceturate + Phenazone",
+      "species": "large_animal"
+    },
+    {
+      "id": "440",
+      "brand": "Batrynil (Arabcomed)",
+      "generic": "Diminazene Aceturate + Phenazone",
+      "species": "large_animal"
+    },
+    {
+      "id": "441",
+      "brand": "Avinazene (Avico)",
+      "generic": "Diminazene Aceturate",
+      "species": "large_animal"
+    },
+    {
+      "id": "442",
+      "brand": "Minazine plus (MAPCO)",
+      "generic": "Diminazene Aceturate + Phenazone",
+      "species": "large_animal"
+    },
+    {
+      "id": "443",
+      "brand": "Theilcure (Pharma swede)",
+      "generic": "Buparvaquone",
+      "species": "large_animal"
+    },
+    {
+      "id": "444",
+      "brand": "Butaject (Adwia)",
+      "generic": "Buparvaquone",
+      "species": "large_animal"
+    },
+    {
+      "id": "445",
+      "brand": "Noutalex (Arabcomed)",
+      "generic": "Buparvaquone",
+      "species": "large_animal"
+    },
+    {
+      "id": "446",
+      "brand": "Aviquone (Avico)",
+      "generic": "Buparvaquone",
+      "species": "large_animal"
+    },
+    {
+      "id": "448",
+      "brand": "Butakel (kela Co.)",
+      "generic": "Buparvaquone",
+      "species": "cattle"
+    },
+    {
+      "id": "465",
+      "brand": "Fenadol 5% (N/A)",
+      "generic": "Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "468",
+      "brand": "Ultra b (MSD Co. (Intervet))",
+      "generic": "Vitamin B1 + Vitamin B6",
+      "species": "large_animal"
+    },
+    {
+      "id": "469",
+      "brand": "Terramycin (Zoetis)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "470",
+      "brand": "Butasyl (Zoetis)",
+      "generic": "Phenylbutazone + Na salicylate",
+      "species": "large_animal"
+    },
+    {
+      "id": "471",
+      "brand": "Floxamarb (EIPICO)",
+      "generic": "Marbofloxacin",
+      "species": "large_animal"
+    },
+    {
+      "id": "472",
+      "brand": "Bimastat (Bimeda Co.)",
+      "generic": "Sulphadiazine + Neomycin",
+      "species": "cattle"
+    },
+    {
+      "id": "473",
+      "brand": "L-Spec 5 /10 (VMD Pharma)",
+      "generic": "Lincomycin + Spectinomycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "477",
+      "brand": "Engemycin 10% (MSD Co. (Intervet))",
+      "generic": "Oxytetracycline",
+      "species": "cattle"
+    },
+    {
+      "id": "478",
+      "brand": "Sulphadimidine (UCCMA - Ghannam)",
+      "generic": "Sulphadimidine",
+      "species": "large_animal"
+    },
+    {
+      "id": "480",
+      "brand": "Tramazole 2.5% (Univet Co.)",
+      "generic": "Albendazole",
+      "species": "cattle"
+    },
+    {
+      "id": "481",
+      "brand": "Marbocyl 2% (Vetoquinol)",
+      "generic": "Marbofloxacin",
+      "species": "large_animal"
+    },
+    {
+      "id": "485",
+      "brand": "Analgin 50% (El-Nasr)",
+      "generic": "Dipyrone",
+      "species": "large_animal"
+    },
+    {
+      "id": "486",
+      "brand": "Vetragin 50 (Adwia)",
+      "generic": "Dipyrone",
+      "species": "large_animal"
+    },
+    {
+      "id": "492",
+      "brand": "Adwigmine (Adwia)",
+      "generic": "Neostigmine",
+      "species": "large_animal"
+    },
+    {
+      "id": "495",
+      "brand": "Synuclav (Norbrook)",
+      "generic": "Amoxicillin + Clavulanic acid",
+      "species": "large_animal"
+    },
+    {
+      "id": "497",
+      "brand": "Rafoxanide 3% (Arabcomed)",
+      "generic": "Rafoxanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "498",
+      "brand": "Triclazole (Eva pharma)",
+      "generic": "Triclabendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "499",
+      "brand": "Phosphogene (N/A)",
+      "generic": "Toldimfos",
+      "species": "large_animal"
+    },
+    {
+      "id": "503",
+      "brand": "Vita-K (Pharma swede)",
+      "generic": "Vitamin K",
+      "species": "poultry"
+    },
+    {
+      "id": "505",
+      "brand": "Atco-tylan 80% (Atco pharma)",
+      "generic": "Tylosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "512",
+      "brand": "Amoxinject LA (Bremer Pharma)",
+      "generic": "Amoxicillin",
+      "species": "large_animal"
+    },
+    {
+      "id": "513",
+      "brand": "Vetrimoxin LA (Ceva Co.)",
+      "generic": "Amoxicillin",
+      "species": "large_animal"
+    },
+    {
+      "id": "514",
+      "brand": "Invemox 15% LA (Livisto (Invesa))",
+      "generic": "Amoxicillin",
+      "species": "large_animal"
+    },
+    {
+      "id": "516",
+      "brand": "S.Pen (Atco pharma)",
+      "generic": "Penicillin G + Streptomycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "517",
+      "brand": "Medgent 5% (Arabcomed)",
+      "generic": "Gentamicin",
+      "species": "large_animal"
+    },
+    {
+      "id": "518",
+      "brand": "Analgin 50 (Arabcomed)",
+      "generic": "Dipyrone",
+      "species": "large_animal"
+    },
+    {
+      "id": "519",
+      "brand": "Amoxan (Atco pharma)",
+      "generic": "Amoxicillin",
+      "species": "large_animal"
+    },
+    {
+      "id": "521",
+      "brand": "Avitryl 20% (Avico)",
+      "generic": "Enrofloxacin",
+      "species": "large_animal"
+    },
+    {
+      "id": "522",
+      "brand": "Medgent 10% (Arabcomed)",
+      "generic": "Gentamicin",
+      "species": "large_animal"
+    },
+    {
+      "id": "523",
+      "brand": "Gentaprima 10% (Primavet)",
+      "generic": "Gentamicin",
+      "species": "large_animal"
+    },
+    {
+      "id": "524",
+      "brand": "Gentacin 10% (MAPCO)",
+      "generic": "Gentamicin",
+      "species": "large_animal"
+    },
+    {
+      "id": "525",
+      "brand": "Avistrep (Avico)",
+      "generic": "Penicillin G + Streptomycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "526",
+      "brand": "Gentacure-10 (Pharma swede)",
+      "generic": "Gentamicin",
+      "species": "large_animal"
+    },
+    {
+      "id": "527",
+      "brand": "Pentomycin (Univet Co.)",
+      "generic": "Penicillin G + Streptomycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "528",
+      "brand": "Penbex (Livisto (Invesa))",
+      "generic": "Penicillin G + Streptomycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "529",
+      "brand": "Combikel 40 LA (kela Co.)",
+      "generic": "Penicillin G + Streptomycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "530",
+      "brand": "Pen & Strep (Norbrook)",
+      "generic": "Penicillin G + Streptomycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "531",
+      "brand": "Cefotaxime (Primavet)",
+      "generic": "Cefotaxime",
+      "species": "large_animal"
+    },
+    {
+      "id": "534",
+      "brand": "Cevaxel RTU (Ceva Co.)",
+      "generic": "Ceftiofur",
+      "species": "cattle"
+    },
+    {
+      "id": "535",
+      "brand": "Kenafur (El kenana group)",
+      "generic": "Ceftiofur",
+      "species": "poultry"
+    },
+    {
+      "id": "536",
+      "brand": "Eficur (HIPRA Co.)",
+      "generic": "Ceftiofur",
+      "species": "large_animal"
+    },
+    {
+      "id": "537",
+      "brand": "Ceftiocyl (Vetoquinol)",
+      "generic": "Ceftiofur",
+      "species": "cattle"
+    },
+    {
+      "id": "539",
+      "brand": "Curazole 10% (Univet Co.)",
+      "generic": "Fenbendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "540",
+      "brand": "Ranide (Univet Co.)",
+      "generic": "Rafoxanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "541",
+      "brand": "Trymox LA (Univet Co.)",
+      "generic": "Amoxicillin",
+      "species": "large_animal"
+    },
+    {
+      "id": "542",
+      "brand": "Oxyject 20% LA (Adwia)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "543",
+      "brand": "Spectropan 5% (Pharma swede)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "544",
+      "brand": "Avicycline 20% (Avico)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "545",
+      "brand": "Oxy 20% LA (Arabcomed)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "546",
+      "brand": "Retradoxy 20 LA (VMD Pharma)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "547",
+      "brand": "Oxyprima 20% (Primavet)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "548",
+      "brand": "Delta Oxy 5% (Delta Pharma)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "549",
+      "brand": "Alamycin LA 20% (Norbrook)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "551",
+      "brand": "Oxytetra 20% LA (kela Co.)",
+      "generic": "Oxytetracycline",
+      "species": "cattle"
+    },
+    {
+      "id": "552",
+      "brand": "Aviflox (Avico)",
+      "generic": "Oxytetracycline + Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "553",
+      "brand": "Oxyflu LA (Arabcomed)",
+      "generic": "Oxytetracycline + Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "554",
+      "brand": "Delta Oxy plus LA (Delta Pharma)",
+      "generic": "Oxytetracycline + Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "556",
+      "brand": "Floxon (Pharma swede)",
+      "generic": "Oxytetracycline + Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "557",
+      "brand": "Oxymeg LA (Adwia)",
+      "generic": "Oxytetracycline + Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "558",
+      "brand": "Oxyvet-pharma (Pharma swede)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "559",
+      "brand": "Delta Oxy (Delta Pharma)",
+      "generic": "Oxytetracycline",
+      "species": "cattle"
+    },
+    {
+      "id": "560",
+      "brand": "Tylosin Avico 20%",
+      "generic": "Tylosin",
+      "species": "cattle"
+    },
+    {
+      "id": "561",
+      "brand": "Tylovet 20% (Pharma swede)",
+      "generic": "Tylosin",
+      "species": "poultry"
+    },
+    {
+      "id": "562",
+      "brand": "Tyloplex 20% (MAPCO)",
+      "generic": "Tylosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "563",
+      "brand": "Delta Tylo 20% (Delta Pharma)",
+      "generic": "Tylosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "564",
+      "brand": "Tylo 20% (Primavet)",
+      "generic": "Tylosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "565",
+      "brand": "Macroject (Atco pharma)",
+      "generic": "Tylosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "566",
+      "brand": "Tilmoject 30% (Arabcomed)",
+      "generic": "Tilmicosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "567",
+      "brand": "Tilmovet 30% (Atco pharma)",
+      "generic": "Tilmicosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "570",
+      "brand": "Cosivet 30% (Delta Pharma)",
+      "generic": "Tilmicosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "571",
+      "brand": "Draxxin (Zoetis)",
+      "generic": "Tulathromycin",
+      "species": "cattle"
+    },
+    {
+      "id": "572",
+      "brand": "Tulaxin (Avico)",
+      "generic": "Tulathromycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "573",
+      "brand": "Zuprevo (MSD Co. (Intervet))",
+      "generic": "Tildipirosin",
+      "species": "cattle"
+    },
+    {
+      "id": "574",
+      "brand": "Spirovet (Ceva Co.)",
+      "generic": "Spiramycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "575",
+      "brand": "Tylokel 20 (kela Co.)",
+      "generic": "Tylosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "576",
+      "brand": "Floxad 10% (Pharma swede)",
+      "generic": "Enrofloxacin",
+      "species": "large_animal"
+    },
+    {
+      "id": "577",
+      "brand": "Avitryl 10% (Avico)",
+      "generic": "Enrofloxacin",
+      "species": "large_animal"
+    },
+    {
+      "id": "578",
+      "brand": "Baytril 5% (Bayer)",
+      "generic": "Enrofloxacin",
+      "species": "cattle"
+    },
+    {
+      "id": "579",
+      "brand": "Advocin (Zoetis)",
+      "generic": "Danofloxacin",
+      "species": "cattle"
+    },
+    {
+      "id": "580",
+      "brand": "Danocin (Adwia)",
+      "generic": "Danofloxacin",
+      "species": "large_animal"
+    },
+    {
+      "id": "581",
+      "brand": "Marbox (Ceva Co.)",
+      "generic": "Marbofloxacin",
+      "species": "large_animal"
+    },
+    {
+      "id": "582",
+      "brand": "Marbocyl 10% (Vetoquinol)",
+      "generic": "Marbofloxacin",
+      "species": "cattle"
+    },
+    {
+      "id": "583",
+      "brand": "Sulphadimidine (Arabcomed)",
+      "generic": "Sulphadimidine",
+      "species": "large_animal"
+    },
+    {
+      "id": "584",
+      "brand": "Injectal (Sulphastate) (Pharma swede)",
+      "generic": "Sulphadimidine",
+      "species": "large_animal"
+    },
+    {
+      "id": "585",
+      "brand": "Avisulpha (Avico)",
+      "generic": "Sulphadimidine",
+      "species": "large_animal"
+    },
+    {
+      "id": "586",
+      "brand": "Zeleris (Ceva Co.)",
+      "generic": "Florfenicol + Meloxicam",
+      "species": "cattle"
+    },
+    {
+      "id": "587",
+      "brand": "Colitrim (Pharma swede)",
+      "generic": "Sulphadiazine + Trimethoprim",
+      "species": "large_animal"
+    },
+    {
+      "id": "588",
+      "brand": "Coliprim (Avico)",
+      "generic": "Sulphadiazine + Trimethoprim",
+      "species": "large_animal"
+    },
+    {
+      "id": "589",
+      "brand": "Aquaprim (Univet Co.)",
+      "generic": "Sulphadiazine + Trimethoprim",
+      "species": "cattle"
+    },
+    {
+      "id": "591",
+      "brand": "Sulphadoxin & Tri (Adwia)",
+      "generic": "Sulphadoxine + Trimethoprim",
+      "species": "large_animal"
+    },
+    {
+      "id": "592",
+      "brand": "Methodoxin (Arabcomed)",
+      "generic": "Sulphadoxine + Trimethoprim",
+      "species": "large_animal"
+    },
+    {
+      "id": "593",
+      "brand": "Sulpha plus (Delta Pharma)",
+      "generic": "Sulphadoxine + Trimethoprim",
+      "species": "large_animal"
+    },
+    {
+      "id": "594",
+      "brand": "Borgal 24% (MSD Co. (Intervet))",
+      "generic": "Sulphadoxine + Trimethoprim",
+      "species": "large_animal"
+    },
+    {
+      "id": "597",
+      "brand": "Floricol (Pharma swede)",
+      "generic": "Florfenicol",
+      "species": "large_animal"
+    },
+    {
+      "id": "598",
+      "brand": "Delficol 30% (Delta Pharma)",
+      "generic": "Florfenicol",
+      "species": "large_animal"
+    },
+    {
+      "id": "599",
+      "brand": "Aviflor (Avico)",
+      "generic": "Florfenicol",
+      "species": "cattle"
+    },
+    {
+      "id": "600",
+      "brand": "Floromed 30% (Arabcomed)",
+      "generic": "Florfenicol",
+      "species": "large_animal"
+    },
+    {
+      "id": "601",
+      "brand": "Nuflor (MSD Co. (Intervet))",
+      "generic": "Florfenicol",
+      "species": "cattle"
+    },
+    {
+      "id": "602",
+      "brand": "Selectan (HIPRA Co.)",
+      "generic": "Florfenicol",
+      "species": "large_animal"
+    },
+    {
+      "id": "603",
+      "brand": "Ato Fenicol 200 (Atco pharma)",
+      "generic": "Florfenicol",
+      "species": "cattle"
+    },
+    {
+      "id": "604",
+      "brand": "Florkem (Ceva Co.)",
+      "generic": "Florfenicol",
+      "species": "large_animal"
+    },
+    {
+      "id": "605",
+      "brand": "Florflox (Avico)",
+      "generic": "Florfenicol + Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "606",
+      "brand": "Intramix (Science Med Co.)",
+      "generic": "Florfenicol + Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "607",
+      "brand": "Injectomeg (Adwia)",
+      "generic": "Florfenicol + Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "608",
+      "brand": "Resflor (MSD Co. (Intervet))",
+      "generic": "Florfenicol + Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "609",
+      "brand": "Ketamine (N/A)",
+      "generic": "Ketamine HCL",
+      "species": "large_animal"
+    },
+    {
+      "id": "610",
+      "brand": "Tripelene (Adwia)",
+      "generic": "Tripelennamine HCL",
+      "species": "large_animal"
+    },
+    {
+      "id": "612",
+      "brand": "Colitrim (Pharma swede)",
+      "generic": "Sulphadiazine + Trimethoprim",
+      "species": "large_animal"
+    },
+    {
+      "id": "615",
+      "brand": "Ademec LA (Bullvet >> sama vet pharm)",
+      "generic": "Ivermectin + Vitamin AD3E",
+      "species": "large_animal"
+    },
+    {
+      "id": "616",
+      "brand": "Duocycline LA (Univet Co.)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "617",
+      "brand": "Dovemix (Bullvet >> sama vet pharm)",
+      "generic": "Nitroxynil + Cyanocobalamin",
+      "species": "large_animal"
+    },
+    {
+      "id": "618",
+      "brand": "Kenazuril 2.5% (El kenana group)",
+      "generic": "Toltrazuril",
+      "species": "poultry"
+    },
+    {
+      "id": "619",
+      "brand": "Diminsan (Arabcomed)",
+      "generic": "Diminazene Aceturate + Phenazone",
+      "species": "large_animal"
+    },
+    {
+      "id": "626",
+      "brand": "Vetrocin (El-Nasr)",
+      "generic": "Penicillin G + Streptomycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "628",
+      "brand": "Cotrimed (Arabcomed)",
+      "generic": "Sulphadiazine + Trimethoprim",
+      "species": "large_animal"
+    },
+    {
+      "id": "632",
+      "brand": "Arthenile (Raa Pharma)",
+      "generic": "Phenylbutazone + Na salicylate",
+      "species": "large_animal"
+    },
+    {
+      "id": "633",
+      "brand": "Flukiless 34% (Badr Pharma)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "634",
+      "brand": "Vamizole 7.5% (Badr Pharma)",
+      "generic": "Levamisole",
+      "species": "large_animal"
+    },
+    {
+      "id": "635",
+      "brand": "Spectovet (Mebedco)",
+      "generic": "Lincomycin + Spectinomycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "636",
+      "brand": "Maroflam (Badr Pharma)",
+      "generic": "Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "637",
+      "brand": "Enterocillin 20% (Badr Pharma)",
+      "generic": "Oxytetracycline",
+      "species": "cattle"
+    },
+    {
+      "id": "639",
+      "brand": "Curamenth (Adwia)",
+      "generic": "Nitroxynil + Ivermectin + Clorsulon",
+      "species": "cattle"
+    },
+    {
+      "id": "641",
+      "brand": "Clamoxyl LA (Zoetis)",
+      "generic": "Amoxicillin",
+      "species": "large_animal"
+    },
+    {
+      "id": "643",
+      "brand": "Gentamox (HIPRA Co.)",
+      "generic": "Amoxicillin + Gentamicin",
+      "species": "large_animal"
+    },
+    {
+      "id": "648",
+      "brand": "Mactilan (Badr Pharma)",
+      "generic": "Doramectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "650",
+      "brand": "Doradect (Arabcomed)",
+      "generic": "Doramectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "651",
+      "brand": "Kelbomar (kela Co.)",
+      "generic": "Marbofloxacin",
+      "species": "large_animal"
+    },
+    {
+      "id": "652",
+      "brand": "Buscovet Compositum (Arabcomed)",
+      "generic": "Butylscopolamine + Metamizole",
+      "species": "large_animal"
+    },
+    {
+      "id": "653",
+      "brand": "Tolfimate (Arabcomed)",
+      "generic": "Tolfenamic Acid",
+      "species": "large_animal"
+    },
+    {
+      "id": "659",
+      "brand": "Aviphosphan (Avico)",
+      "generic": "Toldimfos + B Complex",
+      "species": "large_animal"
+    },
+    {
+      "id": "660",
+      "brand": "Cabutazone (Pharma swede)",
+      "generic": "Phenylbutazone",
+      "species": "large_animal"
+    },
+    {
+      "id": "661",
+      "brand": "Fasciocure 34% (Pharma swede)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "662",
+      "brand": "Tulthroswede (Pharma swede)",
+      "generic": "Tulathromycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "663",
+      "brand": "Tremazanide (Pharma swede)",
+      "generic": "Oxyclozanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "664",
+      "brand": "Triclafluke (Pharma swede)",
+      "generic": "Triclabendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "665",
+      "brand": "Albendazole 2.5% (Pharma swede)",
+      "generic": "Albendazole",
+      "species": "cattle"
+    },
+    {
+      "id": "666",
+      "brand": "Albendazole 5% (Pharma swede)",
+      "generic": "Albendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "667",
+      "brand": "Flostac 50% (Pharma swede)",
+      "generic": "Dipyrone",
+      "species": "large_animal"
+    },
+    {
+      "id": "670",
+      "brand": "Closaverm (Pharma swede)",
+      "generic": "Ivermectin + Closantel",
+      "species": "large_animal"
+    },
+    {
+      "id": "672",
+      "brand": "Levafluke (Pharma swede)",
+      "generic": "Levamisole + Oxyclozanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "673",
+      "brand": "Megluflor (Pharma swede)",
+      "generic": "Florfenicol + Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "674",
+      "brand": "Morprofen (Pharma swede)",
+      "generic": "Carprofen",
+      "species": "large_animal"
+    },
+    {
+      "id": "677",
+      "brand": "Oxyclear (Pharma swede)",
+      "generic": "Oxytetracycline + Bromhexine + Lidocaine",
+      "species": "large_animal"
+    },
+    {
+      "id": "678",
+      "brand": "Parabenzole Bolus (Pharma swede)",
+      "generic": "Albendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "679",
+      "brand": "Spectropan 20% LA (Pharma swede)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "680",
+      "brand": "Spectropan-10 (Pharma swede)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "681",
+      "brand": "Parafluke (Pharma swede)",
+      "generic": "Fenbendazole + Rafoxanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "682",
+      "brand": "Oramectin (Pharma swede)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "683",
+      "brand": "Imicarbzole (Pharma swede)",
+      "generic": "Imidocarb",
+      "species": "large_animal"
+    },
+    {
+      "id": "685",
+      "brand": "Nitrolid 34% (Raa Pharma)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "686",
+      "brand": "Trimetox 240 (Veyx)",
+      "generic": "Sulphadoxine + Trimethoprim",
+      "species": "large_animal"
+    },
+    {
+      "id": "688",
+      "brand": "Masti Kel (kela Co.)",
+      "generic": "Penicillin G + Neomycin",
+      "species": "cattle"
+    },
+    {
+      "id": "690",
+      "brand": "Tonotest (Drugest)",
+      "generic": "Toldimfos",
+      "species": "large_animal"
+    },
+    {
+      "id": "691",
+      "brand": "Zero-Mec (Avico)",
+      "generic": "Eprinomectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "692",
+      "brand": "Trypa stop (Avico)",
+      "generic": "Quinapyramine",
+      "species": "large_animal"
+    },
+    {
+      "id": "693",
+      "brand": "Pyrogesic (Avico)",
+      "generic": "Dipyrone",
+      "species": "large_animal"
+    },
+    {
+      "id": "694",
+      "brand": "Tryban (Avico)",
+      "generic": "Quinapyramine",
+      "species": "large_animal"
+    },
+    {
+      "id": "699",
+      "brand": "Tonophosphan 20% (MSD Co. (Intervet))",
+      "generic": "Toldimfos",
+      "species": "large_animal"
+    },
+    {
+      "id": "702",
+      "brand": "Delta Oxy 20% LA (Delta Pharma)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "703",
+      "brand": "Haemostop (Adwia)",
+      "generic": "Phytomenadione (Vit k1)",
+      "species": "large_animal"
+    },
+    {
+      "id": "704",
+      "brand": "Adwirac (Adwia)",
+      "generic": "Florfenicol",
+      "species": "large_animal"
+    },
+    {
+      "id": "705",
+      "brand": "Pnmol (Adwia)",
+      "generic": "Tylosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "707",
+      "brand": "Atropine (Adwia)",
+      "generic": "Atropine sulphate",
+      "species": "large_animal"
+    },
+    {
+      "id": "708",
+      "brand": "Rafoxanide 7.5% (Adwia)",
+      "generic": "Rafoxanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "709",
+      "brand": "Mamizole (Mam Egypt Pharm)",
+      "generic": "Imidocarb",
+      "species": "large_animal"
+    },
+    {
+      "id": "710",
+      "brand": "Mam Phedine 5% (Mam Egypt Pharm)",
+      "generic": "Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "711",
+      "brand": "Profemat (N/A)",
+      "generic": "Carprofen",
+      "species": "large_animal"
+    },
+    {
+      "id": "713",
+      "brand": "Arthridine (Virbac)",
+      "generic": "Phenylbutazone + Na salicylate",
+      "species": "large_animal"
+    },
+    {
+      "id": "714",
+      "brand": "Amoxil Retard (Syva)",
+      "generic": "Amoxicillin",
+      "species": "large_animal"
+    },
+    {
+      "id": "715",
+      "brand": "Oxyject 5% (Adwia)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "716",
+      "brand": "Melomat (Arabcomed)",
+      "generic": "Meloxicam",
+      "species": "large_animal"
+    },
+    {
+      "id": "717",
+      "brand": "Diagyl (Adwia)",
+      "generic": "Metronidazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "719",
+      "brand": "Mamifort (Syva)",
+      "generic": "Ampicillin + Cloxacillin",
+      "species": "cattle"
+    },
+    {
+      "id": "720",
+      "brand": "Mamifort Secado (Syva)",
+      "generic": "Ampicillin + Cloxacillin",
+      "species": "cattle"
+    },
+    {
+      "id": "721",
+      "brand": "Mam flor (Mam Egypt Pharm)",
+      "generic": "Florfenicol",
+      "species": "large_animal"
+    },
+    {
+      "id": "722",
+      "brand": "Kenazole D100 (El kenana group)",
+      "generic": "Albendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "724",
+      "brand": "Equiveen (Adwia)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "725",
+      "brand": "Strolitine (Nita Pharma)",
+      "generic": "L-Carnitine + Sorbitol + Magnesium",
+      "species": "large_animal"
+    },
+    {
+      "id": "726",
+      "brand": "Oxytetracycline 20% LA (El-Nasr)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "727",
+      "brand": "Oxytetracycline 5% (El-Nasr)",
+      "generic": "Oxytetracycline",
+      "species": "cattle"
+    },
+    {
+      "id": "728",
+      "brand": "Enroflox 10% (El-Nasr)",
+      "generic": "Enrofloxacin",
+      "species": "cattle"
+    },
+    {
+      "id": "729",
+      "brand": "Enroflox 5% (El-Nasr)",
+      "generic": "Enrofloxacin",
+      "species": "cattle"
+    },
+    {
+      "id": "730",
+      "brand": "Gentamycin 10% (El-Nasr)",
+      "generic": "Gentamicin",
+      "species": "large_animal"
+    },
+    {
+      "id": "731",
+      "brand": "Oxy sol (El-Nasr)",
+      "generic": "Oxytetracycline + Gentian Violet",
+      "species": "large_animal"
+    },
+    {
+      "id": "734",
+      "brand": "Neomycin 20% (El-Nasr)",
+      "generic": "Neomycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "735",
+      "brand": "Chloramphenicol (El-Nasr)",
+      "generic": "Chloramphenicol",
+      "species": "large_animal"
+    },
+    {
+      "id": "736",
+      "brand": "Tetramisole (El-Nasr)",
+      "generic": "Tetramisole",
+      "species": "large_animal"
+    },
+    {
+      "id": "737",
+      "brand": "Cocci plus (El-Nasr)",
+      "generic": "Sulphadimethoxine + Diaveridine",
+      "species": "poultry"
+    },
+    {
+      "id": "738",
+      "brand": "Sulphadimidine (El-Nasr)",
+      "generic": "Sulphadimidine",
+      "species": "large_animal"
+    },
+    {
+      "id": "739",
+      "brand": "Tylosin (El-Nasr)",
+      "generic": "Tylosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "740",
+      "brand": "Tilmotech (Techno Pharm)",
+      "generic": "Tilmicosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "741",
+      "brand": "Atobenzole (Atco pharma)",
+      "generic": "Albendazole",
+      "species": "cattle"
+    },
+    {
+      "id": "742",
+      "brand": "Biozuril (Atco pharma)",
+      "generic": "Diclazuril",
+      "species": "large_animal"
+    },
+    {
+      "id": "744",
+      "brand": "Ato Cox (Atco pharma)",
+      "generic": "Toltrazuril",
+      "species": "poultry"
+    },
+    {
+      "id": "747",
+      "brand": "Trivatracin (N/A)",
+      "generic": "Neomycin + Bacitracin + Polymyxin B",
+      "species": "large_animal"
+    },
+    {
+      "id": "748",
+      "brand": "Ovinex (Avico)",
+      "generic": "Levamisole + Triclabendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "749",
+      "brand": "Strolitine (Nita Pharma)",
+      "generic": "L-Carnitine + Sorbitol + Magnesium",
+      "species": "large_animal"
+    },
+    {
+      "id": "751",
+      "brand": "Forcyl 16% (Vetoquinol)",
+      "generic": "Marbofloxacin",
+      "species": "cattle"
+    },
+    {
+      "id": "752",
+      "brand": "Ainil (Livisto (Invesa))",
+      "generic": "Ketoprofen",
+      "species": "large_animal"
+    },
+    {
+      "id": "753",
+      "brand": "Pantetran 5% (Atco pharma)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "754",
+      "brand": "Respifur (Atco pharma)",
+      "generic": "Ceftiofur",
+      "species": "large_animal"
+    },
+    {
+      "id": "757",
+      "brand": "Mectiver (Badr Pharma)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "758",
+      "brand": "New mislonoide (Badr Pharma)",
+      "generic": "Levamisole + Oxyclozanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "759",
+      "brand": "Bovilan (Badr Pharma)",
+      "generic": "Tylosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "760",
+      "brand": "Cefobadr (Badr Pharma)",
+      "generic": "Cefotaxime",
+      "species": "large_animal"
+    },
+    {
+      "id": "761",
+      "brand": "Mycospectin (Badr Pharma)",
+      "generic": "Lincomycin + Spectinomycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "762",
+      "brand": "Enterocillin 5% (Badr Pharma)",
+      "generic": "Oxytetracycline",
+      "species": "cattle"
+    },
+    {
+      "id": "763",
+      "brand": "Anthizole 10% (Badr Pharma)",
+      "generic": "Albendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "764",
+      "brand": "Imidogan (Raa Pharma)",
+      "generic": "Imidocarb",
+      "species": "large_animal"
+    },
+    {
+      "id": "766",
+      "brand": "Novacid (CID Co.)",
+      "generic": "Dipyrone (metamizole)",
+      "species": "large_animal"
+    },
+    {
+      "id": "767",
+      "brand": "Zanidpro (Medmac)",
+      "generic": "Levamisole + Oxyclozanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "768",
+      "brand": "Painclear 2% (N/A)",
+      "generic": "Meloxicam",
+      "species": "large_animal"
+    },
+    {
+      "id": "769",
+      "brand": "Eipifluk 34% (Eipivet)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "770",
+      "brand": "Nematocure (VIG Co.)",
+      "generic": "Levamisole + Oxyclozanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "772",
+      "brand": "Bioflor (Ghannam)",
+      "generic": "Florfenicol",
+      "species": "poultry"
+    },
+    {
+      "id": "774",
+      "brand": "Veyxyl LA 20%",
+      "generic": "Amoxicillin",
+      "species": "large_animal"
+    },
+    {
+      "id": "775",
+      "brand": "Boflox (Livisto (Invesa))",
+      "generic": "Marbofloxacin",
+      "species": "cattle"
+    },
+    {
+      "id": "776",
+      "brand": "Asipyr-v (N/A)",
+      "generic": "Quinuronium sulphate",
+      "species": "large_animal"
+    },
+    {
+      "id": "777",
+      "brand": "Badoprim (Badr Pharma)",
+      "generic": "Sulphadoxine + Trimethoprim",
+      "species": "large_animal"
+    },
+    {
+      "id": "778",
+      "brand": "Draxxin plus (Zoetis)",
+      "generic": "Tulathromycin + Ketoprofen",
+      "species": "cattle"
+    },
+    {
+      "id": "779",
+      "brand": "Fasciolar 25% (Taba medical pharma)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "780",
+      "brand": "Supermycin LA (N/A)",
+      "generic": "Oxytetracycline",
+      "species": "cattle"
+    },
+    {
+      "id": "781",
+      "brand": "Alcofan 6% (Eva pharma)",
+      "generic": "Ketoprofen",
+      "species": "large_animal"
+    },
+    {
+      "id": "782",
+      "brand": "Septotryl (Vetoquinol)",
+      "generic": "Sulphadiazine + Trimethoprim",
+      "species": "large_animal"
+    },
+    {
+      "id": "783",
+      "brand": "Rafotest 7.5% (Drugest)",
+      "generic": "Rafoxanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "784",
+      "brand": "Closamectin (Norbrook)",
+      "generic": "Ivermectin + Closantel",
+      "species": "large_animal"
+    },
+    {
+      "id": "785",
+      "brand": "Oxytetracycline Uccma (UCCMA - Ghannam)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "786",
+      "brand": "Uccmapen (UCCMA - Ghannam)",
+      "generic": "Penicillin G + Streptomycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "788",
+      "brand": "Fasiolato 25% (UCCMA - Ghannam)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "789",
+      "brand": "Rumitone (Eva pharma)",
+      "generic": "Menbutone + Sorbitol",
+      "species": "large_animal"
+    },
+    {
+      "id": "790",
+      "brand": "Meglumine (N/A)",
+      "generic": "Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "791",
+      "brand": "Tectin (Mobedco)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "792",
+      "brand": "Evactin (Eva pharma)",
+      "generic": "Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "793",
+      "brand": "Penikel 300 (kela Co.)",
+      "generic": "Penicillin G",
+      "species": "large_animal"
+    },
+    {
+      "id": "794",
+      "brand": "Flunitetrine (Eva pharma)",
+      "generic": "Oxytetracycline + Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "795",
+      "brand": "Hepatrimed (VIG Co.)",
+      "generic": "Ivermectin + Triclabendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "796",
+      "brand": "Ivermectin 1% (Arabcomed)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "797",
+      "brand": "Levafluke (Pharma swede)",
+      "generic": "Levamisole + Oxyclozanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "798",
+      "brand": "Debonix 25% (DBK Co.)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "799",
+      "brand": "Diclopain 2.5% (Eva pharma)",
+      "generic": "Diclofenac sodium",
+      "species": "large_animal"
+    },
+    {
+      "id": "800",
+      "brand": "Nixyvet (DFV Co.)",
+      "generic": "Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "802",
+      "brand": "Albendazole 2.5% (UCCMA - Ghannam)",
+      "generic": "Albendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "803",
+      "brand": "Cydectin (cattle) (Zoetis)",
+      "generic": "Moxidectin",
+      "species": "cattle"
+    },
+    {
+      "id": "805",
+      "brand": "Cydectin TriclaMox (Zoetis)",
+      "generic": "Moxidectin + Triclabendazole",
+      "species": "sheep_goat"
+    },
+    {
+      "id": "806",
+      "brand": "Cydectin (sheep) (Zoetis)",
+      "generic": "Moxidectin",
+      "species": "sheep_goat"
+    },
+    {
+      "id": "807",
+      "brand": "Florotec 30% (N/A)",
+      "generic": "Florfenicol",
+      "species": "large_animal"
+    },
+    {
+      "id": "808",
+      "brand": "Albendex 2.5% (Avico)",
+      "generic": "Albendazole",
+      "species": "cattle"
+    },
+    {
+      "id": "810",
+      "brand": "Worm-free (N/A)",
+      "generic": "Albendazole",
+      "species": "cattle"
+    },
+    {
+      "id": "811",
+      "brand": "Ivermezol (Eipivet)",
+      "generic": "Ivermectin + Triclabendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "812",
+      "brand": "Pionix 25% (Allam Co.)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "813",
+      "brand": "Ruminal (Serio-Pharm)",
+      "generic": "Neostigmine",
+      "species": "large_animal"
+    },
+    {
+      "id": "814",
+      "brand": "Bimectin (Bimeda Co.)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "815",
+      "brand": "Intramicine (Ceva Co.)",
+      "generic": "Penicillin G + Streptomycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "816",
+      "brand": "Meloxiswede (Pharma swede)",
+      "generic": "Meloxicam",
+      "species": "large_animal"
+    },
+    {
+      "id": "818",
+      "brand": "Tyloresp 20% (Arabcomed)",
+      "generic": "Tylosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "819",
+      "brand": "Carnipar (Plexopharm (Rexall Ph.))",
+      "generic": "Clanobutin + L-Carnitine",
+      "species": "large_animal"
+    },
+    {
+      "id": "821",
+      "brand": "Graniofen (N/A)",
+      "generic": "Ketoprofen",
+      "species": "cattle"
+    },
+    {
+      "id": "823",
+      "brand": "Arabmeglunix (Arab Caps)",
+      "generic": "Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "826",
+      "brand": "Sulphavet (Memphis)",
+      "generic": "Sulphadimidine",
+      "species": "large_animal"
+    },
+    {
+      "id": "827",
+      "brand": "Analgin 50% (Memphis)",
+      "generic": "Dipyrone",
+      "species": "large_animal"
+    },
+    {
+      "id": "828",
+      "brand": "Atropine 1% (Memphis)",
+      "generic": "Atropine sulphate",
+      "species": "large_animal"
+    },
+    {
+      "id": "829",
+      "brand": "Garavet 50 (Memphis)",
+      "generic": "Gentamicin",
+      "species": "large_animal"
+    },
+    {
+      "id": "830",
+      "brand": "Garavet 10 (Memphis)",
+      "generic": "Gentamicin",
+      "species": "large_animal"
+    },
+    {
+      "id": "831",
+      "brand": "Avinide (Avico)",
+      "generic": "Rafoxanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "832",
+      "brand": "Analgin 50% (UCCMA - Ghannam)",
+      "generic": "Dipyrone",
+      "species": "large_animal"
+    },
+    {
+      "id": "834",
+      "brand": "Oxytab (N/A)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "835",
+      "brand": "Rivaben (N/A)",
+      "generic": "Penicillin G + Streptomycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "836",
+      "brand": "Ivelon forte (Arabcomed)",
+      "generic": "Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "837",
+      "brand": "Pero flam 5% (Pero vet Co.)",
+      "generic": "Diclofenac sodium + Paracetamol",
+      "species": "large_animal"
+    },
+    {
+      "id": "838",
+      "brand": "Artrivet Forte (DFV Co.)",
+      "generic": "Phenylbutazone + Dexamethasone",
+      "species": "large_animal"
+    },
+    {
+      "id": "840",
+      "brand": "Albendazole forte (Avico)",
+      "generic": "Albendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "846",
+      "brand": "Rafinide (Avico)",
+      "generic": "Rafoxanide",
+      "species": "large_animal"
+    },
+    {
+      "id": "849",
+      "brand": "Felorex (Allam Co.)",
+      "generic": "Florfenicol",
+      "species": "large_animal"
+    },
+    {
+      "id": "850",
+      "brand": "Clormectine (Allam Co.)",
+      "generic": "Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "851",
+      "brand": "Deltazole 10% (Delta Pharma)",
+      "generic": "Albendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "854",
+      "brand": "Tyloveto 20 (VMD Pharma)",
+      "generic": "Tylosin",
+      "species": "cattle"
+    },
+    {
+      "id": "856",
+      "brand": "Nova 500 (Al Madina)",
+      "generic": "Dipyrone",
+      "species": "large_animal"
+    },
+    {
+      "id": "858",
+      "brand": "Ceftiprima 1g (Primavet)",
+      "generic": "Ceftiofur",
+      "species": "cattle"
+    },
+    {
+      "id": "859",
+      "brand": "Streptoprima (Primavet)",
+      "generic": "Streptomycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "860",
+      "brand": "Oxyfinadine (Primavet)",
+      "generic": "Oxytetracycline + Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "861",
+      "brand": "Ceftiprima 4g (Primavet)",
+      "generic": "Ceftiofur",
+      "species": "cattle"
+    },
+    {
+      "id": "862",
+      "brand": "Kanamycin 25% (Elyoser (Alfasan))",
+      "generic": "Kanamycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "863",
+      "brand": "Avicycline 5% (Avico)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "864",
+      "brand": "Sulphadimidine (Adwia)",
+      "generic": "Sulphadimidine",
+      "species": "large_animal"
+    },
+    {
+      "id": "865",
+      "brand": "Avimast (Avico)",
+      "generic": "Oxytetracycline + Neomycin + Prednisolone",
+      "species": "cattle"
+    },
+    {
+      "id": "867",
+      "brand": "Epixin (Eipivet)",
+      "generic": "Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "868",
+      "brand": "Avitryl 5% (Avico)",
+      "generic": "Enrofloxacin",
+      "species": "large_animal"
+    },
+    {
+      "id": "869",
+      "brand": "Enrodox (Avico)",
+      "generic": "Enrofloxacin + Doxycycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "870",
+      "brand": "Tylox 20 (Avico)",
+      "generic": "Oxytetracycline + Tylosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "871",
+      "brand": "Avicotil",
+      "generic": "Tilmicosin",
+      "species": "large_animal"
+    },
+    {
+      "id": "873",
+      "brand": "Avicycline 30% (Avico)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "874",
+      "brand": "Gentavic (Avico)",
+      "generic": "Gentamicin",
+      "species": "large_animal"
+    },
+    {
+      "id": "878",
+      "brand": "Tetramisole forte (Avico)",
+      "generic": "Tetramisole",
+      "species": "poultry"
+    },
+    {
+      "id": "879",
+      "brand": "Trimectin sheep (Avico)",
+      "generic": "Ivermectin + Triclabendazole",
+      "species": "sheep_goat"
+    },
+    {
+      "id": "882",
+      "brand": "Spectal Super (Atco pharma)",
+      "generic": "Spectinomycin",
+      "species": "poultry"
+    },
+    {
+      "id": "883",
+      "brand": "Drumectin plus (Drugest)",
+      "generic": "Ivermectin + Clorsulon",
+      "species": "cattle"
+    },
+    {
+      "id": "884",
+      "brand": "Dexa-Phen (Drugest)",
+      "generic": "Phenylbutazone + Dexamethasone",
+      "species": "large_animal"
+    },
+    {
+      "id": "885",
+      "brand": "Mectico (Arabcomed)",
+      "generic": "Nitroxynil + Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "886",
+      "brand": "Picoflun (Eva pharma)",
+      "generic": "Florfenicol + Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "887",
+      "brand": "Phenylodex (Kirovest Co.)",
+      "generic": "Phenylbutazone + Dexamethasone",
+      "species": "large_animal"
+    },
+    {
+      "id": "888",
+      "brand": "Atoflumixin (Atco pharma)",
+      "generic": "Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "889",
+      "brand": "Unicillin (Univet Co.)",
+      "generic": "Penicillin G",
+      "species": "large_animal"
+    },
+    {
+      "id": "892",
+      "brand": "Dflor 30 (N/A)",
+      "generic": "Florfenicol",
+      "species": "large_animal"
+    },
+    {
+      "id": "893",
+      "brand": "Diclo pro 5% (N/A)",
+      "generic": "Diclofenac sodium + Paracetamol",
+      "species": "large_animal"
+    },
+    {
+      "id": "894",
+      "brand": "Norflox 10% (N/A)",
+      "generic": "Enrofloxacin",
+      "species": "poultry"
+    },
+    {
+      "id": "895",
+      "brand": "Ivermec 1% (Memphis)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "896",
+      "brand": "Coliprim (Avico)",
+      "generic": "Sulphadiazine + Trimethoprim",
+      "species": "large_animal"
+    },
+    {
+      "id": "898",
+      "brand": "Dexaphenylarthrite (Vetoquinol)",
+      "generic": "Phenylbutazone + Dexamethasone",
+      "species": "large_animal"
+    },
+    {
+      "id": "903",
+      "brand": "Amfipen LA (MSD Co. (Intervet))",
+      "generic": "Ampicillin",
+      "species": "large_animal"
+    },
+    {
+      "id": "905",
+      "brand": "Fenbazole 10% (Adwia)",
+      "generic": "Fenbendazole",
+      "species": "cattle"
+    },
+    {
+      "id": "908",
+      "brand": "Kim-Gen 50% (Kirovest Co.)",
+      "generic": "Dipyrone",
+      "species": "large_animal"
+    },
+    {
+      "id": "910",
+      "brand": "Sulphadimidine (Alexandria Co.)",
+      "generic": "Sulphadimidine",
+      "species": "poultry"
+    },
+    {
+      "id": "912",
+      "brand": "Engemycin Spray (MSD Co. (Intervet))",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "913",
+      "brand": "Neradozol (Nero Pharma)",
+      "generic": "Albendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "914",
+      "brand": "Fasinex 240 (Elanco Co.)",
+      "generic": "Triclabendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "915",
+      "brand": "Fashioning 34% (CID Co.)",
+      "generic": "Nitroxynil",
+      "species": "large_animal"
+    },
+    {
+      "id": "925",
+      "brand": "Bremamectin (Bremer Pharma)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "927",
+      "brand": "Badofen (Badr Pharma)",
+      "generic": "Ketoprofen",
+      "species": "large_animal"
+    },
+    {
+      "id": "928",
+      "brand": "Ivectin 1% (Mam Egypt Pharm)",
+      "generic": "Ivermectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "931",
+      "brand": "Nixflor 30% (Arabcomed)",
+      "generic": "Florfenicol",
+      "species": "cattle"
+    },
+    {
+      "id": "932",
+      "brand": "Novocyl 10 (Novobiotec)",
+      "generic": "Levofloxacin",
+      "species": "cattle"
+    },
+    {
+      "id": "943",
+      "brand": "Diclo-cion 5% (Alcion Laboratorios)",
+      "generic": "Diclofenac sodium",
+      "species": "large_animal"
+    },
+    {
+      "id": "946",
+      "brand": "Riketron N (Animedica)",
+      "generic": "Sulphadimidine + Trimethoprim",
+      "species": "large_animal"
+    },
+    {
+      "id": "959",
+      "brand": "D-500 (Zoetis)",
+      "generic": "Dipyrone",
+      "species": "large_animal"
+    },
+    {
+      "id": "960",
+      "brand": "Hefrotrim (Bremer Pharma)",
+      "generic": "Sulphadimidine + Trimethoprim",
+      "species": "large_animal"
+    },
+    {
+      "id": "961",
+      "brand": "Flumequine 20% (UCCMA - Ghannam)",
+      "generic": "Flumequine",
+      "species": "poultry"
+    },
+    {
+      "id": "964",
+      "brand": "Gama Veen Super (Al Madina)",
+      "generic": "Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "966",
+      "brand": "Marbokon (Amoun)",
+      "generic": "Marbofloxacin",
+      "species": "large_animal"
+    },
+    {
+      "id": "967",
+      "brand": "Piperazine citrate (UCCMA - Ghannam)",
+      "generic": "Piperazine",
+      "species": "poultry"
+    },
+    {
+      "id": "968",
+      "brand": "Colistin (Avico)",
+      "generic": "Colistin",
+      "species": "poultry"
+    },
+    {
+      "id": "969",
+      "brand": "Dectomectin 10% LA (Amoun)",
+      "generic": "Moxidectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "970",
+      "brand": "Kanamycin 10% (Adwia)",
+      "generic": "Kanamycin",
+      "species": "large_animal"
+    },
+    {
+      "id": "972",
+      "brand": "Tenaline 20% LA (Ceva Co.)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "976",
+      "brand": "Trusantel (VIG Co.)",
+      "generic": "Albendazole + Closantel",
+      "species": "large_animal"
+    },
+    {
+      "id": "977",
+      "brand": "Marbofo (Arab Caps)",
+      "generic": "Marbofloxacin",
+      "species": "large_animal"
+    },
+    {
+      "id": "979",
+      "brand": "Acmamethasone (Arabcomed)",
+      "generic": "Dexamethasone",
+      "species": "large_animal"
+    },
+    {
+      "id": "982",
+      "brand": "Flumequin 10% (Adwia)",
+      "generic": "Flumequine",
+      "species": "poultry"
+    },
+    {
+      "id": "988",
+      "brand": "Eipifloxin (Eipivet)",
+      "generic": "Danofloxacin",
+      "species": "cattle"
+    },
+    {
+      "id": "989",
+      "brand": "Nitromectosul (Al Watanyea)",
+      "generic": "Nitroxynil + Ivermectin + Clorsulon",
+      "species": "large_animal"
+    },
+    {
+      "id": "991",
+      "brand": "Macroverm (Amoun)",
+      "generic": "Doramectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "995",
+      "brand": "Sulphamix (Pharma swede)",
+      "generic": "Sulphadimidine + Sulphadiazine + Sulphathiazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "997",
+      "brand": "Marbogerm (DBK Co.)",
+      "generic": "Marbofloxacin",
+      "species": "large_animal"
+    },
+    {
+      "id": "998",
+      "brand": "Atcomelocam (Atco pharma)",
+      "generic": "Meloxicam",
+      "species": "large_animal"
+    },
+    {
+      "id": "1004",
+      "brand": "Splincuf (Atco pharma)",
+      "generic": "Lincomycin + Spectinomycin + Bromhexine",
+      "species": "large_animal"
+    },
+    {
+      "id": "1005",
+      "brand": "Marboresp 16% (Atco pharma)",
+      "generic": "Marbofloxacin",
+      "species": "large_animal"
+    },
+    {
+      "id": "1007",
+      "brand": "Dovertec (Over)",
+      "generic": "Doramectin",
+      "species": "cattle"
+    },
+    {
+      "id": "1008",
+      "brand": "Actionis (Syva)",
+      "generic": "Ceftiofur",
+      "species": "cattle"
+    },
+    {
+      "id": "1010",
+      "brand": "Painaway 3% (Al Watanyea)",
+      "generic": "Meloxicam",
+      "species": "large_animal"
+    },
+    {
+      "id": "1011",
+      "brand": "Veterofen 5% (N/A)",
+      "generic": "Diclofenac sodium",
+      "species": "large_animal"
+    },
+    {
+      "id": "1014",
+      "brand": "Badroflox (Badr Pharma)",
+      "generic": "Marbofloxacin",
+      "species": "large_animal"
+    },
+    {
+      "id": "1015",
+      "brand": "Dexaveto-0.2 (VMD Pharma)",
+      "generic": "Dexamethasone",
+      "species": "large_animal"
+    },
+    {
+      "id": "1016",
+      "brand": "Refenac (Medizen)",
+      "generic": "Diclofenac sodium",
+      "species": "large_animal"
+    },
+    {
+      "id": "1017",
+      "brand": "Marbobroad (N/A)",
+      "generic": "Marbofloxacin",
+      "species": "large_animal"
+    },
+    {
+      "id": "1018",
+      "brand": "Remacycline LA (Coophavet Co.)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "1020",
+      "brand": "Alatetra (DBK Co.)",
+      "generic": "Oxytetracycline",
+      "species": "large_animal"
+    },
+    {
+      "id": "1021",
+      "brand": "Megloxyine 5% (Adwia)",
+      "generic": "Flunixin Meglumine",
+      "species": "large_animal"
+    },
+    {
+      "id": "1023",
+      "brand": "Ivermek (Nita Pharma)",
+      "generic": "Ivermectin + Vitamin E",
+      "species": "large_animal"
+    },
+    {
+      "id": "1025",
+      "brand": "Doramec (Bullvet >> sama vet pharm)",
+      "generic": "Doramectin",
+      "species": "large_animal"
+    },
+    {
+      "id": "1026",
+      "brand": "Goldenleva 10% (Eva pharma)",
+      "generic": "Levamisole",
+      "species": "large_animal"
+    },
+    {
+      "id": "1027",
+      "brand": "Albendazole 10% (Adwia)",
+      "generic": "Albendazole",
+      "species": "large_animal"
+    },
+    {
+      "id": "1035",
+      "brand": "Vecoxan (MSD Co. (Intervet))",
+      "generic": "Diclazuril",
+      "species": "large_animal"
+    },
+    {
+      "id": "1038",
+      "brand": "Carni First (First Trading Ph.)",
+      "generic": "L-Carnitine + Sorbitol",
+      "species": "large_animal"
+    }
+  ]
+}
