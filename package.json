@@ -1,6 +1,6 @@
 {
     "name": "invet-dosage-calculator",
-    "version": "1.0.4",
+    "version": "1.0.3",
     "description": "InVet - Premium Veterinary Dosage Calculator",
     "main": "index.html",
     "scripts": {
