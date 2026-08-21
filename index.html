@@ -2983,11 +2983,7 @@
           setConcentrationMl(med.concentration_ml ? med.concentration_ml.toString() : '1');
           setShowConcentrationInput(true);
         }
-        setTimeout(() => {
-          if (infoRef.current) {
-            infoRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        }, 50);
+        window.scrollTo({ top: 0, behavior: 'instant' });
       };
 
       const resetForm = () => {
@@ -2995,10 +2991,10 @@
         setSpecies('');
         setWeight('');
         setResult(null);
-        setSearchTerm('');
         setConcentrationMg('');
         setConcentrationMl('');
         setShowConcentrationInput(false);
+        window.scrollTo({ top: 0, behavior: 'instant' });
       };
 
       const handleAddMedication = (newMed) => {
@@ -3062,7 +3058,10 @@
             <div className={`top-nav fixed left-0 right-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 shadow-sm ${showInstallBanner ? 'top-[50px] sm:top-[54px]' : 'top-0'}`}>
               <div className="flex justify-around items-center max-w-lg mx-auto">
                 <button
-                  onClick={() => setActiveTab('calculator')}
+                  onClick={() => {
+                    setActiveTab('calculator');
+                    if (selectedMed) resetForm();
+                  }}
                   className={`flex-1 flex flex-col items-center py-3 px-2 transition-all border-b-2 ${
                     activeTab === 'calculator'
                       ? 'border-emerald-600 text-emerald-600 dark:text-emerald-400 dark:border-emerald-400'
@@ -3106,501 +3105,534 @@
             {/* Premium Header */}
             <div className="glass min-h-[calc(100vh-85px)] md:min-h-0 flex-1 flex flex-col justify-between rounded-3xl shadow-2xl overflow-hidden animate-fade-in">
               {activeTab === 'calculator' && (
-              <div className="gradient-header p-3 md:p-8 text-white relative overflow-hidden">
-                {/* Background decoration */}
-                <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32"></div>
-                <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
+                !selectedMed ? (
+                  /* BROWSE & SEARCH DRUG LIST VIEW */
+                  <div className="flex-1 flex flex-col justify-between animate-fade-in">
+                    <div className="gradient-header p-3 md:p-8 text-white relative overflow-hidden">
+                      {/* Background decoration */}
+                      <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-32 translate-x-32"></div>
+                      <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-24 -translate-x-24"></div>
 
-                <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-3 md:gap-4">
-                  <div className="flex items-center gap-3 md:gap-4">
-                    <div className="w-12 h-12 md:w-14 md:h-14 bg-white rounded-2xl p-1.5 shadow-md flex items-center justify-center shrink-0">
-                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAABrrFhUAAABO1BMVEVMaXH6+eth8+si1XgAAAAAAAAgynEAAAD+/e8gzXMh0nb9/O4gzHIi2Xpd7+cAAAAAAAAAAAAAAAAAAAAcxW0AAAAAAAAdumkAAAAAAAAgz3Qcr2IAAAAXk1IAAACkpJvn6dzDw7jg4NQxeXU5jomO0rohznQAAAD8/O3///EBAwL8/e8hzHNh9Oth8ekEBwb///3///f//u8j23sIEg3P/vj7++0FHxUj2HrW//kJLh9k9u0NUy5n//kKQiUZoVoVhUsQYjcJtrWG9/Dc//pk/PMeHhwXV1QRbz4tLiwKxsWl+vQTeUQKv74SPTu2/PaV+fLF/PdwcWqAgXpNTUjx8uWQkoo9PjpdXVhy9e21tKvW1stX3NQca2jNzMEIn55HtK0HhINPxb7A69Sg58ZE1IdTpZt84adg3Zh3b7s0AAAAZnRSTlMA/v3+A/n9/Pz8/v38/P4RrX3oJP7WlP5Rwfz+OP5o///+/v7+/v////////////////////////////////////////////////////////////////////////7///////////6Nd8uiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAevElEQVR42u1dh0MaW9YXaQYQQQEL9mQdGBGkCIqImsRCNPZuNHl5Zff//wu+c8+9dxqDTmPA93ne7j5DYtbzm9PbDAy80zu90zu90zu90zu90zu90zu5Sz4k7a99/09YfxWafz3zvrHpidl4KhWLTSLFYrFUKj47MT3mM4bSW2UfeZ9NTSb9QUGPgv7RyVR8gsLwbwOBcDMykUr6Gas6FGSw+JOpWQThXwQBcOKbTo0CdyJy2pHI7zIQJkb+NRgAF76JySB58EFD5PeLAMJo7F+CATAwkdRwX6nVm83GLqdGs1mvVdQYEEkYTU373jwEvoGxGMg0Z79QbxzObI8HPoS83mFOXm/oQ2A8PXPcaNYUIBChmZwdedsQ+AYmRiX2a42ddAT49k5NTUWAAkjkqwh8QgCZSmzvNOoFJQaj8bE3DIFvIB4UKfuF5kzCOxyaiiDLH7SEgEQ+EBgi6Z1GTWEPCARvFoEUU/5KI+0dniIsvkyIQmjYm5jhGFAIRt4kBD7gnz7+ZnrYGwl8MEgAwtTw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" alt="InVet Dog Mascot" className="w-full h-full object-contain" />
-                    </div>
-                    <div>
-                      <h1 className="text-xl md:text-3xl font-extrabold tracking-tight">InVet</h1>
-                      <p className="text-emerald-100 text-xs md:text-base mt-0.5 md:mt-1 font-medium">
-                        Dosage Calculator • {medications.length} Medications
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex gap-2">
-                    {/* Dark Mode Toggle */}
-                    <button
-                      onClick={toggleDarkMode}
-                      className="p-3 rounded-xl bg-white/20 text-white hover:bg-white/30 transition-all active:scale-95"
-                      title={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-                    >
-                      {darkMode ? <Sun /> : <Moon />}
-                    </button>
-                    <button
-                      onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
-                      className={`px-4 py-3 rounded-xl font-semibold flex items-center gap-2 transition-all active:scale-95 ${showFavoritesOnly
-                        ? 'bg-yellow-400 text-yellow-900 shadow-lg'
-                        : 'bg-white/20 text-white hover:bg-white/30'
-                        }`}
-                    >
-                      <Star filled={showFavoritesOnly} />
-                      <span className="hidden sm:inline">Favorites</span>
-                    </button>
-                    <button
-                      onClick={() => setShowAddModal(true)}
-                      className="bg-white text-emerald-700 px-4 py-3 rounded-xl font-semibold flex items-center gap-2 hover:bg-emerald-50 transition-all shadow-lg hover:shadow-xl hover-lift active:scale-95"
-                    >
-                      <Plus /> <span className="hidden sm:inline">Add Drug</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              )}
-
-              {activeTab === 'calculator' && (
-              <div className="flex-1 flex flex-col justify-between">
-              <React.Fragment>
-              {/* Species Practice Type Switcher */}
-              <div className="px-4 md:px-6 pt-4 pb-3 bg-gradient-to-r from-emerald-50/70 to-teal-50/70 dark:from-slate-900/90 dark:to-slate-850/90 border-b border-emerald-100 dark:border-slate-800 flex flex-col items-center justify-center gap-3">
-                <div className="flex items-center gap-1 p-1 bg-white/90 dark:bg-slate-800 rounded-2xl w-full sm:w-auto shadow-sm border border-emerald-200/60 dark:border-slate-700 overflow-x-auto">
-                  <button
-                    onClick={() => setAnimalTypeFilter('all')}
-                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 text-center whitespace-nowrap ${
-                      animalTypeFilter === 'all'
-                        ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
-                        : 'text-gray-600 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-slate-700/50'
-                    }`}
-                  >
-                    <Paw className="w-4 h-4" />
-                    <span>All Small Animals</span>
-                  </button>
-                  <button
-                    onClick={() => setAnimalTypeFilter('dog')}
-                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 text-center whitespace-nowrap ${
-                      animalTypeFilter === 'dog'
-                        ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
-                        : 'text-gray-600 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-slate-700/50'
-                    }`}
-                  >
-                    <Dog className="w-4 h-4" />
-                    <span>Dogs</span>
-                  </button>
-                  <button
-                    onClick={() => setAnimalTypeFilter('cat')}
-                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 text-center whitespace-nowrap ${
-                      animalTypeFilter === 'cat'
-                        ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
-                        : 'text-gray-600 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-slate-700/50'
-                    }`}
-                  >
-                    <Cat className="w-4 h-4" />
-                    <span>Cats</span>
-                  </button>
-                </div>
-                <div className="text-xs font-semibold text-emerald-800 dark:text-emerald-300 bg-emerald-100/80 dark:bg-emerald-950/60 px-3 py-1.5 rounded-full border border-emerald-200 dark:border-emerald-800 text-center">
-                  Showing {filteredMeds.length} {
-                    animalTypeFilter === 'dog' ? 'canine (dog)' :
-                    animalTypeFilter === 'cat' ? 'feline (cat)' : 'small animal'
-                  } medications
-                </div>
-              </div>
-
-              {/* Category Filter Tabs */}
-              <ScrollableCategoryTabs
-                categories={CATEGORIES}
-                activeCategory={activeCategory}
-                onSelectCategory={setActiveCategory}
-                className="bg-white/50 dark:bg-gray-800/40 border-b border-emerald-100 dark:border-gray-700/60"
-              />
-
-              <div className="p-4 md:p-6 space-y-6 flex-1">
-                {/* Search Section */}
-                <div>
-                  <div className="relative">
-                    <div className="absolute left-4 top-1/2 -translate-y-1/2 text-emerald-500"><Search /></div>
-                    <input
-                      type="text"
-                      placeholder="Search medications by name..."
-                      value={searchTerm}
-                      onChange={(e) => setSearchTerm(e.target.value)}
-                      className="w-full pl-12 pr-4 py-4 bg-white dark:bg-slate-800 border-2 border-emerald-100 dark:border-slate-700 rounded-2xl focus:border-emerald-500 transition-all text-gray-700 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-400 shadow-sm"
-                    />
-                    {searchTerm && (
-                      <button
-                        onClick={() => setSearchTerm('')}
-                        className="absolute right-3 top-1/2 -translate-y-1/2 p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-slate-200 rounded-lg active:scale-95"
-                      >
-                        <X />
-                      </button>
-                    )}
-                  </div>
-
-                  {/* Drug List */}
-                  {(searchTerm || activeCategory !== 'all' || showFavoritesOnly) && (
-                    <div className="mt-4 rounded-2xl border-2 border-emerald-100 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-md overflow-hidden">
-                      {isLoading ? (
-                        // Skeleton Loaders
-                        <div>
-                          <SkeletonCard />
-                          <SkeletonCard />
-                          <SkeletonCard />
-                          <SkeletonCard />
+                      <div className="relative flex flex-col md:flex-row items-start md:items-center justify-between gap-3 md:gap-4">
+                        <div className="flex items-center gap-3 md:gap-4">
+                          <div className="w-12 h-12 md:w-14 md:h-14 bg-white rounded-2xl p-1.5 shadow-md flex items-center justify-center shrink-0">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAABrrFhUAAABO1BMVEVMaXH6+eth8+si1XgAAAAAAAAgynEAAAD+/e8gzXMh0nb9/O4gzHIi2Xpd7+cAAAAAAAAAAAAAAAAAAAAcxW0AAAAAAAAdumkAAAAAAAAgz3Qcr2IAAAAXk1IAAACkpJvn6dzDw7jg4NQxeXU5jomO0rohznQAAAD8/O3///EBAwL8/e8hzHNh9Oth8ekEBwb///3///f//u8j23sIEg3P/vj7++0FHxUj2HrW//kJLh9k9u0NUy5n//kKQiUZoVoVhUsQYjcJtrWG9/Dc//pk/PMeHhwXV1QRbz4tLiwKxsWl+vQTeUQKv74SPTu2/PaV+fLF/PdwcWqAgXpNTUjx8uWQkoo9PjpdXVhy9e21tKvW1stX3NQca2jNzMEIn55HtK0HhINPxb7A69Sg58ZE1IdTpZt84adg3Zh3b7s0AAAAZnRSTlMA/v3+A/n9/Pz8/v38/P4RrX3oJP7WlP5Rwfz+OP5o///+/v7+/v////////////////////////////////////////////////////////////////////////7///////////6Nd8uiAAAACXBIWXMAAAsTAAALEwEAmpwYAAAevElEQVR42u1dh0MaW9YXaQYQQQEL9mQdGBGkCIqImsRCNPZuNHl5Zff//wu+c8+9dxqDTmPA93ne7j5DYtbzm9PbDAy80zu90zu90zu90zu90zu90zu5Sz4k7a99/09YfxWafz3zvrHpidl4KhWLTSLFYrFUKj47MT3mM4bSW2UfeZ9NTSb9QUGPgv7RyVR8gsLwbwOBcDMykUr6Gas6FGSw+JOpWQThXwQBcOKbTo0CdyJy2pHI7zIQJkb+NRgAF76JySB58EFD5PeLAMJo7F+CATAwkdRwX6nVm83GLqdGs1mvVdQYEEkYTU373jwEvoGxGMg0Z79QbxzObI8HPoS83mFOXm/oQ2A8PXPcaNYUIBChmZwdedsQ+AYmRiX2a42ddAT49k5NTUWAAkjkqwh8QgCZSmzvNOoFJQaj8bE3DIFvIB4UKfuF5kzCOxyaiiDLH7SEgEQ+EBgi6Z1GTWEPCARvFoEUU/5KI+0dniIsvkyIQmjYm5jhGFAIRt4kBD7gnz7+ZnrYGwl8MEgAwtTw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" alt="InVet Dog Mascot" className="w-full h-full object-contain" />
+                          </div>
+                          <div>
+                            <h1 className="text-xl md:text-3xl font-extrabold tracking-tight">InVet</h1>
+                            <p className="text-emerald-100 text-xs md:text-base mt-0.5 md:mt-1 font-medium">
+                              Dosage Calculator • {medications.length} Medications
+                            </p>
+                          </div>
                         </div>
-                      ) : filteredMeds.length > 0 ? (
-                        filteredMeds.map((med) => {
-                          const category = getCategory(med);
-                          const catInfo = CATEGORIES.find(c => c.id === category) || CATEGORIES[7];
-                          const isFavorite = favorites.includes(med.id);
+                        <div className="flex gap-2">
+                          {/* Dark Mode Toggle */}
+                          <button
+                            onClick={toggleDarkMode}
+                            className="p-3 rounded-xl bg-white/20 text-white hover:bg-white/30 transition-all active:scale-95"
+                            title={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+                          >
+                            {darkMode ? <Sun /> : <Moon />}
+                          </button>
+                          <button
+                            onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
+                            className={`px-4 py-3 rounded-xl font-semibold flex items-center gap-2 transition-all active:scale-95 ${showFavoritesOnly
+                              ? 'bg-yellow-400 text-yellow-900 shadow-lg'
+                              : 'bg-white/20 text-white hover:bg-white/30'
+                              }`}
+                          >
+                            <Star filled={showFavoritesOnly} />
+                            <span className="hidden sm:inline">Favorites</span>
+                          </button>
+                          <button
+                            onClick={() => setShowAddModal(true)}
+                            className="bg-white text-emerald-700 px-4 py-3 rounded-xl font-semibold flex items-center gap-2 hover:bg-emerald-50 transition-all shadow-lg hover:shadow-xl hover-lift active:scale-95"
+                          >
+                            <Plus /> <span className="hidden sm:inline">Add Drug</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
 
-                          return (
-                            <div key={med.id} className="group relative border-b border-gray-100 dark:border-gray-700 last:border-b-0 hover:bg-emerald-50/50 dark:hover:bg-gray-700/50 transition-all">
-                              <button
-                                onClick={() => { handleMedSelect(med); }}
-                                className="w-full text-left p-4 pr-16 sm:pr-24"
-                              >
-                                <div className="flex items-start gap-3">
-                                  <span className={`mt-1 w-1.5 h-10 rounded-full ${catInfo.color}`}></span>
-                                  <div className="flex-1 min-w-0">
-                                    <div className="flex items-center gap-2 flex-wrap">
-                                      <span className="font-semibold text-gray-900 dark:text-gray-100">{med.brand_name}</span>
-                                      <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium text-white ${catInfo.color}`}>
-                                        {catInfo.icon && (typeof catInfo.icon === 'function' ? <catInfo.icon className="w-3 h-3 shrink-0" /> : <span>{catInfo.icon}</span>)}
-                                        <span>{catInfo.name}</span>
-                                      </span>
+                    {/* Species Practice Type Switcher */}
+                    <div className="px-4 md:px-6 pt-4 pb-3 bg-gradient-to-r from-emerald-50/70 to-teal-50/70 dark:from-slate-900/90 dark:to-slate-850/90 border-b border-emerald-100 dark:border-slate-800 flex flex-col items-center justify-center gap-3">
+                      <div className="flex items-center gap-1 p-1 bg-white/90 dark:bg-slate-800 rounded-2xl w-full sm:w-auto shadow-sm border border-emerald-200/60 dark:border-slate-700 overflow-x-auto">
+                        <button
+                          onClick={() => setAnimalTypeFilter('all')}
+                          className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 text-center whitespace-nowrap ${
+                            animalTypeFilter === 'all'
+                              ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
+                              : 'text-gray-600 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-slate-700/50'
+                          }`}
+                        >
+                          <Paw className="w-4 h-4" />
+                          <span>All Small Animals</span>
+                        </button>
+                        <button
+                          onClick={() => setAnimalTypeFilter('dog')}
+                          className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 text-center whitespace-nowrap ${
+                            animalTypeFilter === 'dog'
+                              ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
+                              : 'text-gray-600 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-slate-700/50'
+                          }`}
+                        >
+                          <Dog className="w-4 h-4" />
+                          <span>Dogs</span>
+                        </button>
+                        <button
+                          onClick={() => setAnimalTypeFilter('cat')}
+                          className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 text-center whitespace-nowrap ${
+                            animalTypeFilter === 'cat'
+                              ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
+                              : 'text-gray-600 dark:text-slate-300 hover:text-emerald-700 dark:hover:text-emerald-400 hover:bg-emerald-50/50 dark:hover:bg-slate-700/50'
+                          }`}
+                        >
+                          <Cat className="w-4 h-4" />
+                          <span>Cats</span>
+                        </button>
+                      </div>
+                      <div className="text-xs font-semibold text-emerald-800 dark:text-emerald-300 bg-emerald-100/80 dark:bg-emerald-950/60 px-3 py-1.5 rounded-full border border-emerald-200 dark:border-emerald-800 text-center">
+                        Showing {filteredMeds.length} {
+                          animalTypeFilter === 'dog' ? 'canine (dog)' :
+                          animalTypeFilter === 'cat' ? 'feline (cat)' : 'small animal'
+                        } medications
+                      </div>
+                    </div>
+
+                    {/* Category Filter Tabs */}
+                    <ScrollableCategoryTabs
+                      categories={CATEGORIES}
+                      activeCategory={activeCategory}
+                      onSelectCategory={setActiveCategory}
+                      className="bg-white/50 dark:bg-gray-800/40 border-b border-emerald-100 dark:border-gray-700/60"
+                    />
+
+                    <div className="p-4 md:p-6 space-y-6 flex-1">
+                      {/* Search Section */}
+                      <div>
+                        <div className="relative">
+                          <div className="absolute left-4 top-1/2 -translate-y-1/2 text-emerald-500"><Search /></div>
+                          <input
+                            type="text"
+                            placeholder="Search medications by name..."
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
+                            className="w-full pl-12 pr-4 py-4 bg-white dark:bg-slate-800 border-2 border-emerald-100 dark:border-slate-700 rounded-2xl focus:border-emerald-500 transition-all text-gray-700 dark:text-slate-100 placeholder-gray-400 dark:placeholder-slate-400 shadow-sm"
+                          />
+                          {searchTerm && (
+                            <button
+                              onClick={() => setSearchTerm('')}
+                              className="absolute right-3 top-1/2 -translate-y-1/2 p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-slate-200 rounded-lg active:scale-95"
+                            >
+                              <X />
+                            </button>
+                          )}
+                        </div>
+
+                        {/* Drug List */}
+                        <div className="mt-4 rounded-2xl border-2 border-emerald-100 dark:border-gray-700 bg-white dark:bg-gray-800 shadow-md overflow-hidden">
+                          {isLoading ? (
+                            <div>
+                              <SkeletonCard />
+                              <SkeletonCard />
+                              <SkeletonCard />
+                              <SkeletonCard />
+                            </div>
+                          ) : filteredMeds.length > 0 ? (
+                            filteredMeds.map((med) => {
+                              const category = getCategory(med);
+                              const catInfo = CATEGORIES.find(c => c.id === category) || CATEGORIES[7];
+                              const isFavorite = favorites.includes(med.id);
+
+                              return (
+                                <div key={med.id} className="group relative border-b border-gray-100 dark:border-gray-700 last:border-b-0 hover:bg-emerald-50/50 dark:hover:bg-gray-700/50 transition-all">
+                                  <button
+                                    onClick={() => { handleMedSelect(med); }}
+                                    className="w-full text-left p-4 pr-16 sm:pr-24"
+                                  >
+                                    <div className="flex items-start gap-3">
+                                      <span className={`mt-1 w-1.5 h-10 rounded-full ${catInfo.color}`}></span>
+                                      <div className="flex-1 min-w-0">
+                                        <div className="flex items-center gap-2 flex-wrap">
+                                          <span className="font-semibold text-gray-900 dark:text-gray-100">{med.brand_name}</span>
+                                          <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium text-white ${catInfo.color}`}>
+                                            {catInfo.icon && (typeof catInfo.icon === 'function' ? <catInfo.icon className="w-3 h-3 shrink-0" /> : <span>{catInfo.icon}</span>)}
+                                            <span>{catInfo.name}</span>
+                                          </span>
+                                        </div>
+                                        <div className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2">{med.generic_name}</div>
+                                        <div className="text-sm text-gray-500 dark:text-gray-400 mt-1 flex items-center gap-2 flex-wrap">
+                                          <span className="px-1.5 py-0.5 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 rounded text-sm font-medium">{getSpeciesLabel(med.species)}</span>
+                                          <span>•</span>
+                                          <span>{med.dosage_form}</span>
+                                          <span>•</span>
+                                          <span>{med.route}</span>
+                                        </div>
+                                      </div>
                                     </div>
-                                    <div className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2">{med.generic_name}</div>
-                                    <div className="text-sm text-gray-500 dark:text-gray-400 mt-1 flex items-center gap-2 flex-wrap">
-                                      <span className="px-1.5 py-0.5 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 rounded text-sm font-medium">{getSpeciesLabel(med.species)}</span>
-                                      <span>•</span>
-                                      <span>{med.dosage_form}</span>
-                                      <span>•</span>
-                                      <span>{med.route}</span>
+                                  </button>
+                                  <div className="absolute right-2 top-1/2 -translate-y-1/2 flex gap-1">
+                                    <button
+                                      onClick={(e) => { e.stopPropagation(); toggleFavorite(med.id); }}
+                                      className={`p-2.5 rounded-lg transition-all ${isFavorite ? 'text-yellow-500' : 'text-gray-300 dark:text-gray-600 hover:text-yellow-500'}`}
+                                    >
+                                      <Star filled={isFavorite} />
+                                    </button>
+                                    <button
+                                      onClick={(e) => { e.stopPropagation(); setEditingMed(med); }}
+                                      className="p-2.5 text-gray-400 hover:text-emerald-600 hover:bg-emerald-100 dark:hover:bg-emerald-900/40 rounded-lg transition-all sm:opacity-0 sm:group-hover:opacity-100"
+                                    >
+                                      <Edit />
+                                    </button>
+                                    <button
+                                      onClick={(e) => { e.stopPropagation(); setShowDeleteConfirm(med); }}
+                                      className="p-2.5 text-gray-400 hover:text-red-600 hover:bg-red-100 dark:hover:bg-red-900/40 rounded-lg transition-all sm:opacity-0 sm:group-hover:opacity-100"
+                                    >
+                                      <Trash />
+                                    </button>
+                                  </div>
+                                </div>
+                              );
+                            })
+                          ) : (
+                            <div className="p-8 text-center text-gray-500 dark:text-gray-400">
+                              <div className="text-4xl mb-2">🔍</div>
+                              <div className="font-medium">No medications found</div>
+                              <div className="text-sm mt-1">Try adjusting your search or filters</div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  /* DEDICATED MEDICATION CALCULATION & DETAIL VIEW */
+                  <div className="flex-1 flex flex-col justify-between animate-fade-in">
+                    {/* Dedicated Medication Header */}
+                    <div className="gradient-header p-4 md:p-6 text-white relative overflow-hidden">
+                      <div className="relative flex items-center justify-between gap-3">
+                        <button
+                          onClick={resetForm}
+                          className="flex items-center gap-2 px-3.5 py-2 bg-white/20 hover:bg-white/30 text-white rounded-xl font-bold text-sm transition-all active:scale-95 shadow-sm"
+                        >
+                          <ChevronLeft /> <span>Back to Medications</span>
+                        </button>
+                        
+                        <div className="flex items-center gap-2">
+                          <button
+                            onClick={() => toggleFavorite(selectedMed.id)}
+                            className={`p-2.5 rounded-xl transition-all active:scale-95 ${
+                              favorites.includes(selectedMed.id)
+                                ? 'bg-yellow-400 text-yellow-900 shadow-md'
+                                : 'bg-white/20 text-white hover:bg-white/30'
+                            }`}
+                            title="Toggle Favorite"
+                          >
+                            <Star filled={favorites.includes(selectedMed.id)} />
+                          </button>
+                          <button
+                            onClick={() => setEditingMed(selectedMed)}
+                            className="p-2.5 bg-white/20 hover:bg-white/30 text-white rounded-xl transition-all active:scale-95"
+                            title="Edit Medication"
+                          >
+                            <Edit />
+                          </button>
+                          <button
+                            onClick={toggleDarkMode}
+                            className="p-2.5 bg-white/20 hover:bg-white/30 text-white rounded-xl transition-all active:scale-95"
+                            title={darkMode ? 'Light Mode' : 'Dark Mode'}
+                          >
+                            {darkMode ? <Sun /> : <Moon />}
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="p-4 md:p-6 space-y-6 flex-1">
+                      {/* Medication Info Card */}
+                      <div ref={infoRef} className="bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-slate-900 dark:to-slate-850 border-2 border-emerald-200 dark:border-emerald-500/40 rounded-2xl p-5 shadow-sm dark:shadow-xl">
+                        <div className="flex justify-between items-start">
+                          <div className="flex-1">
+                            <div className="flex items-center gap-3 mb-2">
+                              <span className="px-2.5 py-1 bg-emerald-500 text-white rounded-lg text-sm font-semibold">{getSpeciesLabel(selectedMed.species)}</span>
+                              <div>
+                                <h3 className="font-bold text-lg text-gray-900 dark:text-white">{selectedMed.brand_name}</h3>
+                                <p className="text-emerald-700 dark:text-emerald-400 font-medium">{selectedMed.generic_name}</p>
+                              </div>
+                            </div>
+                            <div className="mt-3 grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm">
+                              <div className="bg-white/90 dark:bg-slate-800/90 border border-emerald-100 dark:border-slate-700/80 rounded-xl p-3 shadow-xs">
+                                <div className="text-gray-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1">Form</div>
+                                <div className="font-bold text-gray-900 dark:text-slate-100">{selectedMed.dosage_form}</div>
+                              </div>
+                              <div className="bg-white/90 dark:bg-slate-800/90 border border-emerald-100 dark:border-slate-700/80 rounded-xl p-3 shadow-xs">
+                                <div className="text-gray-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1">Route</div>
+                                <div className="font-bold text-gray-900 dark:text-slate-100">
+                                  {(selectedMed.species_doses && selectedMed.species_doses[species] && selectedMed.species_doses[species].route) || selectedMed.route}
+                                </div>
+                              </div>
+                              <div className="bg-white/90 dark:bg-slate-800/90 border border-emerald-100 dark:border-slate-700/80 rounded-xl p-3 shadow-xs">
+                                <div className="text-gray-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1">Dose {species ? `(${getSpeciesLabel(species)})` : ''}</div>
+                                {selectedMed.species_doses && selectedMed.species_doses[species] && selectedMed.species_doses[species].contraindicated ? (
+                                  <div className="font-bold text-red-600 dark:text-red-400 text-xs bg-red-50 dark:bg-red-950/60 px-2 py-0.5 rounded-md border border-red-200 dark:border-red-800/80 inline-block">⛔ Contraindicated</div>
+                                ) : selectedMed.species_doses && selectedMed.species_doses[species] ? (
+                                  <div className="font-bold text-emerald-700 dark:text-emerald-300">{selectedMed.species_doses[species].min}-{selectedMed.species_doses[species].max} mg/kg</div>
+                                ) : selectedMed.dose_mg_per_kg_min === 0 && selectedMed.dose_mg_per_kg_max === 0 ? (
+                                  <div className="font-bold text-purple-600 dark:text-purple-300">Per animal</div>
+                                ) : (
+                                  <div className="font-bold text-gray-900 dark:text-slate-100">{selectedMed.dose_mg_per_kg_min}-{selectedMed.dose_mg_per_kg_max} mg/kg</div>
+                                )}
+                              </div>
+                              <div className="bg-white/90 dark:bg-slate-800/90 border border-emerald-100 dark:border-slate-700/80 rounded-xl p-3 shadow-xs">
+                                <div className="text-gray-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1">Frequency</div>
+                                <div className="font-bold text-gray-900 dark:text-slate-100">
+                                  {(selectedMed.species_doses && selectedMed.species_doses[species] && selectedMed.species_doses[species].freq) || selectedMed.frequency || 'Per protocol'}
+                                </div>
+                              </div>
+                            </div>
+                            {selectedMed.unit_description && (
+                              <div className="mt-3 text-sm text-gray-600 dark:text-slate-300">
+                                <span className="font-semibold text-gray-800 dark:text-slate-200">Available:</span> {selectedMed.unit_description}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                        {selectedMed.notes && (
+                          <div className="mt-4 p-4 rounded-xl text-sm bg-amber-50/90 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-500/50 shadow-xs flex items-start gap-2.5">
+                            <span className="shrink-0 text-amber-700 dark:text-amber-400 font-bold text-sm mt-0.5">⚠️ Note:</span>
+                            <span className="text-amber-950 dark:text-amber-100 font-normal leading-relaxed">{selectedMed.notes}</span>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Per-Animal Dosing OR Weight-based Dosage Calculator */}
+                      {selectedMed.dose_mg_per_kg_min === 0 && selectedMed.dose_mg_per_kg_max === 0 ? (
+                        <div className="bg-gradient-to-r from-purple-50 via-indigo-50 to-purple-50 dark:from-slate-900 dark:via-purple-950/40 dark:to-slate-900 border-2 border-purple-300 dark:border-purple-500/50 rounded-2xl p-5 shadow-sm dark:shadow-xl animate-fade-in">
+                          <h3 className="text-lg font-extrabold text-purple-950 dark:text-purple-200 mb-2 flex items-center gap-2">
+                            <span className="p-1.5 bg-purple-100 dark:bg-purple-900/60 text-purple-700 dark:text-purple-300 rounded-lg"><Clipboard className="w-5 h-5" /></span>
+                            <span>Per-Animal Dosing</span>
+                          </h3>
+                          <p className="text-slate-700 dark:text-slate-300 mb-3 text-sm leading-relaxed">
+                            This medication uses <span className="font-bold text-purple-700 dark:text-purple-300">per-animal dosing</span> rather than weight-based (mg/kg) dosing. Please refer to the dosing guide below.
+                          </p>
+                          <div className="bg-white/95 dark:bg-slate-800/90 rounded-xl p-4 border border-purple-200 dark:border-purple-500/40 shadow-xs">
+                            <div className="text-xs font-bold text-purple-700 dark:text-purple-300 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+                              <Sparkles className="w-3.5 h-3.5" /> Dosing Guide
+                            </div>
+                            <div className="text-slate-800 dark:text-slate-200 text-sm whitespace-pre-line leading-relaxed font-medium">{selectedMed.notes}</div>
+                          </div>
+                          {selectedMed.frequency && (
+                            <div className="mt-3 text-xs font-semibold text-purple-800 dark:text-purple-200 bg-purple-100/80 dark:bg-purple-950/60 border border-purple-200 dark:border-purple-800 px-3 py-1.5 rounded-lg inline-block">
+                              <span className="font-bold">Frequency:</span> {selectedMed.frequency}
+                            </div>
+                          )}
+                        </div>
+                      ) : (
+                        <div className="space-y-4 animate-fade-in">
+                          <div className="grid md:grid-cols-2 gap-4">
+                            <div>
+                              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Select Species</label>
+                              <div className="flex gap-2 flex-wrap">
+                                {['dog', 'both'].includes(selectedMed.species) && (
+                                  <button
+                                    onClick={() => setSpecies('dog')}
+                                    className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center flex flex-col items-center justify-center ${species === 'dog' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
+                                  >
+                                    <div className="flex justify-center mb-1 text-emerald-600 dark:text-emerald-400"><Dog className="w-6 h-6" /></div>
+                                    <div className="text-xs sm:text-sm font-bold">Dog</div>
+                                  </button>
+                                )}
+                                {['cat', 'both'].includes(selectedMed.species) && (
+                                  <button
+                                    onClick={() => setSpecies('cat')}
+                                    className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center flex flex-col items-center justify-center ${species === 'cat' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
+                                  >
+                                    <div className="flex justify-center mb-1 text-emerald-600 dark:text-emerald-400"><Cat className="w-6 h-6" /></div>
+                                    <div className="text-xs sm:text-sm font-bold">Cat</div>
+                                  </button>
+                                )}
+                              </div>
+                            </div>
+                            <div>
+                              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Patient Weight</label>
+                              <div className="relative">
+                                <input
+                                  type="number"
+                                  step="0.1"
+                                  min="0"
+                                  placeholder="Enter weight"
+                                  value={weight}
+                                  onChange={(e) => setWeight(e.target.value)}
+                                  className="w-full px-4 py-4 border-2 border-gray-200 dark:border-slate-700 rounded-2xl focus:border-emerald-500 bg-white dark:bg-slate-800 text-gray-900 dark:text-white text-lg"
+                                />
+                                <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 font-medium">kg</span>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div className="bg-gradient-to-r from-violet-50 to-purple-50 dark:from-slate-900 dark:to-purple-950/40 border-2 border-violet-200 dark:border-purple-500/40 rounded-2xl p-4">
+                            <div className="flex items-center justify-between mb-3">
+                              <div className="flex items-center gap-2 text-violet-700 dark:text-purple-300">
+                                <Droplet />
+                                <div>
+                                  <h4 className="font-semibold text-gray-900 dark:text-white">Drug Concentration</h4>
+                                  {selectedMed.concentration_value && (
+                                    <p className="text-xs text-violet-600 dark:text-purple-300 font-medium">
+                                      Pre-selected: {selectedMed.concentration_value} {selectedMed.concentration_unit} ({selectedMed.concentration_ml || 1} mL) — <span className="underline">Editable below</span>
+                                    </p>
+                                  )}
+                                </div>
+                              </div>
+                              <button
+                                onClick={() => setShowConcentrationInput(!showConcentrationInput)}
+                                className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${showConcentrationInput ? 'bg-violet-600 text-white shadow-sm' : 'bg-white dark:bg-slate-800 text-violet-600 dark:text-purple-300 border border-violet-300 dark:border-purple-700 hover:bg-violet-100 dark:hover:bg-slate-700'}`}
+                              >
+                                {showConcentrationInput ? '✓ Pre-selected & Active' : '+ Customize Concentration'}
+                              </button>
+                            </div>
+                            {showConcentrationInput && (
+                              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 animate-fade-in pt-1">
+                                <div>
+                                  <label className="block text-xs font-semibold text-gray-700 dark:text-slate-300 mb-1">Drug Amount (mg)</label>
+                                  <input
+                                    type="number"
+                                    step="0.1"
+                                    placeholder="e.g., 500"
+                                    value={concentrationMg}
+                                    onChange={(e) => setConcentrationMg(e.target.value)}
+                                    className="w-full px-3 py-2.5 border-2 border-gray-200 dark:border-slate-700 rounded-xl focus:border-violet-500 text-sm bg-white dark:bg-slate-800 text-gray-900 dark:text-white font-medium"
+                                  />
+                                </div>
+                                <div>
+                                  <label className="block text-xs font-semibold text-gray-700 dark:text-slate-300 mb-1">Per Volume / Unit (mL)</label>
+                                  <input
+                                    type="number"
+                                    step="0.1"
+                                    placeholder="e.g., 2"
+                                    value={concentrationMl}
+                                    onChange={(e) => setConcentrationMl(e.target.value)}
+                                    className="w-full px-3 py-2.5 border-2 border-gray-200 dark:border-slate-700 rounded-xl focus:border-violet-500 text-sm bg-white dark:bg-slate-800 text-gray-900 dark:text-white font-medium"
+                                  />
+                                </div>
+                              </div>
+                            )}
+                          </div>
+
+                          {species && weight && (
+                            <button
+                              onClick={calculateDosage}
+                              className="w-full gradient-primary text-white py-5 rounded-2xl font-bold text-lg transition-all flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl hover-lift animate-pulse-glow active:scale-[0.98]"
+                            >
+                              <Calculator /> Calculate Dosage
+                            </button>
+                          )}
+
+                          {result && result.contraindicated ? (
+                            <div className="bg-red-50/90 dark:bg-rose-950/60 border-2 border-red-400 dark:border-rose-500/70 rounded-3xl p-6 animate-fade-in shadow-lg">
+                              <div className="flex items-center gap-3 mb-3">
+                                <span className="p-2 bg-red-500 text-white rounded-xl"><X /></span>
+                                <div>
+                                  <h3 className="text-lg font-bold text-red-800 dark:text-rose-200">Species Safety Contraindication</h3>
+                                  <p className="text-xs text-red-600 dark:text-rose-400 font-semibold">{getSpeciesLabel(species)}</p>
+                                </div>
+                              </div>
+                              <div className="p-4 bg-white/95 dark:bg-slate-900 rounded-2xl border border-red-200 dark:border-rose-800/80 text-sm font-medium text-red-900 dark:text-rose-100 leading-relaxed">
+                                {result.warning}
+                              </div>
+                            </div>
+                          ) : result && (
+                            <div className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 dark:from-slate-900 dark:via-slate-900 dark:to-slate-850 border-2 border-emerald-300 dark:border-emerald-500/40 rounded-3xl p-6 animate-fade-in shadow-lg">
+                              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-5 flex items-center gap-3">
+                                <span className="p-2 bg-emerald-500 text-white rounded-xl"><Pill /></span>
+                                <span>Calculated Dosage</span>
+                              </h3>
+                              <div className="mb-5">
+                                <div className="text-xs font-bold text-gray-500 dark:text-slate-400 mb-3 uppercase tracking-wider">Dosage (mg) {result.minDoseMgKg ? `— ${result.minDoseMgKg}-${result.maxDoseMgKg} mg/kg` : ''}</div>
+                                <div className="grid md:grid-cols-3 gap-4">
+                                  <div className="bg-white dark:bg-slate-800 rounded-2xl p-5 text-center shadow-sm hover-lift border border-gray-200 dark:border-slate-700">
+                                    <div className="text-xs text-gray-500 dark:text-slate-400 mb-2 uppercase tracking-wide font-semibold">Minimum</div>
+                                    <div className="text-3xl font-bold text-gray-800 dark:text-slate-100">{result.minDose}</div>
+                                    <div className="text-xs text-gray-500 dark:text-slate-400 font-medium">mg</div>
+                                  </div>
+                                  <div className="bg-emerald-500 dark:bg-emerald-600 rounded-2xl p-5 text-center shadow-lg hover-lift">
+                                    <div className="text-xs text-emerald-100 mb-2 uppercase tracking-wide font-bold">Recommended</div>
+                                    <div className="text-3xl font-extrabold text-white">{result.avgDose}</div>
+                                    <div className="text-xs text-emerald-100 font-medium">mg</div>
+                                  </div>
+                                  <div className="bg-white dark:bg-slate-800 rounded-2xl p-5 text-center shadow-sm hover-lift border border-gray-200 dark:border-slate-700">
+                                    <div className="text-xs text-gray-500 dark:text-slate-400 mb-2 uppercase tracking-wide font-semibold">Maximum</div>
+                                    <div className="text-3xl font-bold text-gray-800 dark:text-slate-100">{result.maxDose}</div>
+                                    <div className="text-xs text-gray-500 dark:text-slate-400 font-medium">mg</div>
+                                  </div>
+                                </div>
+                              </div>
+                              {result.volume && (
+                                <div className="mb-5">
+                                  <div className="text-xs font-bold text-purple-700 dark:text-purple-300 mb-3 flex items-center gap-2 uppercase tracking-wider">
+                                    <Droplet /> Volume at {result.volume.concentration}
+                                  </div>
+                                  <div className="grid md:grid-cols-3 gap-4">
+                                    <div className="bg-purple-50/80 dark:bg-slate-800 rounded-2xl p-5 text-center border border-purple-200 dark:border-purple-500/40 hover-lift">
+                                      <div className="text-xs text-purple-700 dark:text-purple-300 mb-2 uppercase tracking-wide font-semibold">Minimum</div>
+                                      <div className="text-3xl font-bold text-purple-900 dark:text-purple-100">{result.volume.minVolume}</div>
+                                      <div className="text-xs text-purple-600 dark:text-purple-400 font-medium">ml</div>
+                                    </div>
+                                    <div className="bg-purple-600 dark:bg-purple-600 rounded-2xl p-5 text-center shadow-lg hover-lift">
+                                      <div className="text-xs text-purple-100 mb-2 uppercase tracking-wide font-bold">Recommended</div>
+                                      <div className="text-3xl font-extrabold text-white">{result.volume.avgVolume}</div>
+                                      <div className="text-xs text-purple-100 font-medium">ml</div>
+                                    </div>
+                                    <div className="bg-purple-50/80 dark:bg-slate-800 rounded-2xl p-5 text-center border border-purple-200 dark:border-purple-500/40 hover-lift">
+                                      <div className="text-xs text-purple-700 dark:text-purple-300 mb-2 uppercase tracking-wide font-semibold">Maximum</div>
+                                      <div className="text-3xl font-bold text-purple-900 dark:text-purple-100">{result.volume.maxVolume}</div>
+                                      <div className="text-xs text-purple-600 dark:text-purple-400 font-medium">ml</div>
                                     </div>
                                   </div>
                                 </div>
-                              </button>
-                              {/* Action buttons */}
-                              <div className="absolute right-2 top-1/2 -translate-y-1/2 flex gap-1">
-                                <button
-                                  onClick={(e) => { e.stopPropagation(); toggleFavorite(med.id); }}
-                                  className={`p-2.5 rounded-lg transition-all ${isFavorite ? 'text-yellow-500' : 'text-gray-300 dark:text-gray-600 hover:text-yellow-500'}`}
-                                >
-                                  <Star filled={isFavorite} />
-                                </button>
-                                <button
-                                  onClick={(e) => { e.stopPropagation(); setEditingMed(med); }}
-                                  className="p-2.5 text-gray-400 hover:text-emerald-600 hover:bg-emerald-100 dark:hover:bg-emerald-900/40 rounded-lg transition-all sm:opacity-0 sm:group-hover:opacity-100"
-
-                                >
-                                  <Edit />
-                                </button>
-                                <button
-                                  onClick={(e) => { e.stopPropagation(); setShowDeleteConfirm(med); }}
-                                  className="p-2.5 text-gray-400 hover:text-red-600 hover:bg-red-100 dark:hover:bg-red-900/40 rounded-lg transition-all sm:opacity-0 sm:group-hover:opacity-100"
-                                >
-                                  <Trash />
-                                </button>
+                              )}
+                              <div className="mt-5 p-5 bg-white/95 dark:bg-slate-800/90 rounded-2xl border-2 border-emerald-200 dark:border-emerald-500/40 shadow-sm">
+                                <div className="font-bold text-lg text-emerald-700 dark:text-emerald-400 mb-3 flex items-center gap-2">
+                                  <Clipboard className="w-5 h-5" /> Prescription Summary
+                                </div>
+                                <div className="grid md:grid-cols-2 gap-3 text-sm">
+                                  <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-slate-700/70 border border-gray-200/60 dark:border-slate-600 rounded-xl dark:text-slate-200">
+                                    <span className="px-2 py-0.5 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded text-xs font-bold">{getSpeciesLabel(species)}</span>
+                                    <span><span className="font-semibold text-gray-500 dark:text-slate-400">Patient:</span> {weight} kg</span>
+                                  </div>
+                                  <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-slate-700/70 border border-gray-200/60 dark:border-slate-600 rounded-xl dark:text-slate-200">
+                                    <Pill className="text-emerald-600 dark:text-emerald-400 w-4 h-4" />
+                                    <span><span className="font-semibold text-gray-500 dark:text-slate-400">Drug:</span> {selectedMed.brand_name}</span>
+                                  </div>
+                                  <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-slate-700/70 border border-gray-200/60 dark:border-slate-600 rounded-xl dark:text-slate-200">
+                                    <span className="font-bold text-emerald-600 dark:text-emerald-400 text-base">⚖️</span>
+                                    <span><span className="font-semibold text-gray-500 dark:text-slate-400">Dose:</span> {result.avgDose} mg</span>
+                                  </div>
+                                  {result.volume && (
+                                    <div className="flex items-center gap-2 p-3 bg-purple-50/80 dark:bg-purple-950/60 border border-purple-200/80 dark:border-purple-800/80 rounded-xl text-purple-950 dark:text-purple-200">
+                                      <Droplet className="text-purple-600 dark:text-purple-400 w-4 h-4" />
+                                      <span><span className="font-semibold text-purple-700 dark:text-purple-400">Volume:</span> {result.volume.avgVolume} ml</span>
+                                    </div>
+                                  )}
+                                  <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-slate-700/70 border border-gray-200/60 dark:border-slate-600 rounded-xl dark:text-slate-200">
+                                    <Stethoscope className="text-emerald-600 dark:text-emerald-400 w-4 h-4" />
+                                    <span><span className="font-semibold text-gray-500 dark:text-slate-400">Route:</span> {result.route || selectedMed.route}</span>
+                                  </div>
+                                  {(result.frequency || selectedMed.frequency) && (
+                                    <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-slate-700/70 border border-gray-200/60 dark:border-slate-600 rounded-xl dark:text-slate-200">
+                                      <span className="text-gray-500 dark:text-slate-400 font-semibold">⏰ Frequency:</span>
+                                      <span>{result.frequency || selectedMed.frequency}</span>
+                                    </div>
+                                  )}
+                                </div>
                               </div>
                             </div>
-                          );
-                        })
-                      ) : (
-                        <div className="p-8 text-center text-gray-500 dark:text-gray-400">
-                          <div className="text-4xl mb-2">🔍</div>
-                          <div className="font-medium">No medications found</div>
-                          <div className="text-sm mt-1">Try adjusting your search or filters</div>
-                        </div>
-                      )}
-                    </div>
-                  )}
-                </div>
-
-                {selectedMed && (
-                  <div ref={infoRef} className="scroll-mt-28 bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-slate-900 dark:to-slate-850 border-2 border-emerald-200 dark:border-emerald-500/40 rounded-2xl p-5 shadow-sm dark:shadow-xl animate-fade-in">
-                    <div className="flex justify-between items-start">
-                      <div className="flex-1">
-                        <div className="flex items-center gap-3 mb-2">
-                          <span className="px-2.5 py-1 bg-emerald-500 text-white rounded-lg text-sm font-semibold">{getSpeciesLabel(selectedMed.species)}</span>
-                          <div>
-                            <h3 className="font-bold text-lg text-gray-900 dark:text-white">{selectedMed.brand_name}</h3>
-                            <p className="text-emerald-700 dark:text-emerald-400 font-medium">{selectedMed.generic_name}</p>
-                          </div>
-                        </div>
-                        <div className="mt-3 grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm">
-                          <div className="bg-white/90 dark:bg-slate-800/90 border border-emerald-100 dark:border-slate-700/80 rounded-xl p-3 shadow-xs">
-                            <div className="text-gray-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1">Form</div>
-                            <div className="font-bold text-gray-900 dark:text-slate-100">{selectedMed.dosage_form}</div>
-                          </div>
-                          <div className="bg-white/90 dark:bg-slate-800/90 border border-emerald-100 dark:border-slate-700/80 rounded-xl p-3 shadow-xs">
-                            <div className="text-gray-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1">Route</div>
-                            <div className="font-bold text-gray-900 dark:text-slate-100">
-                              {(selectedMed.species_doses && selectedMed.species_doses[species] && selectedMed.species_doses[species].route) || selectedMed.route}
-                            </div>
-                          </div>
-                          <div className="bg-white/90 dark:bg-slate-800/90 border border-emerald-100 dark:border-slate-700/80 rounded-xl p-3 shadow-xs">
-                            <div className="text-gray-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1">Dose {species ? `(${getSpeciesLabel(species)})` : ''}</div>
-                            {selectedMed.species_doses && selectedMed.species_doses[species] && selectedMed.species_doses[species].contraindicated ? (
-                              <div className="font-bold text-red-600 dark:text-red-400 text-xs bg-red-50 dark:bg-red-950/60 px-2 py-0.5 rounded-md border border-red-200 dark:border-red-800/80 inline-block">⛔ Contraindicated</div>
-                            ) : selectedMed.species_doses && selectedMed.species_doses[species] ? (
-                              <div className="font-bold text-emerald-700 dark:text-emerald-300">{selectedMed.species_doses[species].min}-{selectedMed.species_doses[species].max} mg/kg</div>
-                            ) : selectedMed.dose_mg_per_kg_min === 0 && selectedMed.dose_mg_per_kg_max === 0 ? (
-                              <div className="font-bold text-purple-600 dark:text-purple-300">Per animal</div>
-                            ) : (
-                              <div className="font-bold text-gray-900 dark:text-slate-100">{selectedMed.dose_mg_per_kg_min}-{selectedMed.dose_mg_per_kg_max} mg/kg</div>
-                            )}
-                          </div>
-                          <div className="bg-white/90 dark:bg-slate-800/90 border border-emerald-100 dark:border-slate-700/80 rounded-xl p-3 shadow-xs">
-                            <div className="text-gray-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1">Frequency</div>
-                            <div className="font-bold text-gray-900 dark:text-slate-100">
-                              {(selectedMed.species_doses && selectedMed.species_doses[species] && selectedMed.species_doses[species].freq) || selectedMed.frequency || 'Per protocol'}
-                            </div>
-                          </div>
-                        </div>
-                        {selectedMed.unit_description && (
-                          <div className="mt-3 text-sm text-gray-600 dark:text-slate-300">
-                            <span className="font-semibold text-gray-800 dark:text-slate-200">Available:</span> {selectedMed.unit_description}
-                          </div>
-                        )}
-                      </div>
-                      <button onClick={resetForm} className="text-emerald-700 dark:text-emerald-300 hover:text-emerald-900 dark:hover:text-emerald-100 text-sm font-semibold bg-white/90 dark:bg-slate-800 border border-emerald-200 dark:border-slate-700 px-4 py-2 rounded-xl hover:bg-white dark:hover:bg-slate-700 transition-all active:scale-95 shadow-xs">
-                        ✕ Change
-                      </button>
-                    </div>
-                    {selectedMed.notes && (
-                      <div className="mt-4 p-4 rounded-xl text-sm bg-amber-50/90 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-500/50 shadow-xs flex items-start gap-2.5">
-                        <span className="shrink-0 text-amber-700 dark:text-amber-400 font-bold text-sm mt-0.5">⚠️ Note:</span>
-                        <span className="text-amber-950 dark:text-amber-100 font-normal leading-relaxed">{selectedMed.notes}</span>
-                      </div>
-                    )}
-                  </div>
-                )}
-
-                {selectedMed && selectedMed.dose_mg_per_kg_min === 0 && selectedMed.dose_mg_per_kg_max === 0 && (
-                  <div className="bg-gradient-to-r from-purple-50 via-indigo-50 to-purple-50 dark:from-slate-900 dark:via-purple-950/40 dark:to-slate-900 border-2 border-purple-300 dark:border-purple-500/50 rounded-2xl p-5 shadow-sm dark:shadow-xl animate-fade-in">
-                    <h3 className="text-lg font-extrabold text-purple-950 dark:text-purple-200 mb-2 flex items-center gap-2">
-                      <span className="p-1.5 bg-purple-100 dark:bg-purple-900/60 text-purple-700 dark:text-purple-300 rounded-lg"><Clipboard className="w-5 h-5" /></span>
-                      <span>Per-Animal Dosing</span>
-                    </h3>
-                    <p className="text-slate-700 dark:text-slate-300 mb-3 text-sm leading-relaxed">
-                      This medication uses <span className="font-bold text-purple-700 dark:text-purple-300">per-animal dosing</span> rather than weight-based (mg/kg) dosing. Please refer to the dosing guide below.
-                    </p>
-                    <div className="bg-white/95 dark:bg-slate-800/90 rounded-xl p-4 border border-purple-200 dark:border-purple-500/40 shadow-xs">
-                      <div className="text-xs font-bold text-purple-700 dark:text-purple-300 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
-                        <Sparkles className="w-3.5 h-3.5" /> Dosing Guide
-                      </div>
-                      <div className="text-slate-800 dark:text-slate-200 text-sm whitespace-pre-line leading-relaxed font-medium">{selectedMed.notes}</div>
-                    </div>
-                    {selectedMed.frequency && (
-                      <div className="mt-3 text-xs font-semibold text-purple-800 dark:text-purple-200 bg-purple-100/80 dark:bg-purple-950/60 border border-purple-200 dark:border-purple-800 px-3 py-1.5 rounded-lg inline-block">
-                        <span className="font-bold">Frequency:</span> {selectedMed.frequency}
-                      </div>
-                    )}
-                  </div>
-                )}
-
-                {selectedMed && !(selectedMed.dose_mg_per_kg_min === 0 && selectedMed.dose_mg_per_kg_max === 0) && (
-                  <div className="space-y-4 animate-fade-in">
-
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div>
-                        <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Select Species</label>
-                        <div className="flex gap-2 flex-wrap">
-                          {['dog', 'both'].includes(selectedMed.species) && (
-                            <button
-                              onClick={() => setSpecies('dog')}
-                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center flex flex-col items-center justify-center ${species === 'dog' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
-                            >
-                              <div className="flex justify-center mb-1 text-emerald-600 dark:text-emerald-400"><Dog className="w-6 h-6" /></div>
-                              <div className="text-xs sm:text-sm font-bold">Dog</div>
-                            </button>
                           )}
-                          {['cat', 'both'].includes(selectedMed.species) && (
-                            <button
-                              onClick={() => setSpecies('cat')}
-                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center flex flex-col items-center justify-center ${species === 'cat' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
-                            >
-                              <div className="flex justify-center mb-1 text-emerald-600 dark:text-emerald-400"><Cat className="w-6 h-6" /></div>
-                              <div className="text-xs sm:text-sm font-bold">Cat</div>
-                            </button>
-                          )}
-                        </div>
-                      </div>
-                      <div>
-                        <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Patient Weight</label>
-                        <div className="relative">
-                          <input
-                            type="number"
-                            step="0.1"
-                            min="0"
-                            placeholder="Enter weight"
-                            value={weight}
-                            onChange={(e) => setWeight(e.target.value)}
-                            className="w-full px-4 py-4 border-2 border-gray-200 rounded-2xl focus:border-emerald-500 bg-white text-lg"
-                          />
-                          <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 font-medium">kg</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="bg-gradient-to-r from-violet-50 to-purple-50 border-2 border-violet-200 rounded-2xl p-4">
-                      <div className="flex items-center justify-between mb-3">
-                        <div className="flex items-center gap-2 text-violet-700">
-                          <Droplet />
-                          <div>
-                            <h4 className="font-semibold text-gray-900">Drug Concentration</h4>
-                            {selectedMed.concentration_value && (
-                              <p className="text-xs text-violet-600 font-medium">
-                                Pre-selected: {selectedMed.concentration_value} {selectedMed.concentration_unit} ({selectedMed.concentration_ml || 1} mL) — <span className="underline">Editable below</span>
-                              </p>
-                            )}
-                          </div>
-                        </div>
-                        <button
-                          onClick={() => setShowConcentrationInput(!showConcentrationInput)}
-                          className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${showConcentrationInput ? 'bg-violet-600 text-white shadow-sm' : 'bg-white text-violet-600 border border-violet-300 hover:bg-violet-100'}`}
-                        >
-                          {showConcentrationInput ? '✓ Pre-selected & Active' : '+ Customize Concentration'}
-                        </button>
-                      </div>
-                      {showConcentrationInput && (
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 animate-fade-in pt-1">
-                          <div>
-                            <label className="block text-xs font-semibold text-gray-700 mb-1">Drug Amount (mg)</label>
-                            <input
-                              type="number"
-                              step="0.1"
-                              placeholder="e.g., 500"
-                              value={concentrationMg}
-                              onChange={(e) => setConcentrationMg(e.target.value)}
-                              className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-xl focus:border-violet-500 text-sm bg-white font-medium"
-                            />
-                          </div>
-                          <div>
-                            <label className="block text-xs font-semibold text-gray-700 mb-1">Per Volume / Unit (mL)</label>
-                            <input
-                              type="number"
-                              step="0.1"
-                              placeholder="e.g., 2"
-                              value={concentrationMl}
-                              onChange={(e) => setConcentrationMl(e.target.value)}
-                              className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-xl focus:border-violet-500 text-sm bg-white font-medium"
-                            />
-                          </div>
                         </div>
                       )}
                     </div>
                   </div>
-                )}
-
-                {selectedMed && !(selectedMed.dose_mg_per_kg_min === 0 && selectedMed.dose_mg_per_kg_max === 0) && species && weight && (
-                  <button
-                    onClick={calculateDosage}
-                    className="w-full gradient-primary text-white py-5 rounded-2xl font-bold text-lg transition-all flex items-center justify-center gap-3 shadow-xl hover:shadow-2xl hover-lift animate-pulse-glow active:scale-[0.98]"
-                  >
-                    <Calculator /> Calculate Dosage
-                  </button>
-                )}
-
-                {result && result.contraindicated ? (
-                  <div className="bg-red-50/90 dark:bg-rose-950/60 border-2 border-red-400 dark:border-rose-500/70 rounded-3xl p-6 animate-fade-in shadow-lg">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="p-2 bg-red-500 text-white rounded-xl"><X /></span>
-                      <div>
-                        <h3 className="text-lg font-bold text-red-800 dark:text-rose-200">Species Safety Contraindication</h3>
-                        <p className="text-xs text-red-600 dark:text-rose-400 font-semibold">{getSpeciesLabel(species)}</p>
-                      </div>
-                    </div>
-                    <div className="p-4 bg-white/95 dark:bg-slate-900 rounded-2xl border border-red-200 dark:border-rose-800/80 text-sm font-medium text-red-900 dark:text-rose-100 leading-relaxed">
-                      {result.warning}
-                    </div>
-                  </div>
-                ) : result && (
-                  <div className="bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 dark:from-slate-900 dark:via-slate-900 dark:to-slate-850 border-2 border-emerald-300 dark:border-emerald-500/40 rounded-3xl p-6 animate-fade-in shadow-lg">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-5 flex items-center gap-3">
-                      <span className="p-2 bg-emerald-500 text-white rounded-xl"><Pill /></span>
-                      <span>Calculated Dosage</span>
-                    </h3>
-                    <div className="mb-5">
-                      <div className="text-xs font-bold text-gray-500 dark:text-slate-400 mb-3 uppercase tracking-wider">Dosage (mg) {result.minDoseMgKg ? `— ${result.minDoseMgKg}-${result.maxDoseMgKg} mg/kg` : ''}</div>
-                      <div className="grid md:grid-cols-3 gap-4">
-                        <div className="bg-white dark:bg-slate-800 rounded-2xl p-5 text-center shadow-sm hover-lift border border-gray-200 dark:border-slate-700">
-                          <div className="text-xs text-gray-500 dark:text-slate-400 mb-2 uppercase tracking-wide font-semibold">Minimum</div>
-                          <div className="text-3xl font-bold text-gray-800 dark:text-slate-100">{result.minDose}</div>
-                          <div className="text-xs text-gray-500 dark:text-slate-400 font-medium">mg</div>
-                        </div>
-                        <div className="bg-emerald-500 dark:bg-emerald-600 rounded-2xl p-5 text-center shadow-lg hover-lift">
-                          <div className="text-xs text-emerald-100 mb-2 uppercase tracking-wide font-bold">Recommended</div>
-                          <div className="text-3xl font-extrabold text-white">{result.avgDose}</div>
-                          <div className="text-xs text-emerald-100 font-medium">mg</div>
-                        </div>
-                        <div className="bg-white dark:bg-slate-800 rounded-2xl p-5 text-center shadow-sm hover-lift border border-gray-200 dark:border-slate-700">
-                          <div className="text-xs text-gray-500 dark:text-slate-400 mb-2 uppercase tracking-wide font-semibold">Maximum</div>
-                          <div className="text-3xl font-bold text-gray-800 dark:text-slate-100">{result.maxDose}</div>
-                          <div className="text-xs text-gray-500 dark:text-slate-400 font-medium">mg</div>
-                        </div>
-                      </div>
-                    </div>
-                    {result.volume && (
-                      <div className="mb-5">
-                        <div className="text-xs font-bold text-purple-700 dark:text-purple-300 mb-3 flex items-center gap-2 uppercase tracking-wider">
-                          <Droplet /> Volume at {result.volume.concentration}
-                        </div>
-                        <div className="grid md:grid-cols-3 gap-4">
-                          <div className="bg-purple-50/80 dark:bg-slate-800 rounded-2xl p-5 text-center border border-purple-200 dark:border-purple-500/40 hover-lift">
-                            <div className="text-xs text-purple-700 dark:text-purple-300 mb-2 uppercase tracking-wide font-semibold">Minimum</div>
-                            <div className="text-3xl font-bold text-purple-900 dark:text-purple-100">{result.volume.minVolume}</div>
-                            <div className="text-xs text-purple-600 dark:text-purple-400 font-medium">ml</div>
-                          </div>
-                          <div className="bg-purple-600 dark:bg-purple-600 rounded-2xl p-5 text-center shadow-lg hover-lift">
-                            <div className="text-xs text-purple-100 mb-2 uppercase tracking-wide font-bold">Recommended</div>
-                            <div className="text-3xl font-extrabold text-white">{result.volume.avgVolume}</div>
-                            <div className="text-xs text-purple-100 font-medium">ml</div>
-                          </div>
-                          <div className="bg-purple-50/80 dark:bg-slate-800 rounded-2xl p-5 text-center border border-purple-200 dark:border-purple-500/40 hover-lift">
-                            <div className="text-xs text-purple-700 dark:text-purple-300 mb-2 uppercase tracking-wide font-semibold">Maximum</div>
-                            <div className="text-3xl font-bold text-purple-900 dark:text-purple-100">{result.volume.maxVolume}</div>
-                            <div className="text-xs text-purple-600 dark:text-purple-400 font-medium">ml</div>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                    <div className="mt-5 p-5 bg-white/95 dark:bg-slate-800/90 rounded-2xl border-2 border-emerald-200 dark:border-emerald-500/40 shadow-sm">
-                      <div className="font-bold text-lg text-emerald-700 dark:text-emerald-400 mb-3 flex items-center gap-2">
-                        <Clipboard className="w-5 h-5" /> Prescription Summary
-                      </div>
-                      <div className="grid md:grid-cols-2 gap-3 text-sm">
-                        <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-slate-700/70 border border-gray-200/60 dark:border-slate-600 rounded-xl dark:text-slate-200">
-                          <span className="px-2 py-0.5 bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-300 rounded text-xs font-bold">{getSpeciesLabel(species)}</span>
-                          <span><span className="font-semibold text-gray-500 dark:text-slate-400">Patient:</span> {weight} kg</span>
-                        </div>
-                        <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-slate-700/70 border border-gray-200/60 dark:border-slate-600 rounded-xl dark:text-slate-200">
-                          <Pill className="text-emerald-600 dark:text-emerald-400 w-4 h-4" />
-                          <span><span className="font-semibold text-gray-500 dark:text-slate-400">Drug:</span> {selectedMed.brand_name}</span>
-                        </div>
-                        <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-slate-700/70 border border-gray-200/60 dark:border-slate-600 rounded-xl dark:text-slate-200">
-                          <span className="font-bold text-emerald-600 dark:text-emerald-400 text-base">⚖️</span>
-                          <span><span className="font-semibold text-gray-500 dark:text-slate-400">Dose:</span> {result.avgDose} mg</span>
-                        </div>
-                        {result.volume && (
-                          <div className="flex items-center gap-2 p-3 bg-purple-50/80 dark:bg-purple-950/60 border border-purple-200/80 dark:border-purple-800/80 rounded-xl text-purple-950 dark:text-purple-200">
-                            <Droplet className="text-purple-600 dark:text-purple-400 w-4 h-4" />
-                            <span><span className="font-semibold text-purple-700 dark:text-purple-400">Volume:</span> {result.volume.avgVolume} ml</span>
-                          </div>
-                        )}
-                        <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-slate-700/70 border border-gray-200/60 dark:border-slate-600 rounded-xl dark:text-slate-200">
-                          <Stethoscope className="text-emerald-600 dark:text-emerald-400 w-4 h-4" />
-                          <span><span className="font-semibold text-gray-500 dark:text-slate-400">Route:</span> {result.route || selectedMed.route}</span>
-                        </div>
-                        {(result.frequency || selectedMed.frequency) && (
-                          <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-slate-700/70 border border-gray-200/60 dark:border-slate-600 rounded-xl dark:text-slate-200">
-                            <span className="text-gray-500 dark:text-slate-400 font-semibold">⏰ Frequency:</span>
-                            <span>{result.frequency || selectedMed.frequency}</span>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-            </React.Fragment>
-            </div>
-            )}
+                )
+              )}
 
             {/* Prescriptions Tab */}
             {activeTab === 'prescriptions' && (
