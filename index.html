@@ -2951,6 +2951,103 @@
         });
       };
 
+      const renderClinicalNotes = (notesStr, genericName) => {
+        if (!notesStr) return null;
+
+        const headerPatterns = [
+          { key: 'category', label: 'Category', icon: '🏷️', regex: /(?:^|\b)(?:Category|Class)\s*:\s*([^]+?)(?=(?:\b(?:Active Ingredient|Indications?|Contraindications?|Warnings?|Warning|Precautions?|Dosage|Dosing|Withdrawal|Ref|Reference)\s*:|$))/i },
+          { key: 'indications', label: 'Indications', icon: '🎯', regex: /(?:^|\b)(?:Indications?|Uses?)\s*:\s*([^]+?)(?=(?:\b(?:Category|Active Ingredient|Contraindications?|Warnings?|Warning|Precautions?|Dosage|Dosing|Withdrawal|Ref|Reference)\s*:|$))/i },
+          { key: 'contraindications', label: 'Contraindications', icon: '⛔', regex: /(?:^|\b)(?:Contraindications?)\s*:\s*([^]+?)(?=(?:\b(?:Category|Active Ingredient|Indications?|Warnings?|Warning|Precautions?|Dosage|Dosing|Withdrawal|Ref|Reference)\s*:|$))/i },
+          { key: 'warnings', label: 'Warnings & Precautions', icon: '⚠️', regex: /(?:^|\b)(?:⚠️\s*)?(?:Warnings?|Warning|Precautions?)\s*:\s*([^]+?)(?=(?:\b(?:Category|Active Ingredient|Indications?|Contraindications?|Dosage|Dosing|Withdrawal|Ref|Reference)\s*:|$))/i },
+          { key: 'dosage_guide', label: 'Dosing Guide', icon: '📋', regex: /(?:^|\b)(?:Dosage|Dosing)\s*:\s*([^]+?)(?=(?:\b(?:Category|Active Ingredient|Indications?|Contraindications?|Warnings?|Warning|Precautions?|Withdrawal|Ref|Reference)\s*:|$))/i },
+          { key: 'withdrawal', label: 'Withdrawal Info', icon: '⏳', regex: /(?:^|\b)(?:Withdrawal)\s*:\s*([^]+?)(?=(?:\b(?:Category|Active Ingredient|Indications?|Contraindications?|Warnings?|Warning|Precautions?|Dosage|Dosing|Ref|Reference)\s*:|$))/i },
+          { key: 'ref', label: 'Reference', icon: '📖', regex: /(?:^|\b)(?:Ref|Reference)\s*:\s*([^]+?)$/i }
+        ];
+
+        const parsedSections = [];
+
+        if (genericName) {
+          parsedSections.push({
+            key: 'active_ingredient',
+            label: 'Active Ingredient',
+            icon: '🧪',
+            content: genericName
+          });
+        }
+
+        let matchedAny = false;
+        headerPatterns.forEach(p => {
+          const match = notesStr.match(p.regex);
+          if (match && match[1] && match[1].trim()) {
+            matchedAny = true;
+            parsedSections.push({
+              key: p.key,
+              label: p.label,
+              icon: p.icon,
+              content: match[1].trim()
+            });
+          }
+        });
+
+        if (!matchedAny) {
+          parsedSections.push({
+            key: 'guidance',
+            label: 'Clinical Guidance',
+            icon: '💡',
+            content: notesStr
+          });
+        }
+
+        return (
+          <div className="mt-4 rounded-2xl bg-amber-50/90 dark:bg-slate-900 border-2 border-amber-300/80 dark:border-amber-500/40 p-4 md:p-5 shadow-sm animate-fade-in">
+            {/* Centered Top Header */}
+            <div className="flex items-center justify-center gap-2 pb-3 mb-3.5 border-b border-amber-200/80 dark:border-slate-800 text-center">
+              <span className="text-base">⚠️</span>
+              <h4 className="font-extrabold text-xs sm:text-sm uppercase tracking-wider text-amber-900 dark:text-amber-300">
+                Clinical Notes & Pharmacology
+              </h4>
+            </div>
+
+            {/* Subsections Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+              {parsedSections.map((sec, idx) => {
+                const isWarning = sec.key === 'warnings' || sec.key === 'contraindications';
+                const isFullWidth = sec.key === 'category' || sec.key === 'indications' || sec.key === 'warnings' || sec.key === 'contraindications' || sec.key === 'guidance';
+
+                return (
+                  <div
+                    key={idx}
+                    className={`${isFullWidth ? 'md:col-span-2' : ''} p-3 rounded-xl transition-all ${
+                      isWarning
+                        ? 'bg-rose-50/90 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800/60'
+                        : 'bg-white/95 dark:bg-slate-800/90 border border-amber-200/80 dark:border-slate-700/80 shadow-2xs'
+                    }`}
+                  >
+                    <div className="flex items-center gap-1.5 mb-1">
+                      <span className="text-sm">{sec.icon}</span>
+                      <span className={`text-[11px] font-extrabold uppercase tracking-wider ${
+                        isWarning ? 'text-rose-700 dark:text-rose-300' : 'text-amber-800 dark:text-amber-300'
+                      }`}>
+                        {sec.label}
+                      </span>
+                    </div>
+                    <div className={`text-xs sm:text-sm leading-relaxed font-medium ${
+                      isWarning
+                        ? 'text-rose-950 dark:text-rose-100'
+                        : sec.key === 'ref'
+                        ? 'text-slate-600 dark:text-slate-400 italic'
+                        : 'text-slate-800 dark:text-slate-200'
+                    }`}>
+                      {sec.content}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        );
+      };
+
       const handleMedSelect = (med) => {
         setSelectedMed(med);
         setResult(null);
@@ -3381,12 +3478,7 @@
                             )}
                           </div>
                         </div>
-                        {selectedMed.notes && (
-                          <div className="mt-4 p-4 rounded-xl text-sm bg-amber-50/90 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-500/50 shadow-xs flex items-start gap-2.5">
-                            <span className="shrink-0 text-amber-700 dark:text-amber-400 font-bold text-sm mt-0.5">⚠️ Note:</span>
-                            <span className="text-amber-950 dark:text-amber-100 font-normal leading-relaxed">{selectedMed.notes}</span>
-                          </div>
-                        )}
+                        {renderClinicalNotes(selectedMed.notes, selectedMed.generic_name)}
                       </div>
 
                       {/* Per-Animal Dosing OR Weight-based Dosage Calculator */}
