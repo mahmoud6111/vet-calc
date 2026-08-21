@@ -13,7 +13,7 @@
   <!-- Open Graph / Social Media Preview -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="InVet - Veterinary Dosage Calculator">
-  <meta property="og:description" content="Premium offline veterinary dosage calculator with 1000+ medications for pets and livestock. Calculate accurate drug dosages instantly.">
+  <meta property="og:description" content="Premium offline veterinary dosage calculator with 160+ medications for small animals (dogs and cats). Calculate accurate drug dosages instantly.">
   <meta property="og:image" content="/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -21,7 +21,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="InVet - Veterinary Dosage Calculator">
-  <meta name="twitter:description" content="Premium offline veterinary dosage calculator with 1000+ medications for pets and livestock.">
+  <meta name="twitter:description" content="Premium offline veterinary dosage calculator with 160+ medications for small animals (dogs and cats).">
   <meta name="twitter:image" content="/og-image.png">
   <title>InVet - Veterinary Dosage Calculator</title>
   <link rel="manifest" href="/manifest.json">
@@ -979,12 +979,6 @@
         case 'dog': return '🐕 Dog';
         case 'cat': return '🐱 Cat';
         case 'both': return '🐾 Dogs & Cats';
-        case 'cattle': return '🐮 Cattle';
-        case 'horse': return '🐴 Horse';
-        case 'sheep_goat': return '🐑 Sheep & Goat';
-        case 'camel': return '🐪 Camel';
-        case 'poultry': return '🐓 Poultry';
-        case 'large_animal': return '🐄 Large Animals';
         default: return sp || 'General';
       }
     };
@@ -1563,12 +1557,6 @@
                   <option value="both">🐾 Dogs & Cats</option>
                   <option value="dog">🐕 Dogs Only</option>
                   <option value="cat">🐱 Cats Only</option>
-                  <option value="cattle">🐮 Cattle</option>
-                  <option value="horse">🐴 Horse</option>
-                  <option value="sheep_goat">🐑 Sheep & Goat</option>
-                  <option value="camel">🐪 Camel</option>
-                  <option value="poultry">🐓 Poultry</option>
-                  <option value="large_animal">🐄 Large Animals (General)</option>
                 </select>
               </div>
 
@@ -1739,8 +1727,7 @@
       // Forum channels (Reddit-style)
       const forumChannels = [
         { id: 'dosage_qa', sub: 'r/DosageQA', name: 'Dosage & Pharmacotherapy', icon: '💊', desc: 'Dose calculations, CRI rates & protocols' },
-        { id: 'small_animals', sub: 'r/SmallAnimalMed', name: 'Small Animal Medicine', icon: '🐕', desc: 'Canine & feline clinical cases' },
-        { id: 'large_animals', sub: 'r/LargeAnimalMed', name: 'Large Animal Practice', icon: '🐮', desc: 'Ruminant, equine & avian medicine' }
+        { id: 'small_animals', sub: 'r/SmallAnimalMed', name: 'Small Animal Medicine', icon: '🐕', desc: 'Canine & feline clinical cases' }
       ];
 
       // Live chat channels (WhatsApp-style)
@@ -1755,9 +1742,7 @@
       const speciesOptions = [
         { id: '', label: '🐾 Any' },
         { id: 'Canine', label: '🐕 Canine' },
-        { id: 'Feline', label: '🐈 Feline' },
-        { id: 'Equine', label: '🐎 Equine' },
-        { id: 'Bovine', label: '🐄 Bovine' }
+        { id: 'Feline', label: '🐈 Feline' }
       ];
       const tagOptions = ['Dosage Inquiry', 'Case Study', 'Protocol Review', 'Clinical Lounge'];
 
@@ -2677,7 +2662,7 @@
       const [editingMed, setEditingMed] = useState(null);
       const [showDeleteConfirm, setShowDeleteConfirm] = useState(null);
       const [activeCategory, setActiveCategory] = useState('all');
-      const [animalTypeFilter, setAnimalTypeFilter] = useState('small');
+      const [animalTypeFilter, setAnimalTypeFilter] = useState('all');
       const [favorites, setFavorites] = useState([]);
       const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
       const [darkMode, setDarkMode] = useState(false);
@@ -2733,9 +2718,10 @@
 
           if (saved) {
             const parsed = JSON.parse(saved);
-            const existingIds = new Set(parsed.map(m => m.id));
+            const validSaved = parsed.filter(m => ['dog', 'cat', 'both'].includes(m.species) && (DEFAULT_MEDICATIONS.some(d => d.id === m.id) || !/^\d+b?$/.test(m.id)));
+            const existingIds = new Set(validSaved.map(m => m.id));
             const missingDefaults = DEFAULT_MEDICATIONS.filter(d => !existingIds.has(d.id));
-            const updated = [...parsed, ...missingDefaults].map(savedMed => {
+            const updated = [...validSaved, ...missingDefaults].map(savedMed => {
               const defaultMed = DEFAULT_MEDICATIONS.find(d => d.id === savedMed.id);
               if (defaultMed) {
                 return {
@@ -2875,18 +2861,14 @@
       const filteredMeds = useMemo(() => {
         let filtered = medications;
 
-        // Filter by Species Practice Type (Small Animals vs Large Animals vs Poultry vs All)
-        if (animalTypeFilter === 'small') {
+        // Filter by Species (All Small Animals vs Dogs vs Cats)
+        if (animalTypeFilter === 'dog') {
           filtered = filtered.filter(med =>
-            ['dog', 'cat', 'both'].includes(med.species)
+            ['dog', 'both'].includes(med.species)
           );
-        } else if (animalTypeFilter === 'large') {
+        } else if (animalTypeFilter === 'cat') {
           filtered = filtered.filter(med =>
-            ['cattle', 'horse', 'sheep_goat', 'camel', 'large_animal'].includes(med.species)
-          );
-        } else if (animalTypeFilter === 'poultry') {
-          filtered = filtered.filter(med =>
-            med.species === 'poultry'
+            ['cat', 'both'].includes(med.species)
           );
         }
 
@@ -2980,10 +2962,8 @@
         setConcentrationMg('');
         setConcentrationMl('');
         setShowConcentrationInput(false);
-        if (['dog', 'cat', 'cattle', 'horse', 'sheep_goat', 'camel', 'poultry'].includes(med.species)) {
-          setSpecies(med.species);
-        } else if (med.species === 'large_animal') {
-          setSpecies('cattle');
+        if (med.species === 'cat') {
+          setSpecies('cat');
         } else {
           setSpecies('dog');
         }
@@ -3169,36 +3149,6 @@
               <div className="px-4 md:px-6 pt-4 pb-3 bg-gradient-to-r from-emerald-50/70 to-teal-50/70 border-b border-emerald-100 flex flex-col items-center justify-center gap-3">
                 <div className="flex items-center gap-1 p-1 bg-white/90 dark:bg-gray-800 rounded-2xl w-full sm:w-auto shadow-sm border border-emerald-200/60 overflow-x-auto">
                   <button
-                    onClick={() => setAnimalTypeFilter('small')}
-                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center text-center whitespace-nowrap ${
-                      animalTypeFilter === 'small'
-                        ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
-                        : 'text-gray-600 hover:text-emerald-700 hover:bg-emerald-50/50'
-                    }`}
-                  >
-                    Small Animals (Pets)
-                  </button>
-                  <button
-                    onClick={() => setAnimalTypeFilter('large')}
-                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center text-center whitespace-nowrap ${
-                      animalTypeFilter === 'large'
-                        ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
-                        : 'text-gray-600 hover:text-emerald-700 hover:bg-emerald-50/50'
-                    }`}
-                  >
-                    Large Animals (Livestock)
-                  </button>
-                  <button
-                    onClick={() => setAnimalTypeFilter('poultry')}
-                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center text-center whitespace-nowrap ${
-                      animalTypeFilter === 'poultry'
-                        ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
-                        : 'text-gray-600 hover:text-emerald-700 hover:bg-emerald-50/50'
-                    }`}
-                  >
-                    Poultry
-                  </button>
-                  <button
                     onClick={() => setAnimalTypeFilter('all')}
                     className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center text-center whitespace-nowrap ${
                       animalTypeFilter === 'all'
@@ -3206,15 +3156,34 @@
                         : 'text-gray-600 hover:text-emerald-700 hover:bg-emerald-50/50'
                     }`}
                   >
-                    All Species
+                    🐾 All Small Animals
+                  </button>
+                  <button
+                    onClick={() => setAnimalTypeFilter('dog')}
+                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center text-center whitespace-nowrap ${
+                      animalTypeFilter === 'dog'
+                        ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
+                        : 'text-gray-600 hover:text-emerald-700 hover:bg-emerald-50/50'
+                    }`}
+                  >
+                    🐕 Dogs
+                  </button>
+                  <button
+                    onClick={() => setAnimalTypeFilter('cat')}
+                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center text-center whitespace-nowrap ${
+                      animalTypeFilter === 'cat'
+                        ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
+                        : 'text-gray-600 hover:text-emerald-700 hover:bg-emerald-50/50'
+                    }`}
+                  >
+                    🐱 Cats
                   </button>
                 </div>
                 <div className="text-xs font-semibold text-emerald-800 bg-emerald-100/80 px-3 py-1.5 rounded-full border border-emerald-200 text-center">
                   Showing {filteredMeds.length} {
-                    animalTypeFilter === 'small' ? 'small animals (dogs & cats)' :
-                    animalTypeFilter === 'large' ? 'large animals (livestock)' :
-                    animalTypeFilter === 'poultry' ? 'poultry (avian)' : 'total'
-                  } drugs
+                    animalTypeFilter === 'dog' ? 'canine (dog)' :
+                    animalTypeFilter === 'cat' ? 'feline (cat)' : 'small animal'
+                  } medications
                 </div>
               </div>
 
@@ -3383,48 +3352,6 @@
                         <span className="font-semibold text-amber-600">⚠️ Note:</span> {selectedMed.notes}
                       </div>
                     )}
-                    {/* Food Safety Banner */}
-                    {selectedMed.food_restriction === 'banned' && ['cattle','sheep_goat','camel','large_animal','poultry'].includes(selectedMed.species) && (
-                      <div className="mt-3 p-4 bg-red-100 border-2 border-red-500 rounded-xl text-sm">
-                        <div className="flex items-center gap-2 font-bold text-red-800 mb-1">
-                          <span>🚫</span> GLOBALLY PROHIBITED IN FOOD-PRODUCING ANIMALS
-                        </div>
-                        <div className="text-red-700 text-xs leading-relaxed">{selectedMed.food_restriction_note}</div>
-                      </div>
-                    )}
-                    {selectedMed.food_restriction === 'manufacturer_label' && ['cattle','sheep_goat','camel','large_animal','poultry'].includes(selectedMed.species) && (
-                      <div className="mt-3 p-4 bg-orange-50 border-2 border-orange-400 rounded-xl text-sm">
-                        <div className="flex items-center gap-2 font-bold text-orange-800 mb-1">
-                          <span>⚠️</span> Manufacturer Restriction — Not for Food-Producing Animals
-                        </div>
-                        <div className="text-orange-700 text-xs leading-relaxed">{selectedMed.food_restriction_note}</div>
-                      </div>
-                    )}
-                    {selectedMed.food_restriction === 'dairy_prohibited' && ['cattle','sheep_goat','camel','large_animal'].includes(selectedMed.species) && (
-                      <div className="mt-3 p-3 bg-yellow-50 border border-yellow-400 rounded-xl text-sm flex items-start gap-2">
-                        <span className="text-xl shrink-0">🥛</span>
-                        <div>
-                          <div className="font-bold text-yellow-800 mb-0.5">Dairy / Milk Restriction</div>
-                          <div className="text-yellow-700 text-xs leading-relaxed">{selectedMed.food_restriction_note}</div>
-                        </div>
-                      </div>
-                    )}
-                    {selectedMed.food_restriction === 'none' && selectedMed.meat_withdrawal_days !== null && selectedMed.meat_withdrawal_days !== undefined && ['cattle','sheep_goat','camel','large_animal','poultry'].includes(selectedMed.species) && (
-                      <div className="mt-3 flex flex-wrap gap-2">
-                        {selectedMed.meat_withdrawal_days === 0 ? (
-                          <span className="inline-flex items-center gap-1 px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs font-bold border border-emerald-300">🥩 0-Day Meat W/D</span>
-                        ) : (
-                          <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold border border-blue-300">🥩 Meat W/D: {selectedMed.meat_withdrawal_days} days</span>
-                        )}
-                        {selectedMed.milk_withdrawal_hours === 0 ? (
-                          <span className="inline-flex items-center gap-1 px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full text-xs font-bold border border-emerald-300">🥛 0-Hour Milk W/D</span>
-                        ) : selectedMed.milk_withdrawal_hours > 0 ? (
-                          <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-bold border border-blue-300">🥛 Milk W/D: {selectedMed.milk_withdrawal_hours}h ({Math.ceil(selectedMed.milk_withdrawal_hours/24)}d)</span>
-                        ) : (
-                          <span className="inline-flex items-center gap-1 px-3 py-1 bg-red-100 text-red-800 rounded-full text-xs font-bold border border-red-300">🥛 Not for dairy milk</span>
-                        )}
-                      </div>
-                    )}
                   </div>
                 )}
 
@@ -3472,51 +3399,6 @@
                             >
                               <div className="text-xl mb-1">🐱</div>
                               <div className="text-xs sm:text-sm font-bold">Cat</div>
-                            </button>
-                          )}
-                          {['cattle', 'large_animal'].includes(selectedMed.species) && (
-                            <button
-                              onClick={() => setSpecies('cattle')}
-                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center ${species === 'cattle' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
-                            >
-                              <div className="text-xl mb-1">🐮</div>
-                              <div className="text-xs sm:text-sm font-bold">Cattle</div>
-                            </button>
-                          )}
-                          {['horse', 'large_animal'].includes(selectedMed.species) && (
-                            <button
-                              onClick={() => setSpecies('horse')}
-                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center ${species === 'horse' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
-                            >
-                              <div className="text-xl mb-1">🐴</div>
-                              <div className="text-xs sm:text-sm font-bold">Horse</div>
-                            </button>
-                          )}
-                          {['sheep_goat', 'large_animal'].includes(selectedMed.species) && (
-                            <button
-                              onClick={() => setSpecies('sheep_goat')}
-                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center ${species === 'sheep_goat' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
-                            >
-                              <div className="text-xl mb-1">🐑</div>
-                              <div className="text-xs sm:text-sm font-bold">Sheep/Goat</div>
-                            </button>
-                          )}
-                          {['camel', 'large_animal'].includes(selectedMed.species) && (
-                            <button
-                              onClick={() => setSpecies('camel')}
-                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center ${species === 'camel' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
-                            >
-                              <div className="text-xl mb-1">🐪</div>
-                              <div className="text-xs sm:text-sm font-bold">Camel</div>
-                            </button>
-                          )}
-                          {selectedMed.species === 'poultry' && (
-                            <button
-                              onClick={() => setSpecies('poultry')}
-                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center ${species === 'poultry' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
-                            >
-                              <div className="text-xl mb-1">🐓</div>
-                              <div className="text-xs sm:text-sm font-bold">Poultry</div>
                             </button>
                           )}
                         </div>
@@ -3691,30 +3573,6 @@
                           <div className="flex items-center gap-2 p-2 bg-gray-50 dark:bg-gray-800 rounded-lg dark:text-slate-200">
                             <span className="text-lg">⏰</span>
                             <span><span className="font-semibold">Frequency:</span> {result.frequency || selectedMed.frequency}</span>
-                          </div>
-                        )}
-                        {/* Withdrawal Badges in Prescription Summary */}
-                        {selectedMed.food_restriction === 'none' && selectedMed.meat_withdrawal_days !== null && selectedMed.meat_withdrawal_days !== undefined && ['cattle','sheep_goat','camel','large_animal','poultry'].includes(selectedMed.species) && (
-                          <div className="col-span-2 flex flex-wrap gap-2 pt-1">
-                            {selectedMed.meat_withdrawal_days === 0 ? (
-                              <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-emerald-100 text-emerald-800 rounded-full text-xs font-bold border border-emerald-300">🥩 0-Day Meat Withdrawal</span>
-                            ) : (
-                              <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-blue-100 text-blue-800 rounded-full text-xs font-bold border border-blue-300">🥩 Meat Withdrawal: {selectedMed.meat_withdrawal_days} days</span>
-                            )}
-                            {selectedMed.milk_withdrawal_hours === 0 ? (
-                              <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-emerald-100 text-emerald-800 rounded-full text-xs font-bold border border-emerald-300">🥛 0-Hour Milk Withdrawal</span>
-                            ) : selectedMed.milk_withdrawal_hours > 0 ? (
-                              <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-blue-100 text-blue-800 rounded-full text-xs font-bold border border-blue-300">🥛 Milk Withdrawal: {selectedMed.milk_withdrawal_hours}h ({Math.ceil(selectedMed.milk_withdrawal_hours/24)}d)</span>
-                            ) : (
-                              <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-red-100 text-red-800 rounded-full text-xs font-bold border border-red-300">🥛 Not for dairy animals</span>
-                            )}
-                          </div>
-                        )}
-                        {/* Food Restriction Note in Prescription Summary */}
-                        {(selectedMed.food_restriction === 'banned' || selectedMed.food_restriction === 'manufacturer_label' || selectedMed.food_restriction === 'dairy_prohibited') && ['cattle','sheep_goat','camel','large_animal','poultry'].includes(selectedMed.species) && (
-                          <div className={`col-span-2 p-3 rounded-lg text-xs leading-relaxed font-medium ${selectedMed.food_restriction === 'banned' ? 'bg-red-100 text-red-800 border border-red-300' : selectedMed.food_restriction === 'manufacturer_label' ? 'bg-orange-50 text-orange-800 border border-orange-300' : 'bg-yellow-50 text-yellow-800 border border-yellow-300'}`}>
-                            {selectedMed.food_restriction === 'banned' ? '🚫 ' : selectedMed.food_restriction === 'manufacturer_label' ? '⚠️ ' : '🥛 '}
-                            {selectedMed.food_restriction_note}
                           </div>
                         )}
                       </div>

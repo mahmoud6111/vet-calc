@@ -458,7 +458,7 @@
       }
 
       // Fallback: search local storage
-      const allChannels = ['dosage_qa', 'small_animals', 'large_animals', 'general'];
+      const allChannels = ['dosage_qa', 'small_animals', 'general'];
       const results = [];
       
       for (const channelId of allChannels) {
@@ -578,24 +578,6 @@
             deleted: false,
             authorUid: 'sample_user_4',
             timestamp: now - 2000000
-          }
-        ];
-      } else if (channelId === 'large_animals') {
-        return [
-          {
-            id: 'sample_4',
-            channelId: 'large_animals',
-            author: 'Dr. Ahmed',
-            title: 'Ruminant & Equine Vet',
-            avatar: '🐮',
-            text: 'Discussion channel for cattle, horse, sheep/goat, camel, and poultry cases.',
-            tag: 'Discussion',
-            parentId: null,
-            upvotes: 3,
-            upvotedBy: [],
-            deleted: false,
-            authorUid: 'sample_user_5',
-            timestamp: now - 2500000
           }
         ];
       }
