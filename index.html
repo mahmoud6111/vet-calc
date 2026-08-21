@@ -756,6 +756,44 @@
       }
     };
 
+    // Helper to robustly match prescription template drug with medications database
+    const matchMedication = (drug, medsList) => {
+      if (!drug || !medsList) return null;
+      const dId = drug.drug_id;
+      const dName = (drug.drug_name || '').toLowerCase().trim();
+      if (!dName && !dId) return null;
+
+      // Direct ID match
+      if (dId) {
+        const byId = medsList.find(m => m.id === dId);
+        if (byId) return byId;
+      }
+
+      // Exact or bidirectional substring match on generic or brand
+      const exactOrSub = medsList.find(m => {
+        const gName = (m.generic_name || '').toLowerCase().trim();
+        const bName = (m.brand_name || '').toLowerCase().trim();
+        return dName === gName || dName === bName ||
+          gName.includes(dName) || dName.includes(gName) ||
+          bName.includes(dName) || dName.includes(bName);
+      });
+      if (exactOrSub) return exactOrSub;
+
+      // Word token matching for complex drug names (e.g. "Augmentin / Curam", "Metronidazole (Flagyl)")
+      const dTokens = dName.replace(/[-–—/()]/g, ' ').split(/\s+/).filter(w => w.length > 3);
+      if (dTokens.length > 0) {
+        const tokenMatch = medsList.find(m => {
+          const gName = (m.generic_name || '').toLowerCase();
+          const bName = (m.brand_name || '').toLowerCase();
+          return dTokens.some(t => gName.includes(t) || bName.includes(t));
+        });
+        if (tokenMatch) return tokenMatch;
+      }
+
+      return null;
+    };
+
+
     // DEFAULT_MEDICATIONS is loaded from default-medications.js
     const DEFAULT_MEDICATIONS = window.DEFAULT_MEDICATIONS;
 
