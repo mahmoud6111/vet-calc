@@ -831,6 +831,14 @@
     const ChevronLeft = () => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>;
     const ChevronRight = () => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>;
     const ChevronUp = () => <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>;
+    const Paw = ({ className = "w-4 h-4" }) => <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><circle cx="12" cy="5" r="1.5"/><circle cx="7" cy="7" r="1.5"/><circle cx="17" cy="7" r="1.5"/><circle cx="5" cy="11.5" r="1.5"/><circle cx="19" cy="11.5" r="1.5"/><path d="M12 10.5c-3 0-5.5 2-5.5 5 0 2.5 2.5 4.5 5.5 4.5s5.5-2 5.5-4.5c0-3-2.5-5-5-5z"/></svg>;
+    const Shield = ({ className = "w-4 h-4" }) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>;
+    const Flame = ({ className = "w-4 h-4" }) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>;
+    const Activity = ({ className = "w-4 h-4" }) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>;
+    const Flask = ({ className = "w-4 h-4" }) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M10 2v7.31L4.12 19.6a2 2 0 0 0 1.76 2.4h12.24a2 2 0 0 0 1.76-2.4L14 9.31V2"/><path d="M8.5 2h7"/><path d="M7 16h10"/></svg>;
+    const Sparkles = ({ className = "w-4 h-4" }) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>;
+    const Bandage = ({ className = "w-4 h-4" }) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><path d="M14 4.5 19.5 10a2.828 2.828 0 1 1-4 4L10 8.5"/><path d="M4.5 14 10 19.5a2.828 2.828 0 1 1-4-4L6 11.5"/><path d="m8 8 8 8"/></svg>;
+    const Clipboard = ({ className = "w-4 h-4" }) => <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></svg>;
 
     // Scrollable Category Tabs Component with Edge Shades & Navigation Arrows
     const ScrollableCategoryTabs = ({ categories, activeCategory, onSelectCategory, className = "" }) => {
@@ -893,20 +901,23 @@
             className="px-4 md:px-6 py-3.5 overflow-x-auto scroll-tabs flex gap-2"
           >
             <div className="flex gap-2 min-w-max">
-              {categories.map(cat => (
-                <button
-                  key={cat.id}
-                  onClick={() => onSelectCategory(cat.id)}
-                  className={`px-4 py-2.5 rounded-xl text-sm font-medium transition-all flex items-center gap-2 whitespace-nowrap ${
-                    activeCategory === cat.id
-                      ? `${cat.color && cat.color.startsWith('bg-') && cat.id !== 'all' ? cat.color : 'bg-emerald-500'} text-white shadow-lg scale-[1.02]`
-                      : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-emerald-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
-                  }`}
-                >
-                  {cat.icon && <span>{cat.icon}</span>}
-                  <span>{cat.name}</span>
-                </button>
-              ))}
+              {categories.map(cat => {
+                const IconComp = cat.icon;
+                return (
+                  <button
+                    key={cat.id}
+                    onClick={() => onSelectCategory(cat.id)}
+                    className={`px-4 py-2.5 rounded-xl text-sm font-medium transition-all flex items-center gap-2 whitespace-nowrap ${
+                      activeCategory === cat.id
+                        ? `${cat.color && cat.color.startsWith('bg-') && cat.id !== 'all' ? cat.color : 'bg-emerald-500'} text-white shadow-lg scale-[1.02]`
+                        : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-emerald-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-700'
+                    }`}
+                  >
+                    {IconComp && (typeof IconComp === 'function' ? <IconComp className="w-4 h-4 shrink-0" /> : <span>{IconComp}</span>)}
+                    <span>{cat.name}</span>
+                  </button>
+                );
+              })}
             </div>
           </div>
 
@@ -950,16 +961,16 @@
       </div>
     );
 
-    // Drug Categories
+    // Drug Categories with clean SVG icons
     const CATEGORIES = [
-      { id: 'all', name: 'All', icon: '💊', color: 'bg-gray-500' },
-      { id: 'antibiotic', name: 'Antibiotics', icon: '🦠', color: 'bg-emerald-500' },
-      { id: 'nsaid', name: 'NSAIDs', icon: '🔥', color: 'bg-orange-500' },
-      { id: 'gi', name: 'GI Drugs', icon: '🫁', color: 'bg-blue-500' },
-      { id: 'probiotic', name: 'Probiotics', icon: '🧫', color: 'bg-purple-500' },
-      { id: 'supplement', name: 'Supplements', icon: '💪', color: 'bg-pink-500' },
-      { id: 'topical', name: 'Topical', icon: '🩹', color: 'bg-cyan-500' },
-      { id: 'other', name: 'Other', icon: '📋', color: 'bg-slate-500' },
+      { id: 'all', name: 'All', icon: Pill, color: 'bg-gray-500' },
+      { id: 'antibiotic', name: 'Antibiotics', icon: Shield, color: 'bg-emerald-500' },
+      { id: 'nsaid', name: 'NSAIDs', icon: Flame, color: 'bg-orange-500' },
+      { id: 'gi', name: 'GI Drugs', icon: Activity, color: 'bg-blue-500' },
+      { id: 'probiotic', name: 'Probiotics', icon: Flask, color: 'bg-purple-500' },
+      { id: 'supplement', name: 'Supplements', icon: Sparkles, color: 'bg-pink-500' },
+      { id: 'topical', name: 'Topical', icon: Bandage, color: 'bg-cyan-500' },
+      { id: 'other', name: 'Other', icon: Clipboard, color: 'bg-slate-500' },
     ];
 
     // Helper to get category from generic name
@@ -976,9 +987,9 @@
 
     const getSpeciesLabel = (sp) => {
       switch (sp) {
-        case 'dog': return '🐕 Dog';
-        case 'cat': return '🐱 Cat';
-        case 'both': return '🐾 Dogs & Cats';
+        case 'dog': return 'Dog';
+        case 'cat': return 'Cat';
+        case 'both': return 'Dogs & Cats';
         default: return sp || 'General';
       }
     };
@@ -1288,8 +1299,8 @@
                     type="text"
                     value={formData.icon}
                     onChange={(e) => updateField('icon', e.target.value)}
-                    placeholder="e.g., 🐱"
-                    maxLength="2"
+                    placeholder="e.g., Rx"
+                    maxLength="4"
                     className="w-full px-4 py-3 bg-white dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 rounded-xl text-gray-700 dark:text-gray-200 placeholder-gray-400 focus:border-emerald-500 transition-all"
                   />
                 </div>
@@ -1302,9 +1313,9 @@
                     onChange={(e) => updateField('species', e.target.value)}
                     className="w-full px-4 py-3 bg-white dark:bg-gray-700 border-2 border-gray-200 dark:border-gray-600 rounded-xl text-gray-700 dark:text-gray-200 focus:border-emerald-500 transition-all"
                   >
-                    <option value="both">🐾 Dogs & Cats</option>
-                    <option value="cat">🐱 Cat</option>
-                    <option value="dog">🐕 Dog</option>
+                    <option value="both">Dogs & Cats</option>
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
                   </select>
                 </div>
                 <div>
@@ -1554,9 +1565,9 @@
                   onChange={(e) => setFormData({ ...formData, species: e.target.value })}
                   className="w-full px-3 py-3 text-base border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                 >
-                  <option value="both">🐾 Dogs & Cats</option>
-                  <option value="dog">🐕 Dogs Only</option>
-                  <option value="cat">🐱 Cats Only</option>
+                  <option value="both">Dogs & Cats</option>
+                  <option value="dog">Dogs Only</option>
+                  <option value="cat">Cats Only</option>
                 </select>
               </div>
 
@@ -1727,7 +1738,7 @@
       // Forum channels (Reddit-style)
       const forumChannels = [
         { id: 'dosage_qa', sub: 'r/DosageQA', name: 'Dosage & Pharmacotherapy', icon: '💊', desc: 'Dose calculations, CRI rates & protocols' },
-        { id: 'small_animals', sub: 'r/SmallAnimalMed', name: 'Small Animal Medicine', icon: '🐕', desc: 'Canine & feline clinical cases' }
+        { id: 'small_animals', sub: 'r/SmallAnimalMed', name: 'Small Animal Medicine', icon: '🩺', desc: 'Canine & feline clinical cases' }
       ];
 
       // Live chat channels (WhatsApp-style)
@@ -1740,9 +1751,9 @@
       const currentChannelObj = allChannels.find(c => c.id === activeChannel) || allChannels[0];
 
       const speciesOptions = [
-        { id: '', label: '🐾 Any' },
-        { id: 'Canine', label: '🐕 Canine' },
-        { id: 'Feline', label: '🐈 Feline' }
+        { id: '', label: 'Any' },
+        { id: 'Canine', label: 'Canine' },
+        { id: 'Feline', label: 'Feline' }
       ];
       const tagOptions = ['Dosage Inquiry', 'Case Study', 'Protocol Review', 'Clinical Lounge'];
 
@@ -2563,16 +2574,16 @@
                     <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Specialty / Role</label>
                     <input
                       type="text"
-                      placeholder="e.g., Veterinary Pharmacologist / Equine Specialist"
+                      placeholder="e.g., Small Animal Practitioner / Pharmacologist"
                       value={inputTitle}
                       onChange={(e) => setInputTitle(e.target.value)}
                       className="w-full px-3.5 py-2.5 bg-white dark:bg-slate-700 border border-slate-300 dark:border-slate-600 rounded-xl text-sm font-medium text-slate-900 dark:text-slate-100 focus:border-indigo-500"
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Avatar Emoji</label>
+                    <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">Avatar Icon</label>
                     <div className="flex gap-2">
-                      {['🩺', '🐕', '🐱', '🐴', '🐮', '🐓', '🐪', '💊'].map(a => (
+                      {['🩺', '💊', '📋', '💉', '🔬', '🏥'].map(a => (
                         <button
                           type="button"
                           key={a}
@@ -3150,33 +3161,36 @@
                 <div className="flex items-center gap-1 p-1 bg-white/90 dark:bg-gray-800 rounded-2xl w-full sm:w-auto shadow-sm border border-emerald-200/60 overflow-x-auto">
                   <button
                     onClick={() => setAnimalTypeFilter('all')}
-                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center text-center whitespace-nowrap ${
+                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 text-center whitespace-nowrap ${
                       animalTypeFilter === 'all'
                         ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
                         : 'text-gray-600 hover:text-emerald-700 hover:bg-emerald-50/50'
                     }`}
                   >
-                    🐾 All Small Animals
+                    <Paw className="w-4 h-4" />
+                    <span>All Small Animals</span>
                   </button>
                   <button
                     onClick={() => setAnimalTypeFilter('dog')}
-                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center text-center whitespace-nowrap ${
+                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 text-center whitespace-nowrap ${
                       animalTypeFilter === 'dog'
                         ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
                         : 'text-gray-600 hover:text-emerald-700 hover:bg-emerald-50/50'
                     }`}
                   >
-                    🐕 Dogs
+                    <Dog className="w-4 h-4" />
+                    <span>Dogs</span>
                   </button>
                   <button
                     onClick={() => setAnimalTypeFilter('cat')}
-                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center text-center whitespace-nowrap ${
+                    className={`flex-1 sm:flex-none px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center justify-center gap-1.5 text-center whitespace-nowrap ${
                       animalTypeFilter === 'cat'
                         ? 'bg-emerald-600 text-white shadow-md scale-[1.02]'
                         : 'text-gray-600 hover:text-emerald-700 hover:bg-emerald-50/50'
                     }`}
                   >
-                    🐱 Cats
+                    <Cat className="w-4 h-4" />
+                    <span>Cats</span>
                   </button>
                 </div>
                 <div className="text-xs font-semibold text-emerald-800 bg-emerald-100/80 px-3 py-1.5 rounded-full border border-emerald-200 text-center">
@@ -3245,8 +3259,9 @@
                                   <div className="flex-1 min-w-0">
                                     <div className="flex items-center gap-2 flex-wrap">
                                       <span className="font-semibold text-gray-900 dark:text-gray-100">{med.brand_name}</span>
-                                      <span className={`px-2 py-0.5 rounded-full text-xs font-medium text-white ${catInfo.color}`}>
-                                        {catInfo.icon} {catInfo.name}
+                                      <span className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium text-white ${catInfo.color}`}>
+                                        {catInfo.icon && (typeof catInfo.icon === 'function' ? <catInfo.icon className="w-3 h-3 shrink-0" /> : <span>{catInfo.icon}</span>)}
+                                        <span>{catInfo.name}</span>
                                       </span>
                                     </div>
                                     <div className="text-sm text-gray-600 dark:text-gray-300 line-clamp-2">{med.generic_name}</div>
@@ -3381,30 +3396,30 @@
 
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-sm font-semibold text-gray-700 mb-2">🐾 Select Species</label>
+                        <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Select Species</label>
                         <div className="flex gap-2 flex-wrap">
                           {['dog', 'both'].includes(selectedMed.species) && (
                             <button
                               onClick={() => setSpecies('dog')}
-                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center ${species === 'dog' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
+                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center flex flex-col items-center justify-center ${species === 'dog' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
                             >
-                              <div className="text-xl mb-1">🐶</div>
+                              <div className="flex justify-center mb-1 text-emerald-600 dark:text-emerald-400"><Dog className="w-6 h-6" /></div>
                               <div className="text-xs sm:text-sm font-bold">Dog</div>
                             </button>
                           )}
                           {['cat', 'both'].includes(selectedMed.species) && (
                             <button
                               onClick={() => setSpecies('cat')}
-                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center ${species === 'cat' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
+                              className={`flex-1 min-w-[85px] py-3 px-2.5 rounded-2xl border-2 font-semibold transition-all text-center flex flex-col items-center justify-center ${species === 'cat' ? 'border-emerald-500 bg-emerald-50 text-emerald-800 shadow-md dark:border-emerald-400 dark:text-emerald-300' : 'border-gray-200 bg-white text-slate-700 hover:border-emerald-300 dark:border-gray-600 dark:text-slate-200'}`}
                             >
-                              <div className="text-xl mb-1">🐱</div>
+                              <div className="flex justify-center mb-1 text-emerald-600 dark:text-emerald-400"><Cat className="w-6 h-6" /></div>
                               <div className="text-xs sm:text-sm font-bold">Cat</div>
                             </button>
                           )}
                         </div>
                       </div>
                       <div>
-                        <label className="block text-sm font-semibold text-gray-700 mb-2">⚖️ Patient Weight</label>
+                        <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">Patient Weight</label>
                         <div className="relative">
                           <input
                             type="number"
@@ -3650,7 +3665,7 @@
                         : 'bg-white text-gray-500 border border-gray-200 hover:bg-emerald-50'
                         }`}
                     >
-                      {s === 'all' ? 'All' : s === 'cat' ? '🐱 Cats' : s === 'dog' ? '🐕 Dogs' : '🐾 Dogs & Cats'}
+                      {s === 'all' ? 'All' : s === 'cat' ? 'Cats' : s === 'dog' ? 'Dogs' : 'Dogs & Cats'}
                     </button>
                   ))}
                 </div>
@@ -3729,7 +3744,7 @@
                             template.species === 'dog' ? 'bg-blue-100 text-blue-700' :
                             'bg-purple-100 text-purple-700'
                           }`}>
-                            {template.species === 'cat' ? '🐱 Cat' : template.species === 'dog' ? '🐕 Dog' : '🐾 Dogs & Cats'}
+                            {template.species === 'cat' ? 'Cat' : template.species === 'dog' ? 'Dog' : 'Dogs & Cats'}
                           </span>
                           <span className={`category-badge ${
                             template.category === 'viral' ? 'bg-red-100 text-red-700' :
@@ -3832,7 +3847,7 @@
                           viewingPrescription.species === 'dog' ? 'bg-blue-100 text-blue-700' :
                           'bg-purple-100 text-purple-700'
                         }`}>
-                          {viewingPrescription.species === 'cat' ? '🐱 Cat' : viewingPrescription.species === 'dog' ? '🐕 Dog' : '🐾 Dogs & Cats'}
+                          {viewingPrescription.species === 'cat' ? 'Cat' : viewingPrescription.species === 'dog' ? 'Dog' : 'Dogs & Cats'}
                         </span>
                         <span className={`category-badge ${
                           viewingPrescription.category === 'viral' ? 'bg-red-100 text-red-700' :
@@ -3972,7 +3987,7 @@
                               : 'bg-white dark:bg-gray-700 text-gray-600 dark:text-gray-300 border-2 border-gray-200 dark:border-gray-600 hover:bg-emerald-50 dark:hover:bg-gray-600'
                           }`}
                         >
-                          {s === 'cat' ? '🐱 Cat' : '🐕 Dog'}
+                          {s === 'cat' ? 'Cat' : 'Dog'}
                         </button>
                       ))}
                     </div>
@@ -4006,7 +4021,7 @@
                     <div className="print-header">
                       <h1>InVet-Dosage Calculator — Prescription Summary</h1>
                       <p>Template: {viewingPrescription.name}</p>
-                      <p>Patient: {appliedSpecies === 'cat' ? '🐱 Cat' : '🐕 Dog'} — {appliedWeight} kg</p>
+                      <p>Patient: {appliedSpecies === 'cat' ? 'Cat' : 'Dog'} — {appliedWeight} kg</p>
                       <p>Date: {new Date().toLocaleDateString()}</p>
                     </div>
 
